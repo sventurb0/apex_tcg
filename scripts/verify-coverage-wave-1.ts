@@ -29,6 +29,22 @@ const candidates: Array<{ name: string; candidate: ArchitectCandidate }> = targe
   return { name: target.name, candidate };
 });
 
+const creativeTargets = [
+  { name: "Bellibolt Lightning", cardIds: ["sv3-77"] },
+  { name: "Alolan Muk / Swalot control", cardIds: ["sm12-131", "sv7-92"] },
+  { name: "Corviknight defensive", cardIds: ["swsh1-135"] },
+  { name: "Alakazam Psychic", cardIds: ["me1-56"] },
+  { name: "Annihilape / Machamp Fighting", cardIds: ["sv1-109", "base1-8"] },
+] as const;
+const creativeOnly = Object.fromEntries(creativeTargets.map((target) => {
+  const request: ArchitectRequest = { favourites: target.cardIds.map((cardId) => ({ cardId, exactPrintingRequired: true })), format: "custom", mode: "creative", candidateCount: 3, seed: 73_001 };
+  const generated = generateCandidates(request, index);
+  check(generated.candidates.length >= 1, `${target.name} did not produce a Creative-mode candidate.`);
+  const candidate = generated.candidates[0]!;
+  check(!candidate.simulationReady && candidate.unsupportedCardIds.length > 0, `${target.name} was incorrectly promoted to simulation-ready.`);
+  return [target.name, { selectedCardIds: target.cardIds, candidateId: candidate.deck.id, exactCards: candidate.deck.entries.reduce((sum, entry) => sum + entry.count, 0), simulationReady: false, blockers: candidate.unsupportedCardIds }];
+}));
+
 const results: Record<string, unknown> = {};
 for (const { name, candidate } of candidates) {
   const quick = await runQuickGauntlet(candidate, premadeDecks, index, 20);
@@ -40,6 +56,6 @@ for (const { name, candidate } of candidates) {
   results[name] = { cardId: candidate.requiredCardIds[0], deckId: candidate.deck.id, exactCards: 60, behaviourFamiliesExecutable: true, quick, deep, deterministicReplay: true, safetyLimitGames: deep.commonLossReasons["safety-limit"] ?? 0 };
 }
 
-const output = { generatedAt: new Date().toISOString(), coverage, wave1: { abilityTemplates, attackEffectTemplates, trainerEnergyTemplates }, existingDecks: premadeDecks.map((deck) => ({ id: deck.id, simulationReady: analyseDeck(deck, index).simulationReady })), newArchetypes: results };
+const output = { generatedAt: new Date().toISOString(), coverage, wave1: { abilityTemplates, attackEffectTemplates, trainerEnergyTemplates }, existingDecks: premadeDecks.map((deck) => ({ id: deck.id, simulationReady: analyseDeck(deck, index).simulationReady })), newArchetypes: results, creativeOnlyArchetypes: creativeOnly };
 writeFileSync("public/data/coverage-wave-1-acceptance.json", `${JSON.stringify(output, null, 2)}\n`, "utf8");
 console.log(JSON.stringify(output, null, 2));

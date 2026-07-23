@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-23T13:14:11.321Z",
+  "generatedAt": "2026-07-23T13:16:51.406Z",
   "coverage": {
-    "generatedAt": "2026-07-23T13:13:30.956Z",
+    "generatedAt": "2026-07-23T13:16:10.141Z",
     "totalExactPrintings": 20444,
     "explicitCompletePrintings": 63,
     "functionalInheritedCompletePrintings": 405,
@@ -640,6 +640,75 @@
       },
       "deterministicReplay": true,
       "safetyLimitGames": 0
+    }
+  },
+  "creativeOnlyArchetypes": {
+    "Bellibolt Lightning": {
+      "selectedCardIds": [
+        "sv3-77"
+      ],
+      "candidateId": "architect-generic-sv3-77-73001-0",
+      "exactCards": 60,
+      "simulationReady": false,
+      "blockers": [
+        "sv2-77",
+        "sv3-77"
+      ]
+    },
+    "Alolan Muk / Swalot control": {
+      "selectedCardIds": [
+        "sm12-131",
+        "sv7-92"
+      ],
+      "candidateId": "architect-generic-sm12-131-73001-0",
+      "exactCards": 60,
+      "simulationReady": false,
+      "blockers": [
+        "sm1-57",
+        "sm12-131",
+        "sv7-92"
+      ]
+    },
+    "Corviknight defensive": {
+      "selectedCardIds": [
+        "swsh1-135"
+      ],
+      "candidateId": "architect-generic-swsh1-135-73001-0",
+      "exactCards": 60,
+      "simulationReady": false,
+      "blockers": [
+        "sv2-164",
+        "sv2-165",
+        "swsh1-135"
+      ]
+    },
+    "Alakazam Psychic": {
+      "selectedCardIds": [
+        "me1-56"
+      ],
+      "candidateId": "architect-generic-me1-56-73001-0",
+      "exactCards": 60,
+      "simulationReady": false,
+      "blockers": [
+        "me1-54",
+        "me1-55",
+        "me1-56"
+      ]
+    },
+    "Annihilape / Machamp Fighting": {
+      "selectedCardIds": [
+        "sv1-109",
+        "base1-8"
+      ],
+      "candidateId": "architect-generic-sv1-109-73001-0",
+      "exactCards": 60,
+      "simulationReady": false,
+      "blockers": [
+        "base1-8",
+        "sv1-109",
+        "sv3pt5-177",
+        "sv3pt5-66"
+      ]
     }
   }
 }
