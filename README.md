@@ -19,6 +19,8 @@ Deck construction is never blocked by missing executable effects. The exactness 
 - Skeledirge ex / Armarouge, Okidogi ex Poison and Team Rocket's Nidoking ex are exact-runtime-ready for human play, deck-specific heuristic AI and deterministic Worker simulations.
 - Human/AI and Worker simulation selectors automatically include decks once all required exact-printing effects are complete or safely generated.
 - Development diagnostics and exact missing-effect reports kept outside the primary workflow.
+- A Card Behaviour Coverage Factory with strict Ability/attack/Trainer templates, ranked implementation planning, favourite audits and a filterable Development dashboard.
+- Experimental exact 60-card Arcanine and Gengar Architect candidates that are human-playable, AI-playable and simulation-ready (with explicit weak-performance warnings).
 
 ## Run
 
@@ -36,6 +38,11 @@ npm run cards:sync       # clone/update raw English JSON under .cache/
 npm run cards:build      # generate public/data/pokemon-cards.json
 npm run cards:validate   # validate every compact record
 npm run cards:report     # exact premade simulation-effect gaps
+npm run abilities:report # exact Ability signature coverage
+npm run attacks:report   # exact attack-effect signature coverage
+npm run effects:report   # Trainer and Special Energy coverage
+npm run coverage:plan    # ranked unsupported-family plan
+npm run coverage:report  # exact coverage snapshot and favourite audit
 ```
 
 The React application reads the generated local JSON. It does not call a card API when opening. Image metadata preserves the pinned upstream HTTPS URLs and the UI loads only allow-listed `images.pokemontcg.io` assets on demand.
@@ -49,6 +56,8 @@ npm test
 npm run build
 npx tsx scripts/verify-okidogi-acceptance.ts
 npm run acceptance:team-rocket
+npm run acceptance:deck-architect
+npm run acceptance:coverage-wave-1
 ```
 
 ## Architecture
@@ -57,6 +66,8 @@ npm run acceptance:team-rocket
 - `scripts/`: dataset sync, build, validation and missing-effect reporting.
 - `src/data/decks/premade/`: editable exact-ID deck manifests.
 - `src/data/pokemon/`: catalogue types/loading, runtime adapter, reusable effect compiler and explicit overrides.
+- `src/data/pokemon/coverage/`: exact signature indexes, prioritizer, reports and favourite audit.
+- `src/data/pokemon/implementations/templates/` and `batches/`: reviewed full-text template matchers and explicit Wave source.
 - `src/features/deck-builder/`: visual builder, validation and persistent browser storage.
 - `src/features/deck-import/`: optional set-code/name importer.
 - `engine/`: framework-independent reducer, rules, AI and deterministic simulations.
@@ -66,5 +77,7 @@ npm run acceptance:team-rocket
 - `tests/fixtures/`: fictional data used only for isolated engine regression tests.
 
 See [docs/CARD_DATA.md](docs/CARD_DATA.md), [docs/ACCURACY_POLICY.md](docs/ACCURACY_POLICY.md), [docs/DECK_IMPORT.md](docs/DECK_IMPORT.md), and [CARD_IMPLEMENTATION.md](CARD_IMPLEMENTATION.md).
+
+Coverage-specific design and results are documented in [CARD_BEHAVIOUR_COVERAGE.md](CARD_BEHAVIOUR_COVERAGE.md), [COVERAGE_WAVE_1.md](COVERAGE_WAVE_1.md), and [FAVOURITE_CARD_COVERAGE.md](FAVOURITE_CARD_COVERAGE.md).
 
 The engine records structured gameplay events independently from the human-readable action log. Setup placement, search/recovery selections, attack effects, Pokémon Checkup, Knock Outs, Prize choices and promotion all use the same legal-action API for humans and AI.

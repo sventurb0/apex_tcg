@@ -28,9 +28,19 @@
 - Team Rocket's Nidoking ex is the third complete deck: 22 exact printings and 60 runtime copies with shared traits, restricted flexible two-unit Energy, enhanced Poison, Rare Candy, conditional Supporters, Factory and deck-specific AI.
 - Its deterministic acceptance gate runs 100 games against Skeledirge, 100 against Okidogi and 100 mirrors; required deck paths are exercised with zero unresolved or invalid-numeric games and exact replay equality.
 
+## Card Behaviour Coverage Wave 1 — complete
+
+- Exact Ability, attack, Trainer and Special Energy signature catalogues plus ranked implementation planning.
+- Reviewable strict template batches with full-text near-match rejection and deterministic effect programs.
+- 2,839 simulation-ready exact printings across 2,014 behaviour families.
+- 55 complete Ability signatures, 4,386 complete attack signatures and 80 complete Trainer/Energy signatures.
+- Filterable Development coverage dashboard, favourite audit and coverage-aware Deck Architect explanations.
+- Exact Arcanine and Gengar experimental archetypes with quick/deep deterministic acceptance against all three baseline decks.
+
 ## Simulation breadth — next
 
 - Close advanced simultaneous Knock Out and tiebreak gaps.
 - Expand exact runtime support beyond the three supplied decks using `npm run cards:report` as the prioritized backlog.
+- Wave 2: coin/status attacks, Basic-to-Bench attacks, common variable damage, more Trainer staple wording and the first safely reviewed Special Energy supply/passive families.
 
 Use `npm run cards:report` as the prioritized exact effect backlog for the supplied decks.

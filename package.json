@@ -15,6 +15,11 @@
     "cards:validate": "tsx scripts/validate-card-data.ts",
     "cards:report": "tsx scripts/report-missing-effects.ts",
     "abilities:report": "tsx scripts/report-abilities.ts",
+    "attacks:report": "tsx scripts/report-attacks.ts",
+    "effects:report": "tsx scripts/report-effects.ts",
+    "coverage:plan": "tsx scripts/coverage-plan.ts",
+    "coverage:report": "tsx scripts/coverage-report.ts",
+    "acceptance:coverage-wave-1": "tsx scripts/verify-coverage-wave-1.ts",
     "acceptance:team-rocket": "tsx scripts/verify-team-rocket-acceptance.ts",
     "acceptance:deck-architect": "tsx scripts/verify-deck-architect.ts"
   },

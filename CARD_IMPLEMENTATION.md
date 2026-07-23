@@ -32,3 +32,9 @@ npm run cards:report
 ```
 
 The report enumerates every unsupported exact printing referenced by supplied premades. All three supplied decks are human-playable, AI-playable and simulation-ready. Team Rocket's Nidoking additionally has a 300-game acceptance gate covering Skeledirge, Okidogi and mirror matchups, deterministic replay, core-event exercise, unresolved-state safety and numeric integrity.
+
+## Reviewed coverage templates
+
+Wave 1 adds a separate `reviewed-template` source. Full normalized text is matched before runtime conversion; gameplay text is never interpreted at match time. Captured counts/categories become typed effect-program IDs, legal actions enforce source and target restrictions, and choices use the existing deterministic continuation system. Functional reprints inherit the compiled handler but retain exact IDs.
+
+The current exact snapshot is 63 explicit complete, 405 functional-inherited complete, 671 reviewed-template complete and 1,700 safely generated printings: 2,839 simulation-ready exact printings total. See `CARD_BEHAVIOUR_COVERAGE.md` for the extension policy.

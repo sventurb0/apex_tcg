@@ -111,6 +111,17 @@ select, input { width: 100%; color: white; background: #101722; border: 1px soli
 .diagnostic-stats article { padding: 1.2rem; background: #101722; }
 .diagnostic-stats strong { display: block; font-size: 2rem; }
 .diagnostic-stats span { color: var(--ink-muted); font-size: .7rem; text-transform: uppercase; }
+.coverage-page { display: grid; gap: 1rem; }
+.coverage-summary-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--line); }
+.coverage-summary-grid article, .coverage-page .panel { padding: 1rem; border: 1px solid var(--line); background: #101722; }
+.coverage-summary-grid h2 { margin: 0 0 .5rem; font-size: .72rem; text-transform: uppercase; }
+.coverage-summary-grid strong, .coverage-summary-grid span, .coverage-summary-grid small { display: block; }
+.coverage-summary-grid strong { font-size: 1.25rem; }
+.coverage-summary-grid span, .coverage-summary-grid small { margin-top: .25rem; color: var(--ink-muted); font-size: .66rem; }
+.coverage-page .filter-grid { margin-bottom: .7rem; }
+.coverage-two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.coverage-page details { padding: .55rem 0; border-bottom: 1px solid var(--line); }
+.coverage-page details p { color: var(--ink-muted); font-size: .72rem; }
 .loading { display: grid; place-content: center; min-height: 80vh; }
 .loading h1 { font-size: clamp(2.5rem, 6vw, 6rem); }
 .checks { display: flex; flex-direction: column; gap: .6rem; }

@@ -107,14 +107,15 @@ export function gameplaySignature(card: PokemonCardMetadata): string {
   };
   const rules = (card.rules ?? []).filter((rule) => !boilerplate.test(rule)).map(gameplayText);
   const effectiveSubtypes = card.supertype === "Trainer" && card.subtypes.length === 0 ? ["Item"] : card.subtypes;
+  const pokemon = card.supertype === "Pokémon";
   return JSON.stringify({
-    name: normalizeCardName(card.name), supertype: card.supertype, subtypes: effectiveSubtypes.map(normalizeCardName), stage: card.stage ? normalizeCardName(card.stage) : null, hp: card.hp ?? null,
-    types: card.types ?? [], evolvesFrom: card.evolvesFrom ? normalizeCardName(card.evolvesFrom) : null,
-    abilities: (card.abilities ?? []).map(({ name, text, type }) => ({ name: normalizeCardName(name), text: gameplayText(text), type: normalizeCardName(type) })),
-    attacks: (card.attacks ?? []).map(({ name, cost, damage, text }) => ({ name: normalizeCardName(name), cost, damage, text: normalizeCardName(text) })),
-    weaknesses: card.weaknesses ?? [], resistances: card.resistances ?? [], retreatCost: card.retreatCost ?? [], retreat: card.retreat,
-    rules, trainerText: card.rules?.length ? "" : gameplayText(card.trainerText ?? ""),
-    energyText: card.rules?.length ? "" : gameplayText(card.energyText ?? ""), ruleBoxText: (card.ruleBoxText ?? []).map(gameplayText),
+    name: normalizeCardName(card.name), supertype: card.supertype, subtypes: effectiveSubtypes.map(normalizeCardName), stage: pokemon && card.stage ? normalizeCardName(card.stage) : null, hp: pokemon ? card.hp ?? null : null,
+    types: pokemon ? card.types ?? [] : [], evolvesFrom: pokemon && card.evolvesFrom ? normalizeCardName(card.evolvesFrom) : null,
+    abilities: pokemon ? (card.abilities ?? []).map(({ name, text, type }) => ({ name: normalizeCardName(name), text: gameplayText(text), type: normalizeCardName(type) })) : [],
+    attacks: pokemon ? (card.attacks ?? []).map(({ name, cost, damage, text }) => ({ name: normalizeCardName(name), cost, damage, text: normalizeCardName(text) })) : [],
+    weaknesses: pokemon ? card.weaknesses ?? [] : [], resistances: pokemon ? card.resistances ?? [] : [], retreatCost: pokemon ? card.retreatCost ?? [] : [], retreat: pokemon ? card.retreat : 0,
+    rules, trainerText: card.supertype === "Trainer" && !card.rules?.length ? gameplayText(card.trainerText ?? "") : "",
+    energyText: card.supertype === "Energy" && !card.rules?.length ? gameplayText(card.energyText ?? "") : "", ruleBoxText: (card.ruleBoxText ?? []).map(gameplayText),
   });
 }
 

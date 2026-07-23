@@ -16,17 +16,19 @@ export function createImplementationResolver(cards: readonly PokemonCardMetadata
   for (const [signature, members] of bySignature) {
     const explicitMembers = members.filter((card) => cardImplementationRegistry[card.id]?.status === "complete").sort((a, b) => (explicitOrder.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (explicitOrder.get(b.id) ?? Number.MAX_SAFE_INTEGER) || a.id.localeCompare(b.id));
     const generated = explicitMembers.length ? undefined : compileSafeGeneratedImplementation(members[0]!);
-    const canonical = explicitMembers[0] ?? (generated?.status === "generated" ? [...members].sort((a, b) => a.id.localeCompare(b.id))[0] : undefined);
+    const familyEligible = generated?.status === "generated" || generated?.status === "complete" && generated.implementationSource === "reviewed-template";
+    const canonical = explicitMembers[0] ?? (familyEligible ? [...members].sort((a, b) => a.id.localeCompare(b.id))[0] : undefined);
     const canonicalImplementation = canonical ? cardImplementationRegistry[canonical.id] ?? generated : undefined;
     const resolvedHandler = canonicalImplementation ? handlerId(canonicalImplementation) : "";
     if (!canonical || !canonicalImplementation || !resolvedHandler) continue;
-    const family: BehaviourFamily = { id: `behaviour:${stableHash(signature)}`, gameplaySignature: signature, canonicalCardId: canonical.id, handlerId: resolvedHandler, memberCardIds: members.map((card) => card.id).sort(), source: explicitMembers.length ? "explicit" : "generated" };
+    const family: BehaviourFamily = { id: `behaviour:${stableHash(signature)}`, gameplaySignature: signature, canonicalCardId: canonical.id, handlerId: resolvedHandler, memberCardIds: members.map((card) => card.id).sort(), source: explicitMembers.length ? "explicit" : generated?.implementationSource === "reviewed-template" ? "template" : "generated" };
     allFamilies.push(family); for (const member of members) familyByCardId.set(member.id, family);
   }
   const resolve = (card: PokemonCardMetadata): CardImplementation => {
     const exact = cardImplementationRegistry[card.id]; const family = familyByCardId.get(card.id);
     if (exact && (exact.status !== "unsupported" || exact.allowFunctionalInheritance !== true)) return { ...exact, implementationSource: exact.status === "complete" ? "explicit" : exact.status, canonicalCardId: family?.canonicalCardId ?? card.id, behaviourFamilyId: family?.id, equivalentPrintingCount: family?.memberCardIds.length ?? 1 };
     if (family?.source === "explicit") { const canonical = cardImplementationRegistry[family.canonicalCardId]!; return { ...canonical, cardId: card.id, implementationSource: card.id === family.canonicalCardId ? "explicit" : "functional-reprint", canonicalCardId: family.canonicalCardId, behaviourFamilyId: family.id, equivalentPrintingCount: family.memberCardIds.length }; }
+    if (family?.source === "template") { const canonicalCard = byId.get(family.canonicalCardId)!; const canonical = compileSafeGeneratedImplementation(canonicalCard); return { ...canonical, cardId: card.id, implementationSource: card.id === family.canonicalCardId ? "reviewed-template" : "functional-reprint", canonicalCardId: family.canonicalCardId, behaviourFamilyId: family.id, equivalentPrintingCount: family.memberCardIds.length }; }
     const safe = compileSafeGeneratedImplementation(card);
     return { ...safe, canonicalCardId: family?.canonicalCardId, behaviourFamilyId: family?.id, equivalentPrintingCount: family?.memberCardIds.length ?? 1 };
   };

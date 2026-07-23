@@ -1,0 +1,685 @@
+{
+  "version": 1,
+  "sourceCommit": "8b4e387930ead7be6595b4d4c59b7ba7a3a79f08",
+  "report": {
+    "generatedAt": "2026-07-23T13:11:14.130Z",
+    "totalExactPrintings": 20444,
+    "explicitCompletePrintings": 63,
+    "functionalInheritedCompletePrintings": 405,
+    "reviewedTemplateCompletePrintings": 671,
+    "safelyGeneratedPrintings": 1700,
+    "totalSimulationReadyPrintings": 2839,
+    "partialPrintings": 797,
+    "unsupportedPrintings": 16808,
+    "behaviourFamilies": 2014,
+    "signatures": {
+      "ability": {
+        "total": 2607,
+        "complete": 55,
+        "partial": 562,
+        "unsupported": 1990
+      },
+      "attack": {
+        "total": 17427,
+        "complete": 4386,
+        "partial": 0,
+        "unsupported": 13041
+      },
+      "trainer": {
+        "total": 1515,
+        "complete": 79,
+        "partial": 0,
+        "unsupported": 1436
+      },
+      "energy": {
+        "total": 131,
+        "complete": 1,
+        "partial": 0,
+        "unsupported": 130
+      }
+    },
+    "favouritePokemonWithSimulationReadyVariant": 2,
+    "favouritePokemonFullyUnsupported": 15,
+    "commonExecutableTrainerFamilies": 79
+  },
+  "favourites": [
+    {
+      "name": "Swalot",
+      "exactPrintings": 8,
+      "gameplayVariants": 8,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 8,
+      "missingAbilityFamilies": [],
+      "missingAttackFamilies": [
+        "attack:10nks38",
+        "attack:1aw73p3",
+        "attack:1ign5qf",
+        "attack:1jlsufd",
+        "attack:1msgcta",
+        "attack:1otrsfi",
+        "attack:1s0eeyh",
+        "attack:hlyfn0",
+        "attack:ujbqt0",
+        "attack:unswy9",
+        "attack:wcbhxx",
+        "attack:y62r44"
+      ],
+      "bestCreativeCardId": "sv7-92",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Darkness Poison",
+        "Psychic setup"
+      ]
+    },
+    {
+      "name": "Skeledirge",
+      "exactPrintings": 2,
+      "gameplayVariants": 2,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 2,
+      "missingAbilityFamilies": [
+        "ability:ehjuzb"
+      ],
+      "missingAttackFamilies": [
+        "attack:11tpirc",
+        "attack:1hypjie"
+      ],
+      "bestCreativeCardId": "sv1-38",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fire acceleration",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Alolan Muk",
+      "exactPrintings": 3,
+      "gameplayVariants": 3,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 3,
+      "missingAbilityFamilies": [
+        "ability:1mvakna",
+        "ability:zopy76"
+      ],
+      "missingAttackFamilies": [
+        "attack:186tha3",
+        "attack:1ap1hc8"
+      ],
+      "bestCreativeCardId": "sm12-131",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Darkness Poison",
+        "Psychic setup"
+      ]
+    },
+    {
+      "name": "Charizard",
+      "exactPrintings": 27,
+      "gameplayVariants": 18,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 27,
+      "missingAbilityFamilies": [
+        "ability:1kmkswy",
+        "ability:d04xg4",
+        "ability:ij7tfd",
+        "ability:cylucl",
+        "ability:14qcik4",
+        "ability:15ykvyw",
+        "ability:18z8z3b",
+        "ability:1ffuynt",
+        "ability:au72kp",
+        "ability:hl561z",
+        "ability:xwvmys",
+        "ability:z32x70"
+      ],
+      "missingAttackFamilies": [
+        "attack:1rmvoh6",
+        "attack:c6rf0v",
+        "attack:gxdbpt",
+        "attack:r096h3",
+        "attack:tv0ono",
+        "attack:1n2z2q5",
+        "attack:11aqjea",
+        "attack:12iecvc",
+        "attack:197cm03",
+        "attack:1ceu86a",
+        "attack:1hevtko",
+        "attack:1mcbh7r",
+        "attack:1mutox4",
+        "attack:1qac7iy",
+        "attack:1riy8gs",
+        "attack:1w8qzbl",
+        "attack:5c6vxu",
+        "attack:eutd1",
+        "attack:j30lav",
+        "attack:pr78fj",
+        "attack:t450n4",
+        "attack:xlgyhy",
+        "attack:ybtqbv"
+      ],
+      "bestCreativeCardId": "det1-5",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fire acceleration",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Arcanine",
+      "exactPrintings": 29,
+      "gameplayVariants": 25,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 1,
+      "completePrintings": 1,
+      "partialPrintings": 2,
+      "unsupportedPrintings": 25,
+      "missingAbilityFamilies": [
+        "ability:1syxw7v",
+        "ability:64j42c",
+        "ability:14wx1v6",
+        "ability:16llane",
+        "ability:190udx0",
+        "ability:1xxuluq",
+        "ability:c5b0mk",
+        "ability:q14v7z",
+        "ability:ta4dt3"
+      ],
+      "missingAttackFamilies": [
+        "attack:yutpla",
+        "attack:gelqek",
+        "attack:1oq047",
+        "attack:1yetyeu",
+        "attack:4o80jr",
+        "attack:e3q9gx",
+        "attack:j47mcj",
+        "attack:wn1vaa",
+        "attack:10ipz6t",
+        "attack:11ta4j6",
+        "attack:16g7wtl",
+        "attack:1bl71p8",
+        "attack:1emdd25",
+        "attack:1jyu03y",
+        "attack:1myz369",
+        "attack:1neusnn",
+        "attack:1nlexf0",
+        "attack:1qo44bx",
+        "attack:3y65r4",
+        "attack:4j2tma",
+        "attack:7itstb",
+        "attack:9dzz8q",
+        "attack:a1jgd6",
+        "attack:cvbwu1",
+        "attack:el1pyq",
+        "attack:iuanv7",
+        "attack:sjp8t5",
+        "attack:wp8iya"
+      ],
+      "bestSimulationReadyCardId": "swsh8-33",
+      "bestCreativeCardId": "hgss1-1",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fire acceleration"
+      ]
+    },
+    {
+      "name": "Bellibolt",
+      "exactPrintings": 5,
+      "gameplayVariants": 4,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 5,
+      "missingAbilityFamilies": [
+        "ability:139vgin"
+      ],
+      "missingAttackFamilies": [
+        "attack:sxbxac",
+        "attack:15mn4iu",
+        "attack:16f1nv5",
+        "attack:1kqqtas",
+        "attack:6zicea"
+      ],
+      "bestCreativeCardId": "sv3-77",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Lightning setup"
+      ]
+    },
+    {
+      "name": "Corviknight",
+      "exactPrintings": 5,
+      "gameplayVariants": 4,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 1,
+      "unsupportedPrintings": 4,
+      "missingAbilityFamilies": [
+        "ability:h528ve"
+      ],
+      "missingAttackFamilies": [
+        "attack:zz70vk",
+        "attack:12m0czl",
+        "attack:1881q76",
+        "attack:1eo9cc9",
+        "attack:phv09k"
+      ],
+      "bestCreativeCardId": "swsh1-135",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Metal defensive",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Gengar",
+      "exactPrintings": 26,
+      "gameplayVariants": 19,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 1,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 25,
+      "missingAbilityFamilies": [
+        "ability:1j398j8",
+        "ability:1mmg1fr",
+        "ability:1dtrtjx",
+        "ability:1gw9vm",
+        "ability:1pclpzs",
+        "ability:1vkt88d",
+        "ability:10vwhn2",
+        "ability:12x7k6l",
+        "ability:1mz8v9y",
+        "ability:1rkxbha",
+        "ability:3vocu9",
+        "ability:p15oz1",
+        "ability:te35f",
+        "ability:wmlws4"
+      ],
+      "missingAttackFamilies": [
+        "attack:10msfm",
+        "attack:1im7mr5",
+        "attack:1us1zvv",
+        "attack:16xoegt",
+        "attack:18tfl5m",
+        "attack:1tdl4kd",
+        "attack:2rqgmn",
+        "attack:195wqmy",
+        "attack:1aa1x0k",
+        "attack:1asooop",
+        "attack:1emt03z",
+        "attack:1q8yt9u",
+        "attack:1t5yxas",
+        "attack:1vhfg8n",
+        "attack:77ubvi",
+        "attack:do89mq",
+        "attack:fc27jt",
+        "attack:lemil1",
+        "attack:nhsmua",
+        "attack:njnt6u"
+      ],
+      "bestSimulationReadyCardId": "sv4pt5-57",
+      "bestCreativeCardId": "sv4pt5-57",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Darkness Poison",
+        "Psychic setup",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Alolan Marowak",
+      "exactPrintings": 5,
+      "gameplayVariants": 5,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 5,
+      "missingAbilityFamilies": [],
+      "missingAttackFamilies": [
+        "attack:1brf5y8",
+        "attack:g7qkqj",
+        "attack:1k2jr62",
+        "attack:k6n159",
+        "attack:tq3u4h",
+        "attack:vd5j9s"
+      ],
+      "bestCreativeCardId": "sv9-57",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fire acceleration",
+        "Psychic setup"
+      ]
+    },
+    {
+      "name": "Annihilape",
+      "exactPrintings": 6,
+      "gameplayVariants": 4,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 6,
+      "missingAbilityFamilies": [
+        "ability:478bbs",
+        "ability:x1arhi"
+      ],
+      "missingAttackFamilies": [
+        "attack:63cvo4",
+        "attack:1qlvn0o",
+        "attack:1vg2i7n",
+        "attack:1vjtijp",
+        "attack:1xkywk4"
+      ],
+      "bestCreativeCardId": "sv1-109",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Psychic setup",
+        "Fighting setup",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Hawlucha",
+      "exactPrintings": 16,
+      "gameplayVariants": 14,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 3,
+      "unsupportedPrintings": 13,
+      "missingAbilityFamilies": [
+        "ability:1q3lerh",
+        "ability:1c8r6z1",
+        "ability:98hlma"
+      ],
+      "missingAttackFamilies": [
+        "attack:haozom",
+        "attack:89sann",
+        "attack:120i9hk",
+        "attack:17by2ny",
+        "attack:18vxplv",
+        "attack:1b62s4a",
+        "attack:1bsfl2k",
+        "attack:1jo0r33",
+        "attack:1nld05s",
+        "attack:1u4uinw",
+        "attack:1wybjyj",
+        "attack:dr44j",
+        "attack:hy250i",
+        "attack:r8ajuk"
+      ],
+      "bestCreativeCardId": "sv1-118",
+      "estimatedImplementationEffort": "medium",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fighting setup"
+      ]
+    },
+    {
+      "name": "Alolan Raichu",
+      "exactPrintings": 4,
+      "gameplayVariants": 3,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 4,
+      "missingAbilityFamilies": [
+        "ability:12bh52p"
+      ],
+      "missingAttackFamilies": [
+        "attack:e9mu87",
+        "attack:14xmrw2",
+        "attack:tzqxhf"
+      ],
+      "bestCreativeCardId": "sm11-57",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Lightning setup"
+      ]
+    },
+    {
+      "name": "Nihilego",
+      "exactPrintings": 1,
+      "gameplayVariants": 1,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 1,
+      "missingAbilityFamilies": [],
+      "missingAttackFamilies": [
+        "attack:k33abb",
+        "attack:pv11u"
+      ],
+      "bestCreativeCardId": "sm8-106",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Psychic setup"
+      ]
+    },
+    {
+      "name": "Alakazam",
+      "exactPrintings": 10,
+      "gameplayVariants": 7,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 10,
+      "missingAbilityFamilies": [
+        "ability:1bxc2d3",
+        "ability:1oj3lzd",
+        "ability:1yn1a30",
+        "ability:128r0cb",
+        "ability:1kmn3fi",
+        "ability:ejh8lf"
+      ],
+      "missingAttackFamilies": [
+        "attack:1y9jm3q",
+        "attack:lnw169",
+        "attack:wnopps",
+        "attack:100h0sl",
+        "attack:189ri5d",
+        "attack:78rib",
+        "attack:eyjv19"
+      ],
+      "bestCreativeCardId": "me1-56",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Psychic setup",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Machamp",
+      "exactPrintings": 27,
+      "gameplayVariants": 21,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 3,
+      "unsupportedPrintings": 24,
+      "missingAbilityFamilies": [
+        "ability:1h4rguc",
+        "ability:z6pxk0",
+        "ability:1jnstbi",
+        "ability:1wji3qr",
+        "ability:1ynn67p",
+        "ability:2yv3qo",
+        "ability:195uabc",
+        "ability:19ascws",
+        "ability:1irx45g",
+        "ability:kwlzyw",
+        "ability:qnmvno",
+        "ability:uul2xy"
+      ],
+      "missingAttackFamilies": [
+        "attack:1vqk9f1",
+        "attack:14fxf1m",
+        "attack:1obp9ws",
+        "attack:1qilikk",
+        "attack:1rgp25z",
+        "attack:5ym3fr",
+        "attack:jtuton",
+        "attack:1one6c1",
+        "attack:1qhvc8k",
+        "attack:1r298bc",
+        "attack:1rms2lb",
+        "attack:1seqvvi",
+        "attack:1sovxgi",
+        "attack:1vsrtl7",
+        "attack:1vzlnxf",
+        "attack:1yd6b20",
+        "attack:6x5yng",
+        "attack:86667l",
+        "attack:8sp52p",
+        "attack:bf3eq1",
+        "attack:cv6poa",
+        "attack:dd6avy",
+        "attack:hl1qsk",
+        "attack:i6qbpf",
+        "attack:m43lof",
+        "attack:tlgevg",
+        "attack:tr53ek",
+        "attack:vh1st7",
+        "attack:vschkw",
+        "attack:z65ejj"
+      ],
+      "bestCreativeCardId": "base1-8",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Fighting setup",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Dragonite",
+      "exactPrintings": 16,
+      "gameplayVariants": 14,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 1,
+      "unsupportedPrintings": 15,
+      "missingAbilityFamilies": [
+        "ability:18gq6za",
+        "ability:2rp6k2",
+        "ability:16h0vln",
+        "ability:19uz1eb",
+        "ability:1rrjgiw",
+        "ability:dzvldf",
+        "ability:zd8dw7"
+      ],
+      "missingAttackFamilies": [
+        "attack:1nkduws",
+        "attack:w23m4r",
+        "attack:11oci9p",
+        "attack:1291o98",
+        "attack:15sq1hz",
+        "attack:1kc9lyd",
+        "attack:1sz9qm4",
+        "attack:1wibzrr",
+        "attack:1wmmdhi",
+        "attack:1x8tb6n",
+        "attack:4qw3wt",
+        "attack:59ria7",
+        "attack:at5iaf",
+        "attack:d4m2cn",
+        "attack:jqq2qa",
+        "attack:ncr6jx",
+        "attack:tr8zyg"
+      ],
+      "bestCreativeCardId": "swsh12-131",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search",
+        "Stage 2 evolution"
+      ]
+    },
+    {
+      "name": "Gyarados",
+      "exactPrintings": 28,
+      "gameplayVariants": 21,
+      "functionalInheritedPrintings": 0,
+      "safelyGeneratedPrintings": 0,
+      "completePrintings": 0,
+      "partialPrintings": 0,
+      "unsupportedPrintings": 28,
+      "missingAbilityFamilies": [
+        "ability:dua70u",
+        "ability:14n7jlv",
+        "ability:1botlp6",
+        "ability:1wx3eaw"
+      ],
+      "missingAttackFamilies": [
+        "attack:1rh8ajv",
+        "attack:1yk7jl1",
+        "attack:c7oq03",
+        "attack:1291nn5",
+        "attack:1qobfa0",
+        "attack:cqkumm",
+        "attack:rzkbfq",
+        "attack:11qtfo7",
+        "attack:176g0q6",
+        "attack:17is26g",
+        "attack:1bt44xh",
+        "attack:1c5waku",
+        "attack:1crtssm",
+        "attack:1e5g4q",
+        "attack:1fdej4e",
+        "attack:1lj18ua",
+        "attack:1lrbgvi",
+        "attack:1lrowpn",
+        "attack:1luz",
+        "attack:1mkf60g",
+        "attack:1mlv21o",
+        "attack:1msb3kk",
+        "attack:1o0b6ya",
+        "attack:1v8hesa",
+        "attack:1wsyble",
+        "attack:3n5hq0",
+        "attack:7a4v8n",
+        "attack:7qqttu",
+        "attack:dpmhbi",
+        "attack:g3wlos",
+        "attack:iexjcw",
+        "attack:kppxa2"
+      ],
+      "bestCreativeCardId": "sv2-43",
+      "estimatedImplementationEffort": "high",
+      "synergyPackages": [
+        "Generic setup/search"
+      ]
+    }
+  ]
+}

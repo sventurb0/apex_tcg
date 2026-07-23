@@ -34,7 +34,7 @@ function effectChoiceActions(state: GameState, pending: EffectChoice): GameActio
   return actions;
 }
 
-function retreatCost(state: GameState, pokemon: PokemonInPlay): number { const tool = pokemon.tool ? cardFor(state, pokemon.tool) : null; return Math.max(0, topCard(state, pokemon).retreatCost - (tool?.category === "trainer" && tool.effectProgramId === "light-boots" ? 1 : 0)); }
+function retreatCost(state: GameState, pokemon: PokemonInPlay): number { const card = topCard(state, pokemon); if (card.abilities.some((ability) => ability.effectProgramId === "template:ability:free-retreat")) return 0; const tool = pokemon.tool ? cardFor(state, pokemon.tool) : null; return Math.max(0, card.retreatCost - (tool?.category === "trainer" && tool.effectProgramId === "light-boots" ? 1 : 0)); }
 function isBasicEnergy(state: GameState, instanceId: string): boolean { for (const player of Object.values(state.players)) for (const pokemon of pokemonTargets(player)) { const instance = pokemon.attachedEnergy.find((card) => card.instanceId === instanceId); if (instance) { const card = cardFor(state, instance); return card.category === "energy" && card.basic; } } return false; }
 function teamRocketKnockedOutLastOpponentTurn(state: GameState, playerId: PlayerId): boolean { return state.events.some((event) => { const card = event.detail ? state.cardDefinitions[event.detail] : undefined; return event.type === "pokemon-knocked-out" && event.turn === state.turn - 1 && event.targetPlayerId === playerId && event.playerId !== playerId && Boolean(card && hasCardTrait(card, "team-rocket")); }); }
 function playedTeamRocketSupporterThisTurn(state: GameState, playerId: PlayerId): boolean { return state.events.some((event) => { const card = event.sourceCardId ? state.cardDefinitions[event.sourceCardId] : undefined; return event.type === "card-played" && event.turn === state.turn && event.playerId === playerId && card?.category === "trainer" && card.subtype === "supporter" && hasCardTrait(card, "team-rocket"); }); }
@@ -67,6 +67,11 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
       if (card.effectProgramId === "trainer:night-stretcher" && !player.discard.some((candidate) => { const def = cardFor(state, candidate); return def.category === "pokemon" || def.category === "energy" && def.basic; })) continue;
       if (card.effectProgramId === "trainer:energy-switch" && (!pokemonTargets(player).some((pokemon) => pokemon.attachedEnergy.some((energy) => isBasicEnergy(state, energy.instanceId))) || pokemonTargets(player).length < 2)) continue;
       if (card.effectProgramId === "trainer:buddy-buddy-poffin" && player.bench.length >= 5) continue;
+      if (card.effectProgramId.startsWith("template:trainer:search-basic-to-bench:") && player.bench.length >= 5) continue;
+      if (card.effectProgramId.startsWith("template:trainer:heal-selected:") && !pokemonTargets(player).some((pokemon) => pokemon.damage > 0)) continue;
+      if (card.effectProgramId.startsWith("template:trainer:heal-selected-clear:") && !pokemonTargets(player).some((pokemon) => pokemon.damage > 0 || pokemon.specialConditions.length > 0)) continue;
+      if (card.effectProgramId.startsWith("template:trainer:heal-active:") && !(player.active?.damage)) continue;
+      if (card.effectProgramId === "template:trainer:clear-active-conditions:0" && !player.active?.specialConditions.length) continue;
       if (card.effectProgramId === "trainer:earthen-vessel" && player.hand.length < 2) continue;
       if (card.effectProgramId === "trainer:rare-candy" && !legalRareCandyBasics(state, playerId).length) continue;
       if (card.effectProgramId === "trainer:team-rocket-archer" && !teamRocketKnockedOutLastOpponentTurn(state, playerId)) continue;
@@ -87,6 +92,16 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     else if (ability.effectProgramId === "ability:adrena-brain" && source.attachedEnergy.some((energy) => { const def = cardFor(state, energy); return def.category === "energy" && def.energyType === "darkness"; }) && pokemonTargets(player).some((pokemon) => pokemon.damage >= 10) && pokemonTargets(state.players[playerId === "player-one" ? "player-two" : "player-one"]).length) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Adrena-Brain" });
     else if (ability.effectProgramId === "ability:flip-the-script" && state.events.some((event) => event.type === "pokemon-knocked-out" && event.targetPlayerId === playerId && event.turn === state.turn - 1)) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Flip the Script" });
     else if (ability.effectProgramId === "ability:attract-customers" && source === player.active) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Attract Customers" });
+    else if (ability.effectProgramId.startsWith("template:ability:") && ability.category === "activated") {
+      if (ability.effectProgramId === "template:ability:switch-active:0" && !player.bench.length) continue;
+      if (ability.effectProgramId.startsWith("template:ability:discard-one-draw:") && !player.hand.length) continue;
+      if (ability.effectProgramId.startsWith("template:ability:active-heal-selected:") && !pokemonTargets(player).some((pokemon) => pokemon.damage > 0)) continue;
+      if (ability.effectProgramId.startsWith("template:ability:heal-self:") && source.damage <= 0) continue;
+      if (ability.effectProgramId.startsWith("template:ability:heal-active:") && !(player.active?.damage)) continue;
+      if (ability.effectProgramId.startsWith("template:ability:heal-each-own:") && !pokemonTargets(player).some((pokemon) => pokemon.damage > 0)) continue;
+      if (ability.effectProgramId.startsWith("template:ability:search-basic-to-bench:") && player.bench.length >= 5) continue;
+      actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: `Use ${ability.name}` });
+    }
   }
   const stadium = state.stadium ? cardFor(state, state.stadium) : null;
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:team-rocket-factory" && !player.stadiumAbilityUsedThisTurn && playedTeamRocketSupporterThisTurn(state, playerId)) actions.push({ id: actionId("stadium", state.stadium!.instanceId, "factory"), type: "use-stadium", playerId, cardInstanceId: state.stadium!.instanceId, targetId: "factory", description: "Use Team Rocket's Factory: draw 2 cards" });

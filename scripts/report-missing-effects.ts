@@ -1,10 +1,12 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { compileCardImplementation } from "../src/data/pokemon/implementations/effect-compiler";
+import { createCatalogueIndex } from "../src/data/pokemon/catalogue";
 import type { PokemonCardCatalogue } from "../src/data/pokemon/types";
 import type { DeckManifest } from "../src/data/decks/types";
 
 const catalogue = JSON.parse(await readFile(resolve("public/data/pokemon-cards.json"), "utf8")) as PokemonCardCatalogue;
+createCatalogueIndex(catalogue.cards);
 const decks = await Promise.all(["skeledirge-armarouge.json", "okidogi-ex-poison.json", "team-rockets-nidoking.json"].map(async (file) => JSON.parse(await readFile(resolve("src/data/decks/premade", file), "utf8")) as DeckManifest));
 const byId = new Map(catalogue.cards.map((card) => [card.id, card]));
 

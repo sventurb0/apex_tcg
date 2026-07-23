@@ -108,8 +108,6 @@ describe("functional implementation families", () => {
     ["plus damage", "20+", ""], ["minus damage", "50-", ""], ["multiplier damage", "20×", ""],
     ["coin flip", "20", "Flip a coin. If heads, this attack does 20 more damage."],
     ["search", "", "Search your deck for a Pokémon and put it into your hand."],
-    ["draw", "", "Draw 2 cards."], ["healing", "", "Heal 30 damage from this Pokémon."],
-    ["status", "10", "Your opponent's Active Pokémon is now Poisoned."],
     ["Bench damage", "10", "This attack also does 20 damage to 1 of your opponent's Benched Pokémon."],
     ["damage counters", "", "Put 3 damage counters on your opponent's Active Pokémon."],
     ["Energy movement", "", "Move an Energy from this Pokémon to 1 of your Benched Pokémon."],

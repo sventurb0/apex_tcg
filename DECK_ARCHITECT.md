@@ -14,7 +14,7 @@ Safe generation is deliberately narrow. Basic Energy and Pokémon with no Abilit
 
 `npm run abilities:report` generates `public/data/ability-signatures.json`. Signatures use normalized Ability name, type and exact text; same-name Abilities with different text remain distinct. Reviewed handler metadata supplies executable strategic tags. A conservative offline classifier may add `inferredTags` for unsupported cards, but inference never grants runtime support.
 
-No new generic Ability template was enabled in this phase. Existing reviewed handlers were family-indexed instead, adding no speculative match-time interpretation.
+Wave 1 enables strict full-text Ability templates before runtime conversion. Exact executable variants are shown first, functional reprints remain artwork choices, unsupported variants list blocking signature IDs, and low/medium families already in the plan are marked “Implementable soon.” No match-time natural-language interpretation is used.
 
 ## Candidate pipeline
 
@@ -40,22 +40,23 @@ Quick tests run 20 balanced first/second games per premade opponent. The UI also
 
 Candidates can be saved, favourited, duplicated, opened in Deck Builder, exported with Architect metadata, regenerated from the same seed, played against AI or opened in Simulation Lab.
 
-## Phase coverage snapshot
+## Wave 1 coverage snapshot
 
 - Explicit complete exact printings: 63
-- Additional complete functional reprints: 162
-- Total complete exact printings: 225
-- Safely generated exact printings: 1,701
-- Simulation-ready exact printings available to Architect: 1,926
-- Functional behaviour families: 1,343
+- Additional complete functional reprints: 405
+- Reviewed-template complete printings: 671
+- Safely generated exact printings: 1,700
+- Simulation-ready exact printings available to Architect: 2,839
+- Functional behaviour families: 2,014
 - Exact printings containing Abilities: 4,076
 - Distinct Ability signatures: 2,607
-- Executable Ability signatures: 8
-- Unsupported Ability signatures: 2,599
-- Functional Ability reprint exact printings: 17
+- Executable Ability signatures: 55
+- Unsupported Ability signatures: 1,990 (562 more are partial at the containing-card level)
 - Reviewed deck packages: 8
 
 These counts distinguish exact printings from unique functional families. Re-run the reports after catalogue updates rather than treating this snapshot as permanent.
+
+Arcanine `swsh8-33` and Gengar `sv4pt5-57` now produce distinct exact-ID 60-card simulation-ready candidates. Their 300-game deep acceptance batches were deterministic with no unresolved or safety-limit games, but only 13.7% and 13.3% directional win rates respectively; the UI must not present them as competitive lists.
 
 ## Acceptance
 

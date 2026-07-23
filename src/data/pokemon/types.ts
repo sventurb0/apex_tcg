@@ -2,7 +2,7 @@ export type PokemonType = "Grass" | "Fire" | "Water" | "Lightning" | "Psychic" |
 export type CardSupertype = "Pokémon" | "Trainer" | "Energy";
 export type SimulationSupport = "complete" | "generated" | "partial" | "unsupported";
 export type CardImplementationStatus = SimulationSupport;
-export type ImplementationSource = "explicit" | "functional-reprint" | "generated" | "partial" | "unsupported";
+export type ImplementationSource = "explicit" | "functional-reprint" | "reviewed-template" | "generated" | "partial" | "unsupported";
 export type BehaviourFamilyId = string;
 
 export interface PrintedAbility { name: string; text: string; type: string; }
@@ -74,7 +74,7 @@ export interface BehaviourFamily {
   canonicalCardId: string;
   handlerId: string;
   memberCardIds: string[];
-  source: "explicit" | "generated";
+  source: "explicit" | "template" | "generated";
 }
 export interface ImplementationResolver {
   resolve(card: PokemonCardMetadata): CardImplementation;

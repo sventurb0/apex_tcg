@@ -1,5 +1,7 @@
 import type { AbilityDefinition, AttackDamage, AttackDefinition, CardDefinition, CardTrait, CardType, PokemonStage, TrainerSubtype } from "../../../engine/model/cards";
 import { compileCardImplementation } from "./implementations/effect-compiler";
+import { matchWave1Ability } from "./implementations/templates/abilities/wave-1";
+import { matchWave1Attack } from "./implementations/templates/attacks/wave-1";
 import type { CardImplementation, PokemonCardMetadata, PokemonType } from "./types";
 
 const typeMap: Record<PokemonType, CardType> = { Grass: "grass", Fire: "fire", Water: "water", Lightning: "lightning", Psychic: "psychic", Fighting: "fighting", Darkness: "darkness", Metal: "metal", Dragon: "dragon", Colorless: "colorless", Fairy: "fairy" };
@@ -32,6 +34,7 @@ const abilityPrograms: Readonly<Record<string, AbilityDefinition[]>> = {
 };
 
 function implementationHandler(implementation: CardImplementation): string { const handler = implementation.handlers[0]; return handler?.kind === "custom" ? handler.handlerId : handler?.kind === "declarative" ? handler.effectId : ""; }
+function abilitiesFor(card: PokemonCardMetadata, handlerId: string): AbilityDefinition[] { if (handlerId !== "template:pokemon-wave-1") return (abilityPrograms[handlerId] ?? []).map((ability) => ({ ...ability, id: `${card.id}-${ability.id}` })); return (card.abilities ?? []).flatMap((ability, index) => { const match = matchWave1Ability(ability); if (!match) return []; return [{ id: `${card.id}-ability-${index}`, name: ability.name, text: ability.text, category: "activated" as const, usageLimit: match.usageLimit ?? "once-per-turn-per-pokemon" as const, effectProgramId: match.programId, targeting: { sourceMayBeActive: !match.sourceBenchedOnly, sourceMayBeBenched: !match.sourceActiveOnly } }]; }); }
 function traitsFor(metadata: PokemonCardMetadata, handlerId: string): CardTrait[] { const traits: CardTrait[] = []; if (/^(pokemon|trainer|stadium|energy):team-rocket/.test(handlerId)) traits.push("team-rocket"); if (metadata.subtypes.some((subtype) => /^ex$|^Pokémon ex$/i.test(subtype))) traits.push("pokemon-ex"); if (metadata.subtypes.includes("Radiant")) traits.push("radiant"); if (metadata.subtypes.some((subtype) => /ACE SPEC/i.test(subtype)) || metadata.rules?.some((rule) => /ACE SPEC/i.test(rule))) traits.push("ace-spec"); return traits; }
 
 function damageFor(handlerId: string, name: string, printed: string): AttackDamage | null {
@@ -51,7 +54,8 @@ function damageFor(handlerId: string, name: string, printed: string): AttackDama
 function attacks(card: PokemonCardMetadata, handlerId: string): AttackDefinition[] | null {
   const mapped: Array<AttackDefinition | null> = (card.attacks ?? []).map((attack, index) => {
     const damage = damageFor(handlerId, attack.name, attack.damage);
-    return damage ? { id: `${card.id}-attack-${index}`, name: attack.name, cost: attack.cost.reduce<Partial<Record<CardType, number>>>((cost, type) => { if (type === "Free") return cost; const key = typeMap[type]; cost[key] = (cost[key] ?? 0) + 1; return cost; }, {}), damage, ...(attack.text ? { text: attack.text } : {}), ...(attackPrograms[handlerId]?.[attack.name] ? { effectProgramId: attackPrograms[handlerId]![attack.name] } : {}) } : null;
+    const templateProgram = handlerId === "template:pokemon-wave-1" ? matchWave1Attack(attack)?.programId : undefined; const effectProgramId = attackPrograms[handlerId]?.[attack.name] ?? templateProgram;
+    return damage ? { id: `${card.id}-attack-${index}`, name: attack.name, cost: attack.cost.reduce<Partial<Record<CardType, number>>>((cost, type) => { if (type === "Free") return cost; const key = typeMap[type]; cost[key] = (cost[key] ?? 0) + 1; return cost; }, {}), damage, ...(attack.text ? { text: attack.text } : {}), ...(effectProgramId ? { effectProgramId } : {}) } : null;
   });
   return mapped.every((attack): attack is AttackDefinition => Boolean(attack)) ? mapped : null;
 }
@@ -76,7 +80,7 @@ export function toRuntimeCardDefinition(metadata: PokemonCardMetadata): CardDefi
     const prizeValue = metadata.subtypes.some((subtype) => /VMAX/i.test(subtype)) ? 3 : metadata.subtypes.some((subtype) => /ex|EX|VSTAR|Pokémon V/i.test(subtype)) ? 2 : 1;
     const hasRuleBox = metadata.subtypes.some((subtype) => /\b(ex|EX|V|VMAX|VSTAR|Radiant|BREAK|GX)\b/.test(subtype)) || Boolean(metadata.ruleBoxText?.length);
     const isPokemonEx = metadata.subtypes.some((subtype) => /^Pokémon ex$/i.test(subtype) || /^ex$/i.test(subtype));
-    const runtimeAbilities = (abilityPrograms[handlerId] ?? []).map((ability) => ({ ...ability, id: `${metadata.id}-${ability.id}` }));
+    const runtimeAbilities = abilitiesFor(metadata, handlerId);
     return { id: metadata.id, name: metadata.name, category: "pokemon", pokemonType: typeMap[metadata.types[0]], stage, evolvesFrom: metadata.evolvesFrom, hp: metadata.hp, ruleBox: prizeValue > 1 ? "multi-prize" : "single-prize", hasRuleBox, isPokemonEx, prizeValue, traits, abilities: runtimeAbilities, attacks: runtimeAttacks, weakness: metadata.weaknesses?.[0] ? { type: typeMap[metadata.weaknesses[0].type], multiplier } : undefined, resistance: metadata.resistances?.[0] ? { type: typeMap[metadata.resistances[0].type], amount: resistance } : undefined, retreatCost: metadata.retreat, regulationMark: metadata.regulationMark, implementationStatus: implementation.status };
   }
   if (metadata.supertype === "Trainer") {
