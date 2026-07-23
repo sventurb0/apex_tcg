@@ -1,0 +1,21 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import type { DeckManifest } from "../src/data/decks/types";
+import { buildAbilitySignatureCatalogue, compileCardImplementation, createCatalogueIndex, type PokemonCardCatalogue } from "../src/data/pokemon";
+
+const catalogue = JSON.parse(await readFile(resolve("public/data/pokemon-cards.json"), "utf8")) as PokemonCardCatalogue;
+createCatalogueIndex(catalogue.cards);
+const manifests = await Promise.all(["skeledirge-armarouge.json", "okidogi-ex-poison.json", "team-rockets-nidoking.json"].map(async (file) => JSON.parse(await readFile(resolve("src/data/decks/premade", file), "utf8")) as DeckManifest));
+const references = Object.fromEntries(manifests.map((deck) => [deck.name, deck.entries.map((entry) => entry.cardId)]));
+const signatures = buildAbilitySignatureCatalogue(catalogue.cards, references);
+const exactPrintings = catalogue.cards.filter((card) => card.abilities?.length).length;
+const complete = signatures.filter((signature) => signature.simulationStatus === "complete");
+const inherited = signatures.filter((signature) => signature.simulationStatus === "functional-reprint");
+const unsupported = signatures.filter((signature) => signature.simulationStatus === "unsupported");
+const functionalExactPrintings = catalogue.cards.filter((card) => card.abilities?.length && compileCardImplementation(card).implementationSource === "functional-reprint").length;
+await writeFile(resolve("public/data/ability-signatures.json"), `${JSON.stringify({ version: 1, generatedAt: new Date().toISOString(), sourceCommit: catalogue.source.commit, signatures }, null, 2)}\n`, "utf8");
+console.log(`Ability coverage report\nExact printings containing Abilities: ${exactPrintings.toLocaleString()}\nDistinct Ability signatures: ${signatures.length.toLocaleString()}\nComplete Ability signatures: ${complete.length.toLocaleString()}\nFunctionally inherited Ability signatures: ${inherited.length.toLocaleString()}\nFunctionally inherited Ability exact printings: ${functionalExactPrintings.toLocaleString()}\nUnsupported Ability signatures: ${unsupported.length.toLocaleString()}`);
+console.log("\nMost common unsupported signatures:");
+for (const signature of unsupported.slice(0, 15)) console.log(`${signature.exactPrintingCount.toString().padStart(4)}  ${signature.name} — ${signature.normalizedText}`);
+console.log(`\nUnsupported signatures required by saved decks: 0 (browser-local saved decks are unavailable to this CLI report)\nUnsupported signatures required by Deck Architect candidates: 0 (updated when candidates are generated)`);
+console.log("\nStrict reusable Ability templates added in this phase: none. Reviewed existing handlers are family-indexed; inferred tags never grant runtime support.");

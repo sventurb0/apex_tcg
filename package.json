@@ -1,0 +1,44 @@
+{
+  "name": "tcg-decklab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cards:sync": "tsx scripts/sync-card-data.ts",
+    "cards:build": "tsx scripts/build-card-catalogue.ts",
+    "cards:validate": "tsx scripts/validate-card-data.ts",
+    "cards:report": "tsx scripts/report-missing-effects.ts",
+    "abilities:report": "tsx scripts/report-abilities.ts",
+    "acceptance:team-rocket": "tsx scripts/verify-team-rocket-acceptance.ts",
+    "acceptance:deck-architect": "tsx scripts/verify-deck-architect.ts"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/node": "^26.1.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "globals": "latest",
+    "jsdom": "latest",
+    "tsx": "^4.23.1",
+    "typescript-eslint": "latest",
+    "vitest": "latest"
+  }
+}

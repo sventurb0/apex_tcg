@@ -1,0 +1,32 @@
+{
+  "id": "okidogi-ex-poison",
+  "name": "Okidogi ex Poison",
+  "description": "Darkness Poison deck built around Okidogi ex, Pecharunt ex and damage-counter control.",
+  "format": "custom",
+  "source": "premade",
+  "entries": [
+    { "cardId": "sv6pt5-36", "count": 3 },
+    { "cardId": "sv6pt5-39", "count": 2 },
+    { "cardId": "sv6-95", "count": 2 },
+    { "cardId": "sv6pt5-37", "count": 1 },
+    { "cardId": "me2pt5-142", "count": 1 },
+    { "cardId": "svp-129", "count": 1 },
+    { "cardId": "sv6-131", "count": 1 },
+    { "cardId": "sv8pt5-4", "count": 1 },
+    { "cardId": "sv6pt5-59", "count": 4 },
+    { "cardId": "me2pt5-192", "count": 4 },
+    { "cardId": "sv6pt5-57", "count": 4 },
+    { "cardId": "me2pt5-183", "count": 2 },
+    { "cardId": "sv8-170", "count": 1 },
+    { "cardId": "me1-131", "count": 4 },
+    { "cardId": "me3-81", "count": 3 },
+    { "cardId": "zsv10pt5-84", "count": 3 },
+    { "cardId": "me1-115", "count": 2 },
+    { "cardId": "me1-130", "count": 2 },
+    { "cardId": "sv6pt5-61", "count": 2 },
+    { "cardId": "sv5-153", "count": 1 },
+    { "cardId": "sv8pt5-95", "count": 3 },
+    { "cardId": "sv8-177", "count": 2 },
+    { "cardId": "sve-7", "count": 11 }
+  ]
+}

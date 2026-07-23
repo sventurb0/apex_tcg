@@ -1,0 +1,31 @@
+{
+  "id": "team-rockets-nidoking",
+  "name": "Team Rocket's Nidoking ex",
+  "description": "Supplied 60-card Destined Rivals deck resolved to canonical pokemon-tcg-data IDs.",
+  "format": "standard",
+  "source": "premade",
+  "entries": [
+    { "cardId": "sv10-117", "count": 4 },
+    { "cardId": "sv10-118", "count": 3 },
+    { "cardId": "sv10-119", "count": 4 },
+    { "cardId": "sv6pt5-38", "count": 1 },
+    { "cardId": "sv6pt5-39", "count": 1 },
+    { "cardId": "sv6pt5-72", "count": 1 },
+    { "cardId": "sv5-144", "count": 2 },
+    { "cardId": "sv4-163", "count": 2 },
+    { "cardId": "sv1-181", "count": 3 },
+    { "cardId": "sv6pt5-61", "count": 2 },
+    { "cardId": "sv1-191", "count": 3 },
+    { "cardId": "sv2-188", "count": 1 },
+    { "cardId": "sv10-170", "count": 2 },
+    { "cardId": "sv10-171", "count": 3 },
+    { "cardId": "sv10-173", "count": 3 },
+    { "cardId": "sv10-174", "count": 2 },
+    { "cardId": "sv10-176", "count": 2 },
+    { "cardId": "sv10-177", "count": 3 },
+    { "cardId": "sv10-178", "count": 4 },
+    { "cardId": "sv1-196", "count": 4 },
+    { "cardId": "sv10-182", "count": 4 },
+    { "cardId": "sve-7", "count": 6 }
+  ]
+}

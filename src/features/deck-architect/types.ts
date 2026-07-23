@@ -1,0 +1,16 @@
+import type { DeckManifest } from "../../data/decks/types";
+import type { FormatProfile } from "../deck-import/types";
+import type { StrategicTag } from "../../data/pokemon";
+
+export type ArchitectMode = "simulation-ready" | "creative";
+export interface FavouriteSelection { cardId: string; exactPrintingRequired: boolean; }
+export interface ArchitectRequest { favourites: FavouriteSelection[]; format: FormatProfile; mode: ArchitectMode; candidateCount: 3 | 5 | 10; seed: number; }
+export interface SynergyEdge { fromCardId: string; toCardId: string; score: number; reasons: string[]; confidence: "reviewed" | "derived" | "inferred"; }
+export interface CardRoleProfile { cardId: string; evolutionFamily: string[]; stage?: string; hp?: number; types: string[]; ruleBoxCategory: string; attackCosts: number[]; maximumPrintedDamage?: number; abilityTags: StrategicTag[]; attackTags: StrategicTag[]; retreatBurden: number; prizeValue: number; simulationSupport: string; functionalEquivalents: string[]; trainerEnergyRoles: StrategicTag[]; }
+export interface ScoreBreakdown { requiredCards: number; favouriteContribution: number; evolution: number; basics: number; search: number; draw: number; energy: number; attackReadiness: number; benchSpace: number; prizeLiability: number; synergy: number; recovery: number; unsupportedPenalty: number; deadCardPenalty: number; total: number; }
+export interface ArchitectCandidate { id: string; seed: number; variant: string; requiredCardIds: string[]; deck: DeckManifest; simulationReady: boolean; score: ScoreBreakdown; explanations: string[]; synergyEdges: SynergyEdge[]; unsupportedCardIds: string[]; energyExplanation: string; fingerprint: string; quickTest?: CandidateSimulationSummary; }
+export interface CandidateSimulationSummary { games: number; wins: number; losses: number; unresolved: number; winRate: number; byOpponent: Record<string, { games: number; wins: number; losses: number; winRate: number }>; goingFirstWinRate: number; goingSecondWinRate: number; averageTurns: number; averageMulligans: number; setupFailurePercentage: number; mainAttackerReadinessPercentage: number; averageFirstAttackTurn: number | null; averageFirstKnockOutTurn: number | null; energyStarvationPercentage: number; deckOutLosses: number; averagePrizesTaken: number; commonLossReasons: Record<string, number>; cardUsage: Record<string, number>; abilityUsage: Record<string, number>; attackUsage: Record<string, number>; uncertainty: string; }
+export type GauntletPlan = number | { gamesPerOpponent?: number; totalGames?: number };
+export interface ImplementationBacklogItem { cardId: string; behaviourFamilyId?: string; equivalentCardIds: string[]; missingAbilities: string[]; missingAttacks: string[]; missingEffects: string[]; candidatesBlocked: number; strategicImportance: number; }
+export interface ImplementationBacklog { generatedAt: string; items: ImplementationBacklogItem[]; markdown: string; }
+export interface DeckPackage { id: string; name: string; requiredCards: Array<{ cardId: string; count: number }>; optionalCards: Array<{ cardId: string; min: number; max: number }>; compatibleTypes: string[]; compatibleStages: string[]; compatibleTraits: string[]; conflicts: string[]; strategicTags: StrategicTag[]; simulationReady: boolean; explanation: string; }

@@ -1,0 +1,9 @@
+import { createCatalogueIndex, type PokemonCardMetadata } from "../../src/data/pokemon";
+
+export const realCardFixtures: PokemonCardMetadata[] = [
+  { id: "sv1-166", name: "Arven", setId: "sv1", setName: "Scarlet & Violet", setCode: "SVI", collectorNumber: "166", supertype: "Trainer", subtypes: ["Supporter"], retreat: 0, rules: ["Search your deck for an Item card and a Pokémon Tool card, reveal them, and put them into your hand. Then, shuffle your deck.", "You may play only 1 Supporter card during your turn."], trainerText: "Search your deck for an Item card and a Pokémon Tool card, reveal them, and put them into your hand. Then, shuffle your deck. You may play only 1 Supporter card during your turn.", regulationMark: "G", legalities: { standard: "Legal", expanded: "Legal", unlimited: "Legal" } },
+  { id: "sv1-188", name: "Potion", setId: "sv1", setName: "Scarlet & Violet", setCode: "SVI", collectorNumber: "188", supertype: "Trainer", subtypes: ["Item"], retreat: 0, rules: ["Heal 30 damage from 1 of your Pokémon.", "You may play any number of Item cards during your turn."], trainerText: "Heal 30 damage from 1 of your Pokémon. You may play any number of Item cards during your turn.", regulationMark: "G", legalities: { standard: "Legal", expanded: "Legal", unlimited: "Legal" } },
+  { id: "sv1-194", name: "Switch", setId: "sv1", setName: "Scarlet & Violet", setCode: "SVI", collectorNumber: "194", supertype: "Trainer", subtypes: ["Item"], retreat: 0, rules: ["Switch your Active Pokémon with 1 of your Benched Pokémon.", "You may play any number of Item cards during your turn."], trainerText: "Switch your Active Pokémon with 1 of your Benched Pokémon. You may play any number of Item cards during your turn.", regulationMark: "G", legalities: { standard: "Legal", expanded: "Legal", unlimited: "Legal" } },
+];
+
+export const realCardIndex = createCatalogueIndex(realCardFixtures);

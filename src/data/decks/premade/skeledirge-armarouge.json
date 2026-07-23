@@ -1,0 +1,29 @@
+{
+  "id": "skeledirge-armarouge",
+  "name": "Skeledirge ex / Armarouge",
+  "description": "Supplied 60-card Fire deck resolved to canonical pokemon-tcg-data IDs.",
+  "format": "custom",
+  "source": "premade",
+  "entries": [
+    { "cardId": "sv1-41", "count": 2 },
+    { "cardId": "sv4-26", "count": 2 },
+    { "cardId": "sv1-37", "count": 3 },
+    { "cardId": "sv2-35", "count": 4 },
+    { "cardId": "swsh12-16", "count": 1 },
+    { "cardId": "sv2-37", "count": 2 },
+    { "cardId": "swsh12-137", "count": 2 },
+    { "cardId": "swsh12pt5-127", "count": 2 },
+    { "cardId": "swsh5-125", "count": 2 },
+    { "cardId": "swsh35-52", "count": 2 },
+    { "cardId": "sv4pt5-80", "count": 2 },
+    { "cardId": "sv1-175", "count": 2 },
+    { "cardId": "swsh6-145", "count": 2 },
+    { "cardId": "swsh9-144", "count": 4 },
+    { "cardId": "sv4pt5-84", "count": 3 },
+    { "cardId": "sv1-189", "count": 4 },
+    { "cardId": "sv1-194", "count": 2 },
+    { "cardId": "sv4pt5-91", "count": 4 },
+    { "cardId": "sv1-198", "count": 3 },
+    { "cardId": "sve-2", "count": 12 }
+  ]
+}

@@ -1,0 +1,5 @@
+import type { ArchitectCandidate } from "./types";
+
+export function rankCandidates(candidates: readonly ArchitectCandidate[]): ArchitectCandidate[] { return [...candidates].sort((a, b) => { const simulation = (candidate: ArchitectCandidate) => candidate.quickTest ? candidate.quickTest.winRate + candidate.quickTest.mainAttackerReadinessPercentage * .05 - candidate.quickTest.unresolved * 2 - candidate.quickTest.setupFailurePercentage * .15 - candidate.quickTest.energyStarvationPercentage * .05 - candidate.quickTest.deckOutLosses : 0; return (b.score.total + simulation(b)) - (a.score.total + simulation(a)) || a.id.localeCompare(b.id); }); }
+
+export function rankingExplanation(candidate: ArchitectCandidate, next?: ArchitectCandidate): string { if (!next) return "Only candidate in this ranking."; const internal = candidate.score.total - next.score.total; const simulation = (candidate.quickTest?.winRate ?? 0) - (next.quickTest?.winRate ?? 0); return `Ranked higher by ${internal.toFixed(1)} internal-score points and ${simulation.toFixed(1)} quick-test win-rate points, with unresolved games penalized separately.`; }

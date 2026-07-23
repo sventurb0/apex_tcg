@@ -1,0 +1,9 @@
+import { compileCardImplementation, implementationResolver, type CatalogueIndex } from "../../data/pokemon";
+import type { ArchitectCandidate, ImplementationBacklog } from "./types";
+
+export function createImplementationBacklog(candidates: readonly ArchitectCandidate[], index: CatalogueIndex): ImplementationBacklog {
+  const blocked = new Map<string, number>(); for (const candidate of candidates) for (const cardId of candidate.unsupportedCardIds) blocked.set(cardId, (blocked.get(cardId) ?? 0) + 1);
+  const items = [...blocked].map(([cardId, candidatesBlocked]) => { const card = index.byId.get(cardId)!; const implementation = compileCardImplementation(card); return { cardId, behaviourFamilyId: implementation.behaviourFamilyId, equivalentCardIds: implementationResolver()?.equivalentsFor(cardId).map((value) => value.id) ?? [cardId], missingAbilities: card.abilities?.map((ability) => `${ability.name}: ${ability.text}`) ?? [], missingAttacks: card.attacks?.filter((attack) => attack.text || !/^\d*$/.test(attack.damage)).map((attack) => `${attack.name}: ${attack.text || attack.damage}`) ?? [], missingEffects: implementation.knownLimitations, candidatesBlocked, strategicImportance: candidatesBlocked * 10 + (card.supertype === "Pokémon" ? 5 : 0) }; }).sort((a, b) => b.strategicImportance - a.strategicImportance || a.cardId.localeCompare(b.cardId));
+  const markdown = ["# Deck Architect implementation backlog", "", ...items.flatMap((item, index) => [`## ${index + 1}. ${item.cardId}`, `- Behaviour family: ${item.behaviourFamilyId ?? "unresolved"}`, `- Equivalent printings: ${item.equivalentCardIds.join(", ")}`, `- Candidate decks blocked: ${item.candidatesBlocked}`, ...item.missingEffects.map((effect) => `- Missing: ${effect}`), ""])].join("\n");
+  return { generatedAt: new Date().toISOString(), items, markdown };
+}
