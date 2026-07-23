@@ -1,0 +1,724 @@
+{
+  "id": "limitless-28423",
+  "snapshot": {
+    "id": "limitless-28423",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28423",
+    "sourceDeckId": "28423",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 252,
+    "player": "Drew Cate",
+    "format": "standard",
+    "archetype": "Metagross",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Beldum"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Metang"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Genesect ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Articuno"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Kangaskhan ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Shaymin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Regigigas"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Heatran"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Petrel"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Brock's Scouting"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Transceiver"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Energy Recycler"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Precious Trolley"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Gravity Mountain"
+      },
+      {
+        "quantity": 17,
+        "cardName": "Metal Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Beldum",
+        "setCode": "TEF",
+        "collectorNumber": "113"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Metang",
+        "setCode": "TEF",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross",
+        "setCode": "CRI",
+        "collectorNumber": "61"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Genesect ex",
+        "setCode": "BLK",
+        "collectorNumber": "67"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Articuno",
+        "setCode": "DRI",
+        "collectorNumber": "51"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Kangaskhan ex",
+        "setCode": "ASC",
+        "collectorNumber": "162"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Shaymin",
+        "setCode": "DRI",
+        "collectorNumber": "10"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Regigigas",
+        "setCode": "PRE",
+        "collectorNumber": "86"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Heatran",
+        "setCode": "TWM",
+        "collectorNumber": "123"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Petrel",
+        "setCode": "DRI",
+        "collectorNumber": "176"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Brock's Scouting",
+        "setCode": "JTG",
+        "collectorNumber": "146"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Transceiver",
+        "setCode": "DRI",
+        "collectorNumber": "178"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Energy Recycler",
+        "setCode": "DRI",
+        "collectorNumber": "164"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Precious Trolley",
+        "setCode": "SSP",
+        "collectorNumber": "185"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon",
+        "setCode": "ASC",
+        "collectorNumber": "181"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle",
+        "setCode": "WHT",
+        "collectorNumber": "80"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Gravity Mountain",
+        "setCode": "SSP",
+        "collectorNumber": "177"
+      },
+      {
+        "quantity": 17,
+        "cardName": "Metal Energy",
+        "setCode": "MEE",
+        "collectorNumber": "8"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28423",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28423",
+    "name": "Metagross — Drew Cate",
+    "description": "NAIC 2026, New Orleans · place 252. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 2
+      },
+      {
+        "cardId": "me1-131",
+        "count": 2
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-162",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-181",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 1
+      },
+      {
+        "cardId": "me4-61",
+        "count": 2
+      },
+      {
+        "cardId": "me4-82",
+        "count": 1
+      },
+      {
+        "cardId": "rsv10pt5-80",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-10",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-164",
+        "count": 2
+      },
+      {
+        "cardId": "sv10-176",
+        "count": 4
+      },
+      {
+        "cardId": "sv10-178",
+        "count": 4
+      },
+      {
+        "cardId": "sv10-51",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-113",
+        "count": 4
+      },
+      {
+        "cardId": "sv5-114",
+        "count": 4
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-123",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-177",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-185",
+        "count": 1
+      },
+      {
+        "cardId": "sv8pt5-86",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-146",
+        "count": 2
+      },
+      {
+        "cardId": "sve-8",
+        "count": 17
+      },
+      {
+        "cardId": "zsv10pt5-67",
+        "count": 2
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Beldum",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "113",
+      "chosenCardId": "sv5-113",
+      "chosenCardName": "Beldum",
+      "behaviourFamilyId": "behaviour:g2xsli",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Metang",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "sv5-114",
+      "chosenCardName": "Metang",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Metagross",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "61",
+      "chosenCardId": "me4-61",
+      "chosenCardName": "Metagross",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Genesect ex",
+      "sourceSetCode": "BLK",
+      "sourceCollectorNumber": "67",
+      "chosenCardId": "zsv10pt5-67",
+      "chosenCardName": "Genesect ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Articuno",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "51",
+      "chosenCardId": "sv10-51",
+      "chosenCardName": "Team Rocket's Articuno",
+      "behaviourFamilyId": "behaviour:1oae21l",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Kangaskhan ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "162",
+      "chosenCardId": "me2pt5-162",
+      "chosenCardName": "Team Rocket's Kangaskhan ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Shaymin",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "10",
+      "chosenCardId": "sv10-10",
+      "chosenCardName": "Shaymin",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Regigigas",
+      "sourceSetCode": "PRE",
+      "sourceCollectorNumber": "86",
+      "chosenCardId": "sv8pt5-86",
+      "chosenCardName": "Regigigas",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Heatran",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "123",
+      "chosenCardId": "sv6-123",
+      "chosenCardName": "Heatran",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Team Rocket's Petrel",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "176",
+      "chosenCardId": "sv10-176",
+      "chosenCardName": "Team Rocket's Petrel",
+      "behaviourFamilyId": "behaviour:1y6skhb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Brock's Scouting",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "146",
+      "chosenCardId": "sv9-146",
+      "chosenCardName": "Brock's Scouting",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Team Rocket's Transceiver",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "178",
+      "chosenCardId": "sv10-178",
+      "chosenCardName": "Team Rocket's Transceiver",
+      "behaviourFamilyId": "behaviour:1d5q8n3",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Energy Recycler",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "164",
+      "chosenCardId": "sv10-164",
+      "chosenCardName": "Energy Recycler",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Special Red Card",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "82",
+      "chosenCardId": "me4-82",
+      "chosenCardName": "Special Red Card",
+      "behaviourFamilyId": "behaviour:d0rhec",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Precious Trolley",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "185",
+      "chosenCardId": "sv8-185",
+      "chosenCardName": "Precious Trolley",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Air Balloon",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "181",
+      "chosenCardId": "me2pt5-181",
+      "chosenCardName": "Air Balloon",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Brave Bangle",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "80",
+      "chosenCardId": "rsv10pt5-80",
+      "chosenCardName": "Brave Bangle",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Gravity Mountain",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "177",
+      "chosenCardId": "sv8-177",
+      "chosenCardName": "Gravity Mountain",
+      "behaviourFamilyId": "behaviour:1ce4zb5",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 17,
+      "sourceCardName": "Metal Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "8",
+      "chosenCardId": "sve-8",
+      "chosenCardName": "Basic Metal Energy",
+      "behaviourFamilyId": "behaviour:1by1zza",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    }
+  ],
+  "compositionFingerprint": "composition-40gnbc",
+  "sourceSnapshotIds": [
+    "limitless-28423"
+  ],
+  "exactResolvedCopies": 43,
+  "canonicalEquivalentCopies": 17,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 24,
+    "generated": 17,
+    "partial": 5,
+    "unsupported": 14
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2pt5-162",
+    "unimplemented:me2pt5-181",
+    "unimplemented:me4-61",
+    "unimplemented:rsv10pt5-80",
+    "unimplemented:sv10-10",
+    "unimplemented:sv10-164",
+    "unimplemented:sv5-114",
+    "unimplemented:sv6-123",
+    "unimplemented:sv8-185",
+    "unimplemented:sv8pt5-86",
+    "unimplemented:sv9-146",
+    "unimplemented:zsv10pt5-67"
+  ],
+  "blockers": [
+    "4× Metang (sv5-114): partial; no executable behaviour family",
+    "2× Metagross (me4-61): unsupported; no executable behaviour family",
+    "2× Genesect ex (zsv10pt5-67): unsupported; no executable behaviour family",
+    "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
+    "1× Shaymin (sv10-10): partial; no executable behaviour family",
+    "1× Regigigas (sv8pt5-86): unsupported; no executable behaviour family",
+    "1× Heatran (sv6-123): unsupported; no executable behaviour family",
+    "2× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
+    "2× Energy Recycler (sv10-164): unsupported; no executable behaviour family",
+    "1× Precious Trolley (sv8-185): unsupported; no executable behaviour family",
+    "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
+    "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Metal"
+    ],
+    "strategic": [
+      "setup"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

@@ -9,6 +9,7 @@ import { DeckEligibilityPanel } from "../components/board/DeckEligibilityPanel";
 import { SimulationReportView } from "../components/reports/SimulationReportView";
 import { CardImage } from "../components/cards";
 import { premadeDecks, premadeSlots } from "../data/decks/premade";
+import { deckCorpus, tournamentDeckManifests } from "../data/decks/corpus";
 import type { DeckManifest } from "../data/decks/types";
 import { buildCoveragePlan, buildCoverageReport, buildCoverageSignatureIndex, buildFavouriteCoverage, createCatalogueIndex, loadCardCatalogue, toRuntimeCardDefinition, type CatalogueIndex, type CoverageComplexity, type CoverageEffectKind, type PokemonCardCatalogue, type SignatureSupport } from "../data/pokemon";
 import { prefetchDeckCardImages } from "../data/pokemon/image-cache";
@@ -18,8 +19,16 @@ import { deckOptionLabel, resolveDeckLaunchEligibility } from "../features/deck-
 import { deleteDeck, duplicateDeck, loadSavedDecks, SAVED_DECKS_STORAGE_KEY, saveDeck } from "../features/deck-builder/storage";
 import { DeckImportView } from "../features/deck-import/DeckImportView";
 import { DeckArchitect } from "../features/deck-architect/DeckArchitect";
+import { DeckLibrary } from "../features/deck-library";
 
-type View = "home" | "builder" | "architect" | "saved" | "premade" | "play" | "simulation" | "import" | "development";
+type View = "home" | "builder" | "architect" | "library" | "saved" | "premade" | "play" | "simulation" | "import" | "development";
+
+const ROUTES: readonly View[] = ["home", "builder", "architect", "library", "saved", "premade", "play", "simulation", "import", "development"];
+
+function viewFromHash(hash: string): View {
+  const candidate = hash.replace(/^#/, "") as View;
+  return ROUTES.includes(candidate) ? candidate : "home";
+}
 
 function createSimulationWorker(): Worker { return new Worker(new URL("../workers/simulation.worker.ts", import.meta.url), { type: "module" }); }
 function eventTimestamp(): number { return Date.now(); }
@@ -42,7 +51,8 @@ function Home({ navigate }: { navigate: (view: View) => void }) {
     <button onClick={() => navigate("architect")}><span>03</span><strong>Deck Architect</strong><small>Build explainable, validated candidates around favourite Pokémon.</small></button>
     <button onClick={() => navigate("simulation")}><span>04</span><strong>Simulation Lab</strong><small>Run balanced batches through the existing Web Worker engine.</small></button>
     <button onClick={() => navigate("saved")}><span>05</span><strong>Saved Decks</strong><small>Rename, favourite, duplicate, delete and resume local decks.</small></button>
-    <button onClick={() => navigate("premade")}><span>05</span><strong>Premade Decks</strong><small>Start with supplied real lists, then duplicate and modify them.</small></button>
+    <button onClick={() => navigate("library")}><span>06</span><strong>Deck Library</strong><small>Browse personal, premade and source-attributed tournament snapshots with exact blockers.</small></button>
+    <button onClick={() => navigate("premade")}><span>07</span><strong>Premade Decks</strong><small>Start with supplied real lists, then duplicate and modify them.</small></button>
   </section></main>;
 }
 
@@ -58,11 +68,11 @@ function PremadeDecks({ index, onEdit, onChanged }: { index: CatalogueIndex; onE
   return <main><header className="page-heading"><div><p className="eyebrow">EDITABLE STARTING POINTS</p><h1>Premade Decks</h1></div><p>Premades are ordinary exact-ID manifests. Duplicate one to create a personal editable copy.</p></header><DeckTiles decks={premadeDecks} index={index} onEdit={onEdit} onChanged={onChanged} premade /><details className="planned-decks"><summary>Additional premade slots</summary><div>{premadeSlots.map((slot) => <span key={slot.id}>{slot.name} · planned</span>)}</div></details></main>;
 }
 
-export function PlayView({ decks, index, preferredDeckId, onEditDeck, onDevelopment, onGameActiveChange }: { decks: DeckManifest[]; index: CatalogueIndex; preferredDeckId?: string; onEditDeck: (deck: DeckManifest) => void; onDevelopment: () => void; onGameActiveChange: (active: boolean) => void }) {
+export function PlayView({ decks, index, preferredDeckId, preferredOpponentId, onEditDeck, onDevelopment, onGameActiveChange }: { decks: DeckManifest[]; index: CatalogueIndex; preferredDeckId?: string; preferredOpponentId?: string; onEditDeck: (deck: DeckManifest) => void; onDevelopment: () => void; onGameActiveChange: (active: boolean) => void }) {
   const eligibility = useMemo(() => decks.map((deck) => resolveDeckLaunchEligibility(deck, index)), [decks, index]);
   const ready = useMemo(() => eligibility.filter((item) => item.playable).map((item) => item.deck), [eligibility]);
   const [subjectId, setSubjectId] = useState(() => eligibility.find((item) => item.deck.id === preferredDeckId)?.deck.id ?? eligibility.find((item) => item.playable)?.deck.id ?? eligibility[0]?.deck.id ?? "");
-  const [opponentId, setOpponentId] = useState("random"); const [state, setState] = useState<GameState>(); const [error, setError] = useState(""); const [activeMatchup, setActiveMatchup] = useState<[string, string]>();
+  const [opponentId, setOpponentId] = useState(() => eligibility.some((item) => item.playable && item.deck.id === preferredOpponentId) ? preferredOpponentId! : "random"); const [state, setState] = useState<GameState>(); const [error, setError] = useState(""); const [activeMatchup, setActiveMatchup] = useState<[string, string]>();
   const selectedEligibility = eligibility.find((item) => item.deck.id === subjectId);
   function launch(): void {
     const subject = ready.find((deck) => deck.id === subjectId); const opponents = opponentId === "random-no-mirror" ? ready.filter((deck) => deck.id !== subjectId) : ready; const opponent = opponentId.startsWith("random") ? randomChoice(opponents) : ready.find((deck) => deck.id === opponentId);
@@ -128,7 +138,7 @@ function Development({ catalogue, index, decks }: { catalogue: PokemonCardCatalo
 }
 
 export function App() {
-  const [view, setView] = useState<View>(() => (location.hash.slice(1) as View) || "home"); const [catalogue, setCatalogue] = useState<PokemonCardCatalogue>(); const [loadError, setLoadError] = useState(""); const [savedDecks, setSavedDecks] = useState<DeckManifest[]>(() => loadSavedDecks()); const [editorDeck, setEditorDeck] = useState<DeckManifest>(); const [playGameActive, setPlayGameActive] = useState(false);
+  const [view, setView] = useState<View>(() => viewFromHash(location.hash)); const [catalogue, setCatalogue] = useState<PokemonCardCatalogue>(); const [loadError, setLoadError] = useState(""); const [savedDecks, setSavedDecks] = useState<DeckManifest[]>(() => loadSavedDecks()); const [editorDeck, setEditorDeck] = useState<DeckManifest>(); const [architectTemplate, setArchitectTemplate] = useState<DeckManifest>(); const [preferredOpponentId, setPreferredOpponentId] = useState<string>(); const [playGameActive, setPlayGameActive] = useState(false);
   useEffect(() => { void loadCardCatalogue().then(setCatalogue).catch((error: unknown) => setLoadError(error instanceof Error ? error.message : String(error))); }, []);
   useEffect(() => {
     const refreshSavedDecks = () => setSavedDecks(loadSavedDecks());
@@ -136,21 +146,27 @@ export function App() {
     window.addEventListener("tcg-decks-changed", refreshSavedDecks); window.addEventListener("storage", storageChanged);
     return () => { window.removeEventListener("tcg-decks-changed", refreshSavedDecks); window.removeEventListener("storage", storageChanged); };
   }, []);
-  const index = useMemo(() => catalogue ? createCatalogueIndex(catalogue.cards) : undefined, [catalogue]); const allDecks = useMemo(() => [...new Map([...premadeDecks, ...savedDecks, ...(editorDeck ? [editorDeck] : [])].map((deck) => [deck.id, deck])).values()], [savedDecks, editorDeck]);
+  useEffect(() => {
+    const onHashChange = () => setView(viewFromHash(location.hash));
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+  const index = useMemo(() => catalogue ? createCatalogueIndex(catalogue.cards) : undefined, [catalogue]); const allDecks = useMemo(() => [...new Map([...premadeDecks, ...tournamentDeckManifests, ...savedDecks, ...(editorDeck ? [editorDeck] : [])].map((deck) => [deck.id, deck])).values()], [savedDecks, editorDeck]);
   const refresh = () => setSavedDecks(loadSavedDecks()); const navigate = (next: View) => { location.hash = next; setView(next); };
   const edit = (deck: DeckManifest) => { setEditorDeck(structuredClone(deck)); navigate("builder"); };
   if (loadError) return <main className="blocked-mode"><h1>Catalogue unavailable</h1><p>{loadError}</p><code>npm run cards:sync &amp;&amp; npm run cards:build</code></main>;
   if (!catalogue || !index) return <main className="loading"><p className="eyebrow">LOADING LOCAL DATA</p><h1>Opening the card catalogue…</h1></main>;
   let content;
   if (view === "builder") content = <DeckBuilder key={editorDeck?.id ?? "new-deck"} catalogue={catalogue} index={index} initialDeck={editorDeck} onSaved={refresh} onPlay={(deck) => { setEditorDeck(deck); navigate("play"); }} onSimulate={(deck) => { setEditorDeck(deck); navigate("simulation"); }} />;
-  else if (view === "architect") content = <DeckArchitect catalogue={catalogue} index={index} opponents={premadeDecks} onSaved={refresh} onEdit={edit} onPlay={(deck) => { setEditorDeck(deck); navigate("play"); }} onSimulate={(deck) => { setEditorDeck(deck); navigate("simulation"); }} />;
+  else if (view === "architect") content = <DeckArchitect catalogue={catalogue} index={index} opponents={[...premadeDecks, ...tournamentDeckManifests]} templateDeck={architectTemplate} onSaved={refresh} onEdit={edit} onPlay={(deck) => { setEditorDeck(deck); navigate("play"); }} onSimulate={(deck) => { setEditorDeck(deck); navigate("simulation"); }} />;
+  else if (view === "library") content = <DeckLibrary corpus={deckCorpus} personalDecks={savedDecks} premadeDecks={premadeDecks} index={index} onEdit={edit} onDuplicate={(deck) => edit(duplicateDeck(deck))} onPlay={(deck) => { setEditorDeck(deck); setPreferredOpponentId(undefined); navigate("play"); }} onSelectOpponent={(deck) => { setPreferredOpponentId(deck.id); navigate("play"); }} onSimulate={(deck) => { setEditorDeck(deck); navigate("simulation"); }} onArchitectTemplate={(deck) => { setArchitectTemplate(deck); navigate("architect"); }} />;
   else if (view === "saved") content = <SavedDecks decks={savedDecks} index={index} onEdit={edit} onChanged={refresh} />;
   else if (view === "premade") content = <PremadeDecks index={index} onEdit={edit} onChanged={refresh} />;
-  else if (view === "play") content = <PlayView decks={allDecks} index={index} preferredDeckId={editorDeck?.id} onEditDeck={edit} onDevelopment={() => navigate("development")} onGameActiveChange={setPlayGameActive} />;
+  else if (view === "play") content = <PlayView decks={allDecks} index={index} preferredDeckId={editorDeck?.id} preferredOpponentId={preferredOpponentId} onEditDeck={edit} onDevelopment={() => navigate("development")} onGameActiveChange={setPlayGameActive} />;
   else if (view === "simulation") content = <SimulationLab decks={allDecks} index={index} preferredDeckId={editorDeck?.id} onEditDeck={edit} onDevelopment={() => navigate("development")} />;
   else if (view === "import") content = <DeckImportView index={index} onSaved={refresh} onEdit={edit} />;
   else if (view === "development") content = <Development catalogue={catalogue} index={index} decks={allDecks} />;
   else content = <Home navigate={navigate} />;
-  const navigation: [View, string][] = [["home","Home"],["builder","Deck Builder"],["architect","Deck Architect"],["play","Play"],["simulation","Simulation Lab"],["saved","Saved Decks"],["premade","Premade"],["import","Import"],["development","Development"]];
+  const navigation: [View, string][] = [["home","Home"],["builder","Deck Builder"],["architect","Deck Architect"],["library","Deck Library"],["play","Play"],["simulation","Simulation Lab"],["saved","Saved Decks"],["premade","Premade"],["import","Import"],["development","Development"]];
   return <div className={`app-shell ${playGameActive ? "game-active" : ""}`}><nav className="top-nav"><button className="brand" onClick={() => navigate("home")}><span>DL</span><b>Pokémon TCG DeckLab</b></button><div>{navigation.map(([id,label]) => <button className={view === id ? "active" : ""} onClick={() => navigate(id)} key={id}>{label}</button>)}</div></nav>{content}{!playGameActive && <footer><span>{catalogue.cards.length.toLocaleString()} local text-only card records</span><span>Deck construction always available · Exact simulation at launch</span></footer>}</div>;
 }

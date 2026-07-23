@@ -1,0 +1,778 @@
+{
+  "id": "limitless-28371",
+  "snapshot": {
+    "id": "limitless-28371",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28371",
+    "sourceDeckId": "28371",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 164,
+    "player": "Leighton Catton",
+    "format": "standard",
+    "archetype": "Festival Lead",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Grookey"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Thwackey"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Rillaboom"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Applin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Applin"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dipplin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Petilil"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lilligant"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Goldeen"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Seaking"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Shaymin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kieran"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dawn"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Drayton"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Brave Bangle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Festival Grounds"
+      },
+      {
+        "quantity": 5,
+        "cardName": "Grass Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Grookey",
+        "setCode": "TWM",
+        "collectorNumber": "14"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Thwackey",
+        "setCode": "TWM",
+        "collectorNumber": "15"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Rillaboom",
+        "setCode": "TWM",
+        "collectorNumber": "16"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Applin",
+        "setCode": "TWM",
+        "collectorNumber": "17"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Applin",
+        "setCode": "TWM",
+        "collectorNumber": "126"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dipplin",
+        "setCode": "TWM",
+        "collectorNumber": "18"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Petilil",
+        "setCode": "BLK",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lilligant",
+        "setCode": "JTG",
+        "collectorNumber": "7"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Goldeen",
+        "setCode": "TWM",
+        "collectorNumber": "44"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Seaking",
+        "setCode": "PRE",
+        "collectorNumber": "21"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Shaymin",
+        "setCode": "DRI",
+        "collectorNumber": "10"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck",
+        "setCode": "ASC",
+        "collectorNumber": "39"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kieran",
+        "setCode": "TWM",
+        "collectorNumber": "154"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid",
+        "setCode": "TWM",
+        "collectorNumber": "155"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dawn",
+        "setCode": "PFL",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Drayton",
+        "setCode": "SSP",
+        "collectorNumber": "174"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set",
+        "setCode": "TWM",
+        "collectorNumber": "143"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box",
+        "setCode": "TWM",
+        "collectorNumber": "163"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Brave Bangle",
+        "setCode": "WHT",
+        "collectorNumber": "80"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon",
+        "setCode": "ASC",
+        "collectorNumber": "181"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Festival Grounds",
+        "setCode": "TWM",
+        "collectorNumber": "149"
+      },
+      {
+        "quantity": 5,
+        "cardName": "Grass Energy",
+        "setCode": "MEE",
+        "collectorNumber": "1"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28371",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28371",
+    "name": "Festival Lead — Leighton Catton",
+    "description": "NAIC 2026, New Orleans · place 164. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 2
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me2-87",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-181",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me2pt5-39",
+        "count": 1
+      },
+      {
+        "cardId": "me3-81",
+        "count": 4
+      },
+      {
+        "cardId": "rsv10pt5-80",
+        "count": 2
+      },
+      {
+        "cardId": "sv10-10",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-126",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-14",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-143",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-149",
+        "count": 3
+      },
+      {
+        "cardId": "sv6-15",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-154",
+        "count": 2
+      },
+      {
+        "cardId": "sv6-155",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-16",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-163",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-17",
+        "count": 3
+      },
+      {
+        "cardId": "sv6-18",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-44",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-174",
+        "count": 1
+      },
+      {
+        "cardId": "sv8pt5-21",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-7",
+        "count": 1
+      },
+      {
+        "cardId": "sve-1",
+        "count": 5
+      },
+      {
+        "cardId": "zsv10pt5-6",
+        "count": 1
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Grookey",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "14",
+      "chosenCardId": "sv6-14",
+      "chosenCardName": "Grookey",
+      "behaviourFamilyId": "behaviour:pne4wd",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Thwackey",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "15",
+      "chosenCardId": "sv6-15",
+      "chosenCardName": "Thwackey",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Rillaboom",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "16",
+      "chosenCardId": "sv6-16",
+      "chosenCardName": "Rillaboom",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Applin",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "17",
+      "chosenCardId": "sv6-17",
+      "chosenCardName": "Applin",
+      "behaviourFamilyId": "behaviour:k7i5kl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Applin",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "126",
+      "chosenCardId": "sv6-126",
+      "chosenCardName": "Applin",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Dipplin",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "18",
+      "chosenCardId": "sv6-18",
+      "chosenCardName": "Dipplin",
+      "behaviourFamilyId": "behaviour:1tjwbq4",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Petilil",
+      "sourceSetCode": "BLK",
+      "sourceCollectorNumber": "6",
+      "chosenCardId": "zsv10pt5-6",
+      "chosenCardName": "Petilil",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lilligant",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "7",
+      "chosenCardId": "sv9-7",
+      "chosenCardName": "Lilligant",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Goldeen",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "44",
+      "chosenCardId": "sv6-44",
+      "chosenCardName": "Goldeen",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Seaking",
+      "sourceSetCode": "PRE",
+      "sourceCollectorNumber": "21",
+      "chosenCardId": "sv8pt5-21",
+      "chosenCardName": "Seaking",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Shaymin",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "10",
+      "chosenCardId": "sv10-10",
+      "chosenCardName": "Shaymin",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Psyduck",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "39",
+      "chosenCardId": "me2pt5-39",
+      "chosenCardName": "Psyduck",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Kieran",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "154",
+      "chosenCardId": "sv6-154",
+      "chosenCardName": "Kieran",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lana's Aid",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "155",
+      "chosenCardId": "sv6-155",
+      "chosenCardName": "Lana's Aid",
+      "behaviourFamilyId": "behaviour:18ge007",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Dawn",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "87",
+      "chosenCardId": "me2-87",
+      "chosenCardName": "Dawn",
+      "behaviourFamilyId": "behaviour:1rrmnxo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Drayton",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "174",
+      "chosenCardId": "sv8-174",
+      "chosenCardName": "Drayton",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Bug Catching Set",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "143",
+      "chosenCardId": "sv6-143",
+      "chosenCardName": "Bug Catching Set",
+      "behaviourFamilyId": "behaviour:kb24ay",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Secret Box",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "163",
+      "chosenCardId": "sv6-163",
+      "chosenCardName": "Secret Box",
+      "behaviourFamilyId": "behaviour:joc66k",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Brave Bangle",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "80",
+      "chosenCardId": "rsv10pt5-80",
+      "chosenCardName": "Brave Bangle",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Air Balloon",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "181",
+      "chosenCardId": "me2pt5-181",
+      "chosenCardName": "Air Balloon",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Festival Grounds",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "149",
+      "chosenCardId": "sv6-149",
+      "chosenCardName": "Festival Grounds",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 5,
+      "sourceCardName": "Grass Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "1",
+      "chosenCardId": "sve-1",
+      "chosenCardName": "Basic Grass Energy",
+      "behaviourFamilyId": "behaviour:1m1dfed",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    }
+  ],
+  "compositionFingerprint": "composition-1gv3p98",
+  "sourceSnapshotIds": [
+    "limitless-28371"
+  ],
+  "exactResolvedCopies": 55,
+  "canonicalEquivalentCopies": 5,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 30,
+    "generated": 9,
+    "partial": 7,
+    "unsupported": 14
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2pt5-181",
+    "unimplemented:me2pt5-39",
+    "unimplemented:rsv10pt5-80",
+    "unimplemented:sv10-10",
+    "unimplemented:sv6-126",
+    "unimplemented:sv6-149",
+    "unimplemented:sv6-15",
+    "unimplemented:sv6-154",
+    "unimplemented:sv6-16",
+    "unimplemented:sv6-44",
+    "unimplemented:sv8-174",
+    "unimplemented:sv8pt5-21",
+    "unimplemented:sv9-7",
+    "unimplemented:zsv10pt5-6"
+  ],
+  "blockers": [
+    "4× Thwackey (sv6-15): partial; no executable behaviour family",
+    "1× Rillaboom (sv6-16): unsupported; no executable behaviour family",
+    "1× Applin (sv6-126): unsupported; no executable behaviour family",
+    "1× Petilil (zsv10pt5-6): unsupported; no executable behaviour family",
+    "1× Lilligant (sv9-7): partial; no executable behaviour family",
+    "1× Goldeen (sv6-44): unsupported; no executable behaviour family",
+    "1× Seaking (sv8pt5-21): unsupported; no executable behaviour family",
+    "1× Shaymin (sv10-10): partial; no executable behaviour family",
+    "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
+    "2× Kieran (sv6-154): unsupported; no executable behaviour family",
+    "1× Drayton (sv8-174): unsupported; no executable behaviour family",
+    "2× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
+    "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
+    "3× Festival Grounds (sv6-149): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Grass"
+    ],
+    "strategic": [
+      "setup"
+    ],
+    "prizeProfile": "single-prize"
+  }
+}

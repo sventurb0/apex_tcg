@@ -1,0 +1,663 @@
+{
+  "id": "limitless-28261",
+  "snapshot": {
+    "id": "limitless-28261",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28261",
+    "sourceDeckId": "28261",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 16,
+    "player": "Leonardo Lattanzi",
+    "format": "standard",
+    "archetype": "Dragapult",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Dreepy"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Drakloak"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dragapult ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Munkidori"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Budew"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Moltres"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crispin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Judge"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Crushing Hammer"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Team Rocket's Watchtower"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Fire Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Darkness Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Dreepy",
+        "setCode": "TWM",
+        "collectorNumber": "128"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Drakloak",
+        "setCode": "TWM",
+        "collectorNumber": "129"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dragapult ex",
+        "setCode": "TWM",
+        "collectorNumber": "130"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Munkidori",
+        "setCode": "TWM",
+        "collectorNumber": "95"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Budew",
+        "setCode": "ASC",
+        "collectorNumber": "16"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Moltres",
+        "setCode": "PFL",
+        "collectorNumber": "14"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crispin",
+        "setCode": "SCR",
+        "collectorNumber": "133"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Judge",
+        "setCode": "POR",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Crushing Hammer",
+        "setCode": "POR",
+        "collectorNumber": "71"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp",
+        "setCode": "TWM",
+        "collectorNumber": "165"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Team Rocket's Watchtower",
+        "setCode": "DRI",
+        "collectorNumber": "180"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Fire Energy",
+        "setCode": "MEE",
+        "collectorNumber": "2"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Darkness Energy",
+        "setCode": "MEE",
+        "collectorNumber": "7"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28261",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28261",
+    "name": "Dragapult — Leonardo Lattanzi",
+    "description": "NAIC 2026, New Orleans · place 16. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 3
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-131",
+        "count": 4
+      },
+      {
+        "cardId": "me2-14",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-16",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 1
+      },
+      {
+        "cardId": "me3-71",
+        "count": 4
+      },
+      {
+        "cardId": "me3-76",
+        "count": 1
+      },
+      {
+        "cardId": "me3-81",
+        "count": 4
+      },
+      {
+        "cardId": "me4-82",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-180",
+        "count": 3
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-128",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-129",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-130",
+        "count": 3
+      },
+      {
+        "cardId": "sv6-165",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-95",
+        "count": 2
+      },
+      {
+        "cardId": "sv7-133",
+        "count": 3
+      },
+      {
+        "cardId": "sve-2",
+        "count": 4
+      },
+      {
+        "cardId": "sve-5",
+        "count": 3
+      },
+      {
+        "cardId": "sve-7",
+        "count": 2
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Dreepy",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "128",
+      "chosenCardId": "sv6-128",
+      "chosenCardName": "Dreepy",
+      "behaviourFamilyId": "behaviour:eg7ev1",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Drakloak",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "129",
+      "chosenCardId": "sv6-129",
+      "chosenCardName": "Drakloak",
+      "behaviourFamilyId": "behaviour:1w4372w",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Dragapult ex",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "130",
+      "chosenCardId": "sv6-130",
+      "chosenCardName": "Dragapult ex",
+      "behaviourFamilyId": "behaviour:1s1xvwg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Munkidori",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "95",
+      "chosenCardId": "sv6-95",
+      "chosenCardName": "Munkidori",
+      "behaviourFamilyId": "behaviour:r4vlqt",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Budew",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "16",
+      "chosenCardId": "me2pt5-16",
+      "chosenCardName": "Budew",
+      "behaviourFamilyId": "behaviour:6ly2t",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Moltres",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "14",
+      "chosenCardId": "me2-14",
+      "chosenCardName": "Moltres",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Crispin",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "133",
+      "chosenCardId": "sv7-133",
+      "chosenCardName": "Crispin",
+      "behaviourFamilyId": "behaviour:w6blt3",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Judge",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "76",
+      "chosenCardId": "me3-76",
+      "chosenCardName": "Judge",
+      "behaviourFamilyId": "behaviour:1w5ieli",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Crushing Hammer",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "71",
+      "chosenCardId": "me3-71",
+      "chosenCardName": "Crushing Hammer",
+      "behaviourFamilyId": "behaviour:hv5cyp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Special Red Card",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "82",
+      "chosenCardId": "me4-82",
+      "chosenCardName": "Special Red Card",
+      "behaviourFamilyId": "behaviour:d0rhec",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Unfair Stamp",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "165",
+      "chosenCardId": "sv6-165",
+      "chosenCardName": "Unfair Stamp",
+      "behaviourFamilyId": "behaviour:k8b3mo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Team Rocket's Watchtower",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "180",
+      "chosenCardId": "sv10-180",
+      "chosenCardName": "Team Rocket's Watchtower",
+      "behaviourFamilyId": "behaviour:v67j3c",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Fire Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "2",
+      "chosenCardId": "sve-2",
+      "chosenCardName": "Basic Fire Energy",
+      "behaviourFamilyId": "behaviour:vulig9",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Psychic Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "5",
+      "chosenCardId": "sve-5",
+      "chosenCardName": "Basic Psychic Energy",
+      "behaviourFamilyId": "behaviour:1b5iiem",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Darkness Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "7",
+      "chosenCardId": "sve-7",
+      "chosenCardName": "Basic Darkness Energy",
+      "behaviourFamilyId": "behaviour:1v6yusw",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "complete"
+    }
+  ],
+  "compositionFingerprint": "composition-udaevy",
+  "sourceSnapshotIds": [
+    "limitless-28261"
+  ],
+  "exactResolvedCopies": 51,
+  "canonicalEquivalentCopies": 9,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 52,
+    "generated": 7,
+    "partial": 0,
+    "unsupported": 1
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2-14"
+  ],
+  "blockers": [
+    "1× Moltres (me2-14): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Darkness",
+      "Fire",
+      "Psychic"
+    ],
+    "strategic": [
+      "setup"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

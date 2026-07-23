@@ -1,0 +1,300 @@
+{
+  "snapshot": {
+    "id": "limitless-28571",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28571",
+    "sourceDeckId": "28571",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 471,
+    "player": "Darien Krys",
+    "format": "standard",
+    "archetype": "Mega Greninja",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Froakie"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Frogadier"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Greninja ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Mega Greninja ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dunsparce"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dudunsparce ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Budew"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Hilda"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 1,
+        "cardName": "AZ's Tranquility"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Rare Candy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Energy Retrieval"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Surfing Beach"
+      },
+      {
+        "quantity": 7,
+        "cardName": "Water Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ignition Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Neo Upper Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Froakie",
+        "setCode": "CRI",
+        "collectorNumber": "20"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Frogadier",
+        "setCode": "CRI",
+        "collectorNumber": "21"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Greninja ex",
+        "setCode": "TWM",
+        "collectorNumber": "106"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Mega Greninja ex",
+        "setCode": "CRI",
+        "collectorNumber": "22"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dunsparce",
+        "setCode": "JTG",
+        "collectorNumber": "120"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce",
+        "setCode": "TEF",
+        "collectorNumber": "129"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dudunsparce ex",
+        "setCode": "JTG",
+        "collectorNumber": "121"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Budew",
+        "setCode": "ASC",
+        "collectorNumber": "16"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck",
+        "setCode": "ASC",
+        "collectorNumber": "39"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Hilda",
+        "setCode": "WHT",
+        "collectorNumber": "84"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "AZ's Tranquility",
+        "setCode": "CRI",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Rare Candy",
+        "setCode": "MEG",
+        "collectorNumber": "125"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Energy Retrieval",
+        "setCode": "SVI",
+        "collectorNumber": "171"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon",
+        "setCode": "ASC",
+        "collectorNumber": "181"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Surfing Beach",
+        "setCode": "MEG",
+        "collectorNumber": "129"
+      },
+      {
+        "quantity": 7,
+        "cardName": "Water Energy",
+        "setCode": "MEE",
+        "collectorNumber": "3"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ignition Energy",
+        "setCode": "WHT",
+        "collectorNumber": "86"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Neo Upper Energy",
+        "setCode": "TEF",
+        "collectorNumber": "162"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28571",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "diagnostics": {
+    "title": "Mega Greninja by Darien Krys – Limitless",
+    "description": "Mega Greninja decklist by Darien Krys - 471st Place NAIC 2026, New Orleans - 10th June 2026",
+    "cardBlockCount": 27,
+    "totalCards": 60
+  },
+  "semanticHtmlFixture": "<!doctype html><html><head>\n<title>Mega Greninja by Darien Krys – Limitless</title>\n<meta name=\"description\" content=\"Mega Greninja decklist by Darien Krys - 471st Place NAIC 2026, New Orleans - 10th June 2026\">\n</head><body>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"20\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/20\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Froakie</span>\n                 <img class=\"set\" alt=\"CRI\" src=\"https://s3.limitlesstcg.com/sets/en/CRI_SM.png\" data-tooltip=\"Chaos Rising\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693488%2Fpokemon-me04-chaos-rising-froakie-020-086\" target=\"_blank\">$0.64</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Froakie-V1-CRI020?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.12€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"21\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/21\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Frogadier</span>\n                 <img class=\"set\" alt=\"CRI\" src=\"https://s3.limitlesstcg.com/sets/en/CRI_SM.png\" data-tooltip=\"Chaos Rising\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693490%2Fpokemon-me04-chaos-rising-frogadier-021-086\" target=\"_blank\">$0.60</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Frogadier-V1-CRI021?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.12€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"106\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/106\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Greninja ex</span>\n                 <img class=\"set\" alt=\"TWM\" src=\"https://s3.limitlesstcg.com/sets/en/TWM_SM.png\" data-tooltip=\"Twilight Masquerade\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550150%2Fpokemon-sv06-twilight-masquerade-greninja-ex-106-167\" target=\"_blank\">$7.20</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Greninja-ex-V1-TWM106?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">8.72€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"22\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/22\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Mega Greninja ex</span>\n                 <img class=\"set\" alt=\"CRI\" src=\"https://s3.limitlesstcg.com/sets/en/CRI_SM.png\" data-tooltip=\"Chaos Rising\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693515%2Fpokemon-me04-chaos-rising-mega-greninja-ex-022-086\" target=\"_blank\">$1.84</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Mega-Greninja-ex-V1-CRI022?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">2.58€</a>         </div>\n<div class=\"decklist-card\" data-set=\"JTG\" data-number=\"120\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/JTG/120\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Dunsparce</span>\n                 <img class=\"set\" alt=\"JTG\" src=\"https://s3.limitlesstcg.com/sets/en/JTG_SM.png\" data-tooltip=\"Journey Together\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F623547%2Fpokemon-sv09-journey-together-dunsparce\" target=\"_blank\">$4.66</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Journey-Together/Dunsparce-JTG120?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">3.76€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TEF\" data-number=\"129\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TEF/129\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Dudunsparce</span>\n                 <img class=\"set\" alt=\"TEF\" src=\"https://s3.limitlesstcg.com/sets/en/TEF_SM.png\" data-tooltip=\"Temporal Forces\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F542873%2Fpokemon-sv05-temporal-forces-dudunsparce\" target=\"_blank\">$1.64</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Dudunsparce-TEF129?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.84€</a>         </div>\n<div class=\"decklist-card\" data-set=\"JTG\" data-number=\"121\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/JTG/121\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Dudunsparce ex</span>\n                 <img class=\"set\" alt=\"JTG\" src=\"https://s3.limitlesstcg.com/sets/en/JTG_SM.png\" data-tooltip=\"Journey Together\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F623548%2Fpokemon-sv09-journey-together-dudunsparce-ex-121-159\" target=\"_blank\">$0.75</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Journey-Together/Dudunsparce-ex-V1-JTG121?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.79€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"62\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/62\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Meowth ex</span>\n                 <img class=\"set\" alt=\"POR\" src=\"https://s3.limitlesstcg.com/sets/en/POR_SM.png\" data-tooltip=\"Perfect Order\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684340%2Fpokemon-me03-perfect-order-meowth-ex-062-088\" target=\"_blank\">$2.29</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V1-POR062?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">4.09€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"142\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/142\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Fezandipiti ex</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675954%2Fpokemon-me-ascended-heroes-fezandipiti-ex-142-217\" target=\"_blank\">$3.36</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Fezandipiti-ex-V1-ASC142?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">3.37€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"16\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/16\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Budew</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675828%2Fpokemon-me-ascended-heroes-budew-016-217\" target=\"_blank\">$0.23</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Budew-V1-ASC016?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.06€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"39\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/39\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Psyduck</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675851%2Fpokemon-me-ascended-heroes-psyduck-039-217\" target=\"_blank\">$0.22</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Psyduck-V1-ASC039?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.07€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"119\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/119\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Lillie's Determination</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654458%2Fpokemon-me01-mega-evolution-lillies-determination-119-132\" target=\"_blank\">$1.16</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Lillies-Determination-V1-MEG119?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.76€</a>         </div>\n<div class=\"decklist-card\" data-set=\"WHT\" data-number=\"84\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/WHT/84\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Hilda</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F642200%2Fpokemon-sv-white-flare-hilda\" target=\"_blank\">$3.27</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/White-Flare/Hilda-V1-WHT084?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">2.19€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"114\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/114\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Boss's Orders</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654453%2Fpokemon-me01-mega-evolution-bosss-orders-ghetsis\" target=\"_blank\">$0.58</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Bosss-Orders-Ghetsis-MEG114?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.48€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"76\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/76\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">AZ's Tranquility</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693449%2Fpokemon-me04-chaos-rising-azs-tranquility-076-086\" target=\"_blank\">$0.17</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/AZs-Tranquility-V1-CRI076?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.04€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"81\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/81\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Poké Pad</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684332%2Fpokemon-me03-perfect-order-poke-pad-081-088\" target=\"_blank\">$1.12</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Poke-Pad-V1-POR081?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.56€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TEF\" data-number=\"144\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TEF/144\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Buddy-Buddy Poffin</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F542659%2Fpokemon-sv05-temporal-forces-buddy-buddy-poffin\" target=\"_blank\">$0.92</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Buddy-Buddy-Poffin-TEF144?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.56€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"131\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/131\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Ultra Ball</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654470%2Fpokemon-me01-mega-evolution-ultra-ball\" target=\"_blank\">$0.66</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Ultra-Ball-MEG131?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.36€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"125\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/125\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Rare Candy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654464%2Fpokemon-me01-mega-evolution-rare-candy-125-132\" target=\"_blank\">$0.69</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Rare-Candy-V1-MEG125?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.30€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"196\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/196\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Night Stretcher</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F676008%2Fpokemon-me-ascended-heroes-night-stretcher\" target=\"_blank\">$0.23</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Night-Stretcher-ASC196?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.14€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"82\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/82\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Special Red Card</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693547%2Fpokemon-me04-chaos-rising-special-red-card-082-086\" target=\"_blank\">$0.19</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Special-Red-Card-V1-CRI082?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.17€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SVI\" data-number=\"171\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SVI/171\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Energy Retrieval</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F488076%2Fsv01-scarlet-and-violet-base-set-energy-retrieval-171-198\" target=\"_blank\">$0.20</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Scarlet-Violet/Energy-Retrieval-SV1en171?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.10€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"181\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/181\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Air Balloon</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675993%2Fpokemon-me-ascended-heroes-air-balloon\" target=\"_blank\">$0.21</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Air-Balloon-ASC181?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.12€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"129\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/129\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Surfing Beach</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654468%2Fpokemon-me01-mega-evolution-surfing-beach\" target=\"_blank\">$0.46</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Surfing-Beach-MEG129?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.18€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEE\" data-number=\"3\" data-lang=\"en\"   data-basic-energy=\"3\" >\n            <a class=\"card-link\" href=\"/cards/MEE/3\">\n                <span class=\"card-count\">7</span>\n                <span class=\"card-name\">Water Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F656265%2Fpokemon-mee-mega-evolution-energies-basic-water-energy-003\" target=\"_blank\">$0.77</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution-Energies/Basic-Water-Energy-V1-MEE003?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.21€</a>         </div>\n<div class=\"decklist-card\" data-set=\"WHT\" data-number=\"86\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/WHT/86\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Ignition Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F642201%2Fpokemon-sv-white-flare-ignition-energy\" target=\"_blank\">$0.64</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/White-Flare/Ignition-Energy-WHT086?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.80€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TEF\" data-number=\"162\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TEF/162\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Neo Upper Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F542682%2Fpokemon-sv05-temporal-forces-neo-upper-energy\" target=\"_blank\">$18.77</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Neo-Upper-Energy-TEF162?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">9.80€</a>         </div>\n</body></html>"
+}

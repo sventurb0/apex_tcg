@@ -1,0 +1,699 @@
+{
+  "id": "limitless-28251",
+  "snapshot": {
+    "id": "limitless-28251",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28251",
+    "sourceDeckId": "28251",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 4,
+    "player": "Ross Cawthon",
+    "format": "standard",
+    "archetype": "Slowking",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Slowpoke"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Slowking"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Kangaskhan ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kyurem"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Zeraora"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Clefairy ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ciphermaniac's Codebreaking"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Academy at Night"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boomerang Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Slowpoke",
+        "setCode": "SCR",
+        "collectorNumber": "57"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Slowking",
+        "setCode": "SCR",
+        "collectorNumber": "58"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Kangaskhan ex",
+        "setCode": "MEG",
+        "collectorNumber": "104"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex",
+        "setCode": "SSP",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kyurem",
+        "setCode": "SFA",
+        "collectorNumber": "47"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross",
+        "setCode": "CRI",
+        "collectorNumber": "61"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Zeraora",
+        "setCode": "DRI",
+        "collectorNumber": "78"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Clefairy ex",
+        "setCode": "JTG",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ciphermaniac's Codebreaking",
+        "setCode": "TEF",
+        "collectorNumber": "145"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch",
+        "setCode": "PFL",
+        "collectorNumber": "94"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box",
+        "setCode": "TWM",
+        "collectorNumber": "163"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch",
+        "setCode": "MEG",
+        "collectorNumber": "130"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle",
+        "setCode": "WHT",
+        "collectorNumber": "80"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet",
+        "setCode": "TWM",
+        "collectorNumber": "158"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Academy at Night",
+        "setCode": "SFA",
+        "collectorNumber": "54"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy",
+        "setCode": "POR",
+        "collectorNumber": "88"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boomerang Energy",
+        "setCode": "TWM",
+        "collectorNumber": "166"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28251",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28251",
+    "name": "Slowking — Ross Cawthon",
+    "description": "NAIC 2026, New Orleans · place 4. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-104",
+        "count": 3
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-130",
+        "count": 1
+      },
+      {
+        "cardId": "me1-131",
+        "count": 4
+      },
+      {
+        "cardId": "me2-94",
+        "count": 3
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 1
+      },
+      {
+        "cardId": "me3-81",
+        "count": 4
+      },
+      {
+        "cardId": "me3-88",
+        "count": 4
+      },
+      {
+        "cardId": "me4-61",
+        "count": 2
+      },
+      {
+        "cardId": "rsv10pt5-80",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-78",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-145",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-158",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-163",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-166",
+        "count": 3
+      },
+      {
+        "cardId": "sv6pt5-47",
+        "count": 2
+      },
+      {
+        "cardId": "sv6pt5-54",
+        "count": 4
+      },
+      {
+        "cardId": "sv7-57",
+        "count": 4
+      },
+      {
+        "cardId": "sv7-58",
+        "count": 3
+      },
+      {
+        "cardId": "sv8-76",
+        "count": 2
+      },
+      {
+        "cardId": "sv9-56",
+        "count": 1
+      },
+      {
+        "cardId": "sve-5",
+        "count": 4
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Slowpoke",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "57",
+      "chosenCardId": "sv7-57",
+      "chosenCardName": "Slowpoke",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Slowking",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "58",
+      "chosenCardId": "sv7-58",
+      "chosenCardName": "Slowking",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Mega Kangaskhan ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "104",
+      "chosenCardId": "me1-104",
+      "chosenCardName": "Mega Kangaskhan ex",
+      "behaviourFamilyId": "behaviour:jncraj",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Latias ex",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "76",
+      "chosenCardId": "sv8-76",
+      "chosenCardName": "Latias ex",
+      "behaviourFamilyId": "behaviour:9x1vff",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Kyurem",
+      "sourceSetCode": "SFA",
+      "sourceCollectorNumber": "47",
+      "chosenCardId": "sv6pt5-47",
+      "chosenCardName": "Kyurem",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Metagross",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "61",
+      "chosenCardId": "me4-61",
+      "chosenCardName": "Metagross",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Zeraora",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "78",
+      "chosenCardId": "sv10-78",
+      "chosenCardName": "Zeraora",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lillie's Clefairy ex",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "sv9-56",
+      "chosenCardName": "Lillie's Clefairy ex",
+      "behaviourFamilyId": "behaviour:omy1js",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ciphermaniac's Codebreaking",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "145",
+      "chosenCardId": "sv5-145",
+      "chosenCardName": "Ciphermaniac's Codebreaking",
+      "behaviourFamilyId": "behaviour:197yd1n",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Wondrous Patch",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "94",
+      "chosenCardId": "me2-94",
+      "chosenCardName": "Wondrous Patch",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Secret Box",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "163",
+      "chosenCardId": "sv6-163",
+      "chosenCardName": "Secret Box",
+      "behaviourFamilyId": "behaviour:joc66k",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Switch",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "130",
+      "chosenCardId": "me1-130",
+      "chosenCardName": "Switch",
+      "behaviourFamilyId": "behaviour:1on8jbn",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Brave Bangle",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "80",
+      "chosenCardId": "rsv10pt5-80",
+      "chosenCardName": "Brave Bangle",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lucky Helmet",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "158",
+      "chosenCardId": "sv6-158",
+      "chosenCardName": "Lucky Helmet",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Academy at Night",
+      "sourceSetCode": "SFA",
+      "sourceCollectorNumber": "54",
+      "chosenCardId": "sv6pt5-54",
+      "chosenCardName": "Academy at Night",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Telepathic Psychic Energy",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "88",
+      "chosenCardId": "me3-88",
+      "chosenCardName": "Telepathic Psychic Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Psychic Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "5",
+      "chosenCardId": "sve-5",
+      "chosenCardName": "Basic Psychic Energy",
+      "behaviourFamilyId": "behaviour:1b5iiem",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Boomerang Energy",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "166",
+      "chosenCardId": "sv6-166",
+      "chosenCardName": "Boomerang Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    }
+  ],
+  "compositionFingerprint": "composition-b8df3q",
+  "sourceSnapshotIds": [
+    "limitless-28251"
+  ],
+  "exactResolvedCopies": 56,
+  "canonicalEquivalentCopies": 4,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 28,
+    "generated": 4,
+    "partial": 0,
+    "unsupported": 28
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2-94",
+    "unimplemented:me3-88",
+    "unimplemented:me4-61",
+    "unimplemented:rsv10pt5-80",
+    "unimplemented:sv10-78",
+    "unimplemented:sv6-158",
+    "unimplemented:sv6-166",
+    "unimplemented:sv6pt5-47",
+    "unimplemented:sv6pt5-54",
+    "unimplemented:sv7-57",
+    "unimplemented:sv7-58"
+  ],
+  "blockers": [
+    "4× Slowpoke (sv7-57): unsupported; no executable behaviour family",
+    "3× Slowking (sv7-58): unsupported; no executable behaviour family",
+    "2× Kyurem (sv6pt5-47): unsupported; no executable behaviour family",
+    "2× Metagross (me4-61): unsupported; no executable behaviour family",
+    "1× Zeraora (sv10-78): unsupported; no executable behaviour family",
+    "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
+    "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
+    "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
+    "4× Academy at Night (sv6pt5-54): unsupported; no executable behaviour family",
+    "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
+    "3× Boomerang Energy (sv6-166): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Psychic"
+    ],
+    "strategic": [
+      "control",
+      "toolbox",
+      "setup"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

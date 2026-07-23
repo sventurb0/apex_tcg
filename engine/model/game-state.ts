@@ -17,7 +17,8 @@ export type KnockOutCause = "attack-damage" | "effect-damage-counters" | "poison
 export type TemporaryEffect =
   | { kind: "attack-lock"; playerId: PlayerId; pokemonId: string; attackId: string; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "retreat-lock"; playerId: PlayerId; pokemonId: string; appliesOnPlayerTurn: number; sourceCardId: string }
-  | { kind: "item-lock"; playerId: PlayerId; appliesOnPlayerTurn: number; sourceCardId: string };
+  | { kind: "item-lock"; playerId: PlayerId; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "ability-lock"; playerId: PlayerId; pokemonId?: string; appliesOnPlayerTurn: number; sourceCardId: string };
 
 export interface PendingKnockOutCause { cause: KnockOutCause; sourcePlayerId: PlayerId; sourceCardId?: string; }
 
@@ -58,7 +59,7 @@ export type PendingChoice =
   | { type: "promote"; playerId: PlayerId; remainingPromotions: PlayerId[]; resume: ResolutionResume }
   | EffectChoice;
 
-export type GameEventType = "card-played" | "ability-used" | "stadium-ability-used" | "attack-used" | "cards-searched" | "cards-discarded" | "cards-recovered" | "energy-attached-manually" | "energy-attached-by-effect" | "energy-moved" | "energy-discarded-invalid" | "damage-dealt" | "damage-healed" | "damage-counters-moved" | "special-condition-applied" | "enhanced-poison-applied" | "poison-checkup-damage" | "pokemon-evolved" | "pokemon-knocked-out" | "prize-card-taken" | "prize-modified" | "temporary-effect-applied" | "damage-modifier-applied" | "setup-completed" | "coin-flip";
+export type GameEventType = "card-played" | "pokemon-benched" | "ability-used" | "stadium-ability-used" | "attack-used" | "cards-searched" | "cards-discarded" | "cards-recovered" | "energy-attached-manually" | "energy-attached-by-effect" | "energy-moved" | "energy-discarded-invalid" | "damage-dealt" | "damage-healed" | "damage-counters-moved" | "special-condition-applied" | "enhanced-poison-applied" | "poison-checkup-damage" | "pokemon-evolved" | "pokemon-knocked-out" | "prize-card-taken" | "prize-modified" | "temporary-effect-applied" | "damage-modifier-applied" | "setup-completed" | "coin-flip";
 export interface GameEvent { index: number; turn: number; type: GameEventType; playerId: PlayerId; targetPlayerId?: PlayerId; sourceCardId?: string; sourceInstanceId?: string; targetId?: string; amount?: number; cardInstanceIds?: string[]; detail?: string; cause?: KnockOutCause; }
 export interface ActionLogEntry { index: number; turn: number; playerId: PlayerId; actionId: string; description: string; }
 export interface ReplayRecord { seed: number; deckIds: [string, string]; startingPlayer: PlayerId; mulligans: Record<PlayerId, number>; actions: GameAction[]; finalResult: GameResult | null; }

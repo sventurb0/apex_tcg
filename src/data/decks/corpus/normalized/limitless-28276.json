@@ -1,0 +1,778 @@
+{
+  "id": "limitless-28276",
+  "snapshot": {
+    "id": "limitless-28276",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28276",
+    "sourceDeckId": "28276",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 37,
+    "player": "Christopher Carillon",
+    "format": "standard",
+    "archetype": "Crustle",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dwebble"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crustle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Kangaskhan ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Articuno"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Petrel"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hilda"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Eri"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Pokémon Center Lady"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Xerosic's Machinations"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lisia's Appeal"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Jumbo Ice Cream"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Pokégear 3.0"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Hero's Cape"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Factory"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lumiose City"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Growing Grass Energy"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Mist Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Spiky Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Grass Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex",
+        "setCode": "MEG",
+        "collectorNumber": "104"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dwebble",
+        "setCode": "DRI",
+        "collectorNumber": "11"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crustle",
+        "setCode": "DRI",
+        "collectorNumber": "12"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Kangaskhan ex",
+        "setCode": "ASC",
+        "collectorNumber": "162"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Articuno",
+        "setCode": "DRI",
+        "collectorNumber": "51"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck",
+        "setCode": "ASC",
+        "collectorNumber": "39"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Team Rocket's Petrel",
+        "setCode": "DRI",
+        "collectorNumber": "176"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hilda",
+        "setCode": "WHT",
+        "collectorNumber": "84"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Eri",
+        "setCode": "TEF",
+        "collectorNumber": "146"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Pokémon Center Lady",
+        "setCode": "MEG",
+        "collectorNumber": "123"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Xerosic's Machinations",
+        "setCode": "SFA",
+        "collectorNumber": "64"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lisia's Appeal",
+        "setCode": "SSP",
+        "collectorNumber": "179"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Jumbo Ice Cream",
+        "setCode": "PFL",
+        "collectorNumber": "91"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Pokégear 3.0",
+        "setCode": "SVI",
+        "collectorNumber": "186"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch",
+        "setCode": "MEG",
+        "collectorNumber": "130"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Hero's Cape",
+        "setCode": "TEF",
+        "collectorNumber": "152"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Factory",
+        "setCode": "DRI",
+        "collectorNumber": "173"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lumiose City",
+        "setCode": "POR",
+        "collectorNumber": "77"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Growing Grass Energy",
+        "setCode": "POR",
+        "collectorNumber": "86"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Mist Energy",
+        "setCode": "TEF",
+        "collectorNumber": "161"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Spiky Energy",
+        "setCode": "JTG",
+        "collectorNumber": "159"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Grass Energy",
+        "setCode": "MEE",
+        "collectorNumber": "1"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28276",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28276",
+    "name": "Crustle — Christopher Carillon",
+    "description": "NAIC 2026, New Orleans · place 37. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-104",
+        "count": 4
+      },
+      {
+        "cardId": "me1-114",
+        "count": 4
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-123",
+        "count": 1
+      },
+      {
+        "cardId": "me1-130",
+        "count": 1
+      },
+      {
+        "cardId": "me1-131",
+        "count": 1
+      },
+      {
+        "cardId": "me2-91",
+        "count": 4
+      },
+      {
+        "cardId": "me2pt5-162",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-39",
+        "count": 1
+      },
+      {
+        "cardId": "me3-77",
+        "count": 1
+      },
+      {
+        "cardId": "me3-86",
+        "count": 4
+      },
+      {
+        "cardId": "rsv10pt5-84",
+        "count": 2
+      },
+      {
+        "cardId": "sv1-186",
+        "count": 3
+      },
+      {
+        "cardId": "sv10-11",
+        "count": 3
+      },
+      {
+        "cardId": "sv10-12",
+        "count": 3
+      },
+      {
+        "cardId": "sv10-173",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-176",
+        "count": 4
+      },
+      {
+        "cardId": "sv10-51",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 2
+      },
+      {
+        "cardId": "sv5-146",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-152",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-161",
+        "count": 4
+      },
+      {
+        "cardId": "sv6pt5-64",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-179",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-159",
+        "count": 3
+      },
+      {
+        "cardId": "sve-1",
+        "count": 3
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Mega Kangaskhan ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "104",
+      "chosenCardId": "me1-104",
+      "chosenCardName": "Mega Kangaskhan ex",
+      "behaviourFamilyId": "behaviour:jncraj",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Dwebble",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "11",
+      "chosenCardId": "sv10-11",
+      "chosenCardName": "Dwebble",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Crustle",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "12",
+      "chosenCardId": "sv10-12",
+      "chosenCardName": "Crustle",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Kangaskhan ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "162",
+      "chosenCardId": "me2pt5-162",
+      "chosenCardName": "Team Rocket's Kangaskhan ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Articuno",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "51",
+      "chosenCardId": "sv10-51",
+      "chosenCardName": "Team Rocket's Articuno",
+      "behaviourFamilyId": "behaviour:1oae21l",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Psyduck",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "39",
+      "chosenCardId": "me2pt5-39",
+      "chosenCardName": "Psyduck",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Team Rocket's Petrel",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "176",
+      "chosenCardId": "sv10-176",
+      "chosenCardName": "Team Rocket's Petrel",
+      "behaviourFamilyId": "behaviour:1y6skhb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Hilda",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "84",
+      "chosenCardId": "rsv10pt5-84",
+      "chosenCardName": "Hilda",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Eri",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "146",
+      "chosenCardId": "sv5-146",
+      "chosenCardName": "Eri",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Pokémon Center Lady",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "123",
+      "chosenCardId": "me1-123",
+      "chosenCardName": "Pokémon Center Lady",
+      "behaviourFamilyId": "behaviour:wltj4a",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Xerosic's Machinations",
+      "sourceSetCode": "SFA",
+      "sourceCollectorNumber": "64",
+      "chosenCardId": "sv6pt5-64",
+      "chosenCardName": "Xerosic's Machinations",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lisia's Appeal",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "179",
+      "chosenCardId": "sv8-179",
+      "chosenCardName": "Lisia's Appeal",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Jumbo Ice Cream",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "91",
+      "chosenCardId": "me2-91",
+      "chosenCardName": "Jumbo Ice Cream",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Pokégear 3.0",
+      "sourceSetCode": "SVI",
+      "sourceCollectorNumber": "186",
+      "chosenCardId": "sv1-186",
+      "chosenCardName": "Pokégear 3.0",
+      "behaviourFamilyId": "behaviour:1ofaho4",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Switch",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "130",
+      "chosenCardId": "me1-130",
+      "chosenCardName": "Switch",
+      "behaviourFamilyId": "behaviour:1on8jbn",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Hero's Cape",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "152",
+      "chosenCardId": "sv5-152",
+      "chosenCardName": "Hero's Cape",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Factory",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "173",
+      "chosenCardId": "sv10-173",
+      "chosenCardName": "Team Rocket's Factory",
+      "behaviourFamilyId": "behaviour:1s43unw",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lumiose City",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "77",
+      "chosenCardId": "me3-77",
+      "chosenCardName": "Lumiose City",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Growing Grass Energy",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "86",
+      "chosenCardId": "me3-86",
+      "chosenCardName": "Growing Grass Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Mist Energy",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "161",
+      "chosenCardId": "sv5-161",
+      "chosenCardName": "Mist Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Spiky Energy",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "159",
+      "chosenCardId": "sv9-159",
+      "chosenCardName": "Spiky Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Grass Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "1",
+      "chosenCardId": "sve-1",
+      "chosenCardName": "Basic Grass Energy",
+      "behaviourFamilyId": "behaviour:1m1dfed",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    }
+  ],
+  "compositionFingerprint": "composition-1cwc7gb",
+  "sourceSnapshotIds": [
+    "limitless-28276"
+  ],
+  "exactResolvedCopies": 57,
+  "canonicalEquivalentCopies": 3,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 27,
+    "generated": 3,
+    "partial": 1,
+    "unsupported": 29
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2-91",
+    "unimplemented:me2pt5-162",
+    "unimplemented:me2pt5-39",
+    "unimplemented:me3-77",
+    "unimplemented:me3-86",
+    "unimplemented:rsv10pt5-84",
+    "unimplemented:sv10-11",
+    "unimplemented:sv10-12",
+    "unimplemented:sv5-146",
+    "unimplemented:sv5-152",
+    "unimplemented:sv5-161",
+    "unimplemented:sv6pt5-64",
+    "unimplemented:sv8-179",
+    "unimplemented:sv9-159"
+  ],
+  "blockers": [
+    "3× Dwebble (sv10-11): unsupported; no executable behaviour family",
+    "3× Crustle (sv10-12): unsupported; no executable behaviour family",
+    "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
+    "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
+    "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
+    "1× Eri (sv5-146): unsupported; no executable behaviour family",
+    "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
+    "1× Lisia's Appeal (sv8-179): unsupported; no executable behaviour family",
+    "4× Jumbo Ice Cream (me2-91): unsupported; no executable behaviour family",
+    "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
+    "1× Lumiose City (me3-77): unsupported; no executable behaviour family",
+    "4× Growing Grass Energy (me3-86): unsupported; no executable behaviour family",
+    "4× Mist Energy (sv5-161): unsupported; no executable behaviour family",
+    "3× Spiky Energy (sv9-159): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Grass"
+    ],
+    "strategic": [
+      "control"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

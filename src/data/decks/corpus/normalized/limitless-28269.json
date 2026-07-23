@@ -1,0 +1,685 @@
+{
+  "id": "limitless-28269",
+  "snapshot": {
+    "id": "limitless-28269",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28269",
+    "sourceDeckId": "28269",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 28,
+    "player": "Ben Dobberstein",
+    "format": "standard",
+    "archetype": "Hydrapple",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Teal Mask Ogerpon ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Chikorita"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Bayleef"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meganium"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Applin"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dipplin"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hydrapple ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Tapu Bulu"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Celebi"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ciphermaniac's Codebreaking"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Briar"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dawn"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Forest of Vitality"
+      },
+      {
+        "quantity": 13,
+        "cardName": "Grass Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Teal Mask Ogerpon ex",
+        "setCode": "TWM",
+        "collectorNumber": "25"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Chikorita",
+        "setCode": "ASC",
+        "collectorNumber": "8"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Bayleef",
+        "setCode": "MEG",
+        "collectorNumber": "9"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meganium",
+        "setCode": "MEG",
+        "collectorNumber": "10"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Applin",
+        "setCode": "TWM",
+        "collectorNumber": "17"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dipplin",
+        "setCode": "TWM",
+        "collectorNumber": "18"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hydrapple ex",
+        "setCode": "SCR",
+        "collectorNumber": "14"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Tapu Bulu",
+        "setCode": "SFA",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Celebi",
+        "setCode": "MEG",
+        "collectorNumber": "12"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid",
+        "setCode": "TWM",
+        "collectorNumber": "155"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ciphermaniac's Codebreaking",
+        "setCode": "TEF",
+        "collectorNumber": "145"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Briar",
+        "setCode": "SCR",
+        "collectorNumber": "132"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dawn",
+        "setCode": "PFL",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set",
+        "setCode": "TWM",
+        "collectorNumber": "143"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp",
+        "setCode": "TWM",
+        "collectorNumber": "165"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Forest of Vitality",
+        "setCode": "MEG",
+        "collectorNumber": "117"
+      },
+      {
+        "quantity": 13,
+        "cardName": "Grass Energy",
+        "setCode": "MEE",
+        "collectorNumber": "1"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28269",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28269",
+    "name": "Hydrapple — Ben Dobberstein",
+    "description": "NAIC 2026, New Orleans · place 28. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-10",
+        "count": 2
+      },
+      {
+        "cardId": "me1-114",
+        "count": 2
+      },
+      {
+        "cardId": "me1-117",
+        "count": 4
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-12",
+        "count": 1
+      },
+      {
+        "cardId": "me1-131",
+        "count": 4
+      },
+      {
+        "cardId": "me1-9",
+        "count": 2
+      },
+      {
+        "cardId": "me2-87",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me2pt5-8",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 2
+      },
+      {
+        "cardId": "me3-81",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-145",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-143",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-155",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-165",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-17",
+        "count": 2
+      },
+      {
+        "cardId": "sv6-18",
+        "count": 2
+      },
+      {
+        "cardId": "sv6-25",
+        "count": 4
+      },
+      {
+        "cardId": "sv6pt5-6",
+        "count": 1
+      },
+      {
+        "cardId": "sv7-132",
+        "count": 1
+      },
+      {
+        "cardId": "sv7-14",
+        "count": 2
+      },
+      {
+        "cardId": "sve-1",
+        "count": 13
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Teal Mask Ogerpon ex",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "25",
+      "chosenCardId": "sv6-25",
+      "chosenCardName": "Teal Mask Ogerpon ex",
+      "behaviourFamilyId": "behaviour:at0g7u",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Chikorita",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "8",
+      "chosenCardId": "me2pt5-8",
+      "chosenCardName": "Chikorita",
+      "behaviourFamilyId": "behaviour:ew27zx",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Bayleef",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "9",
+      "chosenCardId": "me1-9",
+      "chosenCardName": "Bayleef",
+      "behaviourFamilyId": "behaviour:fnc196",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Meganium",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "10",
+      "chosenCardId": "me1-10",
+      "chosenCardName": "Meganium",
+      "behaviourFamilyId": "behaviour:1cmwg7n",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Applin",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "17",
+      "chosenCardId": "sv6-17",
+      "chosenCardName": "Applin",
+      "behaviourFamilyId": "behaviour:k7i5kl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Dipplin",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "18",
+      "chosenCardId": "sv6-18",
+      "chosenCardName": "Dipplin",
+      "behaviourFamilyId": "behaviour:1tjwbq4",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Hydrapple ex",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "14",
+      "chosenCardId": "sv7-14",
+      "chosenCardName": "Hydrapple ex",
+      "behaviourFamilyId": "behaviour:tvg68y",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Tapu Bulu",
+      "sourceSetCode": "SFA",
+      "sourceCollectorNumber": "6",
+      "chosenCardId": "sv6pt5-6",
+      "chosenCardName": "Tapu Bulu",
+      "behaviourFamilyId": "behaviour:15xcmiq",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Celebi",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "12",
+      "chosenCardId": "me1-12",
+      "chosenCardName": "Celebi",
+      "behaviourFamilyId": "behaviour:10l76sr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lana's Aid",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "155",
+      "chosenCardId": "sv6-155",
+      "chosenCardName": "Lana's Aid",
+      "behaviourFamilyId": "behaviour:18ge007",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Ciphermaniac's Codebreaking",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "145",
+      "chosenCardId": "sv5-145",
+      "chosenCardName": "Ciphermaniac's Codebreaking",
+      "behaviourFamilyId": "behaviour:197yd1n",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Briar",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "132",
+      "chosenCardId": "sv7-132",
+      "chosenCardName": "Briar",
+      "behaviourFamilyId": "behaviour:t8kf87",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Dawn",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "87",
+      "chosenCardId": "me2-87",
+      "chosenCardName": "Dawn",
+      "behaviourFamilyId": "behaviour:1rrmnxo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Bug Catching Set",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "143",
+      "chosenCardId": "sv6-143",
+      "chosenCardName": "Bug Catching Set",
+      "behaviourFamilyId": "behaviour:kb24ay",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Unfair Stamp",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "165",
+      "chosenCardId": "sv6-165",
+      "chosenCardName": "Unfair Stamp",
+      "behaviourFamilyId": "behaviour:k8b3mo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Forest of Vitality",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "117",
+      "chosenCardId": "me1-117",
+      "chosenCardName": "Forest of Vitality",
+      "behaviourFamilyId": "behaviour:xgtsy6",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 13,
+      "sourceCardName": "Grass Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "1",
+      "chosenCardId": "sve-1",
+      "chosenCardName": "Basic Grass Energy",
+      "behaviourFamilyId": "behaviour:1m1dfed",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    }
+  ],
+  "compositionFingerprint": "composition-g3cc3o",
+  "sourceSnapshotIds": [
+    "limitless-28269"
+  ],
+  "exactResolvedCopies": 47,
+  "canonicalEquivalentCopies": 13,
+  "unresolvedCopies": 0,
+  "simulationReady": true,
+  "supportCounts": {
+    "complete": 47,
+    "generated": 13,
+    "partial": 0,
+    "unsupported": 0
+  },
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
+  "tags": {
+    "energyTypes": [
+      "Grass"
+    ],
+    "strategic": [
+      "toolbox",
+      "setup"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

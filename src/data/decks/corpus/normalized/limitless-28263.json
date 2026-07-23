@@ -1,0 +1,740 @@
+{
+  "id": "limitless-28263",
+  "snapshot": {
+    "id": "limitless-28263",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28263",
+    "sourceDeckId": "28263",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 20,
+    "player": "Nicholas Cucinelli",
+    "format": "standard",
+    "archetype": "Ogerpon Box",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Teal Mask Ogerpon ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lillie's Clefairy ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chien-Pao"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Passimian"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Raging Bolt ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Wellspring Mask Ogerpon ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Crispin"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Cyrano"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ciphermaniac's Codebreaking"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Energy Switch"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Glass Trumpet"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Area Zero Underdepths"
+      },
+      {
+        "quantity": 7,
+        "cardName": "Grass Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fighting Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lightning Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Water Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex",
+        "setCode": "MEG",
+        "collectorNumber": "104"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Teal Mask Ogerpon ex",
+        "setCode": "TWM",
+        "collectorNumber": "25"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lillie's Clefairy ex",
+        "setCode": "JTG",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex",
+        "setCode": "SSP",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chien-Pao",
+        "setCode": "SSP",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Passimian",
+        "setCode": "SSP",
+        "collectorNumber": "111"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Raging Bolt ex",
+        "setCode": "TEF",
+        "collectorNumber": "123"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Wellspring Mask Ogerpon ex",
+        "setCode": "TWM",
+        "collectorNumber": "64"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Crispin",
+        "setCode": "SCR",
+        "collectorNumber": "133"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Cyrano",
+        "setCode": "SSP",
+        "collectorNumber": "170"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ciphermaniac's Codebreaking",
+        "setCode": "TEF",
+        "collectorNumber": "145"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Energy Switch",
+        "setCode": "MEG",
+        "collectorNumber": "115"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Glass Trumpet",
+        "setCode": "SCR",
+        "collectorNumber": "135"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp",
+        "setCode": "TWM",
+        "collectorNumber": "165"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Area Zero Underdepths",
+        "setCode": "SCR",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 7,
+        "cardName": "Grass Energy",
+        "setCode": "MEE",
+        "collectorNumber": "1"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fighting Energy",
+        "setCode": "MEE",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lightning Energy",
+        "setCode": "MEE",
+        "collectorNumber": "4"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Water Energy",
+        "setCode": "MEE",
+        "collectorNumber": "3"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28263",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28263",
+    "name": "Ogerpon Box — Nicholas Cucinelli",
+    "description": "NAIC 2026, New Orleans · place 20. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-104",
+        "count": 4
+      },
+      {
+        "cardId": "me1-114",
+        "count": 2
+      },
+      {
+        "cardId": "me1-115",
+        "count": 4
+      },
+      {
+        "cardId": "me1-119",
+        "count": 1
+      },
+      {
+        "cardId": "me1-131",
+        "count": 4
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 3
+      },
+      {
+        "cardId": "sv5-123",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-145",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-165",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-25",
+        "count": 3
+      },
+      {
+        "cardId": "sv6-64",
+        "count": 1
+      },
+      {
+        "cardId": "sv7-131",
+        "count": 4
+      },
+      {
+        "cardId": "sv7-133",
+        "count": 4
+      },
+      {
+        "cardId": "sv7-135",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-111",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-170",
+        "count": 2
+      },
+      {
+        "cardId": "sv8-56",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-76",
+        "count": 2
+      },
+      {
+        "cardId": "sv9-56",
+        "count": 2
+      },
+      {
+        "cardId": "sve-1",
+        "count": 7
+      },
+      {
+        "cardId": "sve-3",
+        "count": 1
+      },
+      {
+        "cardId": "sve-4",
+        "count": 2
+      },
+      {
+        "cardId": "sve-5",
+        "count": 3
+      },
+      {
+        "cardId": "sve-6",
+        "count": 2
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Mega Kangaskhan ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "104",
+      "chosenCardId": "me1-104",
+      "chosenCardName": "Mega Kangaskhan ex",
+      "behaviourFamilyId": "behaviour:jncraj",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Teal Mask Ogerpon ex",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "25",
+      "chosenCardId": "sv6-25",
+      "chosenCardName": "Teal Mask Ogerpon ex",
+      "behaviourFamilyId": "behaviour:at0g7u",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Lillie's Clefairy ex",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "sv9-56",
+      "chosenCardName": "Lillie's Clefairy ex",
+      "behaviourFamilyId": "behaviour:omy1js",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Latias ex",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "76",
+      "chosenCardId": "sv8-76",
+      "chosenCardName": "Latias ex",
+      "behaviourFamilyId": "behaviour:9x1vff",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Chien-Pao",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "sv8-56",
+      "chosenCardName": "Chien-Pao",
+      "behaviourFamilyId": "behaviour:12t7m3l",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Passimian",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "111",
+      "chosenCardId": "sv8-111",
+      "chosenCardName": "Passimian",
+      "behaviourFamilyId": "behaviour:1uz7sy8",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Raging Bolt ex",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "123",
+      "chosenCardId": "sv5-123",
+      "chosenCardName": "Raging Bolt ex",
+      "behaviourFamilyId": "behaviour:smwf8i",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Wellspring Mask Ogerpon ex",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "64",
+      "chosenCardId": "sv6-64",
+      "chosenCardName": "Wellspring Mask Ogerpon ex",
+      "behaviourFamilyId": "behaviour:1upcvk",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Crispin",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "133",
+      "chosenCardId": "sv7-133",
+      "chosenCardName": "Crispin",
+      "behaviourFamilyId": "behaviour:w6blt3",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Cyrano",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "170",
+      "chosenCardId": "sv8-170",
+      "chosenCardName": "Cyrano",
+      "behaviourFamilyId": "behaviour:ikxrlr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Ciphermaniac's Codebreaking",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "145",
+      "chosenCardId": "sv5-145",
+      "chosenCardName": "Ciphermaniac's Codebreaking",
+      "behaviourFamilyId": "behaviour:197yd1n",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Energy Switch",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "115",
+      "chosenCardId": "me1-115",
+      "chosenCardName": "Energy Switch",
+      "behaviourFamilyId": "behaviour:aktlxu",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Glass Trumpet",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "135",
+      "chosenCardId": "sv7-135",
+      "chosenCardName": "Glass Trumpet",
+      "behaviourFamilyId": "behaviour:qsp5v4",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Unfair Stamp",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "165",
+      "chosenCardId": "sv6-165",
+      "chosenCardName": "Unfair Stamp",
+      "behaviourFamilyId": "behaviour:k8b3mo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Area Zero Underdepths",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "sv7-131",
+      "chosenCardName": "Area Zero Underdepths",
+      "behaviourFamilyId": "behaviour:1kffjlq",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 7,
+      "sourceCardName": "Grass Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "1",
+      "chosenCardId": "sve-1",
+      "chosenCardName": "Basic Grass Energy",
+      "behaviourFamilyId": "behaviour:1m1dfed",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Psychic Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "5",
+      "chosenCardId": "sve-5",
+      "chosenCardName": "Basic Psychic Energy",
+      "behaviourFamilyId": "behaviour:1b5iiem",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Fighting Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "6",
+      "chosenCardId": "sve-6",
+      "chosenCardName": "Basic Fighting Energy",
+      "behaviourFamilyId": "behaviour:10zemi3",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Lightning Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "4",
+      "chosenCardId": "sve-4",
+      "chosenCardName": "Basic Lightning Energy",
+      "behaviourFamilyId": "behaviour:xckx1",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Water Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "3",
+      "chosenCardId": "sve-3",
+      "chosenCardName": "Basic Water Energy",
+      "behaviourFamilyId": "behaviour:1v5b3ka",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    }
+  ],
+  "compositionFingerprint": "composition-tx1k64",
+  "sourceSnapshotIds": [
+    "limitless-28263"
+  ],
+  "exactResolvedCopies": 45,
+  "canonicalEquivalentCopies": 15,
+  "unresolvedCopies": 0,
+  "simulationReady": true,
+  "supportCounts": {
+    "complete": 45,
+    "generated": 15,
+    "partial": 0,
+    "unsupported": 0
+  },
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
+  "tags": {
+    "energyTypes": [
+      "Fighting",
+      "Grass",
+      "Lightning",
+      "Psychic",
+      "Water"
+    ],
+    "strategic": [
+      "toolbox"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

@@ -1,0 +1,796 @@
+{
+  "id": "limitless-28260",
+  "snapshot": {
+    "id": "limitless-28260",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28260",
+    "sourceDeckId": "28260",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 14,
+    "player": "Liam Halliburton",
+    "format": "standard",
+    "archetype": "N's Zoroark",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "N's Zorua"
+      },
+      {
+        "quantity": 4,
+        "cardName": "N's Zoroark ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Munkidori"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Skorupi"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Drapion"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Yveltal"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Purrloin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Mega Absol ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Zekrom"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Reshiram"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Cyrano"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Janine's Secret Art"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Transformation Tome"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 3,
+        "cardName": "N's PP Up"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Air Balloon"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Castle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Watchtower"
+      },
+      {
+        "quantity": 8,
+        "cardName": "Darkness Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "N's Zorua",
+        "setCode": "JTG",
+        "collectorNumber": "97"
+      },
+      {
+        "quantity": 4,
+        "cardName": "N's Zoroark ex",
+        "setCode": "JTG",
+        "collectorNumber": "98"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Munkidori",
+        "setCode": "TWM",
+        "collectorNumber": "95"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Skorupi",
+        "setCode": "POR",
+        "collectorNumber": "51"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Drapion",
+        "setCode": "POR",
+        "collectorNumber": "52"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Yveltal",
+        "setCode": "MEG",
+        "collectorNumber": "88"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Purrloin",
+        "setCode": "WHT",
+        "collectorNumber": "55"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Mega Absol ex",
+        "setCode": "MEG",
+        "collectorNumber": "86"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Zekrom",
+        "setCode": "ASC",
+        "collectorNumber": "155"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Reshiram",
+        "setCode": "JTG",
+        "collectorNumber": "116"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Cyrano",
+        "setCode": "SSP",
+        "collectorNumber": "170"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Janine's Secret Art",
+        "setCode": "PRE",
+        "collectorNumber": "112"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Transformation Tome",
+        "setCode": "CRI",
+        "collectorNumber": "83"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 3,
+        "cardName": "N's PP Up",
+        "setCode": "JTG",
+        "collectorNumber": "153"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box",
+        "setCode": "TWM",
+        "collectorNumber": "163"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Air Balloon",
+        "setCode": "ASC",
+        "collectorNumber": "181"
+      },
+      {
+        "quantity": 1,
+        "cardName": "N's Castle",
+        "setCode": "JTG",
+        "collectorNumber": "152"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Team Rocket's Watchtower",
+        "setCode": "DRI",
+        "collectorNumber": "180"
+      },
+      {
+        "quantity": 8,
+        "cardName": "Darkness Energy",
+        "setCode": "MEE",
+        "collectorNumber": "7"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28260",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28260",
+    "name": "N's Zoroark — Liam Halliburton",
+    "description": "NAIC 2026, New Orleans · place 14. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 3
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-131",
+        "count": 1
+      },
+      {
+        "cardId": "me1-86",
+        "count": 1
+      },
+      {
+        "cardId": "me1-88",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-155",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-181",
+        "count": 2
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 2
+      },
+      {
+        "cardId": "me3-51",
+        "count": 1
+      },
+      {
+        "cardId": "me3-52",
+        "count": 1
+      },
+      {
+        "cardId": "me3-62",
+        "count": 1
+      },
+      {
+        "cardId": "me3-81",
+        "count": 3
+      },
+      {
+        "cardId": "me4-82",
+        "count": 1
+      },
+      {
+        "cardId": "me4-83",
+        "count": 4
+      },
+      {
+        "cardId": "rsv10pt5-55",
+        "count": 1
+      },
+      {
+        "cardId": "sv10-180",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 4
+      },
+      {
+        "cardId": "sv6-163",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-95",
+        "count": 3
+      },
+      {
+        "cardId": "sv8-170",
+        "count": 1
+      },
+      {
+        "cardId": "sv8pt5-112",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-116",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-152",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-153",
+        "count": 3
+      },
+      {
+        "cardId": "sv9-97",
+        "count": 4
+      },
+      {
+        "cardId": "sv9-98",
+        "count": 4
+      },
+      {
+        "cardId": "sve-7",
+        "count": 8
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "N's Zorua",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "97",
+      "chosenCardId": "sv9-97",
+      "chosenCardName": "N's Zorua",
+      "behaviourFamilyId": "behaviour:1alxvmr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "N's Zoroark ex",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "98",
+      "chosenCardId": "sv9-98",
+      "chosenCardName": "N's Zoroark ex",
+      "behaviourFamilyId": "behaviour:fsjeer",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Munkidori",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "95",
+      "chosenCardId": "sv6-95",
+      "chosenCardName": "Munkidori",
+      "behaviourFamilyId": "behaviour:r4vlqt",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Skorupi",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "51",
+      "chosenCardId": "me3-51",
+      "chosenCardName": "Skorupi",
+      "behaviourFamilyId": "behaviour:rruuy1",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Drapion",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "52",
+      "chosenCardId": "me3-52",
+      "chosenCardName": "Drapion",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Yveltal",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "88",
+      "chosenCardId": "me1-88",
+      "chosenCardName": "Yveltal",
+      "behaviourFamilyId": "behaviour:xbubo9",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Purrloin",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "55",
+      "chosenCardId": "rsv10pt5-55",
+      "chosenCardName": "Purrloin",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Mega Absol ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "86",
+      "chosenCardId": "me1-86",
+      "chosenCardName": "Mega Absol ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "N's Zekrom",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "155",
+      "chosenCardId": "me2pt5-155",
+      "chosenCardName": "N's Zekrom",
+      "behaviourFamilyId": "behaviour:1osh4nu",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "N's Reshiram",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "116",
+      "chosenCardId": "sv9-116",
+      "chosenCardName": "N's Reshiram",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Cyrano",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "170",
+      "chosenCardId": "sv8-170",
+      "chosenCardName": "Cyrano",
+      "behaviourFamilyId": "behaviour:ikxrlr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Janine's Secret Art",
+      "sourceSetCode": "PRE",
+      "sourceCollectorNumber": "112",
+      "chosenCardId": "sv8pt5-112",
+      "chosenCardName": "Janine's Secret Art",
+      "behaviourFamilyId": "behaviour:1o6f43y",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Transformation Tome",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "83",
+      "chosenCardId": "me4-83",
+      "chosenCardName": "Transformation Tome",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "N's PP Up",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "153",
+      "chosenCardId": "sv9-153",
+      "chosenCardName": "N's PP Up",
+      "behaviourFamilyId": "behaviour:1vejd4j",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Special Red Card",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "82",
+      "chosenCardId": "me4-82",
+      "chosenCardName": "Special Red Card",
+      "behaviourFamilyId": "behaviour:d0rhec",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Secret Box",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "163",
+      "chosenCardId": "sv6-163",
+      "chosenCardName": "Secret Box",
+      "behaviourFamilyId": "behaviour:joc66k",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Air Balloon",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "181",
+      "chosenCardId": "me2pt5-181",
+      "chosenCardName": "Air Balloon",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "N's Castle",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "152",
+      "chosenCardId": "sv9-152",
+      "chosenCardName": "N's Castle",
+      "behaviourFamilyId": "behaviour:epd9hr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Team Rocket's Watchtower",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "180",
+      "chosenCardId": "sv10-180",
+      "chosenCardName": "Team Rocket's Watchtower",
+      "behaviourFamilyId": "behaviour:v67j3c",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 8,
+      "sourceCardName": "Darkness Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "7",
+      "chosenCardId": "sve-7",
+      "chosenCardName": "Basic Darkness Energy",
+      "behaviourFamilyId": "behaviour:1v6yusw",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "complete"
+    }
+  ],
+  "compositionFingerprint": "composition-6tbfp6",
+  "sourceSnapshotIds": [
+    "limitless-28260"
+  ],
+  "exactResolvedCopies": 52,
+  "canonicalEquivalentCopies": 8,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 46,
+    "generated": 4,
+    "partial": 0,
+    "unsupported": 10
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me1-86",
+    "unimplemented:me2pt5-181",
+    "unimplemented:me3-52",
+    "unimplemented:me4-83",
+    "unimplemented:rsv10pt5-55",
+    "unimplemented:sv9-116"
+  ],
+  "blockers": [
+    "1× Drapion (me3-52): unsupported; no executable behaviour family",
+    "1× Purrloin (rsv10pt5-55): unsupported; no executable behaviour family",
+    "1× Mega Absol ex (me1-86): unsupported; no executable behaviour family",
+    "1× N's Reshiram (sv9-116): unsupported; no executable behaviour family",
+    "4× Transformation Tome (me4-83): unsupported; no executable behaviour family",
+    "2× Air Balloon (me2pt5-181): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Darkness"
+    ],
+    "strategic": [
+      "aggressive"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

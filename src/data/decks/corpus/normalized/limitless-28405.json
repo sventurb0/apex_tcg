@@ -1,0 +1,836 @@
+{
+  "id": "limitless-28405",
+  "snapshot": {
+    "id": "limitless-28405",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28405",
+    "sourceDeckId": "28405",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 227,
+    "player": "Cerys Jones",
+    "format": "standard",
+    "archetype": "Alakazam Dudunsparce",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Abra"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Kadabra"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Alakazam"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Alakazam"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dunsparce"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dedenne"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Elgyem"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Genesect"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dawn"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Hilda"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Eri"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Rare Candy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Sacred Ash"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Enhanced Hammer"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Handheld Fan"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Nighttime Mine"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Enriching Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Abra",
+        "setCode": "MEG",
+        "collectorNumber": "54"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Kadabra",
+        "setCode": "MEG",
+        "collectorNumber": "55"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Alakazam",
+        "setCode": "MEG",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Alakazam",
+        "setCode": "TWM",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dunsparce",
+        "setCode": "JTG",
+        "collectorNumber": "120"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce",
+        "setCode": "TEF",
+        "collectorNumber": "129"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dedenne",
+        "setCode": "SSP",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Elgyem",
+        "setCode": "BLK",
+        "collectorNumber": "40"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Genesect",
+        "setCode": "SFA",
+        "collectorNumber": "40"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psyduck",
+        "setCode": "ASC",
+        "collectorNumber": "39"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dawn",
+        "setCode": "PFL",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Hilda",
+        "setCode": "WHT",
+        "collectorNumber": "84"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid",
+        "setCode": "TWM",
+        "collectorNumber": "155"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Eri",
+        "setCode": "TEF",
+        "collectorNumber": "146"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Rare Candy",
+        "setCode": "MEG",
+        "collectorNumber": "125"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Sacred Ash",
+        "setCode": "DRI",
+        "collectorNumber": "168"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Enhanced Hammer",
+        "setCode": "TWM",
+        "collectorNumber": "148"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Air Balloon",
+        "setCode": "ASC",
+        "collectorNumber": "181"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet",
+        "setCode": "TWM",
+        "collectorNumber": "158"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Handheld Fan",
+        "setCode": "TWM",
+        "collectorNumber": "150"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Nighttime Mine",
+        "setCode": "ASC",
+        "collectorNumber": "197"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy",
+        "setCode": "POR",
+        "collectorNumber": "88"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Enriching Energy",
+        "setCode": "SSP",
+        "collectorNumber": "191"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28405",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28405",
+    "name": "Alakazam Dudunsparce — Cerys Jones",
+    "description": "NAIC 2026, New Orleans · place 227. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 2
+      },
+      {
+        "cardId": "me1-125",
+        "count": 3
+      },
+      {
+        "cardId": "me1-54",
+        "count": 4
+      },
+      {
+        "cardId": "me1-55",
+        "count": 4
+      },
+      {
+        "cardId": "me1-56",
+        "count": 3
+      },
+      {
+        "cardId": "me2-87",
+        "count": 4
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-181",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-196",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-197",
+        "count": 4
+      },
+      {
+        "cardId": "me2pt5-39",
+        "count": 1
+      },
+      {
+        "cardId": "me3-81",
+        "count": 4
+      },
+      {
+        "cardId": "me3-88",
+        "count": 4
+      },
+      {
+        "cardId": "rsv10pt5-84",
+        "count": 3
+      },
+      {
+        "cardId": "sv10-168",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-129",
+        "count": 2
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 4
+      },
+      {
+        "cardId": "sv5-146",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-148",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-150",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-155",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-158",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-82",
+        "count": 1
+      },
+      {
+        "cardId": "sv6pt5-40",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-191",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-87",
+        "count": 1
+      },
+      {
+        "cardId": "sv9-120",
+        "count": 3
+      },
+      {
+        "cardId": "sve-5",
+        "count": 1
+      },
+      {
+        "cardId": "zsv10pt5-40",
+        "count": 1
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Abra",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "54",
+      "chosenCardId": "me1-54",
+      "chosenCardName": "Abra",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Kadabra",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "55",
+      "chosenCardId": "me1-55",
+      "chosenCardName": "Kadabra",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Alakazam",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "me1-56",
+      "chosenCardName": "Alakazam",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Alakazam",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "82",
+      "chosenCardId": "sv6-82",
+      "chosenCardName": "Alakazam",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Dunsparce",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "120",
+      "chosenCardId": "sv9-120",
+      "chosenCardName": "Dunsparce",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Dudunsparce",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "129",
+      "chosenCardId": "sv5-129",
+      "chosenCardName": "Dudunsparce",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Dedenne",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "87",
+      "chosenCardId": "sv8-87",
+      "chosenCardName": "Dedenne",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Elgyem",
+      "sourceSetCode": "BLK",
+      "sourceCollectorNumber": "40",
+      "chosenCardId": "zsv10pt5-40",
+      "chosenCardName": "Elgyem",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Genesect",
+      "sourceSetCode": "SFA",
+      "sourceCollectorNumber": "40",
+      "chosenCardId": "sv6pt5-40",
+      "chosenCardName": "Genesect",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Psyduck",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "39",
+      "chosenCardId": "me2pt5-39",
+      "chosenCardName": "Psyduck",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Dawn",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "87",
+      "chosenCardId": "me2-87",
+      "chosenCardName": "Dawn",
+      "behaviourFamilyId": "behaviour:1rrmnxo",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Hilda",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "84",
+      "chosenCardId": "rsv10pt5-84",
+      "chosenCardName": "Hilda",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lana's Aid",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "155",
+      "chosenCardId": "sv6-155",
+      "chosenCardName": "Lana's Aid",
+      "behaviourFamilyId": "behaviour:18ge007",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Eri",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "146",
+      "chosenCardId": "sv5-146",
+      "chosenCardName": "Eri",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Rare Candy",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "125",
+      "chosenCardId": "me1-125",
+      "chosenCardName": "Rare Candy",
+      "behaviourFamilyId": "behaviour:1eo30e5",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Sacred Ash",
+      "sourceSetCode": "DRI",
+      "sourceCollectorNumber": "168",
+      "chosenCardId": "sv10-168",
+      "chosenCardName": "Sacred Ash",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Night Stretcher",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "196",
+      "chosenCardId": "me2pt5-196",
+      "chosenCardName": "Night Stretcher",
+      "behaviourFamilyId": "behaviour:1olagpb",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Enhanced Hammer",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "148",
+      "chosenCardId": "sv6-148",
+      "chosenCardName": "Enhanced Hammer",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Air Balloon",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "181",
+      "chosenCardId": "me2pt5-181",
+      "chosenCardName": "Air Balloon",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Lucky Helmet",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "158",
+      "chosenCardId": "sv6-158",
+      "chosenCardName": "Lucky Helmet",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Handheld Fan",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "150",
+      "chosenCardId": "sv6-150",
+      "chosenCardName": "Handheld Fan",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Nighttime Mine",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "197",
+      "chosenCardId": "me2pt5-197",
+      "chosenCardName": "Nighttime Mine",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Telepathic Psychic Energy",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "88",
+      "chosenCardId": "me3-88",
+      "chosenCardName": "Telepathic Psychic Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Psychic Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "5",
+      "chosenCardId": "sve-5",
+      "chosenCardName": "Basic Psychic Energy",
+      "behaviourFamilyId": "behaviour:1b5iiem",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Enriching Energy",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "191",
+      "chosenCardId": "sv8-191",
+      "chosenCardName": "Enriching Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    }
+  ],
+  "compositionFingerprint": "composition-rbl46m",
+  "sourceSnapshotIds": [
+    "limitless-28405"
+  ],
+  "exactResolvedCopies": 59,
+  "canonicalEquivalentCopies": 1,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 20,
+    "generated": 1,
+    "partial": 8,
+    "unsupported": 31
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me1-54",
+    "unimplemented:me1-55",
+    "unimplemented:me1-56",
+    "unimplemented:me2pt5-181",
+    "unimplemented:me2pt5-197",
+    "unimplemented:me2pt5-39",
+    "unimplemented:me3-88",
+    "unimplemented:rsv10pt5-84",
+    "unimplemented:sv10-168",
+    "unimplemented:sv5-129",
+    "unimplemented:sv5-146",
+    "unimplemented:sv6-148",
+    "unimplemented:sv6-150",
+    "unimplemented:sv6-158",
+    "unimplemented:sv6-82",
+    "unimplemented:sv6pt5-40",
+    "unimplemented:sv8-191",
+    "unimplemented:sv8-87",
+    "unimplemented:sv9-120",
+    "unimplemented:zsv10pt5-40"
+  ],
+  "blockers": [
+    "4× Abra (me1-54): unsupported; no executable behaviour family",
+    "4× Kadabra (me1-55): partial; no executable behaviour family",
+    "3× Alakazam (me1-56): unsupported; no executable behaviour family",
+    "1× Alakazam (sv6-82): unsupported; no executable behaviour family",
+    "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
+    "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
+    "1× Dedenne (sv8-87): unsupported; no executable behaviour family",
+    "1× Elgyem (zsv10pt5-40): unsupported; no executable behaviour family",
+    "1× Genesect (sv6pt5-40): partial; no executable behaviour family",
+    "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
+    "3× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
+    "1× Eri (sv5-146): unsupported; no executable behaviour family",
+    "1× Sacred Ash (sv10-168): unsupported; no executable behaviour family",
+    "1× Enhanced Hammer (sv6-148): unsupported; no executable behaviour family",
+    "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
+    "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
+    "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
+    "4× Nighttime Mine (me2pt5-197): unsupported; no executable behaviour family",
+    "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
+    "1× Enriching Energy (sv8-191): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Psychic"
+    ],
+    "strategic": [
+      "setup"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

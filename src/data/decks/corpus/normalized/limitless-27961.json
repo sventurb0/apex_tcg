@@ -1,0 +1,648 @@
+{
+  "id": "limitless-27961",
+  "snapshot": {
+    "id": "limitless-27961",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/27961",
+    "sourceDeckId": "27961",
+    "eventName": "Special Event Turin",
+    "eventDate": "2026-06-06",
+    "placement": 45,
+    "player": "Nicolai Stiborg",
+    "format": "standard",
+    "archetype": "Mega Lucario",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 3,
+        "cardName": "Riolu"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Riolu"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Lucario ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dunsparce"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dudunsparce ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Solrock"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lunatone"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hilda"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Fighting Gong"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Premium Power Pro"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Buddy-Buddy Poffin"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Gravity Mountain"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Jamming Tower"
+      },
+      {
+        "quantity": 8,
+        "cardName": "Fighting Energy"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Rocky Fighting Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Legacy Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 3,
+        "cardName": "Riolu",
+        "setCode": "PRE",
+        "collectorNumber": "50"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Riolu",
+        "setCode": "MEG",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Lucario ex",
+        "setCode": "MEG",
+        "collectorNumber": "77"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Dunsparce",
+        "setCode": "JTG",
+        "collectorNumber": "120"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dudunsparce",
+        "setCode": "TEF",
+        "collectorNumber": "129"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Dudunsparce ex",
+        "setCode": "JTG",
+        "collectorNumber": "121"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Solrock",
+        "setCode": "MEG",
+        "collectorNumber": "75"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lunatone",
+        "setCode": "MEG",
+        "collectorNumber": "74"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hilda",
+        "setCode": "WHT",
+        "collectorNumber": "84"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Fighting Gong",
+        "setCode": "MEG",
+        "collectorNumber": "116"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Premium Power Pro",
+        "setCode": "MEG",
+        "collectorNumber": "124"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Buddy-Buddy Poffin",
+        "setCode": "TEF",
+        "collectorNumber": "144"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Gravity Mountain",
+        "setCode": "SSP",
+        "collectorNumber": "177"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Jamming Tower",
+        "setCode": "TWM",
+        "collectorNumber": "153"
+      },
+      {
+        "quantity": 8,
+        "cardName": "Fighting Energy",
+        "setCode": "MEE",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Rocky Fighting Energy",
+        "setCode": "POR",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Legacy Energy",
+        "setCode": "TWM",
+        "collectorNumber": "167"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-27961",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-27961",
+    "name": "Mega Lucario — Nicolai Stiborg",
+    "description": "Special Event Turin · place 45. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-114",
+        "count": 4
+      },
+      {
+        "cardId": "me1-116",
+        "count": 4
+      },
+      {
+        "cardId": "me1-119",
+        "count": 4
+      },
+      {
+        "cardId": "me1-124",
+        "count": 4
+      },
+      {
+        "cardId": "me1-131",
+        "count": 2
+      },
+      {
+        "cardId": "me1-74",
+        "count": 2
+      },
+      {
+        "cardId": "me1-75",
+        "count": 2
+      },
+      {
+        "cardId": "me1-76",
+        "count": 1
+      },
+      {
+        "cardId": "me1-77",
+        "count": 3
+      },
+      {
+        "cardId": "me3-81",
+        "count": 4
+      },
+      {
+        "cardId": "me3-87",
+        "count": 4
+      },
+      {
+        "cardId": "me4-82",
+        "count": 1
+      },
+      {
+        "cardId": "rsv10pt5-84",
+        "count": 2
+      },
+      {
+        "cardId": "sv5-129",
+        "count": 2
+      },
+      {
+        "cardId": "sv5-144",
+        "count": 2
+      },
+      {
+        "cardId": "sv6-153",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-167",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-177",
+        "count": 2
+      },
+      {
+        "cardId": "sv8pt5-50",
+        "count": 3
+      },
+      {
+        "cardId": "sv9-120",
+        "count": 3
+      },
+      {
+        "cardId": "sv9-121",
+        "count": 1
+      },
+      {
+        "cardId": "sve-6",
+        "count": 8
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 3,
+      "sourceCardName": "Riolu",
+      "sourceSetCode": "PRE",
+      "sourceCollectorNumber": "50",
+      "chosenCardId": "sv8pt5-50",
+      "chosenCardName": "Riolu",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Riolu",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "76",
+      "chosenCardId": "me1-76",
+      "chosenCardName": "Riolu",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Mega Lucario ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "77",
+      "chosenCardId": "me1-77",
+      "chosenCardName": "Mega Lucario ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Dunsparce",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "120",
+      "chosenCardId": "sv9-120",
+      "chosenCardName": "Dunsparce",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Dudunsparce",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "129",
+      "chosenCardId": "sv5-129",
+      "chosenCardName": "Dudunsparce",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Dudunsparce ex",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "121",
+      "chosenCardId": "sv9-121",
+      "chosenCardName": "Dudunsparce ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Solrock",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "75",
+      "chosenCardId": "me1-75",
+      "chosenCardName": "Solrock",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Lunatone",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "74",
+      "chosenCardId": "me1-74",
+      "chosenCardName": "Lunatone",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "partial"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Determination",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "119",
+      "chosenCardId": "me1-119",
+      "chosenCardName": "Lillie's Determination",
+      "behaviourFamilyId": "behaviour:1hej1pp",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Hilda",
+      "sourceSetCode": "WHT",
+      "sourceCollectorNumber": "84",
+      "chosenCardId": "rsv10pt5-84",
+      "chosenCardName": "Hilda",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Fighting Gong",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "116",
+      "chosenCardId": "me1-116",
+      "chosenCardName": "Fighting Gong",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Premium Power Pro",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "124",
+      "chosenCardId": "me1-124",
+      "chosenCardName": "Premium Power Pro",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Poké Pad",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "81",
+      "chosenCardId": "me3-81",
+      "chosenCardName": "Poké Pad",
+      "behaviourFamilyId": "behaviour:fechzl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Buddy-Buddy Poffin",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "144",
+      "chosenCardId": "sv5-144",
+      "chosenCardName": "Buddy-Buddy Poffin",
+      "behaviourFamilyId": "behaviour:19avavg",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Special Red Card",
+      "sourceSetCode": "CRI",
+      "sourceCollectorNumber": "82",
+      "chosenCardId": "me4-82",
+      "chosenCardName": "Special Red Card",
+      "behaviourFamilyId": "behaviour:d0rhec",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Gravity Mountain",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "177",
+      "chosenCardId": "sv8-177",
+      "chosenCardName": "Gravity Mountain",
+      "behaviourFamilyId": "behaviour:1ce4zb5",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Jamming Tower",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "153",
+      "chosenCardId": "sv6-153",
+      "chosenCardName": "Jamming Tower",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 8,
+      "sourceCardName": "Fighting Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "6",
+      "chosenCardId": "sve-6",
+      "chosenCardName": "Basic Fighting Energy",
+      "behaviourFamilyId": "behaviour:10zemi3",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Rocky Fighting Energy",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "87",
+      "chosenCardId": "me3-87",
+      "chosenCardName": "Rocky Fighting Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Legacy Energy",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "167",
+      "chosenCardId": "sv6-167",
+      "chosenCardName": "Legacy Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    }
+  ],
+  "compositionFingerprint": "composition-1knfnnm",
+  "sourceSnapshotIds": [
+    "limitless-27961"
+  ],
+  "exactResolvedCopies": 52,
+  "canonicalEquivalentCopies": 8,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 19,
+    "generated": 8,
+    "partial": 4,
+    "unsupported": 29
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me1-116",
+    "unimplemented:me1-124",
+    "unimplemented:me1-74",
+    "unimplemented:me1-75",
+    "unimplemented:me1-76",
+    "unimplemented:me1-77",
+    "unimplemented:me3-87",
+    "unimplemented:rsv10pt5-84",
+    "unimplemented:sv5-129",
+    "unimplemented:sv6-153",
+    "unimplemented:sv6-167",
+    "unimplemented:sv8pt5-50",
+    "unimplemented:sv9-120",
+    "unimplemented:sv9-121"
+  ],
+  "blockers": [
+    "3× Riolu (sv8pt5-50): unsupported; no executable behaviour family",
+    "1× Riolu (me1-76): unsupported; no executable behaviour family",
+    "3× Mega Lucario ex (me1-77): unsupported; no executable behaviour family",
+    "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
+    "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
+    "1× Dudunsparce ex (sv9-121): unsupported; no executable behaviour family",
+    "2× Solrock (me1-75): unsupported; no executable behaviour family",
+    "2× Lunatone (me1-74): partial; no executable behaviour family",
+    "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
+    "4× Fighting Gong (me1-116): unsupported; no executable behaviour family",
+    "4× Premium Power Pro (me1-124): unsupported; no executable behaviour family",
+    "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family",
+    "4× Rocky Fighting Energy (me3-87): unsupported; no executable behaviour family",
+    "1× Legacy Energy (sv6-167): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Fighting"
+    ],
+    "strategic": [
+      "aggressive"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

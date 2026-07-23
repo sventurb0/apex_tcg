@@ -4,13 +4,19 @@ export type ImplementationStatus = "complete" | "generated" | "partial" | "place
 export type PokemonStage = "basic" | "stage1" | "stage2";
 export type TrainerSubtype = "item" | "supporter" | "stadium" | "tool";
 export type SpecialCondition = "asleep" | "burned" | "confused" | "paralyzed" | "poisoned";
-export type CardTrait = "team-rocket" | "pokemon-ex" | "radiant" | "ace-spec";
+export type CardTrait = "team-rocket" | "pokemon-ex" | "radiant" | "tera" | "ace-spec";
 export interface PoisonCondition { countersPerCheckup: number; sourceCardId?: string; }
 
 export type AttackDamage =
   | { kind: "none"; printed: string }
   | { kind: "fixed"; amount: number; printed: string }
   | { kind: "formula"; printed: string; resolverId: string };
+
+export type AttackCondition =
+  | { kind: "opponent-damaged" }
+  | { kind: "opponent-has-prizes"; minimum: number }
+  | { kind: "attached-energy"; minimum: number; energyType?: CardType }
+  | { kind: "discard-energy"; minimum: number; energyType?: CardType };
 
 export interface AttackDefinition {
   id: string;
@@ -19,6 +25,8 @@ export interface AttackDefinition {
   damage: AttackDamage;
   text?: string;
   effectProgramId?: string;
+  /** Optional executable gate for attacks whose text has a conditional cost. */
+  condition?: AttackCondition;
 }
 
 export type AbilityCategory = "activated" | "passive" | "triggered";
@@ -37,12 +45,17 @@ export interface AbilityDefinition {
   usageLimit: AbilityUsageLimit;
   effectProgramId: string;
   targeting: AbilityTargetingRules;
+  /** Triggered abilities are evaluated against public game events. */
+  triggerOn?: import("./game-state").GameEventType | import("./game-state").GameEventType[];
 }
 
 export interface PokemonCard {
   id: CardId;
   name: string;
   category: "pokemon";
+  /** Optional discriminator convenience for generic card predicates. */
+  subtype?: TrainerSubtype;
+  effectProgramId?: string;
   pokemonType: CardType;
   stage: PokemonStage;
   evolvesFrom?: string;
@@ -50,6 +63,7 @@ export interface PokemonCard {
   ruleBox?: "single-prize" | "multi-prize";
   hasRuleBox?: boolean;
   isPokemonEx?: boolean;
+  isMega?: boolean;
   prizeValue?: number;
   abilities: AbilityDefinition[];
   attacks: AttackDefinition[];
@@ -65,6 +79,8 @@ export interface EnergyCard {
   id: CardId;
   name: string;
   category: "energy";
+  subtype?: TrainerSubtype;
+  effectProgramId?: string;
   energyType: CardType;
   basic: boolean;
   traits?: CardTrait[];
@@ -99,4 +115,6 @@ export interface PokemonInPlay {
   enteredPlayTurn: number;
   evolvedThisTurn: boolean;
   abilityUsage: Record<string, number>;
+  hpModifier?: number;
+  prizeValueModifier?: number;
 }

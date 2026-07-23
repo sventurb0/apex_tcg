@@ -6,10 +6,11 @@ import type { GameResult } from "../model/results";
 import { calculateDamage, isKnockedOut, resolveBaseDamage } from "./combat";
 import { emitEvent } from "./events";
 import { getLegalActions } from "./legal-actions";
-import { cardFor, cloneGameState, findPokemon, otherPlayer, playId, pokemonTargets, removeFromHand, topCard } from "./helpers";
+import { cardFor, cloneGameState, findPokemon, otherPlayer, playId, pokemonTargets, removeFromDeck, removeFromHand, topCard } from "./helpers";
 import { clearSpecialConditions, processPokemonCheckup } from "./pokemon-checkup";
 import { attackDamageBonus, modifiedPrizeValue } from "./modifiers";
 import { expireTemporaryEffects } from "./temporary-effects";
+import { benchCapacity, canUseAttackCondition } from "./shared-mechanics";
 import { nextRandom } from "../random/seeded-rng";
 import { enforceAttachmentValidity } from "./attachment-validity";
 import { hasCardTrait } from "./traits";
@@ -25,6 +26,7 @@ function startTurn(state: GameState, playerId: PlayerId): void {
   for (const pokemon of pokemonTargets(player)) { pokemon.evolvedThisTurn = false; pokemon.abilityUsage = {}; }
   const drawn = player.deck.shift(); if (!drawn) result(state, otherPlayer(playerId), "deck-out"); else player.hand.push(drawn);
 }
+
 
 function makePokemon(instance: CardInstance, turn: number): PokemonInPlay { return { stack: [instance], damage: 0, attachedEnergy: [], specialConditions: [], enteredPlayTurn: turn, evolvedThisTurn: false, abilityUsage: {} }; }
 function discardPokemon(player: PlayerState, pokemon: PokemonInPlay): void { player.discard.push(...pokemon.stack, ...pokemon.attachedEnergy); if (pokemon.tool) player.discard.push(pokemon.tool); }
@@ -122,6 +124,7 @@ function applyAbility(state: GameState, action: Extract<GameAction, { type: "use
 function applyStadiumAbility(state: GameState, action: Extract<GameAction, { type: "use-stadium" }>): void {
   const stadium = state.stadium ? cardFor(state, state.stadium) : undefined;
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:team-rocket-factory") { const player = state.players[action.playerId]; player.hand.push(...player.deck.splice(0, 2)); player.stadiumAbilityUsedThisTurn = true; emitEvent(state, "stadium-ability-used", action.playerId, { sourceCardId: stadium.id, detail: "Team Rocket's Factory draw 2" }); return; }
+  if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:prism-tower") { const player = state.players[action.playerId]; if (player.hand.length < 2 || player.stadiumAbilityUsedThisTurn) throw new GameRuleError("Prism Tower requires 2 cards in hand.", action); player.discard.push(...player.hand.splice(0, 2)); const drawn = player.deck.shift(); if (drawn) player.hand.push(drawn); player.stadiumAbilityUsedThisTurn = true; emitEvent(state, "stadium-ability-used", action.playerId, { sourceCardId: stadium.id, detail: "Prism Tower discard 2 draw 1" }); return; }
   const player = state.players[action.playerId]; const target = findPokemon(player, action.targetId); const energyIndex = player.discard.findIndex((card) => card.instanceId === action.cardInstanceId); const energy = energyIndex >= 0 ? player.discard[energyIndex] : undefined;
   if (!target || !player.bench.includes(target) || topCard(state, target).pokemonType !== "fire" || !energy) throw new GameRuleError("Magma Basin target is unavailable.", action);
   const energyDef = cardFor(state, energy); if (energyDef.category !== "energy" || energyDef.energyType !== "fire") throw new GameRuleError("Magma Basin requires Fire Energy.", action);
@@ -132,14 +135,14 @@ function applyStadiumAbility(state: GameState, action: Extract<GameAction, { typ
 
 function applyAttack(state: GameState, action: Extract<GameAction, { type: "attack" }>): void {
   const attacker = state.players[action.playerId]; const defenderId = otherPlayer(action.playerId); const defender = state.players[defenderId]; if (!attacker.active || !defender.active) throw new GameRuleError("Both players need an Active Pokémon to attack.", action);
-  const attackingCard = topCard(state, attacker.active); const attack = attackingCard.attacks.find((candidate) => candidate.id === action.attackId); if (!attack) throw new GameRuleError("Attack is not available.", action);
+  const attackingCard = topCard(state, attacker.active); const attack = attackingCard.attacks.find((candidate) => candidate.id === action.attackId); if (!attack) throw new GameRuleError("Attack is not available.", action); if (attack.condition && !canUseAttackCondition(state, action.playerId, attacker.active, attack.condition)) throw new GameRuleError("The attack's condition is not satisfied.", action);
   emitEvent(state, "attack-used", action.playerId, { sourceCardId: attackingCard.id, targetId: action.targetId ?? playId(defender.active), detail: attack.name });
   if (attacker.active.specialConditions.includes("confused")) { const flip = nextRandom(state.rngState); state.rngState = flip.state; const heads = flip.value < .5; emitEvent(state, "coin-flip", action.playerId, { sourceCardId: attackingCard.id, targetId: playId(attacker.active), detail: `confused:${heads ? "heads" : "tails"}` }); if (!heads) { attacker.active.damage += 30; emitEvent(state, "damage-dealt", action.playerId, { sourceCardId: attackingCard.id, targetId: playId(attacker.active), amount: 30, detail: "Confusion self-damage" }); resolveKnockOuts(state, { kind: "checkup", playerId: action.playerId }, { cause: "other-effect", sourcePlayerId: action.playerId, sourceCardId: attackingCard.id }); return; } }
   const targeted = action.targetId ? findPokemon(defender, action.targetId) : defender.active; if (!targeted) throw new GameRuleError("Attack target is unavailable.", action); const targetIsActive = targeted === defender.active; const defendingCard = topCard(state, targeted);
-  const baseDamage = resolveBaseDamage(attack.damage, attacker.active, state, action.playerId); const bonus = attackDamageBonus(state, attacker.active, targetIsActive); const damage = targetIsActive ? calculateDamage(attackingCard, defendingCard, baseDamage + bonus.amount) : baseDamage;
+  const baseDamage = resolveBaseDamage(attack.damage, attacker.active, state, action.playerId); const bonus = attackDamageBonus(state, attacker.active, targetIsActive); const benchProtected = !targetIsActive && defendingCard.id === "sv6-130"; const fairyZone = pokemonTargets(attacker).some((pokemon) => topCard(state, pokemon).abilities.some((ability) => ability.effectProgramId === "passive:fairy-zone")); const effectiveDefendingCard = fairyZone && defendingCard.pokemonType === "dragon" ? { ...defendingCard, weakness: { type: "psychic" as const, multiplier: 2 } } : defendingCard; const damage = benchProtected ? 0 : targetIsActive ? calculateDamage(attackingCard, effectiveDefendingCard, baseDamage + bonus.amount) : baseDamage;
   if (attack.damage.kind === "formula" && attack.damage.resolverId === "horn-rend-damage" && targeted.damage > 0) emitEvent(state, "damage-modifier-applied", action.playerId, { sourceCardId: attackingCard.id, targetId: playId(targeted), amount: 60, detail: "Horn Rend conditional bonus" });
   targeted.damage += damage; if (damage) emitEvent(state, "damage-dealt", action.playerId, { sourceCardId: attackingCard.id, targetId: playId(targeted), amount: damage }); if (bonus.amount) emitEvent(state, "damage-modifier-applied", action.playerId, { sourceCardId: bonus.sourceCardId, targetId: playId(targeted), amount: bonus.amount, detail: "Binding Mochi" });
-  if (attack.effectProgramId) { const completed = startEffectProgram(state, { programId: attack.effectProgramId, actingPlayerId: action.playerId, sourceCardId: attackingCard.id, sourcePokemonId: playId(attacker.active), attackId: attack.id, after: "finish-attack", variables: action.targetId ? { target: [action.targetId] } : undefined }); if (!completed) return; }
+  if (attack.effectProgramId) { const effectsBlocked = defendingCard.stage === "basic" && hasCardTrait(defendingCard, "team-rocket") && pokemonTargets(defender).some((pokemon) => topCard(state, pokemon).abilities.some((ability) => ability.effectProgramId === "passive:repelling-veil")); if (!effectsBlocked) { const completed = startEffectProgram(state, { programId: attack.effectProgramId, actingPlayerId: action.playerId, sourceCardId: attackingCard.id, sourcePokemonId: playId(attacker.active), attackId: attack.id, after: "finish-attack", variables: action.targetId ? { target: [action.targetId] } : undefined }); if (!completed) return; } }
   finishAttack(state, action.playerId, attackingCard.id);
 }
 
@@ -156,7 +159,7 @@ function mutate(state: GameState, action: GameAction): void {
   const player = state.players[action.playerId];
   switch (action.type) {
     case "select-active": applySelectActive(state, action); break;
-    case "bench-basic": { const instance = removeFromHand(player, action.cardInstanceId); player.bench.push(makePokemon(instance, state.turn)); break; }
+    case "bench-basic": { if (player.bench.length >= benchCapacity(state, action.playerId)) throw new GameRuleError("The Bench is full.", action); const instance = removeFromHand(player, action.cardInstanceId); const pokemon = makePokemon(instance, state.turn); player.bench.push(pokemon); emitEvent(state, "pokemon-benched", action.playerId, { sourceCardId: instance.cardId, sourceInstanceId: instance.instanceId, targetId: playId(pokemon) }); if (instance.cardId === "me3-62" && !player.abilityUsageByName["Last-Ditch Catch"]) { const supporter = player.deck.find((candidate) => { const definition = cardFor(state, candidate); return definition.category === "trainer" && definition.subtype === "supporter"; }); if (supporter) { removeFromDeck(player, supporter.instanceId); player.hand.push(supporter); emitEvent(state, "cards-searched", action.playerId, { sourceCardId: instance.cardId, cardInstanceIds: [supporter.instanceId], detail: "Last-Ditch Catch" }); } player.abilityUsageByName["Last-Ditch Catch"] = state.turn; } break; }
     case "finish-setup": applyFinishSetup(state, action.playerId); break;
     case "draw-mulligan": { const pending = state.pendingChoice; if (pending?.type !== "mulligan-draw") break; const card = player.deck.shift(); if (card) player.hand.push(card); state.pendingChoice = { ...pending, remaining: Math.max(0, pending.remaining - 1) }; break; }
     case "attach-energy": { const instance = removeFromHand(player, action.cardInstanceId); const target = findPokemon(player, action.targetId); if (!target) throw new GameRuleError("Energy target is unavailable.", action); target.attachedEnergy.push(instance); player.energyAttachedThisTurn = true; emitEvent(state, "energy-attached-manually", action.playerId, { sourceCardId: instance.cardId, targetId: playId(target), cardInstanceIds: [instance.instanceId], detail: instance.cardId === "sv10-182" ? "Team Rocket's Energy" : undefined }); break; }
@@ -165,7 +168,7 @@ function mutate(state: GameState, action: GameAction): void {
     case "use-stadium": applyStadiumAbility(state, action); break;
     case "use-ability": applyAbility(state, action); break;
     case "attack": applyAttack(state, action); break;
-    case "retreat": { if (!player.active) throw new GameRuleError("There is no Active Pokémon to retreat.", action); const targetIndex = player.bench.findIndex((pokemon) => playId(pokemon) === action.targetId); const cost = topCard(state, player.active).retreatCost; player.discard.push(...player.active.attachedEnergy.splice(0, cost)); clearSpecialConditions(player.active); const target = player.bench.splice(targetIndex, 1, player.active)[0]; if (!target) throw new GameRuleError("Retreat target is unavailable.", action); player.active = target; player.retreatedThisTurn = true; break; }
+    case "retreat": { if (!player.active) throw new GameRuleError("There is no Active Pokémon to retreat.", action); const targetIndex = player.bench.findIndex((pokemon) => playId(pokemon) === action.targetId); const skyliner = pokemonTargets(player).some((pokemon) => topCard(state, pokemon).abilities.some((ability) => ability.effectProgramId === "passive:skyliner")); const cost = skyliner && topCard(state, player.active).stage === "basic" ? 0 : topCard(state, player.active).retreatCost; player.discard.push(...player.active.attachedEnergy.splice(0, cost)); clearSpecialConditions(player.active); const target = player.bench.splice(targetIndex, 1, player.active)[0]; if (!target) throw new GameRuleError("Retreat target is unavailable.", action); player.active = target; player.retreatedThisTurn = true; break; }
     case "choose-prize": applyPrize(state, action); break;
     case "select-card": case "select-pokemon": applyChoiceSelection(state, action.selectionId, true); break;
     case "deselect-card": applyChoiceSelection(state, action.selectionId, false); break;

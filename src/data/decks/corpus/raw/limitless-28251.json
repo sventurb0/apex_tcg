@@ -1,0 +1,270 @@
+{
+  "snapshot": {
+    "id": "limitless-28251",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28251",
+    "sourceDeckId": "28251",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 4,
+    "player": "Ross Cawthon",
+    "format": "standard",
+    "archetype": "Slowking",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Slowpoke"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Slowking"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Kangaskhan ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kyurem"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Zeraora"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Clefairy ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ciphermaniac's Codebreaking"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Academy at Night"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boomerang Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Slowpoke",
+        "setCode": "SCR",
+        "collectorNumber": "57"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Slowking",
+        "setCode": "SCR",
+        "collectorNumber": "58"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Mega Kangaskhan ex",
+        "setCode": "MEG",
+        "collectorNumber": "104"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Latias ex",
+        "setCode": "SSP",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Kyurem",
+        "setCode": "SFA",
+        "collectorNumber": "47"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Metagross",
+        "setCode": "CRI",
+        "collectorNumber": "61"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Zeraora",
+        "setCode": "DRI",
+        "collectorNumber": "78"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lillie's Clefairy ex",
+        "setCode": "JTG",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ciphermaniac's Codebreaking",
+        "setCode": "TEF",
+        "collectorNumber": "145"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch",
+        "setCode": "PFL",
+        "collectorNumber": "94"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Secret Box",
+        "setCode": "TWM",
+        "collectorNumber": "163"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Switch",
+        "setCode": "MEG",
+        "collectorNumber": "130"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Brave Bangle",
+        "setCode": "WHT",
+        "collectorNumber": "80"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lucky Helmet",
+        "setCode": "TWM",
+        "collectorNumber": "158"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Academy at Night",
+        "setCode": "SFA",
+        "collectorNumber": "54"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Telepathic Psychic Energy",
+        "setCode": "POR",
+        "collectorNumber": "88"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boomerang Energy",
+        "setCode": "TWM",
+        "collectorNumber": "166"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28251",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "diagnostics": {
+    "title": "Slowking by Ross Cawthon – Limitless",
+    "description": "Slowking decklist by Ross Cawthon - 4th Place NAIC 2026, New Orleans - 10th June 2026",
+    "cardBlockCount": 24,
+    "totalCards": 60
+  },
+  "semanticHtmlFixture": "<!doctype html><html><head>\n<title>Slowking by Ross Cawthon – Limitless</title>\n<meta name=\"description\" content=\"Slowking decklist by Ross Cawthon - 4th Place NAIC 2026, New Orleans - 10th June 2026\">\n</head><body>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"57\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/57\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Slowpoke</span>\n                 <img class=\"set\" alt=\"SCR\" src=\"https://s3.limitlesstcg.com/sets/en/SCR_SM.png\" data-tooltip=\"Stellar Crown\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567283%2Fpokemon-sv07-stellar-crown-slowpoke\" target=\"_blank\">$14.36</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Slowpoke-SCR057?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">7.88€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"58\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/58\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Slowking</span>\n                 <img class=\"set\" alt=\"SCR\" src=\"https://s3.limitlesstcg.com/sets/en/SCR_SM.png\" data-tooltip=\"Stellar Crown\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567284%2Fpokemon-sv07-stellar-crown-slowking\" target=\"_blank\">$0.72</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Slowking-SCR058?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.54€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"104\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/104\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Mega Kangaskhan ex</span>\n                 <img class=\"set\" alt=\"MEG\" src=\"https://s3.limitlesstcg.com/sets/en/MEG_SM.png\" data-tooltip=\"Mega Evolution\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654443%2Fpokemon-me01-mega-evolution-mega-kangaskhan-ex-104-132\" target=\"_blank\">$2.91</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Mega-Kangaskhan-ex-V1-MEG104?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">3.51€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SSP\" data-number=\"76\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SSP/76\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Latias ex</span>\n                 <img class=\"set\" alt=\"SSP\" src=\"https://s3.limitlesstcg.com/sets/en/SSP_SM.png\" data-tooltip=\"Surging Sparks\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F589983%2Fpokemon-sv08-surging-sparks-latias-ex-076-191\" target=\"_blank\">$9.78</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Surging-Sparks/Latias-ex-V1-SSP076?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">9.72€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SFA\" data-number=\"47\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SFA/47\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Kyurem</span>\n                 <img class=\"set\" alt=\"SFA\" src=\"https://s3.limitlesstcg.com/sets/en/SFA_SM.png\" data-tooltip=\"Shrouded Fable\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F560358%2Fpokemon-sv-shrouded-fable-kyurem\" target=\"_blank\">$0.30</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Shrouded-Fable/Kyurem-SFA047?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.20€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"61\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/61\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Metagross</span>\n                 <img class=\"set\" alt=\"CRI\" src=\"https://s3.limitlesstcg.com/sets/en/CRI_SM.png\" data-tooltip=\"Chaos Rising\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693522%2Fpokemon-me04-chaos-rising-metagross\" target=\"_blank\">$0.44</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Metagross-CRI061?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.10€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"62\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/62\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Meowth ex</span>\n                 <img class=\"set\" alt=\"POR\" src=\"https://s3.limitlesstcg.com/sets/en/POR_SM.png\" data-tooltip=\"Perfect Order\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684340%2Fpokemon-me03-perfect-order-meowth-ex-062-088\" target=\"_blank\">$2.29</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V1-POR062?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">4.09€</a>         </div>\n<div class=\"decklist-card\" data-set=\"DRI\" data-number=\"78\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/DRI/78\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Zeraora</span>\n                 <img class=\"set\" alt=\"DRI\" src=\"https://s3.limitlesstcg.com/sets/en/DRI_SM.png\" data-tooltip=\"Destined Rivals\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F632888%2Fpokemon-sv10-destined-rivals-zeraora\" target=\"_blank\">$0.21</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Destined-Rivals/Zeraora-DRI078?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.07€</a>         </div>\n<div class=\"decklist-card\" data-set=\"JTG\" data-number=\"56\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/JTG/56\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Lillie's Clefairy ex</span>\n                 <img class=\"set\" alt=\"JTG\" src=\"https://s3.limitlesstcg.com/sets/en/JTG_SM.png\" data-tooltip=\"Journey Together\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F623483%2Fpokemon-sv09-journey-together-lillies-clefairy-ex-056-159\" target=\"_blank\">$2.45</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Journey-Together/Lillies-Clefairy-ex-V1-JTG056?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.71€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"142\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/142\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Fezandipiti ex</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675954%2Fpokemon-me-ascended-heroes-fezandipiti-ex-142-217\" target=\"_blank\">$3.36</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Fezandipiti-ex-V1-ASC142?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">3.37€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"119\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/119\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Lillie's Determination</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654458%2Fpokemon-me01-mega-evolution-lillies-determination-119-132\" target=\"_blank\">$1.16</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Lillies-Determination-V1-MEG119?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.76€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TEF\" data-number=\"145\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TEF/145\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Ciphermaniac's Codebreaking</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F542660%2Fpokemon-sv05-temporal-forces-ciphermaniacs-codebreaking-145-162\" target=\"_blank\">$0.76</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Temporal-Forces/Ciphermaniacs-Codebreaking-V1-TEF145?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.44€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"81\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/81\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Poké Pad</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684332%2Fpokemon-me03-perfect-order-poke-pad-081-088\" target=\"_blank\">$1.12</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Poke-Pad-V1-POR081?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.56€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"131\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/131\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Ultra Ball</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654470%2Fpokemon-me01-mega-evolution-ultra-ball\" target=\"_blank\">$0.88</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Ultra-Ball-MEG131?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.48€</a>         </div>\n<div class=\"decklist-card\" data-set=\"PFL\" data-number=\"94\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/PFL/94\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Wondrous Patch</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F662241%2Fpokemon-me02-phantasmal-flames-wondrous-patch\" target=\"_blank\">$0.63</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Phantasmal-Flames/Wondrous-Patch-PFL094?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.18€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"196\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/196\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Night Stretcher</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F676008%2Fpokemon-me-ascended-heroes-night-stretcher\" target=\"_blank\">$0.46</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Night-Stretcher-ASC196?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.28€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"163\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/163\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Secret Box</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550207%2Fpokemon-sv06-twilight-masquerade-secret-box\" target=\"_blank\">$4.96</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Secret-Box-TWM163?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">8.66€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"130\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/130\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Switch</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654469%2Fpokemon-me01-mega-evolution-switch\" target=\"_blank\">$0.26</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Switch-MEG130?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.08€</a>         </div>\n<div class=\"decklist-card\" data-set=\"WHT\" data-number=\"80\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/WHT/80\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Brave Bangle</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F642197%2Fpokemon-sv-white-flare-brave-bangle\" target=\"_blank\">$0.38</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/White-Flare/Brave-Bangle-WHT080?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.34€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"158\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/158\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Lucky Helmet</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550202%2Fpokemon-sv06-twilight-masquerade-lucky-helmet\" target=\"_blank\">$0.27</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Lucky-Helmet-TWM158?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.11€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SFA\" data-number=\"54\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SFA/54\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Academy at Night</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F560365%2Fpokemon-sv-shrouded-fable-academy-at-night\" target=\"_blank\">$0.76</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Shrouded-Fable/Academy-at-Night-SFA054?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.60€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"88\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/88\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Telepathic Psychic Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684396%2Fpokemon-me03-perfect-order-telepathic-psychic-energy\" target=\"_blank\">$1.12</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Telepath-P-Energy-POR088?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.20€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEE\" data-number=\"5\" data-lang=\"en\"   data-basic-energy=\"5\" >\n            <a class=\"card-link\" href=\"/cards/MEE/5\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Psychic Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F656267%2Fpokemon-mee-mega-evolution-energies-basic-psychic-energy-005\" target=\"_blank\">$0.72</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution-Energies/Basic-Psychic-Energy-V1-MEE005?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.08€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"166\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/166\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Boomerang Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550210%2Fpokemon-sv06-twilight-masquerade-boomerang-energy\" target=\"_blank\">$0.54</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Boomerang-Energy-TWM166?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.48€</a>         </div>\n</body></html>"
+}

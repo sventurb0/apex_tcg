@@ -36,6 +36,12 @@ export function removeFromHand(player: PlayerState, instanceId: string): CardIns
   return player.hand.splice(index, 1)[0]!;
 }
 
+export function removeFromDeck(player: PlayerState, instanceId: string): CardInstance {
+  const index = player.deck.findIndex((card) => card.instanceId === instanceId);
+  if (index < 0) throw new Error(`Card ${instanceId} is not in the deck.`);
+  return player.deck.splice(index, 1)[0]!;
+}
+
 export function findPokemon(player: PlayerState, targetId: string): PokemonInPlay | undefined {
   return pokemonTargets(player).find((pokemon) => playId(pokemon) === targetId);
 }

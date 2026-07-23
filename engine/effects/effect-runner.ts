@@ -3,6 +3,10 @@ import type { GameState } from "../model/game-state";
 import { findPokemon } from "../rules/helpers";
 import { applySpecialCondition, clearSpecialConditions } from "../rules/pokemon-checkup";
 import { nextRandom, shuffleDeterministic } from "../random/seeded-rng";
+import { discardAttachedEnergy } from "../rules/shared-mechanics";
+import { emitEvent } from "../rules/events";
+import { otherPlayer, playId } from "../rules/helpers";
+import { addTemporaryEffect } from "../rules/temporary-effects";
 import type { CustomEffectHandlerId, EffectPrimitive } from "./effect-types";
 
 export interface EffectContext {
@@ -68,6 +72,33 @@ export function runEffects(state: GameState, context: EffectContext, effects: re
         if (target) target.damage += effect.amount;
         break;
       }
+      case "discard-attached-energy": {
+        const target = context.targetId ? findPokemon(player, context.targetId) : player.active;
+        if (target) discardAttachedEnergy(state, context.playerId, playId(target), effect.count, undefined, undefined);
+        break;
+      }
+      case "bench-damage": {
+        const opponentId = otherPlayer(context.playerId);
+        const targets = state.players[opponentId].bench.slice(0, Math.max(0, effect.targets));
+        for (const target of targets) { target.damage += effect.amount; emitEvent(state, "damage-dealt", context.playerId, { targetId: playId(target), targetPlayerId: opponentId, amount: effect.amount, detail: "distributed Bench damage" }); }
+        break;
+      }
+      case "modify-hp": {
+        const target = context.targetId ? findPokemon(player, context.targetId) : player.active;
+        if (target) target.hpModifier = (target.hpModifier ?? 0) + effect.amount;
+        break;
+      }
+      case "modify-prize-value": {
+        const target = context.targetId ? findPokemon(player, context.targetId) : player.active;
+        if (target) target.prizeValueModifier = (target.prizeValueModifier ?? 0) + effect.amount;
+        break;
+      }
+      case "disable-ability": {
+        const targetPlayerId = effect.scope === "all-opponent" ? otherPlayer(context.playerId) : context.playerId;
+        const target = context.targetId ? findPokemon(state.players[targetPlayerId], context.targetId) : state.players[targetPlayerId].active;
+        addTemporaryEffect(state, { kind: "ability-lock", playerId: targetPlayerId, pokemonId: effect.scope === "all-opponent" ? undefined : target ? playId(target) : undefined, appliesOnPlayerTurn: state.players[targetPlayerId].turnsTaken, sourceCardId: "effect" });
+        break;
+      }
       case "coin-flip": {
         const flip = nextRandom(state.rngState); state.rngState = flip.state;
         runEffects(state, context, flip.value < .5 ? effect.heads : effect.tails ?? []);
@@ -79,20 +110,16 @@ export function runEffects(state: GameState, context: EffectContext, effects: re
       case "look-at-cards":
       case "discard-from-hand":
       case "discard-from-deck":
-      case "discard-attached-energy":
       case "attach-energy-from-hand":
       case "attach-energy-from-discard":
       case "accelerate-energy":
       case "move-energy":
       case "switch-active":
       case "force-switch":
-      case "bench-damage":
       case "modify-attack-damage":
-      case "modify-retreat-cost":
-      case "modify-hp":
-      case "modify-prize-value":
       case "copy-attack":
-      case "disable-ability":
+        throw new UnsupportedEffectError(effect);
+      case "modify-retreat-cost":
       case "lock-items":
       case "lock-supporters":
       case "lock-retreat":

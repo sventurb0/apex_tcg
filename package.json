@@ -19,9 +19,24 @@
     "effects:report": "tsx scripts/report-effects.ts",
     "coverage:plan": "tsx scripts/coverage-plan.ts",
     "coverage:report": "tsx scripts/coverage-report.ts",
+    "decks:sync": "tsx scripts/deck-sources/sync-deck-corpus.ts",
+    "decks:validate": "tsx scripts/deck-sources/validate-deck-corpus.ts",
+    "decks:report": "tsx scripts/deck-sources/report-deck-corpus.ts",
+    "decks:coverage-plan": "tsx scripts/deck-sources/deck-coverage-plan.ts",
+    "decks:rebuild": "tsx scripts/deck-sources/rebuild-checked-in-corpus.ts",
+    "decks:matrices": "tsx scripts/report-tournament-matrices.ts",
+    "engines:report": "tsx scripts/report-engines.ts",
+    "synergies:report": "tsx scripts/report-synergies.ts",
     "acceptance:coverage-wave-1": "tsx scripts/verify-coverage-wave-1.ts",
     "acceptance:team-rocket": "tsx scripts/verify-team-rocket-acceptance.ts",
-    "acceptance:deck-architect": "tsx scripts/verify-deck-architect.ts"
+    "acceptance:deck-architect": "tsx scripts/verify-deck-architect.ts",
+    "acceptance:meta-decks": "tsx scripts/acceptance-meta-decks.ts"
+    ,"acceptance:rocket-mewtwo": "tsx scripts/acceptance-tournament-runtime.ts rocket-mewtwo"
+    ,"acceptance:dragapult": "tsx scripts/acceptance-tournament-runtime.ts dragapult"
+    ,"acceptance:ns-zoroark": "tsx scripts/acceptance-tournament-runtime.ts ns-zoroark"
+    ,"acceptance:hydrapple": "tsx scripts/acceptance-tournament-runtime.ts hydrapple"
+    ,"acceptance:ogerpon-box": "tsx scripts/acceptance-tournament-runtime.ts ogerpon-box"
+    ,"acceptance:tournament-runtime-wave-1": "npm run acceptance:rocket-mewtwo && npm run acceptance:dragapult && npm run acceptance:ns-zoroark && npm run acceptance:hydrapple && npm run acceptance:ogerpon-box"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

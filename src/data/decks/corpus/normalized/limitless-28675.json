@@ -1,0 +1,722 @@
+{
+  "id": "limitless-28675",
+  "snapshot": {
+    "id": "limitless-28675",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28675",
+    "sourceDeckId": "28675",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 619,
+    "player": "Zachary Davis",
+    "format": "standard",
+    "archetype": "Lillie's Clefairy",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Clefairy ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Latias ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Wellspring Mask Ogerpon ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Moltres"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chien-Pao"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Passimian"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Koraidon ex"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crispin"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ciphermaniac's Codebreaking"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Cyrano"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dusk Ball"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Prime Catcher"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lillie's Pearl"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Area Zero Underdepths"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fighting Energy"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fire Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Water Energy"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Telepathic Psychic Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Mega Kangaskhan ex",
+        "setCode": "MEG",
+        "collectorNumber": "104"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Clefairy ex",
+        "setCode": "JTG",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Latias ex",
+        "setCode": "SSP",
+        "collectorNumber": "76"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Wellspring Mask Ogerpon ex",
+        "setCode": "TWM",
+        "collectorNumber": "64"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Moltres",
+        "setCode": "PFL",
+        "collectorNumber": "14"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chien-Pao",
+        "setCode": "SSP",
+        "collectorNumber": "56"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Passimian",
+        "setCode": "SSP",
+        "collectorNumber": "111"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Koraidon ex",
+        "setCode": "ASC",
+        "collectorNumber": "121"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Crispin",
+        "setCode": "SCR",
+        "collectorNumber": "133"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ciphermaniac's Codebreaking",
+        "setCode": "TEF",
+        "collectorNumber": "145"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Cyrano",
+        "setCode": "SSP",
+        "collectorNumber": "170"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Dusk Ball",
+        "setCode": "SSP",
+        "collectorNumber": "175"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Wondrous Patch",
+        "setCode": "PFL",
+        "collectorNumber": "94"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Prime Catcher",
+        "setCode": "TEF",
+        "collectorNumber": "157"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Lillie's Pearl",
+        "setCode": "JTG",
+        "collectorNumber": "151"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Area Zero Underdepths",
+        "setCode": "SCR",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Psychic Energy",
+        "setCode": "MEE",
+        "collectorNumber": "5"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fighting Energy",
+        "setCode": "MEE",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Fire Energy",
+        "setCode": "MEE",
+        "collectorNumber": "2"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Water Energy",
+        "setCode": "MEE",
+        "collectorNumber": "3"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Telepathic Psychic Energy",
+        "setCode": "POR",
+        "collectorNumber": "88"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28675",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "manifest": {
+    "id": "corpus-limitless-28675",
+    "name": "Lillie's Clefairy — Zachary Davis",
+    "description": "NAIC 2026, New Orleans · place 619. Composition-exact; printing choices follow the recorded resolution policy.",
+    "format": "standard",
+    "entries": [
+      {
+        "cardId": "me1-104",
+        "count": 4
+      },
+      {
+        "cardId": "me1-114",
+        "count": 3
+      },
+      {
+        "cardId": "me1-131",
+        "count": 4
+      },
+      {
+        "cardId": "me2-14",
+        "count": 1
+      },
+      {
+        "cardId": "me2-94",
+        "count": 3
+      },
+      {
+        "cardId": "me2pt5-121",
+        "count": 1
+      },
+      {
+        "cardId": "me2pt5-142",
+        "count": 2
+      },
+      {
+        "cardId": "me3-62",
+        "count": 4
+      },
+      {
+        "cardId": "me3-88",
+        "count": 1
+      },
+      {
+        "cardId": "sv5-145",
+        "count": 2
+      },
+      {
+        "cardId": "sv5-157",
+        "count": 1
+      },
+      {
+        "cardId": "sv6-64",
+        "count": 2
+      },
+      {
+        "cardId": "sv7-131",
+        "count": 4
+      },
+      {
+        "cardId": "sv7-133",
+        "count": 3
+      },
+      {
+        "cardId": "sv8-111",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-170",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-175",
+        "count": 4
+      },
+      {
+        "cardId": "sv8-56",
+        "count": 1
+      },
+      {
+        "cardId": "sv8-76",
+        "count": 3
+      },
+      {
+        "cardId": "sv9-151",
+        "count": 2
+      },
+      {
+        "cardId": "sv9-56",
+        "count": 4
+      },
+      {
+        "cardId": "sve-2",
+        "count": 2
+      },
+      {
+        "cardId": "sve-3",
+        "count": 1
+      },
+      {
+        "cardId": "sve-5",
+        "count": 4
+      },
+      {
+        "cardId": "sve-6",
+        "count": 2
+      }
+    ],
+    "source": "premade"
+  },
+  "resolutions": [
+    {
+      "quantity": 4,
+      "sourceCardName": "Meowth ex",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "62",
+      "chosenCardId": "me3-62",
+      "chosenCardName": "Meowth ex",
+      "behaviourFamilyId": "behaviour:rg7nsi",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Mega Kangaskhan ex",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "104",
+      "chosenCardId": "me1-104",
+      "chosenCardName": "Mega Kangaskhan ex",
+      "behaviourFamilyId": "behaviour:jncraj",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Lillie's Clefairy ex",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "sv9-56",
+      "chosenCardName": "Lillie's Clefairy ex",
+      "behaviourFamilyId": "behaviour:omy1js",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Latias ex",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "76",
+      "chosenCardId": "sv8-76",
+      "chosenCardName": "Latias ex",
+      "behaviourFamilyId": "behaviour:9x1vff",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Wellspring Mask Ogerpon ex",
+      "sourceSetCode": "TWM",
+      "sourceCollectorNumber": "64",
+      "chosenCardId": "sv6-64",
+      "chosenCardName": "Wellspring Mask Ogerpon ex",
+      "behaviourFamilyId": "behaviour:1upcvk",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Fezandipiti ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "142",
+      "chosenCardId": "me2pt5-142",
+      "chosenCardName": "Fezandipiti ex",
+      "behaviourFamilyId": "behaviour:tucgie",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Moltres",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "14",
+      "chosenCardId": "me2-14",
+      "chosenCardName": "Moltres",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Chien-Pao",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "56",
+      "chosenCardId": "sv8-56",
+      "chosenCardName": "Chien-Pao",
+      "behaviourFamilyId": "behaviour:12t7m3l",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Passimian",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "111",
+      "chosenCardId": "sv8-111",
+      "chosenCardName": "Passimian",
+      "behaviourFamilyId": "behaviour:1uz7sy8",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Koraidon ex",
+      "sourceSetCode": "ASC",
+      "sourceCollectorNumber": "121",
+      "chosenCardId": "me2pt5-121",
+      "chosenCardName": "Koraidon ex",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Crispin",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "133",
+      "chosenCardId": "sv7-133",
+      "chosenCardName": "Crispin",
+      "behaviourFamilyId": "behaviour:w6blt3",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Boss's Orders",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "114",
+      "chosenCardId": "me1-114",
+      "chosenCardName": "Boss's Orders",
+      "behaviourFamilyId": "behaviour:1fmm0ir",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Ciphermaniac's Codebreaking",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "145",
+      "chosenCardId": "sv5-145",
+      "chosenCardName": "Ciphermaniac's Codebreaking",
+      "behaviourFamilyId": "behaviour:197yd1n",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Cyrano",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "170",
+      "chosenCardId": "sv8-170",
+      "chosenCardName": "Cyrano",
+      "behaviourFamilyId": "behaviour:ikxrlr",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Ultra Ball",
+      "sourceSetCode": "MEG",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "me1-131",
+      "chosenCardName": "Ultra Ball",
+      "behaviourFamilyId": "behaviour:fx1j7f",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Dusk Ball",
+      "sourceSetCode": "SSP",
+      "sourceCollectorNumber": "175",
+      "chosenCardId": "sv8-175",
+      "chosenCardName": "Dusk Ball",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 3,
+      "sourceCardName": "Wondrous Patch",
+      "sourceSetCode": "PFL",
+      "sourceCollectorNumber": "94",
+      "chosenCardId": "me2-94",
+      "chosenCardName": "Wondrous Patch",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Prime Catcher",
+      "sourceSetCode": "TEF",
+      "sourceCollectorNumber": "157",
+      "chosenCardId": "sv5-157",
+      "chosenCardName": "Prime Catcher",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Lillie's Pearl",
+      "sourceSetCode": "JTG",
+      "sourceCollectorNumber": "151",
+      "chosenCardId": "sv9-151",
+      "chosenCardName": "Lillie's Pearl",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Area Zero Underdepths",
+      "sourceSetCode": "SCR",
+      "sourceCollectorNumber": "131",
+      "chosenCardId": "sv7-131",
+      "chosenCardName": "Area Zero Underdepths",
+      "behaviourFamilyId": "behaviour:1kffjlq",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 4,
+      "sourceCardName": "Psychic Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "5",
+      "chosenCardId": "sve-5",
+      "chosenCardName": "Basic Psychic Energy",
+      "behaviourFamilyId": "behaviour:1b5iiem",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Fighting Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "6",
+      "chosenCardId": "sve-6",
+      "chosenCardName": "Basic Fighting Energy",
+      "behaviourFamilyId": "behaviour:10zemi3",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 2,
+      "sourceCardName": "Fire Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "2",
+      "chosenCardId": "sve-2",
+      "chosenCardName": "Basic Fire Energy",
+      "behaviourFamilyId": "behaviour:vulig9",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "complete"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Water Energy",
+      "sourceSetCode": "MEE",
+      "sourceCollectorNumber": "3",
+      "chosenCardId": "sve-3",
+      "chosenCardName": "Basic Water Energy",
+      "behaviourFamilyId": "behaviour:1v5b3ka",
+      "resolution": "canonical-equivalent",
+      "reason": "Basic Energy resolved to the reviewed canonical basic printing.",
+      "support": "generated"
+    },
+    {
+      "quantity": 1,
+      "sourceCardName": "Telepathic Psychic Energy",
+      "sourceSetCode": "POR",
+      "sourceCollectorNumber": "88",
+      "chosenCardId": "me3-88",
+      "chosenCardName": "Telepathic Psychic Energy",
+      "resolution": "exact",
+      "reason": "Source set code and collector number matched the exact local catalogue printing.",
+      "support": "unsupported"
+    }
+  ],
+  "compositionFingerprint": "composition-1x4vaxt",
+  "sourceSnapshotIds": [
+    "limitless-28675"
+  ],
+  "exactResolvedCopies": 51,
+  "canonicalEquivalentCopies": 9,
+  "unresolvedCopies": 0,
+  "simulationReady": false,
+  "supportCounts": {
+    "complete": 40,
+    "generated": 7,
+    "partial": 0,
+    "unsupported": 13
+  },
+  "missingBehaviourFamilyIds": [
+    "unimplemented:me2-14",
+    "unimplemented:me2-94",
+    "unimplemented:me2pt5-121",
+    "unimplemented:me3-88",
+    "unimplemented:sv5-157",
+    "unimplemented:sv8-175",
+    "unimplemented:sv9-151"
+  ],
+  "blockers": [
+    "1× Moltres (me2-14): unsupported; no executable behaviour family",
+    "1× Koraidon ex (me2pt5-121): unsupported; no executable behaviour family",
+    "4× Dusk Ball (sv8-175): unsupported; no executable behaviour family",
+    "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
+    "1× Prime Catcher (sv5-157): unsupported; no executable behaviour family",
+    "2× Lillie's Pearl (sv9-151): unsupported; no executable behaviour family",
+    "1× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family"
+  ],
+  "tags": {
+    "energyTypes": [
+      "Fighting",
+      "Fire",
+      "Psychic",
+      "Water"
+    ],
+    "strategic": [
+      "toolbox"
+    ],
+    "prizeProfile": "mixed"
+  }
+}

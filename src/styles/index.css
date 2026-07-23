@@ -544,3 +544,22 @@ button.battle-card:hover { transform: none; background: linear-gradient(145deg, 
   .battle-status-grid { grid-template-columns: 1fr 1fr; }
   .actions-scroll { padding: .55rem; }
 }
+/* Source-attributed deck library */
+.deck-library-page { padding-bottom: 3rem; }
+.library-filters { margin-bottom: 1rem; }
+.library-summary article:last-child strong { font-size: 1.05rem; }
+.library-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 1rem; }
+.library-card { display: flex; flex-direction: column; gap: .7rem; padding: 1rem; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
+.library-card > header, .library-compare > header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.library-card h2, .library-card p { margin: 0; }
+.library-card dl { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; margin: 0; }
+.library-card dl div { padding: .55rem; background: var(--panel-2); border-radius: 8px; }
+.library-card dt { font-size: .7rem; color: #99a7ba; text-transform: uppercase; }
+.library-card dd { margin: .2rem 0 0; font-weight: 700; }
+.library-card details small { display: block; margin: .35rem 0; }
+.source-attribution { display: flex; justify-content: space-between; gap: .75rem; color: #9cacc3; font-size: .78rem; }
+.source-attribution a { color: #8dc7ff; }
+.library-compare { margin: 1rem 0; }
+.library-compare > div { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.check-label { display: flex !important; flex-direction: row !important; align-items: center; gap: .5rem; }
+@media (max-width: 760px) { .library-grid, .library-compare > div { grid-template-columns: 1fr; } }

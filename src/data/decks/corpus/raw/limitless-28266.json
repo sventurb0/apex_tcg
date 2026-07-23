@@ -1,0 +1,310 @@
+{
+  "snapshot": {
+    "id": "limitless-28266",
+    "source": "limitless",
+    "sourceUrl": "https://limitlesstcg.com/decks/list/28266",
+    "sourceDeckId": "28266",
+    "eventName": "NAIC 2026, New Orleans",
+    "eventDate": "2026-06-10",
+    "placement": 25,
+    "player": "Grant Walworth",
+    "format": "standard",
+    "archetype": "Hydrapple",
+    "accessedAt": "2026-07-23T20:54:56.177Z",
+    "rawNameCounts": [
+      {
+        "quantity": 4,
+        "cardName": "Teal Mask Ogerpon ex"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Applin"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dipplin"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hydrapple ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chikorita"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chikorita"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Bayleef"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Bayleef"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meganium"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Hoothoot"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Noctowl"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Celebi"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Tapu Bulu"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dawn"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Briar"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Poké Pad"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Forest of Vitality"
+      },
+      {
+        "quantity": 14,
+        "cardName": "Grass Energy"
+      }
+    ],
+    "sourceCards": [
+      {
+        "quantity": 4,
+        "cardName": "Teal Mask Ogerpon ex",
+        "setCode": "TWM",
+        "collectorNumber": "25"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Applin",
+        "setCode": "TWM",
+        "collectorNumber": "17"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dipplin",
+        "setCode": "TWM",
+        "collectorNumber": "18"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Hydrapple ex",
+        "setCode": "SCR",
+        "collectorNumber": "14"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chikorita",
+        "setCode": "ASC",
+        "collectorNumber": "8"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Chikorita",
+        "setCode": "MEG",
+        "collectorNumber": "8"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Bayleef",
+        "setCode": "MEG",
+        "collectorNumber": "9"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Bayleef",
+        "setCode": "ASC",
+        "collectorNumber": "9"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Meganium",
+        "setCode": "MEG",
+        "collectorNumber": "10"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Hoothoot",
+        "setCode": "SCR",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Noctowl",
+        "setCode": "SCR",
+        "collectorNumber": "115"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Meowth ex",
+        "setCode": "POR",
+        "collectorNumber": "62"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Fezandipiti ex",
+        "setCode": "ASC",
+        "collectorNumber": "142"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Celebi",
+        "setCode": "MEG",
+        "collectorNumber": "12"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Tapu Bulu",
+        "setCode": "SFA",
+        "collectorNumber": "6"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Lillie's Determination",
+        "setCode": "MEG",
+        "collectorNumber": "119"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Boss's Orders",
+        "setCode": "MEG",
+        "collectorNumber": "114"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Dawn",
+        "setCode": "PFL",
+        "collectorNumber": "87"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Briar",
+        "setCode": "SCR",
+        "collectorNumber": "132"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Lana's Aid",
+        "setCode": "TWM",
+        "collectorNumber": "155"
+      },
+      {
+        "quantity": 4,
+        "cardName": "Bug Catching Set",
+        "setCode": "TWM",
+        "collectorNumber": "143"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Poké Pad",
+        "setCode": "POR",
+        "collectorNumber": "81"
+      },
+      {
+        "quantity": 2,
+        "cardName": "Ultra Ball",
+        "setCode": "MEG",
+        "collectorNumber": "131"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Night Stretcher",
+        "setCode": "ASC",
+        "collectorNumber": "196"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Unfair Stamp",
+        "setCode": "TWM",
+        "collectorNumber": "165"
+      },
+      {
+        "quantity": 1,
+        "cardName": "Special Red Card",
+        "setCode": "CRI",
+        "collectorNumber": "82"
+      },
+      {
+        "quantity": 3,
+        "cardName": "Forest of Vitality",
+        "setCode": "MEG",
+        "collectorNumber": "117"
+      },
+      {
+        "quantity": 14,
+        "cardName": "Grass Energy",
+        "setCode": "MEE",
+        "collectorNumber": "1"
+      }
+    ],
+    "resolvedManifestId": "corpus-limitless-28266",
+    "notes": [
+      "Public tournament composition snapshot. Cosmetic printings may be canonicalized only when gameplay identity is verified."
+    ]
+  },
+  "diagnostics": {
+    "title": "Hydrapple by Grant Walworth – Limitless",
+    "description": "Hydrapple decklist by Grant Walworth - 25th Place NAIC 2026, New Orleans - 10th June 2026",
+    "cardBlockCount": 28,
+    "totalCards": 60
+  },
+  "semanticHtmlFixture": "<!doctype html><html><head>\n<title>Hydrapple by Grant Walworth – Limitless</title>\n<meta name=\"description\" content=\"Hydrapple decklist by Grant Walworth - 25th Place NAIC 2026, New Orleans - 10th June 2026\">\n</head><body>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"25\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/25\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Teal Mask Ogerpon ex</span>\n                 <img class=\"set\" alt=\"TWM\" src=\"https://s3.limitlesstcg.com/sets/en/TWM_SM.png\" data-tooltip=\"Twilight Masquerade\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550069%2Fpokemon-sv06-twilight-masquerade-teal-mask-ogerpon-ex-025-167\" target=\"_blank\">$14.28</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Teal-Mask-Ogerpon-ex-V1-TWM025?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">16.32€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"17\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/17\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Applin</span>\n                 <img class=\"set\" alt=\"TWM\" src=\"https://s3.limitlesstcg.com/sets/en/TWM_SM.png\" data-tooltip=\"Twilight Masquerade\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550061%2Fpokemon-sv06-twilight-masquerade-applin-017-167\" target=\"_blank\">$0.28</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Applin-TWM017?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.16€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"18\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/18\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Dipplin</span>\n                 <img class=\"set\" alt=\"TWM\" src=\"https://s3.limitlesstcg.com/sets/en/TWM_SM.png\" data-tooltip=\"Twilight Masquerade\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550062%2Fpokemon-sv06-twilight-masquerade-dipplin-018-167\" target=\"_blank\">$0.38</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Dipplin-V1-TWM018?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.12€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"14\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/14\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Hydrapple ex</span>\n                 <img class=\"set\" alt=\"SCR\" src=\"https://s3.limitlesstcg.com/sets/en/SCR_SM.png\" data-tooltip=\"Stellar Crown\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567240%2Fpokemon-sv07-stellar-crown-hydrapple-ex-014-142\" target=\"_blank\">$2.40</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Hydrapple-ex-V1-SCR014?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.76€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"8\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/8\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Chikorita</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675820%2Fpokemon-me-ascended-heroes-chikorita\" target=\"_blank\">$0.14</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Chikorita-ASC008?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.05€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"8\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/8\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Chikorita</span>\n                 <img class=\"set\" alt=\"MEG\" src=\"https://s3.limitlesstcg.com/sets/en/MEG_SM.png\" data-tooltip=\"Mega Evolution\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654347%2Fpokemon-me01-mega-evolution-chikorita\" target=\"_blank\">$0.16</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Chikorita-MEG008?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.05€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"9\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/9\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Bayleef</span>\n                 <img class=\"set\" alt=\"MEG\" src=\"https://s3.limitlesstcg.com/sets/en/MEG_SM.png\" data-tooltip=\"Mega Evolution\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654348%2Fpokemon-me01-mega-evolution-bayleef\" target=\"_blank\">$0.29</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Bayleef-MEG009?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.09€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"9\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/9\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Bayleef</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675821%2Fpokemon-me-ascended-heroes-bayleef\" target=\"_blank\">$0.14</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Bayleef-ASC009?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.05€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"10\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/10\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Meganium</span>\n                 <img class=\"set\" alt=\"MEG\" src=\"https://s3.limitlesstcg.com/sets/en/MEG_SM.png\" data-tooltip=\"Mega Evolution\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654349%2Fpokemon-me01-mega-evolution-meganium\" target=\"_blank\">$0.56</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Meganium-MEG010?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.18€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"114\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/114\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Hoothoot</span>\n                 <img class=\"set\" alt=\"SCR\" src=\"https://s3.limitlesstcg.com/sets/en/SCR_SM.png\" data-tooltip=\"Stellar Crown\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567340%2Fpokemon-sv07-stellar-crown-hoothoot\" target=\"_blank\">$0.30</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Hoothoot-SCR114?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.09€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"115\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/115\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Noctowl</span>\n                 <img class=\"set\" alt=\"SCR\" src=\"https://s3.limitlesstcg.com/sets/en/SCR_SM.png\" data-tooltip=\"Stellar Crown\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567341%2Fpokemon-sv07-stellar-crown-noctowl\" target=\"_blank\">$0.26</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Noctowl-SCR115?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.11€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"62\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/62\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Meowth ex</span>\n                 <img class=\"set\" alt=\"POR\" src=\"https://s3.limitlesstcg.com/sets/en/POR_SM.png\" data-tooltip=\"Perfect Order\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684340%2Fpokemon-me03-perfect-order-meowth-ex-062-088\" target=\"_blank\">$2.29</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V1-POR062?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">4.09€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"142\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/142\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Fezandipiti ex</span>\n                 <img class=\"set\" alt=\"ASC\" src=\"https://s3.limitlesstcg.com/sets/en/ASC_SM.png\" data-tooltip=\"Ascended Heroes\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F675954%2Fpokemon-me-ascended-heroes-fezandipiti-ex-142-217\" target=\"_blank\">$3.36</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Fezandipiti-ex-V1-ASC142?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">3.37€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"12\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/12\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Celebi</span>\n                 <img class=\"set\" alt=\"MEG\" src=\"https://s3.limitlesstcg.com/sets/en/MEG_SM.png\" data-tooltip=\"Mega Evolution\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654351%2Fpokemon-me01-mega-evolution-celebi\" target=\"_blank\">$0.24</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Celebi-MEG012?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.04€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SFA\" data-number=\"6\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SFA/6\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Tapu Bulu</span>\n                 <img class=\"set\" alt=\"SFA\" src=\"https://s3.limitlesstcg.com/sets/en/SFA_SM.png\" data-tooltip=\"Shrouded Fable\">                             </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F560316%2Fpokemon-sv-shrouded-fable-tapu-bulu-006-064\" target=\"_blank\">$0.20</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Shrouded-Fable/Tapu-Bulu-V1-SFA006?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.11€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"119\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/119\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Lillie's Determination</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654458%2Fpokemon-me01-mega-evolution-lillies-determination-119-132\" target=\"_blank\">$1.16</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Lillies-Determination-V1-MEG119?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">1.76€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"114\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/114\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Boss's Orders</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654453%2Fpokemon-me01-mega-evolution-bosss-orders-ghetsis\" target=\"_blank\">$0.58</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Bosss-Orders-Ghetsis-MEG114?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.48€</a>         </div>\n<div class=\"decklist-card\" data-set=\"PFL\" data-number=\"87\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/PFL/87\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Dawn</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F660414%2Fpokemon-me02-phantasmal-flames-dawn\" target=\"_blank\">$0.48</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Phantasmal-Flames/Dawn-V1-PFL087?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.22€</a>         </div>\n<div class=\"decklist-card\" data-set=\"SCR\" data-number=\"132\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/SCR/132\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Briar</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F567385%2Fpokemon-sv07-stellar-crown-briar-132-142\" target=\"_blank\">$0.10</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Stellar-Crown/Briar-V1-SCR132?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.11€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"155\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/155\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Lana's Aid</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550199%2Fpokemon-sv06-twilight-masquerade-lanas-aid-155-167\" target=\"_blank\">$0.31</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Lanas-Aid-V1-TWM155?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.12€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"143\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/143\">\n                <span class=\"card-count\">4</span>\n                <span class=\"card-name\">Bug Catching Set</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550187%2Fpokemon-sv06-twilight-masquerade-bug-catching-set\" target=\"_blank\">$1.12</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Bug-Catching-Set-TWM143?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.40€</a>         </div>\n<div class=\"decklist-card\" data-set=\"POR\" data-number=\"81\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/POR/81\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Poké Pad</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F684332%2Fpokemon-me03-perfect-order-poke-pad-081-088\" target=\"_blank\">$0.56</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Perfect-Order/Poke-Pad-V1-POR081?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.78€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"131\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/131\">\n                <span class=\"card-count\">2</span>\n                <span class=\"card-name\">Ultra Ball</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654470%2Fpokemon-me01-mega-evolution-ultra-ball\" target=\"_blank\">$0.44</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Ultra-Ball-MEG131?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.24€</a>         </div>\n<div class=\"decklist-card\" data-set=\"ASC\" data-number=\"196\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/ASC/196\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Night Stretcher</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F676008%2Fpokemon-me-ascended-heroes-night-stretcher\" target=\"_blank\">$0.23</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Ascended-Heroes/Night-Stretcher-ASC196?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.14€</a>         </div>\n<div class=\"decklist-card\" data-set=\"TWM\" data-number=\"165\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/TWM/165\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Unfair Stamp</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F550209%2Fpokemon-sv06-twilight-masquerade-unfair-stamp\" target=\"_blank\">$12.49</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Twilight-Masquerade/Unfair-Stamp-TWM165?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">9.03€</a>         </div>\n<div class=\"decklist-card\" data-set=\"CRI\" data-number=\"82\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/CRI/82\">\n                <span class=\"card-count\">1</span>\n                <span class=\"card-name\">Special Red Card</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F693547%2Fpokemon-me04-chaos-rising-special-red-card-082-086\" target=\"_blank\">$0.19</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Chaos-Rising/Special-Red-Card-V1-CRI082?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.17€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEG\" data-number=\"117\" data-lang=\"en\"  >\n            <a class=\"card-link\" href=\"/cards/MEG/117\">\n                <span class=\"card-count\">3</span>\n                <span class=\"card-name\">Forest of Vitality</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F654456%2Fpokemon-me01-mega-evolution-forest-of-vitality\" target=\"_blank\">$0.78</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution/Forest-of-Vitality-MEG117?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.33€</a>         </div>\n<div class=\"decklist-card\" data-set=\"MEE\" data-number=\"1\" data-lang=\"en\"   data-basic-energy=\"1\" >\n            <a class=\"card-link\" href=\"/cards/MEE/1\">\n                <span class=\"card-count\">14</span>\n                <span class=\"card-name\">Grass Energy</span>\n                                            </a>\n             <a class=\"card-price usd\" href=\"https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F656263%2Fpokemon-mee-mega-evolution-energies-basic-grass-energy-001\" target=\"_blank\">$2.94</a>              <a class=\"card-price eur hidden\" href=\"https://www.cardmarket.com/en/Pokemon/Products/Singles/Mega-Evolution-Energies/Basic-Grass-Energy-V1-MEE001?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices\" target=\"_blank\">0.28€</a>         </div>\n</body></html>"
+}

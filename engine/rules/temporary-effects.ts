@@ -26,3 +26,9 @@ export function hasRetreatLock(state: GameState, playerId: PlayerId, pokemonId: 
 export function hasAttackLock(state: GameState, playerId: PlayerId, pokemonId: string, attackId: string): boolean {
   return state.temporaryEffects.some((effect) => effect.kind === "attack-lock" && effect.playerId === playerId && effect.pokemonId === pokemonId && effect.attackId === attackId && effect.appliesOnPlayerTurn === state.players[playerId].turnsTaken);
 }
+
+/** Ability suppression is public state and applies to either one Pokémon or
+ * the whole side for the duration represented by the temporary effect. */
+export function hasAbilityLock(state: GameState, playerId: PlayerId, pokemonId: string): boolean {
+  return state.temporaryEffects.some((effect) => effect.kind === "ability-lock" && effect.playerId === playerId && (effect.pokemonId === undefined || effect.pokemonId === pokemonId) && effect.appliesOnPlayerTurn === state.players[playerId].turnsTaken);
+}

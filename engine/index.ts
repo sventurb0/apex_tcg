@@ -3,6 +3,7 @@ export { getLegalActions } from "./rules/legal-actions";
 export { applyAction, GameRuleError } from "./rules/reducer";
 export { getGameResult } from "./rules/win-conditions";
 export { createPlayerObservation } from "./rules/observation";
+export { benchCapacity, canUseAttackCondition, copiedAttacks, discardAttachedEnergy, placeDistributedDamageCounters, putCardOnTop, reorderTopDeck, topDeckCard, triggeredBenchAbilities } from "./rules/shared-mechanics";
 export { applySpecialCondition, clearSpecialConditions, processPokemonCheckup } from "./rules/pokemon-checkup";
 export type { GameAction, PlayerId } from "./model/actions";
 export type { GameState, ReplayRecord } from "./model/game-state";
