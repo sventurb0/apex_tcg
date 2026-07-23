@@ -1,6 +1,6 @@
 import type { GameAction, PlayerId } from "../model/actions";
 import type { CardType, PokemonInPlay } from "../model/cards";
-import type { EffectChoice, GameState } from "../model/game-state";
+import type { AllocationChoice, EffectChoice, GameState } from "../model/game-state";
 import { canPayAttackCost } from "./combat";
 import { benchCapacity, canUseAttackCondition } from "./shared-mechanics";
 import { cardFor, playId, pokemonTargets, topCard } from "./helpers";
@@ -26,12 +26,32 @@ function effectChoiceActions(state: GameState, pending: EffectChoice): GameActio
   for (const selectionId of pending.eligibleIds) {
     if (selected.has(selectionId)) actions.push({ id: actionId("deselect", pending.choiceId, selectionId), type: "deselect-card", playerId: pending.playerId, selectionId, description: "Deselect choice" });
     else if (pending.selectedIds.length < pending.max) {
+      if (pending.continuation.programId === "trainer:crispin" && pending.selectedIds.length === 1) {
+        const player = state.players[pending.playerId]; const first = [...player.deck, ...player.hand].find((card) => card.instanceId === pending.selectedIds[0]); const candidate = [...player.deck, ...player.hand].find((card) => card.instanceId === selectionId); const firstDefinition = first ? cardFor(state, first) : undefined; const candidateDefinition = candidate ? cardFor(state, candidate) : undefined; if (firstDefinition?.category === "energy" && candidateDefinition?.category === "energy" && firstDefinition.energyType === candidateDefinition.energyType) continue;
+      }
+      if (pending.continuation.programId === "trainer:dawn") {
+        const player = state.players[pending.playerId]; const selectedStages = pending.selectedIds.map((id) => [...player.deck, ...player.hand].find((card) => card.instanceId === id)).map((instance) => instance ? cardFor(state, instance) : undefined).flatMap((definition) => definition?.category === "pokemon" ? [definition.stage] : []); const candidate = [...player.deck, ...player.hand].find((card) => card.instanceId === selectionId); const candidateDefinition = candidate ? cardFor(state, candidate) : undefined; if (candidateDefinition?.category === "pokemon" && selectedStages.includes(candidateDefinition.stage)) continue;
+      }
       if (pending.selectionKind === "pokemon") { const pokemon = pokemonTargets(state.players[pending.playerId]).find((target) => playId(target) === selectionId); actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-pokemon", playerId: pending.playerId, selectionId, description: `Select ${pokemon ? topCard(state, pokemon).name : "Pokémon"}` }); }
       else { const player = state.players[pending.playerId]; const instance = [...player.hand, ...player.deck, ...player.discard].find((card) => card.instanceId === selectionId); actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-card", playerId: pending.playerId, selectionId, description: `Select ${instance ? cardFor(state, instance).name : "card"}` }); }
     }
   }
   if (pending.selectedIds.length >= pending.min && pending.selectedIds.length <= pending.max) actions.push({ id: actionId("confirm", pending.choiceId), type: "confirm-choice", playerId: pending.playerId, description: `Confirm selection (${pending.selectedIds.length})` });
   if (pending.optional && pending.min === 0 && pending.selectedIds.length === 0) actions.push({ id: actionId("decline", pending.choiceId), type: "decline-optional-effect", playerId: pending.playerId, description: "Choose none and continue" });
+  return actions;
+}
+
+function allocationChoiceActions(pending: AllocationChoice): GameAction[] {
+  const actions: GameAction[] = [];
+  for (const targetId of pending.eligibleIds) {
+    const current = pending.allocations[targetId] ?? 0;
+    const max = pending.maximumPerTarget ?? pending.totalUnits;
+    if (current < max && pending.remainingUnits > 0) actions.push({ id: actionId("increase-allocation", pending.choiceId, targetId), type: "increase-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Assign 1 ${pending.unitLabel} to ${targetId}` });
+    if (current > 0) actions.push({ id: actionId("decrease-allocation", pending.choiceId, targetId), type: "decrease-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Remove 1 ${pending.unitLabel} from ${targetId}` });
+    for (let amount = 0; amount <= Math.min(max, pending.totalUnits); amount += 1) if (amount !== current && pending.totalUnits - (pending.totalUnits - pending.remainingUnits - current) - amount >= 0) actions.push({ id: actionId("set-allocation", pending.choiceId, targetId, String(amount)), type: "set-allocation", playerId: pending.playerId, targetId, amount, description: `Set ${pending.unitLabel} allocation for ${targetId} to ${amount}` });
+  }
+  if (Object.values(pending.allocations).some(Boolean)) actions.push({ id: actionId("clear-allocation", pending.choiceId), type: "clear-allocation", playerId: pending.playerId, description: "Clear allocation" });
+  if (pending.remainingUnits === 0) actions.push({ id: actionId("confirm-allocation", pending.choiceId), type: "confirm-allocation", playerId: pending.playerId, description: "Confirm allocation" });
   return actions;
 }
 
@@ -49,6 +69,7 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     if (pending.type === "mulligan-draw") { const actions: GameAction[] = []; if (pending.remaining > 0 && state.players[playerId].deck.length) actions.push({ id: actionId("mulligan-draw", String(pending.remaining)), type: "draw-mulligan", playerId, description: "Draw a mulligan bonus card" }); actions.push({ id: "finish-setup", type: "finish-setup", playerId, description: "Finish mulligan bonus draws" }); return actions; }
     if (pending.type === "choose-prize") return state.players[playerId].prizes.map((instance) => ({ id: actionId("choose-prize", instance.instanceId), type: "choose-prize", playerId, cardInstanceId: instance.instanceId, description: "Take a Prize card" }));
     if (pending.type === "promote") return state.players[playerId].bench.map((pokemon) => ({ id: actionId("promote", playId(pokemon)), type: "select-active", playerId, cardInstanceId: playId(pokemon), description: `Promote ${topCard(state, pokemon).name}` }));
+    if (pending.type === "allocation-choice") return allocationChoiceActions(pending);
     return effectChoiceActions(state, pending);
   }
   if (state.phase !== "main" || state.activePlayerId !== playerId) return [];
@@ -103,7 +124,8 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     else if (ability.effectProgramId === "ability:charging-up" && player.discard.some((card) => { const definition = cardFor(state, card); return definition.category === "energy" && definition.basic; })) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Charging Up" });
     else if (ability.effectProgramId === "ability:recon-directive" && player.deck.length >= 2) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Recon Directive" });
     else if (ability.effectProgramId === "ability:ns-trade" && player.hand.length > 0) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: "Use Trade" });
-    else if ((ability.effectProgramId === "ability:teal-dance" || ability.effectProgramId === "ability:ripening-charge") && player.hand.some((instance) => { const card = cardFor(state, instance); return card.category === "energy" && card.basic && card.energyType === "grass"; })) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: `Use ${ability.name}` });
+    else if (ability.effectProgramId === "ability:teal-dance" && player.hand.some((instance) => { const card = cardFor(state, instance); return card.category === "energy" && card.basic && card.energyType === "grass"; })) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: `Use ${ability.name}` });
+    else if (ability.effectProgramId === "ability:ripening-charge" && pokemonTargets(player).length > 0 && player.hand.some((instance) => { const card = cardFor(state, instance); return card.category === "energy" && card.basic && card.energyType === "grass"; })) actions.push({ id: actionId("ability", ability.id, playId(source)), type: "use-ability", playerId, sourcePokemonId: playId(source), abilityId: ability.id, description: `Use ${ability.name}` });
     else if (ability.effectProgramId.startsWith("template:ability:") && ability.category === "activated") {
       if (ability.effectProgramId === "template:ability:switch-active:0" && !player.bench.length) continue;
       if (ability.effectProgramId.startsWith("template:ability:discard-one-draw:") && !player.hand.length) continue;
@@ -121,7 +143,7 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:prism-tower" && !player.stadiumAbilityUsedThisTurn && player.hand.length >= 2 && player.deck.length) actions.push({ id: actionId("stadium", state.stadium!.instanceId, "prism"), type: "use-stadium", playerId, cardInstanceId: state.stadium!.instanceId, targetId: "prism", description: "Use Prism Tower: discard 2 cards and draw 1" });
   if (player.active) {
     const activeCard = topCard(state, player.active); const blocked = player.active.specialConditions.includes("asleep") || player.active.specialConditions.includes("paralyzed");
-    for (const attack of activeCard.attacks) if (!(playerId === state.startingPlayer && player.turnsTaken === 1) && !blocked && !(activeCard.abilities.some((ability) => ability.effectProgramId === "passive:power-saver") && [player.active, ...player.bench].filter((pokemon): pokemon is PokemonInPlay => Boolean(pokemon)).filter((pokemon) => topCard(state, pokemon).traits?.includes("team-rocket")).length < 4) && !hasAttackLock(state, playerId, playId(player.active), attack.id) && (!attack.condition || canUseAttackCondition(state, playerId, player.active, attack.condition)) && canPayAttackCost(state, player.active, attack)) {
+    for (const attack of activeCard.attacks) if (state.players[playerId === "player-one" ? "player-two" : "player-one"].active && !(playerId === state.startingPlayer && player.turnsTaken === 1) && !blocked && !(activeCard.abilities.some((ability) => ability.effectProgramId === "passive:power-saver") && [player.active, ...player.bench].filter((pokemon): pokemon is PokemonInPlay => Boolean(pokemon)).filter((pokemon) => topCard(state, pokemon).traits?.includes("team-rocket")).length < 4) && !hasAttackLock(state, playerId, playId(player.active), attack.id) && (!attack.condition || canUseAttackCondition(state, playerId, player.active, attack.condition)) && canPayAttackCost(state, player.active, attack)) {
       if (attack.effectProgramId === "attack:cruel-arrow") for (const target of pokemonTargets(state.players[playerId === "player-one" ? "player-two" : "player-one"])) actions.push({ id: actionId("attack", attack.id, playId(target)), type: "attack", playerId, attackId: attack.id, targetId: playId(target), description: `Attack with ${attack.name}: target ${topCard(state, target).name}` });
       else actions.push({ id: actionId("attack", attack.id), type: "attack", playerId, attackId: attack.id, description: `Attack with ${attack.name}` });
     }

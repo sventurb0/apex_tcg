@@ -52,6 +52,16 @@ describe("Deck Architect candidate generation", () => {
     }
   });
 
+  it("promotes reviewed engine cores into complementary Wave 2 candidates", () => {
+    const clefairy = generateCandidates(request([{ cardId: "sv9-56", exactPrintingRequired: true }]), index).candidates[0]!;
+    const hydrapple = generateCandidates(request([{ cardId: "sv6-25", exactPrintingRequired: true }]), index).candidates[0]!;
+    expect(clefairy.deck.entries.some((entry) => entry.cardId === "sv9-56")).toBe(true);
+    expect(clefairy.explanations.join(" ")).toMatch(/Lillie's Clefairy Multi-Type Bench/);
+    expect(hydrapple.deck.entries.some((entry) => entry.cardId === "sv7-14")).toBe(true);
+    expect(hydrapple.explanations.join(" ")).toMatch(/Teal Mask Ogerpon \/ Hydrapple/);
+    expect(clefairy.deck.entries.filter((entry) => index.byId.get(entry.cardId)?.supertype === "Energy").reduce((sum, entry) => sum + entry.count, 0)).toBeLessThanOrEqual(12);
+  });
+
   it("ranks candidates deterministically and dispatches a balanced gauntlet with setup and usage metrics", async () => {
     const candidates = generateCandidates(request([{ cardId: "sv2-233", exactPrintingRequired: true }]), index).candidates;
     const ranked = rankCandidates(candidates);

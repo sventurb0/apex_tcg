@@ -4,6 +4,8 @@ import { analyseDeck } from "../deck-builder/validation";
 import { buildSynergyGraph } from "./synergy-graph";
 import { packageById } from "./packages";
 import { scoreCandidate } from "./role-analysis";
+import { engineDefinitions } from "./engines";
+import type { EngineDefinition } from "./engines/types";
 import type { ArchitectCandidate, ArchitectRequest, FavouriteSelection } from "./types";
 
 type EngineKind = "fire-stage2" | "darkness-poison" | "team-rocket" | "generic";
@@ -15,6 +17,43 @@ function addPackage(counts: Counts, packageId: string): void { for (const entry 
 function total(counts: Counts): number { return [...counts.values()].reduce((sum, value) => sum + value, 0); }
 function familyHandler(cardId: string): string { return implementationResolver()?.familyFor(cardId)?.handlerId ?? ""; }
 function engineFor(favourites: readonly FavouriteSelection[]): EngineKind { const handlers = favourites.map((favorite) => familyHandler(favorite.cardId)); if (handlers.some((handler) => /team-rocket/.test(handler))) return "team-rocket"; if (handlers.some((handler) => /okidogi|pecharunt|munkidori|fezandipiti/.test(handler))) return "darkness-poison"; if (handlers.some((handler) => /skeledirge|armarouge|charcadet|fuecoco/.test(handler))) return "fire-stage2"; return "generic"; }
+function reviewedEngineFor(favourites: readonly FavouriteSelection[], index: CatalogueIndex): EngineDefinition | undefined {
+  const selected = new Set(favourites.map((favorite) => favorite.cardId));
+  return [...engineDefinitions].filter((engine) => engine.reviewed).map((engine) => ({ engine, score: engine.coreCardIds.filter((id) => selected.has(id)).length * 20 + engine.providers.filter((provider) => index.byId.has(provider.cardId)).length + engine.consumers.filter((consumer) => selected.has(consumer.cardId)).length * 3 })).sort((a, b) => b.score - a.score || a.engine.id.localeCompare(b.engine.id)).find((candidate) => candidate.score > 0)?.engine;
+}
+function addReviewedComplements(counts: Counts, engine: EngineDefinition | undefined, index: CatalogueIndex, favourites: readonly FavouriteSelection[], mode: ArchitectRequest["mode"], protectedIds: Set<string>): void {
+  // Existing named engines already install their source-backed packages. The
+  // reviewed-core promotion is specifically for the former generic path.
+  if (!engine) return;
+  const selected = new Set(favourites.map((favorite) => favorite.cardId));
+  for (const cardId of engine.coreCardIds) {
+    if (selected.has(cardId) || protectedIds.has(cardId)) continue;
+    const card = index.byId.get(cardId);
+    if (!card) continue;
+    const implementation = compileCardImplementation(card);
+    if (mode === "simulation-ready" && !["complete", "generated"].includes(implementation.status)) continue;
+    // Energy density is tuned separately; engine cores contribute role cards,
+    // not an unbounded pile of a single Basic Energy printing.
+    if (card.supertype === "Energy") continue;
+    const count = card.supertype === "Pokémon" ? (card.subtypes.includes("Basic") ? 2 : 1) : 1;
+    add(counts, cardId, count);
+    protectedIds.add(cardId);
+  }
+}
+function rebalanceReviewedEngine(counts: Counts, engine: EngineDefinition, index: CatalogueIndex, protectedIds: Set<string>): void {
+  const preferredEnergy = CANONICAL_BASIC_ENERGY_IDS[engine.energyTypes[0]?.toLowerCase() ?? ""];
+  if (!preferredEnergy || !index.byId.has(preferredEnergy)) return;
+  for (const [cardId, count] of [...counts]) if (index.byId.get(cardId)?.supertype === "Energy" && !protectedIds.has(cardId)) add(counts, cardId, -count);
+  add(counts, preferredEnergy, Math.max(10, Math.min(12, counts.get(preferredEnergy) ?? 0)) - (counts.get(preferredEnergy) ?? 0));
+  const filler = ["sv1-181", "sv1-196", "zsv10pt5-84", "sv6pt5-61", "sv4pt5-80", "sv4-163", "sv1-198", "sv1-175", "sv5-153", "sv1-191"];
+  let cursor = 0;
+  while (total(counts) < 60 && cursor < filler.length * 4) {
+    const cardId = filler[cursor % filler.length]!;
+    if ((counts.get(cardId) ?? 0) < 4) add(counts, cardId, 1);
+    cursor += 1;
+  }
+  while (total(counts) > 60) removeFlex(counts, total(counts) - 60, protectedIds, index);
+}
 function baseCounts(engine: EngineKind, index: CatalogueIndex, favourites: readonly FavouriteSelection[]): Counts {
   const counts: Counts = new Map();
   if (engine === "fire-stage2") { addPackage(counts, "fire-stage2-core"); addPackage(counts, "fire-acceleration"); addPackage(counts, "fire-consistency"); add(counts, "swsh12-16", 1); add(counts, "sve-2", 12); }
@@ -64,15 +103,17 @@ export function estimateEnergyCount(entries: readonly DeckCardEntry[], index: Ca
 export function generateCandidates(request: ArchitectRequest, index: CatalogueIndex): { candidates: ArchitectCandidate[]; rejected: Array<{ cardId: string; reasons: string[]; equivalentSupportedIds: string[] }> } {
   const rejected = request.favourites.flatMap((favorite) => { const card = index.byId.get(favorite.cardId); if (!card) return [{ cardId: favorite.cardId, reasons: ["Card is missing from the catalogue."], equivalentSupportedIds: [] }]; const implementation = compileCardImplementation(card); if (request.mode === "simulation-ready" && !["complete","generated"].includes(implementation.status)) return [{ cardId: card.id, reasons: implementation.knownLimitations, equivalentSupportedIds: (implementationResolver()?.equivalentsFor(card.id) ?? []).filter((value) => ["complete","generated"].includes(compileCardImplementation(value).status)).map((value) => value.id) }]; return []; });
   if (rejected.length || !request.favourites.length) return { candidates: [], rejected };
-  const engine = engineFor(request.favourites); const candidates: ArchitectCandidate[] = []; const seen = new Set<string>();
+  const engine = engineFor(request.favourites); const reviewedEngine = reviewedEngineFor(request.favourites, index); const candidates: ArchitectCandidate[] = []; const seen = new Set<string>();
   for (let offset = 0; candidates.length < request.candidateCount && offset < 30; offset += 1) {
     const variation = (request.seed + offset) % variationNames.length; const counts = baseCounts(engine, index, request.favourites); const protectedIds = new Set<string>();
+    if (engine === "generic") addReviewedComplements(counts, reviewedEngine, index, request.favourites, request.mode, protectedIds);
     for (const favourite of request.favourites) lockFavourite(counts, favourite, index, request.mode, protectedIds); applyVariation(counts, engine, variation, index, protectedIds);
+    if (engine === "generic" && reviewedEngine) rebalanceReviewedEngine(counts, reviewedEngine, index, protectedIds);
     const entries = [...counts].filter(([, count]) => count > 0).map(([cardId, count]) => ({ cardId, count })).sort((a, b) => a.cardId.localeCompare(b.cardId)); const print = fingerprint(entries); if (seen.has(print)) continue; seen.add(print);
-    const deck: DeckManifest = { id: `architect-${engine}-${request.favourites[0]!.cardId}-${request.seed}-${offset}`, name: `${index.byId.get(request.favourites[0]!.cardId)?.name ?? "Favourite"} — ${variationNames[variation]}`, description: `Deck Architect candidate generated from reviewed ${engine} packages.`, format: request.format, source: "saved", entries };
+    const deck: DeckManifest = { id: `architect-${engine}-${request.favourites[0]!.cardId}-${request.seed}-${offset}`, name: `${index.byId.get(request.favourites[0]!.cardId)?.name ?? "Favourite"} — ${variationNames[variation]}`, description: reviewedEngine ? `Deck Architect candidate assembled from the reviewed ${reviewedEngine.name} capability chain: ${reviewedEngine.reviewNotes[0] ?? "provider and consumer roles are explicit"}.` : `Deck Architect candidate generated from reviewed ${engine} packages.`, format: request.format, source: "saved", entries };
     const analysis = analyseDeck(deck, index); const unsupportedCardIds = analysis.unsupported.map((card) => card.id); if (request.mode === "simulation-ready" && (!analysis.simulationReady || unsupportedCardIds.length)) continue;
     const edges = buildSynergyGraph(entries.map((entry) => entry.cardId), index, request.mode === "creative"); const score = scoreCandidate(deck, request.favourites, index, edges, unsupportedCardIds.length); const energy = estimateEnergyCount(entries, index);
-    candidates.push({ id: deck.id, seed: request.seed, variant: variationNames[variation]!, requiredCardIds: request.favourites.map((favorite) => favorite.cardId), deck, simulationReady: analysis.simulationReady, score, explanations: [coverageExplanation(entries, index, analysis.simulationReady), packageById(engine === "fire-stage2" ? "fire-stage2-core" : engine === "darkness-poison" ? "darkness-poison-core" : engine === "team-rocket" ? "team-rocket-core" : "generic-setup").explanation, ...edges.slice(0, 4).flatMap((edge) => edge.reasons), energy.explanation], synergyEdges: edges, unsupportedCardIds, energyExplanation: energy.explanation, fingerprint: print });
+    candidates.push({ id: deck.id, seed: request.seed, variant: variationNames[variation]!, requiredCardIds: request.favourites.map((favorite) => favorite.cardId), deck, simulationReady: analysis.simulationReady, score, explanations: [coverageExplanation(entries, index, analysis.simulationReady), reviewedEngine ? `Complement chain selected: ${reviewedEngine.name}. ${reviewedEngine.providers.slice(0, 3).map((provider) => `${provider.cardId} provides ${provider.kind}`).join("; ")}.` : packageById(engine === "fire-stage2" ? "fire-stage2-core" : engine === "darkness-poison" ? "darkness-poison-core" : engine === "team-rocket" ? "team-rocket-core" : "generic-setup").explanation, ...edges.slice(0, 4).flatMap((edge) => edge.reasons), energy.explanation], synergyEdges: edges, unsupportedCardIds, energyExplanation: energy.explanation, fingerprint: print });
   }
   return { candidates, rejected };
 }

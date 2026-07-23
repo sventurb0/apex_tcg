@@ -51,6 +51,11 @@ function actionCategory(state: GameState, action: GameAction): ActionCategory {
     case "deselect-card":
     case "select-pokemon":
     case "select-effect-mode":
+    case "increase-allocation":
+    case "decrease-allocation":
+    case "set-allocation":
+    case "clear-allocation":
+    case "confirm-allocation":
     case "confirm-choice":
     case "decline-optional-effect":
     case "choose-prize": return "choice";

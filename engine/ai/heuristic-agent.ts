@@ -15,6 +15,11 @@ function genericScore(action: GameAction, observation: PlayerObservation): numbe
     case "select-effect-mode": return action.mode === "both" ? 17_500 : 17_000;
     case "select-card": case "select-pokemon": return 16_000;
     case "confirm-choice": return 15_500;
+    case "increase-allocation": return 16_500;
+    case "decrease-allocation": return -2_000;
+    case "set-allocation": return 16_250;
+    case "clear-allocation": return -1_000;
+    case "confirm-allocation": return 17_500;
     case "decline-optional-effect": return 15_000;
     case "deselect-card": return -10_000;
     case "attack": return 1_000;

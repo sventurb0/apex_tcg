@@ -55,6 +55,7 @@ export interface PokemonCardCatalogue {
 }
 
 export type CardHandler = { kind: "declarative"; effectId: string } | { kind: "custom"; handlerId: string };
+export type ChoiceSemantics = "exact" | "deterministic-no-choice" | "requires-review";
 export interface CardImplementation {
   cardId: string;
   status: SimulationSupport;
@@ -67,6 +68,7 @@ export interface CardImplementation {
   supportedMechanics: string[];
   knownLimitations: string[];
   tests: string[];
+  choiceSemantics?: ChoiceSemantics;
 }
 export interface BehaviourFamily {
   id: BehaviourFamilyId;

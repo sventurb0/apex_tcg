@@ -50,6 +50,24 @@ export interface EffectChoice {
   continuation: EffectContinuation;
 }
 
+export interface AllocationChoice {
+  type: "allocation-choice";
+  choiceId: string;
+  playerId: PlayerId;
+  selectionKind: "allocation";
+  eligibleIds: string[];
+  totalUnits: number;
+  remainingUnits: number;
+  allocations: Record<string, number>;
+  minimumPerTarget?: number;
+  maximumPerTarget?: number;
+  unitLabel: string;
+  instruction: string;
+  sourceCardId: string;
+  sourceEffectId: string;
+  continuation: EffectContinuation;
+}
+
 export interface ResolutionResume { kind: "resume-main" | "checkup" | "start-turn"; playerId: PlayerId; }
 export interface PrizeClaim { takingPlayerId: PlayerId; remaining: number; }
 export type PendingChoice =
@@ -57,9 +75,10 @@ export type PendingChoice =
   | { type: "mulligan-draw"; playerId: PlayerId; remaining: number; nextPlayerId?: PlayerId }
   | { type: "choose-prize"; playerId: PlayerId; claims: PrizeClaim[]; promotions: PlayerId[]; resume: ResolutionResume }
   | { type: "promote"; playerId: PlayerId; remainingPromotions: PlayerId[]; resume: ResolutionResume }
-  | EffectChoice;
+  | EffectChoice
+  | AllocationChoice;
 
-export type GameEventType = "card-played" | "pokemon-benched" | "ability-used" | "stadium-ability-used" | "attack-used" | "cards-searched" | "cards-discarded" | "cards-recovered" | "energy-attached-manually" | "energy-attached-by-effect" | "energy-moved" | "energy-discarded-invalid" | "damage-dealt" | "damage-healed" | "damage-counters-moved" | "special-condition-applied" | "enhanced-poison-applied" | "poison-checkup-damage" | "pokemon-evolved" | "pokemon-knocked-out" | "prize-card-taken" | "prize-modified" | "temporary-effect-applied" | "damage-modifier-applied" | "setup-completed" | "coin-flip";
+export type GameEventType = "card-played" | "pokemon-benched" | "ability-used" | "stadium-ability-used" | "attack-used" | "cards-searched" | "cards-discarded" | "cards-recovered" | "energy-attached-manually" | "energy-attached-by-effect" | "energy-moved" | "energy-discarded-invalid" | "damage-dealt" | "damage-healed" | "damage-counters-moved" | "damage-allocation" | "special-condition-applied" | "enhanced-poison-applied" | "poison-checkup-damage" | "pokemon-evolved" | "pokemon-knocked-out" | "prize-card-taken" | "prize-modified" | "temporary-effect-applied" | "damage-modifier-applied" | "setup-completed" | "coin-flip";
 export interface GameEvent { index: number; turn: number; type: GameEventType; playerId: PlayerId; targetPlayerId?: PlayerId; sourceCardId?: string; sourceInstanceId?: string; targetId?: string; amount?: number; cardInstanceIds?: string[]; detail?: string; cause?: KnockOutCause; }
 export interface ActionLogEntry { index: number; turn: number; playerId: PlayerId; actionId: string; description: string; }
 export interface ReplayRecord { seed: number; deckIds: [string, string]; startingPlayer: PlayerId; mulligans: Record<PlayerId, number>; actions: GameAction[]; finalResult: GameResult | null; }

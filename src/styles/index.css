@@ -156,6 +156,12 @@ select, input { width: 100%; color: white; background: #101722; border: 1px soli
 .actions-panel { padding: 1rem; max-height: 910px; overflow: auto; }
 .actions-panel h3 { margin: .5rem 0 1rem; font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; }
 .effect-choice-status { display: grid; gap: .35rem; margin-bottom: .8rem; padding: .8rem; border: 1px solid var(--cyan); background: #39d9c80d; }
+.pending-allocation-choices { display: grid; gap: .55rem; margin-bottom: .8rem; padding: .8rem; border: 1px solid var(--cyan); background: #39d9c80d; }
+.allocation-summary { display: flex; justify-content: space-between; gap: .8rem; }
+.allocation-summary span { color: var(--cyan); font-weight: 700; }
+.allocation-row { display: flex; align-items: center; justify-content: space-between; gap: .7rem; padding: .45rem 0; border-top: 1px solid #ffffff16; }
+.allocation-row small { display: block; color: var(--ink-muted); }
+.allocation-actions { display: flex; gap: .5rem; flex-wrap: wrap; padding-top: .3rem; }
 .effect-choice-status span, .effect-choice-status small { color: var(--ink-muted); }
 .coin-result { margin-bottom: .8rem; padding: .65rem; border-left: 3px solid #f4c95d; background: #f4c95d0d; }
 .action { width: 100%; margin-bottom: .45rem; text-align: left; font-size: .8rem; }

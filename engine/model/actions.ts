@@ -20,5 +20,10 @@ export type GameAction =
   | (ActionBase & { type: "confirm-choice" })
   | (ActionBase & { type: "decline-optional-effect" })
   | (ActionBase & { type: "select-effect-mode"; mode: string })
+  | (ActionBase & { type: "increase-allocation"; targetId: string; amount?: number })
+  | (ActionBase & { type: "decrease-allocation"; targetId: string; amount?: number })
+  | (ActionBase & { type: "set-allocation"; targetId: string; amount: number })
+  | (ActionBase & { type: "clear-allocation" })
+  | (ActionBase & { type: "confirm-allocation" })
   | (ActionBase & { type: "use-ability"; sourcePokemonId: string; abilityId: string; targetId?: string; cardInstanceId?: string })
   | (ActionBase & { type: "end-turn" });

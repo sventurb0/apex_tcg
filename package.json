@@ -25,6 +25,7 @@
     "decks:coverage-plan": "tsx scripts/deck-sources/deck-coverage-plan.ts",
     "decks:rebuild": "tsx scripts/deck-sources/rebuild-checked-in-corpus.ts",
     "decks:matrices": "tsx scripts/report-tournament-matrices.ts",
+    "choices:audit": "tsx scripts/choices-audit.ts",
     "engines:report": "tsx scripts/report-engines.ts",
     "synergies:report": "tsx scripts/report-synergies.ts",
     "acceptance:coverage-wave-1": "tsx scripts/verify-coverage-wave-1.ts",

@@ -1,6 +1,8 @@
 import { compileCardImplementation, type CatalogueIndex } from "../../data/pokemon";
 import { buildCardRoleProfile } from "./card-profile";
 import type { SynergyEdge } from "./types";
+import { engineDefinitions } from "./engines";
+import { engineSynergyEdges } from "./engines/capability-graph";
 
 const reviewed: ReadonlyArray<{ from: string; to: string; score: number; reasons: string[] }> = [
   { from: "sv1-41", to: "sv2-37", score: 10, reasons: ["Fire Off moves Fire Energy to the Active Skeledirge ex attacker."] },
@@ -13,6 +15,7 @@ const reviewed: ReadonlyArray<{ from: string; to: string; score: number; reasons
 
 export function buildSynergyGraph(cardIds: readonly string[], index: CatalogueIndex, creative = false): SynergyEdge[] {
   const selected = new Set(cardIds); const edges: SynergyEdge[] = [];
+  for (const engine of engineDefinitions) for (const edge of engineSynergyEdges(engine)) if (selected.has(edge.provider.cardId) && selected.has(edge.consumer.cardId)) edges.push({ fromCardId: edge.provider.cardId, toCardId: edge.consumer.cardId, score: 9, reasons: [`${engine.name}: ${edge.provider.explanation} This satisfies ${edge.consumer.explanation}`], confidence: "reviewed" });
   for (const edge of reviewed) if (selected.has(edge.from) && selected.has(edge.to)) edges.push({ fromCardId: edge.from, toCardId: edge.to, score: edge.score, reasons: edge.reasons, confidence: "reviewed" });
   const cards = cardIds.flatMap((id) => index.byId.get(id) ?? []); const profiles = cards.map((card) => buildCardRoleProfile(card, index));
   for (let left = 0; left < cards.length; left += 1) for (let right = left + 1; right < cards.length; right += 1) {
