@@ -464,9 +464,10 @@
       "sourceCollectorNumber": "80",
       "chosenCardId": "sv6-80",
       "chosenCardName": "Abra",
+      "behaviourFamilyId": "behaviour:1d8x18m",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -475,9 +476,10 @@
       "sourceCollectorNumber": "55",
       "chosenCardId": "me1-55",
       "chosenCardName": "Kadabra",
+      "behaviourFamilyId": "behaviour:1wxeis0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -486,9 +488,10 @@
       "sourceCollectorNumber": "56",
       "chosenCardId": "me1-56",
       "chosenCardName": "Alakazam",
+      "behaviourFamilyId": "behaviour:g8nayc",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -533,9 +536,10 @@
       "sourceCollectorNumber": "39",
       "chosenCardId": "sv6-39",
       "chosenCardName": "Chi-Yu",
+      "behaviourFamilyId": "behaviour:wksxwi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -592,9 +596,10 @@
       "sourceCollectorNumber": "64",
       "chosenCardId": "sv6pt5-64",
       "chosenCardName": "Xerosic's Machinations",
+      "behaviourFamilyId": "behaviour:1kubrsi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -603,9 +608,10 @@
       "sourceCollectorNumber": "84",
       "chosenCardId": "me3-84",
       "chosenCardName": "Rosa's Encouragement",
+      "behaviourFamilyId": "behaviour:14sr6ob",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -686,9 +692,10 @@
       "sourceCollectorNumber": "127",
       "chosenCardId": "me1-127",
       "chosenCardName": "Risky Ruins",
+      "behaviourFamilyId": "behaviour:xrtbda",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -734,31 +741,15 @@
   "exactResolvedCopies": 51,
   "canonicalEquivalentCopies": 9,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 45,
+    "complete": 53,
     "generated": 7,
-    "partial": 2,
-    "unsupported": 6
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me1-127",
-    "unimplemented:me1-55",
-    "unimplemented:me1-56",
-    "unimplemented:me3-84",
-    "unimplemented:sv6-39",
-    "unimplemented:sv6-80",
-    "unimplemented:sv6pt5-64"
-  ],
-  "blockers": [
-    "1× Abra (sv6-80): partial; no executable behaviour family",
-    "1× Kadabra (me1-55): partial; no executable behaviour family",
-    "1× Alakazam (me1-56): unsupported; no executable behaviour family",
-    "1× Chi-Yu (sv6-39): unsupported; no executable behaviour family",
-    "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-    "1× Rosa's Encouragement (me3-84): unsupported; no executable behaviour family",
-    "2× Risky Ruins (me1-127): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

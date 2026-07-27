@@ -472,9 +472,10 @@
       "sourceCollectorNumber": "50",
       "chosenCardId": "sv7-50",
       "chosenCardName": "Joltik",
+      "behaviourFamilyId": "behaviour:10dzbu3",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -483,9 +484,10 @@
       "sourceCollectorNumber": "2",
       "chosenCardId": "sv6pt5-2",
       "chosenCardName": "Galvantula",
+      "behaviourFamilyId": "behaviour:1jc81p6",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -542,9 +544,10 @@
       "sourceCollectorNumber": "57",
       "chosenCardId": "sv8-57",
       "chosenCardName": "Pikachu ex",
+      "behaviourFamilyId": "behaviour:1jymvln",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -553,9 +556,10 @@
       "sourceCollectorNumber": "25",
       "chosenCardId": "sv5-25",
       "chosenCardName": "Iron Leaves ex",
+      "behaviourFamilyId": "behaviour:w593ca",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -564,9 +568,10 @@
       "sourceCollectorNumber": "162",
       "chosenCardId": "me2pt5-162",
       "chosenCardName": "Team Rocket's Kangaskhan ex",
+      "behaviourFamilyId": "behaviour:14l4xhp",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -575,9 +580,10 @@
       "sourceCollectorNumber": "141",
       "chosenCardId": "sv6-141",
       "chosenCardName": "Bloodmoon Ursaluna ex",
+      "behaviourFamilyId": "behaviour:1urwzm7",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -646,9 +652,10 @@
       "sourceCollectorNumber": "146",
       "chosenCardId": "sv9-146",
       "chosenCardName": "Brock's Scouting",
+      "behaviourFamilyId": "behaviour:e2w8gw",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -657,9 +664,10 @@
       "sourceCollectorNumber": "76",
       "chosenCardId": "me4-76",
       "chosenCardName": "AZ's Tranquility",
+      "behaviourFamilyId": "behaviour:13bg879",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -704,9 +712,10 @@
       "sourceCollectorNumber": "185",
       "chosenCardId": "sv8-185",
       "chosenCardName": "Precious Trolley",
+      "behaviourFamilyId": "behaviour:1pqgm73",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -739,9 +748,10 @@
       "sourceCollectorNumber": "191",
       "chosenCardId": "me2pt5-191",
       "chosenCardName": "Light Ball",
+      "behaviourFamilyId": "behaviour:1g18ivs",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -835,37 +845,15 @@
   "exactResolvedCopies": 46,
   "canonicalEquivalentCopies": 14,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 34,
+    "complete": 46,
     "generated": 14,
     "partial": 0,
-    "unsupported": 12
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2pt5-162",
-    "unimplemented:me2pt5-191",
-    "unimplemented:me4-76",
-    "unimplemented:sv5-25",
-    "unimplemented:sv6-141",
-    "unimplemented:sv6pt5-2",
-    "unimplemented:sv7-50",
-    "unimplemented:sv8-185",
-    "unimplemented:sv8-57",
-    "unimplemented:sv9-146"
-  ],
-  "blockers": [
-    "2× Joltik (sv7-50): unsupported; no executable behaviour family",
-    "1× Galvantula (sv6pt5-2): unsupported; no executable behaviour family",
-    "2× Pikachu ex (sv8-57): unsupported; no executable behaviour family",
-    "1× Iron Leaves ex (sv5-25): unsupported; no executable behaviour family",
-    "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
-    "1× Bloodmoon Ursaluna ex (sv6-141): unsupported; no executable behaviour family",
-    "1× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
-    "1× AZ's Tranquility (me4-76): unsupported; no executable behaviour family",
-    "1× Precious Trolley (sv8-185): unsupported; no executable behaviour family",
-    "1× Light Ball (me2pt5-191): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Grass",

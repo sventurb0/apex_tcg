@@ -450,9 +450,10 @@
       "sourceCollectorNumber": "116",
       "chosenCardId": "sv9-116",
       "chosenCardName": "N's Reshiram",
+      "behaviourFamilyId": "behaviour:grane5",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -569,9 +570,10 @@
       "sourceCollectorNumber": "64",
       "chosenCardId": "sv6pt5-64",
       "chosenCardName": "Xerosic's Machinations",
+      "behaviourFamilyId": "behaviour:1kubrsi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -713,21 +715,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 54,
+    "complete": 56,
     "generated": 4,
     "partial": 0,
-    "unsupported": 2
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:sv6pt5-64",
-    "unimplemented:sv9-116"
-  ],
-  "blockers": [
-    "1× N's Reshiram (sv9-116): unsupported; no executable behaviour family",
-    "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness"

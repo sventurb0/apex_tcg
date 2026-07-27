@@ -453,9 +453,10 @@
       "sourceCollectorNumber": "35",
       "chosenCardId": "sv8pt5-35",
       "chosenCardName": "Duskull",
+      "behaviourFamilyId": "behaviour:1nj2wg4",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -464,9 +465,10 @@
       "sourceCollectorNumber": "36",
       "chosenCardId": "sv8pt5-36",
       "chosenCardName": "Dusclops",
+      "behaviourFamilyId": "behaviour:b77qwg",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -475,9 +477,10 @@
       "sourceCollectorNumber": "37",
       "chosenCardId": "sv8pt5-37",
       "chosenCardName": "Dusknoir",
+      "behaviourFamilyId": "behaviour:jvghrk",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -666,9 +669,10 @@
       "sourceCollectorNumber": "150",
       "chosenCardId": "sv6-150",
       "chosenCardName": "Handheld Fan",
+      "behaviourFamilyId": "behaviour:j68xom",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -689,9 +693,10 @@
       "sourceCollectorNumber": "153",
       "chosenCardId": "sv6-153",
       "chosenCardName": "Jamming Tower",
+      "behaviourFamilyId": "behaviour:kzzpij",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -737,27 +742,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 46,
+    "complete": 53,
     "generated": 7,
-    "partial": 2,
-    "unsupported": 5
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:sv6-150",
-    "unimplemented:sv6-153",
-    "unimplemented:sv8pt5-35",
-    "unimplemented:sv8pt5-36",
-    "unimplemented:sv8pt5-37"
-  ],
-  "blockers": [
-    "2× Duskull (sv8pt5-35): unsupported; no executable behaviour family",
-    "2× Dusclops (sv8pt5-36): partial; no executable behaviour family",
-    "1× Dusknoir (sv8pt5-37): unsupported; no executable behaviour family",
-    "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-    "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

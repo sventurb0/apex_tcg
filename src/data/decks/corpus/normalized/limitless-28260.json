@@ -478,9 +478,10 @@
       "sourceCollectorNumber": "52",
       "chosenCardId": "me3-52",
       "chosenCardName": "Drapion",
+      "behaviourFamilyId": "behaviour:45kcmv",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -501,9 +502,10 @@
       "sourceCollectorNumber": "55",
       "chosenCardId": "rsv10pt5-55",
       "chosenCardName": "Purrloin",
+      "behaviourFamilyId": "behaviour:1hq3z1a",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -536,9 +538,10 @@
       "sourceCollectorNumber": "86",
       "chosenCardId": "me1-86",
       "chosenCardName": "Mega Absol ex",
+      "behaviourFamilyId": "behaviour:1ojahde",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -559,9 +562,10 @@
       "sourceCollectorNumber": "116",
       "chosenCardId": "sv9-116",
       "chosenCardName": "N's Reshiram",
+      "behaviourFamilyId": "behaviour:grane5",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -630,9 +634,10 @@
       "sourceCollectorNumber": "83",
       "chosenCardId": "me4-83",
       "chosenCardName": "Transformation Tome",
+      "behaviourFamilyId": "behaviour:2oz4py",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -713,9 +718,10 @@
       "sourceCollectorNumber": "181",
       "chosenCardId": "me2pt5-181",
       "chosenCardName": "Air Balloon",
+      "behaviourFamilyId": "behaviour:1rvb2gh",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -761,29 +767,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 46,
+    "complete": 56,
     "generated": 4,
     "partial": 0,
-    "unsupported": 10
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me1-86",
-    "unimplemented:me2pt5-181",
-    "unimplemented:me3-52",
-    "unimplemented:me4-83",
-    "unimplemented:rsv10pt5-55",
-    "unimplemented:sv9-116"
-  ],
-  "blockers": [
-    "1× Drapion (me3-52): unsupported; no executable behaviour family",
-    "1× Purrloin (rsv10pt5-55): unsupported; no executable behaviour family",
-    "1× Mega Absol ex (me1-86): unsupported; no executable behaviour family",
-    "1× N's Reshiram (sv9-116): unsupported; no executable behaviour family",
-    "4× Transformation Tome (me4-83): unsupported; no executable behaviour family",
-    "2× Air Balloon (me2pt5-181): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness"

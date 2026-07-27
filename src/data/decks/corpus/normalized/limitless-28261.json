@@ -420,9 +420,10 @@
       "sourceCollectorNumber": "14",
       "chosenCardId": "me2-14",
       "chosenCardName": "Moltres",
+      "behaviourFamilyId": "behaviour:1szdaxp",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -636,19 +637,15 @@
   "exactResolvedCopies": 51,
   "canonicalEquivalentCopies": 9,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 52,
+    "complete": 53,
     "generated": 7,
     "partial": 0,
-    "unsupported": 1
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2-14"
-  ],
-  "blockers": [
-    "1× Moltres (me2-14): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

@@ -428,9 +428,10 @@
       "sourceCollectorNumber": "11",
       "chosenCardId": "sv10-11",
       "chosenCardName": "Dwebble",
+      "behaviourFamilyId": "behaviour:128caco",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -439,9 +440,10 @@
       "sourceCollectorNumber": "12",
       "chosenCardId": "sv10-12",
       "chosenCardName": "Crustle",
+      "behaviourFamilyId": "behaviour:cv9ern",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -486,9 +488,10 @@
       "sourceCollectorNumber": "84",
       "chosenCardId": "rsv10pt5-84",
       "chosenCardName": "Hilda",
+      "behaviourFamilyId": "behaviour:nj70wl",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -497,9 +500,10 @@
       "sourceCollectorNumber": "146",
       "chosenCardId": "sv5-146",
       "chosenCardName": "Eri",
+      "behaviourFamilyId": "behaviour:1j4wz7r",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -508,9 +512,10 @@
       "sourceCollectorNumber": "64",
       "chosenCardId": "sv6pt5-64",
       "chosenCardName": "Xerosic's Machinations",
+      "behaviourFamilyId": "behaviour:1kubrsi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -531,9 +536,10 @@
       "sourceCollectorNumber": "142",
       "chosenCardId": "sv5-142",
       "chosenCardName": "Bianca's Devotion",
+      "behaviourFamilyId": "behaviour:1mqys0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -542,9 +548,10 @@
       "sourceCollectorNumber": "179",
       "chosenCardId": "sv8-179",
       "chosenCardName": "Lisia's Appeal",
+      "behaviourFamilyId": "behaviour:b8zmcw",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -553,9 +560,10 @@
       "sourceCollectorNumber": "91",
       "chosenCardId": "me2-91",
       "chosenCardName": "Jumbo Ice Cream",
+      "behaviourFamilyId": "behaviour:ehmseu",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -612,9 +620,10 @@
       "sourceCollectorNumber": "150",
       "chosenCardId": "sv5-150",
       "chosenCardName": "Hand Trimmer",
+      "behaviourFamilyId": "behaviour:iino8i",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -623,9 +632,10 @@
       "sourceCollectorNumber": "152",
       "chosenCardId": "sv5-152",
       "chosenCardName": "Hero's Cape",
+      "behaviourFamilyId": "behaviour:1s9wfx",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -634,9 +644,10 @@
       "sourceCollectorNumber": "150",
       "chosenCardId": "sv6-150",
       "chosenCardName": "Handheld Fan",
+      "behaviourFamilyId": "behaviour:j68xom",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -657,9 +668,10 @@
       "sourceCollectorNumber": "146",
       "chosenCardId": "sv6-146",
       "chosenCardName": "Community Center",
+      "behaviourFamilyId": "behaviour:3u2rlp",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -668,9 +680,10 @@
       "sourceCollectorNumber": "149",
       "chosenCardId": "sv6-149",
       "chosenCardName": "Festival Grounds",
+      "behaviourFamilyId": "behaviour:fgi1wb",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -679,9 +692,10 @@
       "sourceCollectorNumber": "159",
       "chosenCardId": "sv9-159",
       "chosenCardName": "Spiky Energy",
+      "behaviourFamilyId": "behaviour:1d0uxpj",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -690,9 +704,10 @@
       "sourceCollectorNumber": "86",
       "chosenCardId": "me3-86",
       "chosenCardName": "Growing Grass Energy",
+      "behaviourFamilyId": "behaviour:1xwqtgk",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -701,9 +716,10 @@
       "sourceCollectorNumber": "161",
       "chosenCardId": "sv5-161",
       "chosenCardName": "Mist Energy",
+      "behaviourFamilyId": "behaviour:no3f0o",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -725,49 +741,15 @@
   "exactResolvedCopies": 59,
   "canonicalEquivalentCopies": 1,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 25,
+    "complete": 59,
     "generated": 1,
     "partial": 0,
-    "unsupported": 34
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2-91",
-    "unimplemented:me3-86",
-    "unimplemented:rsv10pt5-84",
-    "unimplemented:sv10-11",
-    "unimplemented:sv10-12",
-    "unimplemented:sv5-142",
-    "unimplemented:sv5-146",
-    "unimplemented:sv5-150",
-    "unimplemented:sv5-152",
-    "unimplemented:sv5-161",
-    "unimplemented:sv6-146",
-    "unimplemented:sv6-149",
-    "unimplemented:sv6-150",
-    "unimplemented:sv6pt5-64",
-    "unimplemented:sv8-179",
-    "unimplemented:sv9-159"
-  ],
-  "blockers": [
-    "3× Dwebble (sv10-11): unsupported; no executable behaviour family",
-    "3× Crustle (sv10-12): unsupported; no executable behaviour family",
-    "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-    "2× Eri (sv5-146): unsupported; no executable behaviour family",
-    "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-    "1× Bianca's Devotion (sv5-142): unsupported; no executable behaviour family",
-    "1× Lisia's Appeal (sv8-179): unsupported; no executable behaviour family",
-    "4× Jumbo Ice Cream (me2-91): unsupported; no executable behaviour family",
-    "1× Hand Trimmer (sv5-150): unsupported; no executable behaviour family",
-    "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-    "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-    "1× Community Center (sv6-146): unsupported; no executable behaviour family",
-    "1× Festival Grounds (sv6-149): unsupported; no executable behaviour family",
-    "4× Spiky Energy (sv9-159): unsupported; no executable behaviour family",
-    "4× Growing Grass Energy (me3-86): unsupported; no executable behaviour family",
-    "4× Mist Energy (sv5-161): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Grass"

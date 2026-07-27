@@ -422,9 +422,10 @@
       "sourceCollectorNumber": "120",
       "chosenCardId": "sv9-120",
       "chosenCardName": "Dunsparce",
+      "behaviourFamilyId": "behaviour:1wra8ia",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -433,9 +434,10 @@
       "sourceCollectorNumber": "129",
       "chosenCardId": "sv5-129",
       "chosenCardName": "Dudunsparce",
+      "behaviourFamilyId": "behaviour:1crg1w0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -516,9 +518,10 @@
       "sourceCollectorNumber": "84",
       "chosenCardId": "me3-84",
       "chosenCardName": "Rosa's Encouragement",
+      "behaviourFamilyId": "behaviour:14sr6ob",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -611,9 +614,10 @@
       "sourceCollectorNumber": "127",
       "chosenCardId": "me1-127",
       "chosenCardName": "Risky Ruins",
+      "behaviourFamilyId": "behaviour:xrtbda",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -659,25 +663,15 @@
   "exactResolvedCopies": 51,
   "canonicalEquivalentCopies": 9,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 47,
+    "complete": 52,
     "generated": 8,
-    "partial": 1,
-    "unsupported": 4
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me1-127",
-    "unimplemented:me3-84",
-    "unimplemented:sv5-129",
-    "unimplemented:sv9-120"
-  ],
-  "blockers": [
-    "1× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-    "1× Dudunsparce (sv5-129): partial; no executable behaviour family",
-    "1× Rosa's Encouragement (me3-84): unsupported; no executable behaviour family",
-    "2× Risky Ruins (me1-127): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

@@ -6,11 +6,12 @@ import { cardFor, findPokemon, otherPlayer, playId, pokemonTargets, topCard } fr
 import { clearSpecialConditions, applySpecialCondition } from "../rules/pokemon-checkup";
 import { emitEvent } from "../rules/events";
 import { effectiveMaxHp } from "../rules/modifiers";
-import { calculateDamage } from "../rules/combat";
+import { calculateDamage, isKnockedOut } from "../rules/combat";
 import { addTemporaryEffect } from "../rules/temporary-effects";
 import { allPokemonHaveTrait, hasCardTrait, pokemonHasTrait } from "../rules/traits";
 import { isRareCandyPair, legalRareCandyBasics } from "../rules/evolution";
 import { benchCapacity } from "../rules/shared-mechanics";
+import { MissingEffectProgramError } from "./errors";
 
 export interface ProgramStart { programId: string; actingPlayerId: PlayerId; sourceCardId: string; sourceInstanceId?: string; sourcePokemonId?: string; attackId?: string; after: EffectContinuation["after"]; variables?: Record<string, string[]>; }
 
@@ -61,8 +62,8 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
     if (kind === "ability" && operation === "discard-one-draw") { return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds: player.hand.map((card) => card.instanceId), optional: false, instruction: `Discard exactly one card to draw ${value} cards.` }); }
     if (kind === "trainer" && operation === "shuffle-hand-draw") { player.deck.push(...player.hand.splice(0)); shuffle(state, start.actingPlayerId); draw(state, start.actingPlayerId, value); return true; }
     if (kind === "trainer" && operation === "both-shuffle-draw") { for (const targetId of [start.actingPlayerId, otherPlayer(start.actingPlayerId)] as const) { const target = state.players[targetId]; target.deck.push(...target.hand.splice(0)); shuffle(state, targetId); draw(state, targetId, value); } return true; }
-    if ((kind === "trainer" || kind === "ability") && operation === "search-deck-to-hand") { const maximum = Number(rawMaximum) || 1; const eligibleIds = player.deck.filter((instance) => matchesTemplateCategory(state, instance, rawValue ?? "")).map((instance) => instance.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(maximum, eligibleIds.length), eligibleIds, optional: true, instruction: `Choose up to ${maximum} ${rawValue?.replace(/-/g, " ") ?? "matching cards"} from your deck.` }); }
-    if (kind === "trainer" && operation === "recover-discard-to-hand") { const maximum = Number(rawMaximum) || 1; const eligibleIds = player.discard.filter((instance) => matchesTemplateCategory(state, instance, rawValue ?? "")).map((instance) => instance.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(maximum, eligibleIds.length), eligibleIds, optional: true, instruction: `Choose up to ${maximum} ${rawValue?.replace(/-/g, " ") ?? "matching cards"} from your discard pile.` }); }
+    if ((kind === "trainer" || kind === "ability" || kind === "attack") && operation === "search-deck-to-hand") { const maximum = Number(rawMaximum) || 1; const eligibleIds = player.deck.filter((instance) => matchesTemplateCategory(state, instance, rawValue ?? "")).map((instance) => instance.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(maximum, eligibleIds.length), eligibleIds, optional: true, instruction: `Choose up to ${maximum} ${rawValue?.replace(/-/g, " ") ?? "matching cards"} from your deck.` }); }
+    if ((kind === "trainer" || kind === "attack") && operation === "recover-discard-to-hand") { const maximum = Number(rawMaximum) || 1; const eligibleIds = player.discard.filter((instance) => matchesTemplateCategory(state, instance, rawValue ?? "")).map((instance) => instance.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(maximum, eligibleIds.length), eligibleIds, optional: true, instruction: `Choose up to ${maximum} ${rawValue?.replace(/-/g, " ") ?? "matching cards"} from your discard pile.` }); }
     if ((kind === "trainer" || kind === "ability") && operation === "search-basic-to-bench") { const freeSpaces = Math.max(0, benchCapacity(state, start.actingPlayerId) - player.bench.length); const eligibleIds = player.deck.filter((instance) => matchesTemplateCategory(state, instance, "basic-pokemon")).map((instance) => instance.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(value, freeSpaces, eligibleIds.length), eligibleIds, optional: true, instruction: `Choose up to ${value} Basic Pokémon to put onto your Bench.` }); }
     if (kind === "trainer" && operation === "heal-selected") { const eligibleIds = pokemonTargets(player).filter((pokemon) => pokemon.damage > 0).map(playId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: `Choose one of your Pokémon to heal ${value} damage.` }); }
     if (kind === "trainer" && operation === "heal-each-own") { for (const target of pokemonTargets(player)) heal(state, start.actingPlayerId, target, value, start.sourceCardId); return true; }
@@ -102,11 +103,244 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       if (!source || source.attachedEnergy.length < 3) return true;
       return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "mode", min: 1, max: 1, eligibleIds: ["skip", "pump"], optional: false, instruction: "Choose whether to shuffle 3 Energy into your deck for 120 Bench damage." });
     }
+    case "attack:allure": case "template:attack:draw-fixed:1": case "template:attack:draw-fixed:2": {
+      const count = start.programId === "attack:allure" ? 2 : Number(start.programId.split(":").at(-1)) || 1;
+      draw(state, start.actingPlayerId, count); return true;
+    }
+    case "attack:invite-evil": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "pokemon" && definition.pokemonType === "darkness"; }).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 3 Darkness Pokémon from your deck." });
+    }
+    case "attack:traverse-time": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "trainer" && definition.subtype === "stadium" || definition.category === "pokemon" && definition.pokemonType === "grass"; }).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 3 Grass Pokémon and/or Stadium cards." });
+    }
+    case "attack:icicle-loop": {
+      const eligibleIds = source?.attachedEnergy.map((energy) => energy.instanceId) ?? [];
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an Energy attached to this Pokémon to return to your hand." });
+    }
+    case "attack:shadow-bind": {
+      const target = state.players[otherPlayer(start.actingPlayerId)].active;
+      if (target) addTemporaryEffect(state, { kind: "retreat-lock", playerId: otherPlayer(start.actingPlayerId), pokemonId: playId(target), appliesOnPlayerTurn: state.players[otherPlayer(start.actingPlayerId)].turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:shinobi-blade": {
+      const eligibleIds = player.deck.map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose a card from your deck for Shinobi Blade." });
+    }
+    case "attack:aura-jab": {
+      const eligibleIds = player.discard.filter((card) => { const definition = cardFor(state, card); return definition.category === "energy" && definition.basic && definition.energyType === "fighting"; }).map((card) => card.instanceId);
+      if (!eligibleIds.length || !player.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 3 Basic Fighting Energy from your discard pile." });
+    }
+    case "attack:growl": {
+      const opponentId = otherPlayer(start.actingPlayerId); const target = state.players[opponentId].active;
+      if (target) addTemporaryEffect(state, { kind: "damage-reduction", playerId: opponentId, pokemonId: playId(target), amount: 20, appliesOnPlayerTurn: state.players[opponentId].turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:gemstone-mimicry": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const active = opponent.active;
+      const eligibleIds = active ? active.stack.flatMap((instance) => { const definition = cardFor(state, instance); return definition.category === "pokemon" ? definition.attacks.map((attack) => attack.id) : []; }) : [];
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "mode", min: eligibleIds.length ? 1 : 0, max: 1, eligibleIds, optional: true, instruction: "Choose an attack from your opponent's Active Tera Pokémon." });
+    }
+    case "attack:mirage-barrage": {
+      const eligibleEnergy = source?.attachedEnergy.filter((card) => cardFor(state, card).category === "energy").map((card) => card.instanceId) ?? [];
+      if (eligibleEnergy.length < 2) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 2, max: 2, eligibleIds: eligibleEnergy, optional: false, instruction: "Discard 2 Energy from this Pokémon." });
+    }
+    case "attack:jolting-charge": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "energy" && definition.basic && (definition.energyType === "grass" || definition.energyType === "lightning"); }).map((card) => card.instanceId);
+      if (!eligibleIds.length || !pokemonTargets(player).length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(4, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Basic Grass and up to 2 Basic Lightning Energy." });
+    }
+    case "attack:night-joker": {
+      const eligibleIds = player.bench.flatMap((pokemon) => { const definition = topCard(state, pokemon); return definition.attacks.map((attack) => attack.id); });
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "mode", min: eligibleIds.length ? 1 : 0, max: 1, eligibleIds, optional: true, instruction: "Choose an attack from a Benched N's Pokémon." });
+    }
+    case "attack:seek-inspiration": {
+      const top = player.deck.shift();
+      if (top) player.discard.push(top);
+      return true;
+    }
+    case "attack:push-down": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)];
+      if (!opponent.active || !opponent.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: otherPlayer(start.actingPlayerId), selectionKind: "pokemon", min: 1, max: 1, eligibleIds: opponent.bench.map(playId), optional: false, instruction: "Your opponent chooses a Benched Pokémon to become Active." });
+    }
+    case "attack:trading-places": {
+      if (!player.active || !player.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: player.bench.map(playId), optional: false, instruction: "Choose a Benched Pokémon to switch with your Active Pokémon." });
+    }
+    case "attack:impact-blow": case "attack:prism-edge": case "attack:blood-moon": {
+      if (source && start.attackId) addTemporaryEffect(state, { kind: "attack-lock", playerId: start.actingPlayerId, pokemonId: playId(source), attackId: start.attackId, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:smolder-sault": {
+      if (source) for (const attack of topCard(state, source).attacks) addTemporaryEffect(state, { kind: "attack-lock", playerId: start.actingPlayerId, pokemonId: playId(source), attackId: attack.id, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:shred": case "attack:superb-scissors": case "attack:destructive-drill": return true;
+    case "attack:hazardous-tail": {
+      if (source) { source.damage += 70; emitEvent(state, "damage-dealt", start.actingPlayerId, { sourceCardId: start.sourceCardId, targetId: playId(source), amount: 70, detail: "Hazardous Tail recoil" }); }
+      const target = state.players[otherPlayer(start.actingPlayerId)].active;
+      if (target) { applySpecialCondition(target, "paralyzed"); applySpecialCondition(target, "poisoned"); }
+      return true;
+    }
+    case "attack:ascension": {
+      if (!source) return true;
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "pokemon" && definition.evolvesFrom === topCard(state, source).name; }).map((card) => card.instanceId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Pokémon that evolves from this Dwebble." });
+    }
+    case "attack:thunder-raid": {
+      if (source) while (source.attachedEnergy.length) { const energy = source.attachedEnergy.shift(); if (energy) player.discard.push(energy); }
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = opponent.bench.filter((pokemon) => topCard(state, pokemon).isPokemonEx).map(playId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opposing Benched Pokémon ex for 210 damage." });
+    }
+    case "attack:drum-beating": {
+      const target = state.players[otherPlayer(start.actingPlayerId)].active;
+      if (target) addTemporaryEffect(state, { kind: "attack-cost-increase", playerId: otherPlayer(start.actingPlayerId), pokemonId: playId(target), amount: 1, appliesOnPlayerTurn: state.players[otherPlayer(start.actingPlayerId)].turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:wood-hammer": if (source) { source.damage += 50; return true; } return true;
+    case "attack:trifrost": {
+      if (source) while (source.attachedEnergy.length) { const energy = source.attachedEnergy.shift(); if (energy) player.discard.push(energy); }
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = pokemonTargets(opponent).map(playId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: Math.min(3, eligibleIds.length), max: Math.min(3, eligibleIds.length), eligibleIds, optional: false, instruction: "Choose up to 3 opposing Pokémon for 110 damage each." });
+    }
+    case "attack:tantrum": if (source) { applySpecialCondition(source, "confused"); return true; } return true;
+    case "attack:destined-fight": {
+      if (player.active) { player.active.damage = effectiveMaxHp(state, player.active); state.pendingKnockOutCause = { cause: "attack-damage", sourcePlayerId: start.actingPlayerId, sourceCardId: start.sourceCardId }; }
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; if (opponent.active) { opponent.active.damage = effectiveMaxHp(state, opponent.active); state.pendingKnockOutCause = { cause: "attack-damage", sourcePlayerId: start.actingPlayerId, sourceCardId: start.sourceCardId }; }
+      return true;
+    }
+    case "attack:topaz-bolt": {
+      const eligibleIds = source?.attachedEnergy.map((energy) => energy.instanceId) ?? [];
+      if (eligibleIds.length < 3) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 3, max: 3, eligibleIds, optional: false, instruction: "Choose exactly 3 Energy to discard from this Pokémon." });
+    }
+    case "attack:delightful-kiss": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "energy" && definition.basic && definition.energyType === "psychic"; }).map((card) => card.instanceId);
+      if (!eligibleIds.length || !player.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Basic Psychic Energy." });
+    }
+    case "attack:electromagnetic-sonar": {
+      const eligibleIds = player.discard.filter((card) => cardFor(state, card).category === "trainer").map((card) => card.instanceId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Trainer card from your discard pile." });
+    }
+    case "attack:slight-shift": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const energyIds = pokemonTargets(opponent).flatMap((pokemon) => pokemon.attachedEnergy.map((energy) => energy.instanceId));
+      if (!energyIds.length || pokemonTargets(opponent).length < 2) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds: energyIds, optional: false, instruction: "Choose an Energy attached to an opponent's Pokémon." });
+    }
+    case "attack:hide": {
+      const flip = nextRandom(state.rngState); state.rngState = flip.state; const heads = flip.value < .5; emitEvent(state, "coin-flip", start.actingPlayerId, { sourceCardId: start.sourceCardId, detail: heads ? "heads" : "tails" });
+      if (heads && source) addTemporaryEffect(state, { kind: "attack-prevention", playerId: start.actingPlayerId, pokemonId: playId(source), appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId });
+      return true;
+    }
+    case "attack:protect-charge": if (source) { addTemporaryEffect(state, { kind: "damage-reduction", playerId: start.actingPlayerId, pokemonId: playId(source), amount: 30, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); return true; } return true;
+    case "attack:flamebody-cannon": {
+      if (source) while (source.attachedEnergy.length) { const energy = source.attachedEnergy.shift(); if (energy) player.discard.push(energy); }
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; if (!opponent.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: opponent.bench.map(playId), optional: false, instruction: "Choose an opposing Benched Pokémon for 90 damage." });
+    }
+    case "attack:terminal-period": {
+      const target = state.players[otherPlayer(start.actingPlayerId)].active;
+      if (target && target.damage === 60) { target.damage = effectiveMaxHp(state, target); state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: start.actingPlayerId, sourceCardId: start.sourceCardId }; }
+      return true;
+    }
+    case "attack:claw-darkness": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; if (!opponent.hand.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds: opponent.hand.map((card) => card.instanceId), optional: false, instruction: "Choose a card from your opponent's revealed hand to discard." });
+    }
+    case "attack:bounce-back": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; if (!opponent.active || !opponent.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: otherPlayer(start.actingPlayerId), selectionKind: "pokemon", min: 1, max: 1, eligibleIds: opponent.bench.map(playId), optional: false, instruction: "Choose a Benched Pokémon to become Active." });
+    }
     case "ability:run-errand": draw(state, start.actingPlayerId, 2); return true;
+    case "ability:allure": draw(state, start.actingPlayerId, 2); return true;
+    case "ability:teleporter": {
+      const source = start.sourcePokemonId ? findPokemon(player, start.sourcePokemonId) : undefined;
+      if (!source || player.active !== source || !player.bench.length) return true;
+      player.deck.push(...source.stack, ...source.attachedEnergy); player.active = player.bench.shift() ?? null; shuffle(state, start.actingPlayerId); emitEvent(state, "ability-used", start.actingPlayerId, { sourceCardId: start.sourceCardId, targetId: start.sourcePokemonId, detail: "Teleporter shuffled Active Pokémon" }); return true;
+    }
+    case "ability:lunar-cycle": {
+      const energyId = player.hand.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "energy" && definition.basic && definition.energyType === "fighting"; })[0]?.instanceId;
+      if (energyId) { const energy = removeById(player.hand, energyId); if (energy) player.discard.push(energy); draw(state, start.actingPlayerId, 3); emitEvent(state, "ability-used", start.actingPlayerId, { sourceCardId: start.sourceCardId, cardInstanceIds: [energyId], detail: "Lunar Cycle" }); } return true;
+    }
+    case "ability:boom-boom-groove": {
+      const eligibleIds = player.deck.map((instance) => instance.instanceId); if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose any card for Boom Boom Groove." });
+    }
+    case "ability:mortal-shuriken": {
+      const eligibleIds = pokemonTargets(state.players[otherPlayer(start.actingPlayerId)]).map(playId); if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opponent's Pokémon for Mortal Shuriken." });
+    }
+    case "ability:metallic-signal": {
+      const eligibleIds = player.deck.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "pokemon" && definition.pokemonType === "metal" && definition.stage !== "basic"; }).map((instance) => instance.instanceId); if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Evolution Metal Pokémon." });
+    }
+    case "ability:run-away-draw": {
+      draw(state, start.actingPlayerId, 3);
+      if (source) {
+        const benchIndex = player.bench.findIndex((pokemon) => pokemon === source);
+        if (benchIndex >= 0) player.bench.splice(benchIndex, 1);
+        else if (player.active === source) player.active = player.bench.shift() ?? null;
+        const returned = [...source.stack, ...source.attachedEnergy]; source.stack = []; source.attachedEnergy = []; player.deck.push(...returned); shuffle(state, start.actingPlayerId);
+      }
+      return true;
+    }
+    case "ability:invite-evil": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "pokemon" && definition.pokemonType === "darkness"; }).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 3 Darkness Pokémon from your deck." });
+    }
+    case "ability:come-and-get-you": {
+      const eligibleIds = player.discard.filter((card) => cardFor(state, card).id === "sv8pt5-35").map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length, benchCapacity(state, start.actingPlayerId) - player.bench.length), eligibleIds, optional: true, instruction: "Choose up to 3 Duskull from your discard pile for your Bench." });
+    }
+    case "ability:cursed-blast-5": case "ability:cursed-blast-13": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)];
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: pokemonTargets(opponent).map(playId), optional: false, instruction: `Choose an opposing Pokémon for ${start.programId.endsWith("13") ? 13 : 5} damage counters.` });
+    }
+    case "ability:seething-spirit": {
+      const eligibleIds = player.discard.filter((card) => isBasicEnergy(state, card)).map((card) => card.instanceId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Basic Energy from your discard pile to attach." });
+    }
+    case "ability:jewel-seeker": {
+      const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "trainer").map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Trainer cards from your deck." });
+    }
+    case "trainer:rosas-encouragement": {
+      if (player.prizes.length <= state.players[otherPlayer(start.actingPlayerId)].prizes.length) return true;
+      const eligibleIds = player.discard.filter((card) => isBasicEnergy(state, card)).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Basic Energy from your discard pile." });
+    }
+    case "trainer:xerosics-machinations": {
+      const opponentId = otherPlayer(start.actingPlayerId); const opponent = state.players[opponentId];
+      return choice(state, continuation(start, 1), { playerId: opponentId, selectionKind: "card", min: Math.max(0, opponent.hand.length - 3), max: Math.max(0, opponent.hand.length - 3), eligibleIds: opponent.hand.map((card) => card.instanceId), optional: false, instruction: "Choose cards to discard until your hand has 3 cards." });
+    }
+    case "trainer:brocks-scouting": {
+      const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "pokemon").map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Basic Pokémon or 1 Evolution Pokémon from your deck." });
+    }
+    case "trainer:hilda": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "pokemon" && definition.stage !== "basic"; }).map((card) => card.instanceId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose 1 Evolution Pokémon from your deck." });
+    }
     case "ability:skyliner": return true;
     case "ability:snow-sink": { if (state.stadium) { const ownerId = state.stadium.instanceId.startsWith("player-one-") ? "player-one" : "player-two"; state.players[ownerId].discard.push(state.stadium); state.stadium = null; } return true; }
     case "attack:burst-roar": { const discarded = player.hand.splice(0); player.discard.push(...discarded); draw(state, start.actingPlayerId, 6); return true; }
-    case "attack:raging-bolt": { const eligibleIds = pokemonTargets(player).flatMap((pokemon) => pokemon.attachedEnergy.filter((instance) => isBasicEnergy(state, instance)).map((instance) => instance.instanceId)); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: eligibleIds.length, eligibleIds, optional: true, instruction: "Choose any number of Basic Energy attached to your Pokémon to discard." }); }
+    case "attack:powerful-hand": { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) { const amount = player.hand.length * 20; target.damage += amount; emitEvent(state, "damage-dealt", start.actingPlayerId, { sourceCardId: start.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(start.actingPlayerId), amount, detail: "Powerful Hand damage counters" }); if (isKnockedOut(state, target)) state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: start.actingPlayerId, sourceCardId: start.sourceCardId }; } return true; }
+    case "attack:teleportation-attack": {
+      const eligibleIds = player.bench.map(playId); if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Benched Pokémon to switch with Abra." });
+    }
+    case "attack:raging-bolt": case "attack:bellowing-thunder": { const eligibleIds = pokemonTargets(player).flatMap((pokemon) => pokemon.attachedEnergy.filter((instance) => isBasicEnergy(state, instance)).map((instance) => instance.instanceId)); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: eligibleIds.length, eligibleIds, optional: true, instruction: "Choose any number of Basic Energy attached to your Pokémon to discard." }); }
     case "attack:cruel-arrow": return true;
     case "attack:poisonous-musculature": {
       const eligibleIds = player.deck.filter((card) => isBasicDarknessEnergy(state, card)).map((card) => card.instanceId);
@@ -191,6 +425,10 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       const subset = player.deck.slice(0, 7).map((card) => card.instanceId); const eligibleIds = player.deck.slice(0, 7).filter((card) => cardFor(state, card).category === "pokemon").map((card) => card.instanceId);
       return choice(state, continuation(start, 1, { subset }), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Pokémon from the top 7 cards." });
     }
+    case "trainer:dusk-ball": {
+      const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "pokemon").map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Pokémon from your deck." });
+    }
     case "trainer:iono": {
       for (const playerId of [start.actingPlayerId, otherPlayer(start.actingPlayerId)] as const) { const target = state.players[playerId]; const bottom = shuffleDeterministic(target.hand, state.rngState); state.rngState = bottom.state; target.deck.push(...bottom.value); target.hand = []; }
       for (const playerId of [start.actingPlayerId, otherPlayer(start.actingPlayerId)] as const) draw(state, playerId, state.players[playerId].prizes.length);
@@ -210,6 +448,11 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       const eligibleIds = player.hand.map((card) => card.instanceId);
       return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 2, max: 2, eligibleIds, optional: false, instruction: "Choose exactly 2 other cards to discard for Ultra Ball." });
     }
+    case "trainer:secret-box": return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 3, max: 3, eligibleIds: player.hand.map((card) => card.instanceId), optional: false, instruction: "Choose exactly 3 other cards to discard for Secret Box." });
+    case "trainer:eri": { const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = opponent.hand.filter((card) => cardFor(state, card).category === "trainer" && cardFor(state, card).subtype === "item").map((card) => card.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Item cards from your opponent's revealed hand to discard." }); }
+    case "trainer:ruffian": { const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = pokemonTargets(opponent).filter((pokemon) => Boolean(pokemon.tool)).map((pokemon) => pokemon.tool!.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Pokémon Tool attached to your opponent's Pokémon to discard." }); }
+    case "trainer:transformation-tome": return true;
+    case "tool:black-belt-training": return true;
     case "trainer:janines-secret-art": {
       const eligibleIds = pokemonTargets(player).filter((pokemon) => topCard(state, pokemon).pokemonType === "darkness").map(playId);
       return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 of your Darkness Pokémon." });
@@ -282,7 +525,55 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
     case "trainer:dawn": { const eligibleIds = player.deck.filter((candidate) => { const definition = cardFor(state, candidate); return definition.category === "pokemon" && ["basic", "stage1", "stage2"].includes(definition.stage); }).map((candidate) => candidate.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(3, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Basic, 1 Stage 1, and 1 Stage 2 Pokémon from your deck." }); }
     case "trainer:bug-catching-set": { const subset = player.deck.slice(0, 7).map((instance) => instance.instanceId); const eligibleIds = player.deck.slice(0, 7).filter((instance) => { const card = cardFor(state, instance); return card.category === "energy" && card.basic && card.energyType === "grass" || card.category === "pokemon" && card.pokemonType === "grass"; }).map((instance) => instance.instanceId); return choice(state, continuation(start, 1, { subset }), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Grass Pokémon or Basic Grass Energy from the top 7 cards." }); }
     case "trainer:glass-trumpet": { const tera = pokemonTargets(player).some((pokemon) => topCard(state, pokemon).traits?.includes("tera")); const eligibleIds = player.bench.filter((pokemon) => topCard(state, pokemon).pokemonType === "colorless").map(playId); if (!tera || !eligibleIds.length || !player.discard.some((instance) => isBasicEnergy(state, instance))) return true; return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 2 Benched Colorless Pokémon for Glass Trumpet." }); }
-    default: return true;
+    case "trainer:premium-power-pro": addTemporaryEffect(state, { kind: "attack-damage-bonus", playerId: start.actingPlayerId, amount: 30, pokemonType: "fighting", appliesOnPlayerTurn: player.turnsTaken, sourceCardId: start.sourceCardId }); return true;
+    case "trainer:fighting-gong": {
+      const eligibleIds = player.deck.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "energy" && definition.basic && definition.energyType === "fighting" || definition.category === "pokemon" && definition.stage === "basic" && definition.pokemonType === "fighting"; }).map((instance) => instance.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: 1, eligibleIds, optional: true, instruction: "Choose a Basic Fighting Energy or Basic Fighting Pokémon." });
+    }
+    case "trainer:jumbo-ice-cream": if (player.active && player.active.attachedEnergy.length >= 3) { heal(state, start.actingPlayerId, player.active, 80, start.sourceCardId); } return true;
+    case "trainer:wondrous-patch": {
+      const eligibleIds = player.discard.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "energy" && definition.basic && definition.energyType === "psychic"; }).map((instance) => instance.instanceId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Basic Psychic Energy from your discard pile." });
+    }
+    case "trainer:energy-recycler": {
+      const eligibleIds = player.discard.filter((instance) => isBasicEnergy(state, instance)).map((instance) => instance.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(5, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 5 Basic Energy to shuffle into your deck." });
+    }
+    case "trainer:sacred-ash": {
+      const eligibleIds = player.discard.filter((instance) => cardFor(state, instance).category === "pokemon").map((instance) => instance.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(5, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 5 Pokémon to shuffle into your deck." });
+    }
+    case "trainer:biancas-devotion": {
+      const eligibleIds = pokemonTargets(player).filter((pokemon) => effectiveMaxHp(state, pokemon) - pokemon.damage <= 30).map(playId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Pokémon with 30 HP or less remaining to heal fully." });
+    }
+    case "trainer:enhanced-hammer": {
+      const eligibleIds = pokemonTargets(state.players[otherPlayer(start.actingPlayerId)]).flatMap((pokemon) => pokemon.attachedEnergy.filter((energy) => { const definition = cardFor(state, energy); return definition.category === "energy" && !definition.basic; }).map((energy) => energy.instanceId));
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Special Energy attached to an opponent's Pokémon." });
+    }
+    case "trainer:prime-catcher": {
+      const eligibleIds = state.players[otherPlayer(start.actingPlayerId)].bench.map(playId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opposing Benched Pokémon to switch Active." });
+    }
+    case "trainer:lumiose-galette": if (player.active) { heal(state, start.actingPlayerId, player.active, 20, start.sourceCardId); clearSpecialConditions(player.active); } return true;
+    case "trainer:surfer": {
+      if (!player.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: player.bench.map(playId), optional: false, instruction: "Choose a Benched Pokémon to switch with your Active Pokémon." });
+    }
+    case "trainer:azs-tranquility": {
+      if (!player.bench.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: player.bench.map(playId), optional: false, instruction: "Choose a Benched Pokémon to switch with your Active Pokémon." });
+    }
+    case "trainer:lisias-appeal": {
+      const eligibleIds = state.players[otherPlayer(start.actingPlayerId)].bench.filter((pokemon) => topCard(state, pokemon).stage === "basic").map(playId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opposing Benched Basic Pokémon." });
+    }
+    case "trainer:precious-trolley": {
+      const free = Math.max(0, benchCapacity(state, start.actingPlayerId) - player.bench.length); const eligibleIds = player.deck.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "pokemon" && definition.stage === "basic"; }).map((instance) => instance.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(free, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose any number of Basic Pokémon to put onto your Bench." });
+    }
+    default: throw new MissingEffectProgramError(start.programId, start.sourceCardId);
   }
 }
 
@@ -298,8 +589,8 @@ function continueEscapeRope(state: GameState, cont: EffectContinuation, selected
 
 export function continueEffectProgram(state: GameState, pending: EffectChoice, selected: string[]): boolean {
   const cont = pending.continuation; const player = state.players[cont.actingPlayerId];
-  if (/^template:(?:trainer|ability):search-deck-to-hand:/.test(cont.programId)) { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: cont.programId }); return true; }
-  if (cont.programId.startsWith("template:trainer:recover-discard-to-hand:")) { moveDiscardToHand(state, cont.actingPlayerId, selected); return true; }
+  if (/^template:(?:trainer|ability|attack):search-deck-to-hand:/.test(cont.programId)) { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: cont.programId }); return true; }
+  if (/^template:(?:trainer|attack):recover-discard-to-hand:/.test(cont.programId)) { moveDiscardToHand(state, cont.actingPlayerId, selected); return true; }
   if (/^template:(?:trainer|ability):search-basic-to-bench:/.test(cont.programId)) { const benched: string[] = []; for (const id of selected.slice(0, Math.max(0, benchCapacity(state, cont.actingPlayerId) - player.bench.length))) { const card = removeById(player.deck, id); if (card) { player.bench.push({ stack: [card], damage: 0, attachedEnergy: [], specialConditions: [], enteredPlayTurn: state.turn, evolvedThisTurn: false, abilityUsage: {} }); benched.push(card.instanceId); } } shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: benched, detail: cont.programId }); return true; }
   if (cont.programId.startsWith("template:trainer:heal-selected:")) { const target = selected[0] ? findPokemon(player, selected[0]) : undefined; const amount = Number(cont.programId.split(":")[3]) || 0; if (target) heal(state, cont.actingPlayerId, target, amount, cont.sourceCardId); return true; }
   if (cont.programId.startsWith("template:trainer:heal-selected-clear:")) { const target = selected[0] ? findPokemon(player, selected[0]) : undefined; const amount = Number(cont.programId.split(":")[3]) || 0; if (target) { heal(state, cont.actingPlayerId, target, amount, cont.sourceCardId); clearSpecialConditions(target); } return true; }
@@ -308,8 +599,118 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
   if (cont.programId === "template:ability:switch-active:0") { if (selected[0]) switchTo(state, cont.actingPlayerId, selected[0]); return true; }
   if (cont.programId.startsWith("template:ability:place-opponent-counters:")) { const opponentId = otherPlayer(cont.actingPlayerId); const target = selected[0] ? findPokemon(state.players[opponentId], selected[0]) : undefined; const counters = Number(cont.programId.split(":")[3]) || 0; if (target) { target.damage += counters * 10; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: opponentId, amount: counters * 10, detail: "damage counters" }); state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; } return true; }
   switch (cont.programId) {
+    case "attack:invite-evil": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Invite Evil attack" }); return true;
+    case "attack:traverse-time": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Traverse Time" }); return true;
+    case "attack:icicle-loop": { const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; const energy = selected[0] && source ? removeById(source.attachedEnergy, selected[0]) : undefined; if (energy) player.hand.push(energy); return true; }
+    case "attack:shinobi-blade": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true;
+    case "attack:aura-jab": {
+      if (cont.step === 1) {
+        const eligibleIds = player.bench.map(playId);
+        return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: selected.length ? 1 : 0, max: 1, eligibleIds, optional: true, instruction: "Choose a Benched Pokémon to receive the selected Fighting Energy." });
+      }
+      const target = selected[0] ? findPokemon(player, selected[0]) : undefined;
+      const energyIds = cont.variables.energy ?? [];
+      if (target) for (const id of energyIds) { const card = removeById(player.discard, id); if (card) target.attachedEnergy.push(card); }
+      return true;
+    }
+    case "attack:push-down": case "attack:bounce-back": { if (selected[0]) switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); return true; }
+    case "attack:trading-places": { if (selected[0]) switchTo(state, cont.actingPlayerId, selected[0]); return true; }
+    case "attack:ascension": {
+      const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; const evolution = selected[0] ? removeById(player.deck, selected[0]) : undefined; const definition = evolution ? cardFor(state, evolution) : undefined;
+      if (source && evolution && definition?.category === "pokemon" && definition.evolvesFrom === topCard(state, source).name) { source.stack.push(evolution); source.evolvedThisTurn = true; clearSpecialConditions(source); emitEvent(state, "pokemon-evolved", cont.actingPlayerId, { sourceCardId: evolution.cardId, sourceInstanceId: evolution.instanceId, targetId: playId(source), detail: "Ascension" }); }
+      shuffle(state, cont.actingPlayerId); return true;
+    }
+    case "attack:thunder-raid": { const target = selected[0] ? findPokemon(state.players[otherPlayer(cont.actingPlayerId)], selected[0]) : undefined; if (target) { target.damage += 210; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: 210, detail: "Thunder Raid Bench damage" }); } return true; }
+    case "attack:trifrost": { const opponentId = otherPlayer(cont.actingPlayerId); for (const id of selected) { const target = findPokemon(state.players[opponentId], id); if (target) { target.damage += 110; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: id, targetPlayerId: opponentId, amount: 110, detail: "Trifrost Bench damage" }); } } return true; }
+    case "attack:topaz-bolt": { const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; if (source) for (const id of selected) { const energy = removeById(source.attachedEnergy, id); if (energy) player.discard.push(energy); } return true; }
+    case "attack:delightful-kiss": {
+      if (cont.step === 1) return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: selected.length ? 1 : 0, max: 1, eligibleIds: player.bench.map(playId), optional: true, instruction: "Choose a Benched Pokémon to receive the selected Psychic Energy." });
+      const target = selected[0] ? findPokemon(player, selected[0]) : undefined; for (const id of cont.variables.energy ?? []) { const energy = removeById(player.deck, id); if (energy && target) target.attachedEnergy.push(energy); } shuffle(state, cont.actingPlayerId); return true;
+    }
+    case "attack:electromagnetic-sonar": { const card = selected[0] ? removeById(player.discard, selected[0]) : undefined; if (card) player.hand.push(card); return true; }
+    case "attack:slight-shift": {
+      if (cont.step === 1) { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const source = pokemonTargets(opponent).find((pokemon) => pokemon.attachedEnergy.some((energy) => energy.instanceId === selected[0])); return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: pokemonTargets(opponent).filter((pokemon) => pokemon !== source).map(playId), optional: false, instruction: "Choose another opposing Pokémon to receive that Energy." }); }
+      const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const target = selected[0] ? findPokemon(opponent, selected[0]) : undefined; const energyId = cont.variables.energy?.[0]; const source = pokemonTargets(opponent).find((pokemon) => pokemon.attachedEnergy.some((energy) => energy.instanceId === energyId)); const energy = source && energyId ? removeById(source.attachedEnergy, energyId) : undefined; if (energy && target) target.attachedEnergy.push(energy); return true;
+    }
+    case "attack:flamebody-cannon": { const target = selected[0] ? findPokemon(state.players[otherPlayer(cont.actingPlayerId)], selected[0]) : undefined; if (target) { target.damage += 90; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: 90, detail: "Flamebody Cannon Bench damage" }); } return true; }
+    case "attack:claw-darkness": { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const card = selected[0] ? removeById(opponent.hand, selected[0]) : undefined; if (card) opponent.discard.push(card); return true; }
+    case "attack:gemstone-mimicry":
+    case "attack:night-joker": return true;
+    case "attack:mirage-barrage": {
+      if (cont.step === 1) {
+        const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined;
+        for (const id of selected) { const card = removeById(source?.attachedEnergy ?? [], id); if (card) player.discard.push(card); }
+        const opponent = state.players[otherPlayer(cont.actingPlayerId)];
+        return choice(state, { ...cont, step: 2 }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: Math.min(2, pokemonTargets(opponent).length), max: Math.min(2, pokemonTargets(opponent).length), eligibleIds: pokemonTargets(opponent).map(playId), optional: false, instruction: "Choose 2 of your opponent's Pokémon to take 120 damage." });
+      }
+      const opponentId = otherPlayer(cont.actingPlayerId); const attackingCard = player.active ? topCard(state, player.active) : undefined;
+      for (const id of selected) { const target = findPokemon(state.players[opponentId], id); if (!target || !attackingCard) continue; const damage = target === state.players[opponentId].active ? calculateDamage(attackingCard, topCard(state, target), 120) : 120; target.damage += damage; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: id, targetPlayerId: opponentId, amount: damage, detail: "Mirage Barrage" }); }
+      return true;
+    }
+    case "attack:jolting-charge": {
+      if (cont.step === 1) {
+        return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: selected.length ? 1 : 0, max: 1, eligibleIds: pokemonTargets(player).map(playId), optional: true, instruction: "Choose a Pokémon to receive the selected Basic Energy." });
+      }
+      const target = selected[0] ? findPokemon(player, selected[0]) : undefined;
+      const energyIds = cont.variables.energy ?? [];
+      if (target) for (const id of energyIds) { const card = removeById(player.deck, id); if (card) target.attachedEnergy.push(card); }
+      shuffle(state, cont.actingPlayerId); return true;
+    }
+    case "trainer:fighting-gong": case "trainer:energy-recycler": case "trainer:sacred-ash": case "trainer:precious-trolley": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true;
+    case "trainer:wondrous-patch": {
+      if (cont.step === 1) return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: state.players[cont.actingPlayerId].bench.filter((pokemon) => topCard(state, pokemon).pokemonType === "psychic").map(playId), optional: false, instruction: "Choose a Benched Psychic Pokémon to receive the Energy." });
+      const energy = cont.variables.energy?.[0] ? removeById(player.discard, cont.variables.energy[0]) : undefined; const target = selected[0] ? findPokemon(player, selected[0]) : undefined; if (energy && target) target.attachedEnergy.push(energy); return true;
+    }
+    case "trainer:biancas-devotion": { const target = selected[0] ? findPokemon(player, selected[0]) : undefined; if (target) target.damage = effectiveMaxHp(state, target); return true; }
+    case "trainer:enhanced-hammer": { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; for (const pokemon of pokemonTargets(opponent)) { const index = pokemon.attachedEnergy.findIndex((energy) => energy.instanceId === selected[0]); if (index >= 0) { opponent.discard.push(pokemon.attachedEnergy.splice(index, 1)[0]!); break; } } return true; }
+    case "trainer:prime-catcher": { if (cont.step === 1) { if (selected[0]) switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); const eligibleIds = player.bench.map(playId); if (!eligibleIds.length) return true; return choice(state, { ...cont, step: 2 }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Benched Pokémon to switch with your Active Pokémon." }); } if (selected[0]) switchTo(state, cont.actingPlayerId, selected[0]); return true; }
+    case "trainer:surfer": if (selected[0]) switchTo(state, cont.actingPlayerId, selected[0]); draw(state, cont.actingPlayerId, Math.max(0, 5 - player.hand.length)); return true;
+    case "trainer:azs-tranquility": if (selected[0]) { switchTo(state, cont.actingPlayerId, selected[0]); const target = player.bench.find((pokemon) => topCard(state, pokemon).isPokemonEx && pokemon !== player.active); if (target) heal(state, cont.actingPlayerId, target, 80, cont.sourceCardId); } return true;
+    case "trainer:lisias-appeal": if (selected[0]) { switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); const target = state.players[otherPlayer(cont.actingPlayerId)].active; if (target) applySpecialCondition(target, "confused"); } return true;
     case "retreat-energy": { const active = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; const targetId = cont.variables.target?.[0]; const targetIndex = targetId ? player.bench.findIndex((pokemon) => playId(pokemon) === targetId) : -1; if (!active || targetIndex < 0) return true; for (const id of selected) { const index = active.attachedEnergy.findIndex((energy) => energy.instanceId === id); if (index >= 0) player.discard.push(active.attachedEnergy.splice(index, 1)[0]!); } clearSpecialConditions(active); player.active = player.bench.splice(targetIndex, 1, active)[0]!; player.retreatedThisTurn = true; return true; }
     case "ability:last-ditch-catch": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Last-Ditch Catch" }); return true;
+    case "ability:invite-evil": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Invite Evil" }); return true;
+    case "ability:come-and-get-you": {
+      const player = state.players[cont.actingPlayerId]; const benched: string[] = [];
+      for (const id of selected) { const card = removeById(player.discard, id); if (card && player.bench.length < benchCapacity(state, cont.actingPlayerId)) { player.bench.push({ stack: [card], damage: 0, attachedEnergy: [], specialConditions: [], enteredPlayTurn: state.turn, evolvedThisTurn: false, abilityUsage: {} }); benched.push(card.instanceId); } }
+      emitEvent(state, "cards-recovered", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: benched, detail: "Come and Get You" }); return true;
+    }
+    case "ability:cursed-blast-5": case "ability:cursed-blast-13": {
+      const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const target = selected[0] ? findPokemon(opponent, selected[0]) : undefined; const counters = cont.programId.endsWith("13") ? 13 : 5;
+      if (target) { target.damage += counters * 10; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: counters * 10, detail: "Cursed Blast damage counters" }); state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; }
+      const player = state.players[cont.actingPlayerId]; const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; if (source) { source.damage = effectiveMaxHp(state, source); state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; }
+      return true;
+    }
+    case "ability:seething-spirit": {
+      if (cont.step === 1) return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: pokemonTargets(state.players[cont.actingPlayerId]).map(playId), optional: false, instruction: "Choose your Pokémon to receive the discarded Basic Energy." });
+      const player = state.players[cont.actingPlayerId]; const energy = cont.variables.energy?.[0] ? removeById(player.discard, cont.variables.energy[0]) : undefined; const target = selected[0] ? findPokemon(player, selected[0]) : undefined; if (energy && target) target.attachedEnergy.push(energy); return true;
+    }
+    case "ability:jewel-seeker": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Jewel Seeker" }); return true;
+    case "ability:boom-boom-groove": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Boom Boom Groove" }); return true;
+    case "ability:mortal-shuriken": {
+      const energy = player.hand.filter((instance) => { const definition = cardFor(state, instance); return definition.category === "energy" && definition.basic && definition.energyType === "water"; })[0];
+      if (energy) { removeById(player.hand, energy.instanceId); player.discard.push(energy); }
+      const target = selected[0] ? findPokemon(state.players[otherPlayer(cont.actingPlayerId)], selected[0]) : undefined;
+      if (target) { target.damage += 60; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: 60, detail: "Mortal Shuriken damage counters" }); state.pendingKnockOutCause = { cause: "effect-damage-counters", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; }
+      return true;
+    }
+    case "ability:metallic-signal": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Metallic Signal" }); return true;
+    case "trainer:rosas-encouragement": {
+      if (cont.step === 1) {
+        const targets = pokemonTargets(player).filter((pokemon) => topCard(state, pokemon).stage === "stage2").map(playId);
+        if (!targets.length || !selected.length) return true;
+        return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: targets, optional: false, instruction: "Choose your Stage 2 Pokémon to receive the Energy." });
+      }
+      const target = selected[0] ? findPokemon(player, selected[0]) : undefined; const ids = cont.variables.energy ?? []; if (target) for (const id of ids) { const energy = removeById(player.discard, id); if (energy) target.attachedEnergy.push(energy); } return true;
+    }
+    case "trainer:xerosics-machinations": { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const discarded: CardInstance[] = []; for (const id of selected) { const card = removeById(opponent.hand, id); if (card) discarded.push(card); } opponent.discard.push(...discarded); emitEvent(state, "cards-discarded", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: discarded.map((card) => card.instanceId), targetPlayerId: otherPlayer(cont.actingPlayerId), detail: "Xerosic's Machinations" }); return true; }
+    case "trainer:brocks-scouting": {
+      const cards = selected.map((id) => player.deck.find((card) => card.instanceId === id)).filter((card): card is CardInstance => Boolean(card)); const evolutionCount = cards.filter((card) => { const definition = cardFor(state, card); return definition.category === "pokemon" && definition.stage !== "basic"; }).length; if (evolutionCount > 1 || evolutionCount === 1 && cards.length > 1) throw new Error("Brock's Scouting allows either up to 2 Basic Pokémon or 1 Evolution Pokémon."); moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true;
+    }
+    case "trainer:hilda": {
+      if (cont.step === 1) { const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "energy").map((card) => card.instanceId); if (!eligibleIds.length) { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; } return choice(state, { ...cont, step: 2, variables: { ...cont.variables, evolution: selected } }, { playerId: cont.actingPlayerId, selectionKind: "card", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose 1 Energy card from your deck." }); }
+      moveDeckToHand(state, cont.actingPlayerId, [...(cont.variables.evolution ?? []), ...selected]); shuffle(state, cont.actingPlayerId); return true;
+    }
     case "trainer:lanas-aid": moveDiscardToHand(state, cont.actingPlayerId, selected); return true;
     case "trainer:dawn": { const stages = new Set(selected.map((id) => { const card = player.deck.find((candidate) => candidate.instanceId === id); const definition = card ? cardFor(state, card) : undefined; return definition?.category === "pokemon" ? definition.stage : undefined; })); if (stages.size !== selected.length) throw new Error("Dawn allows at most one Pokémon of each Stage."); moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; }
     case "trainer:bug-catching-set": { const top = (cont.variables.subset ?? []).map((id) => removeById(player.deck, id)).filter((card): card is CardInstance => Boolean(card)); const chosen = top.filter((card) => selected.includes(card.instanceId)); player.hand.push(...chosen); player.deck.push(...top.filter((card) => !selected.includes(card.instanceId))); shuffle(state, cont.actingPlayerId); return true; }
@@ -326,7 +727,7 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
     }
     case "ability:teal-dance": { const energy = selected[0] ? removeById(player.hand, selected[0]) : undefined; const source = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; if (energy && source) { source.attachedEnergy.push(energy); draw(state, cont.actingPlayerId, 1); emitEvent(state, "energy-attached-by-effect", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(source), cardInstanceIds: [energy.instanceId], detail: "Teal Dance" }); } return true; }
     case "ability:ripening-charge": { if (cont.step === 1) return choice(state, { ...cont, step: 2, variables: { ...cont.variables, energy: selected } }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds: pokemonTargets(player).map(playId), optional: false, instruction: "Choose one of your Pokémon to receive the Energy and heal 30." }); const energy = cont.variables.energy?.[0] ? removeById(player.hand, cont.variables.energy[0]) : undefined; const target = selected[0] ? findPokemon(player, selected[0]) : undefined; if (energy && target) { target.attachedEnergy.push(energy); heal(state, cont.actingPlayerId, target, 30, cont.sourceCardId); emitEvent(state, "energy-attached-by-effect", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), cardInstanceIds: [energy.instanceId], detail: "Ripening Charge" }); } return true; }
-    case "attack:raging-bolt": { const selectedEnergy = selected.map((id) => { for (const pokemon of pokemonTargets(player)) { const energy = pokemon.attachedEnergy.find((candidate) => candidate.instanceId === id); if (energy) return { pokemon, energy }; } return undefined; }).filter((entry): entry is { pokemon: PokemonInPlay; energy: CardInstance } => Boolean(entry)); for (const entry of selectedEnergy) { const index = entry.pokemon.attachedEnergy.findIndex((energy) => energy.instanceId === entry.energy.instanceId); if (index >= 0) player.discard.push(entry.pokemon.attachedEnergy.splice(index, 1)[0]!); } const target = state.players[otherPlayer(cont.actingPlayerId)].active; if (target && selectedEnergy.length) { const attackingCard = topCard(state, player.active!); const defendingCard = topCard(state, target); const damage = calculateDamage(attackingCard, defendingCard, selectedEnergy.length * 70); target.damage += damage; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: damage, detail: "Bellowing Thunder selected Energy" }); state.pendingKnockOutCause = { cause: "attack-damage", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; } return true; }
+    case "attack:raging-bolt": case "attack:bellowing-thunder": { const selectedEnergy = selected.map((id) => { for (const pokemon of pokemonTargets(player)) { const energy = pokemon.attachedEnergy.find((candidate) => candidate.instanceId === id); if (energy) return { pokemon, energy }; } return undefined; }).filter((entry): entry is { pokemon: PokemonInPlay; energy: CardInstance } => Boolean(entry)); for (const entry of selectedEnergy) { const index = entry.pokemon.attachedEnergy.findIndex((energy) => energy.instanceId === entry.energy.instanceId); if (index >= 0) player.discard.push(entry.pokemon.attachedEnergy.splice(index, 1)[0]!); } const target = state.players[otherPlayer(cont.actingPlayerId)].active; if (target && selectedEnergy.length) { const attackingCard = topCard(state, player.active!); const defendingCard = topCard(state, target); const damage = calculateDamage(attackingCard, defendingCard, selectedEnergy.length * 70); target.damage += damage; emitEvent(state, "damage-dealt", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), targetPlayerId: otherPlayer(cont.actingPlayerId), amount: damage, detail: "Bellowing Thunder selected Energy" }); state.pendingKnockOutCause = { cause: "attack-damage", sourcePlayerId: cont.actingPlayerId, sourceCardId: cont.sourceCardId }; } return true; }
     case "ability:charging-up": { const card = selected[0] ? removeById(player.discard, selected[0]) : undefined; const target = cont.sourcePokemonId ? findPokemon(player, cont.sourcePokemonId) : undefined; if (card && target) { target.attachedEnergy.push(card); emitEvent(state, "energy-attached-by-effect", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), cardInstanceIds: [card.instanceId], detail: "Charging Up" }); } return true; }
     case "ability:recon-directive": { const chosen = selected[0]; const top = cont.variables.top ?? []; const playerDeck = player.deck; for (const id of top) { const index = playerDeck.findIndex((card) => card.instanceId === id); if (index >= 0) { const card = playerDeck.splice(index, 1)[0]!; if (id === chosen) player.hand.push(card); else playerDeck.push(card); } } return true; }
     case "trainer:crispin": {
@@ -377,6 +778,9 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
     }
     case "trainer:nest-ball": { const card = selected[0] ? removeById(player.deck, selected[0]) : undefined; if (card && player.bench.length < benchCapacity(state, cont.actingPlayerId)) player.bench.push({ stack: [card], damage: 0, attachedEnergy: [], specialConditions: [], enteredPlayTurn: state.turn, evolvedThisTurn: false, abilityUsage: {} }); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected }); return true; }
     case "trainer:ultra-ball": if (cont.step === 1) { const discarded: CardInstance[] = []; for (const id of selected) { const card = removeById(player.hand, id); if (card) discarded.push(card); } player.discard.push(...discarded); emitEvent(state, "cards-discarded", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: discarded.map((card) => card.instanceId) }); const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "pokemon").map((card) => card.instanceId); return choice(state, { ...cont, step: 2 }, { playerId: cont.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Pokémon from your deck." }); } else { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected }); return true; }
+    case "trainer:secret-box": if (cont.step === 1) { for (const id of selected) { const card = removeById(player.hand, id); if (card) player.discard.push(card); } const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "trainer" && ["item", "tool", "supporter", "stadium"].includes(definition.subtype); }).map((card) => card.instanceId); return choice(state, { ...cont, step: 2 }, { playerId: cont.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(4, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Item, Pokémon Tool, Supporter, and Stadium from your deck." }); } else { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; }
+    case "trainer:eri": { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; for (const id of selected) { const card = removeById(opponent.hand, id); if (card) opponent.discard.push(card); } return true; }
+    case "trainer:ruffian": { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; for (const pokemon of pokemonTargets(opponent)) { const tool = pokemon.tool; if (tool?.instanceId === selected[0]) { opponent.discard.push(tool!); pokemon.tool = undefined; break; } } return true; }
     case "trainer:janines-secret-art": {
       if (cont.step === 1) { if (!selected.length) { shuffle(state, cont.actingPlayerId); return true; } const eligibleIds = player.deck.filter((card) => isBasicDarknessEnergy(state, card)).map((card) => card.instanceId); return choice(state, { ...cont, step: 2, variables: { ...cont.variables, targets: selected } }, { playerId: cont.actingPlayerId, selectionKind: "card", min: Math.min(selected.length, eligibleIds.length), max: Math.min(selected.length, eligibleIds.length), eligibleIds, optional: false, instruction: "Choose one Basic Darkness Energy for each selected Pokémon." }); }
       const targets = cont.variables.targets ?? []; const attached: string[] = []; for (let index = 0; index < selected.length; index += 1) { const target = targets[index] ? findPokemon(player, targets[index]!) : undefined; const energy = removeById(player.deck, selected[index]!); if (target && energy) { target.attachedEnergy.push(energy); attached.push(energy.instanceId); if (target === player.active) { applySpecialCondition(target, "poisoned"); emitEvent(state, "special-condition-applied", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), detail: "poisoned by Janine's Secret Art" }); } emitEvent(state, "energy-attached-by-effect", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: playId(target), cardInstanceIds: [energy.instanceId], detail: "Janine's Secret Art" }); } } shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: attached }); return true;
@@ -386,7 +790,7 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
       const chosen = [...(cont.variables.stadium ?? []), ...selected]; moveDeckToHand(state, cont.actingPlayerId, chosen); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: chosen, detail: "Colress's Tenacity" }); return true;
     }
     case "trainer:boss-orders": if (selected[0]) switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); return true;
-    case "trainer:cyrano": case "trainer:poke-pad": case "trainer:master-ball": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected }); return true;
+    case "trainer:cyrano": case "trainer:poke-pad": case "trainer:master-ball": case "trainer:dusk-ball": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected }); return true;
     case "trainer:pokegear-3": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: "Pokégear 3.0" }); return true;
     case "trainer:night-stretcher": moveDiscardToHand(state, cont.actingPlayerId, selected); return true;
     case "trainer:energy-switch": {
@@ -405,7 +809,8 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
     case "trainer:super-rod": { const recovered: string[] = []; for (const id of selected) { const card = removeById(player.discard, id); if (card) { player.deck.push(card); recovered.push(card.instanceId); } } shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-recovered", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: recovered, detail: "Super Rod shuffled into deck" }); return true; }
     case "trainer:team-rocket-giovanni": { if (cont.step === 1) { if (selected[0]) { switchTo(state, cont.actingPlayerId, selected[0]); emitEvent(state, "ability-used", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: selected[0], detail: "Giovanni own switch" }); } const opponentId = otherPlayer(cont.actingPlayerId); const eligibleIds = state.players[opponentId].bench.map(playId); if (!eligibleIds.length) return true; return choice(state, { ...cont, step: 2 }, { playerId: cont.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opposing Benched Pokémon to gust Active." }); } if (selected[0]) { switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); emitEvent(state, "ability-used", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, targetId: selected[0], targetPlayerId: otherPlayer(cont.actingPlayerId), detail: "Giovanni opponent gust" }); } return true; }
     case "trainer:team-rocket-petrel": case "trainer:team-rocket-proton": case "trainer:team-rocket-transceiver": moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: cont.programId }); return true;
-    default: return true;
+    case "attack:teleportation-attack": if (selected[0]) switchTo(state, cont.actingPlayerId, selected[0]); return true;
+    default: throw new MissingEffectProgramError(cont.programId, cont.sourceCardId);
   }
 }
 

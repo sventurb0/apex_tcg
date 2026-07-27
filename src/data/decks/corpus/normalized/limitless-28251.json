@@ -374,9 +374,10 @@
       "sourceCollectorNumber": "57",
       "chosenCardId": "sv7-57",
       "chosenCardName": "Slowpoke",
+      "behaviourFamilyId": "behaviour:wm6vcm",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -385,9 +386,10 @@
       "sourceCollectorNumber": "58",
       "chosenCardId": "sv7-58",
       "chosenCardName": "Slowking",
+      "behaviourFamilyId": "behaviour:11uvxxf",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -420,9 +422,10 @@
       "sourceCollectorNumber": "47",
       "chosenCardId": "sv6pt5-47",
       "chosenCardName": "Kyurem",
+      "behaviourFamilyId": "behaviour:1av8t95",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -431,9 +434,10 @@
       "sourceCollectorNumber": "61",
       "chosenCardId": "me4-61",
       "chosenCardName": "Metagross",
+      "behaviourFamilyId": "behaviour:8g3wwq",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -454,9 +458,10 @@
       "sourceCollectorNumber": "78",
       "chosenCardId": "sv10-78",
       "chosenCardName": "Zeraora",
+      "behaviourFamilyId": "behaviour:1jtxmsl",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -537,9 +542,10 @@
       "sourceCollectorNumber": "94",
       "chosenCardId": "me2-94",
       "chosenCardName": "Wondrous Patch",
+      "behaviourFamilyId": "behaviour:dsxrv5",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -584,9 +590,10 @@
       "sourceCollectorNumber": "80",
       "chosenCardId": "rsv10pt5-80",
       "chosenCardName": "Brave Bangle",
+      "behaviourFamilyId": "behaviour:kfyla6",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -595,9 +602,10 @@
       "sourceCollectorNumber": "158",
       "chosenCardId": "sv6-158",
       "chosenCardName": "Lucky Helmet",
+      "behaviourFamilyId": "behaviour:uj45t2",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -606,9 +614,10 @@
       "sourceCollectorNumber": "54",
       "chosenCardId": "sv6pt5-54",
       "chosenCardName": "Academy at Night",
+      "behaviourFamilyId": "behaviour:1lg0iw3",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -617,9 +626,10 @@
       "sourceCollectorNumber": "88",
       "chosenCardId": "me3-88",
       "chosenCardName": "Telepathic Psychic Energy",
+      "behaviourFamilyId": "behaviour:f4s83",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -640,9 +650,10 @@
       "sourceCollectorNumber": "166",
       "chosenCardId": "sv6-166",
       "chosenCardName": "Boomerang Energy",
+      "behaviourFamilyId": "behaviour:njkxj3",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     }
   ],
   "compositionFingerprint": "composition-b8df3q",
@@ -652,39 +663,15 @@
   "exactResolvedCopies": 56,
   "canonicalEquivalentCopies": 4,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 28,
+    "complete": 56,
     "generated": 4,
     "partial": 0,
-    "unsupported": 28
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2-94",
-    "unimplemented:me3-88",
-    "unimplemented:me4-61",
-    "unimplemented:rsv10pt5-80",
-    "unimplemented:sv10-78",
-    "unimplemented:sv6-158",
-    "unimplemented:sv6-166",
-    "unimplemented:sv6pt5-47",
-    "unimplemented:sv6pt5-54",
-    "unimplemented:sv7-57",
-    "unimplemented:sv7-58"
-  ],
-  "blockers": [
-    "4× Slowpoke (sv7-57): unsupported; no executable behaviour family",
-    "3× Slowking (sv7-58): unsupported; no executable behaviour family",
-    "2× Kyurem (sv6pt5-47): unsupported; no executable behaviour family",
-    "2× Metagross (me4-61): unsupported; no executable behaviour family",
-    "1× Zeraora (sv10-78): unsupported; no executable behaviour family",
-    "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
-    "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
-    "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
-    "4× Academy at Night (sv6pt5-54): unsupported; no executable behaviour family",
-    "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
-    "3× Boomerang Energy (sv6-166): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Psychic"

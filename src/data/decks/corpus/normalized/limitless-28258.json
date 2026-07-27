@@ -506,9 +506,10 @@
       "sourceCollectorNumber": "41",
       "chosenCardId": "sv10-41",
       "chosenCardName": "Combusken",
+      "behaviourFamilyId": "behaviour:1cfe7bb",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -517,9 +518,10 @@
       "sourceCollectorNumber": "24",
       "chosenCardId": "sv9-24",
       "chosenCardName": "Blaziken ex",
+      "behaviourFamilyId": "behaviour:x6hbh2",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -732,9 +734,10 @@
       "sourceCollectorNumber": "181",
       "chosenCardId": "me2pt5-181",
       "chosenCardName": "Air Balloon",
+      "behaviourFamilyId": "behaviour:1rvb2gh",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -743,9 +746,10 @@
       "sourceCollectorNumber": "151",
       "chosenCardId": "sv9-151",
       "chosenCardName": "Lillie's Pearl",
+      "behaviourFamilyId": "behaviour:1jz0v0x",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -815,25 +819,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 48,
+    "complete": 53,
     "generated": 7,
     "partial": 0,
-    "unsupported": 5
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2pt5-181",
-    "unimplemented:sv10-41",
-    "unimplemented:sv9-151",
-    "unimplemented:sv9-24"
-  ],
-  "blockers": [
-    "1× Combusken (sv10-41): unsupported; no executable behaviour family",
-    "2× Blaziken ex (sv9-24): unsupported; no executable behaviour family",
-    "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-    "1× Lillie's Pearl (sv9-151): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

@@ -3,6 +3,8 @@ import {
   normalizeCardName, resolvePrinting,
 } from "../../src/data/pokemon/index";
 import { createImplementationResolver } from "../../src/data/pokemon/implementations/resolver";
+import { toRuntimeCardDefinition } from "../../src/data/pokemon/runtime-adapter";
+import { semanticReadiness } from "../../src/data/pokemon/semantic-readiness";
 import type { PokemonCardCatalogue, PokemonCardMetadata, SimulationSupport } from "../../src/data/pokemon/types";
 import type { DeckManifest } from "../../src/data/decks/types";
 import type { CorpusDeckTags, DeckPrintingResolution, DeckSourceSnapshot, NormalizedCorpusDeck } from "./types";
@@ -58,11 +60,15 @@ export function resolveSourceSnapshot(snapshot: DeckSourceSnapshot, catalogue: P
       continue;
     }
     const implementation = implementationResolver.resolve(chosen);
+    const handler = implementation.handlers[0];
+    const handlerId = handler?.kind === "custom" ? handler.handlerId : handler?.kind === "declarative" ? handler.effectId : "";
+    const semantic = semanticReadiness(chosen, toRuntimeCardDefinition(chosen), handlerId);
+    const effectiveImplementation = semantic.complete ? implementation : { ...implementation, status: "partial" as const, knownLimitations: [...implementation.knownLimitations, ...semantic.unmatched.map((reason) => `Semantic coverage: ${reason}`)] };
     const family = implementationResolver.familyFor(chosen.id);
     entries.set(chosen.id, (entries.get(chosen.id) ?? 0) + sourceCard.quantity);
     resolvedCards.push(chosen);
-    supportCounts[implementation.status] += sourceCard.quantity;
-    resolutions.push({ quantity: sourceCard.quantity, sourceCardName: sourceCard.cardName, sourceSetCode: sourceCard.setCode, sourceCollectorNumber: sourceCard.collectorNumber, chosenCardId: chosen.id, chosenCardName: chosen.name, behaviourFamilyId: family?.id ?? implementation.behaviourFamilyId, resolution, reason, support: implementation.status });
+    supportCounts[effectiveImplementation.status] += sourceCard.quantity;
+    resolutions.push({ quantity: sourceCard.quantity, sourceCardName: sourceCard.cardName, sourceSetCode: sourceCard.setCode, sourceCollectorNumber: sourceCard.collectorNumber, chosenCardId: chosen.id, chosenCardName: chosen.name, behaviourFamilyId: family?.id ?? implementation.behaviourFamilyId, resolution, reason, support: effectiveImplementation.status });
   }
   const manifestEntries = [...entries].map(([cardId, count]) => ({ cardId, count })).sort((a, b) => a.cardId.localeCompare(b.cardId));
   const resolvedCopies = manifestEntries.reduce((sum, entry) => sum + entry.count, 0);
@@ -89,4 +95,3 @@ export function resolveSourceSnapshot(snapshot: DeckSourceSnapshot, catalogue: P
     supportCounts, missingBehaviourFamilyIds, blockers, tags: tagsFor(resolvedCards),
   };
 }
-

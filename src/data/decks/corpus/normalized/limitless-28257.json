@@ -478,9 +478,10 @@
       "sourceCollectorNumber": "27",
       "chosenCardId": "sv9-27",
       "chosenCardName": "N's Darmanitan",
+      "behaviourFamilyId": "behaviour:16a68zn",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -645,9 +646,10 @@
       "sourceCollectorNumber": "83",
       "chosenCardId": "me4-83",
       "chosenCardName": "Transformation Tome",
+      "behaviourFamilyId": "behaviour:2oz4py",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -765,21 +767,15 @@
   "exactResolvedCopies": 53,
   "canonicalEquivalentCopies": 7,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 50,
+    "complete": 55,
     "generated": 5,
     "partial": 0,
-    "unsupported": 5
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me4-83",
-    "unimplemented:sv9-27"
-  ],
-  "blockers": [
-    "1× N's Darmanitan (sv9-27): unsupported; no executable behaviour family",
-    "4× Transformation Tome (me4-83): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness"

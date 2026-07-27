@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-23T21:54:50.673Z",
+  "generatedAt": "2026-07-26T23:58:51.340Z",
   "sourcePolicy": "Composition-exact public snapshots. Exact source printings are retained when present; canonical-equivalent choices require identical gameplay signatures.",
   "decks": [
     {
@@ -351,9 +351,10 @@
           "sourceCollectorNumber": "50",
           "chosenCardId": "sv8pt5-50",
           "chosenCardName": "Riolu",
+          "behaviourFamilyId": "behaviour:1659mw9",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -362,9 +363,10 @@
           "sourceCollectorNumber": "76",
           "chosenCardId": "me1-76",
           "chosenCardName": "Riolu",
+          "behaviourFamilyId": "behaviour:u5j3ce",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -373,9 +375,10 @@
           "sourceCollectorNumber": "77",
           "chosenCardId": "me1-77",
           "chosenCardName": "Mega Lucario ex",
+          "behaviourFamilyId": "behaviour:1b1323z",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -384,9 +387,10 @@
           "sourceCollectorNumber": "120",
           "chosenCardId": "sv9-120",
           "chosenCardName": "Dunsparce",
+          "behaviourFamilyId": "behaviour:1wra8ia",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -395,9 +399,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "sv5-129",
           "chosenCardName": "Dudunsparce",
+          "behaviourFamilyId": "behaviour:1crg1w0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -406,9 +411,10 @@
           "sourceCollectorNumber": "121",
           "chosenCardId": "sv9-121",
           "chosenCardName": "Dudunsparce ex",
+          "behaviourFamilyId": "behaviour:nwk6eo",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -417,9 +423,10 @@
           "sourceCollectorNumber": "75",
           "chosenCardId": "me1-75",
           "chosenCardName": "Solrock",
+          "behaviourFamilyId": "behaviour:z1nfym",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -428,9 +435,10 @@
           "sourceCollectorNumber": "74",
           "chosenCardId": "me1-74",
           "chosenCardName": "Lunatone",
+          "behaviourFamilyId": "behaviour:eesy8",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -463,9 +471,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -474,9 +483,10 @@
           "sourceCollectorNumber": "116",
           "chosenCardId": "me1-116",
           "chosenCardName": "Fighting Gong",
+          "behaviourFamilyId": "behaviour:1r6oyla",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -485,9 +495,10 @@
           "sourceCollectorNumber": "124",
           "chosenCardId": "me1-124",
           "chosenCardName": "Premium Power Pro",
+          "behaviourFamilyId": "behaviour:1gauv2e",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -556,9 +567,10 @@
           "sourceCollectorNumber": "153",
           "chosenCardId": "sv6-153",
           "chosenCardName": "Jamming Tower",
+          "behaviourFamilyId": "behaviour:kzzpij",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 8,
@@ -579,9 +591,10 @@
           "sourceCollectorNumber": "87",
           "chosenCardId": "me3-87",
           "chosenCardName": "Rocky Fighting Energy",
+          "behaviourFamilyId": "behaviour:1dompzd",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -590,9 +603,10 @@
           "sourceCollectorNumber": "167",
           "chosenCardId": "sv6-167",
           "chosenCardName": "Legacy Energy",
+          "behaviourFamilyId": "behaviour:1lb46x0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-1knfnnm",
@@ -602,45 +616,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 19,
+        "complete": 52,
         "generated": 8,
-        "partial": 4,
-        "unsupported": 29
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-116",
-        "unimplemented:me1-124",
-        "unimplemented:me1-74",
-        "unimplemented:me1-75",
-        "unimplemented:me1-76",
-        "unimplemented:me1-77",
-        "unimplemented:me3-87",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv5-129",
-        "unimplemented:sv6-153",
-        "unimplemented:sv6-167",
-        "unimplemented:sv8pt5-50",
-        "unimplemented:sv9-120",
-        "unimplemented:sv9-121"
-      ],
-      "blockers": [
-        "3× Riolu (sv8pt5-50): unsupported; no executable behaviour family",
-        "1× Riolu (me1-76): unsupported; no executable behaviour family",
-        "3× Mega Lucario ex (me1-77): unsupported; no executable behaviour family",
-        "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-        "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
-        "1× Dudunsparce ex (sv9-121): unsupported; no executable behaviour family",
-        "2× Solrock (me1-75): unsupported; no executable behaviour family",
-        "2× Lunatone (me1-74): partial; no executable behaviour family",
-        "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "4× Fighting Gong (me1-116): unsupported; no executable behaviour family",
-        "4× Premium Power Pro (me1-124): unsupported; no executable behaviour family",
-        "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family",
-        "4× Rocky Fighting Energy (me3-87): unsupported; no executable behaviour family",
-        "1× Legacy Energy (sv6-167): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Fighting"
@@ -1106,9 +1090,10 @@
           "sourceCollectorNumber": "35",
           "chosenCardId": "sv8pt5-35",
           "chosenCardName": "Duskull",
+          "behaviourFamilyId": "behaviour:1nj2wg4",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -1117,9 +1102,10 @@
           "sourceCollectorNumber": "36",
           "chosenCardId": "sv8pt5-36",
           "chosenCardName": "Dusclops",
+          "behaviourFamilyId": "behaviour:b77qwg",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -1128,9 +1114,10 @@
           "sourceCollectorNumber": "37",
           "chosenCardId": "sv8pt5-37",
           "chosenCardName": "Dusknoir",
+          "behaviourFamilyId": "behaviour:jvghrk",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -1319,9 +1306,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -1342,9 +1330,10 @@
           "sourceCollectorNumber": "153",
           "chosenCardId": "sv6-153",
           "chosenCardName": "Jamming Tower",
+          "behaviourFamilyId": "behaviour:kzzpij",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -1390,27 +1379,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 46,
+        "complete": 53,
         "generated": 7,
-        "partial": 2,
-        "unsupported": 5
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv6-150",
-        "unimplemented:sv6-153",
-        "unimplemented:sv8pt5-35",
-        "unimplemented:sv8pt5-36",
-        "unimplemented:sv8pt5-37"
-      ],
-      "blockers": [
-        "2× Duskull (sv8pt5-35): unsupported; no executable behaviour family",
-        "2× Dusclops (sv8pt5-36): partial; no executable behaviour family",
-        "1× Dusknoir (sv8pt5-37): unsupported; no executable behaviour family",
-        "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-        "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -1871,9 +1848,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -1894,9 +1872,10 @@
           "sourceCollectorNumber": "121",
           "chosenCardId": "me2pt5-121",
           "chosenCardName": "Koraidon ex",
+          "behaviourFamilyId": "behaviour:1cufsxi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -1965,9 +1944,10 @@
           "sourceCollectorNumber": "175",
           "chosenCardId": "sv8-175",
           "chosenCardName": "Dusk Ball",
+          "behaviourFamilyId": "behaviour:17c27yy",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -1976,9 +1956,10 @@
           "sourceCollectorNumber": "94",
           "chosenCardId": "me2-94",
           "chosenCardName": "Wondrous Patch",
+          "behaviourFamilyId": "behaviour:dsxrv5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -1987,9 +1968,10 @@
           "sourceCollectorNumber": "157",
           "chosenCardId": "sv5-157",
           "chosenCardName": "Prime Catcher",
+          "behaviourFamilyId": "behaviour:9wwa6h",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -1998,9 +1980,10 @@
           "sourceCollectorNumber": "151",
           "chosenCardId": "sv9-151",
           "chosenCardName": "Lillie's Pearl",
+          "behaviourFamilyId": "behaviour:1jz0v0x",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -2057,9 +2040,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -2081,31 +2065,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 39,
+        "complete": 52,
         "generated": 8,
         "partial": 0,
-        "unsupported": 13
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-14",
-        "unimplemented:me2-94",
-        "unimplemented:me2pt5-121",
-        "unimplemented:me3-88",
-        "unimplemented:sv5-157",
-        "unimplemented:sv8-175",
-        "unimplemented:sv9-151"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Koraidon ex (me2pt5-121): unsupported; no executable behaviour family",
-        "4× Dusk Ball (sv8-175): unsupported; no executable behaviour family",
-        "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
-        "1× Prime Catcher (sv5-157): unsupported; no executable behaviour family",
-        "2× Lillie's Pearl (sv9-151): unsupported; no executable behaviour family",
-        "1× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Fighting",
@@ -2543,9 +2511,10 @@
           "sourceCollectorNumber": "120",
           "chosenCardId": "sv9-120",
           "chosenCardName": "Dunsparce",
+          "behaviourFamilyId": "behaviour:1wra8ia",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -2554,9 +2523,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "sv5-129",
           "chosenCardName": "Dudunsparce",
+          "behaviourFamilyId": "behaviour:1crg1w0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -2637,9 +2607,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "me3-84",
           "chosenCardName": "Rosa's Encouragement",
+          "behaviourFamilyId": "behaviour:14sr6ob",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -2732,9 +2703,10 @@
           "sourceCollectorNumber": "127",
           "chosenCardId": "me1-127",
           "chosenCardName": "Risky Ruins",
+          "behaviourFamilyId": "behaviour:xrtbda",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -2780,25 +2752,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 47,
+        "complete": 52,
         "generated": 8,
-        "partial": 1,
-        "unsupported": 4
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-127",
-        "unimplemented:me3-84",
-        "unimplemented:sv5-129",
-        "unimplemented:sv9-120"
-      ],
-      "blockers": [
-        "1× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-        "1× Dudunsparce (sv5-129): partial; no executable behaviour family",
-        "1× Rosa's Encouragement (me3-84): unsupported; no executable behaviour family",
-        "2× Risky Ruins (me1-127): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -3187,9 +3149,10 @@
           "sourceCollectorNumber": "57",
           "chosenCardId": "sv7-57",
           "chosenCardName": "Slowpoke",
+          "behaviourFamilyId": "behaviour:wm6vcm",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -3198,9 +3161,10 @@
           "sourceCollectorNumber": "58",
           "chosenCardId": "sv7-58",
           "chosenCardName": "Slowking",
+          "behaviourFamilyId": "behaviour:11uvxxf",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -3233,9 +3197,10 @@
           "sourceCollectorNumber": "47",
           "chosenCardId": "sv6pt5-47",
           "chosenCardName": "Kyurem",
+          "behaviourFamilyId": "behaviour:1av8t95",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -3244,9 +3209,10 @@
           "sourceCollectorNumber": "61",
           "chosenCardId": "me4-61",
           "chosenCardName": "Metagross",
+          "behaviourFamilyId": "behaviour:8g3wwq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -3267,9 +3233,10 @@
           "sourceCollectorNumber": "78",
           "chosenCardId": "sv10-78",
           "chosenCardName": "Zeraora",
+          "behaviourFamilyId": "behaviour:1jtxmsl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -3350,9 +3317,10 @@
           "sourceCollectorNumber": "94",
           "chosenCardId": "me2-94",
           "chosenCardName": "Wondrous Patch",
+          "behaviourFamilyId": "behaviour:dsxrv5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -3397,9 +3365,10 @@
           "sourceCollectorNumber": "80",
           "chosenCardId": "rsv10pt5-80",
           "chosenCardName": "Brave Bangle",
+          "behaviourFamilyId": "behaviour:kfyla6",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -3408,9 +3377,10 @@
           "sourceCollectorNumber": "158",
           "chosenCardId": "sv6-158",
           "chosenCardName": "Lucky Helmet",
+          "behaviourFamilyId": "behaviour:uj45t2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -3419,9 +3389,10 @@
           "sourceCollectorNumber": "54",
           "chosenCardId": "sv6pt5-54",
           "chosenCardName": "Academy at Night",
+          "behaviourFamilyId": "behaviour:1lg0iw3",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -3430,9 +3401,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -3453,9 +3425,10 @@
           "sourceCollectorNumber": "166",
           "chosenCardId": "sv6-166",
           "chosenCardName": "Boomerang Energy",
+          "behaviourFamilyId": "behaviour:njkxj3",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-b8df3q",
@@ -3465,39 +3438,15 @@
       "exactResolvedCopies": 56,
       "canonicalEquivalentCopies": 4,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 28,
+        "complete": 56,
         "generated": 4,
         "partial": 0,
-        "unsupported": 28
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-94",
-        "unimplemented:me3-88",
-        "unimplemented:me4-61",
-        "unimplemented:rsv10pt5-80",
-        "unimplemented:sv10-78",
-        "unimplemented:sv6-158",
-        "unimplemented:sv6-166",
-        "unimplemented:sv6pt5-47",
-        "unimplemented:sv6pt5-54",
-        "unimplemented:sv7-57",
-        "unimplemented:sv7-58"
-      ],
-      "blockers": [
-        "4× Slowpoke (sv7-57): unsupported; no executable behaviour family",
-        "3× Slowking (sv7-58): unsupported; no executable behaviour family",
-        "2× Kyurem (sv6pt5-47): unsupported; no executable behaviour family",
-        "2× Metagross (me4-61): unsupported; no executable behaviour family",
-        "1× Zeraora (sv10-78): unsupported; no executable behaviour family",
-        "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
-        "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
-        "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
-        "4× Academy at Night (sv6pt5-54): unsupported; no executable behaviour family",
-        "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
-        "3× Boomerang Energy (sv6-166): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Psychic"
@@ -3940,9 +3889,10 @@
           "sourceCollectorNumber": "11",
           "chosenCardId": "sv10-11",
           "chosenCardName": "Dwebble",
+          "behaviourFamilyId": "behaviour:128caco",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -3951,9 +3901,10 @@
           "sourceCollectorNumber": "12",
           "chosenCardId": "sv10-12",
           "chosenCardName": "Crustle",
+          "behaviourFamilyId": "behaviour:cv9ern",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -3998,9 +3949,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -4009,9 +3961,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv5-146",
           "chosenCardName": "Eri",
+          "behaviourFamilyId": "behaviour:1j4wz7r",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4020,9 +3973,10 @@
           "sourceCollectorNumber": "64",
           "chosenCardId": "sv6pt5-64",
           "chosenCardName": "Xerosic's Machinations",
+          "behaviourFamilyId": "behaviour:1kubrsi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4043,9 +3997,10 @@
           "sourceCollectorNumber": "142",
           "chosenCardId": "sv5-142",
           "chosenCardName": "Bianca's Devotion",
+          "behaviourFamilyId": "behaviour:1mqys0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4054,9 +4009,10 @@
           "sourceCollectorNumber": "179",
           "chosenCardId": "sv8-179",
           "chosenCardName": "Lisia's Appeal",
+          "behaviourFamilyId": "behaviour:b8zmcw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -4065,9 +4021,10 @@
           "sourceCollectorNumber": "91",
           "chosenCardId": "me2-91",
           "chosenCardName": "Jumbo Ice Cream",
+          "behaviourFamilyId": "behaviour:ehmseu",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -4124,9 +4081,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv5-150",
           "chosenCardName": "Hand Trimmer",
+          "behaviourFamilyId": "behaviour:iino8i",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4135,9 +4093,10 @@
           "sourceCollectorNumber": "152",
           "chosenCardId": "sv5-152",
           "chosenCardName": "Hero's Cape",
+          "behaviourFamilyId": "behaviour:1s9wfx",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4146,9 +4105,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4169,9 +4129,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv6-146",
           "chosenCardName": "Community Center",
+          "behaviourFamilyId": "behaviour:3u2rlp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4180,9 +4141,10 @@
           "sourceCollectorNumber": "149",
           "chosenCardId": "sv6-149",
           "chosenCardName": "Festival Grounds",
+          "behaviourFamilyId": "behaviour:fgi1wb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -4191,9 +4153,10 @@
           "sourceCollectorNumber": "159",
           "chosenCardId": "sv9-159",
           "chosenCardName": "Spiky Energy",
+          "behaviourFamilyId": "behaviour:1d0uxpj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -4202,9 +4165,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "me3-86",
           "chosenCardName": "Growing Grass Energy",
+          "behaviourFamilyId": "behaviour:1xwqtgk",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -4213,9 +4177,10 @@
           "sourceCollectorNumber": "161",
           "chosenCardId": "sv5-161",
           "chosenCardName": "Mist Energy",
+          "behaviourFamilyId": "behaviour:no3f0o",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4237,49 +4202,15 @@
       "exactResolvedCopies": 59,
       "canonicalEquivalentCopies": 1,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 25,
+        "complete": 59,
         "generated": 1,
         "partial": 0,
-        "unsupported": 34
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-91",
-        "unimplemented:me3-86",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv10-11",
-        "unimplemented:sv10-12",
-        "unimplemented:sv5-142",
-        "unimplemented:sv5-146",
-        "unimplemented:sv5-150",
-        "unimplemented:sv5-152",
-        "unimplemented:sv5-161",
-        "unimplemented:sv6-146",
-        "unimplemented:sv6-149",
-        "unimplemented:sv6-150",
-        "unimplemented:sv6pt5-64",
-        "unimplemented:sv8-179",
-        "unimplemented:sv9-159"
-      ],
-      "blockers": [
-        "3× Dwebble (sv10-11): unsupported; no executable behaviour family",
-        "3× Crustle (sv10-12): unsupported; no executable behaviour family",
-        "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "2× Eri (sv5-146): unsupported; no executable behaviour family",
-        "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-        "1× Bianca's Devotion (sv5-142): unsupported; no executable behaviour family",
-        "1× Lisia's Appeal (sv8-179): unsupported; no executable behaviour family",
-        "4× Jumbo Ice Cream (me2-91): unsupported; no executable behaviour family",
-        "1× Hand Trimmer (sv5-150): unsupported; no executable behaviour family",
-        "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-        "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-        "1× Community Center (sv6-146): unsupported; no executable behaviour family",
-        "1× Festival Grounds (sv6-149): unsupported; no executable behaviour family",
-        "4× Spiky Energy (sv9-159): unsupported; no executable behaviour family",
-        "4× Growing Grass Energy (me3-86): unsupported; no executable behaviour family",
-        "4× Mist Energy (sv5-161): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass"
@@ -4784,9 +4715,10 @@
           "sourceCollectorNumber": "41",
           "chosenCardId": "sv10-41",
           "chosenCardName": "Combusken",
+          "behaviourFamilyId": "behaviour:1cfe7bb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -4795,9 +4727,10 @@
           "sourceCollectorNumber": "24",
           "chosenCardId": "sv9-24",
           "chosenCardName": "Blaziken ex",
+          "behaviourFamilyId": "behaviour:x6hbh2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -4866,9 +4799,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "sv6-39",
           "chosenCardName": "Chi-Yu",
+          "behaviourFamilyId": "behaviour:wksxwi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -4877,9 +4811,10 @@
           "sourceCollectorNumber": "10",
           "chosenCardId": "sv10-10",
           "chosenCardName": "Shaymin",
+          "behaviourFamilyId": "behaviour:sjufrj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -5081,25 +5016,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 48,
+        "complete": 53,
         "generated": 7,
-        "partial": 1,
-        "unsupported": 4
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv10-10",
-        "unimplemented:sv10-41",
-        "unimplemented:sv6-39",
-        "unimplemented:sv9-24"
-      ],
-      "blockers": [
-        "1× Combusken (sv10-41): unsupported; no executable behaviour family",
-        "2× Blaziken ex (sv9-24): unsupported; no executable behaviour family",
-        "1× Chi-Yu (sv6-39): unsupported; no executable behaviour family",
-        "1× Shaymin (sv10-10): partial; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -5667,9 +5592,10 @@
           "sourceCollectorNumber": "158",
           "chosenCardId": "sv6-158",
           "chosenCardName": "Lucky Helmet",
+          "behaviourFamilyId": "behaviour:uj45t2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -5751,19 +5677,15 @@
       "exactResolvedCopies": 53,
       "canonicalEquivalentCopies": 7,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 51,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 2
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv6-158"
-      ],
-      "blockers": [
-        "2× Lucky Helmet (sv6-158): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass",
@@ -6239,9 +6161,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -6418,9 +6341,10 @@
           "sourceCollectorNumber": "127",
           "chosenCardId": "me1-127",
           "chosenCardName": "Risky Ruins",
+          "behaviourFamilyId": "behaviour:xrtbda",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -6429,9 +6353,10 @@
           "sourceCollectorNumber": "153",
           "chosenCardId": "sv6-153",
           "chosenCardName": "Jamming Tower",
+          "behaviourFamilyId": "behaviour:kzzpij",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -6489,23 +6414,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 50,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 3
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-127",
-        "unimplemented:me2-14",
-        "unimplemented:sv6-153"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Risky Ruins (me1-127): unsupported; no executable behaviour family",
-        "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -6984,9 +6901,10 @@
           "sourceCollectorNumber": "80",
           "chosenCardId": "sv6-80",
           "chosenCardName": "Abra",
+          "behaviourFamilyId": "behaviour:1d8x18m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -6995,9 +6913,10 @@
           "sourceCollectorNumber": "55",
           "chosenCardId": "me1-55",
           "chosenCardName": "Kadabra",
+          "behaviourFamilyId": "behaviour:1wxeis0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -7006,9 +6925,10 @@
           "sourceCollectorNumber": "56",
           "chosenCardId": "me1-56",
           "chosenCardName": "Alakazam",
+          "behaviourFamilyId": "behaviour:g8nayc",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -7053,9 +6973,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "sv6-39",
           "chosenCardName": "Chi-Yu",
+          "behaviourFamilyId": "behaviour:wksxwi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -7112,9 +7033,10 @@
           "sourceCollectorNumber": "64",
           "chosenCardId": "sv6pt5-64",
           "chosenCardName": "Xerosic's Machinations",
+          "behaviourFamilyId": "behaviour:1kubrsi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -7123,9 +7045,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "me3-84",
           "chosenCardName": "Rosa's Encouragement",
+          "behaviourFamilyId": "behaviour:14sr6ob",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -7206,9 +7129,10 @@
           "sourceCollectorNumber": "127",
           "chosenCardId": "me1-127",
           "chosenCardName": "Risky Ruins",
+          "behaviourFamilyId": "behaviour:xrtbda",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -7254,31 +7178,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 45,
+        "complete": 53,
         "generated": 7,
-        "partial": 2,
-        "unsupported": 6
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-127",
-        "unimplemented:me1-55",
-        "unimplemented:me1-56",
-        "unimplemented:me3-84",
-        "unimplemented:sv6-39",
-        "unimplemented:sv6-80",
-        "unimplemented:sv6pt5-64"
-      ],
-      "blockers": [
-        "1× Abra (sv6-80): partial; no executable behaviour family",
-        "1× Kadabra (me1-55): partial; no executable behaviour family",
-        "1× Alakazam (me1-56): unsupported; no executable behaviour family",
-        "1× Chi-Yu (sv6-39): unsupported; no executable behaviour family",
-        "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-        "1× Rosa's Encouragement (me3-84): unsupported; no executable behaviour family",
-        "2× Risky Ruins (me1-127): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -7771,9 +7679,10 @@
           "sourceCollectorNumber": "27",
           "chosenCardId": "sv9-27",
           "chosenCardName": "N's Darmanitan",
+          "behaviourFamilyId": "behaviour:16a68zn",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -7938,9 +7847,10 @@
           "sourceCollectorNumber": "83",
           "chosenCardId": "me4-83",
           "chosenCardName": "Transformation Tome",
+          "behaviourFamilyId": "behaviour:2oz4py",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -8058,21 +7968,15 @@
       "exactResolvedCopies": 53,
       "canonicalEquivalentCopies": 7,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 50,
+        "complete": 55,
         "generated": 5,
         "partial": 0,
-        "unsupported": 5
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me4-83",
-        "unimplemented:sv9-27"
-      ],
-      "blockers": [
-        "1× N's Darmanitan (sv9-27): unsupported; no executable behaviour family",
-        "4× Transformation Tome (me4-83): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness"
@@ -8591,9 +8495,10 @@
           "sourceCollectorNumber": "41",
           "chosenCardId": "sv10-41",
           "chosenCardName": "Combusken",
+          "behaviourFamilyId": "behaviour:1cfe7bb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -8602,9 +8507,10 @@
           "sourceCollectorNumber": "24",
           "chosenCardId": "sv9-24",
           "chosenCardName": "Blaziken ex",
+          "behaviourFamilyId": "behaviour:x6hbh2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -8817,9 +8723,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -8828,9 +8735,10 @@
           "sourceCollectorNumber": "151",
           "chosenCardId": "sv9-151",
           "chosenCardName": "Lillie's Pearl",
+          "behaviourFamilyId": "behaviour:1jz0v0x",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -8900,25 +8808,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 48,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 5
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2pt5-181",
-        "unimplemented:sv10-41",
-        "unimplemented:sv9-151",
-        "unimplemented:sv9-24"
-      ],
-      "blockers": [
-        "1× Combusken (sv10-41): unsupported; no executable behaviour family",
-        "2× Blaziken ex (sv9-24): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "1× Lillie's Pearl (sv9-151): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -9344,9 +9242,10 @@
           "sourceCollectorNumber": "35",
           "chosenCardId": "sv8pt5-35",
           "chosenCardName": "Duskull",
+          "behaviourFamilyId": "behaviour:1nj2wg4",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -9355,9 +9254,10 @@
           "sourceCollectorNumber": "36",
           "chosenCardId": "sv8pt5-36",
           "chosenCardName": "Dusclops",
+          "behaviourFamilyId": "behaviour:b77qwg",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -9366,9 +9266,10 @@
           "sourceCollectorNumber": "37",
           "chosenCardId": "sv8pt5-37",
           "chosenCardName": "Dusknoir",
+          "behaviourFamilyId": "behaviour:jvghrk",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -9594,23 +9495,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 48,
+        "complete": 53,
         "generated": 7,
-        "partial": 2,
-        "unsupported": 3
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv8pt5-35",
-        "unimplemented:sv8pt5-36",
-        "unimplemented:sv8pt5-37"
-      ],
-      "blockers": [
-        "2× Duskull (sv8pt5-35): unsupported; no executable behaviour family",
-        "2× Dusclops (sv8pt5-36): partial; no executable behaviour family",
-        "1× Dusknoir (sv8pt5-37): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -10103,9 +9996,10 @@
           "sourceCollectorNumber": "52",
           "chosenCardId": "me3-52",
           "chosenCardName": "Drapion",
+          "behaviourFamilyId": "behaviour:45kcmv",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -10126,9 +10020,10 @@
           "sourceCollectorNumber": "55",
           "chosenCardId": "rsv10pt5-55",
           "chosenCardName": "Purrloin",
+          "behaviourFamilyId": "behaviour:1hq3z1a",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -10161,9 +10056,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "me1-86",
           "chosenCardName": "Mega Absol ex",
+          "behaviourFamilyId": "behaviour:1ojahde",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -10184,9 +10080,10 @@
           "sourceCollectorNumber": "116",
           "chosenCardId": "sv9-116",
           "chosenCardName": "N's Reshiram",
+          "behaviourFamilyId": "behaviour:grane5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -10255,9 +10152,10 @@
           "sourceCollectorNumber": "83",
           "chosenCardId": "me4-83",
           "chosenCardName": "Transformation Tome",
+          "behaviourFamilyId": "behaviour:2oz4py",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -10338,9 +10236,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -10386,29 +10285,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 46,
+        "complete": 56,
         "generated": 4,
         "partial": 0,
-        "unsupported": 10
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-86",
-        "unimplemented:me2pt5-181",
-        "unimplemented:me3-52",
-        "unimplemented:me4-83",
-        "unimplemented:rsv10pt5-55",
-        "unimplemented:sv9-116"
-      ],
-      "blockers": [
-        "1× Drapion (me3-52): unsupported; no executable behaviour family",
-        "1× Purrloin (rsv10pt5-55): unsupported; no executable behaviour family",
-        "1× Mega Absol ex (me1-86): unsupported; no executable behaviour family",
-        "1× N's Reshiram (sv9-116): unsupported; no executable behaviour family",
-        "4× Transformation Tome (me4-83): unsupported; no executable behaviour family",
-        "2× Air Balloon (me2pt5-181): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness"
@@ -10841,9 +10726,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -11057,19 +10943,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 52,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 1
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-14"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -11678,9 +11560,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -11713,9 +11596,10 @@
           "sourceCollectorNumber": "121",
           "chosenCardId": "me2pt5-121",
           "chosenCardName": "Koraidon ex",
+          "behaviourFamilyId": "behaviour:1cufsxi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -11748,9 +11632,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv9-146",
           "chosenCardName": "Brock's Scouting",
+          "behaviourFamilyId": "behaviour:e2w8gw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -11843,9 +11728,10 @@
           "sourceCollectorNumber": "152",
           "chosenCardId": "sv5-152",
           "chosenCardName": "Hero's Cape",
+          "behaviourFamilyId": "behaviour:1s9wfx",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -11878,9 +11764,10 @@
           "sourceCollectorNumber": "216",
           "chosenCardId": "me2pt5-216",
           "chosenCardName": "Prism Energy",
+          "behaviourFamilyId": "behaviour:1hukgec",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -11950,27 +11837,15 @@
       "exactResolvedCopies": 49,
       "canonicalEquivalentCopies": 11,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 46,
+        "complete": 52,
         "generated": 8,
         "partial": 0,
-        "unsupported": 6
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-14",
-        "unimplemented:me2pt5-121",
-        "unimplemented:me2pt5-216",
-        "unimplemented:sv5-152",
-        "unimplemented:sv9-146"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Koraidon ex (me2pt5-121): unsupported; no executable behaviour family",
-        "1× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
-        "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-        "2× Prism Energy (me2pt5-216): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -13304,9 +13179,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -13364,19 +13240,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 51,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 2
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv6-150"
-      ],
-      "blockers": [
-        "2× Handheld Fan (sv6-150): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -13821,9 +13693,10 @@
           "sourceCollectorNumber": "57",
           "chosenCardId": "sv7-57",
           "chosenCardName": "Slowpoke",
+          "behaviourFamilyId": "behaviour:wm6vcm",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -13832,9 +13705,10 @@
           "sourceCollectorNumber": "58",
           "chosenCardId": "sv7-58",
           "chosenCardName": "Slowking",
+          "behaviourFamilyId": "behaviour:11uvxxf",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -13855,9 +13729,10 @@
           "sourceCollectorNumber": "47",
           "chosenCardId": "sv6pt5-47",
           "chosenCardName": "Kyurem",
+          "behaviourFamilyId": "behaviour:1av8t95",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -13878,9 +13753,10 @@
           "sourceCollectorNumber": "75",
           "chosenCardId": "sv8-75",
           "chosenCardName": "Smoochum",
+          "behaviourFamilyId": "behaviour:qxyisc",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -13925,9 +13801,10 @@
           "sourceCollectorNumber": "61",
           "chosenCardId": "me4-61",
           "chosenCardName": "Metagross",
+          "behaviourFamilyId": "behaviour:8g3wwq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -13936,9 +13813,10 @@
           "sourceCollectorNumber": "100",
           "chosenCardId": "sv8-100",
           "chosenCardName": "Annihilape",
+          "behaviourFamilyId": "behaviour:13nsaq9",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -13983,9 +13861,10 @@
           "sourceCollectorNumber": "187",
           "chosenCardId": "sv8-187",
           "chosenCardName": "Surfer",
+          "behaviourFamilyId": "behaviour:5ydrkx",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -14030,9 +13909,10 @@
           "sourceCollectorNumber": "94",
           "chosenCardId": "me2-94",
           "chosenCardName": "Wondrous Patch",
+          "behaviourFamilyId": "behaviour:dsxrv5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -14077,9 +13957,10 @@
           "sourceCollectorNumber": "158",
           "chosenCardId": "sv6-158",
           "chosenCardName": "Lucky Helmet",
+          "behaviourFamilyId": "behaviour:uj45t2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -14088,9 +13969,10 @@
           "sourceCollectorNumber": "80",
           "chosenCardId": "rsv10pt5-80",
           "chosenCardName": "Brave Bangle",
+          "behaviourFamilyId": "behaviour:kfyla6",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -14099,9 +13981,10 @@
           "sourceCollectorNumber": "54",
           "chosenCardId": "sv6pt5-54",
           "chosenCardName": "Academy at Night",
+          "behaviourFamilyId": "behaviour:1lg0iw3",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -14110,9 +13993,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -14121,9 +14005,10 @@
           "sourceCollectorNumber": "166",
           "chosenCardId": "sv6-166",
           "chosenCardName": "Boomerang Energy",
+          "behaviourFamilyId": "behaviour:njkxj3",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -14145,43 +14030,15 @@
       "exactResolvedCopies": 57,
       "canonicalEquivalentCopies": 3,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 28,
+        "complete": 57,
         "generated": 3,
         "partial": 0,
-        "unsupported": 29
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-94",
-        "unimplemented:me3-88",
-        "unimplemented:me4-61",
-        "unimplemented:rsv10pt5-80",
-        "unimplemented:sv6-158",
-        "unimplemented:sv6-166",
-        "unimplemented:sv6pt5-47",
-        "unimplemented:sv6pt5-54",
-        "unimplemented:sv7-57",
-        "unimplemented:sv7-58",
-        "unimplemented:sv8-100",
-        "unimplemented:sv8-187",
-        "unimplemented:sv8-75"
-      ],
-      "blockers": [
-        "4× Slowpoke (sv7-57): unsupported; no executable behaviour family",
-        "3× Slowking (sv7-58): unsupported; no executable behaviour family",
-        "2× Kyurem (sv6pt5-47): unsupported; no executable behaviour family",
-        "1× Smoochum (sv8-75): unsupported; no executable behaviour family",
-        "1× Metagross (me4-61): unsupported; no executable behaviour family",
-        "1× Annihilape (sv8-100): unsupported; no executable behaviour family",
-        "1× Surfer (sv8-187): unsupported; no executable behaviour family",
-        "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
-        "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
-        "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
-        "4× Academy at Night (sv6pt5-54): unsupported; no executable behaviour family",
-        "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
-        "3× Boomerang Energy (sv6-166): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Psychic"
@@ -14734,9 +14591,10 @@
           "sourceCollectorNumber": "114",
           "chosenCardId": "sv7-114",
           "chosenCardName": "Hoothoot",
+          "behaviourFamilyId": "behaviour:y526gr",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -14745,9 +14603,10 @@
           "sourceCollectorNumber": "115",
           "chosenCardId": "sv7-115",
           "chosenCardName": "Noctowl",
+          "behaviourFamilyId": "behaviour:12xsoi2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -14961,21 +14820,15 @@
       "exactResolvedCopies": 46,
       "canonicalEquivalentCopies": 14,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 42,
+        "complete": 44,
         "generated": 16,
-        "partial": 1,
-        "unsupported": 1
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv7-114",
-        "unimplemented:sv7-115"
-      ],
-      "blockers": [
-        "1× Hoothoot (sv7-114): unsupported; no executable behaviour family",
-        "1× Noctowl (sv7-115): partial; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass"
@@ -15403,9 +15256,10 @@
           "sourceCollectorNumber": "11",
           "chosenCardId": "sv10-11",
           "chosenCardName": "Dwebble",
+          "behaviourFamilyId": "behaviour:128caco",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -15414,9 +15268,10 @@
           "sourceCollectorNumber": "12",
           "chosenCardId": "sv10-12",
           "chosenCardName": "Crustle",
+          "behaviourFamilyId": "behaviour:cv9ern",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15425,9 +15280,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "me2pt5-39",
           "chosenCardName": "Psyduck",
+          "behaviourFamilyId": "behaviour:197co3m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -15472,9 +15328,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv5-146",
           "chosenCardName": "Eri",
+          "behaviourFamilyId": "behaviour:1j4wz7r",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -15483,9 +15340,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15494,9 +15352,10 @@
           "sourceCollectorNumber": "142",
           "chosenCardId": "sv5-142",
           "chosenCardName": "Bianca's Devotion",
+          "behaviourFamilyId": "behaviour:1mqys0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15517,9 +15376,10 @@
           "sourceCollectorNumber": "64",
           "chosenCardId": "sv6pt5-64",
           "chosenCardName": "Xerosic's Machinations",
+          "behaviourFamilyId": "behaviour:1kubrsi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15528,9 +15388,10 @@
           "sourceCollectorNumber": "179",
           "chosenCardId": "sv8-179",
           "chosenCardName": "Lisia's Appeal",
+          "behaviourFamilyId": "behaviour:b8zmcw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -15539,9 +15400,10 @@
           "sourceCollectorNumber": "91",
           "chosenCardId": "me2-91",
           "chosenCardName": "Jumbo Ice Cream",
+          "behaviourFamilyId": "behaviour:ehmseu",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -15598,9 +15460,10 @@
           "sourceCollectorNumber": "78",
           "chosenCardId": "me3-78",
           "chosenCardName": "Lumiose Galette",
+          "behaviourFamilyId": "behaviour:1k1r88m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15609,9 +15472,10 @@
           "sourceCollectorNumber": "152",
           "chosenCardId": "sv5-152",
           "chosenCardName": "Hero's Cape",
+          "behaviourFamilyId": "behaviour:1s9wfx",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15620,9 +15484,10 @@
           "sourceCollectorNumber": "77",
           "chosenCardId": "me3-77",
           "chosenCardName": "Lumiose City",
+          "behaviourFamilyId": "behaviour:2w87hq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15643,9 +15508,10 @@
           "sourceCollectorNumber": "159",
           "chosenCardId": "sv9-159",
           "chosenCardName": "Spiky Energy",
+          "behaviourFamilyId": "behaviour:1d0uxpj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -15654,9 +15520,10 @@
           "sourceCollectorNumber": "161",
           "chosenCardId": "sv5-161",
           "chosenCardName": "Mist Energy",
+          "behaviourFamilyId": "behaviour:no3f0o",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -15665,9 +15532,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "me3-86",
           "chosenCardName": "Growing Grass Energy",
+          "behaviourFamilyId": "behaviour:1xwqtgk",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -15689,47 +15557,15 @@
       "exactResolvedCopies": 59,
       "canonicalEquivalentCopies": 1,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 25,
+        "complete": 59,
         "generated": 1,
-        "partial": 1,
-        "unsupported": 33
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-91",
-        "unimplemented:me2pt5-39",
-        "unimplemented:me3-77",
-        "unimplemented:me3-78",
-        "unimplemented:me3-86",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv10-11",
-        "unimplemented:sv10-12",
-        "unimplemented:sv5-142",
-        "unimplemented:sv5-146",
-        "unimplemented:sv5-152",
-        "unimplemented:sv5-161",
-        "unimplemented:sv6pt5-64",
-        "unimplemented:sv8-179",
-        "unimplemented:sv9-159"
-      ],
-      "blockers": [
-        "3× Dwebble (sv10-11): unsupported; no executable behaviour family",
-        "3× Crustle (sv10-12): unsupported; no executable behaviour family",
-        "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-        "3× Eri (sv5-146): unsupported; no executable behaviour family",
-        "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "1× Bianca's Devotion (sv5-142): unsupported; no executable behaviour family",
-        "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-        "1× Lisia's Appeal (sv8-179): unsupported; no executable behaviour family",
-        "4× Jumbo Ice Cream (me2-91): unsupported; no executable behaviour family",
-        "1× Lumiose Galette (me3-78): unsupported; no executable behaviour family",
-        "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-        "1× Lumiose City (me3-77): unsupported; no executable behaviour family",
-        "4× Spiky Energy (sv9-159): unsupported; no executable behaviour family",
-        "4× Mist Energy (sv5-161): unsupported; no executable behaviour family",
-        "4× Growing Grass Energy (me3-86): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass"
@@ -16162,9 +15998,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -16317,9 +16154,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -16377,21 +16215,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 51,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 2
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-14",
-        "unimplemented:sv6-150"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -17541,9 +17373,10 @@
           "sourceCollectorNumber": "116",
           "chosenCardId": "sv9-116",
           "chosenCardName": "N's Reshiram",
+          "behaviourFamilyId": "behaviour:grane5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -17660,9 +17493,10 @@
           "sourceCollectorNumber": "64",
           "chosenCardId": "sv6pt5-64",
           "chosenCardName": "Xerosic's Machinations",
+          "behaviourFamilyId": "behaviour:1kubrsi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -17804,21 +17638,15 @@
       "exactResolvedCopies": 52,
       "canonicalEquivalentCopies": 8,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 54,
+        "complete": 56,
         "generated": 4,
         "partial": 0,
-        "unsupported": 2
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv6pt5-64",
-        "unimplemented:sv9-116"
-      ],
-      "blockers": [
-        "1× N's Reshiram (sv9-116): unsupported; no executable behaviour family",
-        "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness"
@@ -18899,9 +18727,10 @@
           "sourceCollectorNumber": "24",
           "chosenCardId": "sv5-24",
           "chosenCardName": "Rabsca",
+          "behaviourFamilyId": "behaviour:1gm0h3u",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -19127,19 +18956,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 51,
+        "complete": 52,
         "generated": 8,
         "partial": 0,
-        "unsupported": 1
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:sv5-24"
-      ],
-      "blockers": [
-        "1× Rabsca (sv5-24): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -19600,9 +19425,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -19767,9 +19593,10 @@
           "sourceCollectorNumber": "127",
           "chosenCardId": "me1-127",
           "chosenCardName": "Risky Ruins",
+          "behaviourFamilyId": "behaviour:xrtbda",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -19815,21 +19642,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 51,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 2
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-127",
-        "unimplemented:me2-14"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Risky Ruins (me1-127): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Darkness",
@@ -20918,9 +20739,10 @@
           "sourceCollectorNumber": "54",
           "chosenCardId": "me1-54",
           "chosenCardName": "Abra",
+          "behaviourFamilyId": "behaviour:1be1usv",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -20929,9 +20751,10 @@
           "sourceCollectorNumber": "55",
           "chosenCardId": "me1-55",
           "chosenCardName": "Kadabra",
+          "behaviourFamilyId": "behaviour:1wxeis0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -20940,9 +20763,10 @@
           "sourceCollectorNumber": "56",
           "chosenCardId": "me1-56",
           "chosenCardName": "Alakazam",
+          "behaviourFamilyId": "behaviour:g8nayc",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -20951,9 +20775,10 @@
           "sourceCollectorNumber": "120",
           "chosenCardId": "sv9-120",
           "chosenCardName": "Dunsparce",
+          "behaviourFamilyId": "behaviour:1wra8ia",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -20962,9 +20787,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "sv5-129",
           "chosenCardName": "Dudunsparce",
+          "behaviourFamilyId": "behaviour:1crg1w0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -20973,9 +20799,10 @@
           "sourceCollectorNumber": "87",
           "chosenCardId": "sv8-87",
           "chosenCardName": "Dedenne",
+          "behaviourFamilyId": "behaviour:1milkm1",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -20984,9 +20811,10 @@
           "sourceCollectorNumber": "40",
           "chosenCardId": "zsv10pt5-40",
           "chosenCardName": "Elgyem",
+          "behaviourFamilyId": "behaviour:16pa0lf",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -20995,9 +20823,10 @@
           "sourceCollectorNumber": "40",
           "chosenCardId": "sv6pt5-40",
           "chosenCardName": "Genesect",
+          "behaviourFamilyId": "behaviour:1jaoubn",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21018,9 +20847,10 @@
           "sourceCollectorNumber": "10",
           "chosenCardId": "sv10-10",
           "chosenCardName": "Shaymin",
+          "behaviourFamilyId": "behaviour:sjufrj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21041,9 +20871,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -21112,9 +20943,10 @@
           "sourceCollectorNumber": "148",
           "chosenCardId": "sv6-148",
           "chosenCardName": "Enhanced Hammer",
+          "behaviourFamilyId": "behaviour:z3d3ri",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21123,9 +20955,10 @@
           "sourceCollectorNumber": "168",
           "chosenCardId": "sv10-168",
           "chosenCardName": "Sacred Ash",
+          "behaviourFamilyId": "behaviour:otaqwb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21146,9 +20979,10 @@
           "sourceCollectorNumber": "158",
           "chosenCardId": "sv6-158",
           "chosenCardName": "Lucky Helmet",
+          "behaviourFamilyId": "behaviour:uj45t2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21157,9 +20991,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21168,9 +21003,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21179,9 +21015,10 @@
           "sourceCollectorNumber": "197",
           "chosenCardId": "me2pt5-197",
           "chosenCardName": "Nighttime Mine",
+          "behaviourFamilyId": "behaviour:1xotgv2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21190,9 +21027,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21213,9 +21051,10 @@
           "sourceCollectorNumber": "191",
           "chosenCardId": "sv8-191",
           "chosenCardName": "Enriching Energy",
+          "behaviourFamilyId": "behaviour:151vl0v",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-1ahz9h2",
@@ -21225,53 +21064,15 @@
       "exactResolvedCopies": 59,
       "canonicalEquivalentCopies": 1,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 20,
+        "complete": 59,
         "generated": 1,
-        "partial": 9,
-        "unsupported": 30
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-54",
-        "unimplemented:me1-55",
-        "unimplemented:me1-56",
-        "unimplemented:me2pt5-181",
-        "unimplemented:me2pt5-197",
-        "unimplemented:me3-88",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv10-10",
-        "unimplemented:sv10-168",
-        "unimplemented:sv5-129",
-        "unimplemented:sv6-148",
-        "unimplemented:sv6-150",
-        "unimplemented:sv6-158",
-        "unimplemented:sv6pt5-40",
-        "unimplemented:sv8-191",
-        "unimplemented:sv8-87",
-        "unimplemented:sv9-120",
-        "unimplemented:zsv10pt5-40"
-      ],
-      "blockers": [
-        "4× Abra (me1-54): unsupported; no executable behaviour family",
-        "4× Kadabra (me1-55): partial; no executable behaviour family",
-        "3× Alakazam (me1-56): unsupported; no executable behaviour family",
-        "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-        "3× Dudunsparce (sv5-129): partial; no executable behaviour family",
-        "1× Dedenne (sv8-87): unsupported; no executable behaviour family",
-        "1× Elgyem (zsv10pt5-40): unsupported; no executable behaviour family",
-        "1× Genesect (sv6pt5-40): partial; no executable behaviour family",
-        "1× Shaymin (sv10-10): partial; no executable behaviour family",
-        "3× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "2× Enhanced Hammer (sv6-148): unsupported; no executable behaviour family",
-        "1× Sacred Ash (sv10-168): unsupported; no executable behaviour family",
-        "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
-        "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "4× Nighttime Mine (me2pt5-197): unsupported; no executable behaviour family",
-        "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
-        "1× Enriching Energy (sv8-191): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Psychic"
@@ -21712,9 +21513,10 @@
           "sourceCollectorNumber": "11",
           "chosenCardId": "sv10-11",
           "chosenCardName": "Dwebble",
+          "behaviourFamilyId": "behaviour:128caco",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -21723,9 +21525,10 @@
           "sourceCollectorNumber": "12",
           "chosenCardId": "sv10-12",
           "chosenCardName": "Crustle",
+          "behaviourFamilyId": "behaviour:cv9ern",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21734,9 +21537,10 @@
           "sourceCollectorNumber": "162",
           "chosenCardId": "me2pt5-162",
           "chosenCardName": "Team Rocket's Kangaskhan ex",
+          "behaviourFamilyId": "behaviour:14l4xhp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21757,9 +21561,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "me2pt5-39",
           "chosenCardName": "Psyduck",
+          "behaviourFamilyId": "behaviour:197co3m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21804,9 +21609,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21815,9 +21621,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv5-146",
           "chosenCardName": "Eri",
+          "behaviourFamilyId": "behaviour:1j4wz7r",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21838,9 +21645,10 @@
           "sourceCollectorNumber": "64",
           "chosenCardId": "sv6pt5-64",
           "chosenCardName": "Xerosic's Machinations",
+          "behaviourFamilyId": "behaviour:1kubrsi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21849,9 +21657,10 @@
           "sourceCollectorNumber": "179",
           "chosenCardId": "sv8-179",
           "chosenCardName": "Lisia's Appeal",
+          "behaviourFamilyId": "behaviour:b8zmcw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21860,9 +21669,10 @@
           "sourceCollectorNumber": "91",
           "chosenCardId": "me2-91",
           "chosenCardName": "Jumbo Ice Cream",
+          "behaviourFamilyId": "behaviour:ehmseu",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -21931,9 +21741,10 @@
           "sourceCollectorNumber": "152",
           "chosenCardId": "sv5-152",
           "chosenCardName": "Hero's Cape",
+          "behaviourFamilyId": "behaviour:1s9wfx",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -21954,9 +21765,10 @@
           "sourceCollectorNumber": "77",
           "chosenCardId": "me3-77",
           "chosenCardName": "Lumiose City",
+          "behaviourFamilyId": "behaviour:2w87hq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21965,9 +21777,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "me3-86",
           "chosenCardName": "Growing Grass Energy",
+          "behaviourFamilyId": "behaviour:1xwqtgk",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -21976,9 +21789,10 @@
           "sourceCollectorNumber": "161",
           "chosenCardId": "sv5-161",
           "chosenCardName": "Mist Energy",
+          "behaviourFamilyId": "behaviour:no3f0o",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -21987,9 +21801,10 @@
           "sourceCollectorNumber": "159",
           "chosenCardId": "sv9-159",
           "chosenCardName": "Spiky Energy",
+          "behaviourFamilyId": "behaviour:1d0uxpj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -22011,45 +21826,15 @@
       "exactResolvedCopies": 57,
       "canonicalEquivalentCopies": 3,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 27,
+        "complete": 57,
         "generated": 3,
-        "partial": 1,
-        "unsupported": 29
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-91",
-        "unimplemented:me2pt5-162",
-        "unimplemented:me2pt5-39",
-        "unimplemented:me3-77",
-        "unimplemented:me3-86",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv10-11",
-        "unimplemented:sv10-12",
-        "unimplemented:sv5-146",
-        "unimplemented:sv5-152",
-        "unimplemented:sv5-161",
-        "unimplemented:sv6pt5-64",
-        "unimplemented:sv8-179",
-        "unimplemented:sv9-159"
-      ],
-      "blockers": [
-        "3× Dwebble (sv10-11): unsupported; no executable behaviour family",
-        "3× Crustle (sv10-12): unsupported; no executable behaviour family",
-        "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
-        "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-        "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "1× Eri (sv5-146): unsupported; no executable behaviour family",
-        "1× Xerosic's Machinations (sv6pt5-64): unsupported; no executable behaviour family",
-        "1× Lisia's Appeal (sv8-179): unsupported; no executable behaviour family",
-        "4× Jumbo Ice Cream (me2-91): unsupported; no executable behaviour family",
-        "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-        "1× Lumiose City (me3-77): unsupported; no executable behaviour family",
-        "4× Growing Grass Energy (me3-86): unsupported; no executable behaviour family",
-        "4× Mist Energy (sv5-161): unsupported; no executable behaviour family",
-        "3× Spiky Energy (sv9-159): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass"
@@ -23149,9 +22934,10 @@
           "sourceCollectorNumber": "15",
           "chosenCardId": "sv6-15",
           "chosenCardName": "Thwackey",
+          "behaviourFamilyId": "behaviour:a8y5pc",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23160,9 +22946,10 @@
           "sourceCollectorNumber": "16",
           "chosenCardId": "sv6-16",
           "chosenCardName": "Rillaboom",
+          "behaviourFamilyId": "behaviour:1kftzvi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -23183,9 +22970,10 @@
           "sourceCollectorNumber": "126",
           "chosenCardId": "sv6-126",
           "chosenCardName": "Applin",
+          "behaviourFamilyId": "behaviour:1tkx6xg",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -23206,9 +22994,10 @@
           "sourceCollectorNumber": "6",
           "chosenCardId": "zsv10pt5-6",
           "chosenCardName": "Petilil",
+          "behaviourFamilyId": "behaviour:zhu8c5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23217,9 +23006,10 @@
           "sourceCollectorNumber": "7",
           "chosenCardId": "sv9-7",
           "chosenCardName": "Lilligant",
+          "behaviourFamilyId": "behaviour:x1omus",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23228,9 +23018,10 @@
           "sourceCollectorNumber": "44",
           "chosenCardId": "sv6-44",
           "chosenCardName": "Goldeen",
+          "behaviourFamilyId": "behaviour:nvj6fq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23239,9 +23030,10 @@
           "sourceCollectorNumber": "21",
           "chosenCardId": "sv8pt5-21",
           "chosenCardName": "Seaking",
+          "behaviourFamilyId": "behaviour:vdzvhh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23250,9 +23042,10 @@
           "sourceCollectorNumber": "10",
           "chosenCardId": "sv10-10",
           "chosenCardName": "Shaymin",
+          "behaviourFamilyId": "behaviour:sjufrj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23261,9 +23054,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "me2pt5-39",
           "chosenCardName": "Psyduck",
+          "behaviourFamilyId": "behaviour:197co3m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -23284,9 +23078,10 @@
           "sourceCollectorNumber": "154",
           "chosenCardId": "sv6-154",
           "chosenCardName": "Kieran",
+          "behaviourFamilyId": "behaviour:lr2jvm",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -23331,9 +23126,10 @@
           "sourceCollectorNumber": "174",
           "chosenCardId": "sv8-174",
           "chosenCardName": "Drayton",
+          "behaviourFamilyId": "behaviour:1qlwhlu",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -23402,9 +23198,10 @@
           "sourceCollectorNumber": "80",
           "chosenCardId": "rsv10pt5-80",
           "chosenCardName": "Brave Bangle",
+          "behaviourFamilyId": "behaviour:kfyla6",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23413,9 +23210,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -23424,9 +23222,10 @@
           "sourceCollectorNumber": "149",
           "chosenCardId": "sv6-149",
           "chosenCardName": "Festival Grounds",
+          "behaviourFamilyId": "behaviour:fgi1wb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 5,
@@ -23448,45 +23247,15 @@
       "exactResolvedCopies": 55,
       "canonicalEquivalentCopies": 5,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 30,
+        "complete": 51,
         "generated": 9,
-        "partial": 7,
-        "unsupported": 14
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2pt5-181",
-        "unimplemented:me2pt5-39",
-        "unimplemented:rsv10pt5-80",
-        "unimplemented:sv10-10",
-        "unimplemented:sv6-126",
-        "unimplemented:sv6-149",
-        "unimplemented:sv6-15",
-        "unimplemented:sv6-154",
-        "unimplemented:sv6-16",
-        "unimplemented:sv6-44",
-        "unimplemented:sv8-174",
-        "unimplemented:sv8pt5-21",
-        "unimplemented:sv9-7",
-        "unimplemented:zsv10pt5-6"
-      ],
-      "blockers": [
-        "4× Thwackey (sv6-15): partial; no executable behaviour family",
-        "1× Rillaboom (sv6-16): unsupported; no executable behaviour family",
-        "1× Applin (sv6-126): unsupported; no executable behaviour family",
-        "1× Petilil (zsv10pt5-6): unsupported; no executable behaviour family",
-        "1× Lilligant (sv9-7): partial; no executable behaviour family",
-        "1× Goldeen (sv6-44): unsupported; no executable behaviour family",
-        "1× Seaking (sv8pt5-21): unsupported; no executable behaviour family",
-        "1× Shaymin (sv10-10): partial; no executable behaviour family",
-        "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-        "2× Kieran (sv6-154): unsupported; no executable behaviour family",
-        "1× Drayton (sv8-174): unsupported; no executable behaviour family",
-        "2× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "3× Festival Grounds (sv6-149): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass"
@@ -23943,9 +23712,10 @@
           "sourceCollectorNumber": "54",
           "chosenCardId": "me1-54",
           "chosenCardName": "Abra",
+          "behaviourFamilyId": "behaviour:1be1usv",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -23954,9 +23724,10 @@
           "sourceCollectorNumber": "55",
           "chosenCardId": "me1-55",
           "chosenCardName": "Kadabra",
+          "behaviourFamilyId": "behaviour:1wxeis0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -23965,9 +23736,10 @@
           "sourceCollectorNumber": "56",
           "chosenCardId": "me1-56",
           "chosenCardName": "Alakazam",
+          "behaviourFamilyId": "behaviour:g8nayc",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -23976,9 +23748,10 @@
           "sourceCollectorNumber": "82",
           "chosenCardId": "sv6-82",
           "chosenCardName": "Alakazam",
+          "behaviourFamilyId": "behaviour:gieo6s",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -23987,9 +23760,10 @@
           "sourceCollectorNumber": "120",
           "chosenCardId": "sv9-120",
           "chosenCardName": "Dunsparce",
+          "behaviourFamilyId": "behaviour:1wra8ia",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -23998,9 +23772,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "sv5-129",
           "chosenCardName": "Dudunsparce",
+          "behaviourFamilyId": "behaviour:1crg1w0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24021,9 +23796,10 @@
           "sourceCollectorNumber": "87",
           "chosenCardId": "sv8-87",
           "chosenCardName": "Dedenne",
+          "behaviourFamilyId": "behaviour:1milkm1",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24032,9 +23808,10 @@
           "sourceCollectorNumber": "40",
           "chosenCardId": "zsv10pt5-40",
           "chosenCardName": "Elgyem",
+          "behaviourFamilyId": "behaviour:16pa0lf",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24043,9 +23820,10 @@
           "sourceCollectorNumber": "40",
           "chosenCardId": "sv6pt5-40",
           "chosenCardName": "Genesect",
+          "behaviourFamilyId": "behaviour:1jaoubn",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24054,9 +23832,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "me2pt5-39",
           "chosenCardName": "Psyduck",
+          "behaviourFamilyId": "behaviour:197co3m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -24077,9 +23856,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -24112,9 +23892,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv5-146",
           "chosenCardName": "Eri",
+          "behaviourFamilyId": "behaviour:1j4wz7r",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -24159,9 +23940,10 @@
           "sourceCollectorNumber": "168",
           "chosenCardId": "sv10-168",
           "chosenCardName": "Sacred Ash",
+          "behaviourFamilyId": "behaviour:otaqwb",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24182,9 +23964,10 @@
           "sourceCollectorNumber": "148",
           "chosenCardId": "sv6-148",
           "chosenCardName": "Enhanced Hammer",
+          "behaviourFamilyId": "behaviour:z3d3ri",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24193,9 +23976,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24204,9 +23988,10 @@
           "sourceCollectorNumber": "158",
           "chosenCardId": "sv6-158",
           "chosenCardName": "Lucky Helmet",
+          "behaviourFamilyId": "behaviour:uj45t2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24215,9 +24000,10 @@
           "sourceCollectorNumber": "150",
           "chosenCardId": "sv6-150",
           "chosenCardName": "Handheld Fan",
+          "behaviourFamilyId": "behaviour:j68xom",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -24226,9 +24012,10 @@
           "sourceCollectorNumber": "197",
           "chosenCardId": "me2pt5-197",
           "chosenCardName": "Nighttime Mine",
+          "behaviourFamilyId": "behaviour:1xotgv2",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -24237,9 +24024,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24260,9 +24048,10 @@
           "sourceCollectorNumber": "191",
           "chosenCardId": "sv8-191",
           "chosenCardName": "Enriching Energy",
+          "behaviourFamilyId": "behaviour:151vl0v",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-rbl46m",
@@ -24272,57 +24061,15 @@
       "exactResolvedCopies": 59,
       "canonicalEquivalentCopies": 1,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 20,
+        "complete": 59,
         "generated": 1,
-        "partial": 8,
-        "unsupported": 31
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-54",
-        "unimplemented:me1-55",
-        "unimplemented:me1-56",
-        "unimplemented:me2pt5-181",
-        "unimplemented:me2pt5-197",
-        "unimplemented:me2pt5-39",
-        "unimplemented:me3-88",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:sv10-168",
-        "unimplemented:sv5-129",
-        "unimplemented:sv5-146",
-        "unimplemented:sv6-148",
-        "unimplemented:sv6-150",
-        "unimplemented:sv6-158",
-        "unimplemented:sv6-82",
-        "unimplemented:sv6pt5-40",
-        "unimplemented:sv8-191",
-        "unimplemented:sv8-87",
-        "unimplemented:sv9-120",
-        "unimplemented:zsv10pt5-40"
-      ],
-      "blockers": [
-        "4× Abra (me1-54): unsupported; no executable behaviour family",
-        "4× Kadabra (me1-55): partial; no executable behaviour family",
-        "3× Alakazam (me1-56): unsupported; no executable behaviour family",
-        "1× Alakazam (sv6-82): unsupported; no executable behaviour family",
-        "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-        "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
-        "1× Dedenne (sv8-87): unsupported; no executable behaviour family",
-        "1× Elgyem (zsv10pt5-40): unsupported; no executable behaviour family",
-        "1× Genesect (sv6pt5-40): partial; no executable behaviour family",
-        "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-        "3× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "1× Eri (sv5-146): unsupported; no executable behaviour family",
-        "1× Sacred Ash (sv10-168): unsupported; no executable behaviour family",
-        "1× Enhanced Hammer (sv6-148): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "1× Lucky Helmet (sv6-158): unsupported; no executable behaviour family",
-        "1× Handheld Fan (sv6-150): unsupported; no executable behaviour family",
-        "4× Nighttime Mine (me2pt5-197): unsupported; no executable behaviour family",
-        "4× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family",
-        "1× Enriching Energy (sv8-191): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Psychic"
@@ -24735,9 +24482,10 @@
           "sourceCollectorNumber": "114",
           "chosenCardId": "sv5-114",
           "chosenCardName": "Metang",
+          "behaviourFamilyId": "behaviour:mn5jmu",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -24746,9 +24494,10 @@
           "sourceCollectorNumber": "61",
           "chosenCardId": "me4-61",
           "chosenCardName": "Metagross",
+          "behaviourFamilyId": "behaviour:8g3wwq",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -24757,9 +24506,10 @@
           "sourceCollectorNumber": "67",
           "chosenCardId": "zsv10pt5-67",
           "chosenCardName": "Genesect ex",
+          "behaviourFamilyId": "behaviour:qwzevh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24804,9 +24554,10 @@
           "sourceCollectorNumber": "162",
           "chosenCardId": "me2pt5-162",
           "chosenCardName": "Team Rocket's Kangaskhan ex",
+          "behaviourFamilyId": "behaviour:14l4xhp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24815,9 +24566,10 @@
           "sourceCollectorNumber": "10",
           "chosenCardId": "sv10-10",
           "chosenCardName": "Shaymin",
+          "behaviourFamilyId": "behaviour:sjufrj",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24826,9 +24578,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "sv8pt5-86",
           "chosenCardName": "Regigigas",
+          "behaviourFamilyId": "behaviour:1rch7by",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24837,9 +24590,10 @@
           "sourceCollectorNumber": "123",
           "chosenCardId": "sv6-123",
           "chosenCardName": "Heatran",
+          "behaviourFamilyId": "behaviour:1vpjf9g",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -24860,9 +24614,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv9-146",
           "chosenCardName": "Brock's Scouting",
+          "behaviourFamilyId": "behaviour:e2w8gw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -24919,9 +24674,10 @@
           "sourceCollectorNumber": "164",
           "chosenCardId": "sv10-164",
           "chosenCardName": "Energy Recycler",
+          "behaviourFamilyId": "behaviour:74ogda",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24954,9 +24710,10 @@
           "sourceCollectorNumber": "185",
           "chosenCardId": "sv8-185",
           "chosenCardName": "Precious Trolley",
+          "behaviourFamilyId": "behaviour:1pqgm73",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24965,9 +24722,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -24976,9 +24734,10 @@
           "sourceCollectorNumber": "80",
           "chosenCardId": "rsv10pt5-80",
           "chosenCardName": "Brave Bangle",
+          "behaviourFamilyId": "behaviour:kfyla6",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -25012,41 +24771,15 @@
       "exactResolvedCopies": 43,
       "canonicalEquivalentCopies": 17,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 24,
+        "complete": 43,
         "generated": 17,
-        "partial": 5,
-        "unsupported": 14
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2pt5-162",
-        "unimplemented:me2pt5-181",
-        "unimplemented:me4-61",
-        "unimplemented:rsv10pt5-80",
-        "unimplemented:sv10-10",
-        "unimplemented:sv10-164",
-        "unimplemented:sv5-114",
-        "unimplemented:sv6-123",
-        "unimplemented:sv8-185",
-        "unimplemented:sv8pt5-86",
-        "unimplemented:sv9-146",
-        "unimplemented:zsv10pt5-67"
-      ],
-      "blockers": [
-        "4× Metang (sv5-114): partial; no executable behaviour family",
-        "2× Metagross (me4-61): unsupported; no executable behaviour family",
-        "2× Genesect ex (zsv10pt5-67): unsupported; no executable behaviour family",
-        "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
-        "1× Shaymin (sv10-10): partial; no executable behaviour family",
-        "1× Regigigas (sv8pt5-86): unsupported; no executable behaviour family",
-        "1× Heatran (sv6-123): unsupported; no executable behaviour family",
-        "2× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
-        "2× Energy Recycler (sv10-164): unsupported; no executable behaviour family",
-        "1× Precious Trolley (sv8-185): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "1× Brave Bangle (rsv10pt5-80): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Metal"
@@ -25487,9 +25220,10 @@
           "sourceCollectorNumber": "21",
           "chosenCardId": "me4-21",
           "chosenCardName": "Frogadier",
+          "behaviourFamilyId": "behaviour:1oqi5d",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25498,9 +25232,10 @@
           "sourceCollectorNumber": "106",
           "chosenCardId": "sv6-106",
           "chosenCardName": "Greninja ex",
+          "behaviourFamilyId": "behaviour:ww8z5a",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25509,9 +25244,10 @@
           "sourceCollectorNumber": "22",
           "chosenCardId": "me4-22",
           "chosenCardName": "Mega Greninja ex",
+          "behaviourFamilyId": "behaviour:2rm6ve",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25520,9 +25256,10 @@
           "sourceCollectorNumber": "120",
           "chosenCardId": "sv9-120",
           "chosenCardName": "Dunsparce",
+          "behaviourFamilyId": "behaviour:1wra8ia",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25531,9 +25268,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "sv5-129",
           "chosenCardName": "Dudunsparce",
+          "behaviourFamilyId": "behaviour:1crg1w0",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -25542,9 +25280,10 @@
           "sourceCollectorNumber": "121",
           "chosenCardId": "sv9-121",
           "chosenCardName": "Dudunsparce ex",
+          "behaviourFamilyId": "behaviour:nwk6eo",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -25589,9 +25328,10 @@
           "sourceCollectorNumber": "39",
           "chosenCardId": "me2pt5-39",
           "chosenCardName": "Psyduck",
+          "behaviourFamilyId": "behaviour:197co3m",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "partial"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -25612,9 +25352,10 @@
           "sourceCollectorNumber": "84",
           "chosenCardId": "rsv10pt5-84",
           "chosenCardName": "Hilda",
+          "behaviourFamilyId": "behaviour:nj70wl",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25635,9 +25376,10 @@
           "sourceCollectorNumber": "76",
           "chosenCardId": "me4-76",
           "chosenCardName": "AZ's Tranquility",
+          "behaviourFamilyId": "behaviour:13bg879",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -25730,9 +25472,10 @@
           "sourceCollectorNumber": "181",
           "chosenCardId": "me2pt5-181",
           "chosenCardName": "Air Balloon",
+          "behaviourFamilyId": "behaviour:1rvb2gh",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -25741,9 +25484,10 @@
           "sourceCollectorNumber": "129",
           "chosenCardId": "me1-129",
           "chosenCardName": "Surfing Beach",
+          "behaviourFamilyId": "behaviour:16g91z9",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 7,
@@ -25764,9 +25508,10 @@
           "sourceCollectorNumber": "86",
           "chosenCardId": "rsv10pt5-86",
           "chosenCardName": "Ignition Energy",
+          "behaviourFamilyId": "behaviour:uy1egs",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -25775,9 +25520,10 @@
           "sourceCollectorNumber": "162",
           "chosenCardId": "sv5-162",
           "chosenCardName": "Neo Upper Energy",
+          "behaviourFamilyId": "behaviour:1ptf0wy",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-rshlng",
@@ -25787,43 +25533,15 @@
       "exactResolvedCopies": 53,
       "canonicalEquivalentCopies": 7,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 30,
+        "complete": 53,
         "generated": 7,
-        "partial": 3,
-        "unsupported": 20
+        "partial": 0,
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me1-129",
-        "unimplemented:me2pt5-181",
-        "unimplemented:me2pt5-39",
-        "unimplemented:me4-21",
-        "unimplemented:me4-22",
-        "unimplemented:me4-76",
-        "unimplemented:rsv10pt5-84",
-        "unimplemented:rsv10pt5-86",
-        "unimplemented:sv5-129",
-        "unimplemented:sv5-162",
-        "unimplemented:sv6-106",
-        "unimplemented:sv9-120",
-        "unimplemented:sv9-121"
-      ],
-      "blockers": [
-        "3× Frogadier (me4-21): unsupported; no executable behaviour family",
-        "2× Greninja ex (sv6-106): unsupported; no executable behaviour family",
-        "2× Mega Greninja ex (me4-22): unsupported; no executable behaviour family",
-        "2× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-        "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
-        "1× Dudunsparce ex (sv9-121): unsupported; no executable behaviour family",
-        "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-        "3× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-        "1× AZ's Tranquility (me4-76): unsupported; no executable behaviour family",
-        "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-        "2× Surfing Beach (me1-129): unsupported; no executable behaviour family",
-        "2× Ignition Energy (rsv10pt5-86): unsupported; no executable behaviour family",
-        "1× Neo Upper Energy (sv5-162): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Water"
@@ -26296,9 +26014,10 @@
           "sourceCollectorNumber": "14",
           "chosenCardId": "me2-14",
           "chosenCardName": "Moltres",
+          "behaviourFamilyId": "behaviour:1szdaxp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -26331,9 +26050,10 @@
           "sourceCollectorNumber": "121",
           "chosenCardId": "me2pt5-121",
           "chosenCardName": "Koraidon ex",
+          "behaviourFamilyId": "behaviour:1cufsxi",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -26402,9 +26122,10 @@
           "sourceCollectorNumber": "175",
           "chosenCardId": "sv8-175",
           "chosenCardName": "Dusk Ball",
+          "behaviourFamilyId": "behaviour:17c27yy",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 3,
@@ -26413,9 +26134,10 @@
           "sourceCollectorNumber": "94",
           "chosenCardId": "me2-94",
           "chosenCardName": "Wondrous Patch",
+          "behaviourFamilyId": "behaviour:dsxrv5",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -26424,9 +26146,10 @@
           "sourceCollectorNumber": "157",
           "chosenCardId": "sv5-157",
           "chosenCardName": "Prime Catcher",
+          "behaviourFamilyId": "behaviour:9wwa6h",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -26435,9 +26158,10 @@
           "sourceCollectorNumber": "151",
           "chosenCardId": "sv9-151",
           "chosenCardName": "Lillie's Pearl",
+          "behaviourFamilyId": "behaviour:1jz0v0x",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -26506,9 +26230,10 @@
           "sourceCollectorNumber": "88",
           "chosenCardId": "me3-88",
           "chosenCardName": "Telepathic Psychic Energy",
+          "behaviourFamilyId": "behaviour:f4s83",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         }
       ],
       "compositionFingerprint": "composition-1x4vaxt",
@@ -26518,31 +26243,15 @@
       "exactResolvedCopies": 51,
       "canonicalEquivalentCopies": 9,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 40,
+        "complete": 53,
         "generated": 7,
         "partial": 0,
-        "unsupported": 13
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2-14",
-        "unimplemented:me2-94",
-        "unimplemented:me2pt5-121",
-        "unimplemented:me3-88",
-        "unimplemented:sv5-157",
-        "unimplemented:sv8-175",
-        "unimplemented:sv9-151"
-      ],
-      "blockers": [
-        "1× Moltres (me2-14): unsupported; no executable behaviour family",
-        "1× Koraidon ex (me2pt5-121): unsupported; no executable behaviour family",
-        "4× Dusk Ball (sv8-175): unsupported; no executable behaviour family",
-        "3× Wondrous Patch (me2-94): unsupported; no executable behaviour family",
-        "1× Prime Catcher (sv5-157): unsupported; no executable behaviour family",
-        "2× Lillie's Pearl (sv9-151): unsupported; no executable behaviour family",
-        "1× Telepathic Psychic Energy (me3-88): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Fighting",
@@ -27030,9 +26739,10 @@
           "sourceCollectorNumber": "50",
           "chosenCardId": "sv7-50",
           "chosenCardName": "Joltik",
+          "behaviourFamilyId": "behaviour:10dzbu3",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27041,9 +26751,10 @@
           "sourceCollectorNumber": "2",
           "chosenCardId": "sv6pt5-2",
           "chosenCardName": "Galvantula",
+          "behaviourFamilyId": "behaviour:1jc81p6",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -27100,9 +26811,10 @@
           "sourceCollectorNumber": "57",
           "chosenCardId": "sv8-57",
           "chosenCardName": "Pikachu ex",
+          "behaviourFamilyId": "behaviour:1jymvln",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27111,9 +26823,10 @@
           "sourceCollectorNumber": "25",
           "chosenCardId": "sv5-25",
           "chosenCardName": "Iron Leaves ex",
+          "behaviourFamilyId": "behaviour:w593ca",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27122,9 +26835,10 @@
           "sourceCollectorNumber": "162",
           "chosenCardId": "me2pt5-162",
           "chosenCardName": "Team Rocket's Kangaskhan ex",
+          "behaviourFamilyId": "behaviour:14l4xhp",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27133,9 +26847,10 @@
           "sourceCollectorNumber": "141",
           "chosenCardId": "sv6-141",
           "chosenCardName": "Bloodmoon Ursaluna ex",
+          "behaviourFamilyId": "behaviour:1urwzm7",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27204,9 +26919,10 @@
           "sourceCollectorNumber": "146",
           "chosenCardId": "sv9-146",
           "chosenCardName": "Brock's Scouting",
+          "behaviourFamilyId": "behaviour:e2w8gw",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27215,9 +26931,10 @@
           "sourceCollectorNumber": "76",
           "chosenCardId": "me4-76",
           "chosenCardName": "AZ's Tranquility",
+          "behaviourFamilyId": "behaviour:13bg879",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 4,
@@ -27262,9 +26979,10 @@
           "sourceCollectorNumber": "185",
           "chosenCardId": "sv8-185",
           "chosenCardName": "Precious Trolley",
+          "behaviourFamilyId": "behaviour:1pqgm73",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 1,
@@ -27297,9 +27015,10 @@
           "sourceCollectorNumber": "191",
           "chosenCardId": "me2pt5-191",
           "chosenCardName": "Light Ball",
+          "behaviourFamilyId": "behaviour:1g18ivs",
           "resolution": "exact",
           "reason": "Source set code and collector number matched the exact local catalogue printing.",
-          "support": "unsupported"
+          "support": "complete"
         },
         {
           "quantity": 2,
@@ -27393,37 +27112,15 @@
       "exactResolvedCopies": 46,
       "canonicalEquivalentCopies": 14,
       "unresolvedCopies": 0,
-      "simulationReady": false,
+      "simulationReady": true,
       "supportCounts": {
-        "complete": 34,
+        "complete": 46,
         "generated": 14,
         "partial": 0,
-        "unsupported": 12
+        "unsupported": 0
       },
-      "missingBehaviourFamilyIds": [
-        "unimplemented:me2pt5-162",
-        "unimplemented:me2pt5-191",
-        "unimplemented:me4-76",
-        "unimplemented:sv5-25",
-        "unimplemented:sv6-141",
-        "unimplemented:sv6pt5-2",
-        "unimplemented:sv7-50",
-        "unimplemented:sv8-185",
-        "unimplemented:sv8-57",
-        "unimplemented:sv9-146"
-      ],
-      "blockers": [
-        "2× Joltik (sv7-50): unsupported; no executable behaviour family",
-        "1× Galvantula (sv6pt5-2): unsupported; no executable behaviour family",
-        "2× Pikachu ex (sv8-57): unsupported; no executable behaviour family",
-        "1× Iron Leaves ex (sv5-25): unsupported; no executable behaviour family",
-        "1× Team Rocket's Kangaskhan ex (me2pt5-162): unsupported; no executable behaviour family",
-        "1× Bloodmoon Ursaluna ex (sv6-141): unsupported; no executable behaviour family",
-        "1× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
-        "1× AZ's Tranquility (me4-76): unsupported; no executable behaviour family",
-        "1× Precious Trolley (sv8-185): unsupported; no executable behaviour family",
-        "1× Light Ball (me2pt5-191): unsupported; no executable behaviour family"
-      ],
+      "missingBehaviourFamilyIds": [],
+      "blockers": [],
       "tags": {
         "energyTypes": [
           "Grass",

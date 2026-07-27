@@ -428,9 +428,10 @@
       "sourceCollectorNumber": "21",
       "chosenCardId": "me4-21",
       "chosenCardName": "Frogadier",
+      "behaviourFamilyId": "behaviour:1oqi5d",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -439,9 +440,10 @@
       "sourceCollectorNumber": "106",
       "chosenCardId": "sv6-106",
       "chosenCardName": "Greninja ex",
+      "behaviourFamilyId": "behaviour:ww8z5a",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -450,9 +452,10 @@
       "sourceCollectorNumber": "22",
       "chosenCardId": "me4-22",
       "chosenCardName": "Mega Greninja ex",
+      "behaviourFamilyId": "behaviour:2rm6ve",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -461,9 +464,10 @@
       "sourceCollectorNumber": "120",
       "chosenCardId": "sv9-120",
       "chosenCardName": "Dunsparce",
+      "behaviourFamilyId": "behaviour:1wra8ia",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -472,9 +476,10 @@
       "sourceCollectorNumber": "129",
       "chosenCardId": "sv5-129",
       "chosenCardName": "Dudunsparce",
+      "behaviourFamilyId": "behaviour:1crg1w0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -483,9 +488,10 @@
       "sourceCollectorNumber": "121",
       "chosenCardId": "sv9-121",
       "chosenCardName": "Dudunsparce ex",
+      "behaviourFamilyId": "behaviour:nwk6eo",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -530,9 +536,10 @@
       "sourceCollectorNumber": "39",
       "chosenCardId": "me2pt5-39",
       "chosenCardName": "Psyduck",
+      "behaviourFamilyId": "behaviour:197co3m",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -553,9 +560,10 @@
       "sourceCollectorNumber": "84",
       "chosenCardId": "rsv10pt5-84",
       "chosenCardName": "Hilda",
+      "behaviourFamilyId": "behaviour:nj70wl",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -576,9 +584,10 @@
       "sourceCollectorNumber": "76",
       "chosenCardId": "me4-76",
       "chosenCardName": "AZ's Tranquility",
+      "behaviourFamilyId": "behaviour:13bg879",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -671,9 +680,10 @@
       "sourceCollectorNumber": "181",
       "chosenCardId": "me2pt5-181",
       "chosenCardName": "Air Balloon",
+      "behaviourFamilyId": "behaviour:1rvb2gh",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -682,9 +692,10 @@
       "sourceCollectorNumber": "129",
       "chosenCardId": "me1-129",
       "chosenCardName": "Surfing Beach",
+      "behaviourFamilyId": "behaviour:16g91z9",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 7,
@@ -705,9 +716,10 @@
       "sourceCollectorNumber": "86",
       "chosenCardId": "rsv10pt5-86",
       "chosenCardName": "Ignition Energy",
+      "behaviourFamilyId": "behaviour:uy1egs",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -716,9 +728,10 @@
       "sourceCollectorNumber": "162",
       "chosenCardId": "sv5-162",
       "chosenCardName": "Neo Upper Energy",
+      "behaviourFamilyId": "behaviour:1ptf0wy",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     }
   ],
   "compositionFingerprint": "composition-rshlng",
@@ -728,43 +741,15 @@
   "exactResolvedCopies": 53,
   "canonicalEquivalentCopies": 7,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 30,
+    "complete": 53,
     "generated": 7,
-    "partial": 3,
-    "unsupported": 20
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me1-129",
-    "unimplemented:me2pt5-181",
-    "unimplemented:me2pt5-39",
-    "unimplemented:me4-21",
-    "unimplemented:me4-22",
-    "unimplemented:me4-76",
-    "unimplemented:rsv10pt5-84",
-    "unimplemented:rsv10pt5-86",
-    "unimplemented:sv5-129",
-    "unimplemented:sv5-162",
-    "unimplemented:sv6-106",
-    "unimplemented:sv9-120",
-    "unimplemented:sv9-121"
-  ],
-  "blockers": [
-    "3× Frogadier (me4-21): unsupported; no executable behaviour family",
-    "2× Greninja ex (sv6-106): unsupported; no executable behaviour family",
-    "2× Mega Greninja ex (me4-22): unsupported; no executable behaviour family",
-    "2× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-    "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
-    "1× Dudunsparce ex (sv9-121): unsupported; no executable behaviour family",
-    "1× Psyduck (me2pt5-39): partial; no executable behaviour family",
-    "3× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-    "1× AZ's Tranquility (me4-76): unsupported; no executable behaviour family",
-    "1× Air Balloon (me2pt5-181): unsupported; no executable behaviour family",
-    "2× Surfing Beach (me1-129): unsupported; no executable behaviour family",
-    "2× Ignition Energy (rsv10pt5-86): unsupported; no executable behaviour family",
-    "1× Neo Upper Energy (sv5-162): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Water"

@@ -346,9 +346,10 @@
       "sourceCollectorNumber": "50",
       "chosenCardId": "sv8pt5-50",
       "chosenCardName": "Riolu",
+      "behaviourFamilyId": "behaviour:1659mw9",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -357,9 +358,10 @@
       "sourceCollectorNumber": "76",
       "chosenCardId": "me1-76",
       "chosenCardName": "Riolu",
+      "behaviourFamilyId": "behaviour:u5j3ce",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -368,9 +370,10 @@
       "sourceCollectorNumber": "77",
       "chosenCardId": "me1-77",
       "chosenCardName": "Mega Lucario ex",
+      "behaviourFamilyId": "behaviour:1b1323z",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 3,
@@ -379,9 +382,10 @@
       "sourceCollectorNumber": "120",
       "chosenCardId": "sv9-120",
       "chosenCardName": "Dunsparce",
+      "behaviourFamilyId": "behaviour:1wra8ia",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -390,9 +394,10 @@
       "sourceCollectorNumber": "129",
       "chosenCardId": "sv5-129",
       "chosenCardName": "Dudunsparce",
+      "behaviourFamilyId": "behaviour:1crg1w0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -401,9 +406,10 @@
       "sourceCollectorNumber": "121",
       "chosenCardId": "sv9-121",
       "chosenCardName": "Dudunsparce ex",
+      "behaviourFamilyId": "behaviour:nwk6eo",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -412,9 +418,10 @@
       "sourceCollectorNumber": "75",
       "chosenCardId": "me1-75",
       "chosenCardName": "Solrock",
+      "behaviourFamilyId": "behaviour:z1nfym",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -423,9 +430,10 @@
       "sourceCollectorNumber": "74",
       "chosenCardId": "me1-74",
       "chosenCardName": "Lunatone",
+      "behaviourFamilyId": "behaviour:eesy8",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -458,9 +466,10 @@
       "sourceCollectorNumber": "84",
       "chosenCardId": "rsv10pt5-84",
       "chosenCardName": "Hilda",
+      "behaviourFamilyId": "behaviour:nj70wl",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -469,9 +478,10 @@
       "sourceCollectorNumber": "116",
       "chosenCardId": "me1-116",
       "chosenCardName": "Fighting Gong",
+      "behaviourFamilyId": "behaviour:1r6oyla",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -480,9 +490,10 @@
       "sourceCollectorNumber": "124",
       "chosenCardId": "me1-124",
       "chosenCardName": "Premium Power Pro",
+      "behaviourFamilyId": "behaviour:1gauv2e",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -551,9 +562,10 @@
       "sourceCollectorNumber": "153",
       "chosenCardId": "sv6-153",
       "chosenCardName": "Jamming Tower",
+      "behaviourFamilyId": "behaviour:kzzpij",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 8,
@@ -574,9 +586,10 @@
       "sourceCollectorNumber": "87",
       "chosenCardId": "me3-87",
       "chosenCardName": "Rocky Fighting Energy",
+      "behaviourFamilyId": "behaviour:1dompzd",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -585,9 +598,10 @@
       "sourceCollectorNumber": "167",
       "chosenCardId": "sv6-167",
       "chosenCardName": "Legacy Energy",
+      "behaviourFamilyId": "behaviour:1lb46x0",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     }
   ],
   "compositionFingerprint": "composition-1knfnnm",
@@ -597,45 +611,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 19,
+    "complete": 52,
     "generated": 8,
-    "partial": 4,
-    "unsupported": 29
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me1-116",
-    "unimplemented:me1-124",
-    "unimplemented:me1-74",
-    "unimplemented:me1-75",
-    "unimplemented:me1-76",
-    "unimplemented:me1-77",
-    "unimplemented:me3-87",
-    "unimplemented:rsv10pt5-84",
-    "unimplemented:sv5-129",
-    "unimplemented:sv6-153",
-    "unimplemented:sv6-167",
-    "unimplemented:sv8pt5-50",
-    "unimplemented:sv9-120",
-    "unimplemented:sv9-121"
-  ],
-  "blockers": [
-    "3× Riolu (sv8pt5-50): unsupported; no executable behaviour family",
-    "1× Riolu (me1-76): unsupported; no executable behaviour family",
-    "3× Mega Lucario ex (me1-77): unsupported; no executable behaviour family",
-    "3× Dunsparce (sv9-120): unsupported; no executable behaviour family",
-    "2× Dudunsparce (sv5-129): partial; no executable behaviour family",
-    "1× Dudunsparce ex (sv9-121): unsupported; no executable behaviour family",
-    "2× Solrock (me1-75): unsupported; no executable behaviour family",
-    "2× Lunatone (me1-74): partial; no executable behaviour family",
-    "2× Hilda (rsv10pt5-84): unsupported; no executable behaviour family",
-    "4× Fighting Gong (me1-116): unsupported; no executable behaviour family",
-    "4× Premium Power Pro (me1-124): unsupported; no executable behaviour family",
-    "1× Jamming Tower (sv6-153): unsupported; no executable behaviour family",
-    "4× Rocky Fighting Energy (me3-87): unsupported; no executable behaviour family",
-    "1× Legacy Energy (sv6-167): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Fighting"

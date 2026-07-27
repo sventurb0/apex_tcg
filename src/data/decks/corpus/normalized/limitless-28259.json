@@ -410,9 +410,10 @@
       "sourceCollectorNumber": "35",
       "chosenCardId": "sv8pt5-35",
       "chosenCardName": "Duskull",
+      "behaviourFamilyId": "behaviour:1nj2wg4",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -421,9 +422,10 @@
       "sourceCollectorNumber": "36",
       "chosenCardId": "sv8pt5-36",
       "chosenCardName": "Dusclops",
+      "behaviourFamilyId": "behaviour:b77qwg",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -432,9 +434,10 @@
       "sourceCollectorNumber": "37",
       "chosenCardId": "sv8pt5-37",
       "chosenCardName": "Dusknoir",
+      "behaviourFamilyId": "behaviour:jvghrk",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -660,23 +663,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 48,
+    "complete": 53,
     "generated": 7,
-    "partial": 2,
-    "unsupported": 3
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:sv8pt5-35",
-    "unimplemented:sv8pt5-36",
-    "unimplemented:sv8pt5-37"
-  ],
-  "blockers": [
-    "2× Duskull (sv8pt5-35): unsupported; no executable behaviour family",
-    "2× Dusclops (sv8pt5-36): partial; no executable behaviour family",
-    "1× Dusknoir (sv8pt5-37): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

@@ -1,5 +1,5 @@
 import type { GameAction, PlayerId } from "./actions";
-import type { CardDefinition, CardInstance, PokemonInPlay } from "./cards";
+import type { CardDefinition, CardInstance, CardType, PokemonInPlay } from "./cards";
 import type { GameResult } from "./results";
 
 export type GamePhase = "setup" | "main" | "choice" | "game-over";
@@ -8,7 +8,7 @@ export interface PlayerState {
   id: PlayerId; deckId: string; deck: CardInstance[]; hand: CardInstance[]; prizes: CardInstance[]; discard: CardInstance[];
   active: PokemonInPlay | null; bench: PokemonInPlay[];
   energyAttachedThisTurn: boolean; supporterPlayedThisTurn: boolean; stadiumPlayedThisTurn: boolean; stadiumAbilityUsedThisTurn: boolean;
-  retreatedThisTurn: boolean; turnsTaken: number; mulligans: number; prizesTaken: number;
+  retreatedThisTurn: boolean; attacksUsedThisTurn?: number; turnsTaken: number; mulligans: number; prizesTaken: number;
   abilityUsageByName: Record<string, number>;
 }
 
@@ -18,7 +18,11 @@ export type TemporaryEffect =
   | { kind: "attack-lock"; playerId: PlayerId; pokemonId: string; attackId: string; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "retreat-lock"; playerId: PlayerId; pokemonId: string; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "item-lock"; playerId: PlayerId; appliesOnPlayerTurn: number; sourceCardId: string }
-  | { kind: "ability-lock"; playerId: PlayerId; pokemonId?: string; appliesOnPlayerTurn: number; sourceCardId: string };
+  | { kind: "ability-lock"; playerId: PlayerId; pokemonId?: string; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "damage-reduction"; playerId: PlayerId; pokemonId: string; amount: number; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "attack-cost-increase"; playerId: PlayerId; pokemonId: string; amount: number; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "attack-prevention"; playerId: PlayerId; pokemonId: string; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "attack-damage-bonus"; playerId: PlayerId; amount: number; pokemonType?: CardType; appliesOnPlayerTurn: number; sourceCardId: string };
 
 export interface PendingKnockOutCause { cause: KnockOutCause; sourcePlayerId: PlayerId; sourceCardId?: string; }
 

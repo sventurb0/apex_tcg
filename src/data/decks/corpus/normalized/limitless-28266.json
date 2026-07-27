@@ -538,9 +538,10 @@
       "sourceCollectorNumber": "114",
       "chosenCardId": "sv7-114",
       "chosenCardName": "Hoothoot",
+      "behaviourFamilyId": "behaviour:y526gr",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -549,9 +550,10 @@
       "sourceCollectorNumber": "115",
       "chosenCardId": "sv7-115",
       "chosenCardName": "Noctowl",
+      "behaviourFamilyId": "behaviour:12xsoi2",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -765,21 +767,15 @@
   "exactResolvedCopies": 46,
   "canonicalEquivalentCopies": 14,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 42,
+    "complete": 44,
     "generated": 16,
-    "partial": 1,
-    "unsupported": 1
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:sv7-114",
-    "unimplemented:sv7-115"
-  ],
-  "blockers": [
-    "1× Hoothoot (sv7-114): unsupported; no executable behaviour family",
-    "1× Noctowl (sv7-115): partial; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Grass"

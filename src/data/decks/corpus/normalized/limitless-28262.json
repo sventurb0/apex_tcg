@@ -594,9 +594,10 @@
       "sourceCollectorNumber": "14",
       "chosenCardId": "me2-14",
       "chosenCardName": "Moltres",
+      "behaviourFamilyId": "behaviour:1szdaxp",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -629,9 +630,10 @@
       "sourceCollectorNumber": "121",
       "chosenCardId": "me2pt5-121",
       "chosenCardName": "Koraidon ex",
+      "behaviourFamilyId": "behaviour:1cufsxi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -664,9 +666,10 @@
       "sourceCollectorNumber": "146",
       "chosenCardId": "sv9-146",
       "chosenCardName": "Brock's Scouting",
+      "behaviourFamilyId": "behaviour:e2w8gw",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -759,9 +762,10 @@
       "sourceCollectorNumber": "152",
       "chosenCardId": "sv5-152",
       "chosenCardName": "Hero's Cape",
+      "behaviourFamilyId": "behaviour:1s9wfx",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -794,9 +798,10 @@
       "sourceCollectorNumber": "216",
       "chosenCardId": "me2pt5-216",
       "chosenCardName": "Prism Energy",
+      "behaviourFamilyId": "behaviour:1hukgec",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -866,27 +871,15 @@
   "exactResolvedCopies": 49,
   "canonicalEquivalentCopies": 11,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 46,
+    "complete": 52,
     "generated": 8,
     "partial": 0,
-    "unsupported": 6
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:me2-14",
-    "unimplemented:me2pt5-121",
-    "unimplemented:me2pt5-216",
-    "unimplemented:sv5-152",
-    "unimplemented:sv9-146"
-  ],
-  "blockers": [
-    "1× Moltres (me2-14): unsupported; no executable behaviour family",
-    "1× Koraidon ex (me2pt5-121): unsupported; no executable behaviour family",
-    "1× Brock's Scouting (sv9-146): unsupported; no executable behaviour family",
-    "1× Hero's Cape (sv5-152): unsupported; no executable behaviour family",
-    "2× Prism Energy (me2pt5-216): unsupported; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

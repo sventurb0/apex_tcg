@@ -492,9 +492,10 @@
       "sourceCollectorNumber": "41",
       "chosenCardId": "sv10-41",
       "chosenCardName": "Combusken",
+      "behaviourFamilyId": "behaviour:1cfe7bb",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -503,9 +504,10 @@
       "sourceCollectorNumber": "24",
       "chosenCardId": "sv9-24",
       "chosenCardName": "Blaziken ex",
+      "behaviourFamilyId": "behaviour:x6hbh2",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 2,
@@ -574,9 +576,10 @@
       "sourceCollectorNumber": "39",
       "chosenCardId": "sv6-39",
       "chosenCardName": "Chi-Yu",
+      "behaviourFamilyId": "behaviour:wksxwi",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "unsupported"
+      "support": "complete"
     },
     {
       "quantity": 1,
@@ -585,9 +588,10 @@
       "sourceCollectorNumber": "10",
       "chosenCardId": "sv10-10",
       "chosenCardName": "Shaymin",
+      "behaviourFamilyId": "behaviour:sjufrj",
       "resolution": "exact",
       "reason": "Source set code and collector number matched the exact local catalogue printing.",
-      "support": "partial"
+      "support": "complete"
     },
     {
       "quantity": 4,
@@ -789,25 +793,15 @@
   "exactResolvedCopies": 52,
   "canonicalEquivalentCopies": 8,
   "unresolvedCopies": 0,
-  "simulationReady": false,
+  "simulationReady": true,
   "supportCounts": {
-    "complete": 48,
+    "complete": 53,
     "generated": 7,
-    "partial": 1,
-    "unsupported": 4
+    "partial": 0,
+    "unsupported": 0
   },
-  "missingBehaviourFamilyIds": [
-    "unimplemented:sv10-10",
-    "unimplemented:sv10-41",
-    "unimplemented:sv6-39",
-    "unimplemented:sv9-24"
-  ],
-  "blockers": [
-    "1× Combusken (sv10-41): unsupported; no executable behaviour family",
-    "2× Blaziken ex (sv9-24): unsupported; no executable behaviour family",
-    "1× Chi-Yu (sv6-39): unsupported; no executable behaviour family",
-    "1× Shaymin (sv10-10): partial; no executable behaviour family"
-  ],
+  "missingBehaviourFamilyIds": [],
+  "blockers": [],
   "tags": {
     "energyTypes": [
       "Darkness",

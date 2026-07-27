@@ -69,6 +69,7 @@ function preparePlayer(
       stadiumPlayedThisTurn: false,
       stadiumAbilityUsedThisTurn: false,
       retreatedThisTurn: false,
+      attacksUsedThisTurn: 0,
       turnsTaken: 0,
       mulligans,
       prizesTaken: 0,
