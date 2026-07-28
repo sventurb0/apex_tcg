@@ -101,6 +101,7 @@ export function createGame(config: GameConfig): GameState {
     detailedLogs: config.detailedLogs ?? true,
     cardDefinitions: definitions,
     stadium: null,
+    executionEvidence: [],
     temporaryEffects: [],
     pendingKnockOutCause: null,
   };

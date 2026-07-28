@@ -2,6 +2,15 @@ import type { CardInstance, PokemonInPlay } from "../model/cards";
 import type { GameState } from "../model/game-state";
 import { cardFor, topCard } from "./helpers";
 
+export function canEvolveInto(state: GameState, playerId: "player-one" | "player-two", target: PokemonInPlay, evolution: CardInstance): boolean {
+  const player = state.players[playerId];
+  const card = cardFor(state, evolution);
+  if (player.turnsTaken <= 1 || card.category !== "pokemon" || card.stage === "basic" || !card.evolvesFrom || topCard(state, target).name !== card.evolvesFrom || target.evolvedThisTurn) return false;
+  const forest = state.stadium ? cardFor(state, state.stadium).effectProgramId === "stadium:forest-of-vitality" : false;
+  const sameTurnGrass = forest && target.enteredPlayTurn === state.turn && topCard(state, target).pokemonType === "grass" && card.pokemonType === "grass";
+  return target.enteredPlayTurn < state.turn || sameTurnGrass;
+}
+
 export function isRareCandyPair(state: GameState, basic: PokemonInPlay, stage2Instance: CardInstance): boolean {
   const basicCard = topCard(state, basic); const stage2 = cardFor(state, stage2Instance);
   if (basicCard.stage !== "basic" || stage2.category !== "pokemon" || stage2.stage !== "stage2" || !stage2.evolvesFrom) return false;

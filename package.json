@@ -26,6 +26,8 @@
     "decks:rebuild": "tsx scripts/deck-sources/rebuild-checked-in-corpus.ts",
     "decks:matrices": "tsx scripts/report-tournament-matrices.ts",
     "choices:audit": "tsx scripts/choices-audit.ts",
+    "presentation:audit": "tsx scripts/presentation-audit.ts",
+    "programs:execution-audit": "tsx scripts/programs-execution-audit.ts",
     "semantics:audit": "tsx scripts/semantics-audit.ts --fail",
     "semantics:corpus": "tsx scripts/semantics-audit.ts --write-json",
     "semantics:report": "tsx scripts/semantics-audit.ts --write-json --write-md",
@@ -42,6 +44,13 @@
     "acceptance:team-rocket": "tsx scripts/verify-team-rocket-acceptance.ts",
     "acceptance:deck-architect": "tsx scripts/verify-deck-architect.ts",
     "acceptance:meta-decks": "tsx scripts/acceptance-meta-decks.ts"
+    ,"acceptance:architect-product": "tsx scripts/acceptance-architect-product.ts"
+    ,"acceptance:architect-benchmarks": "tsx scripts/acceptance-architect-benchmarks.ts"
+    ,"acceptance:architect-vs-legacy": "tsx scripts/acceptance-architect-vs-legacy.ts"
+    ,"acceptance:architect-screening": "tsx scripts/acceptance-architect-screening.ts"
+    ,"acceptance:play-presentation": "node scripts/acceptance-play-presentation.mjs"
+    ,"acceptance:tournament-smoke-shards": "tsx scripts/acceptance-tournament-smoke-shards.ts"
+    ,"acceptance:tournament-smoke-merge": "tsx scripts/acceptance-tournament-smoke-merge.ts"
     ,"acceptance:rocket-mewtwo": "tsx scripts/acceptance-tournament-runtime.ts rocket-mewtwo"
     ,"acceptance:dragapult": "tsx scripts/acceptance-tournament-runtime.ts dragapult"
     ,"acceptance:ns-zoroark": "tsx scripts/acceptance-tournament-runtime.ts ns-zoroark"

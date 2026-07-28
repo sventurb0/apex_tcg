@@ -27,7 +27,7 @@ function genericScore(action: GameAction, observation: PlayerObservation): numbe
     case "attach-energy": return 600;
     case "bench-basic": return action.description.includes("setup Bench") ? observation.self.bench.length < 3 ? 19_500 : 17_500 : observation.self.bench.length < 2 ? 500 : 120;
     case "use-ability": return 450;
-    case "use-stadium": return 500;
+    case "use-stadium": return action.description.includes("Academy at Night") ? (/Slowking|Slowpoke|Seek Inspiration/i.test(action.description) ? 550 : -500) : 500;
     case "play-trainer": return 250;
     case "retreat": return -100;
     case "end-turn": return 0;

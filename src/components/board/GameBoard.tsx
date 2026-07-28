@@ -2,6 +2,8 @@ import { useMemo, useState } from "react";
 import type { GameAction, PlayerId } from "../../../engine/model/actions";
 import type { CardInstance } from "../../../engine/model/cards";
 import type { AllocationChoice, EffectChoice, GameState, PlayerState } from "../../../engine/model/game-state";
+import { benchCapacity } from "../../../engine/rules/shared-mechanics";
+import { describePokemonTarget, describePlayer } from "../../../engine/presentation/entity-labels";
 import { currentCatalogueIndex, type CatalogueIndex, type PokemonCardMetadata } from "../../data/pokemon";
 import { CardDetailsDialog } from "../cards/CardDetailsDialog";
 import { actionCategoryLabels, actionCategoryOrder, groupLegalActions } from "./action-presentation";
@@ -22,7 +24,7 @@ function PlayerField({ state, index, playerId, hidden, onOpen, display }: { stat
     <ZoneSummary player={player} opponent={hidden} />
     <div className="field-row">
       <div className="active-slot"><h4>Active</h4>{player.active ? <ActiveBattleCard state={state} index={index} pokemon={player.active} onOpen={onOpen} display={display} /> : <EmptyBattleCard />}</div>
-      <div className="bench"><h4>Bench ({player.bench.length}/5)</h4><div className="card-row bench-row">{player.bench.map((pokemon) => <BenchBattleCard state={state} index={index} pokemon={pokemon} onOpen={onOpen} display={display} key={pokemon.stack.at(-1)!.instanceId} />)}</div></div>
+      <div className="bench"><h4>Bench ({player.bench.length}/{benchCapacity(state, playerId)})</h4><div className="card-row bench-row">{player.bench.map((pokemon) => <BenchBattleCard state={state} index={index} pokemon={pokemon} onOpen={onOpen} display={display} key={pokemon.stack.at(-1)!.instanceId} />)}</div></div>
     </div>
     {!hidden && <div className="hand-zone"><h4>Your hand · {player.hand.length}</h4><div className="card-row hand">{groupHandCards(player.hand).map((group) => <HandBattleCard index={index} group={group} onOpen={onOpen} display={display} key={group.cardId} />)}</div></div>}
     {hidden && <div className="hidden-hand" aria-label={`${player.hand.length} hidden cards`}>{Array.from({ length: Math.min(10, player.hand.length) }, (_, position) => <span key={position} />)}</div>}
@@ -62,19 +64,18 @@ function PendingCardChoices({ state, index, choice, actions, onAction }: { state
       const removeId = [...selected].reverse()[0];
       const add = actions.find((action) => action.type === "select-card" && action.selectionId === addId);
       const remove = actions.find((action) => action.type === "deselect-card" && action.selectionId === removeId);
-      const name = index.byId.get(cardId)?.name ?? state.cardDefinitions[cardId]?.name ?? cardId;
+      const name = index.byId.get(cardId)?.name ?? state.cardDefinitions[cardId]?.name ?? "Card";
       return <div className="pending-quantity-row" key={cardId}><span><b>{name}</b><small>×{instanceIds.length} eligible · Selected: {selected.length}</small></span><span className="pending-stepper"><button disabled={!remove} onClick={() => remove && onAction(remove)} aria-label={`Remove one ${name}`}>−</button><b>{selected.length}</b><button disabled={!add} onClick={() => add && onAction(add)} aria-label={`Select one ${name}`}>+</button></span></div>;
     })}
   </div>;
 }
 
 function PendingAllocationChoice({ state, choice, actions, onAction }: { state: GameState; choice: AllocationChoice; actions: GameAction[]; onAction: (action: GameAction) => void }) {
-  const opponent = state.players[choice.playerId === "player-one" ? "player-two" : "player-one"];
-  const target = (id: string) => [opponent.active, ...opponent.bench].find((pokemon) => pokemon && pokemon.stack.at(-1)?.instanceId === id);
+  const target = (id: string) => [state.players["player-one"].active, ...state.players["player-one"].bench, state.players["player-two"].active, ...state.players["player-two"].bench].find((pokemon) => pokemon && pokemon.stack.at(-1)?.instanceId === id);
   return <div className="pending-allocation-choices" aria-label="Damage counter allocation">
     <div className="allocation-summary"><strong>{choice.instruction}</strong><span>Remaining: {choice.remainingUnits}</span></div>
     {choice.eligibleIds.map((targetId) => {
-      const pokemon = target(targetId); const assigned = choice.allocations[targetId] ?? 0; const card = pokemon ? state.cardDefinitions[pokemon.stack.at(-1)!.cardId] : undefined; const increase = actions.find((action) => action.type === "increase-allocation" && action.targetId === targetId); const decrease = actions.find((action) => action.type === "decrease-allocation" && action.targetId === targetId); return <div className="allocation-row" key={targetId}><span><b>{card?.name ?? targetId}</b><small>Current damage {pokemon?.damage ?? 0} · Assigned {assigned} · Projected {((pokemon?.damage ?? 0) + assigned * 10)} / {pokemon ? card?.category === "pokemon" ? card.hp : "?" : "?"}</small></span><span className="pending-stepper"><button disabled={!decrease} onClick={() => decrease && onAction(decrease)} aria-label={`Remove one ${card?.name ?? "target"} damage counter`}>−</button><b>{assigned}</b><button disabled={!increase} onClick={() => increase && onAction(increase)} aria-label={`Assign one ${card?.name ?? "target"} damage counter`}>+</button></span></div>;
+      const pokemon = target(targetId); const assigned = choice.allocations[targetId] ?? 0; const card = pokemon ? state.cardDefinitions[pokemon.stack.at(-1)!.cardId] : undefined; const label = describePokemonTarget(state, choice.playerId, targetId); const increase = actions.find((action) => action.type === "increase-allocation" && action.targetId === targetId); const decrease = actions.find((action) => action.type === "decrease-allocation" && action.targetId === targetId); return <div className="allocation-row" key={targetId}><span><b>{label}</b><small>Current damage: {pokemon?.damage ?? 0} · Assigned: {assigned} counters · Projected: {((pokemon?.damage ?? 0) + assigned * 10)} / {pokemon ? card?.category === "pokemon" ? card.hp : "?" : "?"} HP</small></span><span className="pending-stepper"><button disabled={!decrease} onClick={() => decrease && onAction(decrease)} aria-label={`Remove one damage counter from ${label}`}>−</button><b>{assigned}</b><button disabled={!increase} onClick={() => increase && onAction(increase)} aria-label={`Assign one damage counter to ${label}`}>+</button></span></div>;
     })}
     <div className="allocation-actions">{actions.filter((action) => action.type === "clear-allocation" || action.type === "confirm-allocation").map((action) => <button className={action.type === "confirm-allocation" ? "primary" : ""} key={action.id} onClick={() => onAction(action)}>{action.description}</button>)}</div>
   </div>;
@@ -94,13 +95,13 @@ export function GameBoard({ state, index = currentCatalogueIndex(), actions, onA
   return <div className="game-layout" data-testid="compact-game-board">
     <div className="board-panel">
       <PlayerField state={state} index={index} playerId="player-two" hidden onOpen={setSelected} display={display} />
-      <div className="turn-strip"><span>Turn <b>{state.turn}</b></span><span>Phase <b>{state.phase}</b></span><span>Acting <b>{state.pendingChoice?.playerId ?? state.activePlayerId}</b></span><span>Energy {state.players["player-one"].energyAttachedThisTurn ? "used" : "ready"}</span><span>Supporter {state.players["player-one"].supporterPlayedThisTurn ? "used" : "ready"}</span></div>
+      <div className="turn-strip"><span>Turn <b>{state.turn}</b></span><span>Phase <b>{state.phase === "choice" ? "Choice" : state.phase}</b></span><span>Acting <b>{describePlayer("player-one", state.pendingChoice?.playerId ?? state.activePlayerId)}</b></span><span>Energy {state.players["player-one"].energyAttachedThisTurn ? "used" : "ready"}</span><span>Supporter {state.players["player-one"].supporterPlayedThisTurn ? "used" : "ready"}</span></div>
       <PlayerField state={state} index={index} playerId="player-one" onOpen={setSelected} display={display} />
     </div>
     <aside className="actions-panel">
       <div className="actions-scroll">
         <h2>Legal actions</h2><fieldset className="game-display-pref" aria-label="Card display preference">{(["images","text","hybrid"] as const).map((value) => <button className={display === value ? "selected" : ""} onClick={() => chooseDisplay(value)} key={value}>{value === "text" ? "Compact text" : value === "images" ? "Card images" : "Hybrid"}</button>)}</fieldset>
-        {state.pendingChoice?.type === "effect-choice" && <div className="effect-choice-status" role="status"><strong>{state.pendingChoice.instruction}</strong><span>{state.pendingChoice.optional ? "Optional" : "Mandatory"} · select {state.pendingChoice.min}–{state.pendingChoice.max}</span><span>{state.pendingChoice.selectedIds.length} selected</span><small>Resolving {state.pendingChoice.sourceEffectId}</small></div>}
+        {state.pendingChoice?.type === "effect-choice" && <div className="effect-choice-status" role="status"><strong>{state.pendingChoice.instruction}</strong><span>{state.pendingChoice.optional ? "Optional" : "Your choice"} · Choose {state.pendingChoice.min === state.pendingChoice.max ? `${state.pendingChoice.min}` : `up to ${state.pendingChoice.max}`} {state.pendingChoice.selectionKind === "pokemon" ? "Pokémon" : state.pendingChoice.selectionKind === "card" ? "cards" : "an option"}</span><span>{state.pendingChoice.selectedIds.length} selected</span><small>Resolving {state.cardDefinitions[state.pendingChoice.sourceCardId]?.name ?? "card effect"}</small></div>}
         {allocationChoice && <PendingAllocationChoice state={state} choice={allocationChoice} actions={actions} onAction={onAction} />}
         {quantityChoice && <PendingCardChoices state={state} index={index} choice={quantityChoice} actions={actions} onAction={onAction} />}
         {state.events.at(-1)?.type === "coin-flip" && <div className="coin-result">Coin flip: <b>{state.events.at(-1)?.detail}</b></div>}

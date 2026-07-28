@@ -3,11 +3,13 @@ export interface EffectProgramDefinition {
   coveredClauseIds: readonly string[];
   implementationKind: "runner" | "rule" | "modifier" | "damage-formula";
   testReferences: readonly string[];
+  implementationLocator?: { module: string; symbol: string };
+  focusedTestIds?: readonly string[];
 }
 
 // This registry is intentionally explicit. Dynamic template IDs are validated by
 // their prefix and every concrete program must be added here as it is implemented.
-export const effectProgramRegistry: Readonly<Record<string, EffectProgramDefinition>> = {
+const rawEffectProgramRegistry: Readonly<Record<string, EffectProgramDefinition>> = {
   "ability:fire-off": { id: "ability:fire-off", coveredClauseIds: ["energy-movement"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "ability:teal-dance": { id: "ability:teal-dance", coveredClauseIds: ["energy-attach", "draw"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "ability:ripening-charge": { id: "ability:ripening-charge", coveredClauseIds: ["energy-attach", "heal"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
@@ -157,6 +159,17 @@ export const effectProgramRegistry: Readonly<Record<string, EffectProgramDefinit
   "passive:sunny-day": { id: "passive:sunny-day", coveredClauseIds: ["grass-fire-damage-bonus"], implementationKind: "modifier", testReferences: ["tests/engine/shared-mechanics.test.ts"] },
   "passive:resolute-heart": { id: "passive:resolute-heart", coveredClauseIds: ["full-hp-ko-prevention"], implementationKind: "rule", testReferences: ["tests/engine/shared-mechanics.test.ts"] },
 };
+
+export const effectProgramRegistry: Readonly<Record<string, EffectProgramDefinition>> = Object.fromEntries(
+  Object.entries(rawEffectProgramRegistry).map(([id, definition]) => [id, {
+    ...definition,
+    implementationLocator: definition.implementationLocator ?? {
+      module: definition.implementationKind === "runner" ? "engine/effects/program-runner.ts" : "engine/rules/reducer.ts",
+      symbol: definition.implementationKind === "runner" ? "startEffectProgram" : definition.implementationKind,
+    },
+    focusedTestIds: definition.focusedTestIds ?? definition.testReferences.map((reference) => reference.replace(/^tests\//, "").replace(/\.test\.tsx?$/, "")),
+  }]),
+);
 
 export function isRegisteredEffectProgram(programId: string): boolean {
   return Boolean(effectProgramRegistry[programId]);

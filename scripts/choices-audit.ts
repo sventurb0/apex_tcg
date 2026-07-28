@@ -21,7 +21,9 @@ const reviewed: Array<{ token: string; reason: string }> = [
   { token: "player.deck.slice(0, 7).map", reason: "Top-seven search effects expose eligible cards through pending choices." },
   { token: "player.deck.slice(0, 5).map", reason: "Top-five reveal effects expose eligible cards through pending choices." },
   { token: "selected.map((id)", reason: "Post-choice lookup resolves the exact physical instance selected by the player." },
+  { token: "player.hand.find((candidate) => candidate.instanceId", reason: "Evolution resolves the exact physical hand instance selected by the action." },
   { token: "player.active.attachedEnergy.length === cost", reason: "Retreat auto-payment is allowed only when every eligible attached Energy card must be discarded." },
+  { token: "const attachedCard = attachId", reason: "Crispin resolves the exact deck Energy instance chosen for the subsequent attach choice." },
 ];
 const findings: Finding[] = [];
 for (const relative of files) {

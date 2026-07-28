@@ -34,13 +34,14 @@ export function attackDamageBonus(state: GameState, attacker: PokemonInPlay, tar
     const tool = cardFor(state, attacker.tool);
     if (tool.category === "trainer" && tool.effectProgramId === "tool:maximum-belt" && target && topCard(state, target).isPokemonEx) { amount += 50; sourceCardId = tool.id; }
     if (tool.category === "trainer" && tool.effectProgramId === "tool:binding-mochi" && attacker.specialConditions.includes("poisoned")) { amount += 40; sourceCardId = tool.id; }
+    if (tool.category === "trainer" && tool.effectProgramId === "tool:black-belt-training" && opponent.prizes.length === 1 && attackerCard.pokemonType === "fighting") { amount += 40; sourceCardId = tool.id; }
   }
   const reduction = state.temporaryEffects
     .filter((effect) => effect.kind === "damage-reduction" && effect.playerId === ownerId && effect.pokemonId === playId(attacker) && effect.appliesOnPlayerTurn === state.players[ownerId].turnsTaken)
     .reduce((total, effect) => total + (effect.kind === "damage-reduction" ? effect.amount : 0), 0);
   if (reduction) amount -= reduction;
   amount += state.temporaryEffects
-    .filter((effect) => effect.kind === "attack-damage-bonus" && effect.playerId === ownerId && effect.appliesOnPlayerTurn === state.players[ownerId].turnsTaken && (!effect.pokemonType || effect.pokemonType === attackerCard.pokemonType))
+    .filter((effect) => effect.kind === "attack-damage-bonus" && effect.playerId === ownerId && effect.appliesOnPlayerTurn === state.players[ownerId].turnsTaken && (!effect.pokemonType || effect.pokemonType === attackerCard.pokemonType) && (effect.sourceCardId !== "sv9-143" || Boolean(target && topCard(state, target).isPokemonEx)))
     .reduce((total, effect) => total + (effect.kind === "attack-damage-bonus" ? effect.amount : 0), 0);
   return { amount, sourceCardId };
 }

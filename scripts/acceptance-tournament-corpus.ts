@@ -33,7 +33,7 @@ if (blocked.length || unsupported.length || runtimeMissing.length) {
     const unresolvedGames = played.filter((game) => game.result.unresolved);
     return { sourceDeckId: deck.snapshot.sourceDeckId ?? deck.id, games: played.length, unresolved: unresolvedGames.length, invalidNumeric: played.reduce((sum, game) => sum + game.invalidNumericCount, 0), unresolvedDetails: unresolvedGames.length ? unresolvedGames.map((game) => ({ seed: game.seed, reason: game.result.reason, actionCount: game.actionCount, finalState: game.finalStateSummary, tail: game.actionSequence.slice(-8) })) : undefined };
   };
-  const concurrency = mode === "deep" ? 4 : 1;
+  const concurrency = mode === "deep" ? 4 : mode === "smoke" ? 8 : 1;
   for (let offset = 0; offset < ready.length; offset += concurrency) {
     const batch = ready.slice(offset, offset + concurrency);
     results.push(...await Promise.all(batch.map((deck) => Promise.resolve().then(() => evaluate(deck)))));

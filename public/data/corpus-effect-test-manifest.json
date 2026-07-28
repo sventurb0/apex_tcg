@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "description": "Focused runtime evidence manifest for the tournament corpus.",
+  "programs": [
+    { "programId": "stadium:academy-at-night", "testIds": ["academy-at-night-runtime"] },
+    { "programId": "stadium:forest-of-vitality", "testIds": ["forest-of-vitality-runtime"] },
+    { "programId": "attack:seek-inspiration", "testIds": ["slowking-seek-inspiration-runtime"] },
+    { "programId": "trainer:transformation-tome", "testIds": ["transformation-tome-runtime"] },
+    { "programId": "tool:black-belt-training", "testIds": ["black-belt-training-runtime"] }
+  ]
+}

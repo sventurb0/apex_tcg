@@ -7,7 +7,7 @@ export type GamePhase = "setup" | "main" | "choice" | "game-over";
 export interface PlayerState {
   id: PlayerId; deckId: string; deck: CardInstance[]; hand: CardInstance[]; prizes: CardInstance[]; discard: CardInstance[];
   active: PokemonInPlay | null; bench: PokemonInPlay[];
-  energyAttachedThisTurn: boolean; supporterPlayedThisTurn: boolean; stadiumPlayedThisTurn: boolean; stadiumAbilityUsedThisTurn: boolean;
+  energyAttachedThisTurn: boolean; supporterPlayedThisTurn: boolean; stadiumPlayedThisTurn: boolean; stadiumAbilityUsedThisTurn: boolean; academyUsesThisGame?: number;
   retreatedThisTurn: boolean; attacksUsedThisTurn?: number; turnsTaken: number; mulligans: number; prizesTaken: number;
   abilityUsageByName: Record<string, number>;
 }
@@ -49,9 +49,18 @@ export interface EffectChoice {
   selectedIds: string[];
   optional: boolean;
   instruction: string;
+  optionLabels?: EffectChoiceOption[];
   sourceCardId: string;
   sourceEffectId: string;
   continuation: EffectContinuation;
+}
+
+export interface EffectChoiceOption {
+  id: string;
+  label: string;
+  description?: string;
+  cardInstanceIds?: string[];
+  pokemonIds?: string[];
 }
 
 export interface AllocationChoice {
@@ -84,12 +93,13 @@ export type PendingChoice =
 
 export type GameEventType = "card-played" | "pokemon-benched" | "ability-used" | "stadium-ability-used" | "attack-used" | "cards-searched" | "cards-discarded" | "cards-recovered" | "energy-attached-manually" | "energy-attached-by-effect" | "energy-moved" | "energy-discarded-invalid" | "damage-dealt" | "damage-healed" | "damage-counters-moved" | "damage-allocation" | "special-condition-applied" | "enhanced-poison-applied" | "poison-checkup-damage" | "pokemon-evolved" | "pokemon-knocked-out" | "prize-card-taken" | "prize-modified" | "temporary-effect-applied" | "damage-modifier-applied" | "setup-completed" | "coin-flip";
 export interface GameEvent { index: number; turn: number; type: GameEventType; playerId: PlayerId; targetPlayerId?: PlayerId; sourceCardId?: string; sourceInstanceId?: string; targetId?: string; amount?: number; cardInstanceIds?: string[]; detail?: string; cause?: KnockOutCause; }
+export interface EffectExecutionEvidence { programId: string; sourceCardId: string; started: number; continued: number; completed: number; declined: number; definingEvents: string[]; }
 export interface ActionLogEntry { index: number; turn: number; playerId: PlayerId; actionId: string; description: string; }
 export interface ReplayRecord { seed: number; deckIds: [string, string]; startingPlayer: PlayerId; mulligans: Record<PlayerId, number>; actions: GameAction[]; finalResult: GameResult | null; }
 
 export interface GameState {
   seed: number; rngState: number; players: Record<PlayerId, PlayerState>; startingPlayer: PlayerId; activePlayerId: PlayerId;
   turn: number; phase: GamePhase; pendingChoice: PendingChoice | null; actionLog: ActionLogEntry[]; actionHistory: GameAction[];
-  events: GameEvent[]; result: GameResult | null; detailedLogs: boolean; cardDefinitions: Record<string, CardDefinition>; stadium: CardInstance | null;
+  events: GameEvent[]; result: GameResult | null; detailedLogs: boolean; cardDefinitions: Record<string, CardDefinition>; stadium: CardInstance | null; executionEvidence?: EffectExecutionEvidence[];
   temporaryEffects: TemporaryEffect[]; pendingKnockOutCause: PendingKnockOutCause | null;
 }

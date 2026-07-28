@@ -6,8 +6,9 @@ import { benchCapacity, canUseAttackCondition } from "./shared-mechanics";
 import { cardFor, playId, pokemonTargets, topCard } from "./helpers";
 import { hasAttackLock, hasItemLock, hasRetreatLock } from "./temporary-effects";
 import { canAttachEnergyToPokemon } from "./attachment-validity";
-import { legalRareCandyBasics } from "./evolution";
+import { canEvolveInto, legalRareCandyBasics } from "./evolution";
 import { hasCardTrait, pokemonHasTrait } from "./traits";
+import { describeCardInstance, describeChoiceOption, describePokemonTarget } from "../presentation/entity-labels";
 
 function actionId(type: string, ...parts: string[]): string { return [type, ...parts].join(":"); }
 function basicInHand(state: GameState, playerId: PlayerId) { return state.players[playerId].hand.filter((instance) => { const card = cardFor(state, instance); return card.category === "pokemon" && card.stage === "basic"; }); }
@@ -21,7 +22,7 @@ function setupActions(state: GameState, playerId: PlayerId): GameAction[] {
 }
 
 function effectChoiceActions(state: GameState, pending: EffectChoice): GameAction[] {
-  if (pending.selectionKind === "mode") return pending.eligibleIds.map((mode) => ({ id: actionId("mode", pending.choiceId, mode), type: "select-effect-mode" as const, playerId: pending.playerId, mode, description: `Choose ${mode === "both" ? "both modes" : `${mode} mode`}` }));
+  if (pending.selectionKind === "mode") return pending.eligibleIds.map((mode) => ({ id: actionId("mode", pending.choiceId, mode), type: "select-effect-mode" as const, playerId: pending.playerId, mode, description: pending.optionLabels?.find((option) => option.id === mode)?.label ?? `Choose ${mode === "both" ? "both modes" : mode}` }));
   const selected = new Set(pending.selectedIds); const actions: GameAction[] = [];
   for (const selectionId of pending.eligibleIds) {
     if (selected.has(selectionId)) actions.push({ id: actionId("deselect", pending.choiceId, selectionId), type: "deselect-card", playerId: pending.playerId, selectionId, description: "Deselect choice" });
@@ -40,8 +41,8 @@ function effectChoiceActions(state: GameState, pending: EffectChoice): GameActio
       if (pending.continuation.programId === "trainer:dawn") {
         const player = state.players[pending.playerId]; const selectedStages = pending.selectedIds.map((id) => [...player.deck, ...player.hand].find((card) => card.instanceId === id)).map((instance) => instance ? cardFor(state, instance) : undefined).flatMap((definition) => definition?.category === "pokemon" ? [definition.stage] : []); const candidate = [...player.deck, ...player.hand].find((card) => card.instanceId === selectionId); const candidateDefinition = candidate ? cardFor(state, candidate) : undefined; if (candidateDefinition?.category === "pokemon" && selectedStages.includes(candidateDefinition.stage)) continue;
       }
-      if (pending.selectionKind === "pokemon") { const pokemon = pokemonTargets(state.players[pending.playerId]).find((target) => playId(target) === selectionId); actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-pokemon", playerId: pending.playerId, selectionId, description: `Select ${pokemon ? topCard(state, pokemon).name : "Pokémon"}` }); }
-      else { const player = state.players[pending.playerId]; const instance = [...player.hand, ...player.deck, ...player.discard].find((card) => card.instanceId === selectionId); actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-card", playerId: pending.playerId, selectionId, description: `Select ${instance ? cardFor(state, instance).name : "card"}` }); }
+      if (pending.selectionKind === "pokemon") actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-pokemon", playerId: pending.playerId, selectionId, description: `Select ${describePokemonTarget(state, pending.playerId, selectionId)}` });
+      else actions.push({ id: actionId("select", pending.choiceId, selectionId), type: "select-card", playerId: pending.playerId, selectionId, description: `Select ${pending.optionLabels?.find((option) => option.id === selectionId)?.label ?? describeCardInstance(state, pending.playerId, selectionId)}` });
     }
   }
   if (pending.selectedIds.length >= pending.min && pending.selectedIds.length <= pending.max) actions.push({ id: actionId("confirm", pending.choiceId), type: "confirm-choice", playerId: pending.playerId, description: `Confirm selection (${pending.selectedIds.length})` });
@@ -49,14 +50,15 @@ function effectChoiceActions(state: GameState, pending: EffectChoice): GameActio
   return actions;
 }
 
-function allocationChoiceActions(pending: AllocationChoice): GameAction[] {
+function allocationChoiceActions(state: GameState, pending: AllocationChoice): GameAction[] {
   const actions: GameAction[] = [];
   for (const targetId of pending.eligibleIds) {
     const current = pending.allocations[targetId] ?? 0;
     const max = pending.maximumPerTarget ?? pending.totalUnits;
-    if (current < max && pending.remainingUnits > 0) actions.push({ id: actionId("increase-allocation", pending.choiceId, targetId), type: "increase-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Assign 1 ${pending.unitLabel} to ${targetId}` });
-    if (current > 0) actions.push({ id: actionId("decrease-allocation", pending.choiceId, targetId), type: "decrease-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Remove 1 ${pending.unitLabel} from ${targetId}` });
-    for (let amount = 0; amount <= Math.min(max, pending.totalUnits); amount += 1) if (amount !== current && pending.totalUnits - (pending.totalUnits - pending.remainingUnits - current) - amount >= 0) actions.push({ id: actionId("set-allocation", pending.choiceId, targetId, String(amount)), type: "set-allocation", playerId: pending.playerId, targetId, amount, description: `Set ${pending.unitLabel} allocation for ${targetId} to ${amount}` });
+    const label = describeChoiceOption(state, pending.playerId, targetId, "pokemon");
+    if (current < max && pending.remainingUnits > 0) actions.push({ id: actionId("increase-allocation", pending.choiceId, targetId), type: "increase-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Assign 1 ${pending.unitLabel} to ${label}` });
+    if (current > 0) actions.push({ id: actionId("decrease-allocation", pending.choiceId, targetId), type: "decrease-allocation", playerId: pending.playerId, targetId, amount: 1, description: `Remove 1 ${pending.unitLabel} from ${label}` });
+    for (let amount = 0; amount <= Math.min(max, pending.totalUnits); amount += 1) if (amount !== current && pending.totalUnits - (pending.totalUnits - pending.remainingUnits - current) - amount >= 0) actions.push({ id: actionId("set-allocation", pending.choiceId, targetId, String(amount)), type: "set-allocation", playerId: pending.playerId, targetId, amount, description: `Set ${label} to ${amount} ${pending.unitLabel}` });
   }
   if (Object.values(pending.allocations).some(Boolean)) actions.push({ id: actionId("clear-allocation", pending.choiceId), type: "clear-allocation", playerId: pending.playerId, description: "Clear allocation" });
   if (pending.remainingUnits === 0) actions.push({ id: actionId("confirm-allocation", pending.choiceId), type: "confirm-allocation", playerId: pending.playerId, description: "Confirm allocation" });
@@ -77,7 +79,7 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     if (pending.type === "mulligan-draw") { const actions: GameAction[] = []; if (pending.remaining > 0 && state.players[playerId].deck.length) actions.push({ id: actionId("mulligan-draw", String(pending.remaining)), type: "draw-mulligan", playerId, description: "Draw a mulligan bonus card" }); actions.push({ id: "finish-setup", type: "finish-setup", playerId, description: "Finish mulligan bonus draws" }); return actions; }
     if (pending.type === "choose-prize") return state.players[playerId].prizes.map((instance) => ({ id: actionId("choose-prize", instance.instanceId), type: "choose-prize", playerId, cardInstanceId: instance.instanceId, description: "Take a Prize card" }));
     if (pending.type === "promote") return state.players[playerId].bench.map((pokemon) => ({ id: actionId("promote", playId(pokemon)), type: "select-active", playerId, cardInstanceId: playId(pokemon), description: `Promote ${topCard(state, pokemon).name}` }));
-    if (pending.type === "allocation-choice") return allocationChoiceActions(pending);
+    if (pending.type === "allocation-choice") return allocationChoiceActions(state, pending);
     return effectChoiceActions(state, pending);
   }
   if (state.phase !== "main" || state.activePlayerId !== playerId) return [];
@@ -86,7 +88,7 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     const card = cardFor(state, instance);
     if (card.category === "pokemon" && card.stage === "basic" && player.bench.length < benchCapacity(state, playerId)) actions.push({ id: actionId("bench", instance.instanceId), type: "bench-basic", playerId, cardInstanceId: instance.instanceId, description: `Bench ${card.name}` });
     if (card.category === "energy" && !player.energyAttachedThisTurn) for (const target of pokemonTargets(player)) if (canAttachEnergyToPokemon(state, instance, target)) actions.push({ id: actionId("attach", instance.instanceId, playId(target)), type: "attach-energy", playerId, cardInstanceId: instance.instanceId, targetId: playId(target), description: `Attach ${card.name} to ${topCard(state, target).name}` });
-    if (card.category === "pokemon" && card.stage !== "basic") for (const target of pokemonTargets(player)) if (player.turnsTaken > 1 && target.enteredPlayTurn < state.turn && !target.evolvedThisTurn && topCard(state, target).name === card.evolvesFrom) actions.push({ id: actionId("evolve", instance.instanceId, playId(target)), type: "evolve", playerId, cardInstanceId: instance.instanceId, targetId: playId(target), description: `Evolve ${topCard(state, target).name} into ${card.name}` });
+    if (card.category === "pokemon" && card.stage !== "basic") for (const target of pokemonTargets(player)) if (canEvolveInto(state, playerId, target, instance)) actions.push({ id: actionId("evolve", instance.instanceId, playId(target)), type: "evolve", playerId, cardInstanceId: instance.instanceId, targetId: playId(target), description: `Evolve ${topCard(state, target).name} into ${card.name}` });
     if (card.category === "trainer") {
       if (card.subtype === "item" && hasItemLock(state, playerId)) continue;
       if (card.subtype === "supporter" && (player.supporterPlayedThisTurn || (playerId === state.startingPlayer && player.turnsTaken === 1 && !card.canPlayGoingFirstFirstTurn))) continue;
@@ -159,6 +161,7 @@ export function getLegalActions(state: GameState, playerId: PlayerId): GameActio
     }
   }
   const stadium = state.stadium ? cardFor(state, state.stadium) : null;
+  if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:academy-at-night" && !player.stadiumAbilityUsedThisTurn && (player.academyUsesThisGame ?? 0) < 8) for (const card of player.hand) actions.push({ id: actionId("stadium", stadium.id, card.instanceId), type: "use-stadium", playerId, cardInstanceId: state.stadium!.instanceId, targetId: card.instanceId, description: `Use Academy at Night: put ${cardFor(state, card).name} on top of your deck` });
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:team-rocket-factory" && !player.stadiumAbilityUsedThisTurn && playedTeamRocketSupporterThisTurn(state, playerId)) actions.push({ id: actionId("stadium", state.stadium!.instanceId, "factory"), type: "use-stadium", playerId, cardInstanceId: state.stadium!.instanceId, targetId: "factory", description: "Use Team Rocket's Factory: draw 2 cards" });
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:magma-basin" && !player.stadiumAbilityUsedThisTurn) for (const target of player.bench.filter((pokemon) => topCard(state, pokemon).pokemonType === "fire")) for (const energy of player.discard) { const def = cardFor(state, energy); if (def.category === "energy" && def.energyType === "fire") actions.push({ id: actionId("stadium", energy.instanceId, playId(target)), type: "use-stadium", playerId, cardInstanceId: energy.instanceId, targetId: playId(target), description: `Use Magma Basin on ${topCard(state, target).name}` }); }
   if (stadium?.category === "trainer" && stadium.effectProgramId === "stadium:prism-tower" && !player.stadiumAbilityUsedThisTurn && player.hand.length >= 2 && player.deck.length) actions.push({ id: actionId("stadium", state.stadium!.instanceId, "prism"), type: "use-stadium", playerId, cardInstanceId: state.stadium!.instanceId, targetId: "prism", description: "Use Prism Tower: discard 2 cards and draw 1" });
