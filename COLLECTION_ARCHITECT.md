@@ -1,5 +1,6 @@
 # Collection Architect
 
-Four construction modes are available: full library, owned only, owned plus replacements, and owned plus shopping list.
-
-Maximum simultaneous generated candidates under current quantity reservations: 6.
+- Individual decks buildable: 0 / 6
+- Maximum simultaneous assembled decks: 0 / 6
+- Portfolio conflicts: 0
+- Basic Energy inventory: unlimited

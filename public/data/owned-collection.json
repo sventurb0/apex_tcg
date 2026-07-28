@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-28T19:06:19.839Z",
+  "generatedAt": "2026-07-28T20:00:02.387Z",
   "sourceFile": "owned_collection_normalized_2026-07-27.csv",
   "basicEnergyInventory": "unlimited",
   "basicEnergyAssumption": "Basic Energy is unlimited unless the user switches collection settings to exact quantities.",

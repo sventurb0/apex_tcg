@@ -4,7 +4,7 @@ import { candidateManifest, createImplementationBacklog, generateCandidates, run
 import { compileCardImplementation, createCatalogueIndex, toRuntimeCardDefinition, type PokemonCardCatalogue, type PokemonCardMetadata } from "../src/data/pokemon";
 import { premadeDecks } from "../src/data/decks/premade";
 
-const check = (condition: unknown, message: string): asserts condition => { if (!condition) throw new Error(message); };
+const check: (condition: unknown, message: string) => asserts condition = (condition, message) => { if (!condition) throw new Error(message); };
 const catalogue = JSON.parse(readFileSync("public/data/pokemon-cards.json", "utf8")) as PokemonCardCatalogue;
 let index = createCatalogueIndex(catalogue.cards);
 const request = (favourites: ArchitectRequest["favourites"], mode: ArchitectRequest["mode"] = "simulation-ready", candidateCount: 3 | 5 | 10 = 3): ArchitectRequest => ({ favourites, mode, candidateCount, seed: 42, format: "standard" });

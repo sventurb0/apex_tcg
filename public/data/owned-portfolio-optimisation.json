@@ -1,7 +1,11 @@
 {
   "selectedDecks": 6,
-  "maximumSimultaneousDecks": 6,
+  "individualDecksBuildable": 0,
+  "maximumSimultaneousDecks": 0,
   "conflicts": [],
+  "selected": [],
+  "rejected": [],
   "totalShortage": 0,
-  "basicEnergyInventory": "unlimited"
+  "basicEnergyInventory": "unlimited",
+  "schema": "AllocatedDeckEntry { cardId, count }"
 }

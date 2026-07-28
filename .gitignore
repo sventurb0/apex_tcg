@@ -1,6 +1,8 @@
 node_modules/
 dist/
 coverage/
+!src/data/pokemon/coverage/
+!src/data/pokemon/coverage/**
 .cache/
 *.local
 *.tsbuildinfo

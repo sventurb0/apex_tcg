@@ -4,7 +4,7 @@ import { buildCoverageReport, buildCoverageSignatureIndex, buildFavouriteCoverag
 import { analyseDeck } from "../src/features/deck-builder/validation";
 import { generateCandidates, runQuickGauntlet, type ArchitectCandidate, type ArchitectRequest } from "../src/features/deck-architect";
 
-const check = (condition: unknown, message: string): asserts condition => { if (!condition) throw new Error(message); };
+const check: (condition: unknown, message: string) => asserts condition = (condition, message) => { if (!condition) throw new Error(message); };
 const catalogue = JSON.parse(readFileSync("public/data/pokemon-cards.json", "utf8")) as PokemonCardCatalogue;
 const index = createCatalogueIndex(catalogue.cards);
 const signatures = buildCoverageSignatureIndex(catalogue.cards, Object.fromEntries(premadeDecks.map((deck) => [deck.name, deck.entries.map((entry) => entry.cardId)])));

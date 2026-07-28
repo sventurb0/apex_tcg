@@ -1,4 +1,5 @@
 import type { CardImplementation, PokemonCardMetadata } from "../../data/pokemon/types";
+import type { SemanticClause } from "../../data/pokemon/semantic-coverage";
 
 export type CollectionResolutionType = "exact" | "set-id-alias" | "functional-reprint-alias";
 export type BasicEnergyInventory = "unlimited" | "exact";
@@ -46,18 +47,24 @@ export interface OwnedCollectionDocument {
 }
 
 export interface OwnedCoverageRow {
+  ownedProductIds: string[];
   catalogueCardId: string;
   canonicalBehaviourCardId: string;
   gameplayFamilyId: string;
   cardName: string;
+  cardType: "Pokémon" | "Trainer" | "Energy";
   copies: number;
-  implementationStatus: string;
-  choiceSemantics: string;
+  implementationStatus: "complete" | "generated" | "partial" | "unsupported";
+  printedClauseCount: number;
+  executionProvenClauseCount: number;
+  unmatchedClauses: SemanticClause[];
+  unknownPrograms: string[];
+  choiceSemantics: "exact" | "deterministic-no-choice" | "requires-review";
+  runtimeDefinitionAvailable: boolean;
   simulationReady: boolean;
   standardLegal: boolean;
-  unknownPrograms: string[];
   requiresReviewChoices: string[];
+  // Legacy aliases retained for the existing Collection route/report readers.
   printedClauses: number;
   coveredClauses: number;
 }
-

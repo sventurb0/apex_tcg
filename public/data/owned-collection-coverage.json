@@ -1,2248 +1,3870 @@
 {
-  "generatedAt": "2026-07-28T19:07:51.671Z",
+  "generatedAt": "2026-07-28T20:00:12.183Z",
   "summary": {
     "gameplayFamilies": 149,
     "cards": 149,
     "copies": 343,
-    "unknownPrograms": 0,
-    "choiceWarnings": 0,
-    "simulationReady": 149
+    "unknownPrograms": 106,
+    "choiceWarnings": 82,
+    "simulationReady": 64,
+    "complete": 65,
+    "generated": 6,
+    "partial": 2,
+    "unsupported": 76,
+    "missingClauses": 5,
+    "missingClauseDetails": [
+      {
+        "id": "me5-27:rule:0",
+        "kind": "rule",
+        "name": "Rule",
+        "text": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      },
+      {
+        "id": "sv10-182:energy:unbound",
+        "kind": "energy",
+        "name": "Team Rocket's Energy",
+        "text": "This card can only be attached to a Team Rocket's Pokémon. If this card is attached to anything other than a Team Rocket's Pokémon, discard this card.  As long as this card is attached to a Pokémon, it provides 2 in any combination of Psychic Energy and Darkness Energy."
+      },
+      {
+        "id": "sv4-177:attack:0",
+        "kind": "attack",
+        "name": "Devolution",
+        "text": "Devolve each of your opponent's evolved Pokémon by putting the highest Stage Evolution card on it into your opponent's hand."
+      },
+      {
+        "id": "sv4-178:attack:0",
+        "kind": "attack",
+        "name": "Evolution",
+        "text": "Choose up to 2 of your Benched Pokémon. For each of those Pokémon, search your deck for a card that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+      },
+      {
+        "id": "me3-88:energy:unbound",
+        "kind": "energy",
+        "name": "Telepathic Psychic Energy",
+        "text": "As long as this card is attached to a Pokémon, it provides Psychic Energy. When you attach this card from your hand to a Psychic Pokémon, search your deck for up to 2 Basic Psychic Pokémon and put them onto your Bench. Then, shuffle your deck."
+      }
+    ],
+    "falseReadyRows": []
   },
   "rows": [
     {
-      "catalogueCardId": "me2pt5-16",
-      "canonicalBehaviourCardId": "me2pt5-16",
-      "gameplayFamilyId": "owned:me2pt5-16",
-      "cardName": "Budew",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv6pt5-55",
-      "canonicalBehaviourCardId": "sv6pt5-55",
-      "gameplayFamilyId": "owned:sv6pt5-55",
-      "cardName": "Binding Mochi",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6pt5-54",
-      "canonicalBehaviourCardId": "sv6pt5-54",
-      "gameplayFamilyId": "owned:sv6pt5-54",
-      "cardName": "Academy at Night",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6pt5-59",
-      "canonicalBehaviourCardId": "sv6pt5-59",
-      "gameplayFamilyId": "owned:sv6pt5-59",
-      "cardName": "Janine's Secret Art",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh1-162",
-      "canonicalBehaviourCardId": "swsh1-162",
-      "gameplayFamilyId": "owned:swsh1-162",
-      "cardName": "Energy Switch",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv7-92",
-      "canonicalBehaviourCardId": "sv7-92",
-      "gameplayFamilyId": "owned:sv7-92",
-      "cardName": "Swalot",
-      "copies": 5,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me2pt5-143",
-      "canonicalBehaviourCardId": "me2pt5-143",
-      "gameplayFamilyId": "owned:me2pt5-143",
-      "cardName": "Pecharunt",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv7-91",
-      "canonicalBehaviourCardId": "sv7-91",
-      "gameplayFamilyId": "owned:sv7-91",
-      "cardName": "Gulpin",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me1-130",
-      "canonicalBehaviourCardId": "me1-130",
-      "gameplayFamilyId": "owned:me1-130",
-      "cardName": "Switch",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv5-159",
-      "canonicalBehaviourCardId": "sv5-159",
-      "gameplayFamilyId": "owned:sv5-159",
-      "cardName": "Rescue Board",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6pt5-57",
-      "canonicalBehaviourCardId": "sv6pt5-57",
-      "gameplayFamilyId": "owned:sv6pt5-57",
-      "cardName": "Colress's Tenacity",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh12pt5-128",
-      "canonicalBehaviourCardId": "swsh12pt5-128",
-      "gameplayFamilyId": "owned:swsh12pt5-128",
-      "cardName": "Energy Search",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh12pt5-129",
-      "canonicalBehaviourCardId": "swsh12pt5-129",
-      "gameplayFamilyId": "owned:swsh12pt5-129",
-      "cardName": "Energy Switch",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me1-119",
-      "canonicalBehaviourCardId": "me1-119",
-      "gameplayFamilyId": "owned:me1-119",
-      "cardName": "Lillie's Determination",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv5-144",
-      "canonicalBehaviourCardId": "sv5-144",
-      "gameplayFamilyId": "owned:sv5-144",
-      "cardName": "Buddy-Buddy Poffin",
-      "copies": 8,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv5-145",
-      "canonicalBehaviourCardId": "sv5-145",
-      "gameplayFamilyId": "owned:sv5-145",
-      "cardName": "Ciphermaniac's Codebreaking",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv5-156",
-      "canonicalBehaviourCardId": "sv5-156",
-      "gameplayFamilyId": "owned:sv5-156",
-      "cardName": "Perilous Jungle",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
-      "catalogueCardId": "sv7-133",
-      "canonicalBehaviourCardId": "sv7-133",
-      "gameplayFamilyId": "owned:sv7-133",
-      "cardName": "Crispin",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "xy5-135",
-      "canonicalBehaviourCardId": "xy5-135",
-      "gameplayFamilyId": "owned:xy5-135",
-      "cardName": "Rare Candy",
-      "copies": 8,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me1-131",
-      "canonicalBehaviourCardId": "me1-131",
-      "gameplayFamilyId": "owned:me1-131",
-      "cardName": "Ultra Ball",
-      "copies": 8,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me3-72",
-      "canonicalBehaviourCardId": "me3-72",
-      "gameplayFamilyId": "owned:me3-72",
-      "cardName": "Energy Search",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2-94",
-      "canonicalBehaviourCardId": "me2-94",
-      "gameplayFamilyId": "owned:me2-94",
-      "cardName": "Wondrous Patch",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me3-71",
-      "canonicalBehaviourCardId": "me3-71",
-      "gameplayFamilyId": "owned:me3-71",
-      "cardName": "Crushing Hammer",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2-85",
-      "canonicalBehaviourCardId": "me2-85",
-      "gameplayFamilyId": "owned:me2-85",
-      "cardName": "Battle Cage",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me3-88",
-      "canonicalBehaviourCardId": "me3-88",
-      "gameplayFamilyId": "owned:me3-88",
-      "cardName": "Telepathic Psychic Energy",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": false,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-122",
-      "canonicalBehaviourCardId": "sv10-122",
-      "gameplayFamilyId": "owned:sv10-122",
-      "cardName": "Team Rocket's Crobat ex",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-113",
-      "canonicalBehaviourCardId": "sv10-113",
-      "gameplayFamilyId": "owned:sv10-113",
-      "cardName": "Team Rocket's Arbok",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv6pt5-36",
-      "canonicalBehaviourCardId": "sv6pt5-36",
-      "gameplayFamilyId": "owned:sv6pt5-36",
-      "cardName": "Okidogi ex",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-112",
-      "canonicalBehaviourCardId": "sv10-112",
-      "gameplayFamilyId": "owned:sv10-112",
-      "cardName": "Team Rocket's Ekans",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv6pt5-39",
-      "canonicalBehaviourCardId": "sv6pt5-39",
-      "gameplayFamilyId": "owned:sv6pt5-39",
-      "cardName": "Pecharunt ex",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv8pt5-128",
-      "canonicalBehaviourCardId": "sv8pt5-128",
-      "gameplayFamilyId": "owned:sv8pt5-128",
-      "cardName": "Scoop Up Cyclone",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
+      "ownedProductIds": [
+        "card:m1|054/132|null|null|null|null"
+      ],
       "catalogueCardId": "me1-54",
       "canonicalBehaviourCardId": "me1-54",
       "gameplayFamilyId": "owned:me1-54",
       "cardName": "Abra",
+      "cardType": "Pokémon",
       "copies": 4,
       "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv4-123",
-      "canonicalBehaviourCardId": "sv4-123",
-      "gameplayFamilyId": "owned:sv4-123",
-      "cardName": "Brute Bonnet",
-      "copies": 3,
-      "implementationStatus": "unsupported",
+      "ownedProductIds": [
+        "card:sv6pt5|054/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-54",
+      "canonicalBehaviourCardId": "sv6pt5-54",
+      "gameplayFamilyId": "owned:sv6pt5-54",
+      "cardName": "Academy at Night",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
+      "ownedProductIds": [
+        "card:m1|056/132|Holo|null|null|null"
+      ],
       "catalogueCardId": "me1-56",
       "canonicalBehaviourCardId": "me1-56",
       "gameplayFamilyId": "owned:me1-56",
       "cardName": "Alakazam",
+      "cardType": "Pokémon",
       "copies": 4,
       "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "sv10-168",
-      "canonicalBehaviourCardId": "sv10-168",
-      "gameplayFamilyId": "owned:sv10-168",
-      "cardName": "Sacred Ash",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-197",
-      "canonicalBehaviourCardId": "me2pt5-197",
-      "gameplayFamilyId": "owned:me2pt5-197",
-      "cardName": "Nighttime Mine",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6-158",
-      "canonicalBehaviourCardId": "sv6-158",
-      "gameplayFamilyId": "owned:sv6-158",
-      "cardName": "Lucky Helmet",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
-      "catalogueCardId": "sv1-172",
-      "canonicalBehaviourCardId": "sv1-172",
-      "gameplayFamilyId": "owned:sv1-172",
-      "cardName": "Energy Search",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6pt5-37",
-      "canonicalBehaviourCardId": "sv6pt5-37",
-      "gameplayFamilyId": "owned:sv6pt5-37",
-      "cardName": "Munkidori ex",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv2-188",
-      "canonicalBehaviourCardId": "sv2-188",
-      "gameplayFamilyId": "owned:sv2-188",
-      "cardName": "Super Rod",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv8-177",
-      "canonicalBehaviourCardId": "sv8-177",
-      "gameplayFamilyId": "owned:sv8-177",
-      "cardName": "Gravity Mountain",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv8pt5-119",
-      "canonicalBehaviourCardId": "sv8pt5-119",
-      "gameplayFamilyId": "owned:sv8pt5-119",
-      "cardName": "Prime Catcher",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
-      "catalogueCardId": "sv5-140",
-      "canonicalBehaviourCardId": "sv5-140",
-      "gameplayFamilyId": "owned:sv5-140",
-      "cardName": "Ancient Booster Energy Capsule",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6-155",
-      "canonicalBehaviourCardId": "sv6-155",
-      "gameplayFamilyId": "owned:sv6-155",
-      "cardName": "Lana's Aid",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-198",
-      "canonicalBehaviourCardId": "me2pt5-198",
-      "gameplayFamilyId": "owned:me2pt5-198",
-      "cardName": "Poké Pad",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": false,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv6-131",
-      "canonicalBehaviourCardId": "sv6-131",
-      "gameplayFamilyId": "owned:sv6-131",
-      "cardName": "Tatsugiri",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me1-55",
-      "canonicalBehaviourCardId": "me1-55",
-      "gameplayFamilyId": "owned:me1-55",
-      "cardName": "Kadabra",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-58",
-      "canonicalBehaviourCardId": "sv10-58",
-      "gameplayFamilyId": "owned:sv10-58",
-      "cardName": "Floatzel",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-48",
-      "canonicalBehaviourCardId": "sv10-48",
-      "gameplayFamilyId": "owned:sv10-48",
-      "cardName": "Misty's Magikarp",
-      "copies": 1,
-      "implementationStatus": "partial",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me4-60",
-      "canonicalBehaviourCardId": "me4-60",
-      "gameplayFamilyId": "owned:me4-60",
-      "cardName": "Metang",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-84",
-      "canonicalBehaviourCardId": "sv10-84",
-      "gameplayFamilyId": "owned:sv10-84",
-      "cardName": "Steven's Claydol",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-71",
-      "canonicalBehaviourCardId": "sv10-71",
-      "gameplayFamilyId": "owned:sv10-71",
-      "cardName": "Ethan's Pichu",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "me4-50",
-      "canonicalBehaviourCardId": "me4-50",
-      "gameplayFamilyId": "owned:me4-50",
-      "cardName": "Golbat",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-68",
-      "canonicalBehaviourCardId": "sv10-68",
-      "gameplayFamilyId": "owned:sv10-68",
-      "cardName": "Electabuzz",
-      "copies": 1,
-      "implementationStatus": "generated",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-4",
-      "canonicalBehaviourCardId": "sv10-4",
-      "gameplayFamilyId": "owned:sv10-4",
-      "cardName": "Pineco",
-      "copies": 1,
-      "implementationStatus": "generated",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-23",
-      "canonicalBehaviourCardId": "sv10-23",
-      "gameplayFamilyId": "owned:sv10-23",
-      "cardName": "Arboliva ex",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "pgo-68",
-      "canonicalBehaviourCardId": "pgo-68",
-      "gameplayFamilyId": "owned:pgo-68",
-      "cardName": "PokéStop",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv1-183",
-      "canonicalBehaviourCardId": "sv1-183",
-      "gameplayFamilyId": "owned:sv1-183",
-      "cardName": "Penny",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-194",
-      "canonicalBehaviourCardId": "sv1-194",
-      "gameplayFamilyId": "owned:sv1-194",
-      "cardName": "Switch",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-173",
-      "canonicalBehaviourCardId": "sv1-173",
-      "gameplayFamilyId": "owned:sv1-173",
-      "cardName": "Energy Switch",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-188",
-      "canonicalBehaviourCardId": "sv1-188",
-      "gameplayFamilyId": "owned:sv1-188",
-      "cardName": "Potion",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-182",
-      "canonicalBehaviourCardId": "sv1-182",
-      "gameplayFamilyId": "owned:sv1-182",
-      "cardName": "Pal Pad",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2-54",
-      "canonicalBehaviourCardId": "me2-54",
-      "gameplayFamilyId": "owned:me2-54",
-      "cardName": "Gastly",
-      "copies": 1,
-      "implementationStatus": "generated",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv1-126",
-      "canonicalBehaviourCardId": "sv1-126",
-      "gameplayFamilyId": "owned:sv1-126",
-      "cardName": "Grimer",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-114",
-      "canonicalBehaviourCardId": "sv10-114",
-      "gameplayFamilyId": "owned:sv10-114",
-      "cardName": "Team Rocket's Nidoran♀",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-116",
-      "canonicalBehaviourCardId": "sv10-116",
-      "gameplayFamilyId": "owned:sv10-116",
-      "cardName": "Team Rocket's Nidoqueen",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-118",
-      "canonicalBehaviourCardId": "sv10-118",
-      "gameplayFamilyId": "owned:sv10-118",
-      "cardName": "Team Rocket's Nidorino",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-120",
-      "canonicalBehaviourCardId": "sv10-120",
-      "gameplayFamilyId": "owned:sv10-120",
-      "cardName": "Team Rocket's Zubat",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-121",
-      "canonicalBehaviourCardId": "sv10-121",
-      "gameplayFamilyId": "owned:sv10-121",
-      "cardName": "Team Rocket's Golbat",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-125",
-      "canonicalBehaviourCardId": "sv10-125",
-      "gameplayFamilyId": "owned:sv10-125",
-      "cardName": "Team Rocket's Koffing",
-      "copies": 4,
-      "implementationStatus": "partial",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-126",
-      "canonicalBehaviourCardId": "sv10-126",
-      "gameplayFamilyId": "owned:sv10-126",
-      "cardName": "Team Rocket's Weezing",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "me2pt5-209",
-      "canonicalBehaviourCardId": "me2pt5-209",
-      "gameplayFamilyId": "owned:me2pt5-209",
-      "cardName": "Team Rocket's Transceiver",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-203",
-      "canonicalBehaviourCardId": "me2pt5-203",
-      "gameplayFamilyId": "owned:me2pt5-203",
-      "cardName": "Team Rocket's Factory",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-179",
-      "canonicalBehaviourCardId": "sv10-179",
-      "gameplayFamilyId": "owned:sv10-179",
-      "cardName": "Team Rocket's Venture Bomb",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-175",
-      "canonicalBehaviourCardId": "sv10-175",
-      "gameplayFamilyId": "owned:sv10-175",
-      "cardName": "Team Rocket's Great Ball",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-172",
-      "canonicalBehaviourCardId": "sv10-172",
-      "gameplayFamilyId": "owned:sv10-172",
-      "cardName": "Team Rocket's Bother-Bot",
-      "copies": 3,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-202",
-      "canonicalBehaviourCardId": "me2pt5-202",
-      "gameplayFamilyId": "owned:me2pt5-202",
-      "cardName": "Team Rocket's Ariana",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-177",
-      "canonicalBehaviourCardId": "sv10-177",
-      "gameplayFamilyId": "owned:sv10-177",
-      "cardName": "Team Rocket's Proton",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-155",
-      "canonicalBehaviourCardId": "sv10-155",
-      "gameplayFamilyId": "owned:sv10-155",
-      "cardName": "Team Rocket's Porygon-Z",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-154",
-      "canonicalBehaviourCardId": "sv10-154",
-      "gameplayFamilyId": "owned:sv10-154",
-      "cardName": "Team Rocket's Porygon2",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-153",
-      "canonicalBehaviourCardId": "sv10-153",
-      "gameplayFamilyId": "owned:sv10-153",
-      "cardName": "Team Rocket's Porygon",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-19",
-      "canonicalBehaviourCardId": "sv10-19",
-      "gameplayFamilyId": "owned:sv10-19",
-      "cardName": "Team Rocket's Tarountula",
-      "copies": 5,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "me2pt5-19",
-      "canonicalBehaviourCardId": "me2pt5-19",
-      "gameplayFamilyId": "owned:me2pt5-19",
-      "cardName": "Team Rocket's Spidops",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-82",
-      "canonicalBehaviourCardId": "sv10-82",
-      "gameplayFamilyId": "owned:sv10-82",
-      "cardName": "Team Rocket's Wobbuffet",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "swsh12pt5-132",
-      "canonicalBehaviourCardId": "swsh12pt5-132",
-      "gameplayFamilyId": "owned:swsh12pt5-132",
-      "cardName": "Great Ball",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-123",
-      "canonicalBehaviourCardId": "sv10-123",
-      "gameplayFamilyId": "owned:sv10-123",
-      "cardName": "Team Rocket's Grimer",
-      "copies": 4,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 1,
-      "coveredClauses": 1
-    },
-    {
-      "catalogueCardId": "sv10-124",
-      "canonicalBehaviourCardId": "sv10-124",
-      "gameplayFamilyId": "owned:sv10-124",
-      "cardName": "Team Rocket's Muk",
-      "copies": 5,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "swsh10-70",
-      "canonicalBehaviourCardId": "swsh10-70",
-      "gameplayFamilyId": "owned:swsh10-70",
-      "cardName": "Hisuian Growlithe",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv6-100",
-      "canonicalBehaviourCardId": "sv6-100",
-      "gameplayFamilyId": "owned:sv6-100",
-      "cardName": "Hisuian Arcanine",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-115",
-      "canonicalBehaviourCardId": "sv10-115",
-      "gameplayFamilyId": "owned:sv10-115",
-      "cardName": "Team Rocket's Nidorina",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv4-26",
-      "canonicalBehaviourCardId": "sv4-26",
-      "gameplayFamilyId": "owned:sv4-26",
-      "cardName": "Charcadet",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me2pt5-183",
-      "canonicalBehaviourCardId": "me2pt5-183",
-      "gameplayFamilyId": "owned:me2pt5-183",
-      "cardName": "Boss's Orders",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
+      "ownedProductIds": [
+        "card:sv9|057/159|null|null|null|null"
+      ],
       "catalogueCardId": "sv9-57",
       "canonicalBehaviourCardId": "sv9-57",
       "gameplayFamilyId": "owned:sv9-57",
       "cardName": "Alolan Marowak",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv9-57:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
+      "requiresReviewChoices": [
+        "sv9-57"
+      ],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "swsh12-98",
-      "canonicalBehaviourCardId": "swsh12-98",
-      "gameplayFamilyId": "owned:swsh12-98",
-      "cardName": "Hawlucha",
-      "copies": 1,
+      "ownedProductIds": [
+        "card:sv5|140/162|null|null|null|null"
+      ],
+      "catalogueCardId": "sv5-140",
+      "canonicalBehaviourCardId": "sv5-140",
+      "gameplayFamilyId": "owned:sv5-140",
+      "cardName": "Ancient Booster Energy Capsule",
+      "cardType": "Trainer",
+      "copies": 3,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv5-140"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "sv5-140"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "swsh12-19",
-      "canonicalBehaviourCardId": "swsh12-19",
-      "gameplayFamilyId": "owned:swsh12-19",
-      "cardName": "Growlithe",
-      "copies": 1,
-      "implementationStatus": "generated",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
+      "ownedProductIds": [
+        "card:sv10|092/182|Holo|null|null|null"
+      ],
       "catalogueCardId": "sv10-92",
       "canonicalBehaviourCardId": "sv10-92",
       "gameplayFamilyId": "owned:sv10-92",
       "cardName": "Annihilape",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-92:ability:0",
+        "generated:owned:sv10-92:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
+      "requiresReviewChoices": [
+        "sv10-92"
+      ],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "sv8-31",
-      "canonicalBehaviourCardId": "sv8-31",
-      "gameplayFamilyId": "owned:sv8-31",
-      "cardName": "Skeledirge",
+      "ownedProductIds": [
+        "card:sv10|023/182|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv10-23",
+      "canonicalBehaviourCardId": "sv10-23",
+      "gameplayFamilyId": "owned:sv10-23",
+      "cardName": "Arboliva ex",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-23:attack:0",
+        "generated:owned:sv10-23:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-23"
+      ],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|028/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-28",
+      "canonicalBehaviourCardId": "sv10-28",
+      "gameplayFamilyId": "owned:sv10-28",
+      "cardName": "Arcanine",
+      "cardType": "Pokémon",
       "copies": 2,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-28:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
+      "requiresReviewChoices": [
+        "sv10-28"
+      ],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "sv1-181",
-      "canonicalBehaviourCardId": "sv1-181",
-      "gameplayFamilyId": "owned:sv1-181",
-      "cardName": "Nest Ball",
-      "copies": 6,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-175",
-      "canonicalBehaviourCardId": "sv1-175",
-      "gameplayFamilyId": "owned:sv1-175",
-      "cardName": "Jacq",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh5-125",
-      "canonicalBehaviourCardId": "swsh5-125",
-      "gameplayFamilyId": "owned:swsh5-125",
-      "cardName": "Escape Rope",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": false,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv2-185",
-      "canonicalBehaviourCardId": "sv2-185",
-      "gameplayFamilyId": "owned:sv2-185",
-      "cardName": "Iono",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv9-155",
-      "canonicalBehaviourCardId": "sv9-155",
-      "gameplayFamilyId": "owned:sv9-155",
-      "cardName": "Professor's Research",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-198",
-      "canonicalBehaviourCardId": "sv1-198",
-      "gameplayFamilyId": "owned:sv1-198",
-      "cardName": "Youngster",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh9-144",
-      "canonicalBehaviourCardId": "swsh9-144",
-      "gameplayFamilyId": "owned:swsh9-144",
-      "cardName": "Magma Basin",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "swsh6-145",
-      "canonicalBehaviourCardId": "swsh6-145",
-      "gameplayFamilyId": "owned:swsh6-145",
-      "cardName": "Klara",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": false,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
+      "ownedProductIds": [
+        "card:sv1|041/198|Holo|null|null|null"
+      ],
       "catalogueCardId": "sv1-41",
       "canonicalBehaviourCardId": "sv1-41",
       "gameplayFamilyId": "owned:sv1-41",
       "cardName": "Armarouge",
+      "cardType": "Pokémon",
       "copies": 2,
       "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "swsh12-16",
-      "canonicalBehaviourCardId": "swsh12-16",
-      "gameplayFamilyId": "owned:swsh12-16",
-      "cardName": "Radiant Tsareena",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv2-37",
-      "canonicalBehaviourCardId": "sv2-37",
-      "gameplayFamilyId": "owned:sv2-37",
-      "cardName": "Skeledirge ex",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "svp-34",
-      "canonicalBehaviourCardId": "svp-34",
-      "gameplayFamilyId": "owned:svp-34",
-      "cardName": "Skeledirge ex",
+      "ownedProductIds": [
+        "card:sv2|171/193|null|null|null|null"
+      ],
+      "catalogueCardId": "sv2-171",
+      "canonicalBehaviourCardId": "sv2-171",
+      "gameplayFamilyId": "owned:sv2-171",
+      "cardName": "Artazon",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv2-171"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "requiresReviewChoices": [
+        "sv2-171"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "swsh12-137",
-      "canonicalBehaviourCardId": "swsh12-137",
-      "gameplayFamilyId": "owned:swsh12-137",
-      "cardName": "Smeargle",
+      "ownedProductIds": [
+        "card:sv3|186/197|null|null|null|null"
+      ],
+      "catalogueCardId": "sv3-186",
+      "canonicalBehaviourCardId": "sv3-186",
+      "gameplayFamilyId": "owned:sv3-186",
+      "cardName": "Arven",
+      "cardType": "Trainer",
       "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv3-186"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "sv3-186"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv1-37",
-      "canonicalBehaviourCardId": "sv1-37",
-      "gameplayFamilyId": "owned:sv1-37",
-      "cardName": "Crocalor",
-      "copies": 3,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "ownedProductIds": [
+        "card:me02|085/094|null|null|null|null"
+      ],
+      "catalogueCardId": "me2-85",
+      "canonicalBehaviourCardId": "me2-85",
+      "gameplayFamilyId": "owned:me2-85",
+      "cardName": "Battle Cage",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2-85"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "me2-85"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv2-35",
-      "canonicalBehaviourCardId": "sv2-35",
-      "gameplayFamilyId": "owned:sv2-35",
-      "cardName": "Fuecoco",
+      "ownedProductIds": [
+        "card:sv6pt5|055/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-55",
+      "canonicalBehaviourCardId": "sv6pt5-55",
+      "gameplayFamilyId": "owned:sv6pt5-55",
+      "cardName": "Binding Mochi",
+      "cardType": "Trainer",
       "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv6pt5-55"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
+      "requiresReviewChoices": [
+        "sv6pt5-55"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|071/084|null|null|null|null"
+      ],
+      "catalogueCardId": "me5-71",
+      "canonicalBehaviourCardId": "me5-71",
+      "gameplayFamilyId": "owned:me5-71",
+      "cardName": "Bombirdier",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-71:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-71"
+      ],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "swsh12pt5-141",
-      "canonicalBehaviourCardId": "swsh12pt5-141",
-      "gameplayFamilyId": "owned:swsh12pt5-141",
-      "cardName": "Rare Candy",
-      "copies": 4,
-      "implementationStatus": "unsupported",
+      "ownedProductIds": [
+        "card:me2pt5|183/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-183",
+      "canonicalBehaviourCardId": "me2pt5-183",
+      "gameplayFamilyId": "owned:me2pt5-183",
+      "cardName": "Boss's Orders",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-30",
-      "canonicalBehaviourCardId": "sv1-30",
-      "gameplayFamilyId": "owned:sv1-30",
-      "cardName": "Growlithe",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv2-171",
-      "canonicalBehaviourCardId": "sv2-171",
-      "gameplayFamilyId": "owned:sv2-171",
-      "cardName": "Artazon",
-      "copies": 1,
+      "ownedProductIds": [
+        "card:sv4|123/182|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv4-123",
+      "canonicalBehaviourCardId": "sv4-123",
+      "gameplayFamilyId": "owned:sv4-123",
+      "cardName": "Brute Bonnet",
+      "cardType": "Pokémon",
+      "copies": 3,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv4-123:ability:0",
+        "generated:owned:sv4-123:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "requiresReviewChoices": [
+        "sv4-123"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
     },
     {
-      "catalogueCardId": "sv3-186",
-      "canonicalBehaviourCardId": "sv3-186",
-      "gameplayFamilyId": "owned:sv3-186",
-      "cardName": "Arven",
+      "ownedProductIds": [
+        "card:sv5|144/162|null|null|null|null"
+      ],
+      "catalogueCardId": "sv5-144",
+      "canonicalBehaviourCardId": "sv5-144",
+      "gameplayFamilyId": "owned:sv5-144",
+      "cardName": "Buddy-Buddy Poffin",
+      "cardType": "Trainer",
+      "copies": 8,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|016/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-16",
+      "canonicalBehaviourCardId": "me2pt5-16",
+      "gameplayFamilyId": "owned:me2pt5-16",
+      "cardName": "Budew",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4|026/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv4-26",
+      "canonicalBehaviourCardId": "sv4-26",
+      "gameplayFamilyId": "owned:sv4-26",
+      "cardName": "Charcadet",
+      "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "printedClauses": 2,
+      "coveredClauses": 2
     },
     {
+      "ownedProductIds": [
+        "card:sv5|145/162|null|null|null|null"
+      ],
+      "catalogueCardId": "sv5-145",
+      "canonicalBehaviourCardId": "sv5-145",
+      "gameplayFamilyId": "owned:sv5-145",
+      "cardName": "Ciphermaniac's Codebreaking",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6pt5|057/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-57",
+      "canonicalBehaviourCardId": "sv6pt5-57",
+      "gameplayFamilyId": "owned:sv6pt5-57",
+      "cardName": "Colress's Tenacity",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4|160/182|null|null|null|null"
+      ],
       "catalogueCardId": "sv4-160",
       "canonicalBehaviourCardId": "sv4-160",
       "gameplayFamilyId": "owned:sv4-160",
       "cardName": "Counter Catcher",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv4-160"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "requiresReviewChoices": [
+        "sv4-160"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv4-163",
-      "canonicalBehaviourCardId": "sv4-163",
-      "gameplayFamilyId": "owned:sv4-163",
-      "cardName": "Earthen Vessel",
+      "ownedProductIds": [
+        "card:sv7|133/142|null|null|null|null"
+      ],
+      "catalogueCardId": "sv7-133",
+      "canonicalBehaviourCardId": "sv7-133",
+      "gameplayFamilyId": "owned:sv7-133",
+      "cardName": "Crispin",
+      "cardType": "Trainer",
       "copies": 4,
       "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv4-177",
-      "canonicalBehaviourCardId": "sv4-177",
-      "gameplayFamilyId": "owned:sv4-177",
-      "cardName": "Technical Machine: Devolution",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
-      "catalogueCardId": "sv4-178",
-      "canonicalBehaviourCardId": "sv4-178",
-      "gameplayFamilyId": "owned:sv4-178",
-      "cardName": "Technical Machine: Evolution",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 4,
-      "coveredClauses": 4
-    },
-    {
-      "catalogueCardId": "sv1-169",
-      "canonicalBehaviourCardId": "sv1-169",
-      "gameplayFamilyId": "owned:sv1-169",
-      "cardName": "Defiance Band",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv1-127",
-      "canonicalBehaviourCardId": "sv1-127",
-      "gameplayFamilyId": "owned:sv1-127",
-      "cardName": "Muk",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "swsh12pt5-127",
-      "canonicalBehaviourCardId": "swsh12pt5-127",
-      "gameplayFamilyId": "owned:swsh12pt5-127",
-      "cardName": "Energy Retrieval",
+      "ownedProductIds": [
+        "card:sv1|037/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-37",
+      "canonicalBehaviourCardId": "sv1-37",
+      "gameplayFamilyId": "owned:sv1-37",
+      "cardName": "Crocalor",
+      "cardType": "Pokémon",
       "copies": 3,
       "implementationStatus": "complete",
-      "choiceSemantics": "exact",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "swsh1-183",
-      "canonicalBehaviourCardId": "swsh1-183",
-      "gameplayFamilyId": "owned:swsh1-183",
-      "cardName": "Switch",
-      "copies": 2,
-      "implementationStatus": "generated",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv4pt5-37",
-      "canonicalBehaviourCardId": "sv4pt5-37",
-      "gameplayFamilyId": "owned:sv4pt5-37",
-      "cardName": "Mimikyu",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "sv4pt5-80",
-      "canonicalBehaviourCardId": "sv4pt5-80",
-      "gameplayFamilyId": "owned:sv4pt5-80",
-      "cardName": "Iono",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me1-173",
-      "canonicalBehaviourCardId": "me1-173",
-      "gameplayFamilyId": "owned:me1-173",
-      "cardName": "Night Stretcher",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-28",
-      "canonicalBehaviourCardId": "sv10-28",
-      "gameplayFamilyId": "owned:sv10-28",
-      "cardName": "Arcanine",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-119",
-      "canonicalBehaviourCardId": "sv10-119",
-      "gameplayFamilyId": "owned:sv10-119",
-      "cardName": "Team Rocket's Nidoking ex",
+      "ownedProductIds": [
+        "card:me3|071/088|null|null|null|null"
+      ],
+      "catalogueCardId": "me3-71",
+      "canonicalBehaviourCardId": "me3-71",
+      "gameplayFamilyId": "owned:me3-71",
+      "cardName": "Crushing Hammer",
+      "cardType": "Trainer",
       "copies": 4,
       "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "sv6-95",
-      "canonicalBehaviourCardId": "sv6-95",
-      "gameplayFamilyId": "owned:sv6-95",
-      "cardName": "Munkidori",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-182",
-      "canonicalBehaviourCardId": "sv10-182",
-      "gameplayFamilyId": "owned:sv10-182",
-      "cardName": "Team Rocket's Energy",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv6pt5-61",
-      "canonicalBehaviourCardId": "sv6pt5-61",
-      "gameplayFamilyId": "owned:sv6pt5-61",
-      "cardName": "Night Stretcher",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-20",
-      "canonicalBehaviourCardId": "sv10-20",
-      "gameplayFamilyId": "owned:sv10-20",
-      "cardName": "Team Rocket's Spidops",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me2pt5-207",
-      "canonicalBehaviourCardId": "me2pt5-207",
-      "gameplayFamilyId": "owned:me2pt5-207",
-      "cardName": "Team Rocket's Petrel",
-      "copies": 2,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-204",
-      "canonicalBehaviourCardId": "me2pt5-204",
-      "gameplayFamilyId": "owned:me2pt5-204",
-      "cardName": "Team Rocket's Giovanni",
-      "copies": 2,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me2pt5-201",
-      "canonicalBehaviourCardId": "me2pt5-201",
-      "gameplayFamilyId": "owned:me2pt5-201",
-      "cardName": "Team Rocket's Archer",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "sv10-117",
-      "canonicalBehaviourCardId": "sv10-117",
-      "gameplayFamilyId": "owned:sv10-117",
-      "cardName": "Team Rocket's Nidoran♂",
-      "copies": 4,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "sv10-171",
-      "canonicalBehaviourCardId": "sv10-171",
-      "gameplayFamilyId": "owned:sv10-171",
-      "cardName": "Team Rocket's Ariana",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 3,
-      "coveredClauses": 3
-    },
-    {
-      "catalogueCardId": "me5-23",
-      "canonicalBehaviourCardId": "me5-23",
-      "gameplayFamilyId": "owned:me5-23",
-      "cardName": "Electrike",
-      "copies": 1,
-      "implementationStatus": "complete",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
+      "ownedProductIds": [
+        "card:me05|075/084|null|null|null|null"
+      ],
       "catalogueCardId": "me5-75",
       "canonicalBehaviourCardId": "me5-75",
       "gameplayFamilyId": "owned:me5-75",
       "cardName": "Dark Bell",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-75"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "me5-75"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "me5-82",
-      "canonicalBehaviourCardId": "me5-82",
-      "gameplayFamilyId": "owned:me5-82",
-      "cardName": "Tremendous Bomb",
+      "ownedProductIds": [
+        "card:sv1|169/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-169",
+      "canonicalBehaviourCardId": "sv1-169",
+      "gameplayFamilyId": "owned:sv1-169",
+      "cardName": "Defiance Band",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-169"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "sv1-169"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "me5-68",
-      "canonicalBehaviourCardId": "me5-68",
-      "gameplayFamilyId": "owned:me5-68",
-      "cardName": "Toucannon",
-      "copies": 1,
-      "implementationStatus": "unsupported",
+      "ownedProductIds": [
+        "card:sv4|163/182|null|null|null|null",
+        "card:pp5|163/182|Non-holo|Play! Pokémon Prize Pack|null|null"
+      ],
+      "catalogueCardId": "sv4-163",
+      "canonicalBehaviourCardId": "sv4-163",
+      "gameplayFamilyId": "owned:sv4-163",
+      "cardName": "Earthen Vessel",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "me5-71",
-      "canonicalBehaviourCardId": "me5-71",
-      "gameplayFamilyId": "owned:me5-71",
-      "cardName": "Bombirdier",
-      "copies": 1,
-      "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
-      "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
-    },
-    {
-      "catalogueCardId": "me5-15",
-      "canonicalBehaviourCardId": "me5-15",
-      "gameplayFamilyId": "owned:me5-15",
-      "cardName": "Wailmer",
+      "ownedProductIds": [
+        "card:sv10|068/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-68",
+      "canonicalBehaviourCardId": "sv10-68",
+      "gameplayFamilyId": "owned:sv10-68",
+      "cardName": "Electabuzz",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "generated",
-      "choiceSemantics": "exact",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|023/084|Reverse Holo|null|null|null"
+      ],
+      "catalogueCardId": "me5-23",
+      "canonicalBehaviourCardId": "me5-23",
+      "gameplayFamilyId": "owned:me5-23",
+      "cardName": "Electrike",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
       "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
-      "catalogueCardId": "me5-51",
-      "canonicalBehaviourCardId": "me5-51",
-      "gameplayFamilyId": "owned:me5-51",
-      "cardName": "Inkay",
+      "ownedProductIds": [
+        "card:swsh12pt5|127/159|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12pt5-127",
+      "canonicalBehaviourCardId": "swsh12pt5-127",
+      "gameplayFamilyId": "owned:swsh12pt5-127",
+      "cardName": "Energy Retrieval",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me3|072/088|null|null|null|null"
+      ],
+      "catalogueCardId": "me3-72",
+      "canonicalBehaviourCardId": "me3-72",
+      "gameplayFamilyId": "owned:me3-72",
+      "cardName": "Energy Search",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|172/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-172",
+      "canonicalBehaviourCardId": "sv1-172",
+      "gameplayFamilyId": "owned:sv1-172",
+      "cardName": "Energy Search",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12pt5|128/159|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12pt5-128",
+      "canonicalBehaviourCardId": "swsh12pt5-128",
+      "gameplayFamilyId": "owned:swsh12pt5-128",
+      "cardName": "Energy Search",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|173/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-173",
+      "canonicalBehaviourCardId": "sv1-173",
+      "gameplayFamilyId": "owned:sv1-173",
+      "cardName": "Energy Switch",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
-      "choiceSemantics": "exact",
-      "simulationReady": true,
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-173"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
       "standardLegal": true,
-      "unknownPrograms": [],
-      "requiresReviewChoices": [],
-      "printedClauses": 2,
-      "coveredClauses": 2
+      "requiresReviewChoices": [
+        "sv1-173"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
     },
     {
-      "catalogueCardId": "me5-32",
-      "canonicalBehaviourCardId": "me5-32",
-      "gameplayFamilyId": "owned:me5-32",
-      "cardName": "Jynx",
+      "ownedProductIds": [
+        "card:swsh1|162/202|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh1-162",
+      "canonicalBehaviourCardId": "swsh1-162",
+      "gameplayFamilyId": "owned:swsh1-162",
+      "cardName": "Energy Switch",
+      "cardType": "Trainer",
       "copies": 1,
       "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh1-162"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh1-162"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12pt5|129/159|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12pt5-129",
+      "canonicalBehaviourCardId": "swsh12pt5-129",
+      "gameplayFamilyId": "owned:swsh12pt5-129",
+      "cardName": "Energy Switch",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh12pt5-129"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh12pt5-129"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:wc23lbk|125/163|null|Lost Box Kyogre: Shao Tong Yen|null|null"
+      ],
+      "catalogueCardId": "swsh5-125",
+      "canonicalBehaviourCardId": "swsh5-125",
+      "gameplayFamilyId": "owned:swsh5-125",
+      "cardName": "Escape Rope",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": false,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|071/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-71",
+      "canonicalBehaviourCardId": "sv10-71",
+      "gameplayFamilyId": "owned:sv10-71",
+      "cardName": "Ethan's Pichu",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|058/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-58",
+      "canonicalBehaviourCardId": "sv10-58",
+      "gameplayFamilyId": "owned:sv10-58",
+      "cardName": "Floatzel",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-58:attack:0",
+        "generated:owned:sv10-58:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-58"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv2|035/193|null|null|null|null"
+      ],
+      "catalogueCardId": "sv2-35",
+      "canonicalBehaviourCardId": "sv2-35",
+      "gameplayFamilyId": "owned:sv2-35",
+      "cardName": "Fuecoco",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
       "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
+      "ownedProductIds": [
+        "card:me02|054/094|null|null|null|null"
+      ],
+      "catalogueCardId": "me2-54",
+      "canonicalBehaviourCardId": "me2-54",
+      "gameplayFamilyId": "owned:me2-54",
+      "cardName": "Gastly",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "generated",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me04|050/086|null|null|null|null"
+      ],
+      "catalogueCardId": "me4-50",
+      "canonicalBehaviourCardId": "me4-50",
+      "gameplayFamilyId": "owned:me4-50",
+      "cardName": "Golbat",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me4-50:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me4-50"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv8|177/191|null|null|null|null"
+      ],
+      "catalogueCardId": "sv8-177",
+      "canonicalBehaviourCardId": "sv8-177",
+      "gameplayFamilyId": "owned:sv8-177",
+      "cardName": "Gravity Mountain",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12pt5|132/159|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12pt5-132",
+      "canonicalBehaviourCardId": "swsh12pt5-132",
+      "gameplayFamilyId": "owned:swsh12pt5-132",
+      "cardName": "Great Ball",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh12pt5-132"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh12pt5-132"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|126/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-126",
+      "canonicalBehaviourCardId": "sv1-126",
+      "gameplayFamilyId": "owned:sv1-126",
+      "cardName": "Grimer",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|030/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-30",
+      "canonicalBehaviourCardId": "sv1-30",
+      "gameplayFamilyId": "owned:sv1-30",
+      "cardName": "Growlithe",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-30:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv1-30"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12|019/195|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12-19",
+      "canonicalBehaviourCardId": "swsh12-19",
+      "gameplayFamilyId": "owned:swsh12-19",
+      "cardName": "Growlithe",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "generated",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv7|091/142|null|null|null|null"
+      ],
+      "catalogueCardId": "sv7-91",
+      "canonicalBehaviourCardId": "sv7-91",
+      "gameplayFamilyId": "owned:sv7-91",
+      "cardName": "Gulpin",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12|098/195|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12-98",
+      "canonicalBehaviourCardId": "swsh12-98",
+      "gameplayFamilyId": "owned:swsh12-98",
+      "cardName": "Hawlucha",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh12-98:attack:0",
+        "generated:owned:swsh12-98:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh12-98"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|007/084|null|null|null|null"
+      ],
       "catalogueCardId": "me5-7",
       "canonicalBehaviourCardId": "me5-7",
       "gameplayFamilyId": "owned:me5-7",
       "cardName": "Heatran",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-7:attack:0",
+        "generated:owned:me5-7:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-7"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6|100/167|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv6-100",
+      "canonicalBehaviourCardId": "sv6-100",
+      "gameplayFamilyId": "owned:sv6-100",
+      "cardName": "Hisuian Arcanine",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv6-100:attack:0",
+        "generated:owned:sv6-100:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv6-100"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh10|070/189|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh10-70",
+      "canonicalBehaviourCardId": "swsh10-70",
+      "gameplayFamilyId": "owned:swsh10-70",
+      "cardName": "Hisuian Growlithe",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh10-70:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh10-70"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|051/084|null|null|null|null"
+      ],
+      "catalogueCardId": "me5-51",
+      "canonicalBehaviourCardId": "me5-51",
+      "gameplayFamilyId": "owned:me5-51",
+      "cardName": "Inkay",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-51:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-51"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:pp4|185/193|Non-holo|Play! Pokémon Prize Pack|null|null",
+        "card:sv2|185/193|null|null|null|null"
+      ],
+      "catalogueCardId": "sv2-185",
+      "canonicalBehaviourCardId": "sv2-185",
+      "gameplayFamilyId": "owned:sv2-185",
+      "cardName": "Iono",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv2-185"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv2-185"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4pt5|080/091|null|null|null|null"
+      ],
+      "catalogueCardId": "sv4pt5-80",
+      "canonicalBehaviourCardId": "sv4pt5-80",
+      "gameplayFamilyId": "owned:sv4pt5-80",
+      "cardName": "Iono",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:ba24a|175/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-175",
+      "canonicalBehaviourCardId": "sv1-175",
+      "gameplayFamilyId": "owned:sv1-175",
+      "cardName": "Jacq",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
       "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6pt5|059/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-59",
+      "canonicalBehaviourCardId": "sv6pt5-59",
+      "gameplayFamilyId": "owned:sv6pt5-59",
+      "cardName": "Janine's Secret Art",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|032/084|null|null|null|null"
+      ],
+      "catalogueCardId": "me5-32",
+      "canonicalBehaviourCardId": "me5-32",
+      "gameplayFamilyId": "owned:me5-32",
+      "cardName": "Jynx",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-32:attack:0",
+        "generated:owned:me5-32:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-32"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:m1|055/132|null|null|null|null"
+      ],
+      "catalogueCardId": "me1-55",
+      "canonicalBehaviourCardId": "me1-55",
+      "gameplayFamilyId": "owned:me1-55",
+      "cardName": "Kadabra",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
     {
+      "ownedProductIds": [
+        "card:swsh6|145/198|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh6-145",
+      "canonicalBehaviourCardId": "swsh6-145",
+      "gameplayFamilyId": "owned:swsh6-145",
+      "cardName": "Klara",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": false,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6|155/167|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6-155",
+      "canonicalBehaviourCardId": "sv6-155",
+      "gameplayFamilyId": "owned:sv6-155",
+      "cardName": "Lana's Aid",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:m1|119/132|null|null|null|null"
+      ],
+      "catalogueCardId": "me1-119",
+      "canonicalBehaviourCardId": "me1-119",
+      "gameplayFamilyId": "owned:me1-119",
+      "cardName": "Lillie's Determination",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me1-119"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me1-119"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6|158/167|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6-158",
+      "canonicalBehaviourCardId": "sv6-158",
+      "gameplayFamilyId": "owned:sv6-158",
+      "cardName": "Lucky Helmet",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh9|144/172|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh9-144",
+      "canonicalBehaviourCardId": "swsh9-144",
+      "gameplayFamilyId": "owned:swsh9-144",
+      "cardName": "Magma Basin",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "stadium:magma-basin"
+      ],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|027/084|Holo|null|null|null"
+      ],
       "catalogueCardId": "me5-27",
       "canonicalBehaviourCardId": "me5-27",
       "gameplayFamilyId": "owned:me5-27",
       "cardName": "Mega Zeraora ex",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "unsupported",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [
+        {
+          "id": "me5-27:rule:0",
+          "kind": "rule",
+          "name": "Rule",
+          "text": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+        }
+      ],
+      "unknownPrograms": [
+        "generated:owned:me5-27:attack:0",
+        "generated:owned:me5-27:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-27"
+      ],
+      "printedClauses": 3,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me04|060/086|null|null|null|null"
+      ],
+      "catalogueCardId": "me4-60",
+      "canonicalBehaviourCardId": "me4-60",
+      "gameplayFamilyId": "owned:me4-60",
+      "cardName": "Metang",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me4-60:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me4-60"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4pt5|037/091|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv4pt5-37",
+      "canonicalBehaviourCardId": "sv4pt5-37",
+      "gameplayFamilyId": "owned:sv4pt5-37",
+      "cardName": "Mimikyu",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv4pt5-37:ability:0",
+        "generated:owned:sv4pt5-37:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv4pt5-37"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|048/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-48",
+      "canonicalBehaviourCardId": "sv10-48",
+      "gameplayFamilyId": "owned:sv10-48",
+      "cardName": "Misty's Magikarp",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "partial",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-48:ability:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-48"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|127/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-127",
+      "canonicalBehaviourCardId": "sv1-127",
+      "gameplayFamilyId": "owned:sv1-127",
+      "cardName": "Muk",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-127:ability:0",
+        "generated:owned:sv1-127:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv1-127"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:pp6|095/167|Non-holo|Play! Pokémon Prize Pack|null|null",
+        "card:sv6|095/167|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv6-95",
+      "canonicalBehaviourCardId": "sv6-95",
+      "gameplayFamilyId": "owned:sv6-95",
+      "cardName": "Munkidori",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6pt5|037/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-37",
+      "canonicalBehaviourCardId": "sv6pt5-37",
+      "gameplayFamilyId": "owned:sv6pt5-37",
+      "cardName": "Munkidori ex",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
       "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 3,
       "coveredClauses": 3
     },
     {
+      "ownedProductIds": [
+        "card:ba24a|181/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-181",
+      "canonicalBehaviourCardId": "sv1-181",
+      "gameplayFamilyId": "owned:sv1-181",
+      "cardName": "Nest Ball",
+      "cardType": "Trainer",
+      "copies": 6,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:m1|173/132|Holo|null|null|null"
+      ],
+      "catalogueCardId": "me1-173",
+      "canonicalBehaviourCardId": "me1-173",
+      "gameplayFamilyId": "owned:me1-173",
+      "cardName": "Night Stretcher",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me1-173"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me1-173"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:pp6|061/064|Non-holo|Play! Pokémon Prize Pack|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-61",
+      "canonicalBehaviourCardId": "sv6pt5-61",
+      "gameplayFamilyId": "owned:sv6pt5-61",
+      "cardName": "Night Stretcher",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|197/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-197",
+      "canonicalBehaviourCardId": "me2pt5-197",
+      "gameplayFamilyId": "owned:me2pt5-197",
+      "cardName": "Nighttime Mine",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6pt5|036/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-36",
+      "canonicalBehaviourCardId": "sv6pt5-36",
+      "gameplayFamilyId": "owned:sv6pt5-36",
+      "cardName": "Okidogi ex",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|182/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-182",
+      "canonicalBehaviourCardId": "sv1-182",
+      "gameplayFamilyId": "owned:sv1-182",
+      "cardName": "Pal Pad",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-182"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv1-182"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|143/217|Holo|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-143",
+      "canonicalBehaviourCardId": "me2pt5-143",
+      "gameplayFamilyId": "owned:me2pt5-143",
+      "cardName": "Pecharunt",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-143:ability:0",
+        "generated:owned:me2pt5-143:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-143"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:svp|SVP129|null|null|null|null"
+      ],
       "catalogueCardId": "svp-129",
       "canonicalBehaviourCardId": "svp-129",
       "gameplayFamilyId": "owned:svp-129",
       "cardName": "Pecharunt",
+      "cardType": "Pokémon",
       "copies": 1,
       "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
       "simulationReady": true,
       "standardLegal": true,
-      "unknownPrograms": [],
       "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6pt5|039/064|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6pt5-39",
+      "canonicalBehaviourCardId": "sv6pt5-39",
+      "gameplayFamilyId": "owned:sv6pt5-39",
+      "cardName": "Pecharunt ex",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:sv1|183/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-183",
+      "canonicalBehaviourCardId": "sv1-183",
+      "gameplayFamilyId": "owned:sv1-183",
+      "cardName": "Penny",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv1-183"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv1-183"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv5|156/162|null|null|null|null"
+      ],
+      "catalogueCardId": "sv5-156",
+      "canonicalBehaviourCardId": "sv5-156",
+      "gameplayFamilyId": "owned:sv5-156",
+      "cardName": "Perilous Jungle",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv5-156"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv5-156"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|004/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-4",
+      "canonicalBehaviourCardId": "sv10-4",
+      "gameplayFamilyId": "owned:sv10-4",
+      "cardName": "Pineco",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "generated",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|198/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-198",
+      "canonicalBehaviourCardId": "me2pt5-198",
+      "gameplayFamilyId": "owned:me2pt5-198",
+      "cardName": "Poké Pad",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-198"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": false,
+      "requiresReviewChoices": [
+        "me2pt5-198"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:pgo|068/078|null|null|null|null"
+      ],
+      "catalogueCardId": "pgo-68",
+      "canonicalBehaviourCardId": "pgo-68",
+      "gameplayFamilyId": "owned:pgo-68",
+      "cardName": "PokéStop",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:pgo-68"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "pgo-68"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:ba24a|188/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-188",
+      "canonicalBehaviourCardId": "sv1-188",
+      "gameplayFamilyId": "owned:sv1-188",
+      "cardName": "Potion",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "heal-30-selected-pokemon"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv1-188"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv8pt5|119/131|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv8pt5-119",
+      "canonicalBehaviourCardId": "sv8pt5-119",
+      "gameplayFamilyId": "owned:sv8pt5-119",
+      "cardName": "Prime Catcher",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv8pt5-119"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv8pt5-119"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv9|155/159|null|null|null|null"
+      ],
+      "catalogueCardId": "sv9-155",
+      "canonicalBehaviourCardId": "sv9-155",
+      "gameplayFamilyId": "owned:sv9-155",
+      "cardName": "Professor's Research",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "template:trainer:discard-hand-draw:7"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv9-155"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12|016/195|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12-16",
+      "canonicalBehaviourCardId": "swsh12-16",
+      "gameplayFamilyId": "owned:swsh12-16",
+      "cardName": "Radiant Tsareena",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12pt5|141/159|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12pt5-141",
+      "canonicalBehaviourCardId": "swsh12pt5-141",
+      "gameplayFamilyId": "owned:swsh12pt5-141",
+      "cardName": "Rare Candy",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:swsh12pt5-141"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh12pt5-141"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:xy5|135/160|null|null|null|null"
+      ],
+      "catalogueCardId": "xy5-135",
+      "canonicalBehaviourCardId": "xy5-135",
+      "gameplayFamilyId": "owned:xy5-135",
+      "cardName": "Rare Candy",
+      "cardType": "Trainer",
+      "copies": 8,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:xy5-135"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "xy5-135"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv5|159/162|null|null|null|null"
+      ],
+      "catalogueCardId": "sv5-159",
+      "canonicalBehaviourCardId": "sv5-159",
+      "gameplayFamilyId": "owned:sv5-159",
+      "cardName": "Rescue Board",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv5-159"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv5-159"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|168/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-168",
+      "canonicalBehaviourCardId": "sv10-168",
+      "gameplayFamilyId": "owned:sv10-168",
+      "cardName": "Sacred Ash",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv8pt5|128/131|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv8pt5-128",
+      "canonicalBehaviourCardId": "sv8pt5-128",
+      "gameplayFamilyId": "owned:sv8pt5-128",
+      "cardName": "Scoop Up Cyclone",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv8pt5-128"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv8pt5-128"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv8|031/191|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv8-31",
+      "canonicalBehaviourCardId": "sv8-31",
+      "gameplayFamilyId": "owned:sv8-31",
+      "cardName": "Skeledirge",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv8-31:ability:0",
+        "generated:owned:sv8-31:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv8-31"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv2|037/193|null|null|null|null"
+      ],
+      "catalogueCardId": "sv2-37",
+      "canonicalBehaviourCardId": "sv2-37",
+      "gameplayFamilyId": "owned:sv2-37",
+      "cardName": "Skeledirge ex",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:svp|SVP034|null|null|null|null"
+      ],
+      "catalogueCardId": "svp-34",
+      "canonicalBehaviourCardId": "svp-34",
+      "gameplayFamilyId": "owned:svp-34",
+      "cardName": "Skeledirge ex",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:svp-34:attack:0",
+        "generated:owned:svp-34:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "svp-34"
+      ],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:swsh12|137/195|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh12-137",
+      "canonicalBehaviourCardId": "swsh12-137",
+      "gameplayFamilyId": "owned:swsh12-137",
+      "cardName": "Smeargle",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|084/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-84",
+      "canonicalBehaviourCardId": "sv10-84",
+      "gameplayFamilyId": "owned:sv10-84",
+      "cardName": "Steven's Claydol",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-84:attack:0",
+        "generated:owned:sv10-84:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-84"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv2|188/193|null|null|null|null"
+      ],
+      "catalogueCardId": "sv2-188",
+      "canonicalBehaviourCardId": "sv2-188",
+      "gameplayFamilyId": "owned:sv2-188",
+      "cardName": "Super Rod",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv7|092/142|null|null|null|null"
+      ],
+      "catalogueCardId": "sv7-92",
+      "canonicalBehaviourCardId": "sv7-92",
+      "gameplayFamilyId": "owned:sv7-92",
+      "cardName": "Swalot",
+      "cardType": "Pokémon",
+      "copies": 5,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv7-92:attack:0",
+        "generated:owned:sv7-92:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv7-92"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:m1|130/132|null|null|null|null"
+      ],
+      "catalogueCardId": "me1-130",
+      "canonicalBehaviourCardId": "me1-130",
+      "gameplayFamilyId": "owned:me1-130",
+      "cardName": "Switch",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:ba24a|194/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-194",
+      "canonicalBehaviourCardId": "sv1-194",
+      "gameplayFamilyId": "owned:sv1-194",
+      "cardName": "Switch",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:ba22c|183/202|null|null|null|null"
+      ],
+      "catalogueCardId": "swsh1-183",
+      "canonicalBehaviourCardId": "swsh1-183",
+      "gameplayFamilyId": "owned:swsh1-183",
+      "cardName": "Switch",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "generated",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "switch-active-with-bench"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "swsh1-183"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv6|131/167|null|null|null|null"
+      ],
+      "catalogueCardId": "sv6-131",
+      "canonicalBehaviourCardId": "sv6-131",
+      "gameplayFamilyId": "owned:sv6-131",
+      "cardName": "Tatsugiri",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|113/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-113",
+      "canonicalBehaviourCardId": "sv10-113",
+      "gameplayFamilyId": "owned:sv10-113",
+      "cardName": "Team Rocket's Arbok",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-113:ability:0",
+        "generated:owned:sv10-113:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-113"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|201/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-201",
+      "canonicalBehaviourCardId": "me2pt5-201",
+      "gameplayFamilyId": "owned:me2pt5-201",
+      "cardName": "Team Rocket's Archer",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-201"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-201"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|202/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-202",
+      "canonicalBehaviourCardId": "me2pt5-202",
+      "gameplayFamilyId": "owned:me2pt5-202",
+      "cardName": "Team Rocket's Ariana",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-202"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-202"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|171/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-171",
+      "canonicalBehaviourCardId": "sv10-171",
+      "gameplayFamilyId": "owned:sv10-171",
+      "cardName": "Team Rocket's Ariana",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|172/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-172",
+      "canonicalBehaviourCardId": "sv10-172",
+      "gameplayFamilyId": "owned:sv10-172",
+      "cardName": "Team Rocket's Bother-Bot",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-172"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-172"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|122/182|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv10-122",
+      "canonicalBehaviourCardId": "sv10-122",
+      "gameplayFamilyId": "owned:sv10-122",
+      "cardName": "Team Rocket's Crobat ex",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-122:ability:0",
+        "generated:owned:sv10-122:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-122"
+      ],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|112/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-112",
+      "canonicalBehaviourCardId": "sv10-112",
+      "gameplayFamilyId": "owned:sv10-112",
+      "cardName": "Team Rocket's Ekans",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-112:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-112"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|182/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-182",
+      "canonicalBehaviourCardId": "sv10-182",
+      "gameplayFamilyId": "owned:sv10-182",
+      "cardName": "Team Rocket's Energy",
+      "cardType": "Energy",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [
+        {
+          "id": "sv10-182:energy:unbound",
+          "kind": "energy",
+          "name": "Team Rocket's Energy",
+          "text": "This card can only be attached to a Team Rocket's Pokémon. If this card is attached to anything other than a Team Rocket's Pokémon, discard this card.  As long as this card is attached to a Pokémon, it provides 2 in any combination of Psychic Energy and Darkness Energy."
+        }
+      ],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|203/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-203",
+      "canonicalBehaviourCardId": "me2pt5-203",
+      "gameplayFamilyId": "owned:me2pt5-203",
+      "cardName": "Team Rocket's Factory",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-203"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-203"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|204/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-204",
+      "canonicalBehaviourCardId": "me2pt5-204",
+      "gameplayFamilyId": "owned:me2pt5-204",
+      "cardName": "Team Rocket's Giovanni",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-204"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-204"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|121/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-121",
+      "canonicalBehaviourCardId": "sv10-121",
+      "gameplayFamilyId": "owned:sv10-121",
+      "cardName": "Team Rocket's Golbat",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-121:ability:0",
+        "generated:owned:sv10-121:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-121"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|175/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-175",
+      "canonicalBehaviourCardId": "sv10-175",
+      "gameplayFamilyId": "owned:sv10-175",
+      "cardName": "Team Rocket's Great Ball",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-175"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-175"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|123/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-123",
+      "canonicalBehaviourCardId": "sv10-123",
+      "gameplayFamilyId": "owned:sv10-123",
+      "cardName": "Team Rocket's Grimer",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-123:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-123"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|125/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-125",
+      "canonicalBehaviourCardId": "sv10-125",
+      "gameplayFamilyId": "owned:sv10-125",
+      "cardName": "Team Rocket's Koffing",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "partial",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-125:ability:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-125"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|124/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-124",
+      "canonicalBehaviourCardId": "sv10-124",
+      "gameplayFamilyId": "owned:sv10-124",
+      "cardName": "Team Rocket's Muk",
+      "cardType": "Pokémon",
+      "copies": 5,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-124:attack:0",
+        "generated:owned:sv10-124:attack:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-124"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|119/182|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv10-119",
+      "canonicalBehaviourCardId": "sv10-119",
+      "gameplayFamilyId": "owned:sv10-119",
+      "cardName": "Team Rocket's Nidoking ex",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 3,
+      "executionProvenClauseCount": 3,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 3,
+      "coveredClauses": 3
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|116/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-116",
+      "canonicalBehaviourCardId": "sv10-116",
+      "gameplayFamilyId": "owned:sv10-116",
+      "cardName": "Team Rocket's Nidoqueen",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-116:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-116"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|114/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-114",
+      "canonicalBehaviourCardId": "sv10-114",
+      "gameplayFamilyId": "owned:sv10-114",
+      "cardName": "Team Rocket's Nidoran♀",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-114:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-114"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|117/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-117",
+      "canonicalBehaviourCardId": "sv10-117",
+      "gameplayFamilyId": "owned:sv10-117",
+      "cardName": "Team Rocket's Nidoran♂",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|115/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-115",
+      "canonicalBehaviourCardId": "sv10-115",
+      "gameplayFamilyId": "owned:sv10-115",
+      "cardName": "Team Rocket's Nidorina",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-115:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-115"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|118/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-118",
+      "canonicalBehaviourCardId": "sv10-118",
+      "gameplayFamilyId": "owned:sv10-118",
+      "cardName": "Team Rocket's Nidorino",
+      "cardType": "Pokémon",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|207/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-207",
+      "canonicalBehaviourCardId": "me2pt5-207",
+      "gameplayFamilyId": "owned:me2pt5-207",
+      "cardName": "Team Rocket's Petrel",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "template:trainer:search-deck-to-hand:trainer:1"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-207"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|153/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-153",
+      "canonicalBehaviourCardId": "sv10-153",
+      "gameplayFamilyId": "owned:sv10-153",
+      "cardName": "Team Rocket's Porygon",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-153:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-153"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|155/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-155",
+      "canonicalBehaviourCardId": "sv10-155",
+      "gameplayFamilyId": "owned:sv10-155",
+      "cardName": "Team Rocket's Porygon-Z",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-155:ability:0",
+        "generated:owned:sv10-155:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-155"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|154/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-154",
+      "canonicalBehaviourCardId": "sv10-154",
+      "gameplayFamilyId": "owned:sv10-154",
+      "cardName": "Team Rocket's Porygon2",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-154:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-154"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|177/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-177",
+      "canonicalBehaviourCardId": "sv10-177",
+      "gameplayFamilyId": "owned:sv10-177",
+      "cardName": "Team Rocket's Proton",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|019/217|Holo|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-19",
+      "canonicalBehaviourCardId": "me2pt5-19",
+      "gameplayFamilyId": "owned:me2pt5-19",
+      "cardName": "Team Rocket's Spidops",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-19:ability:0",
+        "generated:owned:me2pt5-19:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-19"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|020/182|Non-holo|null|null|null"
+      ],
+      "catalogueCardId": "sv10-20",
+      "canonicalBehaviourCardId": "sv10-20",
+      "gameplayFamilyId": "owned:sv10-20",
+      "cardName": "Team Rocket's Spidops",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|019/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-19",
+      "canonicalBehaviourCardId": "sv10-19",
+      "gameplayFamilyId": "owned:sv10-19",
+      "cardName": "Team Rocket's Tarountula",
+      "cardType": "Pokémon",
+      "copies": 5,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me2pt5|209/217|null|null|null|null"
+      ],
+      "catalogueCardId": "me2pt5-209",
+      "canonicalBehaviourCardId": "me2pt5-209",
+      "gameplayFamilyId": "owned:me2pt5-209",
+      "cardName": "Team Rocket's Transceiver",
+      "cardType": "Trainer",
+      "copies": 4,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me2pt5-209"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me2pt5-209"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|179/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-179",
+      "canonicalBehaviourCardId": "sv10-179",
+      "gameplayFamilyId": "owned:sv10-179",
+      "cardName": "Team Rocket's Venture Bomb",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-179"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-179"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|126/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-126",
+      "canonicalBehaviourCardId": "sv10-126",
+      "gameplayFamilyId": "owned:sv10-126",
+      "cardName": "Team Rocket's Weezing",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-126:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-126"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|082/182|Holo|null|null|null"
+      ],
+      "catalogueCardId": "sv10-82",
+      "canonicalBehaviourCardId": "sv10-82",
+      "gameplayFamilyId": "owned:sv10-82",
+      "cardName": "Team Rocket's Wobbuffet",
+      "cardType": "Pokémon",
+      "copies": 2,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:sv10-82:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv10-82"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:sv10|120/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv10-120",
+      "canonicalBehaviourCardId": "sv10-120",
+      "gameplayFamilyId": "owned:sv10-120",
+      "cardName": "Team Rocket's Zubat",
+      "cardType": "Pokémon",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4|177/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv4-177",
+      "canonicalBehaviourCardId": "sv4-177",
+      "gameplayFamilyId": "owned:sv4-177",
+      "cardName": "Technical Machine: Devolution",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [
+        {
+          "id": "sv4-177:attack:0",
+          "kind": "attack",
+          "name": "Devolution",
+          "text": "Devolve each of your opponent's evolved Pokémon by putting the highest Stage Evolution card on it into your opponent's hand."
+        }
+      ],
+      "unknownPrograms": [
+        "generated:owned:sv4-177"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv4-177"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:sv4|178/182|null|null|null|null"
+      ],
+      "catalogueCardId": "sv4-178",
+      "canonicalBehaviourCardId": "sv4-178",
+      "gameplayFamilyId": "owned:sv4-178",
+      "cardName": "Technical Machine: Evolution",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [
+        {
+          "id": "sv4-178:attack:0",
+          "kind": "attack",
+          "name": "Evolution",
+          "text": "Choose up to 2 of your Benched Pokémon. For each of those Pokémon, search your deck for a card that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        }
+      ],
+      "unknownPrograms": [
+        "generated:owned:sv4-178"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "sv4-178"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me3|088/088|Holo|null|null|null",
+        "card:me3|088/088|Reverse Holo|null|null|null"
+      ],
+      "catalogueCardId": "me3-88",
+      "canonicalBehaviourCardId": "me3-88",
+      "gameplayFamilyId": "owned:me3-88",
+      "cardName": "Telepathic Psychic Energy",
+      "cardType": "Energy",
+      "copies": 4,
+      "implementationStatus": "complete",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [
+        {
+          "id": "me3-88:energy:unbound",
+          "kind": "energy",
+          "name": "Telepathic Psychic Energy",
+          "text": "As long as this card is attached to a Pokémon, it provides Psychic Energy. When you attach this card from your hand to a Psychic Pokémon, search your deck for up to 2 Basic Psychic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        }
+      ],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": false,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|068/084|null|null|null|null"
+      ],
+      "catalogueCardId": "me5-68",
+      "canonicalBehaviourCardId": "me5-68",
+      "gameplayFamilyId": "owned:me5-68",
+      "cardName": "Toucannon",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-68:ability:0",
+        "generated:owned:me5-68:attack:0"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-68"
+      ],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|082/084|Reverse Holo|null|null|null"
+      ],
+      "catalogueCardId": "me5-82",
+      "canonicalBehaviourCardId": "me5-82",
+      "gameplayFamilyId": "owned:me5-82",
+      "cardName": "Tremendous Bomb",
+      "cardType": "Trainer",
+      "copies": 1,
+      "implementationStatus": "unsupported",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [
+        "generated:owned:me5-82"
+      ],
+      "choiceSemantics": "requires-review",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": false,
+      "standardLegal": true,
+      "requiresReviewChoices": [
+        "me5-82"
+      ],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:m1|131/132|null|null|null|null"
+      ],
+      "catalogueCardId": "me1-131",
+      "canonicalBehaviourCardId": "me1-131",
+      "gameplayFamilyId": "owned:me1-131",
+      "cardName": "Ultra Ball",
+      "cardType": "Trainer",
+      "copies": 8,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:me05|015/084|null|null|null|null"
+      ],
+      "catalogueCardId": "me5-15",
+      "canonicalBehaviourCardId": "me5-15",
+      "gameplayFamilyId": "owned:me5-15",
+      "cardName": "Wailmer",
+      "cardType": "Pokémon",
+      "copies": 1,
+      "implementationStatus": "generated",
+      "printedClauseCount": 2,
+      "executionProvenClauseCount": 2,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "deterministic-no-choice",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 2,
+      "coveredClauses": 2
+    },
+    {
+      "ownedProductIds": [
+        "card:me02|094/094|null|null|null|null"
+      ],
+      "catalogueCardId": "me2-94",
+      "canonicalBehaviourCardId": "me2-94",
+      "gameplayFamilyId": "owned:me2-94",
+      "cardName": "Wondrous Patch",
+      "cardType": "Trainer",
+      "copies": 2,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
+    },
+    {
+      "ownedProductIds": [
+        "card:ba24a|198/198|null|null|null|null"
+      ],
+      "catalogueCardId": "sv1-198",
+      "canonicalBehaviourCardId": "sv1-198",
+      "gameplayFamilyId": "owned:sv1-198",
+      "cardName": "Youngster",
+      "cardType": "Trainer",
+      "copies": 3,
+      "implementationStatus": "complete",
+      "printedClauseCount": 1,
+      "executionProvenClauseCount": 1,
+      "unmatchedClauses": [],
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
+      "runtimeDefinitionAvailable": true,
+      "simulationReady": true,
+      "standardLegal": true,
+      "requiresReviewChoices": [],
+      "printedClauses": 1,
+      "coveredClauses": 1
     }
   ]
 }
