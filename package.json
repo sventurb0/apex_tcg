@@ -48,6 +48,7 @@
     "acceptance:meta-decks": "tsx scripts/acceptance-meta-decks.ts"
     ,"acceptance:architect-product": "tsx scripts/acceptance-architect-product.ts"
     ,"acceptance:architect-benchmarks": "tsx scripts/acceptance-architect-benchmarks.ts"
+    ,"acceptance:engine-library": "tsx scripts/acceptance-engine-library.ts"
     ,"acceptance:architect-vs-legacy": "tsx scripts/acceptance-architect-vs-legacy.ts"
     ,"collection:import": "tsx scripts/collection-import.ts"
     ,"collection:validate": "tsx scripts/collection-validate.ts"

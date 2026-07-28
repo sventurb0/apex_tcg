@@ -22,6 +22,8 @@ Engines are defined by exact capabilities and requirements. Shared Pokémon type
 | Mega Lucario Discard Acceleration | Fighting | acceleration, aggressive, discard | 1 | 3 | 0 | 1 | reviewed |
 | Metagross Metal Energy | Metal | evolution, aggressive, single-prize | 1 | 3 | 0 | 1 | reviewed |
 | Colorless Flexible Attackers | Colorless | toolbox, aggressive | 1 | 2 | 0 | 3 | reviewed |
+| Corviknight Metal Defence | Metal | defence, control, toolbox | 1 | 2 | 0 | 2 | reviewed |
+| Dudunsparce Draw Cycle | Colorless | draw, toolbox, setup | 1 | 2 | 0 | 2 | reviewed |
 
 ## Darkness Poison
 
@@ -184,3 +186,21 @@ Engines are defined by exact capabilities and requirements. Shared Pokémon type
 - Bench demand: 3; setup: fast; prizes: multi-prize
 - Source decks: limitless-28262, limitless-28405, limitless-27961
 - Review: Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role.
+
+## Corviknight Metal Defence
+
+- ID: `metal-corviknight-defence`
+- Core exact IDs: `sv1-135`, `me4-61`
+- Required packages: metal-defence-tools, metal-energy-density
+- Bench demand: 3; setup: medium; prizes: single-prize
+- Source decks: limitless-28268, limitless-28423
+- Review: Reviewed package keeps Corviknight as a defensive support attacker and reserves Metal Energy for the selected attacker. Tool and Stadium dependencies are explicit; this engine must not be mixed with high-bench toolbox plans without a capacity check.
+
+## Dudunsparce Draw Cycle
+
+- ID: `colorless-dudunsparce-cycle`
+- Core exact IDs: `sv9-121`, `sv9-120`
+- Required packages: dudunsparce-draw-cycle, colorless-flex-attackers
+- Bench demand: 4; setup: fast; prizes: mixed
+- Source decks: limitless-28262, limitless-28405
+- Review: Run Away Draw is a cycling engine: the Pokémon and attached cards return to deck, so the list must preserve Basic setup density and avoid treating the draw body as a permanent attacker. Colorless requirements remain flexible but still need a measured Energy count for the chosen secondary attacker.

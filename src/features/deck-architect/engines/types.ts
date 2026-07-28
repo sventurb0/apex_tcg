@@ -3,7 +3,10 @@ import type { PokemonType } from "../../../data/pokemon/types";
 export type CardType = PokemonType;
 export type EngineId = string;
 export type PackageId = string;
-export type StrategicTag = "acceleration" | "aggressive" | "bench-damage" | "comeback" | "control" | "damage-spread" | "defence" | "discard" | "draw" | "evolution" | "healing" | "poison" | "setup" | "single-prize" | "toolbox" | "top-deck-control";
+export type CardFamilyId = string;
+export type TrainerPackageId = PackageId;
+export type EnergyPlanId = string;
+export type StrategicTag = "acceleration" | "aggressive" | "bench-damage" | "comeback" | "control" | "damage-spread" | "defence" | "discard" | "draw" | "evolution" | "healing" | "poison" | "setup" | "single-prize" | "toolbox" | "top-deck-control" | "search" | "pokemon-search" | "trainer-search" | "switching" | "gust" | "discard-recovery" | "hp-modifier" | "damage-modifier" | "damage-counter-movement" | "primary-attacker" | "secondary-attacker" | "support" | "engine-core" | "evolution-support" | "energy-acceleration" | "energy-movement";
 export type Zone = "deck" | "hand" | "discard" | "active" | "bench" | "play";
 export type TimingConstraint = "once-per-turn" | "on-evolution" | "attack" | "after-knockout" | "while-active" | "continuous";
 
@@ -40,6 +43,14 @@ export interface EngineRequirement {
 }
 export interface EngineConflict { kind: "stadium" | "bench" | "energy" | "team-trait" | "tool"; withEngineId?: EngineId; explanation: string; }
 
+export interface EngineStep {
+  id: string;
+  action: "search" | "play" | "attach" | "evolve" | "attack" | "recover" | "disrupt";
+  cardIds: CardFamilyId[];
+  description: string;
+  capabilityKinds?: CapabilityKind[];
+}
+
 export interface EngineDefinition {
   id: EngineId;
   name: string;
@@ -57,6 +68,18 @@ export interface EngineDefinition {
   coreCardIds: string[];
   reviewed: boolean;
   reviewNotes: string[];
+  /** Reviewed ontology fields used by Architect synthesis and diagnostics. */
+  corePokemon: CardFamilyId[];
+  supportPokemon: CardFamilyId[];
+  trainerPackage: TrainerPackageId[];
+  energyPlan: EnergyPlanId[];
+  setupSequence: EngineStep[];
+  mainAttackPlan: EngineStep[];
+  recoveryPlan: EngineStep[];
+  disruptionPlan?: EngineStep[];
+  compatibleEngines: EngineId[];
+  conflictingEngines: EngineId[];
+  ownedCardCoverage: number;
 }
 
 export interface SynergyStep { providerCardId: string; consumerCardId: string; capability: EngineCapability; requirement: EngineRequirement; explanation: string; }

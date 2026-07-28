@@ -1,6 +1,7 @@
 import type { DeckPackage } from "./types";
+import { additionalDeckPackages } from "./reviewed-packages";
 
-export const deckPackages: DeckPackage[] = [
+const baseDeckPackages: DeckPackage[] = [
   { id: "fire-stage2-core", name: "Skeledirge Stage 2 core", requiredCards: [{ cardId: "sv2-35", count: 4 },{ cardId: "sv1-37", count: 3 },{ cardId: "sv2-37", count: 2 }], optionalCards: [{ cardId: "swsh12-16", min: 0, max: 1 }], compatibleTypes: ["Fire"], compatibleStages: ["Stage 2"], compatibleTraits: [], conflicts: [], strategicTags: ["primary-attacker","evolution-support","healing"], simulationReady: true, explanation: "A full Fuecoco evolution line supports Skeledirge ex without hiding the required setup." },
   { id: "fire-acceleration", name: "Fire acceleration", requiredCards: [{ cardId: "sv4-26", count: 2 },{ cardId: "sv1-41", count: 2 },{ cardId: "swsh9-144", count: 4 }], optionalCards: [], compatibleTypes: ["Fire"], compatibleStages: [], compatibleTraits: [], conflicts: [], strategicTags: ["energy-acceleration","energy-movement"], simulationReady: true, explanation: "Magma Basin accelerates Fire Energy and Armarouge moves it to the Active attacker." },
   { id: "fire-consistency", name: "Fire consistency", requiredCards: [{ cardId: "swsh12-137", count: 2 },{ cardId: "swsh12pt5-127", count: 2 },{ cardId: "swsh5-125", count: 2 },{ cardId: "swsh35-52", count: 2 },{ cardId: "sv4pt5-80", count: 2 },{ cardId: "sv1-175", count: 2 },{ cardId: "swsh6-145", count: 2 },{ cardId: "sv4pt5-84", count: 3 },{ cardId: "sv1-189", count: 4 },{ cardId: "sv1-194", count: 2 },{ cardId: "sv4pt5-91", count: 4 },{ cardId: "sv1-198", count: 3 }], optionalCards: [], compatibleTypes: ["Fire"], compatibleStages: [], compatibleTraits: [], conflicts: [], strategicTags: ["setup","pokemon-search","draw","switching","discard-recovery"], simulationReady: true, explanation: "Search, draw, switching and recovery keep the Stage 2 engine moving." },
@@ -10,5 +11,14 @@ export const deckPackages: DeckPackage[] = [
   { id: "team-rocket-engine", name: "Team Rocket engine", requiredCards: [{ cardId: "sv5-144", count: 2 },{ cardId: "sv4-163", count: 2 },{ cardId: "sv1-181", count: 3 },{ cardId: "sv6pt5-61", count: 2 },{ cardId: "sv1-191", count: 3 },{ cardId: "sv2-188", count: 1 },{ cardId: "sv10-170", count: 2 },{ cardId: "sv10-171", count: 3 },{ cardId: "sv10-173", count: 3 },{ cardId: "sv10-174", count: 2 },{ cardId: "sv10-176", count: 2 },{ cardId: "sv10-177", count: 3 },{ cardId: "sv10-178", count: 4 },{ cardId: "sv1-196", count: 4 }], optionalCards: [], compatibleTypes: ["Darkness"], compatibleStages: [], compatibleTraits: ["team-rocket"], conflicts: [], strategicTags: ["setup","pokemon-search","trainer-search","draw","switching","gust","discard-recovery"], simulationReady: true, explanation: "Team Rocket Supporters qualify Factory while Proton, Transceiver and Rare Candy accelerate setup." },
   { id: "generic-setup", name: "Generic setup/search", requiredCards: [{ cardId: "sv1-181", count: 4 },{ cardId: "sv1-196", count: 4 },{ cardId: "zsv10pt5-84", count: 4 },{ cardId: "me1-130", count: 2 },{ cardId: "sv6pt5-61", count: 2 },{ cardId: "me2pt5-192", count: 4 },{ cardId: "me2pt5-183", count: 2 }], optionalCards: [], compatibleTypes: [], compatibleStages: [], compatibleTraits: [], conflicts: [], strategicTags: ["setup","pokemon-search","trainer-search","draw","switching","discard-recovery"], simulationReady: true, explanation: "A conservative executable search/draw/recovery shell for simple attackers." },
 ];
+
+export const deckPackages: DeckPackage[] = [...baseDeckPackages, ...additionalDeckPackages].map((pack) => ({
+  ...pack,
+  cards: pack.requiredCards.map((card) => ({ familyId: card.cardId, minimum: card.count, maximum: card.count, role: pack.strategicTags.includes("primary-attacker") ? "primary-attacker" : pack.strategicTags.includes("secondary-attacker") ? "secondary-attacker" : "support" })),
+  requires: [],
+  provides: [],
+  sourceDeckIds: [],
+  reviewed: true,
+}));
 
 export function packageById(id: string): DeckPackage { const value = deckPackages.find((candidate) => candidate.id === id); if (!value) throw new Error(`Unknown Architect package: ${id}`); return value; }

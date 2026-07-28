@@ -1,6 +1,7 @@
 import type { DeckCardEntry, DeckManifest } from "../../data/decks/types";
 import type { FormatProfile } from "../deck-import/types";
 import type { StrategicTag } from "../../data/pokemon";
+import type { EngineCapability, EngineRequirement } from "./engines/types";
 
 export type ArchitectMode = "simulation-ready" | "creative";
 export type ArchitectProfile = "balanced" | "turbo" | "resilient" | "control" | "aggressive";
@@ -17,5 +18,16 @@ export interface CandidateSimulationSummary { games: number; wins: number; losse
 export type GauntletPlan = number | { gamesPerOpponent?: number; totalGames?: number };
 export interface ImplementationBacklogItem { cardId: string; behaviourFamilyId?: string; equivalentCardIds: string[]; missingAbilities: string[]; missingAttacks: string[]; missingEffects: string[]; candidatesBlocked: number; strategicImportance: number; }
 export interface ImplementationBacklog { generatedAt: string; items: ImplementationBacklogItem[]; markdown: string; }
-export interface DeckPackage { id: string; name: string; requiredCards: Array<{ cardId: string; count: number }>; optionalCards: Array<{ cardId: string; min: number; max: number }>; compatibleTypes: string[]; compatibleStages: string[]; compatibleTraits: string[]; conflicts: string[]; strategicTags: StrategicTag[]; simulationReady: boolean; explanation: string; }
+export interface DeckPackage {
+  id: string; name: string;
+  requiredCards: Array<{ cardId: string; count: number }>;
+  optionalCards: Array<{ cardId: string; min: number; max: number }>;
+  /** TrainerPackage ontology view retained alongside the legacy Architect fields. */
+  cards?: Array<{ familyId: string; minimum: number; maximum: number; role: SelectedCardRole }>;
+  requires?: EngineRequirement[];
+  provides?: EngineCapability[];
+  sourceDeckIds?: string[];
+  reviewed?: boolean;
+  compatibleTypes: string[]; compatibleStages: string[]; compatibleTraits: string[]; conflicts: string[]; strategicTags: StrategicTag[]; simulationReady: boolean; explanation: string;
+}
 export interface ArchitectReferenceDeck { id: string; source: "tournament" | "premade" | "reviewed-personal"; manifest: DeckManifest; engineIds: string[]; strategyPlan: import("./engines/types").DeckStrategyPlan; provenance: { label: string; event?: string; player?: string; placement?: number; reviewed: boolean; }; }

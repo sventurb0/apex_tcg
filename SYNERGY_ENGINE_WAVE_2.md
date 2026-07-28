@@ -4,7 +4,7 @@ Co-occurrence is evidence only. Every reviewed package also has a semantic expla
 
 ## Summary
 
-- Multi-card synergy chains: 26 (6 reviewed, 20 derived)
+- Multi-card synergy chains: 46 (26 reviewed, 20 derived)
 - Source package definitions: 18
 - Packages with corpus evidence: 18
 - Generated strategy plans: 37
@@ -86,6 +86,166 @@ Co-occurrence is evidence only. Every reviewed package also has a semantic expla
 - Sources: limitless-28254, limitless-28351
 - Team Rocket's Energy provides the printed Psychic option to the qualifying Team Rocket's Mewtwo ex.
 - Constraints: Power Saver still requires four Team Rocket's Pokémon in play. Off-trait support does not count toward that board threshold.
+
+## okidogi-binding-mochi
+
+- Cards: `sv6pt5-36` → `sv8pt5-95`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Binding Mochi is only live when Okidogi ex is Poisoned; the package requires a separate Poison provider.
+
+## okidogi-munkidori
+
+- Cards: `sv6pt5-36` → `sv6-95`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Munkidori moves damage counters from the Poisoned attacker while Darkness Energy is attached.
+
+## brute-bonnet-ancient-booster
+
+- Cards: `sv6pt5-37` → `sv5-140`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Brute Bonnet's Poison plan requires its Tool/Ancient Booster condition before damage modifiers are counted.
+
+## skeledirge-armarouge
+
+- Cards: `sv2-37` → `sv4-26`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Armarouge moves Fire Energy from the Bench to the Active Skeledirge attacker.
+
+## skeledirge-magma-basin
+
+- Cards: `sv2-37` → `sv4-26` → `swsh9-144`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Magma Basin establishes discard acceleration, while the Stage 2 line spends Bench and evolution slots.
+
+## hydrapple-teal-mask
+
+- Cards: `sv7-14` → `sv6-25`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Both abilities grow the Grass Energy total used by Syrup Storm and need Grass Energy in hand.
+
+## dragapult-drakloak
+
+- Cards: `sv6-130` → `sv6-129`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Drakloak's setup is a prerequisite for Dragapult's Fire/Psychic spread attack.
+
+## dragapult-dusknoir
+
+- Cards: `sv6-130` → `sv6-131`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Dusknoir consumes damage-counter pressure created by Phantom Dive and adds a prize-trade decision.
+
+## slowking-academy
+
+- Cards: `sv7-58` → `sv6pt5-54`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Academy at Night prepares a legal top-deck Pokémon for Slowking's copied attack.
+
+## alakazam-hand-growth
+
+- Cards: `me1-56` → `me1-119`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Hand-growth Supporters directly increase Powerful Hand damage but compete with search and evolution timing.
+
+## zoroark-n-attack-donors
+
+- Cards: `sv9-98` → `sv9-97`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Night Joker copies attacks only from qualifying Benched N's Pokémon; donors are not decorative inclusions.
+
+## team-rocket-factory-supporters
+
+- Cards: `sv10-173` → `sv10-178`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Factory and Transceiver require a real Team Rocket Supporter density and trait-qualified board.
+
+## metang-metal-attackers
+
+- Cards: `me4-61` → `me4-60`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Metang acceleration must feed the chosen Metal attacker without exceeding Bench or discard capacity.
+
+## joltik-dual-energy
+
+- Cards: `sv7-50` → `sv8-57`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Jolting Charge distributes Grass and Lightning Energy, then the deck must preserve a second attacker.
+
+## festival-lead-attacker
+
+- Cards: `sv6-25` → `sv6-143`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Festival Lead packages reserve Stadium and Bench resources for the double-attack sequence.
+
+## dudunsparce-cycle
+
+- Cards: `sv9-120` → `sv9-121`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Dudunsparce cycles its body and attached cards; the deck needs a resilient Basic setup density.
+
+## munkidori-damage-engine
+
+- Cards: `sv6-95` → `sv6pt5-36`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Munkidori's counter movement is strongest when the main attacker intentionally carries damage or Poison.
+
+## clefairy-multitype-energy
+
+- Cards: `sv9-56` → `sv7-133`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Full Moon Rondo benefits from a populated Bench while Crispin supplies two distinct Basic Energy types.
+
+## area-zero-tera-toolbox
+
+- Cards: `sv7-131` → `sv7-133`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Area Zero's expanded Bench is conditional on a Tera Pokémon and competes with other Stadium engines.
+
+## corviknight-metal-defence
+
+- Cards: `sv1-135` → `me4-61`
+- Score/confidence: 80 / reviewed
+- Sources: derived from reviewed capabilities
+
+- Constraints: Corviknight consumes a support slot to protect a Metal attacker; the package rejects uncontrolled Bench growth.
 
 ## derived-1-sv6pt5-36-sv6-95
 

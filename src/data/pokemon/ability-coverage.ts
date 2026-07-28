@@ -2,7 +2,7 @@ import { normalizeCardName } from "./catalogue";
 import { compileCardImplementation } from "./implementations/effect-compiler";
 import type { PokemonCardMetadata, PrintedAbility } from "./types";
 
-export type StrategicTag = "primary-attacker" | "secondary-attacker" | "draw" | "hand-refresh" | "pokemon-search" | "trainer-search" | "energy-search" | "energy-acceleration" | "energy-movement" | "switching" | "gust" | "healing" | "damage-counter-movement" | "poison" | "special-condition" | "damage-modifier" | "hp-modifier" | "prize-modifier" | "item-lock" | "retreat-lock" | "ability-lock" | "discard-recovery" | "evolution-support" | "bench-support" | "setup" | "finisher";
+export type StrategicTag = "primary-attacker" | "secondary-attacker" | "draw" | "hand-refresh" | "pokemon-search" | "trainer-search" | "energy-search" | "energy-acceleration" | "energy-movement" | "switching" | "gust" | "healing" | "damage-counter-movement" | "poison" | "special-condition" | "damage-modifier" | "hp-modifier" | "prize-modifier" | "item-lock" | "retreat-lock" | "ability-lock" | "discard-recovery" | "evolution-support" | "bench-support" | "setup" | "finisher" | "acceleration" | "aggressive" | "bench-damage" | "comeback" | "control" | "damage-spread" | "defence" | "discard" | "evolution" | "single-prize" | "toolbox" | "top-deck-control" | "search" | "support" | "engine-core";
 
 export interface AbilitySignatureRecord {
   id: string;

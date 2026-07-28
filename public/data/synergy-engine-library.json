@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T20:54:56.177Z",
+  "generatedAt": "2026-07-26T23:58:51.340Z",
   "chains": [
     {
       "id": "poison-switch-okidogi-mochi",
@@ -491,6 +491,287 @@
         "limitless-28254",
         "limitless-28351"
       ],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "okidogi-binding-mochi",
+      "cardIds": [
+        "sv6pt5-36",
+        "sv8pt5-95"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Binding Mochi is only live when Okidogi ex is Poisoned; the package requires a separate Poison provider."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "okidogi-munkidori",
+      "cardIds": [
+        "sv6pt5-36",
+        "sv6-95"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Munkidori moves damage counters from the Poisoned attacker while Darkness Energy is attached."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "brute-bonnet-ancient-booster",
+      "cardIds": [
+        "sv6pt5-37",
+        "sv5-140"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Brute Bonnet's Poison plan requires its Tool/Ancient Booster condition before damage modifiers are counted."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "skeledirge-armarouge",
+      "cardIds": [
+        "sv2-37",
+        "sv4-26"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Armarouge moves Fire Energy from the Bench to the Active Skeledirge attacker."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "skeledirge-magma-basin",
+      "cardIds": [
+        "sv2-37",
+        "sv4-26",
+        "swsh9-144"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Magma Basin establishes discard acceleration, while the Stage 2 line spends Bench and evolution slots."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "hydrapple-teal-mask",
+      "cardIds": [
+        "sv7-14",
+        "sv6-25"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Both abilities grow the Grass Energy total used by Syrup Storm and need Grass Energy in hand."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dragapult-drakloak",
+      "cardIds": [
+        "sv6-130",
+        "sv6-129"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Drakloak's setup is a prerequisite for Dragapult's Fire/Psychic spread attack."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dragapult-dusknoir",
+      "cardIds": [
+        "sv6-130",
+        "sv6-131"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Dusknoir consumes damage-counter pressure created by Phantom Dive and adds a prize-trade decision."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "slowking-academy",
+      "cardIds": [
+        "sv7-58",
+        "sv6pt5-54"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Academy at Night prepares a legal top-deck Pokémon for Slowking's copied attack."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "alakazam-hand-growth",
+      "cardIds": [
+        "me1-56",
+        "me1-119"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Hand-growth Supporters directly increase Powerful Hand damage but compete with search and evolution timing."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "zoroark-n-attack-donors",
+      "cardIds": [
+        "sv9-98",
+        "sv9-97"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Night Joker copies attacks only from qualifying Benched N's Pokémon; donors are not decorative inclusions."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "team-rocket-factory-supporters",
+      "cardIds": [
+        "sv10-173",
+        "sv10-178"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Factory and Transceiver require a real Team Rocket Supporter density and trait-qualified board."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "metang-metal-attackers",
+      "cardIds": [
+        "me4-61",
+        "me4-60"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Metang acceleration must feed the chosen Metal attacker without exceeding Bench or discard capacity."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "joltik-dual-energy",
+      "cardIds": [
+        "sv7-50",
+        "sv8-57"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Jolting Charge distributes Grass and Lightning Energy, then the deck must preserve a second attacker."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "festival-lead-attacker",
+      "cardIds": [
+        "sv6-25",
+        "sv6-143"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Festival Lead packages reserve Stadium and Bench resources for the double-attack sequence."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dudunsparce-cycle",
+      "cardIds": [
+        "sv9-120",
+        "sv9-121"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Dudunsparce cycles its body and attached cards; the deck needs a resilient Basic setup density."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "munkidori-damage-engine",
+      "cardIds": [
+        "sv6-95",
+        "sv6pt5-36"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Munkidori's counter movement is strongest when the main attacker intentionally carries damage or Poison."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "clefairy-multitype-energy",
+      "cardIds": [
+        "sv9-56",
+        "sv7-133"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Full Moon Rondo benefits from a populated Bench while Crispin supplies two distinct Basic Energy types."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "area-zero-tera-toolbox",
+      "cardIds": [
+        "sv7-131",
+        "sv7-133"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Area Zero's expanded Bench is conditional on a Tera Pokémon and competes with other Stadium engines."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "corviknight-metal-defence",
+      "cardIds": [
+        "sv1-135",
+        "me4-61"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Corviknight consumes a support slot to protect a Metal attacker; the package rejects uncontrolled Bench growth."
+      ],
+      "sourceDeckIds": [],
       "confidence": "reviewed"
     },
     {
@@ -2273,6 +2554,287 @@
         "limitless-28351"
       ],
       "confidence": "reviewed"
+    },
+    {
+      "id": "okidogi-binding-mochi",
+      "cardIds": [
+        "sv6pt5-36",
+        "sv8pt5-95"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Binding Mochi is only live when Okidogi ex is Poisoned; the package requires a separate Poison provider."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "okidogi-munkidori",
+      "cardIds": [
+        "sv6pt5-36",
+        "sv6-95"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Munkidori moves damage counters from the Poisoned attacker while Darkness Energy is attached."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "brute-bonnet-ancient-booster",
+      "cardIds": [
+        "sv6pt5-37",
+        "sv5-140"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Brute Bonnet's Poison plan requires its Tool/Ancient Booster condition before damage modifiers are counted."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "skeledirge-armarouge",
+      "cardIds": [
+        "sv2-37",
+        "sv4-26"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Armarouge moves Fire Energy from the Bench to the Active Skeledirge attacker."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "skeledirge-magma-basin",
+      "cardIds": [
+        "sv2-37",
+        "sv4-26",
+        "swsh9-144"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Magma Basin establishes discard acceleration, while the Stage 2 line spends Bench and evolution slots."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "hydrapple-teal-mask",
+      "cardIds": [
+        "sv7-14",
+        "sv6-25"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Both abilities grow the Grass Energy total used by Syrup Storm and need Grass Energy in hand."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dragapult-drakloak",
+      "cardIds": [
+        "sv6-130",
+        "sv6-129"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Drakloak's setup is a prerequisite for Dragapult's Fire/Psychic spread attack."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dragapult-dusknoir",
+      "cardIds": [
+        "sv6-130",
+        "sv6-131"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Dusknoir consumes damage-counter pressure created by Phantom Dive and adds a prize-trade decision."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "slowking-academy",
+      "cardIds": [
+        "sv7-58",
+        "sv6pt5-54"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Academy at Night prepares a legal top-deck Pokémon for Slowking's copied attack."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "alakazam-hand-growth",
+      "cardIds": [
+        "me1-56",
+        "me1-119"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Hand-growth Supporters directly increase Powerful Hand damage but compete with search and evolution timing."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "zoroark-n-attack-donors",
+      "cardIds": [
+        "sv9-98",
+        "sv9-97"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Night Joker copies attacks only from qualifying Benched N's Pokémon; donors are not decorative inclusions."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "team-rocket-factory-supporters",
+      "cardIds": [
+        "sv10-173",
+        "sv10-178"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Factory and Transceiver require a real Team Rocket Supporter density and trait-qualified board."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "metang-metal-attackers",
+      "cardIds": [
+        "me4-61",
+        "me4-60"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Metang acceleration must feed the chosen Metal attacker without exceeding Bench or discard capacity."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "joltik-dual-energy",
+      "cardIds": [
+        "sv7-50",
+        "sv8-57"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Jolting Charge distributes Grass and Lightning Energy, then the deck must preserve a second attacker."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "festival-lead-attacker",
+      "cardIds": [
+        "sv6-25",
+        "sv6-143"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Festival Lead packages reserve Stadium and Bench resources for the double-attack sequence."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "dudunsparce-cycle",
+      "cardIds": [
+        "sv9-120",
+        "sv9-121"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Dudunsparce cycles its body and attached cards; the deck needs a resilient Basic setup density."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "munkidori-damage-engine",
+      "cardIds": [
+        "sv6-95",
+        "sv6pt5-36"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Munkidori's counter movement is strongest when the main attacker intentionally carries damage or Poison."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "clefairy-multitype-energy",
+      "cardIds": [
+        "sv9-56",
+        "sv7-133"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Full Moon Rondo benefits from a populated Bench while Crispin supplies two distinct Basic Energy types."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "area-zero-tera-toolbox",
+      "cardIds": [
+        "sv7-131",
+        "sv7-133"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Area Zero's expanded Bench is conditional on a Tera Pokémon and competes with other Stadium engines."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
+    },
+    {
+      "id": "corviknight-metal-defence",
+      "cardIds": [
+        "sv1-135",
+        "me4-61"
+      ],
+      "score": 80,
+      "steps": [],
+      "constraints": [
+        "Corviknight consumes a support slot to protect a Metal attacker; the package rejects uncontrolled Bench growth."
+      ],
+      "sourceDeckIds": [],
+      "confidence": "reviewed"
     }
   ],
   "derivedChains": [
@@ -3812,15 +4374,15 @@
       "sourceDeckIds": [
         "limitless-28249",
         "limitless-28251",
-        "limitless-28254",
-        "limitless-28262",
         "limitless-28253",
+        "limitless-28254",
         "limitless-28258",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28265",
-        "limitless-28692",
+        "limitless-28351",
         "limitless-28675",
-        "limitless-28351"
+        "limitless-28692"
       ],
       "sourceDeckCount": 11,
       "weightedTournamentSuccess": 340.42,
@@ -3858,12 +4420,12 @@
       ],
       "sourceDeckIds": [
         "limitless-28249",
-        "limitless-28262",
         "limitless-28253",
         "limitless-28258",
+        "limitless-28262",
         "limitless-28263",
-        "limitless-28692",
-        "limitless-28675"
+        "limitless-28675",
+        "limitless-28692"
       ],
       "sourceDeckCount": 7,
       "weightedTournamentSuccess": 223.6,
@@ -3896,15 +4458,15 @@
       "sourceDeckIds": [
         "limitless-28236",
         "limitless-28250",
-        "limitless-28257",
-        "limitless-28262",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
+        "limitless-28257",
         "limitless-28258",
         "limitless-28259",
         "limitless-28260",
         "limitless-28261",
+        "limitless-28262",
         "limitless-28264",
         "limitless-28268",
         "limitless-28270",
@@ -3947,23 +4509,23 @@
         "me3-62"
       ],
       "sourceDeckIds": [
-        "limitless-28249",
         "limitless-28236",
+        "limitless-28249",
         "limitless-28250",
         "limitless-28251",
-        "limitless-28257",
-        "limitless-28262",
-        "limitless-28266",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
+        "limitless-28257",
         "limitless-28258",
         "limitless-28259",
         "limitless-28260",
         "limitless-28261",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28264",
         "limitless-28265",
+        "limitless-28266",
         "limitless-28268",
         "limitless-28269",
         "limitless-28271",
@@ -3972,8 +4534,8 @@
         "limitless-28274",
         "limitless-28423",
         "limitless-28571",
-        "limitless-28692",
-        "limitless-28675"
+        "limitless-28675",
+        "limitless-28692"
       ],
       "sourceDeckCount": 27,
       "weightedTournamentSuccess": 762.55,
@@ -4010,24 +4572,23 @@
         "me2pt5-142"
       ],
       "sourceDeckIds": [
-        "limitless-28249",
         "limitless-28236",
+        "limitless-28249",
         "limitless-28250",
         "limitless-28251",
-        "limitless-28257",
-        "limitless-28262",
-        "limitless-28266",
-        "limitless-28405",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
+        "limitless-28257",
         "limitless-28258",
         "limitless-28259",
         "limitless-28260",
         "limitless-28261",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28264",
         "limitless-28265",
+        "limitless-28266",
         "limitless-28268",
         "limitless-28269",
         "limitless-28270",
@@ -4036,10 +4597,11 @@
         "limitless-28273",
         "limitless-28274",
         "limitless-28275",
+        "limitless-28405",
         "limitless-28423",
         "limitless-28571",
-        "limitless-28692",
-        "limitless-28675"
+        "limitless-28675",
+        "limitless-28692"
       ],
       "sourceDeckCount": 30,
       "weightedTournamentSuccess": 804.43,
@@ -4077,14 +4639,14 @@
         "sv5-144"
       ],
       "sourceDeckIds": [
+        "limitless-27961",
         "limitless-28236",
         "limitless-28250",
         "limitless-28252",
-        "limitless-28257",
-        "limitless-28405",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
+        "limitless-28257",
         "limitless-28258",
         "limitless-28259",
         "limitless-28260",
@@ -4099,11 +4661,11 @@
         "limitless-28274",
         "limitless-28275",
         "limitless-28276",
-        "limitless-27961",
-        "limitless-28423",
-        "limitless-28571",
+        "limitless-28351",
         "limitless-28371",
-        "limitless-28351"
+        "limitless-28405",
+        "limitless-28423",
+        "limitless-28571"
       ],
       "sourceDeckCount": 27,
       "weightedTournamentSuccess": 653.3,
@@ -4140,10 +4702,10 @@
         "me1-125"
       ],
       "sourceDeckIds": [
-        "limitless-28405",
         "limitless-28253",
         "limitless-28258",
         "limitless-28275",
+        "limitless-28405",
         "limitless-28571"
       ],
       "sourceDeckCount": 5,
@@ -4205,24 +4767,24 @@
         "sv7-133"
       ],
       "sourceDeckIds": [
-        "limitless-28249",
         "limitless-28236",
+        "limitless-28249",
         "limitless-28250",
-        "limitless-28262",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
         "limitless-28258",
         "limitless-28259",
         "limitless-28261",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28264",
         "limitless-28268",
         "limitless-28271",
         "limitless-28272",
         "limitless-28273",
-        "limitless-28692",
-        "limitless-28675"
+        "limitless-28675",
+        "limitless-28692"
       ],
       "sourceDeckCount": 18,
       "weightedTournamentSuccess": 567.08,
@@ -4287,15 +4849,15 @@
       "sourceDeckIds": [
         "limitless-28249",
         "limitless-28251",
-        "limitless-28262",
-        "limitless-28266",
         "limitless-28253",
         "limitless-28258",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28265",
+        "limitless-28266",
         "limitless-28269",
-        "limitless-28692",
-        "limitless-28675"
+        "limitless-28675",
+        "limitless-28692"
       ],
       "sourceDeckCount": 11,
       "weightedTournamentSuccess": 332.91,
@@ -4340,21 +4902,22 @@
         "sv5-152"
       ],
       "sourceDeckIds": [
+        "limitless-27961",
         "limitless-28236",
         "limitless-28250",
         "limitless-28252",
-        "limitless-28257",
-        "limitless-28262",
-        "limitless-28266",
         "limitless-28253",
         "limitless-28255",
         "limitless-28256",
+        "limitless-28257",
         "limitless-28258",
         "limitless-28259",
         "limitless-28260",
         "limitless-28261",
+        "limitless-28262",
         "limitless-28263",
         "limitless-28264",
+        "limitless-28266",
         "limitless-28267",
         "limitless-28268",
         "limitless-28269",
@@ -4364,7 +4927,6 @@
         "limitless-28273",
         "limitless-28274",
         "limitless-28276",
-        "limitless-27961",
         "limitless-28423",
         "limitless-28571",
         "limitless-28692"
@@ -4414,6 +4976,195 @@
     }
   ],
   "strategyPlans": [
+    {
+      "deckId": "corpus-limitless-27961",
+      "engines": [
+        "colorless-dudunsparce-cycle",
+        "fighting-mega-lucario",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [
+        "sv9-121",
+        "me1-77"
+      ],
+      "secondaryAttackers": [
+        "sv9-120"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv9-120",
+          "priority": 100,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "draw",
+          "priority": 100,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        },
+        {
+          "kind": "energy-from-discard",
+          "priority": 96,
+          "reason": "Aura Jab attaches up to three Basic Fighting Energy from discard to Benched Pokémon."
+        },
+        {
+          "kind": "damage-modifier",
+          "priority": 92,
+          "reason": "Tenacious Tail scales only with opposing Pokémon ex in play."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv9-121",
+          "resource": "energy",
+          "rule": "The selected Colorless attacker must have a defined manual-attachment plan."
+        },
+        {
+          "cardId": "me1-77",
+          "resource": "discard-resource",
+          "rule": "Aura Jab needs Basic Fighting Energy in the discard pile."
+        },
+        {
+          "cardId": "me1-77",
+          "resource": "energy",
+          "rule": "Mega Brave requires two Fighting Energy."
+        },
+        {
+          "cardId": "sv9-121",
+          "resource": "energy",
+          "rule": "Dudunsparce ex attacks accept flexible Colorless requirements."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "sv9-120"
+        ],
+        "attackerCardIds": [
+          "sv9-121",
+          "me1-77"
+        ],
+        "notes": [
+          "Run Away Draw is a cycling engine: the Pokémon and attached cards return to deck, so the list must preserve Basic setup density and avoid treating the draw body as a permanent attacker.",
+          "Colorless requirements remain flexible but still need a measured Energy count for the chosen secondary attacker.",
+          "Aura Jab accelerates Basic Fighting Energy from discard to Benched Pokémon; Mega Brave has a next-turn attack lock.",
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
+      "deckId": "corpus-limitless-28236",
+      "engines": [
+        "dragon-dragapult-spread",
+        "darkness-poison",
+        "area-zero-toolbox",
+        "water-wellspring-toolbox",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [
+        "sv6-130",
+        "sv6-95"
+      ],
+      "secondaryAttackers": [
+        "sv6-128",
+        "sv6-129",
+        "sv7-133",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv7-133",
+          "priority": 100,
+          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "bench-damage",
+          "priority": 100,
+          "reason": "Phantom Dive places six damage counters across opposing Benched Pokémon."
+        },
+        {
+          "kind": "damage-counter-move",
+          "priority": 96,
+          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
+        },
+        {
+          "kind": "energy-from-deck",
+          "priority": 92,
+          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv6-130",
+          "resource": "energy",
+          "rule": "Phantom Dive requires one Fire and one Psychic Energy."
+        },
+        {
+          "cardId": "sv6-95",
+          "resource": "energy",
+          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 7,
+        "setupCardIds": [
+          "sv7-133"
+        ],
+        "attackerCardIds": [
+          "sv6-130",
+          "sv6-95"
+        ],
+        "notes": [
+          "Phantom Dive requires both Fire and Psychic Energy and distributes exactly six Bench damage counters.",
+          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
+          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
+          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
     {
       "deckId": "corpus-limitless-28249",
       "engines": [
@@ -4538,105 +5289,14 @@
       ]
     },
     {
-      "deckId": "corpus-limitless-28236",
-      "engines": [
-        "dragon-dragapult-spread",
-        "darkness-poison",
-        "area-zero-toolbox",
-        "water-wellspring-toolbox",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-130",
-        "sv6-95"
-      ],
-      "secondaryAttackers": [
-        "sv6-128",
-        "sv6-129",
-        "sv7-133",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv7-133",
-          "priority": 100,
-          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "bench-damage",
-          "priority": 100,
-          "reason": "Phantom Dive places six damage counters across opposing Benched Pokémon."
-        },
-        {
-          "kind": "damage-counter-move",
-          "priority": 96,
-          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
-        },
-        {
-          "kind": "energy-from-deck",
-          "priority": 92,
-          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv6-130",
-          "resource": "energy",
-          "rule": "Phantom Dive requires one Fire and one Psychic Energy."
-        },
-        {
-          "cardId": "sv6-95",
-          "resource": "energy",
-          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 7,
-        "setupCardIds": [
-          "sv7-133"
-        ],
-        "attackerCardIds": [
-          "sv6-130",
-          "sv6-95"
-        ],
-        "notes": [
-          "Phantom Dive requires both Fire and Psychic Energy and distributes exactly six Bench damage counters.",
-          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
-          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
-          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot."
-        ]
-      },
-      "prizePlan": {
-        "profile": "mixed",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
       "deckId": "corpus-limitless-28250",
       "engines": [
         "dragon-dragapult-spread",
         "darkness-poison",
         "area-zero-toolbox",
         "water-wellspring-toolbox",
-        "colorless-flex-attackers"
+        "colorless-flex-attackers",
+        "colorless-dudunsparce-cycle"
       ],
       "primaryAttackers": [
         "sv6-130",
@@ -4646,13 +5306,19 @@
         "sv6-128",
         "sv6-129",
         "sv7-133",
-        "me3-62"
+        "me3-62",
+        "sv9-120"
       ],
       "setupPriorities": [
         {
           "cardId": "sv7-133",
           "priority": 100,
           "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
+        },
+        {
+          "cardId": "sv9-120",
+          "priority": 95,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
         }
       ],
       "capabilityPriorities": [
@@ -4670,6 +5336,11 @@
           "kind": "energy-from-deck",
           "priority": 92,
           "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
+        },
+        {
+          "kind": "draw",
+          "priority": 88,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
         }
       ],
       "protectedResources": [
@@ -4687,7 +5358,8 @@
       "benchPlan": {
         "desiredSpaces": 7,
         "setupCardIds": [
-          "sv7-133"
+          "sv7-133",
+          "sv9-120"
         ],
         "attackerCardIds": [
           "sv6-130",
@@ -4728,7 +5400,8 @@
         "psychic-alakazam-hand",
         "psychic-clefairy-bench",
         "metal-metagross",
-        "colorless-flex-attackers"
+        "colorless-flex-attackers",
+        "metal-corviknight-defence"
       ],
       "primaryAttackers": [
         "sv7-58",
@@ -4914,6 +5587,117 @@
       ]
     },
     {
+      "deckId": "corpus-limitless-28253",
+      "engines": [
+        "dragon-dragapult-spread",
+        "area-zero-toolbox",
+        "water-wellspring-toolbox",
+        "darkness-poison",
+        "psychic-clefairy-bench",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [
+        "sv6-130",
+        "sv6-95",
+        "sv9-56"
+      ],
+      "secondaryAttackers": [
+        "sv6-128",
+        "sv6-129",
+        "sv7-131",
+        "sv7-133",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv7-133",
+          "priority": 100,
+          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "bench-damage",
+          "priority": 100,
+          "reason": "Phantom Dive places six damage counters across opposing Benched Pokémon."
+        },
+        {
+          "kind": "bench-expansion",
+          "priority": 96,
+          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
+        },
+        {
+          "kind": "energy-from-deck",
+          "priority": 92,
+          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
+        },
+        {
+          "kind": "damage-counter-move",
+          "priority": 88,
+          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
+        },
+        {
+          "kind": "damage-modifier",
+          "priority": 84,
+          "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv6-130",
+          "resource": "energy",
+          "rule": "Phantom Dive requires one Fire and one Psychic Energy."
+        },
+        {
+          "cardId": "sv6-95",
+          "resource": "energy",
+          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
+        },
+        {
+          "cardId": "sv9-56",
+          "resource": "energy",
+          "rule": "Full Moon Rondo requires Psychic plus Colorless."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 7,
+        "setupCardIds": [
+          "sv7-133"
+        ],
+        "attackerCardIds": [
+          "sv6-130",
+          "sv6-95",
+          "sv9-56"
+        ],
+        "notes": [
+          "Phantom Dive requires both Fire and Psychic Energy and distributes exactly six Bench damage counters.",
+          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
+          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
+          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
       "deckId": "corpus-limitless-28254",
       "engines": [
         "team-rocket-psychic",
@@ -5007,575 +5791,6 @@
           "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces.",
           "Forest of Vitality removes the same-turn evolution delay for Grass-on-Grass evolution, except on the first turn.",
           "Full Moon Rondo counts both Benches; its damage scaling is bench population, not shared type."
-        ]
-      },
-      "prizePlan": {
-        "profile": "mixed",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28257",
-      "engines": [
-        "darkness-poison",
-        "ns-zoroark",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-95",
-        "sv9-98"
-      ],
-      "secondaryAttackers": [
-        "sv6pt5-39",
-        "sv8pt5-95",
-        "sv9-97",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv9-98",
-          "priority": 100,
-          "reason": "Trade discards one card from hand to draw two."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "switch",
-          "priority": 100,
-          "reason": "Subjugating Chains switches a benched Darkness Pokémon into the Active Spot."
-        },
-        {
-          "kind": "poison",
-          "priority": 96,
-          "reason": "The switched-in Darkness Pokémon becomes Poisoned."
-        },
-        {
-          "kind": "damage-counter-move",
-          "priority": 92,
-          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
-        },
-        {
-          "kind": "damage-modifier",
-          "priority": 88,
-          "reason": "Binding Mochi adds 40 attack damage only for its Poisoned holder."
-        },
-        {
-          "kind": "draw",
-          "priority": 84,
-          "reason": "Trade discards one card from hand to draw two."
-        },
-        {
-          "kind": "discard-fill",
-          "priority": 80,
-          "reason": "Trade places its paid card in the discard pile."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv6-95",
-          "resource": "energy",
-          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
-        },
-        {
-          "cardId": "sv9-98",
-          "resource": "discard-resource",
-          "rule": "Trade requires one discard from hand."
-        },
-        {
-          "cardId": "sv9-98",
-          "resource": "energy",
-          "rule": "Night Joker requires two Darkness Energy."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 4,
-        "setupCardIds": [
-          "sv9-98"
-        ],
-        "attackerCardIds": [
-          "sv6-95",
-          "sv9-98"
-        ],
-        "notes": [
-          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
-          "Night Joker copies only attacks on Benched N's Pokémon; type matching alone is irrelevant.",
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
-        ]
-      },
-      "prizePlan": {
-        "profile": "mixed",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28262",
-      "engines": [
-        "area-zero-toolbox",
-        "water-wellspring-toolbox",
-        "darkness-poison",
-        "grass-ogerpon-hydrapple",
-        "psychic-clefairy-bench",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-64",
-        "sv6-95",
-        "sv6-25",
-        "sv9-56"
-      ],
-      "secondaryAttackers": [
-        "sv7-131",
-        "sv7-133",
-        "sv6pt5-39",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv7-133",
-          "priority": 100,
-          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
-        },
-        {
-          "cardId": "sv6-25",
-          "priority": 95,
-          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "bench-expansion",
-          "priority": 100,
-          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
-        },
-        {
-          "kind": "energy-from-deck",
-          "priority": 96,
-          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
-        },
-        {
-          "kind": "bench-damage",
-          "priority": 92,
-          "reason": "Torrential Pump places 120 damage on a Benched Pokémon only after shuffling three attached Energy into the deck."
-        },
-        {
-          "kind": "energy-movement",
-          "priority": 88,
-          "reason": "Torrential Pump converts three attached Energy into a Bench-damage effect by shuffling them into the deck."
-        },
-        {
-          "kind": "switch",
-          "priority": 84,
-          "reason": "Subjugating Chains switches a benched Darkness Pokémon into the Active Spot."
-        },
-        {
-          "kind": "poison",
-          "priority": 80,
-          "reason": "The switched-in Darkness Pokémon becomes Poisoned."
-        },
-        {
-          "kind": "damage-counter-move",
-          "priority": 76,
-          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
-        },
-        {
-          "kind": "energy-from-hand",
-          "priority": 72,
-          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
-        },
-        {
-          "kind": "draw",
-          "priority": 68,
-          "reason": "Successful Teal Dance draws one card."
-        },
-        {
-          "kind": "damage-modifier",
-          "priority": 64,
-          "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv6-64",
-          "resource": "energy",
-          "rule": "Torrential Pump requires Water plus two Colorless and recycles three Energy for Bench damage."
-        },
-        {
-          "cardId": "sv6-64",
-          "resource": "energy",
-          "rule": "Torrential Pump requires Water plus two Colorless Energy."
-        },
-        {
-          "cardId": "sv6-64",
-          "resource": "discard-resource",
-          "rule": "The conditional Bench damage requires three attached Energy to be shuffled into the deck."
-        },
-        {
-          "cardId": "sv6-95",
-          "resource": "energy",
-          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
-        },
-        {
-          "cardId": "sv6-25",
-          "resource": "energy",
-          "rule": "Teal Dance requires Basic Grass Energy in hand."
-        },
-        {
-          "cardId": "sv9-56",
-          "resource": "energy",
-          "rule": "Full Moon Rondo requires Psychic plus Colorless."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 7,
-        "setupCardIds": [
-          "sv7-133",
-          "sv6-25"
-        ],
-        "attackerCardIds": [
-          "sv6-64",
-          "sv6-95",
-          "sv6-25",
-          "sv9-56"
-        ],
-        "notes": [
-          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
-          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
-          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
-          "Both acceleration loops spend Basic Grass Energy from hand; high Energy density is a structured resource requirement."
-        ]
-      },
-      "prizePlan": {
-        "profile": "mixed",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28266",
-      "engines": [
-        "grass-ogerpon-hydrapple",
-        "grass-fast-evolution",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-25",
-        "sv7-14"
-      ],
-      "secondaryAttackers": [
-        "me1-117",
-        "sv6-143",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv6-25",
-          "priority": 100,
-          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
-        },
-        {
-          "cardId": "sv7-14",
-          "priority": 95,
-          "reason": "Ripening Charge attaches one Basic Grass Energy from hand to any Pokémon."
-        },
-        {
-          "cardId": "sv6-143",
-          "priority": 90,
-          "reason": "Bug Catching Set finds up to two Grass Pokémon/basic Grass Energy among the top seven."
-        },
-        {
-          "cardId": "me1-117",
-          "priority": 85,
-          "reason": "Forest of Vitality allows Grass Pokémon to evolve during the turn they entered play after turn one."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "energy-from-hand",
-          "priority": 100,
-          "reason": "Ripening Charge attaches one Basic Grass Energy from hand to any Pokémon."
-        },
-        {
-          "kind": "draw",
-          "priority": 96,
-          "reason": "Successful Teal Dance draws one card."
-        },
-        {
-          "kind": "heal",
-          "priority": 92,
-          "reason": "Ripening Charge heals 30 from the recipient after its attachment."
-        },
-        {
-          "kind": "search",
-          "priority": 88,
-          "reason": "Bug Catching Set supplies Grass Pokémon and Basic Grass Energy from a reviewed top-seven choice."
-        },
-        {
-          "kind": "evolution-acceleration",
-          "priority": 84,
-          "reason": "Forest of Vitality allows Grass Pokémon to evolve during the turn they entered play after turn one."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv6-25",
-          "resource": "energy",
-          "rule": "Teal Dance requires Basic Grass Energy in hand."
-        },
-        {
-          "cardId": "sv7-14",
-          "resource": "energy",
-          "rule": "Each additional Grass Energy contributes to Syrup Storm's all-board scaling."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 4,
-        "setupCardIds": [
-          "sv6-25",
-          "sv7-14",
-          "sv6-143",
-          "me1-117"
-        ],
-        "attackerCardIds": [
-          "sv6-25",
-          "sv7-14"
-        ],
-        "notes": [
-          "Both acceleration loops spend Basic Grass Energy from hand; high Energy density is a structured resource requirement.",
-          "Forest of Vitality removes the same-turn evolution delay for Grass-on-Grass evolution, except on the first turn.",
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
-        ]
-      },
-      "stadiumPlan": {
-        "preferredCardIds": [
-          "me1-117"
-        ],
-        "preserveWhile": "Its reviewed engine requirement remains active; replace only when the replacement plan is higher priority."
-      },
-      "prizePlan": {
-        "profile": "multi-prize",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28405",
-      "engines": [
-        "psychic-alakazam-hand",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [],
-      "secondaryAttackers": [
-        "me1-56",
-        "me3-88"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "me1-56",
-          "priority": 100,
-          "reason": "Psychic Draw draws three on hand evolution."
-        },
-        {
-          "cardId": "me3-88",
-          "priority": 95,
-          "reason": "Telepathic Psychic Energy benches up to two Basic Psychic Pokémon when attached from hand to a Psychic Pokémon."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "draw",
-          "priority": 100,
-          "reason": "Psychic Draw draws three on hand evolution."
-        },
-        {
-          "kind": "search",
-          "priority": 96,
-          "reason": "Telepathic Psychic Energy benches up to two Basic Psychic Pokémon when attached from hand to a Psychic Pokémon."
-        }
-      ],
-      "protectedResources": [],
-      "benchPlan": {
-        "desiredSpaces": 4,
-        "setupCardIds": [
-          "me1-56",
-          "me3-88"
-        ],
-        "attackerCardIds": [],
-        "notes": [
-          "Powerful Hand scales from actual hand size; Psychic Draw triggers only on hand evolution.",
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
-        ]
-      },
-      "prizePlan": {
-        "profile": "single-prize",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28253",
-      "engines": [
-        "dragon-dragapult-spread",
-        "area-zero-toolbox",
-        "water-wellspring-toolbox",
-        "darkness-poison",
-        "psychic-clefairy-bench",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-130",
-        "sv6-95",
-        "sv9-56"
-      ],
-      "secondaryAttackers": [
-        "sv6-128",
-        "sv6-129",
-        "sv7-131",
-        "sv7-133",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv7-133",
-          "priority": 100,
-          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "bench-damage",
-          "priority": 100,
-          "reason": "Phantom Dive places six damage counters across opposing Benched Pokémon."
-        },
-        {
-          "kind": "bench-expansion",
-          "priority": 96,
-          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
-        },
-        {
-          "kind": "energy-from-deck",
-          "priority": 92,
-          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
-        },
-        {
-          "kind": "damage-counter-move",
-          "priority": 88,
-          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
-        },
-        {
-          "kind": "damage-modifier",
-          "priority": 84,
-          "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv6-130",
-          "resource": "energy",
-          "rule": "Phantom Dive requires one Fire and one Psychic Energy."
-        },
-        {
-          "cardId": "sv6-95",
-          "resource": "energy",
-          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
-        },
-        {
-          "cardId": "sv9-56",
-          "resource": "energy",
-          "rule": "Full Moon Rondo requires Psychic plus Colorless."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 7,
-        "setupCardIds": [
-          "sv7-133"
-        ],
-        "attackerCardIds": [
-          "sv6-130",
-          "sv6-95",
-          "sv9-56"
-        ],
-        "notes": [
-          "Phantom Dive requires both Fire and Psychic Energy and distributes exactly six Bench damage counters.",
-          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
-          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
-          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text."
         ]
       },
       "prizePlan": {
@@ -5773,6 +5988,115 @@
           "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
           "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
           "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
+      "deckId": "corpus-limitless-28257",
+      "engines": [
+        "darkness-poison",
+        "ns-zoroark",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [
+        "sv6-95",
+        "sv9-98"
+      ],
+      "secondaryAttackers": [
+        "sv6pt5-39",
+        "sv8pt5-95",
+        "sv9-97",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv9-98",
+          "priority": 100,
+          "reason": "Trade discards one card from hand to draw two."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "switch",
+          "priority": 100,
+          "reason": "Subjugating Chains switches a benched Darkness Pokémon into the Active Spot."
+        },
+        {
+          "kind": "poison",
+          "priority": 96,
+          "reason": "The switched-in Darkness Pokémon becomes Poisoned."
+        },
+        {
+          "kind": "damage-counter-move",
+          "priority": 92,
+          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
+        },
+        {
+          "kind": "damage-modifier",
+          "priority": 88,
+          "reason": "Binding Mochi adds 40 attack damage only for its Poisoned holder."
+        },
+        {
+          "kind": "draw",
+          "priority": 84,
+          "reason": "Trade discards one card from hand to draw two."
+        },
+        {
+          "kind": "discard-fill",
+          "priority": 80,
+          "reason": "Trade places its paid card in the discard pile."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv6-95",
+          "resource": "energy",
+          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
+        },
+        {
+          "cardId": "sv9-98",
+          "resource": "discard-resource",
+          "rule": "Trade requires one discard from hand."
+        },
+        {
+          "cardId": "sv9-98",
+          "resource": "energy",
+          "rule": "Night Joker requires two Darkness Energy."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "sv9-98"
+        ],
+        "attackerCardIds": [
+          "sv6-95",
+          "sv9-98"
+        ],
+        "notes": [
+          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
+          "Night Joker copies only attacks on Benched N's Pokémon; type matching alone is irrelevant.",
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
         ]
       },
       "prizePlan": {
@@ -6184,6 +6508,165 @@
       ]
     },
     {
+      "deckId": "corpus-limitless-28262",
+      "engines": [
+        "area-zero-toolbox",
+        "water-wellspring-toolbox",
+        "darkness-poison",
+        "grass-ogerpon-hydrapple",
+        "psychic-clefairy-bench",
+        "colorless-flex-attackers",
+        "colorless-dudunsparce-cycle"
+      ],
+      "primaryAttackers": [
+        "sv6-64",
+        "sv6-95",
+        "sv6-25",
+        "sv9-56"
+      ],
+      "secondaryAttackers": [
+        "sv7-131",
+        "sv7-133",
+        "sv6pt5-39",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv7-133",
+          "priority": 100,
+          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
+        },
+        {
+          "cardId": "sv6-25",
+          "priority": 95,
+          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "bench-expansion",
+          "priority": 100,
+          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
+        },
+        {
+          "kind": "energy-from-deck",
+          "priority": 96,
+          "reason": "Crispin searches two different Basic Energy types, attaches one and puts the other in hand."
+        },
+        {
+          "kind": "bench-damage",
+          "priority": 92,
+          "reason": "Torrential Pump places 120 damage on a Benched Pokémon only after shuffling three attached Energy into the deck."
+        },
+        {
+          "kind": "energy-movement",
+          "priority": 88,
+          "reason": "Torrential Pump converts three attached Energy into a Bench-damage effect by shuffling them into the deck."
+        },
+        {
+          "kind": "switch",
+          "priority": 84,
+          "reason": "Subjugating Chains switches a benched Darkness Pokémon into the Active Spot."
+        },
+        {
+          "kind": "poison",
+          "priority": 80,
+          "reason": "The switched-in Darkness Pokémon becomes Poisoned."
+        },
+        {
+          "kind": "damage-counter-move",
+          "priority": 76,
+          "reason": "Adrena-Brain moves up to three damage counters when Munkidori has Darkness Energy."
+        },
+        {
+          "kind": "energy-from-hand",
+          "priority": 72,
+          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
+        },
+        {
+          "kind": "draw",
+          "priority": 68,
+          "reason": "Successful Teal Dance draws one card."
+        },
+        {
+          "kind": "damage-modifier",
+          "priority": 64,
+          "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv6-64",
+          "resource": "energy",
+          "rule": "Torrential Pump requires Water plus two Colorless and recycles three Energy for Bench damage."
+        },
+        {
+          "cardId": "sv6-64",
+          "resource": "energy",
+          "rule": "Torrential Pump requires Water plus two Colorless Energy."
+        },
+        {
+          "cardId": "sv6-64",
+          "resource": "discard-resource",
+          "rule": "The conditional Bench damage requires three attached Energy to be shuffled into the deck."
+        },
+        {
+          "cardId": "sv6-95",
+          "resource": "energy",
+          "rule": "Adrena-Brain requires Darkness Energy attached to Munkidori."
+        },
+        {
+          "cardId": "sv6-25",
+          "resource": "energy",
+          "rule": "Teal Dance requires Basic Grass Energy in hand."
+        },
+        {
+          "cardId": "sv9-56",
+          "resource": "energy",
+          "rule": "Full Moon Rondo requires Psychic plus Colorless."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 7,
+        "setupCardIds": [
+          "sv7-133",
+          "sv6-25"
+        ],
+        "attackerCardIds": [
+          "sv6-64",
+          "sv6-95",
+          "sv6-25",
+          "sv9-56"
+        ],
+        "notes": [
+          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
+          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
+          "Reviewed against exact executable Okidogi, Pecharunt, Munkidori and Binding Mochi text.",
+          "Both acceleration loops spend Basic Grass Energy from hand; high Energy density is a structured resource requirement."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
       "deckId": "corpus-limitless-28263",
       "engines": [
         "area-zero-toolbox",
@@ -6416,7 +6899,8 @@
         "psychic-alakazam-hand",
         "psychic-clefairy-bench",
         "metal-metagross",
-        "colorless-flex-attackers"
+        "colorless-flex-attackers",
+        "metal-corviknight-defence"
       ],
       "primaryAttackers": [
         "sv7-58",
@@ -6530,6 +7014,128 @@
       ]
     },
     {
+      "deckId": "corpus-limitless-28266",
+      "engines": [
+        "grass-ogerpon-hydrapple",
+        "grass-fast-evolution",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [
+        "sv6-25",
+        "sv7-14"
+      ],
+      "secondaryAttackers": [
+        "me1-117",
+        "sv6-143",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv6-25",
+          "priority": 100,
+          "reason": "Teal Dance attaches one Basic Grass Energy from hand to that Ogerpon and draws one."
+        },
+        {
+          "cardId": "sv7-14",
+          "priority": 95,
+          "reason": "Ripening Charge attaches one Basic Grass Energy from hand to any Pokémon."
+        },
+        {
+          "cardId": "sv6-143",
+          "priority": 90,
+          "reason": "Bug Catching Set finds up to two Grass Pokémon/basic Grass Energy among the top seven."
+        },
+        {
+          "cardId": "me1-117",
+          "priority": 85,
+          "reason": "Forest of Vitality allows Grass Pokémon to evolve during the turn they entered play after turn one."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "energy-from-hand",
+          "priority": 100,
+          "reason": "Ripening Charge attaches one Basic Grass Energy from hand to any Pokémon."
+        },
+        {
+          "kind": "draw",
+          "priority": 96,
+          "reason": "Successful Teal Dance draws one card."
+        },
+        {
+          "kind": "heal",
+          "priority": 92,
+          "reason": "Ripening Charge heals 30 from the recipient after its attachment."
+        },
+        {
+          "kind": "search",
+          "priority": 88,
+          "reason": "Bug Catching Set supplies Grass Pokémon and Basic Grass Energy from a reviewed top-seven choice."
+        },
+        {
+          "kind": "evolution-acceleration",
+          "priority": 84,
+          "reason": "Forest of Vitality allows Grass Pokémon to evolve during the turn they entered play after turn one."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv6-25",
+          "resource": "energy",
+          "rule": "Teal Dance requires Basic Grass Energy in hand."
+        },
+        {
+          "cardId": "sv7-14",
+          "resource": "energy",
+          "rule": "Each additional Grass Energy contributes to Syrup Storm's all-board scaling."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "sv6-25",
+          "sv7-14",
+          "sv6-143",
+          "me1-117"
+        ],
+        "attackerCardIds": [
+          "sv6-25",
+          "sv7-14"
+        ],
+        "notes": [
+          "Both acceleration loops spend Basic Grass Energy from hand; high Energy density is a structured resource requirement.",
+          "Forest of Vitality removes the same-turn evolution delay for Grass-on-Grass evolution, except on the first turn.",
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
+        ]
+      },
+      "stadiumPlan": {
+        "preferredCardIds": [
+          "me1-117"
+        ],
+        "preserveWhile": "Its reviewed engine requirement remains active; replace only when the replacement plan is higher priority."
+      },
+      "prizePlan": {
+        "profile": "multi-prize",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
       "deckId": "corpus-limitless-28267",
       "engines": [
         "team-rocket-psychic",
@@ -6608,7 +7214,8 @@
         "darkness-poison",
         "area-zero-toolbox",
         "water-wellspring-toolbox",
-        "colorless-flex-attackers"
+        "colorless-flex-attackers",
+        "metal-corviknight-defence"
       ],
       "primaryAttackers": [
         "sv6-130",
@@ -7309,12 +7916,14 @@
     {
       "deckId": "corpus-limitless-28275",
       "engines": [
-        "psychic-alakazam-hand"
+        "psychic-alakazam-hand",
+        "colorless-dudunsparce-cycle"
       ],
       "primaryAttackers": [],
       "secondaryAttackers": [
         "me1-56",
-        "me3-88"
+        "me3-88",
+        "sv9-120"
       ],
       "setupPriorities": [
         {
@@ -7326,13 +7935,18 @@
           "cardId": "me3-88",
           "priority": 95,
           "reason": "Telepathic Psychic Energy benches up to two Basic Psychic Pokémon when attached from hand to a Psychic Pokémon."
+        },
+        {
+          "cardId": "sv9-120",
+          "priority": 90,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
         }
       ],
       "capabilityPriorities": [
         {
           "kind": "draw",
           "priority": 100,
-          "reason": "Psychic Draw draws three on hand evolution."
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
         },
         {
           "kind": "search",
@@ -7345,11 +7959,14 @@
         "desiredSpaces": 4,
         "setupCardIds": [
           "me1-56",
-          "me3-88"
+          "me3-88",
+          "sv9-120"
         ],
         "attackerCardIds": [],
         "notes": [
-          "Powerful Hand scales from actual hand size; Psychic Draw triggers only on hand evolution."
+          "Powerful Hand scales from actual hand size; Psychic Draw triggers only on hand evolution.",
+          "Run Away Draw is a cycling engine: the Pokémon and attached cards return to deck, so the list must preserve Basic setup density and avoid treating the draw body as a permanent attacker.",
+          "Colorless requirements remain flexible but still need a measured Energy count for the chosen secondary attacker."
         ]
       },
       "prizePlan": {
@@ -7446,331 +8063,69 @@
       ]
     },
     {
-      "deckId": "corpus-limitless-27961",
-      "engines": [
-        "fighting-mega-lucario",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "me1-77",
-        "sv9-121"
-      ],
-      "secondaryAttackers": [],
-      "setupPriorities": [],
-      "capabilityPriorities": [
-        {
-          "kind": "energy-from-discard",
-          "priority": 100,
-          "reason": "Aura Jab attaches up to three Basic Fighting Energy from discard to Benched Pokémon."
-        },
-        {
-          "kind": "damage-modifier",
-          "priority": 96,
-          "reason": "Tenacious Tail scales only with opposing Pokémon ex in play."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "me1-77",
-          "resource": "discard-resource",
-          "rule": "Aura Jab needs Basic Fighting Energy in the discard pile."
-        },
-        {
-          "cardId": "me1-77",
-          "resource": "energy",
-          "rule": "Mega Brave requires two Fighting Energy."
-        },
-        {
-          "cardId": "sv9-121",
-          "resource": "energy",
-          "rule": "Dudunsparce ex attacks accept flexible Colorless requirements."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 3,
-        "setupCardIds": [],
-        "attackerCardIds": [
-          "me1-77",
-          "sv9-121"
-        ],
-        "notes": [
-          "Aura Jab accelerates Basic Fighting Energy from discard to Benched Pokémon; Mega Brave has a next-turn attack lock.",
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
-        ]
-      },
-      "prizePlan": {
-        "profile": "multi-prize",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28423",
+      "deckId": "corpus-limitless-28351",
       "engines": [
         "team-rocket-psychic",
-        "metal-metagross",
-        "colorless-flex-attackers"
+        "psychic-clefairy-bench"
       ],
       "primaryAttackers": [
-        "me4-61"
-      ],
-      "secondaryAttackers": [
-        "sv10-178",
-        "me3-62"
-      ],
-      "setupPriorities": [
-        {
-          "cardId": "sv10-178",
-          "priority": 100,
-          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
-        }
-      ],
-      "capabilityPriorities": [
-        {
-          "kind": "search",
-          "priority": 100,
-          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
-        },
-        {
-          "kind": "switch",
-          "priority": 96,
-          "reason": "Bounce Back forces the opponent to choose a new Active Pokémon."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "me4-61",
-          "resource": "energy",
-          "rule": "Metallic Hammer requires three Metal plus Colorless."
-        },
-        {
-          "cardId": "me4-61",
-          "resource": "discard-resource",
-          "rule": "The bonus damage option discards three Metal Energy from Metagross."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 4,
-        "setupCardIds": [
-          "sv10-178"
-        ],
-        "attackerCardIds": [
-          "me4-61"
-        ],
-        "notes": [
-          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces.",
-          "Metallic Hammer's optional 150 damage increase discards exactly three Metal Energy from Metagross.",
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
-        ]
-      },
-      "prizePlan": {
-        "profile": "mixed",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28571",
-      "engines": [
-        "colorless-flex-attackers",
-        "water-mega-greninja"
-      ],
-      "primaryAttackers": [
-        "sv9-121",
-        "me4-22"
-      ],
-      "secondaryAttackers": [
-        "me3-62"
-      ],
-      "setupPriorities": [],
-      "capabilityPriorities": [
-        {
-          "kind": "damage-modifier",
-          "priority": 100,
-          "reason": "Tenacious Tail scales only with opposing Pokémon ex in play."
-        },
-        {
-          "kind": "bench-damage",
-          "priority": 96,
-          "reason": "Mortal Shuriken places six damage counters on any opposing Pokémon."
-        }
-      ],
-      "protectedResources": [
-        {
-          "cardId": "sv9-121",
-          "resource": "energy",
-          "rule": "Dudunsparce ex attacks accept flexible Colorless requirements."
-        },
-        {
-          "cardId": "me4-22",
-          "resource": "discard-resource",
-          "rule": "Mortal Shuriken discards Basic Water Energy from hand."
-        },
-        {
-          "cardId": "me4-22",
-          "resource": "energy",
-          "rule": "Ninja Spinner requires two Water Energy."
-        }
-      ],
-      "benchPlan": {
-        "desiredSpaces": 3,
-        "setupCardIds": [],
-        "attackerCardIds": [
-          "sv9-121",
-          "me4-22"
-        ],
-        "notes": [
-          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role.",
-          "Mortal Shuriken is Active-only and discards Basic Water Energy from hand as its cost."
-        ]
-      },
-      "prizePlan": {
-        "profile": "multi-prize",
-        "notes": [
-          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
-        ]
-      },
-      "targetSelectionRules": [
-        {
-          "priority": 100,
-          "rule": "Prefer a legal Knock Out visible from public state."
-        },
-        {
-          "priority": 80,
-          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
-        },
-        {
-          "priority": 60,
-          "rule": "Do not expose protected setup providers when a legal attacker is available."
-        }
-      ]
-    },
-    {
-      "deckId": "corpus-limitless-28692",
-      "engines": [
-        "area-zero-toolbox",
-        "water-wellspring-toolbox",
-        "lightning-joltik-box",
-        "team-rocket-psychic",
-        "psychic-clefairy-bench",
-        "colorless-flex-attackers"
-      ],
-      "primaryAttackers": [
-        "sv6-64",
-        "sv7-50",
-        "sv8-57",
+        "sv10-81",
         "sv9-56"
       ],
       "secondaryAttackers": [
-        "sv7-131",
-        "sv7-133",
+        "sv10-173",
         "sv10-178",
-        "me3-62"
+        "sv10-182"
       ],
       "setupPriorities": [
         {
-          "cardId": "sv7-133",
+          "cardId": "sv10-173",
           "priority": 100,
-          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
-        },
-        {
-          "cardId": "sv7-50",
-          "priority": 95,
-          "reason": "Jolting Charge attaches up to two Basic Grass and two Basic Lightning Energy across the board."
+          "reason": "Team Rocket's Factory is the reviewed Stadium draw provider."
         },
         {
           "cardId": "sv10-178",
-          "priority": 90,
+          "priority": 95,
           "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
+        },
+        {
+          "cardId": "sv10-182",
+          "priority": 90,
+          "reason": "Team Rocket's Energy provides its printed Psychic/Darkness options only to Team Rocket's Pokémon."
         }
       ],
       "capabilityPriorities": [
         {
-          "kind": "bench-expansion",
+          "kind": "draw",
           "priority": 100,
-          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
-        },
-        {
-          "kind": "energy-from-deck",
-          "priority": 96,
-          "reason": "Jolting Charge attaches up to two Basic Grass and two Basic Lightning Energy across the board."
-        },
-        {
-          "kind": "bench-damage",
-          "priority": 92,
-          "reason": "Torrential Pump places 120 damage on a Benched Pokémon only after shuffling three attached Energy into the deck."
-        },
-        {
-          "kind": "energy-movement",
-          "priority": 88,
-          "reason": "Torrential Pump converts three attached Energy into a Bench-damage effect by shuffling them into the deck."
+          "reason": "Team Rocket's Factory is the reviewed Stadium draw provider."
         },
         {
           "kind": "search",
-          "priority": 84,
+          "priority": 96,
           "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
         },
         {
+          "kind": "energy-from-hand",
+          "priority": 92,
+          "reason": "Team Rocket's Energy provides its printed Psychic/Darkness options only to Team Rocket's Pokémon."
+        },
+        {
           "kind": "damage-modifier",
-          "priority": 80,
+          "priority": 88,
           "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
         }
       ],
       "protectedResources": [
         {
-          "cardId": "sv6-64",
-          "resource": "energy",
-          "rule": "Torrential Pump requires Water plus two Colorless and recycles three Energy for Bench damage."
-        },
-        {
-          "cardId": "sv6-64",
-          "resource": "energy",
-          "rule": "Torrential Pump requires Water plus two Colorless Energy."
-        },
-        {
-          "cardId": "sv6-64",
+          "cardId": "sv10-81",
           "resource": "discard-resource",
-          "rule": "The conditional Bench damage requires three attached Energy to be shuffled into the deck."
+          "rule": "Erasure Ball may discard up to two Energy from Benched Pokémon to scale damage."
         },
         {
-          "cardId": "sv7-50",
+          "cardId": "sv10-81",
           "resource": "energy",
-          "rule": "Jolting Charge itself requires one Colorless Energy."
-        },
-        {
-          "cardId": "sv8-57",
-          "resource": "energy",
-          "rule": "Pikachu ex is a reviewed Lightning recipient in the source toolbox."
+          "rule": "Erasure Ball requires Psychic, Psychic and Colorless."
         },
         {
           "cardId": "sv9-56",
@@ -7779,23 +8134,19 @@
         }
       ],
       "benchPlan": {
-        "desiredSpaces": 7,
+        "desiredSpaces": 5,
         "setupCardIds": [
-          "sv7-133",
-          "sv7-50",
-          "sv10-178"
+          "sv10-173",
+          "sv10-178",
+          "sv10-182"
         ],
         "attackerCardIds": [
-          "sv6-64",
-          "sv7-50",
-          "sv8-57",
+          "sv10-81",
           "sv9-56"
         ],
         "notes": [
-          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
-          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
-          "Jolting Charge attaches up to two Grass and two Lightning Energy from deck, but consumes the attack for the turn.",
-          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces."
+          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces.",
+          "Full Moon Rondo counts both Benches; its damage scaling is bench population, not shared type."
         ]
       },
       "prizePlan": {
@@ -7855,6 +8206,265 @@
       },
       "prizePlan": {
         "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
+      "deckId": "corpus-limitless-28405",
+      "engines": [
+        "psychic-alakazam-hand",
+        "colorless-dudunsparce-cycle",
+        "colorless-flex-attackers"
+      ],
+      "primaryAttackers": [],
+      "secondaryAttackers": [
+        "me1-56",
+        "me3-88",
+        "sv9-120"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "me1-56",
+          "priority": 100,
+          "reason": "Psychic Draw draws three on hand evolution."
+        },
+        {
+          "cardId": "me3-88",
+          "priority": 95,
+          "reason": "Telepathic Psychic Energy benches up to two Basic Psychic Pokémon when attached from hand to a Psychic Pokémon."
+        },
+        {
+          "cardId": "sv9-120",
+          "priority": 90,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "draw",
+          "priority": 100,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        },
+        {
+          "kind": "search",
+          "priority": 96,
+          "reason": "Telepathic Psychic Energy benches up to two Basic Psychic Pokémon when attached from hand to a Psychic Pokémon."
+        }
+      ],
+      "protectedResources": [],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "me1-56",
+          "me3-88",
+          "sv9-120"
+        ],
+        "attackerCardIds": [],
+        "notes": [
+          "Powerful Hand scales from actual hand size; Psychic Draw triggers only on hand evolution.",
+          "Run Away Draw is a cycling engine: the Pokémon and attached cards return to deck, so the list must preserve Basic setup density and avoid treating the draw body as a permanent attacker.",
+          "Colorless requirements remain flexible but still need a measured Energy count for the chosen secondary attacker.",
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role."
+        ]
+      },
+      "prizePlan": {
+        "profile": "single-prize",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
+      "deckId": "corpus-limitless-28423",
+      "engines": [
+        "team-rocket-psychic",
+        "metal-metagross",
+        "colorless-flex-attackers",
+        "metal-corviknight-defence"
+      ],
+      "primaryAttackers": [
+        "me4-61"
+      ],
+      "secondaryAttackers": [
+        "sv10-178",
+        "me3-62"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv10-178",
+          "priority": 100,
+          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "search",
+          "priority": 100,
+          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
+        },
+        {
+          "kind": "switch",
+          "priority": 96,
+          "reason": "Bounce Back forces the opponent to choose a new Active Pokémon."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "me4-61",
+          "resource": "energy",
+          "rule": "Metallic Hammer requires three Metal plus Colorless."
+        },
+        {
+          "cardId": "me4-61",
+          "resource": "discard-resource",
+          "rule": "The bonus damage option discards three Metal Energy from Metagross."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "sv10-178"
+        ],
+        "attackerCardIds": [
+          "me4-61"
+        ],
+        "notes": [
+          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces.",
+          "Metallic Hammer's optional 150 damage increase discards exactly three Metal Energy from Metagross.",
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role.",
+          "Reviewed package keeps Corviknight as a defensive support attacker and reserves Metal Energy for the selected attacker."
+        ]
+      },
+      "prizePlan": {
+        "profile": "mixed",
+        "notes": [
+          "Map prizes from public board and prize counts only; never inspect hidden opponent information."
+        ]
+      },
+      "targetSelectionRules": [
+        {
+          "priority": 100,
+          "rule": "Prefer a legal Knock Out visible from public state."
+        },
+        {
+          "priority": 80,
+          "rule": "For spread damage, select public targets that improve the next reviewed attack or damage-counter plan."
+        },
+        {
+          "priority": 60,
+          "rule": "Do not expose protected setup providers when a legal attacker is available."
+        }
+      ]
+    },
+    {
+      "deckId": "corpus-limitless-28571",
+      "engines": [
+        "colorless-flex-attackers",
+        "colorless-dudunsparce-cycle",
+        "water-mega-greninja"
+      ],
+      "primaryAttackers": [
+        "sv9-121",
+        "me4-22"
+      ],
+      "secondaryAttackers": [
+        "me3-62",
+        "sv9-120"
+      ],
+      "setupPriorities": [
+        {
+          "cardId": "sv9-120",
+          "priority": 100,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        }
+      ],
+      "capabilityPriorities": [
+        {
+          "kind": "damage-modifier",
+          "priority": 100,
+          "reason": "Tenacious Tail scales only with opposing Pokémon ex in play."
+        },
+        {
+          "kind": "draw",
+          "priority": 96,
+          "reason": "Run Away Draw draws three cards before returning the body and attached cards to the deck."
+        },
+        {
+          "kind": "bench-damage",
+          "priority": 92,
+          "reason": "Mortal Shuriken places six damage counters on any opposing Pokémon."
+        }
+      ],
+      "protectedResources": [
+        {
+          "cardId": "sv9-121",
+          "resource": "energy",
+          "rule": "Dudunsparce ex attacks accept flexible Colorless requirements."
+        },
+        {
+          "cardId": "sv9-121",
+          "resource": "energy",
+          "rule": "The selected Colorless attacker must have a defined manual-attachment plan."
+        },
+        {
+          "cardId": "me4-22",
+          "resource": "discard-resource",
+          "rule": "Mortal Shuriken discards Basic Water Energy from hand."
+        },
+        {
+          "cardId": "me4-22",
+          "resource": "energy",
+          "rule": "Ninja Spinner requires two Water Energy."
+        }
+      ],
+      "benchPlan": {
+        "desiredSpaces": 4,
+        "setupCardIds": [
+          "sv9-120"
+        ],
+        "attackerCardIds": [
+          "sv9-121",
+          "me4-22"
+        ],
+        "notes": [
+          "Colorless attack costs permit Energy-package flexibility but do not by themselves prove synergy; every included attacker still needs a structured role.",
+          "Run Away Draw is a cycling engine: the Pokémon and attached cards return to deck, so the list must preserve Basic setup density and avoid treating the draw body as a permanent attacker.",
+          "Colorless requirements remain flexible but still need a measured Energy count for the chosen secondary attacker.",
+          "Mortal Shuriken is Active-only and discards Basic Water Energy from hand as its cost."
+        ]
+      },
+      "prizePlan": {
+        "profile": "multi-prize",
         "notes": [
           "Map prizes from public board and prize counts only; never inspect hidden opponent information."
         ]
@@ -7998,69 +8608,101 @@
       ]
     },
     {
-      "deckId": "corpus-limitless-28351",
+      "deckId": "corpus-limitless-28692",
       "engines": [
+        "area-zero-toolbox",
+        "water-wellspring-toolbox",
+        "lightning-joltik-box",
         "team-rocket-psychic",
-        "psychic-clefairy-bench"
+        "psychic-clefairy-bench",
+        "colorless-flex-attackers"
       ],
       "primaryAttackers": [
-        "sv10-81",
+        "sv6-64",
+        "sv7-50",
+        "sv8-57",
         "sv9-56"
       ],
       "secondaryAttackers": [
-        "sv10-173",
+        "sv7-131",
+        "sv7-133",
         "sv10-178",
-        "sv10-182"
+        "me3-62"
       ],
       "setupPriorities": [
         {
-          "cardId": "sv10-173",
+          "cardId": "sv7-133",
           "priority": 100,
-          "reason": "Team Rocket's Factory is the reviewed Stadium draw provider."
+          "reason": "Crispin finds two different Basic Energy types, attaches one and puts one in hand."
+        },
+        {
+          "cardId": "sv7-50",
+          "priority": 95,
+          "reason": "Jolting Charge attaches up to two Basic Grass and two Basic Lightning Energy across the board."
         },
         {
           "cardId": "sv10-178",
-          "priority": 95,
-          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
-        },
-        {
-          "cardId": "sv10-182",
           "priority": 90,
-          "reason": "Team Rocket's Energy provides its printed Psychic/Darkness options only to Team Rocket's Pokémon."
+          "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
         }
       ],
       "capabilityPriorities": [
         {
-          "kind": "draw",
+          "kind": "bench-expansion",
           "priority": 100,
-          "reason": "Team Rocket's Factory is the reviewed Stadium draw provider."
+          "reason": "Area Zero Underdepths expands the Bench to eight only while that player has a Tera Pokémon in play."
+        },
+        {
+          "kind": "energy-from-deck",
+          "priority": 96,
+          "reason": "Jolting Charge attaches up to two Basic Grass and two Basic Lightning Energy across the board."
+        },
+        {
+          "kind": "bench-damage",
+          "priority": 92,
+          "reason": "Torrential Pump places 120 damage on a Benched Pokémon only after shuffling three attached Energy into the deck."
+        },
+        {
+          "kind": "energy-movement",
+          "priority": 88,
+          "reason": "Torrential Pump converts three attached Energy into a Bench-damage effect by shuffling them into the deck."
         },
         {
           "kind": "search",
-          "priority": 96,
+          "priority": 84,
           "reason": "Team Rocket's Transceiver searches the reviewed Rocket Supporter package."
         },
         {
-          "kind": "energy-from-hand",
-          "priority": 92,
-          "reason": "Team Rocket's Energy provides its printed Psychic/Darkness options only to Team Rocket's Pokémon."
-        },
-        {
           "kind": "damage-modifier",
-          "priority": 88,
+          "priority": 80,
           "reason": "Full Moon Rondo adds 20 damage per Benched Pokémon on both sides."
         }
       ],
       "protectedResources": [
         {
-          "cardId": "sv10-81",
-          "resource": "discard-resource",
-          "rule": "Erasure Ball may discard up to two Energy from Benched Pokémon to scale damage."
+          "cardId": "sv6-64",
+          "resource": "energy",
+          "rule": "Torrential Pump requires Water plus two Colorless and recycles three Energy for Bench damage."
         },
         {
-          "cardId": "sv10-81",
+          "cardId": "sv6-64",
           "resource": "energy",
-          "rule": "Erasure Ball requires Psychic, Psychic and Colorless."
+          "rule": "Torrential Pump requires Water plus two Colorless Energy."
+        },
+        {
+          "cardId": "sv6-64",
+          "resource": "discard-resource",
+          "rule": "The conditional Bench damage requires three attached Energy to be shuffled into the deck."
+        },
+        {
+          "cardId": "sv7-50",
+          "resource": "energy",
+          "rule": "Jolting Charge itself requires one Colorless Energy."
+        },
+        {
+          "cardId": "sv8-57",
+          "resource": "energy",
+          "rule": "Pikachu ex is a reviewed Lightning recipient in the source toolbox."
         },
         {
           "cardId": "sv9-56",
@@ -8069,19 +8711,23 @@
         }
       ],
       "benchPlan": {
-        "desiredSpaces": 5,
+        "desiredSpaces": 7,
         "setupCardIds": [
-          "sv10-173",
-          "sv10-178",
-          "sv10-182"
+          "sv7-133",
+          "sv7-50",
+          "sv10-178"
         ],
         "attackerCardIds": [
-          "sv10-81",
+          "sv6-64",
+          "sv7-50",
+          "sv8-57",
           "sv9-56"
         ],
         "notes": [
-          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces.",
-          "Full Moon Rondo counts both Benches; its damage scaling is bench population, not shared type."
+          "Area Zero expansion requires a Tera Pokémon in play. Crispin requires two different Basic Energy types.",
+          "Torrential Pump is a Water-inclusive toolbox attack: its Bench damage is conditional on shuffling three Energy from the attacker into the deck. Crispin supplies two different Basic Energy types; Area Zero requires a Tera Pokémon and competes for the Stadium slot.",
+          "Jolting Charge attaches up to two Grass and two Lightning Energy from deck, but consumes the attack for the turn.",
+          "Power Saver requires four Team Rocket's Pokémon in play. Off-trait support directly consumes scarce qualifying board spaces."
         ]
       },
       "prizePlan": {
