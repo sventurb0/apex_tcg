@@ -102,7 +102,7 @@ export function runHeadlessGame(config: RunGameConfig): GameRunSummary {
     totalMainTurns,
     seed: state.seed,
     startingPlayer: state.startingPlayer,
-    finalStateSummary: `turn=${state.turn}; prizes=${state.players["player-one"].prizes.length}-${state.players["player-two"].prizes.length}; actions=${actionCount}`,
+    finalStateSummary: `turn=${state.turn}; prizes=${state.players["player-one"].prizes.length}-${state.players["player-two"].prizes.length}; actions=${actionCount}; phase=${state.phase}; pending=${state.pendingChoice?.type ?? "none"}${state.pendingChoice?.type === "effect-choice" ? `:${state.pendingChoice.sourceEffectId}:${state.pendingChoice.playerId}:eligible=${state.pendingChoice.eligibleIds.length}` : ""}`,
     eventCounts,
     eventSourceCardIds: [...new Set(state.events.flatMap((event) => event.sourceCardId ?? []))],
     actionSequence: state.actionHistory.map((action) => action.id),

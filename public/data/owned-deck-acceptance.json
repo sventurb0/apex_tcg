@@ -1,0 +1,47 @@
+{
+  "mandatoryTargets": 6,
+  "decks": [
+    {
+      "id": "owned-alakazam",
+      "name": "Owned Alakazam Hand Engine",
+      "cards": 60,
+      "runtimeCards": 17,
+      "simulationReady": true
+    },
+    {
+      "id": "owned-okidogi-poison",
+      "name": "Owned Okidogi Poison",
+      "cards": 60,
+      "runtimeCards": 22,
+      "simulationReady": true
+    },
+    {
+      "id": "owned-team-rocket-nidoking",
+      "name": "Owned Team Rocket Nidoking/Nidoqueen",
+      "cards": 60,
+      "runtimeCards": 19,
+      "simulationReady": true
+    },
+    {
+      "id": "owned-team-rocket-muk",
+      "name": "Owned Team Rocket Muk Control",
+      "cards": 60,
+      "runtimeCards": 20,
+      "simulationReady": true
+    },
+    {
+      "id": "owned-skeledirge-armarouge",
+      "name": "Owned Skeledirge Armarouge",
+      "cards": 60,
+      "runtimeCards": 20,
+      "simulationReady": true
+    },
+    {
+      "id": "owned-arcanine",
+      "name": "Owned Arcanine",
+      "cards": 60,
+      "runtimeCards": 22,
+      "simulationReady": true
+    }
+  ]
+}

@@ -7,7 +7,7 @@ export type GamePhase = "setup" | "main" | "choice" | "game-over";
 export interface PlayerState {
   id: PlayerId; deckId: string; deck: CardInstance[]; hand: CardInstance[]; prizes: CardInstance[]; discard: CardInstance[];
   active: PokemonInPlay | null; bench: PokemonInPlay[];
-  energyAttachedThisTurn: boolean; supporterPlayedThisTurn: boolean; stadiumPlayedThisTurn: boolean; stadiumAbilityUsedThisTurn: boolean; academyUsesThisGame?: number;
+  energyAttachedThisTurn: boolean; supporterPlayedThisTurn: boolean; stadiumPlayedThisTurn: boolean; stadiumAbilityUsedThisTurn: boolean;
   retreatedThisTurn: boolean; attacksUsedThisTurn?: number; turnsTaken: number; mulligans: number; prizesTaken: number;
   abilityUsageByName: Record<string, number>;
 }
@@ -101,5 +101,5 @@ export interface GameState {
   seed: number; rngState: number; players: Record<PlayerId, PlayerState>; startingPlayer: PlayerId; activePlayerId: PlayerId;
   turn: number; phase: GamePhase; pendingChoice: PendingChoice | null; actionLog: ActionLogEntry[]; actionHistory: GameAction[];
   events: GameEvent[]; result: GameResult | null; detailedLogs: boolean; cardDefinitions: Record<string, CardDefinition>; stadium: CardInstance | null; executionEvidence?: EffectExecutionEvidence[];
-  temporaryEffects: TemporaryEffect[]; pendingKnockOutCause: PendingKnockOutCause | null;
+  temporaryEffects: TemporaryEffect[]; pendingKnockOutCause: PendingKnockOutCause | null; legacyEnergyUsed?: boolean; briarPlayerId?: PlayerId; briarUsed?: boolean;
 }

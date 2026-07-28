@@ -9,7 +9,8 @@ export function effectiveMaxHp(state: GameState, pokemon: PokemonInPlay): number
   const gravityReduction = stadium?.category === "trainer" && stadium.effectProgramId === "stadium:gravity-mountain" && topCard(state, pokemon).stage === "stage2" ? 30 : 0;
   const tool = pokemon.tool ? cardFor(state, pokemon.tool) : undefined;
   const cape = tool?.category === "trainer" && tool.effectProgramId === "tool:hero-cape" ? 100 : 0;
-  return Math.max(10, printed - gravityReduction + cape + (pokemon.hpModifier ?? 0));
+  const growingGrass = pokemon.attachedEnergy.some((energy) => cardFor(state, energy).category === "energy" && cardFor(state, energy).effectProgramId === "energy:growing-grass" && topCard(state, pokemon).pokemonType === "grass") ? 20 : 0;
+  return Math.max(10, printed - gravityReduction + cape + growingGrass + (pokemon.hpModifier ?? 0));
 }
 
 export function poisonCheckupDamage(state: GameState, poisonedPlayerId: PlayerId, pokemon: PokemonInPlay): { baseCounters: number; bonusCounters: number; totalDamage: number } {
@@ -41,7 +42,7 @@ export function attackDamageBonus(state: GameState, attacker: PokemonInPlay, tar
     .reduce((total, effect) => total + (effect.kind === "damage-reduction" ? effect.amount : 0), 0);
   if (reduction) amount -= reduction;
   amount += state.temporaryEffects
-    .filter((effect) => effect.kind === "attack-damage-bonus" && effect.playerId === ownerId && effect.appliesOnPlayerTurn === state.players[ownerId].turnsTaken && (!effect.pokemonType || effect.pokemonType === attackerCard.pokemonType) && (effect.sourceCardId !== "sv9-143" || Boolean(target && topCard(state, target).isPokemonEx)))
+    .filter((effect) => effect.kind === "attack-damage-bonus" && effect.playerId === ownerId && effect.appliesOnPlayerTurn === state.players[ownerId].turnsTaken && (!effect.pokemonType || effect.pokemonType === attackerCard.pokemonType) && (effect.sourceCardId !== "sv9-143" || Boolean(target && topCard(state, target).isPokemonEx)) && (effect.sourceCardId !== "sv6-154" || Boolean(target && topCard(state, target).ruleBox === "multi-prize")))
     .reduce((total, effect) => total + (effect.kind === "attack-damage-bonus" ? effect.amount : 0), 0);
   return { amount, sourceCardId };
 }
@@ -55,6 +56,10 @@ export function modifiedPrizeValue(state: GameState, ownerId: PlayerId, pokemon:
   const ohNo = topCard(state, pokemon).abilities.some((ability) => ability.effectProgramId === "passive:oh-no-you-dont");
   const tool = pokemon.tool ? cardFor(state, pokemon.tool) : undefined;
   const lilliesPearl = tool?.category === "trainer" && tool.effectProgramId === "tool:lillies-pearl" && topCard(state, pokemon).name.toLowerCase().includes("lillie") && cause === "attack-damage";
-  const reduction = (ohNo && hasPecharuntEx && cause === "attack-damage" && sourcePlayerId !== ownerId ? 1 : 0) + (lilliesPearl ? 1 : 0);
-  return { value: Math.max(0, printed - reduction), reduction };
+  const legacy = !state.legacyEnergyUsed && cause === "attack-damage" && sourcePlayerId !== ownerId && pokemon.attachedEnergy.some((energy) => cardFor(state, energy).category === "energy" && cardFor(state, energy).effectProgramId === "energy:legacy");
+  if (legacy) state.legacyEnergyUsed = true;
+  const briar = !state.briarUsed && state.briarPlayerId === sourcePlayerId && cause === "attack-damage" && sourcePlayerId !== ownerId && card.isPokemonEx && state.players[sourcePlayerId].active && topCard(state, state.players[sourcePlayerId].active).traits?.includes("tera");
+  if (briar) state.briarUsed = true;
+  const reduction = (ohNo && hasPecharuntEx && cause === "attack-damage" && sourcePlayerId !== ownerId ? 1 : 0) + (lilliesPearl ? 1 : 0) + (legacy ? 1 : 0);
+  return { value: Math.max(0, printed - reduction + (briar ? 1 : 0)), reduction };
 }

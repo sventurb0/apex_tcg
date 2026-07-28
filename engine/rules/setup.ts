@@ -104,5 +104,6 @@ export function createGame(config: GameConfig): GameState {
     executionEvidence: [],
     temporaryEffects: [],
     pendingKnockOutCause: null,
+    legacyEnergyUsed: false,
   };
 }

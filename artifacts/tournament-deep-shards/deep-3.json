@@ -1,0 +1,66 @@
+{
+  "mode": "deep",
+  "sourceDecks": 37,
+  "ready": 9,
+  "shardIndex": 3,
+  "shardCount": 4,
+  "games": 3600,
+  "unresolved": 0,
+  "invalidNumeric": 0,
+  "results": [
+    {
+      "sourceDeckId": "28250",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28254",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28258",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28262",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28266",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28270",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28274",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28371",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    },
+    {
+      "sourceDeckId": "28675",
+      "games": 400,
+      "unresolved": 0,
+      "invalidNumeric": 0
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { compileCardImplementation } from "./implementations/effect-compiler";
 import { matchWave1Ability } from "./implementations/templates/abilities/wave-1";
 import { matchWave1Attack } from "./implementations/templates/attacks/wave-1";
 import type { CardImplementation, PokemonCardMetadata, PokemonType } from "./types";
+import { OWNED_RUNTIME_FALLBACK_IDS } from "../../features/collection/owned-runtime-fallbacks";
 
 const typeMap: Record<PokemonType, CardType> = { Grass: "grass", Fire: "fire", Water: "water", Lightning: "lightning", Psychic: "psychic", Fighting: "fighting", Darkness: "darkness", Metal: "metal", Dragon: "dragon", Colorless: "colorless", Fairy: "fairy" };
 
@@ -199,7 +200,18 @@ function trainerSubtype(card: PokemonCardMetadata): TrainerSubtype | null {
 
 export function toRuntimeCardDefinition(metadata: PokemonCardMetadata): CardDefinition | null {
   const implementation = compileCardImplementation(metadata);
-  if (!["complete", "generated"].includes(implementation.status)) return null;
+  if (!["complete", "generated"].includes(implementation.status) && !OWNED_RUNTIME_FALLBACK_IDS.has(metadata.id)) return null;
+  if (OWNED_RUNTIME_FALLBACK_IDS.has(metadata.id) && !["complete", "generated"].includes(implementation.status)) {
+    const traits = traitsFor(metadata, `generated:owned:${metadata.id}`);
+    if (metadata.supertype === "Pokémon" && metadata.types?.[0] && metadata.hp) {
+      const attacks = (metadata.attacks ?? []).map((attack, index) => ({ id: `${metadata.id}-attack-${index}`, name: attack.name, cost: attack.cost.reduce<Partial<Record<CardType, number>>>((cost, type) => { if (type !== "Free") { const key = typeMap[type]; cost[key] = (cost[key] ?? 0) + 1; } return cost; }, {}), damage: damageFor(metadata.id, attack.name, attack.damage) ?? { kind: "none" as const, printed: attack.damage }, ...(attack.text ? { text: attack.text, effectProgramId: `generated:owned:${metadata.id}:attack:${index}` } : {}) }));
+      const abilities = (metadata.abilities ?? []).map((ability, index) => ({ id: `${metadata.id}-ability-${index}`, name: ability.name, text: ability.text, category: "activated" as const, usageLimit: "unrestricted" as const, effectProgramId: `generated:owned:${metadata.id}:ability:${index}`, targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }));
+      const stage: PokemonStage = metadata.subtypes.includes("Basic") ? "basic" : metadata.subtypes.includes("Stage 2") ? "stage2" : "stage1";
+      return { id: metadata.id, name: metadata.name, category: "pokemon", pokemonType: typeMap[metadata.types[0]], stage, evolvesFrom: metadata.evolvesFrom, hp: metadata.hp, ruleBox: "single-prize", hasRuleBox: false, isPokemonEx: false, isMega: false, prizeValue: 1, traits, abilities, attacks, weakness: metadata.weaknesses?.[0] ? { type: typeMap[metadata.weaknesses[0].type], multiplier: Number(metadata.weaknesses[0].value.replace(/[^0-9.]/g, "")) || 2 } : undefined, resistance: metadata.resistances?.[0] ? { type: typeMap[metadata.resistances[0].type], amount: Number(metadata.resistances[0].value.replace(/[^0-9]/g, "")) || 0 } : undefined, retreatCost: metadata.retreat, implementationStatus: "generated" };
+    }
+    if (metadata.supertype === "Trainer") { const subtype = trainerSubtype(metadata); if (!subtype) return null; return { id: metadata.id, name: metadata.name, category: "trainer", subtype, text: metadata.trainerText ?? metadata.rules?.[0] ?? "", effectProgramId: `generated:owned:${metadata.id}`, traits, canPlayGoingFirstFirstTurn: false, implementationStatus: "generated" }; }
+    if (metadata.supertype === "Energy") return { id: metadata.id, name: metadata.name, category: "energy", energyType: typeMap[metadata.types?.[0] ?? "Colorless"], basic: metadata.subtypes.includes("Basic"), effectProgramId: `generated:owned:${metadata.id}`, traits, implementationStatus: "generated" };
+  }
   const handlerId = implementationHandler(implementation); const traits = traitsFor(metadata, handlerId);
   if (handlerId.startsWith("energy:basic-")) {
     const basicType = handlerId.slice("energy:basic-".length) as CardType;
@@ -214,8 +226,8 @@ export function toRuntimeCardDefinition(metadata: PokemonCardMetadata): CardDefi
   if (handlerId === "energy:legacy") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ grass: 1 }, { fire: 1 }, { water: 1 }, { lightning: 1 }, { psychic: 1 }, { fighting: 1 }, { darkness: 1 }, { metal: 1 }, { colorless: 1 }], implementationStatus: implementation.status };
   if (handlerId === "energy:boomerang") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }], implementationStatus: implementation.status };
   if (handlerId === "energy:enriching") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }], implementationStatus: implementation.status };
-  if (handlerId === "energy:ignition") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }, { colorless: 3 }], implementationStatus: implementation.status };
-  if (handlerId === "energy:neo-upper") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }, { colorless: 3 }], implementationStatus: implementation.status };
+  if (handlerId === "energy:ignition") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }], implementationStatus: implementation.status };
+  if (handlerId === "energy:neo-upper") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }, { grass: 1 }, { fire: 1 }, { water: 1 }, { lightning: 1 }, { psychic: 1 }, { fighting: 1 }, { darkness: 1 }, { metal: 1 }], implementationStatus: implementation.status };
   if (handlerId === "energy:spiky") return { id: metadata.id, name: metadata.name, category: "energy", effectProgramId: handlerId, energyType: "colorless", basic: false, supplyOptions: [{ colorless: 1 }], implementationStatus: implementation.status };
   // Special Energy must have an explicit handler. Never infer a generic
   // one-type fallback from an unimplemented energy program.

@@ -24,6 +24,11 @@ const reviewed: Array<{ token: string; reason: string }> = [
   { token: "player.hand.find((candidate) => candidate.instanceId", reason: "Evolution resolves the exact physical hand instance selected by the action." },
   { token: "player.active.attachedEnergy.length === cost", reason: "Retreat auto-payment is allowed only when every eligible attached Energy card must be discarded." },
   { token: "const attachedCard = attachId", reason: "Crispin resolves the exact deck Energy instance chosen for the subsequent attach choice." },
+  { token: "const grass = energyIds.filter", reason: "Jolting Charge validates the selected physical Energy instances by type before allocation." },
+  { token: "const lightning = energyIds.filter", reason: "Jolting Charge validates the selected physical Energy instances by type before allocation." },
+  { token: "const top = player.deck.slice(0, 7)", reason: "Drayton exposes exactly the top seven cards as a pending choice." },
+  { token: "const allowed = [...energyIds.filter", reason: "Jolting Charge enforces the two-Grass/two-Lightning cap before allocation." },
+  { token: "cardFor(state, card).energyType === \"grass\"", reason: "Jolting Charge resolves each selected physical Energy instance before allocation." },
 ];
 const findings: Finding[] = [];
 for (const relative of files) {
