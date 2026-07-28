@@ -65,6 +65,37 @@ export function resolveBaseDamage(damage: AttackDamage, attacker: PokemonInPlay,
   }
   if (damage.resolverId === "dipplin-wave-damage" && state && attackingPlayerId) return 20 * state.players[attackingPlayerId].bench.length;
   if (damage.resolverId === "applin-tumbling-damage") return 10;
+  if (damage.resolverId === "swalot-devouring-mouth-damage" && state && attackingPlayerId) {
+    const opponent = state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"];
+    return 10 + (attacker.attachedEnergy.length > (opponent.active?.attachedEnergy.length ?? 0) ? 160 : 0);
+  }
+  if (damage.resolverId === "hazardous-venom-damage" && state && attackingPlayerId) {
+    const opponent = state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"];
+    return 100 * (opponent.active?.specialConditions.length ?? 0);
+  }
+  if (damage.resolverId === "love-impact-damage" && state && attackingPlayerId) {
+    const player = state.players[attackingPlayerId];
+    return 60 + (player.bench.some((pokemon) => topCard(state, pokemon).name.includes("Nidoking")) ? 120 : 0);
+  }
+  if (damage.resolverId === "punishing-fang-damage" && state && attackingPlayerId) {
+    const opponent = state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"];
+    return 100 + (opponent.active && topCard(state, opponent.active).pokemonType === "darkness" ? 100 : 0);
+  }
+  if (damage.resolverId === "acrobatics-damage" && state) {
+    let heads = 0;
+    for (let flip = 0; flip < 2; flip += 1) { const result = nextRandom(state.rngState); state.rngState = result.state; if (result.value < 0.5) heads += 1; }
+    return 30 + heads * 20;
+  }
+  if (damage.resolverId === "relentless-flames-damage" && state) {
+    let heads = 0;
+    do { const result = nextRandom(state.rngState); state.rngState = result.state; if (result.value >= 0.5) break; heads += 1; } while (heads < 20);
+    return heads * 30;
+  }
+  if (damage.resolverId === "proud-fangs-damage" && state && attackingPlayerId) {
+    return 30 + (state.players[attackingPlayerId].bench.some((pokemon) => pokemon.damage > 0) ? 90 : 0);
+  }
+  if (damage.resolverId === "thunderous-fist-damage") return attacker.attachedEnergy.filter((energy) => { const definition = cardFor(state!, energy); return definition.category === "energy" && definition.energyType === "lightning"; }).length * 60;
+  if (damage.resolverId === "raging-claws-damage") return 30 + Math.floor(attacker.damage / 10) * 10;
   throw new Error(`Unknown attack damage resolver: ${damage.resolverId}`);
 }
 

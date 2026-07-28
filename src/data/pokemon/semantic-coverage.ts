@@ -85,7 +85,7 @@ function runtimeBindings(card: PokemonCardMetadata, runtime: CardDefinition | nu
       energyClauses: [],
     };
   }
-  if (runtime.category === "trainer") return { abilities: [], attacks: [], rules: printedClauses(card).rules.map((rule) => ({ id: `${card.id}:rule:${rule.id}`, kind: "rule" as const, name: "Rule", text: rule.text, reviewed: isUniversalRule(rule.text) })), trainerClauses: [{ id: `${card.id}:trainer:runtime`, kind: "trainer", name: card.name, programId: runtime.effectProgramId }], energyClauses: [] };
+  if (runtime.category === "trainer") return { abilities: [], attacks: (card.attacks ?? []).map((attack) => ({ id: `${card.id}:attack:${attack.name}`, kind: "attack" as const, name: attack.name, programId: runtime.effectProgramId })), rules: printedClauses(card).rules.map((rule) => ({ id: `${card.id}:rule:${rule.id}`, kind: "rule" as const, name: "Rule", text: rule.text, reviewed: isUniversalRule(rule.text) })), trainerClauses: [{ id: `${card.id}:trainer:runtime`, kind: "trainer", name: card.name, programId: runtime.effectProgramId }], energyClauses: [] };
   return { abilities: [], attacks: [], rules: printedClauses(card).rules.map((rule) => ({ id: `${card.id}:rule:${rule.id}`, kind: "rule" as const, name: "Rule", text: rule.text, reviewed: isUniversalRule(rule.text) || Boolean(runtime.effectProgramId) })), trainerClauses: [], energyClauses: [{ id: `${card.id}:energy:runtime`, kind: "energy", name: card.name, programId: runtime.effectProgramId ?? card.id, reviewed: card.subtypes.includes("Basic") }] };
 }
 

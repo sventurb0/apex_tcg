@@ -62,6 +62,8 @@
     ,"acceptance:owned-decks-real": "tsx scripts/acceptance-owned-decks-real.ts"
     ,"acceptance:owned-portfolio-real": "tsx scripts/acceptance-owned-portfolio-real.ts"
     ,"acceptance:architect-screening": "tsx scripts/acceptance-architect-screening.ts"
+    ,"acceptance:architect-deep-shards": "tsx scripts/acceptance-architect-deep-shards.ts"
+    ,"acceptance:architect-deep-merge": "tsx scripts/acceptance-architect-deep-merge.ts"
     ,"acceptance:play-presentation": "node scripts/acceptance-play-presentation.mjs"
     ,"acceptance:tournament-smoke-shards": "tsx scripts/acceptance-tournament-smoke-shards.ts"
     ,"acceptance:tournament-smoke-merge": "tsx scripts/acceptance-tournament-smoke-merge.ts"

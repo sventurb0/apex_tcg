@@ -43,7 +43,28 @@ const attackPrograms: Readonly<Record<string, Readonly<Record<string, string>>>>
   "pokemon:slowking": { "Allure": "attack:allure", "Seek Inspiration": "attack:seek-inspiration" },
   "pokemon:slowpoke": { "Dangle Tail": "template:attack:recover-discard-to-hand:pokemon:1" },
   "pokemon:seaking": { "Rapid Draw": "template:attack:draw-fixed:2" },
-  "pokemon:annihilape": { "Strange Hacking": "attack:strange-hacking", "Tantrum": "attack:tantrum", "Destined Fight": "attack:destined-fight" },
+  "pokemon:annihilape": { "Strange Hacking": "attack:strange-hacking", "Impact Blow": "attack:impact-blow", "Tantrum": "attack:tantrum", "Destined Fight": "attack:destined-fight" },
+  "pokemon:swalot": { "Devouring Mouth": "attack:swalot-devouring-mouth", "Venomous Hit": "template:attack:condition:poisoned" },
+  "pokemon:alolan-muk": { "Panic Poison": "attack:panic-poison" },
+  "pokemon:team-rocket-muk": { "Gooped Up": "attack:gooped-up", "Hazardous Venom": "attack:hazardous-venom" },
+  "pokemon:team-rocket-arbok": { "Spinning Tail": "attack:spinning-tail" },
+  "pokemon:team-rocket-crobat-ex": { "Assassin's Return": "attack:assassins-return" },
+  "pokemon:team-rocket-golbat": { "Confuse Ray": "template:attack:condition:confused" },
+  "pokemon:team-rocket-koffing": {},
+  "pokemon:bellibolt-ex": { "Jumping Press": "attack:jumping-press", "Paralyzing Ball": "attack:paralyzing-ball" },
+  "pokemon:bellibolt": { "Electrobullet": "attack:electrobullet" },
+  "pokemon:corviknight": { "Accelerate": "attack:accelerate", "Spinning Bird": "attack:spinning-bird" },
+  "pokemon:gyarados": { "Hyper Beam": "attack:hyper-beam" },
+  "pokemon:dragonite": { "Dragon Pulse": "attack:dragon-pulse" },
+  "pokemon:hawlucha": { "Allure": "attack:allure", "Acrobatics": "attack:acrobatics" },
+  "pokemon:team-rocket-nidoqueen": { "Love Impact": "attack:love-impact" },
+  "pokemon:arcanine": { "Punishing Fang": "attack:punishing-fang" },
+  "pokemon:growlithe": { "Relentless Flames": "attack:relentless-flames" },
+  "pokemon:hisuian-arcanine": { "Proud Fangs": "attack:proud-fangs", "Searing Flame": "template:attack:condition:burned" },
+  "pokemon:hisuian-growlithe": { "Defensive Posture": "attack:defensive-posture" },
+  "pokemon:mega-zeraora-ex": { "Thunderous Fist": "attack:thunderous-fist", "Zepto Turn": "attack:zepto-turn" },
+  "pokemon:arcanine-ex": { "Raging Claws": "attack:raging-claws", "Bright Flame": "attack:bright-flame" },
+  "pokemon:hawlucha-flying-entry": { "Wing Attack": "" },
   "pokemon:petilil": { "Shadow Bind": "attack:shadow-bind", "Hide": "attack:hide" },
   "pokemon:applin-festival": { "Find a Friend": "template:attack:search-deck-to-hand:pokemon:1" },
   "pokemon:greninja-ex": { "Shinobi Blade": "attack:shinobi-blade", "Mirage Barrage": "attack:mirage-barrage" },
@@ -80,6 +101,12 @@ const abilityPrograms: Readonly<Record<string, AbilityDefinition[]>> = {
   "pokemon:latias-ex": [{ id: "skyliner", name: "Skyliner", text: "Your Basic Pokémon in play have no Retreat Cost.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:skyliner", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:chien-pao": [{ id: "snow-sink", name: "Snow Sink", text: "When you play this Pokémon from your hand onto your Bench during your turn, you may discard a Stadium in play.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:snow-sink", targeting: { sourceMayBeActive: false, sourceMayBeBenched: true }, triggerOn: "pokemon-benched" }],
   "pokemon:team-rocket-spidops": [{ id: "charging-up", name: "Charging Up", text: "Once during your turn, you may attach a Basic Energy card from your discard pile to this Pokémon.", category: "activated", usageLimit: "once-per-turn-per-pokemon", effectProgramId: "ability:charging-up", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:team-rocket-arbok": [{ id: "potent-glare", name: "Potent Glare", text: "As long as this Pokémon is in the Active Spot, your opponent can't play any Pokémon that has an Ability from their hand, except for Team Rocket's Pokémon.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:potent-glare", targeting: { sourceMayBeActive: true, sourceMayBeBenched: false } }],
+  "pokemon:team-rocket-crobat-ex": [{ id: "biting-spree", name: "Biting Spree", text: "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may choose 2 of your opponent's Pokémon and put 2 damage counters on each of them.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:biting-spree", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true }, triggerOn: "pokemon-evolved" }],
+  "pokemon:team-rocket-golbat": [{ id: "sneaky-bite", name: "Sneaky Bite", text: "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may put 2 damage counters on 1 of your opponent's Pokémon.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:sneaky-bite", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true }, triggerOn: "pokemon-evolved" }],
+  "pokemon:team-rocket-koffing": [{ id: "smog-signals", name: "Smog Signals", text: "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon, search your deck for up to 2 Pokémon that have Koffing in their name and put them onto your Bench.", category: "triggered", usageLimit: "unrestricted", effectProgramId: "ability:smog-signals", targeting: { sourceMayBeActive: true, sourceMayBeBenched: false }, triggerOn: "damage-dealt" }],
+  "pokemon:hawlucha-flying-entry": [{ id: "flying-entry", name: "Flying Entry", text: "When you play this Pokémon from your hand onto your Bench during your turn, you may choose 2 of your opponent's Benched Pokémon and put 1 damage counter on each of them.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:flying-entry", targeting: { sourceMayBeActive: false, sourceMayBeBenched: true }, triggerOn: "pokemon-benched" }],
+  "pokemon:dragonite": [{ id: "jet-cruise", name: "Jet Cruise", text: "Your Pokémon in play have no Retreat Cost.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:jet-cruise", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:team-rocket-mewtwo-ex": [{ id: "power-saver", name: "Power Saver", text: "This Pokémon can't attack unless you have 4 or more Team Rocket's Pokémon in play.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:power-saver", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:team-rocket-articuno": [{ id: "repelling-veil", name: "Repelling Veil", text: "Prevent all effects of attacks used by your opponent's Pokémon done to your Basic Team Rocket's Pokémon. (Existing effects are not removed. Damage is not an effect.)", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:repelling-veil", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:lillies-clefairy-ex": [{ id: "fairy-zone", name: "Fairy Zone", text: "The Weakness of each of your opponent's Dragon Pokémon in play is now Psychic. (Apply Weakness as ×2.)", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:fairy-zone", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
@@ -103,6 +130,7 @@ const abilityPrograms: Readonly<Record<string, AbilityDefinition[]>> = {
   "pokemon:crustle": [{ id: "mysterious-rock-inn", name: "Mysterious Rock Inn", text: "Prevent all damage done to this Pokémon by attacks from your opponent's Pokémon ex.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:mysterious-rock-inn", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:kadabra": [{ id: "psychic-draw", name: "Psychic Draw", text: "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Draw 2 cards.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:psychic-draw-2", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true }, triggerOn: "pokemon-evolved" }],
   "pokemon:alakazam": [{ id: "psychic-draw", name: "Psychic Draw", text: "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Draw 3 cards.", category: "triggered", usageLimit: "once-per-turn-by-name", effectProgramId: "ability:psychic-draw-3", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true }, triggerOn: "pokemon-evolved" }],
+  "pokemon:annihilape": [{ id: "lose-cool", name: "Lose Cool", text: "If this Pokémon has 2 or more damage counters on it, attacks used by this Pokémon do 120 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:lose-cool", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:psyduck": [{ id: "damp", name: "Damp", text: "Pokémon in play (both yours and your opponent's) lose any Ability that requires the Pokémon using it to Knock Out itself.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:damp", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:genesect": [{ id: "ace-nullifier", name: "ACE Nullifier", text: "If this Pokémon has a Pokémon Tool attached, your opponent can't play any ACE SPEC cards from their hand.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:ace-nullifier", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:thwackey": [{ id: "boom-boom-groove", name: "Boom Boom Groove", text: "Once during your turn, if your Active Pokémon has the Festival Lead Ability, you may search your deck for a card and put it into your hand. Then, shuffle your deck.", category: "activated", usageLimit: "once-per-turn-per-pokemon", effectProgramId: "ability:boom-boom-groove", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
@@ -174,6 +202,15 @@ function damageFor(handlerId: string, name: string, printed: string): AttackDama
   if (handlerId === "pokemon:alakazam-control" && name === "Psychic") return { kind: "formula", printed, resolverId: "alakazam-psychic-damage" };
   if (handlerId === "pokemon:alakazam" && name === "Powerful Hand") return { kind: "none", printed };
   if (handlerId === "pokemon:raging-bolt-ex" && name === "Bellowing Thunder") return { kind: "formula", printed, resolverId: "raging-bolt-damage" };
+  if (handlerId === "pokemon:swalot" && name === "Devouring Mouth") return { kind: "formula", printed, resolverId: "swalot-devouring-mouth-damage" };
+  if (handlerId === "pokemon:team-rocket-muk" && name === "Hazardous Venom") return { kind: "formula", printed, resolverId: "hazardous-venom-damage" };
+  if (handlerId === "pokemon:team-rocket-nidoqueen" && name === "Love Impact") return { kind: "formula", printed, resolverId: "love-impact-damage" };
+  if (handlerId === "pokemon:arcanine" && name === "Punishing Fang") return { kind: "formula", printed, resolverId: "punishing-fang-damage" };
+  if (handlerId === "pokemon:hawlucha" && name === "Acrobatics") return { kind: "formula", printed, resolverId: "acrobatics-damage" };
+  if (handlerId === "pokemon:growlithe" && name === "Relentless Flames") return { kind: "formula", printed, resolverId: "relentless-flames-damage" };
+  if (handlerId === "pokemon:hisuian-arcanine" && name === "Proud Fangs") return { kind: "formula", printed, resolverId: "proud-fangs-damage" };
+  if (handlerId === "pokemon:mega-zeraora-ex" && name === "Thunderous Fist") return { kind: "formula", printed, resolverId: "thunderous-fist-damage" };
+  if (handlerId === "pokemon:arcanine-ex" && name === "Raging Claws") return { kind: "formula", printed, resolverId: "raging-claws-damage" };
   return null;
 }
 

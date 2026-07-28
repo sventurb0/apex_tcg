@@ -33,7 +33,7 @@ function strictSemanticCoverage(card: PokemonCardMetadata) {
   const runtime = toRuntimeCardDefinition(card);
   const coverage = buildCardSemanticCoverage(card, runtime, implementation, knownProgramIds);
   const implementationHandler = handlerId(implementation);
-  if (card.supertype === "Energy" && card.energyText?.trim() && !explicitBasicEnergyHandlers.has(implementationHandler)) {
+  if (card.supertype === "Energy" && card.energyText?.trim() && !explicitBasicEnergyHandlers.has(implementationHandler) && !knownProgramIds.has(implementationHandler) && !isRegisteredEffectProgram(implementationHandler)) {
     if (!coverage.unmatchedPrintedClauses.some((clause) => clause.kind === "energy")) coverage.unmatchedPrintedClauses.push({ id: `${card.id}:energy:unbound`, kind: "energy", name: card.name, text: card.energyText });
   }
   const unknownPrograms = [...new Set([

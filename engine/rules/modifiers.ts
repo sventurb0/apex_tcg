@@ -29,6 +29,7 @@ export function attackDamageBonus(state: GameState, attacker: PokemonInPlay, tar
   let amount = 0;
   let sourceCardId: string | undefined;
   const attackerCard = topCard(state, attacker);
+  if (attackerCard.abilities.some((ability) => ability.effectProgramId === "passive:lose-cool") && attacker.damage >= 20) amount += 120;
   if (target && attackerCard.abilities.some((ability) => ability.effectProgramId === "passive:compound-eyes") && topCard(state, target).abilities.length) amount += 50;
   if (attackerCard.pokemonType && (attackerCard.pokemonType === "grass" || attackerCard.pokemonType === "fire") && pokemonTargets(state.players[ownerId]).some((pokemon) => topCard(state, pokemon).abilities.some((ability) => ability.effectProgramId === "passive:sunny-day"))) amount += 20;
   if (attacker.tool) {

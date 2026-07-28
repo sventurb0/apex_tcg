@@ -14,7 +14,7 @@ export function createImplementationResolver(cards: readonly PokemonCardMetadata
   const familyByCardId = new Map<string, BehaviourFamily>();
   const allFamilies: BehaviourFamily[] = [];
   for (const [signature, members] of bySignature) {
-    const explicitMembers = members.filter((card) => cardImplementationRegistry[card.id]?.status === "complete").sort((a, b) => (explicitOrder.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (explicitOrder.get(b.id) ?? Number.MAX_SAFE_INTEGER) || a.id.localeCompare(b.id));
+    const explicitMembers = members.filter((card) => cardImplementationRegistry[card.id]?.status === "complete" && cardImplementationRegistry[card.id]?.allowFunctionalInheritance !== true).sort((a, b) => (explicitOrder.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (explicitOrder.get(b.id) ?? Number.MAX_SAFE_INTEGER) || a.id.localeCompare(b.id));
     const generated = explicitMembers.length ? undefined : compileSafeGeneratedImplementation(members[0]!);
     const familyEligible = generated?.status === "generated" || generated?.status === "complete" && generated.implementationSource === "reviewed-template";
     const canonical = explicitMembers[0] ?? (familyEligible ? [...members].sort((a, b) => a.id.localeCompare(b.id))[0] : undefined);
@@ -26,7 +26,7 @@ export function createImplementationResolver(cards: readonly PokemonCardMetadata
   }
   const resolve = (card: PokemonCardMetadata): CardImplementation => {
     const exact = cardImplementationRegistry[card.id]; const family = familyByCardId.get(card.id);
-    if (exact && (exact.status !== "unsupported" || exact.allowFunctionalInheritance !== true)) return { ...exact, implementationSource: exact.status === "complete" ? "explicit" : exact.status, canonicalCardId: family?.canonicalCardId ?? card.id, behaviourFamilyId: family?.id, equivalentPrintingCount: family?.memberCardIds.length ?? 1 };
+    if (exact && exact.allowFunctionalInheritance !== true) return { ...exact, implementationSource: exact.status === "complete" ? "explicit" : exact.status, canonicalCardId: family?.canonicalCardId ?? card.id, behaviourFamilyId: family?.id, equivalentPrintingCount: family?.memberCardIds.length ?? 1 };
     if (family?.source === "explicit") { const canonical = cardImplementationRegistry[family.canonicalCardId]!; return { ...canonical, cardId: card.id, implementationSource: card.id === family.canonicalCardId ? "explicit" : "functional-reprint", canonicalCardId: family.canonicalCardId, behaviourFamilyId: family.id, equivalentPrintingCount: family.memberCardIds.length }; }
     if (family?.source === "template") { const canonicalCard = byId.get(family.canonicalCardId)!; const canonical = compileSafeGeneratedImplementation(canonicalCard); return { ...canonical, cardId: card.id, implementationSource: card.id === family.canonicalCardId ? "reviewed-template" : "functional-reprint", canonicalCardId: family.canonicalCardId, behaviourFamilyId: family.id, equivalentPrintingCount: family.memberCardIds.length }; }
     const safe = compileSafeGeneratedImplementation(card);
