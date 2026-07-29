@@ -1,344 +1,2865 @@
 {
+  "generatedAt": "2026-07-29T21:43:38.204Z",
   "mandatoryTargets": 8,
-  "individualDecksBuildable": 0,
-  "maximumSimultaneousSubset": [],
-  "decks": [
+  "fullCandidates": 8,
+  "individualDecksBuildable": 8,
+  "blockedRoutesWithFullShoppingCandidate": 0,
+  "fallbackSkeletons": 0,
+  "maximumSimultaneousRoutes": [
+    "owned-alakazam"
+  ],
+  "sharedCardConflicts": [
+    {
+      "cardId": "sv9-155",
+      "name": "Professor's Research",
+      "owned": 4,
+      "required": 32,
+      "shortage": 28
+    },
+    {
+      "cardId": "me1-131",
+      "name": "Ultra Ball",
+      "owned": 8,
+      "required": 32,
+      "shortage": 24
+    },
+    {
+      "cardId": "me1-130",
+      "name": "Switch",
+      "owned": 3,
+      "required": 24,
+      "shortage": 21
+    },
+    {
+      "cardId": "sv1-181",
+      "name": "Nest Ball",
+      "owned": 6,
+      "required": 20,
+      "shortage": 14
+    },
+    {
+      "cardId": "sv6pt5-61",
+      "name": "Night Stretcher",
+      "owned": 2,
+      "required": 14,
+      "shortage": 12
+    },
+    {
+      "cardId": "swsh12pt5-127",
+      "name": "Energy Retrieval",
+      "owned": 3,
+      "required": 12,
+      "shortage": 9
+    },
+    {
+      "cardId": "me1-119",
+      "name": "Lillie's Determination",
+      "owned": 4,
+      "required": 12,
+      "shortage": 8
+    },
+    {
+      "cardId": "me2pt5-209",
+      "name": "Team Rocket's Transceiver",
+      "owned": 4,
+      "required": 12,
+      "shortage": 8
+    },
+    {
+      "cardId": "xy5-135",
+      "name": "Rare Candy",
+      "owned": 8,
+      "required": 14,
+      "shortage": 6
+    },
+    {
+      "cardId": "sv10-175",
+      "name": "Team Rocket's Great Ball",
+      "owned": 3,
+      "required": 9,
+      "shortage": 6
+    },
+    {
+      "cardId": "sv10-177",
+      "name": "Team Rocket's Proton",
+      "owned": 3,
+      "required": 9,
+      "shortage": 6
+    },
+    {
+      "cardId": "sv8pt5-119",
+      "name": "Prime Catcher",
+      "owned": 1,
+      "required": 6,
+      "shortage": 5
+    },
+    {
+      "cardId": "sv6pt5-55",
+      "name": "Binding Mochi",
+      "owned": 4,
+      "required": 8,
+      "shortage": 4
+    },
+    {
+      "cardId": "sv5-144",
+      "name": "Buddy-Buddy Poffin",
+      "owned": 8,
+      "required": 12,
+      "shortage": 4
+    },
+    {
+      "cardId": "sv4-163",
+      "name": "Earthen Vessel",
+      "owned": 4,
+      "required": 8,
+      "shortage": 4
+    },
+    {
+      "cardId": "sv6pt5-59",
+      "name": "Janine's Secret Art",
+      "owned": 4,
+      "required": 8,
+      "shortage": 4
+    },
+    {
+      "cardId": "swsh9-144",
+      "name": "Magma Basin",
+      "owned": 4,
+      "required": 8,
+      "shortage": 4
+    },
+    {
+      "cardId": "me2pt5-203",
+      "name": "Team Rocket's Factory",
+      "owned": 3,
+      "required": 7,
+      "shortage": 4
+    },
+    {
+      "cardId": "sv6pt5-36",
+      "name": "Okidogi ex",
+      "owned": 3,
+      "required": 6,
+      "shortage": 3
+    },
+    {
+      "cardId": "sv1-41",
+      "name": "Armarouge",
+      "owned": 2,
+      "required": 4,
+      "shortage": 2
+    },
+    {
+      "cardId": "sv4-26",
+      "name": "Charcadet",
+      "owned": 2,
+      "required": 4,
+      "shortage": 2
+    },
+    {
+      "cardId": "sv5-156",
+      "name": "Perilous Jungle",
+      "owned": 2,
+      "required": 4,
+      "shortage": 2
+    },
+    {
+      "cardId": "swsh1-183",
+      "name": "Switch",
+      "owned": 2,
+      "required": 4,
+      "shortage": 2
+    },
+    {
+      "cardId": "sv10-126",
+      "name": "Team Rocket's Weezing",
+      "owned": 2,
+      "required": 4,
+      "shortage": 2
+    },
+    {
+      "cardId": "sv6pt5-57",
+      "name": "Colress's Tenacity",
+      "owned": 4,
+      "required": 5,
+      "shortage": 1
+    },
+    {
+      "cardId": "sv6pt5-39",
+      "name": "Pecharunt ex",
+      "owned": 1,
+      "required": 2,
+      "shortage": 1
+    }
+  ],
+  "smallestShoppingListForAnotherSimultaneousRoute": {
+    "routeId": "owned-team-rocket-crobat-spidops",
+    "missingCopies": 8,
+    "shopping": [
+      {
+        "cardId": "sv9-155",
+        "name": "Professor's Research",
+        "quantity": 4
+      },
+      {
+        "cardId": "me1-130",
+        "name": "Switch",
+        "quantity": 3
+      },
+      {
+        "cardId": "sv8pt5-119",
+        "name": "Prime Catcher",
+        "quantity": 1
+      }
+    ]
+  },
+  "routes": [
     {
       "id": "owned-alakazam",
       "name": "Owned Alakazam Hand Engine",
-      "manifest": [
-        {
-          "cardId": "me1-56",
-          "count": 1
-        },
-        {
-          "cardId": "me1-55",
-          "count": 1
-        },
-        {
-          "cardId": "me1-54",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": true,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "me1-54",
+            "count": 4
+          },
+          {
+            "cardId": "me1-55",
+            "count": 4
+          },
+          {
+            "cardId": "me1-56",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-54",
+            "count": 1
+          },
+          {
+            "cardId": "sve-5",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "me1-54",
+            "count": 4
+          },
+          {
+            "cardId": "me1-55",
+            "count": 4
+          },
+          {
+            "cardId": "me1-56",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-54",
+            "count": 1
+          },
+          {
+            "cardId": "sve-5",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "me1-54",
+            "count": 4
+          },
+          {
+            "cardId": "me1-55",
+            "count": 4
+          },
+          {
+            "cardId": "me1-56",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-54",
+            "count": 1
+          },
+          {
+            "cardId": "sve-5",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "me1-54": {
+          "role": "evolution-line",
+          "explanation": "Abra is the required Basic for the selected Alakazam line."
+        },
+        "me1-55": {
+          "role": "evolution-line",
+          "explanation": "Kadabra is the legal Stage 1 path into Alakazam."
+        },
+        "me1-56": {
+          "role": "primary-attacker",
+          "explanation": "Alakazam is the selected anchor and defining attacker."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "sv5-144": {
+          "role": "basic-setup",
+          "explanation": "Buddy-Buddy Poffin establishes the low-HP Basic evolution bench."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "explanation": "Lillie's Determination rebuilds an unproductive setup hand."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "swsh1-183": {
+          "role": "switching",
+          "explanation": "A functional Switch reprint supplies the fourth legal copy by card name."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "explanation": "Nest Ball establishes the target engine's Basic Pokémon."
+        },
+        "swsh12pt5-127": {
+          "role": "energy-recovery",
+          "explanation": "Energy Retrieval restores discarded Basic Energy for another attack cycle."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "xy5-135": {
+          "role": "evolution-search",
+          "explanation": "Rare Candy reduces the Stage 2 engine's setup burden."
+        },
+        "sv2-188": {
+          "role": "pokemon-recovery",
+          "explanation": "Super Rod returns exhausted Pokémon and Energy resources to the deck."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sv6pt5-54": {
+          "role": "stadium-access",
+          "explanation": "Academy at Night protects a required setup card on top of the deck."
+        },
+        "sve-5": {
+          "role": "energy",
+          "explanation": "Psychic Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-okidogi-poison",
       "name": "Owned Okidogi Poison",
-      "manifest": [
-        {
-          "cardId": "sv6pt5-36",
-          "count": 1
-        },
-        {
-          "cardId": "sv6pt5-39",
-          "count": 1
-        },
-        {
-          "cardId": "sv6pt5-37",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": true,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-37",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-95",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-143",
+            "count": 3
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 3
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-37",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-95",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-143",
+            "count": 3
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 3
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-37",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-95",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-143",
+            "count": 3
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv2-188",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 3
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv6pt5-36": {
+          "role": "primary-attacker",
+          "explanation": "Okidogi ex is the Poison-enabled primary attacker."
+        },
+        "sv6pt5-39": {
+          "role": "engine-core",
+          "explanation": "Pecharunt ex supplies the Poison engine and pivot utility."
+        },
+        "sv6pt5-37": {
+          "role": "secondary-attacker",
+          "explanation": "Munkidori ex is a Darkness-compatible secondary attacker."
+        },
+        "sv6-95": {
+          "role": "engine-core",
+          "explanation": "Munkidori converts damage counters into pressure that complements Poison."
+        },
+        "me2pt5-143": {
+          "role": "engine-core",
+          "explanation": "Pecharunt provides additional Darkness Poison setup bodies."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "explanation": "Nest Ball establishes the target engine's Basic Pokémon."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "sv6pt5-59": {
+          "role": "energy-search",
+          "explanation": "Janine's Secret Art accelerates the Darkness Poison attacker."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "swsh1-183": {
+          "role": "switching",
+          "explanation": "A functional Switch reprint supplies the fourth legal copy by card name."
+        },
+        "sv4-163": {
+          "role": "energy-search",
+          "explanation": "Earthen Vessel fixes the bounded Basic Energy plan."
+        },
+        "swsh12pt5-127": {
+          "role": "energy-recovery",
+          "explanation": "Energy Retrieval restores discarded Basic Energy for another attack cycle."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sv6pt5-55": {
+          "role": "tool-access",
+          "explanation": "Binding Mochi converts the declared Poison state into additional attack damage."
+        },
+        "sv5-156": {
+          "role": "stadium-access",
+          "explanation": "Perilous Jungle increases Poison pressure for the declared Poison route."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sv2-188": {
+          "role": "pokemon-recovery",
+          "explanation": "Super Rod returns exhausted Pokémon and Energy resources to the deck."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "explanation": "Colress's Tenacity finds the Stadium and Energy pieces used by the engine."
+        },
+        "sve-7": {
+          "role": "energy",
+          "explanation": "Darkness Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-team-rocket-nidoking",
       "name": "Owned Team Rocket Nidoking/Nidoqueen",
-      "manifest": [
-        {
-          "cardId": "sv10-119",
-          "count": 1
-        },
-        {
-          "cardId": "sv10-116",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 58
-        }
-      ],
-      "validation": {
-        "totalCopies": 2,
-        "runtimeUniqueCards": 2,
-        "runtimeCopies": 2,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": false,
-        "validEvolutionLines": false,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 2 cards; constructed decks normally contain exactly 60.",
-          "Add at least one Basic Pokémon."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-117",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-118",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-119",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-114",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-115",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-116",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv10-117",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-118",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-119",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-114",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-115",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-116",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-117",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-118",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-119",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-114",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-115",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-116",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv10-117": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Nidoran♂ begins the Nidoking line."
+        },
+        "sv10-118": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Nidorino is the legal Stage 1 path."
+        },
+        "sv10-119": {
+          "role": "primary-attacker",
+          "explanation": "Team Rocket's Nidoking ex is the selected primary attacker."
+        },
+        "sv10-114": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Nidoran♀ begins the Nidoqueen support line."
+        },
+        "sv10-115": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Nidorina is the legal Stage 1 path."
+        },
+        "sv10-116": {
+          "role": "engine-core",
+          "explanation": "Team Rocket's Nidoqueen is the paired engine core."
+        },
+        "me2pt5-209": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Transceiver searches the named Team Rocket engine."
+        },
+        "sv10-175": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Great Ball searches the Team Rocket Pokémon package."
+        },
+        "sv10-177": {
+          "role": "draw",
+          "explanation": "Team Rocket's Proton supplies engine-specific draw and setup."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "xy5-135": {
+          "role": "evolution-search",
+          "explanation": "Rare Candy reduces the Stage 2 engine's setup burden."
+        },
+        "me2pt5-203": {
+          "role": "stadium-access",
+          "explanation": "Team Rocket's Factory is the dedicated Team Rocket Stadium engine."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sve-7": {
+          "role": "energy",
+          "explanation": "Darkness Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-team-rocket-muk",
       "name": "Owned Team Rocket Muk Control",
-      "manifest": [
-        {
-          "cardId": "sv10-124",
-          "count": 1
-        },
-        {
-          "cardId": "sv10-113",
-          "count": 1
-        },
-        {
-          "cardId": "sv10-126",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": false,
-        "validEvolutionLines": false,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60.",
-          "Add at least one Basic Pokémon."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-123",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-124",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-112",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-113",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-172",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-168",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv10-123",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-124",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-112",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-113",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-172",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-168",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-123",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-124",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-112",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-113",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-172",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-168",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv10-123": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Grimer is the required Basic for Muk."
+        },
+        "sv10-124": {
+          "role": "primary-attacker",
+          "explanation": "Team Rocket's Muk is the selected control attacker."
+        },
+        "sv10-112": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Ekans begins the Arbok disruption line."
+        },
+        "sv10-113": {
+          "role": "control-disruption",
+          "explanation": "Team Rocket's Arbok provides a complementary control attacker."
+        },
+        "sv10-125": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Koffing begins the Weezing line."
+        },
+        "sv10-126": {
+          "role": "control-disruption",
+          "explanation": "Team Rocket's Weezing broadens the control package."
+        },
+        "me2pt5-209": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Transceiver searches the named Team Rocket engine."
+        },
+        "sv10-175": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Great Ball searches the Team Rocket Pokémon package."
+        },
+        "sv10-172": {
+          "role": "control-disruption",
+          "explanation": "Team Rocket's Bother-Bot advances the route's control plan."
+        },
+        "sv10-177": {
+          "role": "draw",
+          "explanation": "Team Rocket's Proton supplies engine-specific draw and setup."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "me2pt5-203": {
+          "role": "stadium-access",
+          "explanation": "Team Rocket's Factory is the dedicated Team Rocket Stadium engine."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sv10-168": {
+          "role": "pokemon-recovery",
+          "explanation": "Sacred Ash recycles the control deck's Team Rocket Pokémon."
+        },
+        "sve-7": {
+          "role": "energy",
+          "explanation": "Darkness Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-skeledirge-armarouge",
       "name": "Owned Skeledirge Armarouge",
-      "manifest": [
-        {
-          "cardId": "sv2-37",
-          "count": 1
-        },
-        {
-          "cardId": "sv1-41",
-          "count": 1
-        },
-        {
-          "cardId": "sv4-26",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": false,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv2-35",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-37",
+            "count": 3
+          },
+          {
+            "cardId": "sv2-37",
+            "count": 2
+          },
+          {
+            "cardId": "svp-34",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv2-35",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-37",
+            "count": 3
+          },
+          {
+            "cardId": "sv2-37",
+            "count": 2
+          },
+          {
+            "cardId": "svp-34",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv2-35",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-37",
+            "count": 3
+          },
+          {
+            "cardId": "sv2-37",
+            "count": 2
+          },
+          {
+            "cardId": "svp-34",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv2-35": {
+          "role": "evolution-line",
+          "explanation": "Fuecoco begins the Skeledirge line."
+        },
+        "sv1-37": {
+          "role": "evolution-line",
+          "explanation": "Crocalor is the legal Stage 1 path."
+        },
+        "sv2-37": {
+          "role": "primary-attacker",
+          "explanation": "Skeledirge ex is the selected Fire attacker."
+        },
+        "svp-34": {
+          "role": "primary-attacker",
+          "explanation": "A functional Skeledirge ex printing supplies the third anchor copy."
+        },
+        "sv4-26": {
+          "role": "evolution-line",
+          "explanation": "Charcadet begins the Armarouge support line."
+        },
+        "sv1-41": {
+          "role": "engine-core",
+          "explanation": "Armarouge moves Fire Energy into the active attacker."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "sv5-144": {
+          "role": "basic-setup",
+          "explanation": "Buddy-Buddy Poffin establishes the low-HP Basic evolution bench."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "explanation": "Lillie's Determination rebuilds an unproductive setup hand."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "explanation": "Nest Ball establishes the target engine's Basic Pokémon."
+        },
+        "xy5-135": {
+          "role": "evolution-search",
+          "explanation": "Rare Candy reduces the Stage 2 engine's setup burden."
+        },
+        "swsh9-144": {
+          "role": "stadium-access",
+          "explanation": "Magma Basin accelerates Fire Energy to the Fire evolution engine."
+        },
+        "sv4-163": {
+          "role": "energy-search",
+          "explanation": "Earthen Vessel fixes the bounded Basic Energy plan."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sve-2": {
+          "role": "energy",
+          "explanation": "Fire Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-arcanine",
       "name": "Owned Arcanine",
-      "manifest": [
-        {
-          "cardId": "sv6-100",
-          "count": 1
-        },
-        {
-          "cardId": "swsh10-70",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 58
-        }
-      ],
-      "validation": {
-        "totalCopies": 2,
-        "runtimeUniqueCards": 2,
-        "runtimeCopies": 2,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": true,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 2 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "swsh12-19",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-30",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-28",
+            "count": 2
+          },
+          {
+            "cardId": "swsh10-70",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-100",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv5-159",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 10
+          },
+          {
+            "cardId": "sve-6",
+            "count": 2
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "swsh12-19",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-30",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-28",
+            "count": 2
+          },
+          {
+            "cardId": "swsh10-70",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-100",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv5-159",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 10
+          },
+          {
+            "cardId": "sve-6",
+            "count": 2
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "swsh12-19",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-30",
+            "count": 1
+          },
+          {
+            "cardId": "sv10-28",
+            "count": 2
+          },
+          {
+            "cardId": "swsh10-70",
+            "count": 1
+          },
+          {
+            "cardId": "sv6-100",
+            "count": 1
+          },
+          {
+            "cardId": "sv4-26",
+            "count": 2
+          },
+          {
+            "cardId": "sv1-41",
+            "count": 2
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-119",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "swsh9-144",
+            "count": 4
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv5-159",
+            "count": 2
+          },
+          {
+            "cardId": "sve-2",
+            "count": 10
+          },
+          {
+            "cardId": "sve-6",
+            "count": 2
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "swsh12-19": {
+          "role": "evolution-line",
+          "explanation": "Growlithe is a legal Basic for Arcanine."
+        },
+        "sv1-30": {
+          "role": "evolution-line",
+          "explanation": "A second owned Growlithe printing improves Basic setup."
+        },
+        "sv10-28": {
+          "role": "primary-attacker",
+          "explanation": "Arcanine is the selected Fire attacker."
+        },
+        "swsh10-70": {
+          "role": "evolution-line",
+          "explanation": "Hisuian Growlithe begins the alternate Arcanine line."
+        },
+        "sv6-100": {
+          "role": "secondary-attacker",
+          "explanation": "Hisuian Arcanine provides a lower-Energy compatible attacker."
+        },
+        "sv4-26": {
+          "role": "evolution-line",
+          "explanation": "Charcadet begins the Fire acceleration line."
+        },
+        "sv1-41": {
+          "role": "engine-core",
+          "explanation": "Armarouge moves Magma Basin Energy to Arcanine."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "sv5-144": {
+          "role": "basic-setup",
+          "explanation": "Buddy-Buddy Poffin establishes the low-HP Basic evolution bench."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "explanation": "Lillie's Determination rebuilds an unproductive setup hand."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "swsh1-183": {
+          "role": "switching",
+          "explanation": "A functional Switch reprint supplies the fourth legal copy by card name."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "explanation": "Nest Ball establishes the target engine's Basic Pokémon."
+        },
+        "swsh9-144": {
+          "role": "stadium-access",
+          "explanation": "Magma Basin accelerates Fire Energy to the Fire evolution engine."
+        },
+        "sv4-163": {
+          "role": "energy-search",
+          "explanation": "Earthen Vessel fixes the bounded Basic Energy plan."
+        },
+        "swsh12pt5-127": {
+          "role": "energy-recovery",
+          "explanation": "Energy Retrieval restores discarded Basic Energy for another attack cycle."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sv5-159": {
+          "role": "tool-access",
+          "explanation": "Rescue Board reduces retreat friction on setup Pokémon."
+        },
+        "sve-2": {
+          "role": "energy",
+          "explanation": "Fire Energy pays the defining attacks of this route."
+        },
+        "sve-6": {
+          "role": "energy",
+          "explanation": "Fighting Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-swalot-poison",
       "name": "Owned Swalot Poison",
-      "manifest": [
-        {
-          "cardId": "sv7-92",
-          "count": 1
-        },
-        {
-          "cardId": "sv7-91",
-          "count": 1
-        },
-        {
-          "cardId": "sv6pt5-55",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": true,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv7-91",
+            "count": 4
+          },
+          {
+            "cardId": "sv7-92",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv7-91",
+            "count": 4
+          },
+          {
+            "cardId": "sv7-92",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv7-91",
+            "count": 4
+          },
+          {
+            "cardId": "sv7-92",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-36",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-39",
+            "count": 1
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "sv1-181",
+            "count": 4
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "sv6pt5-59",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "swsh1-183",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-55",
+            "count": 4
+          },
+          {
+            "cardId": "sv5-156",
+            "count": 2
+          },
+          {
+            "cardId": "sv4-163",
+            "count": 2
+          },
+          {
+            "cardId": "swsh12pt5-127",
+            "count": 3
+          },
+          {
+            "cardId": "sv6pt5-61",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sv6pt5-57",
+            "count": 2
+          },
+          {
+            "cardId": "sve-7",
+            "count": 12
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv7-91": {
+          "role": "evolution-line",
+          "explanation": "Gulpin is the required Basic for Swalot."
+        },
+        "sv7-92": {
+          "role": "primary-attacker",
+          "explanation": "Swalot is the selected Poison attacker."
+        },
+        "sv6pt5-36": {
+          "role": "secondary-attacker",
+          "explanation": "Okidogi ex shares the Darkness Poison and Energy plan."
+        },
+        "sv6pt5-39": {
+          "role": "engine-core",
+          "explanation": "Pecharunt ex enables the compatible Poison pivot engine."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "explanation": "Nest Ball establishes the target engine's Basic Pokémon."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "sv6pt5-59": {
+          "role": "energy-search",
+          "explanation": "Janine's Secret Art accelerates the Darkness Poison attacker."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "swsh1-183": {
+          "role": "switching",
+          "explanation": "A functional Switch reprint supplies the fourth legal copy by card name."
+        },
+        "sv6pt5-55": {
+          "role": "tool-access",
+          "explanation": "Binding Mochi converts the declared Poison state into additional attack damage."
+        },
+        "sv5-156": {
+          "role": "stadium-access",
+          "explanation": "Perilous Jungle increases Poison pressure for the declared Poison route."
+        },
+        "sv4-163": {
+          "role": "energy-search",
+          "explanation": "Earthen Vessel fixes the bounded Basic Energy plan."
+        },
+        "swsh12pt5-127": {
+          "role": "energy-recovery",
+          "explanation": "Energy Retrieval restores discarded Basic Energy for another attack cycle."
+        },
+        "sv6pt5-61": {
+          "role": "pokemon-recovery",
+          "explanation": "Night Stretcher recovers a discarded attacker or evolution component."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "explanation": "Colress's Tenacity finds the Stadium and Energy pieces used by the engine."
+        },
+        "sve-7": {
+          "role": "energy",
+          "explanation": "Darkness Energy pays the defining attacks of this route."
+        }
       }
     },
     {
       "id": "owned-team-rocket-crobat-spidops",
       "name": "Owned Team Rocket Crobat/Spidops",
-      "manifest": [
-        {
-          "cardId": "sv10-122",
-          "count": 1
-        },
-        {
-          "cardId": "me2pt5-19",
-          "count": 1
-        },
-        {
-          "cardId": "sv10-125",
-          "count": 1
-        }
-      ],
-      "shoppingList": [
-        {
-          "cardId": "sve-basic-energy",
-          "count": 57
-        }
-      ],
-      "validation": {
-        "totalCopies": 3,
-        "runtimeUniqueCards": 3,
-        "runtimeCopies": 3,
-        "unsupportedUniqueCards": 0,
-        "unsupportedCopies": 0,
-        "legalCopyLimits": true,
-        "legalSpecialLimits": true,
-        "validBasicSetup": true,
-        "validEvolutionLines": false,
-        "compatibleEnergyPlan": false,
-        "ownedQuantitySatisfied": true,
-        "aiStrategyPresent": false,
-        "simulationGames": 0,
-        "simulationReady": false,
-        "issues": [
-          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+      "fullLibrary": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-120",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-121",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-122",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-19",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-19",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-20",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 8
+          },
+          {
+            "cardId": "sve-1",
+            "count": 4
+          }
         ]
+      },
+      "ownedOnly": {
+        "manifest": [
+          {
+            "cardId": "sv10-120",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-121",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-122",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-19",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-19",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-20",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 8
+          },
+          {
+            "cardId": "sve-1",
+            "count": 4
+          }
+        ],
+        "validation": {
+          "totalCopies": 60,
+          "runtimeCopies": 60,
+          "unsupportedCopies": 0,
+          "legalCopyLimits": true,
+          "legalSpecialLimits": true,
+          "validBasicSetup": true,
+          "validEvolutionLines": true,
+          "compatibleEnergyPlan": true,
+          "ownedNonBasicShortage": 0,
+          "aiStrategyPresent": true,
+          "everyCardHasRole": true,
+          "simulationReady": true,
+          "issues": []
+        }
+      },
+      "ownedPlusShopping": {
+        "totalCopies": 60,
+        "manifest": [
+          {
+            "cardId": "sv10-120",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-121",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-122",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-19",
+            "count": 4
+          },
+          {
+            "cardId": "me2pt5-19",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-20",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-125",
+            "count": 2
+          },
+          {
+            "cardId": "sv10-126",
+            "count": 2
+          },
+          {
+            "cardId": "me2pt5-209",
+            "count": 4
+          },
+          {
+            "cardId": "sv10-175",
+            "count": 3
+          },
+          {
+            "cardId": "sv10-177",
+            "count": 3
+          },
+          {
+            "cardId": "sv9-155",
+            "count": 4
+          },
+          {
+            "cardId": "me1-131",
+            "count": 4
+          },
+          {
+            "cardId": "me1-130",
+            "count": 3
+          },
+          {
+            "cardId": "xy5-135",
+            "count": 3
+          },
+          {
+            "cardId": "me2pt5-203",
+            "count": 2
+          },
+          {
+            "cardId": "sv8pt5-119",
+            "count": 1
+          },
+          {
+            "cardId": "sve-7",
+            "count": 8
+          },
+          {
+            "cardId": "sve-1",
+            "count": 4
+          }
+        ],
+        "missing": [],
+        "substitutions": []
+      },
+      "roleEdges": {
+        "sv10-120": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Zubat begins the Crobat line."
+        },
+        "sv10-121": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Golbat is the legal Stage 1 path."
+        },
+        "sv10-122": {
+          "role": "primary-attacker",
+          "explanation": "Team Rocket's Crobat ex is the selected anchor attacker."
+        },
+        "sv10-19": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Tarountula begins the Spidops line."
+        },
+        "me2pt5-19": {
+          "role": "control-disruption",
+          "explanation": "Team Rocket's Spidops supplies the Grass control partner."
+        },
+        "sv10-20": {
+          "role": "control-disruption",
+          "explanation": "A second owned Spidops printing completes the four-copy functional pool."
+        },
+        "sv10-125": {
+          "role": "evolution-line",
+          "explanation": "Team Rocket's Koffing supplies a legal setup body for Weezing."
+        },
+        "sv10-126": {
+          "role": "engine-core",
+          "explanation": "Team Rocket's Weezing adds Darkness control support."
+        },
+        "me2pt5-209": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Transceiver searches the named Team Rocket engine."
+        },
+        "sv10-175": {
+          "role": "basic-setup",
+          "explanation": "Team Rocket's Great Ball searches the Team Rocket Pokémon package."
+        },
+        "sv10-177": {
+          "role": "draw",
+          "explanation": "Team Rocket's Proton supplies engine-specific draw and setup."
+        },
+        "sv9-155": {
+          "role": "draw",
+          "explanation": "Professor's Research supplies the deck's high-volume draw reset."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "explanation": "Ultra Ball finds the exact Pokémon or evolution piece the target engine is missing."
+        },
+        "me1-130": {
+          "role": "switching",
+          "explanation": "Switch preserves the intended attacker and frees trapped setup Pokémon."
+        },
+        "xy5-135": {
+          "role": "evolution-search",
+          "explanation": "Rare Candy reduces the Stage 2 engine's setup burden."
+        },
+        "me2pt5-203": {
+          "role": "stadium-access",
+          "explanation": "Team Rocket's Factory is the dedicated Team Rocket Stadium engine."
+        },
+        "sv8pt5-119": {
+          "role": "gust",
+          "explanation": "Prime Catcher creates one decisive gust-and-switch turn without competing ACE SPEC cards."
+        },
+        "sve-7": {
+          "role": "energy",
+          "explanation": "Darkness Energy pays the defining attacks of this route."
+        },
+        "sve-1": {
+          "role": "energy",
+          "explanation": "Grass Energy pays the defining attacks of this route."
+        }
       }
     }
   ]

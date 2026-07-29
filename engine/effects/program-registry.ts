@@ -170,6 +170,7 @@ const rawEffectProgramRegistry: Readonly<Record<string, EffectProgramDefinition>
   "attack:paralyzing-ball": { id: "attack:paralyzing-ball", coveredClauseIds: ["energy-discard", "special-condition"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "attack:electrobullet": { id: "attack:electrobullet", coveredClauseIds: ["bench-damage"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "attack:accelerate": { id: "attack:accelerate", coveredClauseIds: ["attack-effect-prevention"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
+  "attack:aqua-slash": { id: "attack:aqua-slash", coveredClauseIds: ["attack-lock"], implementationKind: "runner", testReferences: ["tests/engine/runtime-hardening.test.ts"] },
   "attack:spinning-bird": { id: "attack:spinning-bird", coveredClauseIds: ["energy-discard"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "attack:hyper-beam": { id: "attack:hyper-beam", coveredClauseIds: ["energy-discard"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },
   "attack:dragon-pulse": { id: "attack:dragon-pulse", coveredClauseIds: ["deck-discard"], implementationKind: "runner", testReferences: ["tests/cards/semantic-coverage.test.ts"] },

@@ -1,111 +1,765 @@
 {
-  "cardId": "sv9-98",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:41:03.689Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv9-98",
   "name": "N's Zoroark ex",
-  "candidateId": "architect-proven-limitless-28257-13013-0",
+  "finalistDeckId": "architect-anchor-sv9-98-turbo-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-136:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv9-98:4|sve-7:16|zsv10pt5-84:3",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-sv9-98-turbo-13013-0",
+    "seed": 13013,
+    "variant": "turbo semantic",
+    "requiredCardIds": [
+      "sv9-98"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv9-98-turbo-13013-0",
+      "name": "N's Zoroark ex — turbo semantic build 1",
+      "description": "Original executable construction using N's Zoroark; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-136",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sv9-98",
+          "count": 4
+        },
+        {
+          "cardId": "sve-7",
+          "count": 16
+        },
+        {
+          "cardId": "zsv10pt5-84",
+          "count": 3
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 0,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 2.8,
+      "synergy": 2.6666666666666665,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 6.5,
+      "secondaryEnergyCoverage": 4.5,
+      "conflictPenalty": 0,
+      "engineCohesion": 1.95,
+      "total": 98.4
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected N's Zoroark.",
+      "Required packages were assembled before slot filling: ns-zoroark-line, ns-pokemon-toolbox.",
+      "Profile turbo changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 4 providers with 3 unmet role(s).",
+      "Applied reviewed Energy template Single-type high-cost (12-16 cards) for N's Zoroark.",
+      "Protects high attack costs and discard acceleration from starvation.",
+      "Night Joker: 2 units, expected payment in 1 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Coherence: 17 cards assigned explicit provider-to-requirement roles; engines ns-zoroark."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "me2pt5-136",
+        "toCardId": "sv9-98",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type high-cost (12-16 cards) for N's Zoroark. Protects high attack costs and discard acceleration from starvation. Night Joker: 2 units, expected payment in 1 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-136:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv9-98:4|sve-7:16|zsv10pt5-84:3",
+    "route": "original",
+    "selectedRoles": {
+      "sv9-98": "primary-attacker"
+    },
+    "packageIds": [
+      "ns-zoroark-line",
+      "ns-pokemon-toolbox"
+    ],
+    "profile": "turbo",
+    "strategyPlanId": "original:ns-zoroark",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 1
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 8,
+        "evolution-search": 3,
+        "draw": 9,
+        "switching": 2,
+        "gust": 2,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 2
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "evolution-search",
+        "recovery",
+        "discard"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for N's Zoroark.",
+        "turbo prioritizes search and draw.",
+        "No reviewed provider was found for evolution-search; the role remains unmet.",
+        "No reviewed provider was found for recovery; the role remains unmet.",
+        "No reviewed provider was found for discard; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-7",
+          "count": 16
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type high-cost (12-16 cards) for N's Zoroark.",
+        "Protects high attack costs and discard acceleration from starvation.",
+        "Night Joker: 2 units, expected payment in 1 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "ns-zoroark"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-136": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected N's Zoroark ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "N's Zorua: evolves into the selected N's Zoroark ex line."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv9-98": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "N's Zoroark ex: selected favourite fulfils primary-attacker."
+        },
+        "sve-7": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays darkness attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+        },
+        "zsv10pt5-84": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pokégear 3.0: provides the declared draw requirement."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "darkness"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 13,
+      "losses": 27,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 32.5,
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28257": {
+          "games": 20,
+          "wins": 12,
+          "losses": 8,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 60,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 25,
+      "goingSecondWinRate": 40,
+      "averageTurns": 21.4,
+      "averageMulligans": 1.35,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 80,
+      "averageFirstAttackTurn": 2.6,
+      "averageFirstKnockOutTurn": 11.2,
+      "energyStarvationPercentage": 34.80392156862745,
+      "deckOutLosses": 1,
+      "averagePrizesTaken": 0.375,
+      "commonLossReasons": {
+        "no-pokemon": 26,
+        "deck-out": 1
+      },
+      "cardUsage": {
+        "me2pt5-136": 40,
+        "sve-7": 40,
+        "sv9-98": 32,
+        "sv1-189": 16,
+        "sv1-181": 12,
+        "zsv10pt5-84": 14,
+        "sv4-163": 4,
+        "me1-114": 3,
+        "sv2-188": 7,
+        "me1-131": 24,
+        "me1-130": 7,
+        "sv1-198": 3,
+        "sv6pt5-57": 3,
+        "me1-119": 3,
+        "me2pt5-183": 1,
+        "sv9-97": 1,
+        "me1-88": 1,
+        "sv6pt5-61": 1
+      },
+      "abilityUsage": {
+        "Trade": 28
+      },
+      "attackUsage": {
+        "Night Joker": 286,
+        "Scratch": 94
+      },
+      "anchorContribution": {
+        "cardId": "sv9-98",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 32,
+        "enteredPlayRate": 80,
+        "evolvedGames": 32,
+        "evolvedRate": 80,
+        "abilityActivations": 28,
+        "attackUses": 286,
+        "attackUseGames": 29,
+        "knockOuts": 3,
+        "definingEventCount": 314,
+        "contributingGames": 32,
+        "contributionRate": 80,
+        "firstReadyTurn": 5.21875,
+        "abilityOrDefiningEventGames": 32,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Night Joker": 286,
+        "ability-used:Trade": 28
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv9-98",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 32,
+      "enteredPlayRate": 80,
+      "evolvedGames": 32,
+      "evolvedRate": 80,
+      "abilityActivations": 28,
+      "attackUses": 286,
+      "attackUseGames": 29,
+      "knockOuts": 3,
+      "definingEventCount": 314,
+      "contributingGames": 32,
+      "contributionRate": 80,
+      "firstReadyTurn": 5.21875,
+      "abilityOrDefiningEventGames": 32,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "sv9-98",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 208,
+    "enteredPlayRate": 83.2,
+    "evolvedGames": 208,
+    "evolvedRate": 83.2,
+    "abilityActivations": 595,
+    "attackUses": 1881,
+    "attackUseGames": 181,
+    "knockOuts": 0,
+    "definingEventCount": 2476,
+    "contributingGames": 205,
+    "contributionRate": 82,
+    "firstReadyTurn": 6.04390243902439,
+    "abilityOrDefiningEventGames": 205,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Night Joker": 1881,
+    "ability-used:Trade": 595
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 8,
+      "losses": 42,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 16,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 3,
+      "losses": 47,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 6,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 9,
+      "losses": 41,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 18,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28257": {
+      "games": 50,
+      "wins": 32,
+      "losses": 18,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 64,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-sv9-98-turbo-13013-0-mirror": {
+      "games": 50,
+      "wins": 29,
+      "losses": 21,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 57.99999999999999,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28257",
+    "architect-anchor-sv9-98-turbo-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 20,
-    "losses": 230,
+    "wins": 81,
+    "losses": 169,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 8,
+    "winRate": 32.4,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 8,
+        "losses": 42,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 16,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 20,
-        "losses": 230,
-        "winRate": 8
+        "games": 50,
+        "wins": 3,
+        "losses": 47,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 6,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 9,
+        "losses": 41,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 18,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28257": {
+        "games": 50,
+        "wins": 32,
+        "losses": 18,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 64,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-sv9-98-turbo-13013-0-mirror": {
+        "games": 50,
+        "wins": 29,
+        "losses": 21,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 57.99999999999999,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 11.200000000000001,
-    "goingSecondWinRate": 4.8,
-    "averageTurns": 15.252,
-    "averageMulligans": 0.172,
-    "setupFailurePercentage": 11.600000000000001,
-    "mainAttackerReadinessPercentage": 74.8,
-    "averageFirstAttackTurn": 4.647058823529412,
-    "averageFirstKnockOutTurn": 7.536458333333333,
-    "energyStarvationPercentage": 42.31111111111111,
-    "deckOutLosses": 71,
-    "averagePrizesTaken": 0.092,
+    "goingFirstWinRate": 29.599999999999998,
+    "goingSecondWinRate": 35.199999999999996,
+    "averageTurns": 25.116,
+    "averageMulligans": 1.404,
+    "setupFailurePercentage": 0.4,
+    "mainAttackerReadinessPercentage": 83.2,
+    "averageFirstAttackTurn": 2.783132530120482,
+    "averageFirstKnockOutTurn": 14.371134020618557,
+    "energyStarvationPercentage": 31.926121372031663,
+    "deckOutLosses": 42,
+    "averagePrizesTaken": 0.224,
     "commonLossReasons": {
-      "prizes": 127,
-      "no-pokemon": 32,
-      "deck-out": 71
+      "deck-out": 42,
+      "no-pokemon": 126,
+      "prizes": 1
     },
     "cardUsage": {
-      "sv9-97": 186,
-      "me2pt5-155": 124,
-      "sve-7": 244,
-      "sv9-153": 202,
-      "me2pt5-183": 64,
-      "sv6pt5-59": 162,
-      "me2pt5-192": 100,
-      "sv6pt5-36": 211,
-      "sv6pt5-39": 182,
-      "me3-81": 167,
-      "me1-130": 75,
-      "svp-129": 57,
-      "sv8pt5-4": 78,
-      "sv6pt5-61": 56,
-      "me1-114": 122,
-      "sv9-152": 178,
-      "sv6-95": 172,
-      "me1-119": 176,
-      "sv9-98": 187,
-      "sv5-144": 187,
-      "sv6-163": 118,
-      "me4-83": 210,
-      "me1-131": 225,
-      "sv6-131": 141,
-      "sv9-26": 83,
-      "sv9-27": 52,
-      "sv8-170": 167,
-      "me3-62": 84,
-      "zsv10pt5-84": 115,
-      "sv9-157": 85,
-      "sv8pt5-95": 212,
-      "me4-82": 47,
-      "me1-88": 70,
-      "sv6pt5-37": 63,
-      "sv8-177": 127,
-      "sv5-153": 56,
-      "me2pt5-142": 143,
-      "sv9-143": 96,
-      "me2pt5-196": 145,
-      "sv6pt5-57": 60,
-      "me2pt5-16": 110,
-      "me1-115": 73
+      "me2pt5-136": 250,
+      "sve-7": 250,
+      "sv9-98": 208,
+      "sv1-189": 116,
+      "me1-131": 183,
+      "sv1-181": 118,
+      "zsv10pt5-84": 153,
+      "me1-119": 44,
+      "sv6pt5-61": 46,
+      "sv2-188": 68,
+      "me1-130": 81,
+      "sv1-198": 31,
+      "sv4-163": 78,
+      "sv6pt5-57": 34,
+      "me2pt5-183": 15,
+      "me1-114": 35,
+      "svp-129": 1,
+      "sv10-119": 20,
+      "sv10-118": 2,
+      "sv10-117": 2,
+      "me1-88": 2,
+      "sv9-97": 4
     },
     "abilityUsage": {
-      "Trade": 1269,
-      "Subjugating Chains": 934,
-      "Adrena-Brain": 307,
-      "Attract Customers": 234,
-      "Flip the Script": 141
+      "Trade": 595
     },
     "attackUsage": {
-      "Chain-Crazed": 775,
-      "Itchy Pollen": 239,
-      "Poisonous Musculature": 179,
-      "Scratch": 126,
-      "Night Joker": 73,
-      "Clutch": 41,
-      "Poison Chain": 23,
-      "Dirty Headbutt": 17,
-      "Irritated Outburst": 16,
-      "Back Draft": 8,
-      "Rolling Tackle": 5,
-      "Shred": 3,
-      "Tuck Tail": 2
+      "Night Joker": 1881,
+      "Scratch": 779
+    },
+    "anchorContribution": {
+      "cardId": "sv9-98",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 208,
+      "enteredPlayRate": 83.2,
+      "evolvedGames": 208,
+      "evolvedRate": 83.2,
+      "abilityActivations": 595,
+      "attackUses": 1881,
+      "attackUseGames": 181,
+      "knockOuts": 0,
+      "definingEventCount": 2476,
+      "contributingGames": 205,
+      "contributionRate": 82,
+      "firstReadyTurn": 6.04390243902439,
+      "abilityOrDefiningEventGames": 205,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Night Joker": 1881,
+      "ability-used:Trade": 595
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

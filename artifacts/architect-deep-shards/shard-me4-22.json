@@ -1,124 +1,804 @@
 {
-  "cardId": "me4-22",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:41:45.006Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "me4-22",
   "name": "Mega Greninja ex",
-  "candidateId": "architect-proven-limitless-28571-13013-2",
+  "finalistDeckId": "architect-anchor-me4-22-aggressive-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:3|me1-131:4|me2pt5-183:1|me3-81:3|me4-22:4|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sve-3:10|xy8-46:4|xy8-47:4",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-me4-22-aggressive-13013-0",
+    "seed": 13013,
+    "variant": "aggressive semantic",
+    "requiredCardIds": [
+      "me4-22"
+    ],
+    "deck": {
+      "id": "architect-anchor-me4-22-aggressive-13013-0",
+      "name": "Mega Greninja ex — aggressive semantic build 1",
+      "description": "Original executable construction using Mega Greninja Damage Counters; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 3
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "me3-81",
+          "count": 3
+        },
+        {
+          "cardId": "me4-22",
+          "count": 4
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 4
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sve-3",
+          "count": 10
+        },
+        {
+          "cardId": "xy8-46",
+          "count": 4
+        },
+        {
+          "cardId": "xy8-47",
+          "count": 4
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 2.8,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.15,
+      "total": 112.8
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Mega Greninja Damage Counters.",
+      "Required packages were assembled before slot filling: mega-greninja-line, rare-candy-stage-two.",
+      "Profile aggressive changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Mega Greninja Damage Counters.",
+      "For one- and two-Energy attackers with low retreat demand.",
+      "Ninja Spinner: 2 units, expected payment in 2 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 18 cards assigned explicit provider-to-requirement roles; engines water-mega-greninja."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "xy8-47",
+        "toCardId": "me4-22",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "xy8-46",
+        "toCardId": "xy8-47",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Mega Greninja Damage Counters. For one- and two-Energy attackers with low retreat demand. Ninja Spinner: 2 units, expected payment in 2 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:3|me1-131:4|me2pt5-183:1|me3-81:3|me4-22:4|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sve-3:10|xy8-46:4|xy8-47:4",
+    "route": "original",
+    "selectedRoles": {
+      "me4-22": "primary-attacker"
+    },
+    "packageIds": [
+      "mega-greninja-line",
+      "rare-candy-stage-two"
+    ],
+    "profile": "aggressive",
+    "strategyPlanId": "original:water-mega-greninja",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 2,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 2
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": [
+          "me1-131"
+        ]
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Mega Greninja Damage Counters.",
+        "aggressive prioritizes gust and damage conversion.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-3",
+          "count": 10
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 2,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Mega Greninja Damage Counters.",
+        "For one- and two-Energy attackers with low retreat demand.",
+        "Ninja Spinner: 2 units, expected payment in 2 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "water-mega-greninja"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me3-81": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Poké Pad: provides the declared basic-setup requirement."
+        },
+        "me4-22": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Mega Greninja ex: selected favourite fulfils primary-attacker."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sve-3": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays water attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Water Energy: pays water attack requirements."
+        },
+        "xy8-46": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Mega Greninja ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Froakie: evolves into the selected Mega Greninja ex line."
+        },
+        "xy8-47": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Mega Greninja ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Frogadier: evolves into the selected Mega Greninja ex line."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "water"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 22,
+      "losses": 18,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 55.00000000000001,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 7,
+          "losses": 13,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 35,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28571": {
+          "games": 20,
+          "wins": 15,
+          "losses": 5,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 75,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 65,
+      "goingSecondWinRate": 45,
+      "averageTurns": 20.75,
+      "averageMulligans": 1.625,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 52.5,
+      "averageFirstAttackTurn": 3.05,
+      "averageFirstKnockOutTurn": 11.423076923076923,
+      "energyStarvationPercentage": 28.68525896414343,
+      "deckOutLosses": 1,
+      "averagePrizesTaken": 2.1,
+      "commonLossReasons": {
+        "no-pokemon": 16,
+        "prizes": 1,
+        "deck-out": 1
+      },
+      "cardUsage": {
+        "xy8-46": 40,
+        "me1-131": 26,
+        "sve-3": 40,
+        "sv1-181": 24,
+        "sv4-163": 16,
+        "xy8-47": 21,
+        "sv6pt5-61": 11,
+        "sv2-188": 16,
+        "me1-119": 18,
+        "sv1-189": 16,
+        "me3-81": 20,
+        "me1-130": 12,
+        "me1-125": 13,
+        "me4-22": 21,
+        "me2pt5-183": 5,
+        "sv6pt5-57": 11,
+        "sv1-198": 3,
+        "me1-114": 10
+      },
+      "abilityUsage": {
+        "Mortal Shuriken": 15
+      },
+      "attackUsage": {
+        "Pound": 177,
+        "Ninja Spinner": 88,
+        "Cut": 23
+      },
+      "anchorContribution": {
+        "cardId": "me4-22",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 21,
+        "enteredPlayRate": 52.5,
+        "evolvedGames": 21,
+        "evolvedRate": 52.5,
+        "abilityActivations": 15,
+        "attackUses": 88,
+        "attackUseGames": 17,
+        "knockOuts": 57,
+        "definingEventCount": 206,
+        "contributingGames": 21,
+        "contributionRate": 52.5,
+        "firstReadyTurn": 17.095238095238095,
+        "abilityOrDefiningEventGames": 21,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Ninja Spinner": 88,
+        "damage-dealt:me4-22": 88,
+        "ability-used:Mortal Shuriken": 15,
+        "damage-dealt:Mortal Shuriken damage counters": 15
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "me4-22",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 21,
+      "enteredPlayRate": 52.5,
+      "evolvedGames": 21,
+      "evolvedRate": 52.5,
+      "abilityActivations": 15,
+      "attackUses": 88,
+      "attackUseGames": 17,
+      "knockOuts": 57,
+      "definingEventCount": 206,
+      "contributingGames": 21,
+      "contributionRate": 52.5,
+      "firstReadyTurn": 17.095238095238095,
+      "abilityOrDefiningEventGames": 21,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "me4-22",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 114,
+    "enteredPlayRate": 45.6,
+    "evolvedGames": 114,
+    "evolvedRate": 45.6,
+    "abilityActivations": 106,
+    "attackUses": 321,
+    "attackUseGames": 78,
+    "knockOuts": 180,
+    "definingEventCount": 854,
+    "contributingGames": 102,
+    "contributionRate": 40.8,
+    "firstReadyTurn": 13.617647058823529,
+    "abilityOrDefiningEventGames": 102,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Ninja Spinner": 321,
+    "damage-dealt:me4-22": 321,
+    "ability-used:Mortal Shuriken": 106,
+    "damage-dealt:Mortal Shuriken damage counters": 106
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 20,
+      "losses": 30,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 40,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 3,
+      "losses": 47,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 6,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 6,
+      "losses": 44,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 12,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28571": {
+      "games": 50,
+      "wins": 25,
+      "losses": 25,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 50,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-me4-22-aggressive-13013-0-mirror": {
+      "games": 50,
+      "wins": 19,
+      "losses": 31,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 38,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28571",
+    "architect-anchor-me4-22-aggressive-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 63,
-    "losses": 187,
+    "wins": 73,
+    "losses": 177,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 25.2,
+    "winRate": 29.2,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 20,
+        "losses": 30,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 40,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 63,
-        "losses": 187,
-        "winRate": 25.2
+        "games": 50,
+        "wins": 3,
+        "losses": 47,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 6,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 6,
+        "losses": 44,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 12,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28571": {
+        "games": 50,
+        "wins": 25,
+        "losses": 25,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 50,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-me4-22-aggressive-13013-0-mirror": {
+        "games": 50,
+        "wins": 19,
+        "losses": 31,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 38,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 32.800000000000004,
-    "goingSecondWinRate": 17.599999999999998,
-    "averageTurns": 16.02,
-    "averageMulligans": 0.316,
-    "setupFailurePercentage": 7.199999999999999,
-    "mainAttackerReadinessPercentage": 34,
-    "averageFirstAttackTurn": 3.706896551724138,
-    "averageFirstKnockOutTurn": 8.733727810650887,
-    "energyStarvationPercentage": 40.11887072808321,
-    "deckOutLosses": 6,
-    "averagePrizesTaken": 0.872,
+    "goingFirstWinRate": 36,
+    "goingSecondWinRate": 22.400000000000002,
+    "averageTurns": 19.6,
+    "averageMulligans": 1.572,
+    "setupFailurePercentage": 0,
+    "mainAttackerReadinessPercentage": 45.6,
+    "averageFirstAttackTurn": 3.084,
+    "averageFirstKnockOutTurn": 11.65680473372781,
+    "energyStarvationPercentage": 40.752864157119475,
+    "deckOutLosses": 11,
+    "averagePrizesTaken": 1.268,
     "commonLossReasons": {
-      "prizes": 76,
-      "no-pokemon": 105,
-      "deck-out": 6
+      "no-pokemon": 149,
+      "prizes": 17,
+      "deck-out": 11
     },
     "cardUsage": {
-      "me2pt5-142": 129,
-      "sve-3": 218,
-      "sve-7": 229,
-      "me2pt5-183": 59,
-      "sv5-162": 75,
-      "sv5-144": 135,
-      "me1-119": 123,
-      "me1-129": 116,
-      "sv6pt5-59": 160,
-      "sv5-129": 103,
-      "rsv10pt5-86": 127,
-      "me1-131": 198,
-      "sv9-120": 148,
-      "sv6pt5-37": 66,
-      "me2pt5-192": 114,
-      "sv6pt5-36": 217,
-      "sv6pt5-39": 158,
-      "sv8pt5-4": 78,
-      "me4-21": 134,
-      "me2pt5-196": 89,
-      "me1-125": 48,
-      "me4-22": 85,
-      "sv6-95": 143,
-      "me3-81": 181,
-      "me1-115": 93,
-      "sv9-121": 68,
-      "sv1-171": 72,
-      "me4-76": 73,
-      "me3-62": 70,
-      "me2pt5-16": 95,
-      "rsv10pt5-84": 122,
-      "me4-20": 184,
-      "sv8pt5-95": 160,
-      "sv5-153": 72,
-      "me1-130": 90,
-      "me4-82": 28,
-      "me2pt5-39": 68,
-      "sv6-131": 78,
-      "zsv10pt5-84": 122,
-      "sv8-170": 79,
-      "me2pt5-181": 73,
-      "sv8-177": 155,
-      "sv6-106": 82,
-      "sv6pt5-57": 86,
-      "me1-114": 54,
-      "svp-129": 58,
-      "sv6pt5-61": 67
+      "xy8-46": 250,
+      "me1-131": 168,
+      "sve-3": 250,
+      "sv1-181": 141,
+      "sv4-163": 94,
+      "xy8-47": 106,
+      "sv6pt5-61": 76,
+      "sv2-188": 95,
+      "me1-119": 81,
+      "sv1-189": 93,
+      "me3-81": 106,
+      "me1-130": 94,
+      "me1-125": 77,
+      "me4-22": 114,
+      "me2pt5-183": 27,
+      "sv6pt5-57": 55,
+      "sv1-198": 55,
+      "me1-114": 61,
+      "swsh9-144": 2,
+      "sv6pt5-36": 2,
+      "svp-129": 2,
+      "me2pt5-142": 1,
+      "sv10-119": 14,
+      "sv6pt5-38": 1,
+      "sv10-117": 4
     },
     "abilityUsage": {
-      "Subjugating Chains": 666,
-      "Adrena-Brain": 346,
-      "Run Away Draw": 163,
-      "Flip the Script": 137,
-      "Attract Customers": 96,
-      "Mortal Shuriken": 49
+      "Mortal Shuriken": 106
     },
     "attackUsage": {
-      "Chain-Crazed": 622,
-      "Itchy Pollen": 297,
-      "Poisonous Musculature": 222,
-      "Collect": 199,
-      "Trading Places": 151,
-      "Water Gun": 135,
-      "Shinobi Blade": 60,
-      "Tenacious Tail": 58,
-      "Summoning Jutsu": 48,
-      "Ram": 43,
-      "Ninja Spinner": 32,
-      "Poison Chain": 25,
-      "Irritated Outburst": 20,
-      "Cruel Arrow": 19,
-      "Dirty Headbutt": 11,
-      "Destructive Drill": 8,
-      "Mirage Barrage": 3,
-      "Aqua Edge": 2,
-      "Tuck Tail": 2,
-      "Land Crush": 1
+      "Pound": 1320,
+      "Ninja Spinner": 321,
+      "Cut": 24
+    },
+    "anchorContribution": {
+      "cardId": "me4-22",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 114,
+      "enteredPlayRate": 45.6,
+      "evolvedGames": 114,
+      "evolvedRate": 45.6,
+      "abilityActivations": 106,
+      "attackUses": 321,
+      "attackUseGames": 78,
+      "knockOuts": 180,
+      "definingEventCount": 854,
+      "contributingGames": 102,
+      "contributionRate": 40.8,
+      "firstReadyTurn": 13.617647058823529,
+      "abilityOrDefiningEventGames": 102,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Ninja Spinner": 321,
+      "damage-dealt:me4-22": 321,
+      "ability-used:Mortal Shuriken": 106,
+      "damage-dealt:Mortal Shuriken damage counters": 106
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

@@ -38,6 +38,8 @@ const exactPrograms: Readonly<Record<string, string>> = {
   "sv10-28": "pokemon:arcanine", "sv1-30": "pokemon:growlithe", "sv6-100": "pokemon:hisuian-arcanine", "swsh10-70": "pokemon:hisuian-growlithe",
   "sv7-92": "pokemon:swalot", "sm12-131": "pokemon:alolan-muk", "sv10-124": "pokemon:team-rocket-muk", "sv10-113": "pokemon:team-rocket-arbok", "sv10-121": "pokemon:team-rocket-golbat", "sv10-125": "pokemon:team-rocket-koffing", "sv10-122": "pokemon:team-rocket-crobat-ex", "me2pt5-19": "pokemon:team-rocket-spidops",
   "sv10-116": "pokemon:team-rocket-nidoqueen", "sv2-79": "pokemon:bellibolt-ex", "sv3-77": "pokemon:bellibolt", "sv2-148": "pokemon:corviknight", "sv3pt5-68": "pokemon:machamp", "sv3pt5-130": "pokemon:gyarados", "sv3pt5-149": "pokemon:dragonite", "swsh12-98": "pokemon:hawlucha",
+  "sv2-164": "pokemon:rookidee", "sv2-165": "pokemon:corvisquire",
+  "sv3pt5-148": "pokemon:dragonair",
   "me5-27": "pokemon:mega-zeraora-ex", "sv4-177": "tool:technical-machine-devolution", "sv4-178": "tool:technical-machine-evolution",
   "sv1-32": "pokemon:arcanine-ex", "sv4pt5-175": "pokemon:hawlucha-flying-entry",
   "sv9-57": "pokemon:alolan-marowak", "sv10-23": "pokemon:arboliva-ex", "me5-71": "pokemon:bombirdier",

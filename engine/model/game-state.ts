@@ -22,6 +22,7 @@ export type TemporaryEffect =
   | { kind: "damage-reduction"; playerId: PlayerId; pokemonId: string; amount: number; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "attack-cost-increase"; playerId: PlayerId; pokemonId: string; amount: number; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "attack-prevention"; playerId: PlayerId; pokemonId: string; appliesOnPlayerTurn: number; sourceCardId: string }
+  | { kind: "incoming-attack-prevention"; playerId: PlayerId; pokemonId: string; appliesOnPlayerTurn: number; sourceCardId: string }
   | { kind: "attack-damage-bonus"; playerId: PlayerId; amount: number; pokemonType?: CardType; appliesOnPlayerTurn: number; sourceCardId: string };
 
 export interface PendingKnockOutCause { cause: KnockOutCause; sourcePlayerId: PlayerId; sourceCardId?: string; }

@@ -8,6 +8,7 @@ import { engineDefinitions } from "./engines/definitions";
 import type { ArchitectCandidate, ArchitectProfile, ArchitectRequest, SelectedCardRole } from "./types";
 import { generateOriginalCandidates } from "./original-builder";
 import { generateHybridCandidates } from "./hybrid-builder";
+import { withCoherence } from "./coherence";
 
 const profileNames: Record<ArchitectProfile, string> = { balanced: "Balanced", turbo: "Turbo", resilient: "Resilient", control: "Control", aggressive: "Aggressive" };
 const profileOrder: ArchitectProfile[] = ["balanced", "turbo", "resilient", "control", "aggressive"];
@@ -43,13 +44,7 @@ function lockPrintings(counts: Map<string, number>, request: ArchitectRequest): 
     if (favorite.maximumCount && current > favorite.maximumCount) remove(counts, favorite.cardId, current - favorite.maximumCount);
   }
 }
-function applyProfile(counts: Map<string, number>, profile: ArchitectProfile, index: CatalogueIndex, protectedIds: Set<string>, knowledge: ReturnType<typeof buildArchitectKnowledgeBase>, variation = 0): void {
-  const priorities: Record<ArchitectProfile, string[]> = { balanced: ["engine-core", "support"], turbo: ["engine-core", "support"], resilient: ["support", "engine-core"], control: ["support", "tech"], aggressive: ["primary-attacker", "engine-core"] };
-  const candidates = [...knowledge.cardProfiles.values()].filter((card) => index.byId.has(card.cardId) && !protectedIds.has(card.cardId) && ["complete", "generated"].includes(compileCardImplementation(index.byId.get(card.cardId)!).status) && card.roles.some((role) => priorities[profile].includes(role))).sort((a, b) => (b.sourceDeckIds.length - a.sourceDeckIds.length) || a.cardId.localeCompare(b.cardId));
-  const additions = candidates.slice(variation % 3, (variation % 3) + (profile === "turbo" ? 2 : 1));
-  for (const candidate of additions) { const card = index.byId.get(candidate.cardId); if (card?.supertype === "Energy" || (counts.get(candidate.cardId) ?? 0) < 4) { add(counts, candidate.cardId, 1); protectedIds.add(candidate.cardId); } }
-}
-function trimAndFill(counts: Map<string, number>, index: CatalogueIndex, request: ArchitectRequest, protectedIds: Set<string>, knowledge: ReturnType<typeof buildArchitectKnowledgeBase>): void {
+function trimAndFill(counts: Map<string, number>, index: CatalogueIndex, request: ArchitectRequest, protectedIds: Set<string>): void {
   for (const id of request.excludedCardIds ?? []) if (!protectedIds.has(id)) counts.delete(id);
   const energyRange = request.preferredEnergyCountRange ?? { minimum: 8, maximum: 15 };
   while (total(counts) > 60) {
@@ -63,10 +58,10 @@ function trimAndFill(counts: Map<string, number>, index: CatalogueIndex, request
   const energyCount = [...counts].filter(([id]) => index.byId.get(id)?.supertype === "Energy").reduce((sum, [, count]) => sum + count, 0);
   const preferredType = [...request.favourites].map((favorite) => index.byId.get(favorite.cardId)?.types?.[0]).find(Boolean)?.toLowerCase() ?? "colorless";
   const energyId = CANONICAL_BASIC_ENERGY_IDS[preferredType] ?? "sve-7";
-  const semanticFill = [...knowledge.cardProfiles.values()].filter((profile) => !protectedIds.has(profile.cardId) && index.byId.has(profile.cardId) && ["complete", "generated"].includes(compileCardImplementation(index.byId.get(profile.cardId)!).status)).sort((a, b) => b.sourceDeckIds.length - a.sourceDeckIds.length || a.cardId.localeCompare(b.cardId));
+  const sourceRoleProviders = [...counts.keys()].filter((id) => index.byId.get(id)?.supertype === "Trainer" && !protectedIds.has(id));
   let cursor = 0;
-  while (total(counts) < 60 && cursor < semanticFill.length * 4) { const candidate = semanticFill[cursor % Math.max(1, semanticFill.length)]!; if ((counts.get(candidate.cardId) ?? 0) < 4) add(counts, candidate.cardId, 1); cursor += 1; }
-  while (total(counts) < 60) add(counts, energyId, 1);
+  while (total(counts) < 60 && sourceRoleProviders.some((id) => (counts.get(id) ?? 0) < 4)) { const id = sourceRoleProviders[cursor % sourceRoleProviders.length]!; if ((counts.get(id) ?? 0) < 4) add(counts, id, 1); cursor += 1; }
+  while (total(counts) < 60 && (counts.get(energyId) ?? 0) < energyRange.maximum) add(counts, energyId, 1);
   if (energyCount > energyRange.maximum) { for (const [id, count] of [...counts]) if (index.byId.get(id)?.supertype === "Energy" && !protectedIds.has(id)) { remove(counts, id, Math.min(count, energyCount - energyRange.maximum)); break; } }
   while (total(counts) < 60) add(counts, energyId, 1);
   const byName = new Map<string, Array<{ id: string; count: number }>>();
@@ -90,11 +85,11 @@ function buildEnergyPlan(entries: readonly DeckCardEntry[], request: ArchitectRe
   return { entries: energyEntries, mainAttackCoverage: basicCoverage, secondaryAttackCoverage: secondaryCoverage, expectedManualAttachments: Math.max(0, main - accelerationProviders.length), accelerationProviders: [...new Set(accelerationProviders)], recoveryProviders: [...new Set(recoveryProviders)], explanation: [`${energyCount} Energy cards planned from the source shell.`, `Primary attack demand ${main || 0} and secondary demand ${secondary || 0} are covered against the retained count.`], warnings };
 }
 function sourceCandidates(request: ArchitectRequest, index: CatalogueIndex, profile: ArchitectProfile, count: number): ArchitectCandidate[] {
-  const knowledge = buildArchitectKnowledgeBase(index); const match = sourceMatch(request, index, knowledge); if (!match || !request.allowSourceCopy && request.allowSourceCopy === false) return [];
+  const knowledge = buildArchitectKnowledgeBase(index); const match = sourceMatch(request, index, knowledge); if (!match || request.allowSourceCopy === false || (request.excludedCardIds?.length ?? 0) > 0) return [];
   const roles = selectedRoles(request, knowledge); const sourceDeck = match.deck; const source = sourceDeck.manifest!; const candidates: ArchitectCandidate[] = [];
   for (let offset = 0; candidates.length < count && offset < 20; offset += 1) {
     const variantProfile = request.profile ? profile : profileOrder[offset % profileOrder.length]!;
-    const counts = new Map(source.entries.map((entry) => [entry.cardId, entry.count])); const protectedIds = new Set(request.favourites.map((favorite) => favorite.cardId)); lockPrintings(counts, request); applyProfile(counts, variantProfile, index, protectedIds, knowledge, offset); trimAndFill(counts, index, request, protectedIds, knowledge);
+    const counts = new Map(source.entries.map((entry) => [entry.cardId, entry.count])); const protectedIds = new Set(request.favourites.map((favorite) => favorite.cardId)); lockPrintings(counts, request); trimAndFill(counts, index, request, protectedIds);
     const entries = [...counts].filter(([, amount]) => amount > 0).map(([cardId, amount]) => ({ cardId, count: amount })).sort((a, b) => a.cardId.localeCompare(b.cardId)); const deck: DeckManifest = { id: `architect-proven-${sourceDeck.id}-${request.seed}-${offset}`, name: `${index.byId.get(request.favourites[0]!.cardId)?.name ?? sourceDeck.snapshot.archetype} — ${profileNames[variantProfile]}`, description: `Proven source shell from ${sourceDeck.snapshot.player ?? "the tournament corpus"}'s ${sourceDeck.snapshot.archetype} list, adapted with the ${profileNames[variantProfile]} package profile.`, format: request.format, source: "saved", entries };
     const analysis = analyseDeck(deck, index);
     if (request.mode === "simulation-ready" && (!sourceDeck.simulationReady || analysis.unsupported.length > 0)) continue;
@@ -112,11 +107,21 @@ function engineDefinitionsFor(entries: readonly DeckCardEntry[], knowledge: Retu
 export function generateSemanticCandidates(request: ArchitectRequest, index: CatalogueIndex): { candidates: ArchitectCandidate[]; rejected: Array<{ cardId: string; reasons: string[]; equivalentSupportedIds: string[] }> } {
   const rejected = request.favourites.flatMap((favorite) => { const card = index.byId.get(favorite.cardId); if (!card) return [{ cardId: favorite.cardId, reasons: ["Card is missing from the catalogue."], equivalentSupportedIds: [] }]; const implementation = compileCardImplementation(card); return request.mode === "simulation-ready" && !["complete", "generated"].includes(implementation.status) ? [{ cardId: card.id, reasons: implementation.knownLimitations, equivalentSupportedIds: (implementationResolver()?.equivalentsFor(card.id) ?? []).filter((value) => ["complete", "generated"].includes(compileCardImplementation(value).status)).map((value) => value.id) }] : []; });
   if (rejected.length || !request.favourites.length) return { candidates: [], rejected };
-  const profile = request.profile ?? "balanced"; const source = sourceCandidates(request, index, profile, request.candidateCount); if (source.length >= request.candidateCount) return { candidates: source.slice(0, request.candidateCount), rejected: [] };
-  const hybrid = generateHybridCandidates(request, index);
-  if (hybrid.candidates.length >= request.candidateCount) return { candidates: hybrid.candidates.slice(0, request.candidateCount), rejected: hybrid.rejected };
-  const original = generateOriginalCandidates(request, index);
-  return { candidates: original.candidates.map((candidate) => ({ ...candidate, profile, explanations: ["Original semantic construction: no reviewed tournament shell matched this favourite; evolution, executable support, and exact Energy requirements were assembled from reviewed providers.", ...candidate.explanations] })), rejected: original.rejected };
+  const profile = request.profile ?? "balanced";
+  const pool: ArchitectCandidate[] = [...sourceCandidates(request, index, profile, 1)];
+  const hybrid = generateHybridCandidates({ ...request, candidateCount: 5 }, index);
+  if (hybrid.candidates[0]) pool.push(hybrid.candidates[0]);
+  const orderedProfiles = request.profile ? [profile, ...profileOrder.filter((value) => value !== profile)] : profileOrder;
+  let rejectedOriginal: Array<{ cardId: string; reasons: string[]; equivalentSupportedIds: string[] }> = [];
+  for (const candidateProfile of orderedProfiles) {
+    const original = generateOriginalCandidates({ ...request, profile: candidateProfile, candidateCount: 5 }, index);
+    rejectedOriginal = original.rejected;
+    const candidate = original.candidates[0];
+    if (candidate) pool.push({ ...candidate, route: candidateProfile === "control" || candidateProfile === "resilient" ? "control-resilient" : "original", profile: candidateProfile, explanations: ["Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.", ...candidate.explanations] });
+  }
+  const reviewedPool = [...new Map(pool.map((candidate) => [candidate.fingerprint, candidate])).values()].map((candidate) => withCoherence(candidate, index));
+  const candidates = reviewedPool.filter((candidate) => candidate.coherence?.coherent).slice(0, request.candidateCount);
+  return { candidates, rejected: candidates.length ? [] : [...hybrid.rejected, ...rejectedOriginal] };
 }
 
 export function generateCandidates(request: ArchitectRequest, index: CatalogueIndex) { return generateSemanticCandidates(request, index); }

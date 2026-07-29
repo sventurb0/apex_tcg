@@ -15,7 +15,8 @@ function chooseTemplate(engine: EngineDefinition | undefined, profile: Architect
 }
 export function constructEnergyPlan(request: ArchitectRequest, index: CatalogueIndex, knowledge: ArchitectKnowledgeBase, engine?: EngineDefinition, profile: ArchitectProfile = "balanced"): ConstructiveEnergyPlan {
   const template = chooseTemplate(engine, profile);
-  const types = engine?.energyTypes.length ? engine.energyTypes : request.favourites.flatMap((favorite) => index.byId.get(favorite.cardId)?.types ?? []).slice(0, 2);
+  const printedAttackTypes = request.favourites.flatMap((favorite) => index.byId.get(favorite.cardId)?.attacks?.flatMap((attack) => attack.cost.filter((type) => type !== "Colorless")) ?? []);
+  const types = engine?.energyTypes.length ? engine.energyTypes : [...new Set(printedAttackTypes.length ? printedAttackTypes : request.favourites.flatMap((favorite) => index.byId.get(favorite.cardId)?.types ?? []))].slice(0, 3);
   const ids = [...new Set(types.map((type) => CANONICAL_BASIC_ENERGY_IDS[type.toLowerCase()]).filter((id): id is string => Boolean(id && index.byId.has(id))))];
   const requestedCount = profile === "turbo" ? template.maximum : profile === "resilient" ? Math.max(template.minimum, template.maximum - 2) : profile === "control" ? template.minimum : Math.ceil((template.minimum + template.maximum) / 2);
   const count = Math.max(template.minimum, Math.min(template.maximum, requestedCount));

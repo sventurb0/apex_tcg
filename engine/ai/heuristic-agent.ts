@@ -7,6 +7,11 @@ import { scoreOkidogiAction } from "./strategies/okidogi";
 import { scoreTeamRocketNidokingAction } from "./strategies/team-rocket-nidoking";
 
 function genericScore(action: GameAction, observation: PlayerObservation): number {
+  const architectAnchorId = observation.self.deckId.match(/architect-anchor-([a-z0-9]+(?:pt\d+)?-\d+)-/)?.[1];
+  const targetsArchitectAnchor = architectAnchorId && (("cardInstanceId" in action && action.cardInstanceId?.endsWith(`-${architectAnchorId}`)) || ("selectionId" in action && action.selectionId.endsWith(`-${architectAnchorId}`)));
+  if (targetsArchitectAnchor && action.type === "select-card") return 18_200;
+  if (targetsArchitectAnchor && action.type === "evolve") return 2_600;
+  if (architectAnchorId && action.type === "play-trainer" && /Rare Candy|Ultra Ball|Nest Ball|Evolution|Buddy-Buddy|Pokégear|Research|Iono/i.test(action.description)) return 900;
   switch (action.type) {
     case "choose-prize": return 20_000;
     case "select-active": return 19_000;

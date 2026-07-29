@@ -1,117 +1,830 @@
 {
-  "cardId": "sv6-130",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:40:15.953Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv6-130",
   "name": "Dragapult ex",
-  "candidateId": "architect-proven-limitless-28236-13013-2",
+  "finalistDeckId": "architect-anchor-sv6-130-control-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-158:4|me2pt5-159:4|me2pt5-183:1|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:3|sv6-130:4|sv6pt5-57:3|sv6pt5-61:2|sve-2:9|sve-5:1",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-sv6-130-control-13013-0",
+    "seed": 13013,
+    "variant": "control semantic",
+    "requiredCardIds": [
+      "sv6-130"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv6-130-control-13013-0",
+      "name": "Dragapult ex — control semantic build 1",
+      "description": "Original executable construction using Dragapult Damage Spread; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-158",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-159",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 4
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 3
+        },
+        {
+          "cardId": "sv6-130",
+          "count": 4
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sve-2",
+          "count": 9
+        },
+        {
+          "cardId": "sve-5",
+          "count": 1
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 2.8,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 4,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.4,
+      "total": 113.3
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Dragapult Damage Spread.",
+      "Required packages were assembled before slot filling: dragapult-line, rare-candy-stage-two.",
+      "Profile control changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Multi-type two-colour (10-14 cards) for Dragapult Damage Spread.",
+      "Used by Dragapult and other two-type plans; counts each attack's coloured requirement separately.",
+      "Jet Headbutt: 1 units, expected payment in 1 turn(s).",
+      "Phantom Dive: 2 units, expected payment in 2 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 18 cards assigned explicit provider-to-requirement roles; engines dragon-dragapult-spread."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "me2pt5-158",
+        "toCardId": "me2pt5-159",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "me2pt5-159",
+        "toCardId": "sv6-130",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Multi-type two-colour (10-14 cards) for Dragapult Damage Spread. Used by Dragapult and other two-type plans; counts each attack's coloured requirement separately. Jet Headbutt: 1 units, expected payment in 1 turn(s). Phantom Dive: 2 units, expected payment in 2 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-158:4|me2pt5-159:4|me2pt5-183:1|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:3|sv6-130:4|sv6pt5-57:3|sv6pt5-61:2|sve-2:9|sve-5:1",
+    "route": "control-resilient",
+    "selectedRoles": {
+      "sv6-130": "primary-attacker"
+    },
+    "packageIds": [
+      "dragapult-line",
+      "rare-candy-stage-two"
+    ],
+    "profile": "control",
+    "strategyPlanId": "original:dragon-dragapult-spread",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 2
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 3,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Dragapult Damage Spread.",
+        "control prioritizes gust and denial.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-2",
+          "count": 9
+        },
+        {
+          "cardId": "sve-5",
+          "count": 1
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 1,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Multi-type two-colour (10-14 cards) for Dragapult Damage Spread.",
+        "Used by Dragapult and other two-type plans; counts each attack's coloured requirement separately.",
+        "Jet Headbutt: 1 units, expected payment in 1 turn(s).",
+        "Phantom Dive: 2 units, expected payment in 2 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "dragon-dragapult-spread"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-158": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Dragapult ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Dreepy: evolves into the selected Dragapult ex line."
+        },
+        "me2pt5-159": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Dragapult ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Drakloak: evolves into the selected Dragapult ex line."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6-130": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Dragapult ex: selected favourite fulfils primary-attacker."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sve-2": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays fire attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Fire Energy: pays fire attack requirements."
+        },
+        "sve-5": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays psychic attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "fire",
+        "psychic"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 27,
+      "losses": 13,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 67.5,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 11,
+          "losses": 9,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 55.00000000000001,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 16,
+          "losses": 4,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 80,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 65,
+      "goingSecondWinRate": 70,
+      "averageTurns": 22.9,
+      "averageMulligans": 1.775,
+      "setupFailurePercentage": 2.5,
+      "mainAttackerReadinessPercentage": 97.5,
+      "averageFirstAttackTurn": 5.641025641025641,
+      "averageFirstKnockOutTurn": 8.45945945945946,
+      "energyStarvationPercentage": 33.5,
+      "deckOutLosses": 3,
+      "averagePrizesTaken": 3.15,
+      "commonLossReasons": {
+        "no-pokemon": 10,
+        "deck-out": 3
+      },
+      "cardUsage": {
+        "me2pt5-158": 40,
+        "sv4-163": 30,
+        "sve-2": 40,
+        "sv6pt5-57": 18,
+        "me1-114": 18,
+        "sv1-181": 26,
+        "sv6pt5-61": 18,
+        "me1-125": 22,
+        "sv6-130": 39,
+        "me1-131": 32,
+        "sv1-198": 16,
+        "me2pt5-159": 30,
+        "sv1-189": 17,
+        "sve-5": 15,
+        "me2pt5-183": 9,
+        "sv2-188": 22,
+        "me1-119": 21,
+        "me1-130": 22,
+        "sv8pt5-36": 13
+      },
+      "abilityUsage": {
+        "Recon Directive": 93
+      },
+      "attackUsage": {
+        "Jet Headbutt": 235,
+        "Petty Grudge": 18,
+        "Phantom Dive": 7,
+        "Bite": 4,
+        "Dragon Headbutt": 2
+      },
+      "anchorContribution": {
+        "cardId": "sv6-130",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 39,
+        "enteredPlayRate": 97.5,
+        "evolvedGames": 39,
+        "evolvedRate": 97.5,
+        "abilityActivations": 0,
+        "attackUses": 242,
+        "attackUseGames": 37,
+        "knockOuts": 98,
+        "definingEventCount": 526,
+        "contributingGames": 37,
+        "contributionRate": 92.5,
+        "firstReadyTurn": 10.45945945945946,
+        "abilityOrDefiningEventGames": 37,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Jet Headbutt": 235,
+        "damage-dealt:sv6-130": 240,
+        "attack-used:Phantom Dive": 7,
+        "damage-allocation:Phantom Dive: 1 damage counters": 12,
+        "damage-dealt:Phantom Dive damage counters": 21,
+        "damage-allocation:Phantom Dive: 3 damage counters": 4,
+        "damage-allocation:Phantom Dive: 2 damage counters": 4,
+        "damage-allocation:Phantom Dive: 4 damage counters": 1,
+        "damage-dealt:Confusion self-damage": 2
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv6-130",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 39,
+      "enteredPlayRate": 97.5,
+      "evolvedGames": 39,
+      "evolvedRate": 97.5,
+      "abilityActivations": 0,
+      "attackUses": 242,
+      "attackUseGames": 37,
+      "knockOuts": 98,
+      "definingEventCount": 526,
+      "contributingGames": 37,
+      "contributionRate": 92.5,
+      "firstReadyTurn": 10.45945945945946,
+      "abilityOrDefiningEventGames": 37,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "sv6-130",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 200,
+    "enteredPlayRate": 80,
+    "evolvedGames": 200,
+    "evolvedRate": 80,
+    "abilityActivations": 0,
+    "attackUses": 1229,
+    "attackUseGames": 188,
+    "knockOuts": 432,
+    "definingEventCount": 2622,
+    "contributingGames": 188,
+    "contributionRate": 75.2,
+    "firstReadyTurn": 9.27127659574468,
+    "abilityOrDefiningEventGames": 188,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Jet Headbutt": 1202,
+    "damage-dealt:sv6-130": 1229,
+    "attack-used:Phantom Dive": 27,
+    "damage-allocation:Phantom Dive: 1 damage counters": 36,
+    "damage-dealt:Phantom Dive damage counters": 82,
+    "damage-allocation:Phantom Dive: 3 damage counters": 17,
+    "damage-allocation:Phantom Dive: 2 damage counters": 24,
+    "damage-allocation:Phantom Dive: 4 damage counters": 4,
+    "damage-allocation:Phantom Dive: 5 damage counters": 1
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 24,
+      "losses": 26,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 48,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 9,
+      "losses": 41,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 18,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 14,
+      "losses": 36,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 28.000000000000004,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28236": {
+      "games": 50,
+      "wins": 34,
+      "losses": 16,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 68,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-sv6-130-control-13013-0-mirror": {
+      "games": 50,
+      "wins": 19,
+      "losses": 31,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 38,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28236",
+    "architect-anchor-sv6-130-control-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 32,
-    "losses": 218,
+    "wins": 100,
+    "losses": 150,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 12.8,
+    "winRate": 40,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 24,
+        "losses": 26,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 48,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 32,
-        "losses": 218,
-        "winRate": 12.8
+        "games": 50,
+        "wins": 9,
+        "losses": 41,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 18,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 14,
+        "losses": 36,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 28.000000000000004,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28236": {
+        "games": 50,
+        "wins": 34,
+        "losses": 16,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 68,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-sv6-130-control-13013-0-mirror": {
+        "games": 50,
+        "wins": 19,
+        "losses": 31,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 38,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 16.8,
-    "goingSecondWinRate": 8.799999999999999,
-    "averageTurns": 16.192,
-    "averageMulligans": 0.36,
-    "setupFailurePercentage": 4,
-    "mainAttackerReadinessPercentage": 52,
-    "averageFirstAttackTurn": 4.4375,
-    "averageFirstKnockOutTurn": 6.90566037735849,
-    "energyStarvationPercentage": 40.79769341662662,
-    "deckOutLosses": 25,
-    "averagePrizesTaken": 0.692,
+    "goingFirstWinRate": 45.6,
+    "goingSecondWinRate": 34.4,
+    "averageTurns": 19.828,
+    "averageMulligans": 1.4,
+    "setupFailurePercentage": 2,
+    "mainAttackerReadinessPercentage": 80,
+    "averageFirstAttackTurn": 5.3428571428571425,
+    "averageFirstKnockOutTurn": 9.215962441314554,
+    "energyStarvationPercentage": 31.02803738317757,
+    "deckOutLosses": 16,
+    "averagePrizesTaken": 2.368,
     "commonLossReasons": {
-      "no-pokemon": 70,
-      "prizes": 123,
-      "deck-out": 25
+      "no-pokemon": 127,
+      "deck-out": 16,
+      "prizes": 7
     },
     "cardUsage": {
-      "sve-2": 172,
-      "sv6-153": 106,
-      "me3-71": 173,
-      "sve-7": 242,
-      "me2pt5-192": 100,
-      "sv8pt5-95": 160,
-      "sv6pt5-39": 149,
-      "me3-81": 202,
-      "sv8pt5-4": 86,
-      "svp-129": 59,
-      "sve-5": 200,
-      "sv8pt5-35": 150,
-      "sv6pt5-59": 180,
-      "sv6-95": 181,
-      "me1-131": 221,
-      "sv6pt5-36": 224,
-      "sv6pt5-57": 76,
-      "sv8-177": 135,
-      "me2pt5-16": 135,
-      "sv6-131": 70,
-      "zsv10pt5-84": 119,
-      "me1-130": 75,
-      "sv5-144": 165,
-      "sv6-129": 181,
-      "sv6-128": 183,
-      "sv6-150": 100,
-      "sv6-165": 52,
-      "sv6-130": 130,
-      "me1-119": 147,
-      "me2pt5-196": 151,
-      "sv8pt5-36": 158,
-      "sv7-133": 156,
-      "me2pt5-142": 131,
-      "me3-62": 98,
-      "sv10-180": 97,
-      "me4-82": 49,
-      "sv6pt5-37": 61,
-      "me1-115": 86,
-      "me2-87": 75,
-      "me1-114": 76,
-      "sv5-153": 58,
-      "sv6pt5-61": 68,
-      "sv8-170": 71,
-      "me2pt5-183": 56,
-      "sv8pt5-37": 1
+      "me2pt5-158": 250,
+      "sv4-163": 152,
+      "sve-2": 237,
+      "sv6pt5-57": 105,
+      "me1-114": 103,
+      "sv1-181": 167,
+      "sv6pt5-61": 95,
+      "me1-125": 135,
+      "sv6-130": 200,
+      "me1-131": 199,
+      "sv1-198": 80,
+      "me2pt5-159": 166,
+      "sv1-189": 122,
+      "sve-5": 93,
+      "me2pt5-183": 44,
+      "sv2-188": 123,
+      "me1-119": 114,
+      "me1-130": 139,
+      "swsh9-144": 2,
+      "svp-129": 1,
+      "sv6pt5-37": 2,
+      "me2pt5-142": 1,
+      "sv6pt5-36": 1,
+      "sv10-117": 1,
+      "sv10-119": 19,
+      "sv10-118": 2,
+      "sv8pt5-36": 36
     },
     "abilityUsage": {
-      "Recon Directive": 859,
-      "Subjugating Chains": 607,
-      "Adrena-Brain": 442,
-      "Cursed Blast": 219,
-      "Flip the Script": 151,
-      "Attract Customers": 74
+      "Recon Directive": 478
     },
     "attackUsage": {
-      "Chain-Crazed": 690,
-      "Itchy Pollen": 330,
-      "Poisonous Musculature": 296,
-      "Jet Headbutt": 217,
+      "Jet Headbutt": 1202,
       "Petty Grudge": 149,
-      "Come and Get You": 68,
-      "Mind Bend": 45,
-      "Cruel Arrow": 41,
-      "Dirty Headbutt": 13,
-      "Irritated Outburst": 12,
-      "Tuck Tail": 12,
-      "Poison Chain": 11,
-      "Dragon Headbutt": 10,
-      "Bite": 8,
-      "Phantom Dive": 5
+      "Bite": 28,
+      "Phantom Dive": 27,
+      "Dragon Headbutt": 19
+    },
+    "anchorContribution": {
+      "cardId": "sv6-130",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 200,
+      "enteredPlayRate": 80,
+      "evolvedGames": 200,
+      "evolvedRate": 80,
+      "abilityActivations": 0,
+      "attackUses": 1229,
+      "attackUseGames": 188,
+      "knockOuts": 432,
+      "definingEventCount": 2622,
+      "contributingGames": 188,
+      "contributionRate": 75.2,
+      "firstReadyTurn": 9.27127659574468,
+      "abilityOrDefiningEventGames": 188,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Jet Headbutt": 1202,
+      "damage-dealt:sv6-130": 1229,
+      "attack-used:Phantom Dive": 27,
+      "damage-allocation:Phantom Dive: 1 damage counters": 36,
+      "damage-dealt:Phantom Dive damage counters": 82,
+      "damage-allocation:Phantom Dive: 3 damage counters": 17,
+      "damage-allocation:Phantom Dive: 2 damage counters": 24,
+      "damage-allocation:Phantom Dive: 4 damage counters": 4,
+      "damage-allocation:Phantom Dive: 5 damage counters": 1
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

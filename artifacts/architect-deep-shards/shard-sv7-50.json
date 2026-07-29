@@ -1,125 +1,796 @@
 {
-  "cardId": "sv7-50",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:42:10.228Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv7-50",
   "name": "Joltik",
-  "candidateId": "architect-proven-limitless-28692-13013-2",
+  "finalistDeckId": "architect-anchor-sv7-50-aggressive-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-50:4|sve-1:1|sve-3:1|sve-4:9|sve-5:1|sve-8:1",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-sv7-50-aggressive-13013-0",
+    "seed": 13013,
+    "variant": "aggressive semantic",
+    "requiredCardIds": [
+      "sv7-50"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv7-50-aggressive-13013-0",
+      "name": "Joltik — aggressive semantic build 1",
+      "description": "Original executable construction using Joltik Multi-Energy Charge; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "me3-81",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 3
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 3
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 3
+        },
+        {
+          "cardId": "sv7-50",
+          "count": 4
+        },
+        {
+          "cardId": "sve-1",
+          "count": 1
+        },
+        {
+          "cardId": "sve-3",
+          "count": 1
+        },
+        {
+          "cardId": "sve-4",
+          "count": 9
+        },
+        {
+          "cardId": "sve-5",
+          "count": 1
+        },
+        {
+          "cardId": "sve-8",
+          "count": 1
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 8,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 10,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 4.4,
+      "synergy": 0,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 0.75,
+      "total": 108.3
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Joltik Multi-Energy Charge.",
+      "Required packages were assembled before slot filling: joltik-box, crispin-multitype.",
+      "Profile aggressive changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 4 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Multi-type three-colour (11-15 cards) for Joltik Multi-Energy Charge.",
+      "Crispin-style plans need distinct Basic Energy types in deck before search is counted.",
+      "Jolting Charge: 1 units, expected payment in 1 turn(s).",
+      "Coherence: 20 cards assigned explicit provider-to-requirement roles; engines lightning-joltik-box."
+    ],
+    "synergyEdges": [],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Multi-type three-colour (11-15 cards) for Joltik Multi-Energy Charge. Crispin-style plans need distinct Basic Energy types in deck before search is counted. Jolting Charge: 1 units, expected payment in 1 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-50:4|sve-1:1|sve-3:1|sve-4:9|sve-5:1|sve-8:1",
+    "route": "original",
+    "selectedRoles": {
+      "sv7-50": "primary-attacker"
+    },
+    "packageIds": [
+      "joltik-box",
+      "crispin-multitype"
+    ],
+    "profile": "aggressive",
+    "strategyPlanId": "original:lightning-joltik-box",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 0,
+        "draw": 8,
+        "switching": 2,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Joltik Multi-Energy Charge.",
+        "aggressive prioritizes gust and damage conversion.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-4",
+          "count": 9
+        },
+        {
+          "cardId": "sve-1",
+          "count": 1
+        },
+        {
+          "cardId": "sve-5",
+          "count": 1
+        },
+        {
+          "cardId": "sve-3",
+          "count": 1
+        },
+        {
+          "cardId": "sve-8",
+          "count": 1
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [
+        "Jolting Charge attaches up to two Basic Grass and two Basic Lightning Energy across the board."
+      ],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Multi-type three-colour (11-15 cards) for Joltik Multi-Energy Charge.",
+        "Crispin-style plans need distinct Basic Energy types in deck before search is counted.",
+        "Jolting Charge: 1 units, expected payment in 1 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "lightning-joltik-box"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me3-81": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Poké Pad: provides the declared basic-setup requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv7-50": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Joltik: selected favourite fulfils primary-attacker."
+        },
+        "sve-1": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays grass attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Grass Energy: pays grass attack requirements."
+        },
+        "sve-3": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays water attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Water Energy: pays water attack requirements."
+        },
+        "sve-4": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays lightning attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Lightning Energy: pays lightning attack requirements."
+        },
+        "sve-5": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays psychic attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+        },
+        "sve-8": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays metal attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Metal Energy: pays metal attack requirements."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 18,
+      "losses": 22,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 45,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 5,
+          "losses": 15,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 25,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28692": {
+          "games": 20,
+          "wins": 13,
+          "losses": 7,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 65,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 50,
+      "goingSecondWinRate": 40,
+      "averageTurns": 40.425,
+      "averageMulligans": 1.6,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 100,
+      "averageFirstAttackTurn": 2.7,
+      "averageFirstKnockOutTurn": 14.25,
+      "energyStarvationPercentage": 55.27831094049904,
+      "deckOutLosses": 4,
+      "averagePrizesTaken": 0,
+      "commonLossReasons": {
+        "no-pokemon": 18,
+        "deck-out": 4
+      },
+      "cardUsage": {
+        "sv7-50": 40,
+        "me1-131": 27,
+        "me3-81": 9,
+        "sv4-163": 14,
+        "sve-4": 27,
+        "sve-8": 8,
+        "sv1-181": 13,
+        "me1-130": 11,
+        "sv1-198": 4,
+        "me1-119": 5,
+        "me1-114": 4,
+        "sv2-188": 11,
+        "sv1-189": 13,
+        "me2pt5-183": 1,
+        "sv6pt5-61": 6,
+        "sve-1": 6,
+        "sve-3": 5,
+        "sve-5": 3
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Jolting Charge": 759
+      },
+      "anchorContribution": {
+        "cardId": "sv7-50",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 40,
+        "enteredPlayRate": 100,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 759,
+        "attackUseGames": 40,
+        "knockOuts": 0,
+        "definingEventCount": 988,
+        "contributingGames": 40,
+        "contributionRate": 100,
+        "firstReadyTurn": 3.175,
+        "abilityOrDefiningEventGames": 40,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Jolting Charge": 759,
+        "energy-attached-by-effect:Jolting Charge": 229
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv7-50",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 40,
+      "enteredPlayRate": 100,
+      "evolvedGames": 0,
+      "evolvedRate": 0,
+      "abilityActivations": 0,
+      "attackUses": 759,
+      "attackUseGames": 40,
+      "knockOuts": 0,
+      "definingEventCount": 988,
+      "contributingGames": 40,
+      "contributionRate": 100,
+      "firstReadyTurn": 3.175,
+      "abilityOrDefiningEventGames": 40,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "sv7-50",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 250,
+    "enteredPlayRate": 100,
+    "evolvedGames": 0,
+    "evolvedRate": 0,
+    "abilityActivations": 0,
+    "attackUses": 3775,
+    "attackUseGames": 250,
+    "knockOuts": 0,
+    "definingEventCount": 5263,
+    "contributingGames": 250,
+    "contributionRate": 100,
+    "firstReadyTurn": 3.448,
+    "abilityOrDefiningEventGames": 250,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Jolting Charge": 3775,
+    "energy-attached-by-effect:Jolting Charge": 1488
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 10,
+      "losses": 40,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 20,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 1,
+      "losses": 49,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 2,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 7,
+      "losses": 43,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 14.000000000000002,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28692": {
+      "games": 50,
+      "wins": 25,
+      "losses": 25,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 50,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-sv7-50-aggressive-13013-0-mirror": {
+      "games": 50,
+      "wins": 27,
+      "losses": 23,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 54,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28692",
+    "architect-anchor-sv7-50-aggressive-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 68,
-    "losses": 182,
+    "wins": 70,
+    "losses": 180,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 27.200000000000003,
+    "winRate": 28.000000000000004,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 10,
+        "losses": 40,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 20,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 68,
-        "losses": 182,
-        "winRate": 27.200000000000003
+        "games": 50,
+        "wins": 1,
+        "losses": 49,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 2,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 7,
+        "losses": 43,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 14.000000000000002,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28692": {
+        "games": 50,
+        "wins": 25,
+        "losses": 25,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 50,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-sv7-50-aggressive-13013-0-mirror": {
+        "games": 50,
+        "wins": 27,
+        "losses": 23,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 54,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 24,
-    "goingSecondWinRate": 30.4,
-    "averageTurns": 18.016,
-    "averageMulligans": 0.06,
-    "setupFailurePercentage": 16,
-    "mainAttackerReadinessPercentage": 53.6,
-    "averageFirstAttackTurn": 4.923809523809524,
-    "averageFirstKnockOutTurn": 9.621052631578948,
-    "energyStarvationPercentage": 48.1980464802964,
-    "deckOutLosses": 0,
-    "averagePrizesTaken": 0.372,
+    "goingFirstWinRate": 31.2,
+    "goingSecondWinRate": 24.8,
+    "averageTurns": 32.98,
+    "averageMulligans": 1.432,
+    "setupFailurePercentage": 0,
+    "mainAttackerReadinessPercentage": 100,
+    "averageFirstAttackTurn": 2.836,
+    "averageFirstKnockOutTurn": 12.398058252427184,
+    "energyStarvationPercentage": 49.560269011898605,
+    "deckOutLosses": 33,
+    "averagePrizesTaken": 0.008,
     "commonLossReasons": {
-      "no-pokemon": 42,
-      "prizes": 140
+      "no-pokemon": 147,
+      "deck-out": 33
     },
     "cardUsage": {
-      "sv8-76": 100,
-      "me3-62": 110,
-      "sve-4": 171,
-      "me4-76": 73,
-      "sv6pt5-36": 217,
-      "sve-7": 217,
-      "sv6-131": 65,
-      "sv6pt5-39": 142,
-      "zsv10pt5-84": 134,
-      "me1-130": 91,
-      "sv5-25": 74,
-      "me3-72": 80,
-      "sve-1": 173,
-      "sv10-178": 95,
-      "sv7-131": 129,
-      "me1-114": 120,
-      "sv7-50": 134,
-      "sv10-176": 159,
-      "me2pt5-196": 111,
-      "sv7-133": 160,
-      "me2pt5-191": 87,
-      "sv8-177": 158,
-      "me2pt5-162": 74,
-      "sve-3": 131,
-      "sv6pt5-59": 174,
-      "sv8pt5-4": 82,
-      "me2pt5-183": 76,
-      "sv8pt5-95": 158,
-      "sv9-56": 107,
-      "me1-131": 205,
-      "sv8-57": 107,
-      "sve-5": 140,
-      "sv6-64": 120,
-      "sv6pt5-37": 60,
-      "sv6pt5-57": 74,
-      "sv6pt5-61": 74,
-      "me2pt5-192": 117,
-      "me3-81": 125,
-      "sv6-95": 132,
-      "svp-129": 53,
-      "sve-8": 113,
-      "me4-82": 32,
-      "sv6-141": 72,
-      "me2pt5-142": 130,
-      "me1-115": 97,
-      "sv8-170": 83,
-      "sv10-51": 63,
-      "sv6pt5-2": 38,
-      "sv9-146": 77,
-      "sv5-153": 78,
-      "sv8-185": 65
+      "sv7-50": 250,
+      "me1-131": 158,
+      "me3-81": 56,
+      "sv4-163": 67,
+      "sve-4": 191,
+      "sve-8": 41,
+      "sv1-181": 111,
+      "me1-130": 75,
+      "sv1-198": 19,
+      "me1-119": 29,
+      "me1-114": 19,
+      "sv2-188": 55,
+      "sv1-189": 69,
+      "me2pt5-183": 2,
+      "sv6pt5-61": 29,
+      "sve-1": 36,
+      "sve-3": 24,
+      "sve-5": 33,
+      "sv6pt5-57": 24,
+      "sv10-117": 2
     },
-    "abilityUsage": {
-      "Subjugating Chains": 735,
-      "Adrena-Brain": 331,
-      "Flip the Script": 117,
-      "Attract Customers": 101
-    },
+    "abilityUsage": {},
     "attackUsage": {
-      "Chain-Crazed": 626,
-      "Poisonous Musculature": 265,
-      "Itchy Pollen": 178,
-      "Jolting Charge": 143,
-      "Sob": 118,
-      "Cruel Arrow": 30,
-      "Full Moon Rondo": 23,
-      "Blood Moon": 22,
-      "Comet Punch": 21,
-      "Dirty Headbutt": 21,
-      "Dark Frost": 18,
-      "Irritated Outburst": 15,
-      "Poison Chain": 15,
-      "Shocking Web": 8,
-      "Wicked Impact": 6,
-      "Tuck Tail": 5,
-      "Topaz Bolt": 4,
-      "Eon Blade": 1,
-      "Prism Edge": 1,
-      "Torrential Pump": 1
+      "Jolting Charge": 3775
+    },
+    "anchorContribution": {
+      "cardId": "sv7-50",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 250,
+      "enteredPlayRate": 100,
+      "evolvedGames": 0,
+      "evolvedRate": 0,
+      "abilityActivations": 0,
+      "attackUses": 3775,
+      "attackUseGames": 250,
+      "knockOuts": 0,
+      "definingEventCount": 5263,
+      "contributingGames": 250,
+      "contributionRate": 100,
+      "firstReadyTurn": 3.448,
+      "abilityOrDefiningEventGames": 250,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Jolting Charge": 3775,
+      "energy-attached-by-effect:Jolting Charge": 1488
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

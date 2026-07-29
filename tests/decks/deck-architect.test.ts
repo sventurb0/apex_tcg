@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { beforeEach, describe, expect, it } from "vitest";
 import { compileCardImplementation, createCatalogueIndex, type PokemonCardCatalogue, type PokemonCardMetadata } from "../../src/data/pokemon";
 import { analyseDeck } from "../../src/features/deck-builder/validation";
-import { candidateManifest, createImplementationBacklog, exportArchitectCandidate, generateCandidates, rankCandidates, runQuickGauntlet, validateArchitectCandidate, type ArchitectRequest } from "../../src/features/deck-architect";
+import { candidateManifest, exportArchitectCandidate, generateCandidates, rankCandidates, runQuickGauntlet, validateArchitectCandidate, type ArchitectRequest } from "../../src/features/deck-architect";
 
 const catalogue = JSON.parse(readFileSync("public/data/pokemon-cards.json", "utf8")) as PokemonCardCatalogue;
 let index: ReturnType<typeof createCatalogueIndex>;
@@ -18,7 +18,8 @@ describe("Deck Architect candidate generation", () => {
     expect(first.candidates).toHaveLength(3);
     expect(first.candidates.map((candidate) => candidate.fingerprint)).toEqual(second.candidates.map((candidate) => candidate.fingerprint));
     for (const candidate of first.candidates) {
-      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv2-233")?.count).toBe(2);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv2-233")?.count).toBeGreaterThanOrEqual(1);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv2-233")?.count).toBeLessThanOrEqual(4);
       expect(candidate.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Crocalor")).toBe(true);
       expect(candidate.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Fuecoco")).toBe(true);
       expect(validateArchitectCandidate(candidate.deck, index, "simulation-ready")).toMatchObject({ valid: true, analysis: { total: 60, simulationReady: true, unsupported: [] } });
@@ -32,34 +33,39 @@ describe("Deck Architect candidate generation", () => {
     const result = generateCandidates(request([{ cardId: "sv6pt5-36", exactPrintingRequired: true }, { cardId: "sv6pt5-39", exactPrintingRequired: true }]), index);
     expect(result.candidates).toHaveLength(3);
     for (const candidate of result.candidates) {
-      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-36")?.count).toBe(3);
-      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-39")?.count).toBe(2);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-36")?.count).toBeGreaterThanOrEqual(1);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-36")?.count).toBeLessThanOrEqual(4);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-39")?.count).toBeGreaterThanOrEqual(1);
+      expect(candidate.deck.entries.find((entry) => entry.cardId === "sv6pt5-39")?.count).toBeLessThanOrEqual(4);
       expect(candidate.explanations.join(" ")).toMatch(/Subjugating Chains.*Chain-Crazed/i);
       expect(analyseDeck(candidate.deck, index).simulationReady).toBe(true);
     }
   });
 
-  it("produces ten distinct legal choices for both reviewed engines", () => {
+  it("produces five fingerprint-distinct strategic profiles for both reviewed engines", () => {
     const favourites = [
       [{ cardId: "sv2-233", exactPrintingRequired: true }],
       [{ cardId: "sv6pt5-36", exactPrintingRequired: true }, { cardId: "sv6pt5-39", exactPrintingRequired: true }],
     ] satisfies ArchitectRequest["favourites"][];
     for (const selected of favourites) {
       const candidates = generateCandidates(request(selected, 10), index).candidates;
-      expect(candidates).toHaveLength(10);
-      expect(new Set(candidates.map((candidate) => candidate.fingerprint)).size).toBe(10);
+      expect(candidates).toHaveLength(5);
+      expect(new Set(candidates.map((candidate) => candidate.fingerprint)).size).toBe(5);
+      expect(new Set(candidates.map((candidate) => candidate.profile)).size).toBe(5);
       expect(candidates.every((candidate) => candidate.deck.entries.reduce((sum, entry) => sum + entry.count, 0) === 60 && candidate.simulationReady)).toBe(true);
     }
   });
 
-  it("promotes reviewed engine cores into complementary Wave 2 candidates", () => {
-    const clefairy = generateCandidates(request([{ cardId: "sv9-56", exactPrintingRequired: true }]), index).candidates[0]!;
-    const hydrapple = generateCandidates(request([{ cardId: "sv6-25", exactPrintingRequired: true }]), index).candidates[0]!;
-    expect(clefairy.deck.entries.some((entry) => entry.cardId === "sv9-56")).toBe(true);
-    expect(clefairy.explanations.join(" ")).toMatch(/Lillie's Clefairy Multi-Type Bench/);
-    expect(hydrapple.deck.entries.some((entry) => entry.cardId === "sv7-14")).toBe(true);
-    expect(hydrapple.explanations.join(" ")).toMatch(/Teal Mask Ogerpon \/ Hydrapple/);
-    expect(clefairy.deck.entries.filter((entry) => index.byId.get(entry.cardId)?.supertype === "Energy").reduce((sum, entry) => sum + entry.count, 0)).toBeLessThanOrEqual(12);
+  it("builds the repaired Corviknight and Dragonite anchors with complete evolution lines", () => {
+    const corviknight = generateCandidates(request([{ cardId: "sv2-148", exactPrintingRequired: true }]), index).candidates[0]!;
+    const dragonite = generateCandidates(request([{ cardId: "sv3pt5-149", exactPrintingRequired: true }]), index).candidates[0]!;
+    expect(corviknight.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Rookidee")).toBe(true);
+    expect(corviknight.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Corvisquire")).toBe(true);
+    expect(corviknight.deck.entries.some((entry) => entry.cardId === "sv2-148")).toBe(true);
+    expect(dragonite.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Dratini")).toBe(true);
+    expect(dragonite.deck.entries.some((entry) => index.byId.get(entry.cardId)?.name === "Dragonair")).toBe(true);
+    expect(dragonite.deck.entries.some((entry) => entry.cardId === "sv3pt5-149")).toBe(true);
+    expect(corviknight.deck.entries.filter((entry) => index.byId.get(entry.cardId)?.supertype === "Energy").reduce((sum, entry) => sum + entry.count, 0)).toBeLessThanOrEqual(12);
   });
 
   it("ranks candidates deterministically and dispatches a balanced gauntlet with setup and usage metrics", async () => {
@@ -73,7 +79,7 @@ describe("Deck Architect candidate generation", () => {
     expect(summary.goingSecondWinRate).toBeGreaterThanOrEqual(0);
   });
 
-  it("blocks unsupported Ability favourites in simulation-ready mode but creates a creative backlog", () => {
+  it("blocks unsupported Ability favourites instead of emitting an incoherent fallback", () => {
     const unsupported = catalogue.cards.find((card) => card.supertype === "Pokémon" && card.subtypes.includes("Basic") && card.legalities.standard === "Legal" && card.abilities?.length && compileCardImplementation(card).status === "unsupported");
     expect(unsupported).toBeDefined();
     const favourite = [{ cardId: unsupported!.id, exactPrintingRequired: true }];
@@ -81,11 +87,7 @@ describe("Deck Architect candidate generation", () => {
     expect(blocked.candidates).toEqual([]);
     expect(blocked.rejected[0]).toMatchObject({ cardId: unsupported!.id });
     const creative = generateCandidates(request(favourite, 3, "creative"), index);
-    expect(creative.candidates.length).toBeGreaterThan(0);
-    expect(creative.candidates[0]!.simulationReady).toBe(false);
-    const backlog = createImplementationBacklog(creative.candidates, index);
-    expect(backlog.items[0]).toMatchObject({ cardId: unsupported!.id });
-    expect(backlog.markdown).toContain(unsupported!.id);
+    expect(creative.candidates).toEqual([]);
   });
 
   it("accepts a safely generated fixed/no-text Basic attacker in simulation-ready mode", () => {

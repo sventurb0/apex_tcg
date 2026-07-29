@@ -1,10 +1,12 @@
-# Owned-only Decks
+# Owned Deck Routes
 
-- Owned Alakazam Hand Engine: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.)
-- Owned Okidogi Poison: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.)
-- Owned Team Rocket Nidoking/Nidoqueen: 2/60 copies · runtime 2/60 · blocked (Deck contains 2 cards; constructed decks normally contain exactly 60.; Add at least one Basic Pokémon.)
-- Owned Team Rocket Muk Control: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.; Add at least one Basic Pokémon.)
-- Owned Skeledirge Armarouge: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.)
-- Owned Arcanine: 2/60 copies · runtime 2/60 · blocked (Deck contains 2 cards; constructed decks normally contain exactly 60.)
-- Owned Swalot Poison: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.)
-- Owned Team Rocket Crobat/Spidops: 3/60 copies · runtime 3/60 · blocked (Deck contains 3 cards; constructed decks normally contain exactly 60.)
+- Owned Alakazam Hand Engine: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Okidogi Poison: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Team Rocket Nidoking/Nidoqueen: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Team Rocket Muk Control: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Skeledirge Armarouge: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Arcanine: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Swalot Poison: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+- Owned Team Rocket Crobat/Spidops: full 60/60 · owned 60/60 · runtime 60/60 · individually buildable
+
+Maximum simultaneous allocation: 1/8.

@@ -1,0 +1,2216 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-29T21:15:10.606Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv7-92",
+  "name": "Swalot",
+  "candidateCount": 5,
+  "games": 200,
+  "expectedGames": 200,
+  "unresolved": 0,
+  "invalidNumeric": 0,
+  "choiceLoops": 0,
+  "noLegalAction": 0,
+  "opponents": [
+    "okidogi-ex-poison",
+    "corpus-limitless-28236"
+  ],
+  "candidates": [
+    {
+      "candidateId": "architect-anchor-sv7-92-aggressive-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|pl4-66:4|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-92:4|sve-7:10",
+      "profile": "aggressive",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv7-92"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me3-81": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Poké Pad: provides the declared basic-setup requirement."
+          },
+          "pl4-66": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Swalot line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Gulpin: evolves into the selected Swalot line."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-92": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Swalot: selected favourite fulfils primary-attacker."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 34,
+        "enteredPlayRate": 85,
+        "evolvedGames": 34,
+        "evolvedRate": 85,
+        "abilityActivations": 0,
+        "attackUses": 171,
+        "attackUseGames": 32,
+        "knockOuts": 37,
+        "definingEventCount": 343,
+        "contributingGames": 32,
+        "contributionRate": 80,
+        "firstReadyTurn": 5.84375,
+        "abilityOrDefiningEventGames": 32,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 170,
+        "damage-dealt:sv7-92": 171,
+        "attack-used:Venomous Hit": 1,
+        "special-condition-applied:poisoned": 1
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 9,
+          "losses": 11,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 45,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 9,
+        "losses": 31,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 22.5,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 9,
+            "losses": 11,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 45,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 25,
+        "goingSecondWinRate": 20,
+        "averageTurns": 14.55,
+        "averageMulligans": 1.05,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 85,
+        "averageFirstAttackTurn": 3.1,
+        "averageFirstKnockOutTurn": 7.9,
+        "energyStarvationPercentage": 43.51851851851852,
+        "deckOutLosses": 1,
+        "averagePrizesTaken": 1.55,
+        "commonLossReasons": {
+          "no-pokemon": 30,
+          "deck-out": 1
+        },
+        "cardUsage": {
+          "pl4-66": 40,
+          "sve-7": 40,
+          "sv2-188": 12,
+          "sv1-189": 18,
+          "sv1-181": 17,
+          "sv4-163": 17,
+          "me1-130": 9,
+          "me1-131": 32,
+          "sv7-92": 34,
+          "me3-81": 13,
+          "me1-119": 8,
+          "sv6pt5-61": 7,
+          "sv1-198": 3,
+          "sv6pt5-57": 6,
+          "me2pt5-183": 1,
+          "me1-114": 4,
+          "sv6pt5-37": 1,
+          "sv8pt5-36": 14,
+          "sv8pt5-37": 1
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Devouring Mouth": 170,
+          "Collect": 53,
+          "Venomous Hit": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv7-92",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 34,
+          "enteredPlayRate": 85,
+          "evolvedGames": 34,
+          "evolvedRate": 85,
+          "abilityActivations": 0,
+          "attackUses": 171,
+          "attackUseGames": 32,
+          "knockOuts": 37,
+          "definingEventCount": 343,
+          "contributingGames": 32,
+          "contributionRate": 80,
+          "firstReadyTurn": 5.84375,
+          "abilityOrDefiningEventGames": 32,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Devouring Mouth": 170,
+          "damage-dealt:sv7-92": 171,
+          "attack-used:Venomous Hit": 1,
+          "special-condition-applied:poisoned": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 327.51722222222224
+    },
+    {
+      "candidateId": "architect-anchor-sv7-92-control-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|pl4-66:4|sv1-181:4|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:4|sv6pt5-57:4|sv6pt5-61:3|sv7-92:4|sve-7:8",
+      "profile": "control",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv7-92"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "pl4-66": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Swalot line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Gulpin: evolves into the selected Swalot line."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-92": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Swalot: selected favourite fulfils primary-attacker."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 31,
+        "enteredPlayRate": 77.5,
+        "evolvedGames": 31,
+        "evolvedRate": 77.5,
+        "abilityActivations": 0,
+        "attackUses": 125,
+        "attackUseGames": 31,
+        "knockOuts": 32,
+        "definingEventCount": 250,
+        "contributingGames": 31,
+        "contributionRate": 77.5,
+        "firstReadyTurn": 7.225806451612903,
+        "abilityOrDefiningEventGames": 31,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 125,
+        "damage-dealt:sv7-92": 125
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 7,
+          "losses": 13,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 35,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 8,
+        "losses": 32,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 20,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 7,
+            "losses": 13,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 35,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 25,
+        "goingSecondWinRate": 15,
+        "averageTurns": 13.925,
+        "averageMulligans": 1.375,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 77.5,
+        "averageFirstAttackTurn": 2.775,
+        "averageFirstKnockOutTurn": 7.571428571428571,
+        "energyStarvationPercentage": 35.13513513513514,
+        "deckOutLosses": 1,
+        "averagePrizesTaken": 1.35,
+        "commonLossReasons": {
+          "no-pokemon": 31,
+          "deck-out": 1
+        },
+        "cardUsage": {
+          "pl4-66": 40,
+          "sv4-163": 15,
+          "sve-7": 40,
+          "me1-131": 26,
+          "sv1-181": 19,
+          "sv1-189": 15,
+          "me1-114": 2,
+          "sv7-92": 31,
+          "sv2-188": 10,
+          "sv6pt5-61": 6,
+          "me1-119": 7,
+          "sv1-198": 5,
+          "me1-130": 12,
+          "me2pt5-183": 2,
+          "sv6pt5-57": 4,
+          "sv8pt5-36": 14
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Devouring Mouth": 125,
+          "Collect": 101
+        },
+        "anchorContribution": {
+          "cardId": "sv7-92",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 31,
+          "enteredPlayRate": 77.5,
+          "evolvedGames": 31,
+          "evolvedRate": 77.5,
+          "abilityActivations": 0,
+          "attackUses": 125,
+          "attackUseGames": 31,
+          "knockOuts": 32,
+          "definingEventCount": 250,
+          "contributingGames": 31,
+          "contributionRate": 77.5,
+          "firstReadyTurn": 7.225806451612903,
+          "abilityOrDefiningEventGames": 31,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Devouring Mouth": 125,
+          "damage-dealt:sv7-92": 125
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 313.39972972972976
+    },
+    {
+      "candidateId": "architect-anchor-sv7-92-resilient-13013-0",
+      "fingerprint": "me1-114:2|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:2|pl4-66:4|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:4|sv6pt5-57:3|sv6pt5-61:4|sv7-92:4|sve-7:9",
+      "profile": "resilient",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv7-92"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "pl4-66": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Swalot line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Gulpin: evolves into the selected Swalot line."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-92": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Swalot: selected favourite fulfils primary-attacker."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 33,
+        "enteredPlayRate": 82.5,
+        "evolvedGames": 33,
+        "evolvedRate": 82.5,
+        "abilityActivations": 0,
+        "attackUses": 128,
+        "attackUseGames": 33,
+        "knockOuts": 24,
+        "definingEventCount": 256,
+        "contributingGames": 33,
+        "contributionRate": 82.5,
+        "firstReadyTurn": 7.545454545454546,
+        "abilityOrDefiningEventGames": 33,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 128,
+        "damage-dealt:sv7-92": 128
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 7,
+          "losses": 13,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 35,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 8,
+        "losses": 32,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 20,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 7,
+            "losses": 13,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 35,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 20,
+        "averageTurns": 14.525,
+        "averageMulligans": 1.375,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 82.5,
+        "averageFirstAttackTurn": 2.775,
+        "averageFirstKnockOutTurn": 6.142857142857143,
+        "energyStarvationPercentage": 38.83495145631068,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 1.1,
+        "commonLossReasons": {
+          "no-pokemon": 32
+        },
+        "cardUsage": {
+          "pl4-66": 40,
+          "sv4-163": 15,
+          "sve-7": 40,
+          "me1-131": 30,
+          "sv1-181": 15,
+          "sv1-189": 14,
+          "me1-130": 13,
+          "sv6pt5-57": 7,
+          "sv6pt5-61": 12,
+          "sv7-92": 33,
+          "me1-119": 6,
+          "sv2-188": 12,
+          "sv1-198": 5,
+          "me2pt5-183": 3,
+          "me1-114": 5,
+          "sv8pt5-36": 14
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Devouring Mouth": 128,
+          "Collect": 97
+        },
+        "anchorContribution": {
+          "cardId": "sv7-92",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 33,
+          "enteredPlayRate": 82.5,
+          "evolvedGames": 33,
+          "evolvedRate": 82.5,
+          "abilityActivations": 0,
+          "attackUses": 128,
+          "attackUseGames": 33,
+          "knockOuts": 24,
+          "definingEventCount": 256,
+          "contributingGames": 33,
+          "contributionRate": 82.5,
+          "firstReadyTurn": 7.545454545454546,
+          "abilityOrDefiningEventGames": 33,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Devouring Mouth": 128,
+          "damage-dealt:sv7-92": 128
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 332.8447572815534
+    },
+    {
+      "candidateId": "architect-anchor-sv7-92-balanced-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|pl4-66:4|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:2|sv4-163:3|sv4pt5-80:3|sv6pt5-57:3|sv6pt5-61:3|sv7-92:4|sve-7:10",
+      "profile": "balanced",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv7-92"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "pl4-66": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Swalot line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Gulpin: evolves into the selected Swalot line."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv4pt5-80": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Iono: provides the declared draw requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-92": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Swalot: selected favourite fulfils primary-attacker."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 31,
+        "enteredPlayRate": 77.5,
+        "evolvedGames": 31,
+        "evolvedRate": 77.5,
+        "abilityActivations": 0,
+        "attackUses": 139,
+        "attackUseGames": 31,
+        "knockOuts": 27,
+        "definingEventCount": 278,
+        "contributingGames": 31,
+        "contributionRate": 77.5,
+        "firstReadyTurn": 7.774193548387097,
+        "abilityOrDefiningEventGames": 31,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 138,
+        "damage-dealt:sv7-92": 139,
+        "attack-used:Venomous Hit": 1
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 9,
+          "losses": 11,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 45,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 10,
+        "losses": 30,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 25,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 9,
+            "losses": 11,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 45,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 30,
+        "goingSecondWinRate": 20,
+        "averageTurns": 13.8,
+        "averageMulligans": 1.775,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 77.5,
+        "averageFirstAttackTurn": 2.775,
+        "averageFirstKnockOutTurn": 8.535714285714286,
+        "energyStarvationPercentage": 36.84210526315789,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 1.1,
+        "commonLossReasons": {
+          "no-pokemon": 30
+        },
+        "cardUsage": {
+          "pl4-66": 40,
+          "sv4pt5-80": 18,
+          "sv7-92": 31,
+          "sve-7": 39,
+          "me1-131": 29,
+          "sv1-181": 16,
+          "sv4-163": 10,
+          "sv6pt5-57": 4,
+          "me1-119": 6,
+          "sv1-189": 13,
+          "sv6pt5-61": 9,
+          "me1-130": 9,
+          "sv2-188": 8,
+          "me1-114": 3,
+          "sv8pt5-36": 13,
+          "sv1-198": 2
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Devouring Mouth": 138,
+          "Collect": 74,
+          "Venomous Hit": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv7-92",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 31,
+          "enteredPlayRate": 77.5,
+          "evolvedGames": 31,
+          "evolvedRate": 77.5,
+          "abilityActivations": 0,
+          "attackUses": 139,
+          "attackUseGames": 31,
+          "knockOuts": 27,
+          "definingEventCount": 278,
+          "contributingGames": 31,
+          "contributionRate": 77.5,
+          "firstReadyTurn": 7.774193548387097,
+          "abilityOrDefiningEventGames": 31,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Devouring Mouth": 138,
+          "damage-dealt:sv7-92": 139,
+          "attack-used:Venomous Hit": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 313.8336842105263
+    },
+    {
+      "candidateId": "architect-anchor-sv7-92-turbo-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|pl4-66:4|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-92:4|sve-7:16|zsv10pt5-84:3",
+      "profile": "turbo",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv7-92"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "pl4-66": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Swalot line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Gulpin: evolves into the selected Swalot line."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-92": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Swalot: selected favourite fulfils primary-attacker."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "zsv10pt5-84": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pokégear 3.0: provides the declared draw requirement."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 35,
+        "enteredPlayRate": 87.5,
+        "evolvedGames": 35,
+        "evolvedRate": 87.5,
+        "abilityActivations": 0,
+        "attackUses": 167,
+        "attackUseGames": 34,
+        "knockOuts": 45,
+        "definingEventCount": 334,
+        "contributingGames": 34,
+        "contributionRate": 85,
+        "firstReadyTurn": 6,
+        "abilityOrDefiningEventGames": 34,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 167,
+        "damage-dealt:sv7-92": 166,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 8,
+          "losses": 12,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 40,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 9,
+        "losses": 31,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 22.5,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 8,
+            "losses": 12,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 40,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 25,
+        "averageTurns": 14.175,
+        "averageMulligans": 1.775,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 87.5,
+        "averageFirstAttackTurn": 2.35,
+        "averageFirstKnockOutTurn": 5.5,
+        "energyStarvationPercentage": 34.54545454545455,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 1.6,
+        "commonLossReasons": {
+          "no-pokemon": 31
+        },
+        "cardUsage": {
+          "pl4-66": 40,
+          "sve-7": 40,
+          "sv7-92": 35,
+          "me1-131": 24,
+          "sv1-181": 10,
+          "sv6pt5-57": 2,
+          "zsv10pt5-84": 12,
+          "sv1-189": 11,
+          "me1-130": 5,
+          "me2pt5-183": 3,
+          "sv4-163": 5,
+          "sv1-198": 2,
+          "sv2-188": 3,
+          "sv8pt5-36": 11,
+          "me1-114": 4,
+          "me1-119": 2
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Devouring Mouth": 167,
+          "Collect": 77
+        },
+        "anchorContribution": {
+          "cardId": "sv7-92",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 35,
+          "enteredPlayRate": 87.5,
+          "evolvedGames": 35,
+          "evolvedRate": 87.5,
+          "abilityActivations": 0,
+          "attackUses": 167,
+          "attackUseGames": 34,
+          "knockOuts": 45,
+          "definingEventCount": 334,
+          "contributingGames": 34,
+          "contributionRate": 85,
+          "firstReadyTurn": 6,
+          "abilityOrDefiningEventGames": 34,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Devouring Mouth": 167,
+          "damage-dealt:sv7-92": 166,
+          "damage-dealt:Confusion self-damage": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 345.6931818181818
+    }
+  ],
+  "finalistCandidate": {
+    "id": "architect-anchor-sv7-92-turbo-13013-0",
+    "seed": 13013,
+    "variant": "turbo semantic",
+    "requiredCardIds": [
+      "sv7-92"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv7-92-turbo-13013-0",
+      "name": "Swalot — turbo semantic build 1",
+      "description": "Original executable construction using exact anchor capability plan; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "pl4-66",
+          "count": 4
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sv7-92",
+          "count": 4
+        },
+        {
+          "cardId": "sve-7",
+          "count": 16
+        },
+        {
+          "cardId": "zsv10pt5-84",
+          "count": 3
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 0,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 4.4,
+      "synergy": 2.6666666666666665,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 6.5,
+      "secondaryEnergyCoverage": 4.5,
+      "conflictPenalty": 0,
+      "engineCohesion": 1.95,
+      "total": 100
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected role-compatible providers.",
+      "Required packages were assembled before slot filling: role-budget providers.",
+      "Profile turbo changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 4 providers with 2 unmet role(s).",
+      "Applied reviewed Energy template Single-type high-cost (12-16 cards) for the selected attack types.",
+      "Protects high attack costs and discard acceleration from starvation.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 17 cards assigned explicit provider-to-requirement roles; engines anchor-capability:sv7-92."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "pl4-66",
+        "toCardId": "sv7-92",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type high-cost (12-16 cards) for the selected attack types. Protects high attack costs and discard acceleration from starvation.",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|pl4-66:4|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-92:4|sve-7:16|zsv10pt5-84:3",
+    "route": "original",
+    "selectedRoles": {
+      "sv7-92": "primary-attacker"
+    },
+    "packageIds": [],
+    "profile": "turbo",
+    "strategyPlanId": "original:roles",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 1
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 8,
+        "evolution-search": 3,
+        "draw": 9,
+        "switching": 2,
+        "gust": 2,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "evolution-search",
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for the selected favourites.",
+        "turbo prioritizes search and draw.",
+        "No reviewed provider was found for evolution-search; the role remains unmet.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-7",
+          "count": 16
+        }
+      ],
+      "mainAttackCoverage": 0,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 0,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type high-cost (12-16 cards) for the selected attack types.",
+        "Protects high attack costs and discard acceleration from starvation."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "anchor-capability:sv7-92"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "pl4-66": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Swalot line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Gulpin: evolves into the selected Swalot line."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv7-92": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Swalot: selected favourite fulfils primary-attacker."
+        },
+        "sve-7": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays darkness attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+        },
+        "zsv10pt5-84": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pokégear 3.0: provides the declared draw requirement."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "darkness",
+        "psychic"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 9,
+      "losses": 31,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 22.5,
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 8,
+          "losses": 12,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 40,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 20,
+      "goingSecondWinRate": 25,
+      "averageTurns": 14.175,
+      "averageMulligans": 1.775,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 87.5,
+      "averageFirstAttackTurn": 2.35,
+      "averageFirstKnockOutTurn": 5.5,
+      "energyStarvationPercentage": 34.54545454545455,
+      "deckOutLosses": 0,
+      "averagePrizesTaken": 1.6,
+      "commonLossReasons": {
+        "no-pokemon": 31
+      },
+      "cardUsage": {
+        "pl4-66": 40,
+        "sve-7": 40,
+        "sv7-92": 35,
+        "me1-131": 24,
+        "sv1-181": 10,
+        "sv6pt5-57": 2,
+        "zsv10pt5-84": 12,
+        "sv1-189": 11,
+        "me1-130": 5,
+        "me2pt5-183": 3,
+        "sv4-163": 5,
+        "sv1-198": 2,
+        "sv2-188": 3,
+        "sv8pt5-36": 11,
+        "me1-114": 4,
+        "me1-119": 2
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Devouring Mouth": 167,
+        "Collect": 77
+      },
+      "anchorContribution": {
+        "cardId": "sv7-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 35,
+        "enteredPlayRate": 87.5,
+        "evolvedGames": 35,
+        "evolvedRate": 87.5,
+        "abilityActivations": 0,
+        "attackUses": 167,
+        "attackUseGames": 34,
+        "knockOuts": 45,
+        "definingEventCount": 334,
+        "contributingGames": 34,
+        "contributionRate": 85,
+        "firstReadyTurn": 6,
+        "abilityOrDefiningEventGames": 34,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Devouring Mouth": 167,
+        "damage-dealt:sv7-92": 166,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv7-92",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 35,
+      "enteredPlayRate": 87.5,
+      "evolvedGames": 35,
+      "evolvedRate": 87.5,
+      "abilityActivations": 0,
+      "attackUses": 167,
+      "attackUseGames": 34,
+      "knockOuts": 45,
+      "definingEventCount": 334,
+      "contributingGames": 34,
+      "contributionRate": 85,
+      "firstReadyTurn": 6,
+      "abilityOrDefiningEventGames": 34,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "finalistDeckId": "architect-anchor-sv7-92-turbo-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|pl4-66:4|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-92:4|sve-7:16|zsv10pt5-84:3",
+  "candidateScreeningRank": 1,
+  "anchorContribution": {
+    "cardId": "sv7-92",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 35,
+    "enteredPlayRate": 87.5,
+    "evolvedGames": 35,
+    "evolvedRate": 87.5,
+    "abilityActivations": 0,
+    "attackUses": 167,
+    "attackUseGames": 34,
+    "knockOuts": 45,
+    "definingEventCount": 334,
+    "contributingGames": 34,
+    "contributionRate": 85,
+    "firstReadyTurn": 6,
+    "abilityOrDefiningEventGames": 34,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Devouring Mouth": 167,
+    "damage-dealt:sv7-92": 166,
+    "damage-dealt:Confusion self-damage": 1
+  },
+  "byOpponent": {
+    "okidogi-ex-poison": {
+      "games": 20,
+      "wins": 1,
+      "losses": 19,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 5,
+      "deterministicSeed": 13013
+    },
+    "corpus-limitless-28236": {
+      "games": 20,
+      "wins": 8,
+      "losses": 12,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 40,
+      "deterministicSeed": 23013
+    }
+  }
+}

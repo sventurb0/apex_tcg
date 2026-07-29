@@ -1,0 +1,2239 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-29T21:09:08.573Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv7-58",
+  "name": "Slowking",
+  "candidateCount": 5,
+  "games": 200,
+  "expectedGames": 200,
+  "unresolved": 0,
+  "invalidNumeric": 0,
+  "choiceLoops": 0,
+  "noLegalAction": 0,
+  "opponents": [
+    "skeledirge-armarouge",
+    "corpus-limitless-28251"
+  ],
+  "candidates": [
+    {
+      "candidateId": "architect-anchor-sv7-58-aggressive-13013-0",
+      "fingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-58:4|sve-5:10",
+      "profile": "aggressive",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "psychic-slowking-topdeck"
+        ],
+        "cardRoles": {
+          "ex11-83": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Slowking line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowpoke: evolves into the selected Slowking line."
+          },
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me3-81": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Poké Pad: provides the declared basic-setup requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-58": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowking: selected favourite fulfils primary-attacker."
+          },
+          "sve-5": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays psychic attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 36,
+        "enteredPlayRate": 90,
+        "evolvedGames": 36,
+        "evolvedRate": 90,
+        "abilityActivations": 0,
+        "attackUses": 292,
+        "attackUseGames": 31,
+        "knockOuts": 6,
+        "definingEventCount": 302,
+        "contributingGames": 31,
+        "contributionRate": 77.5,
+        "firstReadyTurn": 9.290322580645162,
+        "abilityOrDefiningEventGames": 31,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 286,
+        "attack-used:Super Psy Bolt": 6,
+        "damage-dealt:sv7-58": 6,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 4
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 6,
+          "losses": 14,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 30,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 6,
+        "losses": 34,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 15,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28251": {
+            "games": 20,
+            "wins": 6,
+            "losses": 14,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 30,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 10,
+        "goingSecondWinRate": 20,
+        "averageTurns": 28.775,
+        "averageMulligans": 1.5,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 90,
+        "averageFirstAttackTurn": 3.95,
+        "averageFirstKnockOutTurn": 15.157894736842104,
+        "energyStarvationPercentage": 44.52380952380952,
+        "deckOutLosses": 15,
+        "averagePrizesTaken": 0.15,
+        "commonLossReasons": {
+          "deck-out": 15,
+          "no-pokemon": 19
+        },
+        "cardUsage": {
+          "ex11-83": 40,
+          "me1-131": 31,
+          "sve-5": 40,
+          "sv7-58": 36,
+          "sv1-181": 25,
+          "me1-130": 18,
+          "sv1-189": 21,
+          "sv2-188": 16,
+          "sv1-198": 11,
+          "me1-119": 14,
+          "me3-81": 19,
+          "me1-114": 11,
+          "sv4-163": 21,
+          "sv6pt5-61": 13,
+          "sv6pt5-57": 9,
+          "me2pt5-183": 2
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Seek Inspiration": 286,
+          "Yawn": 153,
+          "Super Psy Bolt": 6,
+          "Tackle": 5
+        },
+        "anchorContribution": {
+          "cardId": "sv7-58",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 36,
+          "enteredPlayRate": 90,
+          "evolvedGames": 36,
+          "evolvedRate": 90,
+          "abilityActivations": 0,
+          "attackUses": 292,
+          "attackUseGames": 31,
+          "knockOuts": 6,
+          "definingEventCount": 302,
+          "contributingGames": 31,
+          "contributionRate": 77.5,
+          "firstReadyTurn": 9.290322580645162,
+          "abilityOrDefiningEventGames": 31,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Seek Inspiration": 286,
+          "attack-used:Super Psy Bolt": 6,
+          "damage-dealt:sv7-58": 6,
+          "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 4
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 323.76142857142855
+    },
+    {
+      "candidateId": "architect-anchor-sv7-58-control-13013-0",
+      "fingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:4|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:4|sv6pt5-57:4|sv6pt5-61:3|sv7-58:4|sve-5:8",
+      "profile": "control",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "psychic-slowking-topdeck"
+        ],
+        "cardRoles": {
+          "ex11-83": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Slowking line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowpoke: evolves into the selected Slowking line."
+          },
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-58": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowking: selected favourite fulfils primary-attacker."
+          },
+          "sve-5": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays psychic attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 32,
+        "enteredPlayRate": 80,
+        "evolvedGames": 32,
+        "evolvedRate": 80,
+        "abilityActivations": 0,
+        "attackUses": 252,
+        "attackUseGames": 29,
+        "knockOuts": 5,
+        "definingEventCount": 259,
+        "contributingGames": 29,
+        "contributionRate": 72.5,
+        "firstReadyTurn": 11.448275862068966,
+        "abilityOrDefiningEventGames": 29,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 250,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 5,
+        "attack-used:Super Psy Bolt": 2,
+        "damage-dealt:sv7-58": 2
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 9,
+          "losses": 11,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 45,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 10,
+        "losses": 30,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 25,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28251": {
+            "games": 20,
+            "wins": 9,
+            "losses": 11,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 45,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 30,
+        "averageTurns": 29.25,
+        "averageMulligans": 1.5,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 80,
+        "averageFirstAttackTurn": 3.175,
+        "averageFirstKnockOutTurn": 15,
+        "energyStarvationPercentage": 45.24421593830334,
+        "deckOutLosses": 11,
+        "averagePrizesTaken": 0.125,
+        "commonLossReasons": {
+          "no-pokemon": 19,
+          "deck-out": 11
+        },
+        "cardUsage": {
+          "ex11-83": 40,
+          "sve-5": 40,
+          "sv4-163": 26,
+          "sv1-181": 23,
+          "me1-131": 33,
+          "me1-130": 15,
+          "sv7-58": 32,
+          "sv1-189": 21,
+          "sv2-188": 18,
+          "sv1-198": 9,
+          "me1-119": 12,
+          "sv6pt5-57": 14,
+          "sv6pt5-61": 13,
+          "me1-114": 5,
+          "me2pt5-183": 3
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Seek Inspiration": 250,
+          "Yawn": 223,
+          "Tackle": 3,
+          "Super Psy Bolt": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv7-58",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 32,
+          "enteredPlayRate": 80,
+          "evolvedGames": 32,
+          "evolvedRate": 80,
+          "abilityActivations": 0,
+          "attackUses": 252,
+          "attackUseGames": 29,
+          "knockOuts": 5,
+          "definingEventCount": 259,
+          "contributingGames": 29,
+          "contributionRate": 72.5,
+          "firstReadyTurn": 11.448275862068966,
+          "abilityOrDefiningEventGames": 29,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Seek Inspiration": 250,
+          "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 5,
+          "attack-used:Super Psy Bolt": 2,
+          "damage-dealt:sv7-58": 2
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 300.1533676092545
+    },
+    {
+      "candidateId": "architect-anchor-sv7-58-resilient-13013-0",
+      "fingerprint": "ex11-83:4|me1-114:2|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:2|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:3|sv4-163:4|sv6pt5-57:3|sv6pt5-61:4|sv7-58:4|sve-5:9",
+      "profile": "resilient",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "psychic-slowking-topdeck"
+        ],
+        "cardRoles": {
+          "ex11-83": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Slowking line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowpoke: evolves into the selected Slowking line."
+          },
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-58": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowking: selected favourite fulfils primary-attacker."
+          },
+          "sve-5": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays psychic attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 32,
+        "enteredPlayRate": 80,
+        "evolvedGames": 32,
+        "evolvedRate": 80,
+        "abilityActivations": 0,
+        "attackUses": 268,
+        "attackUseGames": 24,
+        "knockOuts": 4,
+        "definingEventCount": 273,
+        "contributingGames": 24,
+        "contributionRate": 60,
+        "firstReadyTurn": 10.958333333333334,
+        "abilityOrDefiningEventGames": 24,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 266,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 3,
+        "attack-used:Super Psy Bolt": 2,
+        "damage-dealt:sv7-58": 2
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 9,
+          "losses": 11,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 45,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 9,
+        "losses": 31,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 22.5,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28251": {
+            "games": 20,
+            "wins": 9,
+            "losses": 11,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 45,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 25,
+        "averageTurns": 28.325,
+        "averageMulligans": 1.5,
+        "setupFailurePercentage": 2.5,
+        "mainAttackerReadinessPercentage": 80,
+        "averageFirstAttackTurn": 2.9743589743589745,
+        "averageFirstKnockOutTurn": 12.307692307692308,
+        "energyStarvationPercentage": 48.49884526558891,
+        "deckOutLosses": 12,
+        "averagePrizesTaken": 0.1,
+        "commonLossReasons": {
+          "deck-out": 12,
+          "no-pokemon": 19
+        },
+        "cardUsage": {
+          "ex11-83": 40,
+          "me1-131": 34,
+          "sve-5": 40,
+          "sv7-58": 32,
+          "sv1-181": 20,
+          "me1-130": 15,
+          "sv1-189": 21,
+          "sv4-163": 25,
+          "sv6pt5-57": 8,
+          "me1-119": 11,
+          "sv2-188": 21,
+          "me2pt5-183": 4,
+          "sv1-198": 8,
+          "me1-114": 7,
+          "sv6pt5-61": 8
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Seek Inspiration": 266,
+          "Yawn": 175,
+          "Super Psy Bolt": 2,
+          "Tackle": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv7-58",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 32,
+          "enteredPlayRate": 80,
+          "evolvedGames": 32,
+          "evolvedRate": 80,
+          "abilityActivations": 0,
+          "attackUses": 268,
+          "attackUseGames": 24,
+          "knockOuts": 4,
+          "definingEventCount": 273,
+          "contributingGames": 24,
+          "contributionRate": 60,
+          "firstReadyTurn": 10.958333333333334,
+          "abilityOrDefiningEventGames": 24,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Seek Inspiration": 266,
+          "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 3,
+          "attack-used:Super Psy Bolt": 2,
+          "damage-dealt:sv7-58": 2
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 260.5401732101617
+    },
+    {
+      "candidateId": "architect-anchor-sv7-58-balanced-13013-0",
+      "fingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:3|sv1-189:3|sv1-198:3|sv2-188:2|sv4-163:3|sv4pt5-80:3|sv6pt5-57:3|sv6pt5-61:3|sv7-58:4|sve-5:10",
+      "profile": "balanced",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "psychic-slowking-topdeck"
+        ],
+        "cardRoles": {
+          "ex11-83": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Slowking line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowpoke: evolves into the selected Slowking line."
+          },
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv4pt5-80": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Iono: provides the declared draw requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-58": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowking: selected favourite fulfils primary-attacker."
+          },
+          "sve-5": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays psychic attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 32,
+        "enteredPlayRate": 80,
+        "evolvedGames": 32,
+        "evolvedRate": 80,
+        "abilityActivations": 0,
+        "attackUses": 367,
+        "attackUseGames": 30,
+        "knockOuts": 9,
+        "definingEventCount": 379,
+        "contributingGames": 30,
+        "contributionRate": 75,
+        "firstReadyTurn": 10.366666666666667,
+        "abilityOrDefiningEventGames": 30,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 362,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 7,
+        "attack-used:Super Psy Bolt": 5,
+        "damage-dealt:sv7-58": 5
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 8,
+          "losses": 12,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 40,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 8,
+        "losses": 32,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 20,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28251": {
+            "games": 20,
+            "wins": 8,
+            "losses": 12,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 40,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 20,
+        "averageTurns": 30.625,
+        "averageMulligans": 1.5,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 80,
+        "averageFirstAttackTurn": 3.35,
+        "averageFirstKnockOutTurn": 16.3125,
+        "energyStarvationPercentage": 43.50797266514807,
+        "deckOutLosses": 15,
+        "averagePrizesTaken": 0.225,
+        "commonLossReasons": {
+          "deck-out": 15,
+          "no-pokemon": 17
+        },
+        "cardUsage": {
+          "ex11-83": 40,
+          "me1-131": 31,
+          "sve-5": 40,
+          "sv7-58": 32,
+          "sv1-189": 16,
+          "sv6pt5-61": 8,
+          "sv2-188": 17,
+          "me1-114": 9,
+          "sv4-163": 16,
+          "sv1-181": 20,
+          "sv1-198": 8,
+          "me1-130": 16,
+          "sv4pt5-80": 19,
+          "me1-119": 9,
+          "sv6pt5-57": 8,
+          "me2pt5-183": 2
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Seek Inspiration": 362,
+          "Yawn": 132,
+          "Tackle": 6,
+          "Super Psy Bolt": 5
+        },
+        "anchorContribution": {
+          "cardId": "sv7-58",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 32,
+          "enteredPlayRate": 80,
+          "evolvedGames": 32,
+          "evolvedRate": 80,
+          "abilityActivations": 0,
+          "attackUses": 367,
+          "attackUseGames": 30,
+          "knockOuts": 9,
+          "definingEventCount": 379,
+          "contributingGames": 30,
+          "contributionRate": 75,
+          "firstReadyTurn": 10.366666666666667,
+          "abilityOrDefiningEventGames": 30,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Seek Inspiration": 362,
+          "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 7,
+          "attack-used:Super Psy Bolt": 5,
+          "damage-dealt:sv7-58": 5
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 307.10380410022776
+    },
+    {
+      "candidateId": "architect-anchor-sv7-58-turbo-13013-0",
+      "fingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-58:4|sve-5:16|zsv10pt5-84:3",
+      "profile": "turbo",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "psychic-slowking-topdeck"
+        ],
+        "cardRoles": {
+          "ex11-83": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Slowking line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowpoke: evolves into the selected Slowking line."
+          },
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv7-58": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Slowking: selected favourite fulfils primary-attacker."
+          },
+          "sve-5": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays psychic attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+          },
+          "zsv10pt5-84": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pokégear 3.0: provides the declared draw requirement."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 34,
+        "enteredPlayRate": 85,
+        "evolvedGames": 34,
+        "evolvedRate": 85,
+        "abilityActivations": 0,
+        "attackUses": 389,
+        "attackUseGames": 33,
+        "knockOuts": 8,
+        "definingEventCount": 400,
+        "contributingGames": 33,
+        "contributionRate": 82.5,
+        "firstReadyTurn": 8.181818181818182,
+        "abilityOrDefiningEventGames": 33,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 387,
+        "attack-used:Super Psy Bolt": 2,
+        "damage-dealt:sv7-58": 2,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 9
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 2,
+          "losses": 18,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 10,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 6,
+        "losses": 34,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 15,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 2,
+            "losses": 18,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 10,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28251": {
+            "games": 20,
+            "wins": 4,
+            "losses": 16,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 20,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 20,
+        "goingSecondWinRate": 10,
+        "averageTurns": 28.45,
+        "averageMulligans": 1.5,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 85,
+        "averageFirstAttackTurn": 2.925,
+        "averageFirstKnockOutTurn": 16.470588235294116,
+        "energyStarvationPercentage": 49.48186528497409,
+        "deckOutLosses": 15,
+        "averagePrizesTaken": 0.175,
+        "commonLossReasons": {
+          "no-pokemon": 19,
+          "deck-out": 15
+        },
+        "cardUsage": {
+          "ex11-83": 40,
+          "zsv10pt5-84": 26,
+          "me1-131": 28,
+          "sve-5": 40,
+          "sv7-58": 34,
+          "sv1-181": 14,
+          "sv1-189": 18,
+          "sv6pt5-61": 8,
+          "me1-119": 14,
+          "sv6pt5-57": 7,
+          "sv4-163": 13,
+          "me1-114": 5,
+          "me1-130": 12,
+          "sv1-198": 3,
+          "sv2-188": 13,
+          "me2pt5-183": 3
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Seek Inspiration": 387,
+          "Yawn": 96,
+          "Super Psy Bolt": 2,
+          "Tackle": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv7-58",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 34,
+          "enteredPlayRate": 85,
+          "evolvedGames": 34,
+          "evolvedRate": 85,
+          "abilityActivations": 0,
+          "attackUses": 389,
+          "attackUseGames": 33,
+          "knockOuts": 8,
+          "definingEventCount": 400,
+          "contributingGames": 33,
+          "contributionRate": 82.5,
+          "firstReadyTurn": 8.181818181818182,
+          "abilityOrDefiningEventGames": 33,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Seek Inspiration": 387,
+          "attack-used:Super Psy Bolt": 2,
+          "damage-dealt:sv7-58": 2,
+          "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 9
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 332.35272020725387
+    }
+  ],
+  "finalistCandidate": {
+    "id": "architect-anchor-sv7-58-turbo-13013-0",
+    "seed": 13013,
+    "variant": "turbo semantic",
+    "requiredCardIds": [
+      "sv7-58"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv7-58-turbo-13013-0",
+      "name": "Slowking — turbo semantic build 1",
+      "description": "Original executable construction using Slowking Seek Inspiration; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "ex11-83",
+          "count": 4
+        },
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sv7-58",
+          "count": 4
+        },
+        {
+          "cardId": "sve-5",
+          "count": 16
+        },
+        {
+          "cardId": "zsv10pt5-84",
+          "count": 3
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 0,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 4.4,
+      "synergy": 2.6666666666666665,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 4,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 6.5,
+      "secondaryEnergyCoverage": 4.5,
+      "conflictPenalty": 0,
+      "engineCohesion": 2.2,
+      "total": 100.5
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Slowking Seek Inspiration.",
+      "Required packages were assembled before slot filling: slowking-academy.",
+      "Profile turbo changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 4 providers with 2 unmet role(s).",
+      "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Slowking Seek Inspiration.",
+      "Protects high attack costs and discard acceleration from starvation.",
+      "Seek Inspiration: 2 units, expected payment in 1 turn(s).",
+      "Super Psy Bolt: 3 units, expected payment in 2 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Coherence: 17 cards assigned explicit provider-to-requirement roles; engines psychic-slowking-topdeck."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "ex11-83",
+        "toCardId": "sv7-58",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Slowking Seek Inspiration. Protects high attack costs and discard acceleration from starvation. Seek Inspiration: 2 units, expected payment in 1 turn(s). Super Psy Bolt: 3 units, expected payment in 2 turn(s).",
+    "fingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-58:4|sve-5:16|zsv10pt5-84:3",
+    "route": "original",
+    "selectedRoles": {
+      "sv7-58": "primary-attacker"
+    },
+    "packageIds": [
+      "slowking-academy"
+    ],
+    "profile": "turbo",
+    "strategyPlanId": "original:psychic-slowking-topdeck",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 1
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 8,
+        "evolution-search": 3,
+        "draw": 9,
+        "switching": 2,
+        "gust": 2,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "evolution-search",
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Slowking Seek Inspiration.",
+        "turbo prioritizes search and draw.",
+        "No reviewed provider was found for evolution-search; the role remains unmet.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-5",
+          "count": 16
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 1,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Slowking Seek Inspiration.",
+        "Protects high attack costs and discard acceleration from starvation.",
+        "Seek Inspiration: 2 units, expected payment in 1 turn(s).",
+        "Super Psy Bolt: 3 units, expected payment in 2 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "psychic-slowking-topdeck"
+      ],
+      "cardRoles": {
+        "ex11-83": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Slowking line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Slowpoke: evolves into the selected Slowking line."
+        },
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv7-58": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Slowking: selected favourite fulfils primary-attacker."
+        },
+        "sve-5": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays psychic attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+        },
+        "zsv10pt5-84": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pokégear 3.0: provides the declared draw requirement."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "psychic"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 6,
+      "losses": 34,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 15,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 2,
+          "losses": 18,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 10,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28251": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 20,
+      "goingSecondWinRate": 10,
+      "averageTurns": 28.45,
+      "averageMulligans": 1.5,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 85,
+      "averageFirstAttackTurn": 2.925,
+      "averageFirstKnockOutTurn": 16.470588235294116,
+      "energyStarvationPercentage": 49.48186528497409,
+      "deckOutLosses": 15,
+      "averagePrizesTaken": 0.175,
+      "commonLossReasons": {
+        "no-pokemon": 19,
+        "deck-out": 15
+      },
+      "cardUsage": {
+        "ex11-83": 40,
+        "zsv10pt5-84": 26,
+        "me1-131": 28,
+        "sve-5": 40,
+        "sv7-58": 34,
+        "sv1-181": 14,
+        "sv1-189": 18,
+        "sv6pt5-61": 8,
+        "me1-119": 14,
+        "sv6pt5-57": 7,
+        "sv4-163": 13,
+        "me1-114": 5,
+        "me1-130": 12,
+        "sv1-198": 3,
+        "sv2-188": 13,
+        "me2pt5-183": 3
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Seek Inspiration": 387,
+        "Yawn": 96,
+        "Super Psy Bolt": 2,
+        "Tackle": 1
+      },
+      "anchorContribution": {
+        "cardId": "sv7-58",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 34,
+        "enteredPlayRate": 85,
+        "evolvedGames": 34,
+        "evolvedRate": 85,
+        "abilityActivations": 0,
+        "attackUses": 389,
+        "attackUseGames": 33,
+        "knockOuts": 8,
+        "definingEventCount": 400,
+        "contributingGames": 33,
+        "contributionRate": 82.5,
+        "firstReadyTurn": 8.181818181818182,
+        "abilityOrDefiningEventGames": 33,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Seek Inspiration": 387,
+        "attack-used:Super Psy Bolt": 2,
+        "damage-dealt:sv7-58": 2,
+        "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 9
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv7-58",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 34,
+      "enteredPlayRate": 85,
+      "evolvedGames": 34,
+      "evolvedRate": 85,
+      "abilityActivations": 0,
+      "attackUses": 389,
+      "attackUseGames": 33,
+      "knockOuts": 8,
+      "definingEventCount": 400,
+      "contributingGames": 33,
+      "contributionRate": 82.5,
+      "firstReadyTurn": 8.181818181818182,
+      "abilityOrDefiningEventGames": 33,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "finalistDeckId": "architect-anchor-sv7-58-turbo-13013-0",
+  "finalistFingerprint": "ex11-83:4|me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sv7-58:4|sve-5:16|zsv10pt5-84:3",
+  "candidateScreeningRank": 1,
+  "anchorContribution": {
+    "cardId": "sv7-58",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 34,
+    "enteredPlayRate": 85,
+    "evolvedGames": 34,
+    "evolvedRate": 85,
+    "abilityActivations": 0,
+    "attackUses": 389,
+    "attackUseGames": 33,
+    "knockOuts": 8,
+    "definingEventCount": 400,
+    "contributingGames": 33,
+    "contributionRate": 82.5,
+    "firstReadyTurn": 8.181818181818182,
+    "abilityOrDefiningEventGames": 33,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Seek Inspiration": 387,
+    "attack-used:Super Psy Bolt": 2,
+    "damage-dealt:sv7-58": 2,
+    "damage-dealt:Seek Inspiration copied Super Psy Bolt from Slowking": 9
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 20,
+      "wins": 2,
+      "losses": 18,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 10,
+      "deterministicSeed": 13013
+    },
+    "corpus-limitless-28251": {
+      "games": 20,
+      "wins": 4,
+      "losses": 16,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 20,
+      "deterministicSeed": 23013
+    }
+  }
+}

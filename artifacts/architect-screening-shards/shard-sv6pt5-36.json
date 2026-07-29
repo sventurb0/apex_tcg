@@ -1,0 +1,2685 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-29T21:12:50.562Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv6pt5-36",
+  "name": "Okidogi ex",
+  "candidateCount": 5,
+  "games": 200,
+  "expectedGames": 200,
+  "unresolved": 0,
+  "invalidNumeric": 0,
+  "choiceLoops": 0,
+  "noLegalAction": 0,
+  "opponents": [
+    "okidogi-ex-poison",
+    "corpus-limitless-28236"
+  ],
+  "candidates": [
+    {
+      "candidateId": "architect-anchor-sv6pt5-36-control-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-142:1|me2pt5-183:1|sv1-181:3|sv1-189:2|sv1-198:3|sv2-188:2|sv4-163:3|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:3|sv6pt5-61:2|sv8pt5-95:4|sve-7:8|svp-129:1",
+      "profile": "control",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "darkness-poison"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-142": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Flip the Script",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Fezandipiti ex: provides Flip the Script."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6-95": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Adrena-Brain",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori: provides Adrena-Brain."
+          },
+          "sv6pt5-36": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+          },
+          "sv6pt5-37": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Oh No You Don't",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori ex: provides Oh No You Don't."
+          },
+          "sv6pt5-39": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Subjugating Chains",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt ex: provides Subjugating Chains."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv8pt5-95": {
+            "role": "tool-access",
+            "providerToRequirementEdge": "provides the declared tool-access requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Binding Mochi: provides the declared tool-access requirement."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "svp-129": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Toxic Subjugation",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt: provides Toxic Subjugation."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 6,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 39,
+        "enteredPlayRate": 97.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 187,
+        "attackUseGames": 36,
+        "knockOuts": 53,
+        "definingEventCount": 381,
+        "contributingGames": 36,
+        "contributionRate": 90,
+        "firstReadyTurn": 7.583333333333333,
+        "abilityOrDefiningEventGames": 36,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 133,
+        "energy-attached-by-effect:Poisonous Musculature": 66,
+        "special-condition-applied:poisoned by Poisonous Musculature": 66,
+        "attack-used:Chain-Crazed": 54,
+        "damage-dealt:sv6pt5-36": 62
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 5,
+          "losses": 15,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 25,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 12,
+          "losses": 8,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 60,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 17,
+        "losses": 23,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 42.5,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 5,
+            "losses": 15,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 25,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 12,
+            "losses": 8,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 60,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 40,
+        "goingSecondWinRate": 45,
+        "averageTurns": 20,
+        "averageMulligans": 0.35,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 97.5,
+        "averageFirstAttackTurn": 5.025,
+        "averageFirstKnockOutTurn": 8.54054054054054,
+        "energyStarvationPercentage": 50.847457627118644,
+        "deckOutLosses": 4,
+        "averagePrizesTaken": 2.175,
+        "commonLossReasons": {
+          "prizes": 10,
+          "no-pokemon": 9,
+          "deck-out": 4
+        },
+        "cardUsage": {
+          "sv6pt5-39": 18,
+          "me1-131": 30,
+          "sv6pt5-36": 39,
+          "sv8pt5-95": 23,
+          "me1-119": 15,
+          "sv1-181": 25,
+          "sve-7": 39,
+          "sv4-163": 25,
+          "sv6pt5-37": 13,
+          "me1-114": 15,
+          "sv6pt5-57": 15,
+          "me2pt5-142": 15,
+          "sv1-189": 17,
+          "sv6pt5-61": 16,
+          "sv2-188": 21,
+          "sv6-95": 16,
+          "svp-129": 12,
+          "sv1-198": 14,
+          "me1-130": 27,
+          "me2pt5-183": 8,
+          "sv8pt5-36": 14
+        },
+        "abilityUsage": {
+          "Subjugating Chains": 113,
+          "Adrena-Brain": 23,
+          "Flip the Script": 12
+        },
+        "attackUsage": {
+          "Poisonous Musculature": 133,
+          "Chain-Crazed": 54,
+          "Irritated Outburst": 3,
+          "Cruel Arrow": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv6pt5-36",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 39,
+          "enteredPlayRate": 97.5,
+          "evolvedGames": 0,
+          "evolvedRate": 0,
+          "abilityActivations": 0,
+          "attackUses": 187,
+          "attackUseGames": 36,
+          "knockOuts": 53,
+          "definingEventCount": 381,
+          "contributingGames": 36,
+          "contributionRate": 90,
+          "firstReadyTurn": 7.583333333333333,
+          "abilityOrDefiningEventGames": 36,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Poisonous Musculature": 133,
+          "energy-attached-by-effect:Poisonous Musculature": 66,
+          "special-condition-applied:poisoned by Poisonous Musculature": 66,
+          "attack-used:Chain-Crazed": 54,
+          "damage-dealt:sv6pt5-36": 62
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 372.6128813559322
+    },
+    {
+      "candidateId": "architect-anchor-sv6pt5-36-aggressive-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:2|me1-130:4|me1-131:4|me2pt5-142:1|me2pt5-183:1|me3-81:3|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:2|sv6pt5-61:2|sv8pt5-95:4|sve-7:10|svp-129:1",
+      "profile": "aggressive",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "darkness-poison"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-142": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Flip the Script",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Fezandipiti ex: provides Flip the Script."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me3-81": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Poké Pad: provides the declared basic-setup requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6-95": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Adrena-Brain",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori: provides Adrena-Brain."
+          },
+          "sv6pt5-36": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+          },
+          "sv6pt5-37": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Oh No You Don't",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori ex: provides Oh No You Don't."
+          },
+          "sv6pt5-39": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Subjugating Chains",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt ex: provides Subjugating Chains."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv8pt5-95": {
+            "role": "tool-access",
+            "providerToRequirementEdge": "provides the declared tool-access requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Binding Mochi: provides the declared tool-access requirement."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "svp-129": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Toxic Subjugation",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt: provides Toxic Subjugation."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 6,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 37,
+        "enteredPlayRate": 92.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 176,
+        "attackUseGames": 33,
+        "knockOuts": 53,
+        "definingEventCount": 392,
+        "contributingGames": 33,
+        "contributionRate": 82.5,
+        "firstReadyTurn": 7.878787878787879,
+        "abilityOrDefiningEventGames": 33,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 112,
+        "energy-attached-by-effect:Poisonous Musculature": 75,
+        "special-condition-applied:poisoned by Poisonous Musculature": 75,
+        "attack-used:Chain-Crazed": 64,
+        "damage-dealt:sv6pt5-36": 65,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 5,
+          "losses": 15,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 25,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 13,
+          "losses": 7,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 65,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 18,
+        "losses": 22,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 45,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 5,
+            "losses": 15,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 25,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 13,
+            "losses": 7,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 65,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 45,
+        "goingSecondWinRate": 45,
+        "averageTurns": 19.625,
+        "averageMulligans": 0.475,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 92.5,
+        "averageFirstAttackTurn": 4.275,
+        "averageFirstKnockOutTurn": 6.529411764705882,
+        "energyStarvationPercentage": 44.24552429667519,
+        "deckOutLosses": 2,
+        "averagePrizesTaken": 2.35,
+        "commonLossReasons": {
+          "prizes": 14,
+          "no-pokemon": 6,
+          "deck-out": 2
+        },
+        "cardUsage": {
+          "me2pt5-142": 17,
+          "sv6pt5-39": 26,
+          "svp-129": 21,
+          "sve-7": 40,
+          "me3-81": 21,
+          "me1-114": 16,
+          "sv6-95": 19,
+          "me2pt5-183": 5,
+          "sv1-181": 25,
+          "me1-131": 33,
+          "sv6pt5-36": 38,
+          "sv1-189": 26,
+          "sv6pt5-61": 10,
+          "sv2-188": 11,
+          "sv4-163": 21,
+          "me1-130": 25,
+          "sv8pt5-95": 21,
+          "sv6pt5-57": 13,
+          "me1-119": 13,
+          "sv1-198": 11,
+          "sv6pt5-37": 10,
+          "sv8pt5-36": 13,
+          "sv8pt5-35": 1
+        },
+        "abilityUsage": {
+          "Subjugating Chains": 115,
+          "Adrena-Brain": 30,
+          "Flip the Script": 13
+        },
+        "attackUsage": {
+          "Poisonous Musculature": 112,
+          "Chain-Crazed": 64,
+          "Irritated Outburst": 26,
+          "Poison Chain": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv6pt5-36",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 37,
+          "enteredPlayRate": 92.5,
+          "evolvedGames": 0,
+          "evolvedRate": 0,
+          "abilityActivations": 0,
+          "attackUses": 176,
+          "attackUseGames": 33,
+          "knockOuts": 53,
+          "definingEventCount": 392,
+          "contributingGames": 33,
+          "contributionRate": 82.5,
+          "firstReadyTurn": 7.878787878787879,
+          "abilityOrDefiningEventGames": 33,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Poisonous Musculature": 112,
+          "energy-attached-by-effect:Poisonous Musculature": 75,
+          "special-condition-applied:poisoned by Poisonous Musculature": 75,
+          "attack-used:Chain-Crazed": 64,
+          "damage-dealt:sv6pt5-36": 65,
+          "damage-dealt:Confusion self-damage": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 346.4281713554987
+    },
+    {
+      "candidateId": "architect-anchor-sv6pt5-36-resilient-13013-0",
+      "fingerprint": "me1-114:2|me1-119:4|me1-125:3|me1-130:4|me1-131:4|me2pt5-142:1|me2pt5-183:2|sv1-181:3|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:3|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:2|sv6pt5-61:3|sv8pt5-95:4|sve-7:9|svp-129:1",
+      "profile": "resilient",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "darkness-poison"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-142": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Flip the Script",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Fezandipiti ex: provides Flip the Script."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6-95": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Adrena-Brain",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori: provides Adrena-Brain."
+          },
+          "sv6pt5-36": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+          },
+          "sv6pt5-37": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Oh No You Don't",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori ex: provides Oh No You Don't."
+          },
+          "sv6pt5-39": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Subjugating Chains",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt ex: provides Subjugating Chains."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv8pt5-95": {
+            "role": "tool-access",
+            "providerToRequirementEdge": "provides the declared tool-access requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Binding Mochi: provides the declared tool-access requirement."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "svp-129": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Toxic Subjugation",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt: provides Toxic Subjugation."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 6,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 37,
+        "enteredPlayRate": 92.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 196,
+        "attackUseGames": 35,
+        "knockOuts": 53,
+        "definingEventCount": 404,
+        "contributingGames": 35,
+        "contributionRate": 87.5,
+        "firstReadyTurn": 6.0285714285714285,
+        "abilityOrDefiningEventGames": 35,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 137,
+        "damage-dealt:sv6pt5-36": 72,
+        "energy-attached-by-effect:Poisonous Musculature": 68,
+        "special-condition-applied:poisoned by Poisonous Musculature": 68,
+        "attack-used:Chain-Crazed": 59
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 17,
+          "losses": 3,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 85,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 21,
+        "losses": 19,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 52.5,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 4,
+            "losses": 16,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 20,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 17,
+            "losses": 3,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 85,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 50,
+        "goingSecondWinRate": 55.00000000000001,
+        "averageTurns": 20.85,
+        "averageMulligans": 0.475,
+        "setupFailurePercentage": 2.5,
+        "mainAttackerReadinessPercentage": 92.5,
+        "averageFirstAttackTurn": 3.8974358974358974,
+        "averageFirstKnockOutTurn": 8.485714285714286,
+        "energyStarvationPercentage": 49.18032786885246,
+        "deckOutLosses": 2,
+        "averagePrizesTaken": 2.4,
+        "commonLossReasons": {
+          "prizes": 11,
+          "no-pokemon": 6,
+          "deck-out": 2
+        },
+        "cardUsage": {
+          "me2pt5-142": 20,
+          "sv6pt5-39": 28,
+          "svp-129": 15,
+          "sve-7": 40,
+          "sv1-181": 29,
+          "me1-119": 22,
+          "me1-131": 34,
+          "sv8pt5-95": 24,
+          "sv6pt5-61": 15,
+          "sv6pt5-36": 38,
+          "me1-114": 12,
+          "me1-130": 26,
+          "sv2-188": 22,
+          "sv4-163": 27,
+          "sv6-95": 21,
+          "sv1-189": 24,
+          "sv6pt5-37": 14,
+          "sv1-198": 14,
+          "sv6pt5-57": 13,
+          "me2pt5-183": 10,
+          "sv8pt5-36": 13,
+          "sv6-130": 1
+        },
+        "abilityUsage": {
+          "Subjugating Chains": 146,
+          "Adrena-Brain": 22,
+          "Flip the Script": 20
+        },
+        "attackUsage": {
+          "Poisonous Musculature": 137,
+          "Chain-Crazed": 59,
+          "Irritated Outburst": 24,
+          "Cruel Arrow": 1,
+          "Poison Chain": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv6pt5-36",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 37,
+          "enteredPlayRate": 92.5,
+          "evolvedGames": 0,
+          "evolvedRate": 0,
+          "abilityActivations": 0,
+          "attackUses": 196,
+          "attackUseGames": 35,
+          "knockOuts": 53,
+          "definingEventCount": 404,
+          "contributingGames": 35,
+          "contributionRate": 87.5,
+          "firstReadyTurn": 6.0285714285714285,
+          "abilityOrDefiningEventGames": 35,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Poisonous Musculature": 137,
+          "damage-dealt:sv6pt5-36": 72,
+          "energy-attached-by-effect:Poisonous Musculature": 68,
+          "special-condition-applied:poisoned by Poisonous Musculature": 68,
+          "attack-used:Chain-Crazed": 59
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 360.56295081967215
+    },
+    {
+      "candidateId": "architect-anchor-sv6pt5-36-balanced-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:2|me1-130:4|me1-131:4|me2pt5-142:1|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv4pt5-80:3|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:2|sv6pt5-61:2|sv8pt5-95:4|sve-7:10|svp-129:1",
+      "profile": "balanced",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "darkness-poison"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-142": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Flip the Script",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Fezandipiti ex: provides Flip the Script."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv4pt5-80": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Iono: provides the declared draw requirement."
+          },
+          "sv6-95": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Adrena-Brain",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori: provides Adrena-Brain."
+          },
+          "sv6pt5-36": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+          },
+          "sv6pt5-37": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Oh No You Don't",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori ex: provides Oh No You Don't."
+          },
+          "sv6pt5-39": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Subjugating Chains",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt ex: provides Subjugating Chains."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv8pt5-95": {
+            "role": "tool-access",
+            "providerToRequirementEdge": "provides the declared tool-access requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Binding Mochi: provides the declared tool-access requirement."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "svp-129": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Toxic Subjugation",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt: provides Toxic Subjugation."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 6,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 37,
+        "enteredPlayRate": 92.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 168,
+        "attackUseGames": 35,
+        "knockOuts": 46,
+        "definingEventCount": 355,
+        "contributingGames": 35,
+        "contributionRate": 87.5,
+        "firstReadyTurn": 8.4,
+        "abilityOrDefiningEventGames": 35,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 118,
+        "energy-attached-by-effect:Poisonous Musculature": 64,
+        "special-condition-applied:poisoned by Poisonous Musculature": 64,
+        "attack-used:Chain-Crazed": 50,
+        "damage-dealt:sv6pt5-36": 59
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 2,
+          "losses": 18,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 10,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 16,
+          "losses": 4,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 80,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 18,
+        "losses": 22,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 45,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 2,
+            "losses": 18,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 10,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 16,
+            "losses": 4,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 80,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 50,
+        "goingSecondWinRate": 40,
+        "averageTurns": 19.325,
+        "averageMulligans": 0.475,
+        "setupFailurePercentage": 5,
+        "mainAttackerReadinessPercentage": 92.5,
+        "averageFirstAttackTurn": 4.157894736842105,
+        "averageFirstKnockOutTurn": 8.897435897435898,
+        "energyStarvationPercentage": 37.15846994535519,
+        "deckOutLosses": 3,
+        "averagePrizesTaken": 2.225,
+        "commonLossReasons": {
+          "prizes": 12,
+          "no-pokemon": 7,
+          "deck-out": 3
+        },
+        "cardUsage": {
+          "me2pt5-142": 19,
+          "sv6pt5-39": 22,
+          "svp-129": 13,
+          "sve-7": 40,
+          "sv1-181": 21,
+          "me1-114": 16,
+          "sv6pt5-36": 39,
+          "sv2-188": 18,
+          "sv6pt5-61": 12,
+          "me2pt5-183": 6,
+          "sv4pt5-80": 23,
+          "me1-131": 32,
+          "sv1-189": 16,
+          "sv6-95": 19,
+          "me1-130": 23,
+          "sv4-163": 18,
+          "me1-119": 17,
+          "sv8pt5-95": 26,
+          "sv1-198": 11,
+          "sv6pt5-37": 13,
+          "sv6pt5-57": 10,
+          "sv8pt5-36": 14,
+          "me2pt5-16": 1
+        },
+        "abilityUsage": {
+          "Subjugating Chains": 107,
+          "Adrena-Brain": 44,
+          "Flip the Script": 15
+        },
+        "attackUsage": {
+          "Poisonous Musculature": 118,
+          "Chain-Crazed": 50,
+          "Irritated Outburst": 25,
+          "Cruel Arrow": 4,
+          "Poison Chain": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv6pt5-36",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 37,
+          "enteredPlayRate": 92.5,
+          "evolvedGames": 0,
+          "evolvedRate": 0,
+          "abilityActivations": 0,
+          "attackUses": 168,
+          "attackUseGames": 35,
+          "knockOuts": 46,
+          "definingEventCount": 355,
+          "contributingGames": 35,
+          "contributionRate": 87.5,
+          "firstReadyTurn": 8.4,
+          "abilityOrDefiningEventGames": 35,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Poisonous Musculature": 118,
+          "energy-attached-by-effect:Poisonous Musculature": 64,
+          "special-condition-applied:poisoned by Poisonous Musculature": 64,
+          "attack-used:Chain-Crazed": 50,
+          "damage-dealt:sv6pt5-36": 59
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 359.8312295081967
+    },
+    {
+      "candidateId": "architect-anchor-sv6pt5-36-turbo-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:2|me1-130:3|me1-131:4|me2pt5-142:1|me2pt5-183:1|sv1-181:2|sv1-189:1|sv1-198:2|sv2-188:1|sv4-163:2|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:1|sv6pt5-61:1|sv8pt5-95:4|sve-7:16|svp-129:1|zsv10pt5-84:2",
+      "profile": "turbo",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "darkness-poison"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-142": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Flip the Script",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Fezandipiti ex: provides Flip the Script."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6-95": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Adrena-Brain",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori: provides Adrena-Brain."
+          },
+          "sv6pt5-36": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+          },
+          "sv6pt5-37": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Oh No You Don't",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Munkidori ex: provides Oh No You Don't."
+          },
+          "sv6pt5-39": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Subjugating Chains",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt ex: provides Subjugating Chains."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sv8pt5-95": {
+            "role": "tool-access",
+            "providerToRequirementEdge": "provides the declared tool-access requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Binding Mochi: provides the declared tool-access requirement."
+          },
+          "sve-7": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays darkness attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+          },
+          "svp-129": {
+            "role": "matchup-tech",
+            "providerToRequirementEdge": "provides Toxic Subjugation",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pecharunt: provides Toxic Subjugation."
+          },
+          "zsv10pt5-84": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pokégear 3.0: provides the declared draw requirement."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 6,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "darkness",
+          "psychic"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 39,
+        "enteredPlayRate": 97.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 174,
+        "attackUseGames": 36,
+        "knockOuts": 55,
+        "definingEventCount": 424,
+        "contributingGames": 36,
+        "contributionRate": 90,
+        "firstReadyTurn": 6.777777777777778,
+        "abilityOrDefiningEventGames": 36,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 113,
+        "energy-attached-by-effect:Poisonous Musculature": 93,
+        "special-condition-applied:poisoned by Poisonous Musculature": 93,
+        "attack-used:Chain-Crazed": 61,
+        "damage-dealt:sv6pt5-36": 63,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 15,
+          "losses": 5,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 75,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 19,
+        "losses": 21,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 47.5,
+        "byOpponent": {
+          "okidogi-ex-poison": {
+            "games": 20,
+            "wins": 4,
+            "losses": 16,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 20,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28236": {
+            "games": 20,
+            "wins": 15,
+            "losses": 5,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 75,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 50,
+        "goingSecondWinRate": 45,
+        "averageTurns": 17,
+        "averageMulligans": 0.35,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 97.5,
+        "averageFirstAttackTurn": 3.925,
+        "averageFirstKnockOutTurn": 6.264705882352941,
+        "energyStarvationPercentage": 35.60371517027864,
+        "deckOutLosses": 3,
+        "averagePrizesTaken": 2.45,
+        "commonLossReasons": {
+          "prizes": 12,
+          "no-pokemon": 6,
+          "deck-out": 3
+        },
+        "cardUsage": {
+          "me2pt5-142": 18,
+          "svp-129": 14,
+          "me1-131": 31,
+          "sve-7": 40,
+          "sv6pt5-36": 40,
+          "sv6pt5-39": 27,
+          "sv4-163": 14,
+          "me1-130": 19,
+          "zsv10pt5-84": 18,
+          "me1-119": 19,
+          "sv1-181": 21,
+          "sv8pt5-95": 27,
+          "sv2-188": 14,
+          "sv6-95": 20,
+          "sv6pt5-61": 7,
+          "sv6pt5-57": 8,
+          "sv6pt5-37": 14,
+          "sv1-189": 19,
+          "me1-114": 11,
+          "sv1-198": 9,
+          "me2pt5-183": 6,
+          "sv8pt5-4": 1,
+          "sv8pt5-36": 14,
+          "sv6-129": 1
+        },
+        "abilityUsage": {
+          "Subjugating Chains": 95,
+          "Adrena-Brain": 56,
+          "Flip the Script": 14
+        },
+        "attackUsage": {
+          "Poisonous Musculature": 113,
+          "Chain-Crazed": 61,
+          "Cruel Arrow": 6,
+          "Poison Chain": 6,
+          "Irritated Outburst": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv6pt5-36",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 39,
+          "enteredPlayRate": 97.5,
+          "evolvedGames": 0,
+          "evolvedRate": 0,
+          "abilityActivations": 0,
+          "attackUses": 174,
+          "attackUseGames": 36,
+          "knockOuts": 55,
+          "definingEventCount": 424,
+          "contributingGames": 36,
+          "contributionRate": 90,
+          "firstReadyTurn": 6.777777777777778,
+          "abilityOrDefiningEventGames": 36,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Poisonous Musculature": 113,
+          "energy-attached-by-effect:Poisonous Musculature": 93,
+          "special-condition-applied:poisoned by Poisonous Musculature": 93,
+          "attack-used:Chain-Crazed": 61,
+          "damage-dealt:sv6pt5-36": 63,
+          "damage-dealt:Confusion self-damage": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 374.8294427244582
+    }
+  ],
+  "finalistCandidate": {
+    "id": "architect-anchor-sv6pt5-36-turbo-13013-0",
+    "seed": 13013,
+    "variant": "turbo semantic",
+    "requiredCardIds": [
+      "sv6pt5-36"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv6pt5-36-turbo-13013-0",
+      "name": "Okidogi ex — turbo semantic build 1",
+      "description": "Original executable construction using Darkness Poison; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 2
+        },
+        {
+          "cardId": "me1-130",
+          "count": 3
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-142",
+          "count": 1
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 1
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6-95",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-36",
+          "count": 4
+        },
+        {
+          "cardId": "sv6pt5-37",
+          "count": 1
+        },
+        {
+          "cardId": "sv6pt5-39",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 1
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 1
+        },
+        {
+          "cardId": "sv8pt5-95",
+          "count": 4
+        },
+        {
+          "cardId": "sve-7",
+          "count": 16
+        },
+        {
+          "cardId": "svp-129",
+          "count": 1
+        },
+        {
+          "cardId": "zsv10pt5-84",
+          "count": 2
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 10,
+      "search": 11,
+      "draw": 7,
+      "energy": 0,
+      "attackReadiness": 6.5,
+      "benchSpace": 5,
+      "prizeLiability": 1.1999999999999993,
+      "synergy": 16,
+      "recovery": 4,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 27,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 7.15,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 6.5,
+      "secondaryEnergyCoverage": 4.5,
+      "conflictPenalty": 0,
+      "engineCohesion": 7.95,
+      "total": 110.9
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Darkness Poison.",
+      "Required packages were assembled before slot filling: darkness-poison-core.",
+      "Profile turbo changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Darkness Poison.",
+      "Protects high attack costs and discard acceleration from starvation.",
+      "Poisonous Musculature: 1 units, expected payment in 1 turn(s).",
+      "Chain-Crazed: 3 units, expected payment in 2 turn(s).",
+      "Subjugating Chains switches Okidogi ex Active and Poisons it for Chain-Crazed.",
+      "Darkness Poison: Poisonous Musculature attaches up to two basic Darkness Energy to Okidogi ex. This satisfies Adrena-Brain requires Darkness Energy attached to Munkidori.",
+      "Darkness Poison: The switched-in Darkness Pokémon becomes Poisoned. This satisfies Chain-Crazed doubles its base damage only while Okidogi ex is Poisoned.",
+      "Darkness Poison: The switched-in Darkness Pokémon becomes Poisoned. This satisfies Binding Mochi requires its attached attacker to be Poisoned.",
+      "Coherence: 22 cards assigned explicit provider-to-requirement roles; engines darkness-poison."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "sv6pt5-39",
+        "toCardId": "sv6pt5-36",
+        "score": 10,
+        "reasons": [
+          "Subjugating Chains switches Okidogi ex Active and Poisons it for Chain-Crazed."
+        ],
+        "confidence": "reviewed"
+      },
+      {
+        "fromCardId": "sv6pt5-36",
+        "toCardId": "sv6-95",
+        "score": 9,
+        "reasons": [
+          "Darkness Poison: Poisonous Musculature attaches up to two basic Darkness Energy to Okidogi ex. This satisfies Adrena-Brain requires Darkness Energy attached to Munkidori."
+        ],
+        "confidence": "reviewed"
+      },
+      {
+        "fromCardId": "sv6pt5-39",
+        "toCardId": "sv6pt5-36",
+        "score": 9,
+        "reasons": [
+          "Darkness Poison: The switched-in Darkness Pokémon becomes Poisoned. This satisfies Chain-Crazed doubles its base damage only while Okidogi ex is Poisoned."
+        ],
+        "confidence": "reviewed"
+      },
+      {
+        "fromCardId": "sv6pt5-39",
+        "toCardId": "sv8pt5-95",
+        "score": 9,
+        "reasons": [
+          "Darkness Poison: The switched-in Darkness Pokémon becomes Poisoned. This satisfies Binding Mochi requires its attached attacker to be Poisoned."
+        ],
+        "confidence": "reviewed"
+      },
+      {
+        "fromCardId": "sv8pt5-95",
+        "toCardId": "sv6pt5-36",
+        "score": 9,
+        "reasons": [
+          "Darkness Poison: Binding Mochi adds 40 attack damage only for its Poisoned holder. This satisfies Chain-Crazed doubles its base damage only while Okidogi ex is Poisoned."
+        ],
+        "confidence": "reviewed"
+      },
+      {
+        "fromCardId": "sv8pt5-95",
+        "toCardId": "sv6pt5-36",
+        "score": 9,
+        "reasons": [
+          "Binding Mochi adds attack damage while Okidogi ex is Poisoned."
+        ],
+        "confidence": "reviewed"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Darkness Poison. Protects high attack costs and discard acceleration from starvation. Poisonous Musculature: 1 units, expected payment in 1 turn(s). Chain-Crazed: 3 units, expected payment in 2 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:2|me1-130:3|me1-131:4|me2pt5-142:1|me2pt5-183:1|sv1-181:2|sv1-189:1|sv1-198:2|sv2-188:1|sv4-163:2|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:1|sv6pt5-61:1|sv8pt5-95:4|sve-7:16|svp-129:1|zsv10pt5-84:2",
+    "route": "original",
+    "selectedRoles": {
+      "sv6pt5-36": "primary-attacker"
+    },
+    "packageIds": [
+      "darkness-poison-core"
+    ],
+    "profile": "turbo",
+    "strategyPlanId": "original:darkness-poison",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 1
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "sv8pt5-95",
+          "count": 2
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 8,
+        "evolution-search": 0,
+        "draw": 9,
+        "switching": 2,
+        "gust": 2,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 2,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [
+          "sv8pt5-95"
+        ],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Darkness Poison.",
+        "turbo prioritizes search and draw.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-7",
+          "count": 16
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 1,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [
+        "Poisonous Musculature attaches up to two basic Darkness Energy to Okidogi ex.",
+        "Poisonous Musculature attaches up to two basic Darkness Energy to Okidogi ex."
+      ],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type high-cost (12-16 cards) for Darkness Poison.",
+        "Protects high attack costs and discard acceleration from starvation.",
+        "Poisonous Musculature: 1 units, expected payment in 1 turn(s).",
+        "Chain-Crazed: 3 units, expected payment in 2 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "darkness-poison"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-142": {
+          "role": "matchup-tech",
+          "providerToRequirementEdge": "provides Flip the Script",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Fezandipiti ex: provides Flip the Script."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6-95": {
+          "role": "matchup-tech",
+          "providerToRequirementEdge": "provides Adrena-Brain",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Munkidori: provides Adrena-Brain."
+        },
+        "sv6pt5-36": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Okidogi ex: selected favourite fulfils primary-attacker."
+        },
+        "sv6pt5-37": {
+          "role": "matchup-tech",
+          "providerToRequirementEdge": "provides Oh No You Don't",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Munkidori ex: provides Oh No You Don't."
+        },
+        "sv6pt5-39": {
+          "role": "matchup-tech",
+          "providerToRequirementEdge": "provides Subjugating Chains",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pecharunt ex: provides Subjugating Chains."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv8pt5-95": {
+          "role": "tool-access",
+          "providerToRequirementEdge": "provides the declared tool-access requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Binding Mochi: provides the declared tool-access requirement."
+        },
+        "sve-7": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays darkness attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Darkness Energy: pays darkness attack requirements."
+        },
+        "svp-129": {
+          "role": "matchup-tech",
+          "providerToRequirementEdge": "provides Toxic Subjugation",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pecharunt: provides Toxic Subjugation."
+        },
+        "zsv10pt5-84": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Pokégear 3.0: provides the declared draw requirement."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 6,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "darkness",
+        "psychic"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 19,
+      "losses": 21,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 47.5,
+      "byOpponent": {
+        "okidogi-ex-poison": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28236": {
+          "games": 20,
+          "wins": 15,
+          "losses": 5,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 75,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 50,
+      "goingSecondWinRate": 45,
+      "averageTurns": 17,
+      "averageMulligans": 0.35,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 97.5,
+      "averageFirstAttackTurn": 3.925,
+      "averageFirstKnockOutTurn": 6.264705882352941,
+      "energyStarvationPercentage": 35.60371517027864,
+      "deckOutLosses": 3,
+      "averagePrizesTaken": 2.45,
+      "commonLossReasons": {
+        "prizes": 12,
+        "no-pokemon": 6,
+        "deck-out": 3
+      },
+      "cardUsage": {
+        "me2pt5-142": 18,
+        "svp-129": 14,
+        "me1-131": 31,
+        "sve-7": 40,
+        "sv6pt5-36": 40,
+        "sv6pt5-39": 27,
+        "sv4-163": 14,
+        "me1-130": 19,
+        "zsv10pt5-84": 18,
+        "me1-119": 19,
+        "sv1-181": 21,
+        "sv8pt5-95": 27,
+        "sv2-188": 14,
+        "sv6-95": 20,
+        "sv6pt5-61": 7,
+        "sv6pt5-57": 8,
+        "sv6pt5-37": 14,
+        "sv1-189": 19,
+        "me1-114": 11,
+        "sv1-198": 9,
+        "me2pt5-183": 6,
+        "sv8pt5-4": 1,
+        "sv8pt5-36": 14,
+        "sv6-129": 1
+      },
+      "abilityUsage": {
+        "Subjugating Chains": 95,
+        "Adrena-Brain": 56,
+        "Flip the Script": 14
+      },
+      "attackUsage": {
+        "Poisonous Musculature": 113,
+        "Chain-Crazed": 61,
+        "Cruel Arrow": 6,
+        "Poison Chain": 6,
+        "Irritated Outburst": 2
+      },
+      "anchorContribution": {
+        "cardId": "sv6pt5-36",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 39,
+        "enteredPlayRate": 97.5,
+        "evolvedGames": 0,
+        "evolvedRate": 0,
+        "abilityActivations": 0,
+        "attackUses": 174,
+        "attackUseGames": 36,
+        "knockOuts": 55,
+        "definingEventCount": 424,
+        "contributingGames": 36,
+        "contributionRate": 90,
+        "firstReadyTurn": 6.777777777777778,
+        "abilityOrDefiningEventGames": 36,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Poisonous Musculature": 113,
+        "energy-attached-by-effect:Poisonous Musculature": 93,
+        "special-condition-applied:poisoned by Poisonous Musculature": 93,
+        "attack-used:Chain-Crazed": 61,
+        "damage-dealt:sv6pt5-36": 63,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv6pt5-36",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 39,
+      "enteredPlayRate": 97.5,
+      "evolvedGames": 0,
+      "evolvedRate": 0,
+      "abilityActivations": 0,
+      "attackUses": 174,
+      "attackUseGames": 36,
+      "knockOuts": 55,
+      "definingEventCount": 424,
+      "contributingGames": 36,
+      "contributionRate": 90,
+      "firstReadyTurn": 6.777777777777778,
+      "abilityOrDefiningEventGames": 36,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "finalistDeckId": "architect-anchor-sv6pt5-36-turbo-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:2|me1-130:3|me1-131:4|me2pt5-142:1|me2pt5-183:1|sv1-181:2|sv1-189:1|sv1-198:2|sv2-188:1|sv4-163:2|sv6-95:2|sv6pt5-36:4|sv6pt5-37:1|sv6pt5-39:2|sv6pt5-57:1|sv6pt5-61:1|sv8pt5-95:4|sve-7:16|svp-129:1|zsv10pt5-84:2",
+  "candidateScreeningRank": 1,
+  "anchorContribution": {
+    "cardId": "sv6pt5-36",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 39,
+    "enteredPlayRate": 97.5,
+    "evolvedGames": 0,
+    "evolvedRate": 0,
+    "abilityActivations": 0,
+    "attackUses": 174,
+    "attackUseGames": 36,
+    "knockOuts": 55,
+    "definingEventCount": 424,
+    "contributingGames": 36,
+    "contributionRate": 90,
+    "firstReadyTurn": 6.777777777777778,
+    "abilityOrDefiningEventGames": 36,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Poisonous Musculature": 113,
+    "energy-attached-by-effect:Poisonous Musculature": 93,
+    "special-condition-applied:poisoned by Poisonous Musculature": 93,
+    "attack-used:Chain-Crazed": 61,
+    "damage-dealt:sv6pt5-36": 63,
+    "damage-dealt:Confusion self-damage": 1
+  },
+  "byOpponent": {
+    "okidogi-ex-poison": {
+      "games": 20,
+      "wins": 4,
+      "losses": 16,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 20,
+      "deterministicSeed": 13013
+    },
+    "corpus-limitless-28236": {
+      "games": 20,
+      "wins": 15,
+      "losses": 5,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 75,
+      "deterministicSeed": 23013
+    }
+  }
+}

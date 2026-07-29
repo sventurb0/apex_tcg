@@ -1,111 +1,782 @@
 {
-  "cardId": "sv10-92",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:37:51.692Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv10-92",
   "name": "Annihilape",
-  "candidateId": "architect-original-13013-5",
+  "finalistDeckId": "architect-anchor-sv10-92-aggressive-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:2|sv1-189:2|sv1-198:2|sv10-92:4|sv2-188:2|sv4-163:3|sv4pt5-46:4|sv6pt5-57:2|sv6pt5-61:2|sve-6:10|swsh8-133:4",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-sv10-92-aggressive-13013-0",
+    "seed": 13013,
+    "variant": "aggressive semantic",
+    "requiredCardIds": [
+      "sv10-92"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv10-92-aggressive-13013-0",
+      "name": "Annihilape — aggressive semantic build 1",
+      "description": "Original executable construction using exact anchor capability plan; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "me3-81",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv10-92",
+          "count": 4
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 3
+        },
+        {
+          "cardId": "sv4pt5-46",
+          "count": 4
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sve-6",
+          "count": 10
+        },
+        {
+          "cardId": "swsh8-133",
+          "count": 4
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 4.4,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 4,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.4,
+      "total": 114.9
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected role-compatible providers.",
+      "Required packages were assembled before slot filling: role-budget providers.",
+      "Profile aggressive changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types.",
+      "For one- and two-Energy attackers with low retreat demand.",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 18 cards assigned explicit provider-to-requirement roles; engines anchor-capability:sv10-92."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "sv4pt5-46",
+        "toCardId": "sv10-92",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "swsh8-133",
+        "toCardId": "sv4pt5-46",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types. For one- and two-Energy attackers with low retreat demand.",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:2|sv1-189:2|sv1-198:2|sv10-92:4|sv2-188:2|sv4-163:3|sv4pt5-46:4|sv6pt5-57:2|sv6pt5-61:2|sve-6:10|swsh8-133:4",
+    "route": "original",
+    "selectedRoles": {
+      "sv10-92": "primary-attacker"
+    },
+    "packageIds": [],
+    "profile": "aggressive",
+    "strategyPlanId": "original:roles",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 2,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for the selected favourites.",
+        "aggressive prioritizes gust and damage conversion.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-6",
+          "count": 10
+        }
+      ],
+      "mainAttackCoverage": 0,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 0,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types.",
+        "For one- and two-Energy attackers with low retreat demand."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "anchor-capability:sv10-92"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me3-81": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Poké Pad: provides the declared basic-setup requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv10-92": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Annihilape: selected favourite fulfils primary-attacker."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv4pt5-46": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Annihilape line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Primeape: evolves into the selected Annihilape line."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sve-6": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays fighting attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Fighting Energy: pays fighting attack requirements."
+        },
+        "swsh8-133": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Annihilape line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Mankey: evolves into the selected Annihilape line."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "fighting"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 11,
+      "losses": 29,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 27.500000000000004,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-27961": {
+          "games": 20,
+          "wins": 8,
+          "losses": 12,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 40,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 35,
+      "goingSecondWinRate": 20,
+      "averageTurns": 16.675,
+      "averageMulligans": 1.55,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 37.5,
+      "averageFirstAttackTurn": 2.3,
+      "averageFirstKnockOutTurn": 10.181818181818182,
+      "energyStarvationPercentage": 32.515337423312886,
+      "deckOutLosses": 2,
+      "averagePrizesTaken": 0.675,
+      "commonLossReasons": {
+        "no-pokemon": 27,
+        "deck-out": 2
+      },
+      "cardUsage": {
+        "swsh8-133": 40,
+        "me1-131": 23,
+        "sve-6": 40,
+        "sv6pt5-61": 9,
+        "sv1-181": 19,
+        "sv1-189": 12,
+        "me1-125": 11,
+        "sv10-92": 15,
+        "sv6pt5-57": 4,
+        "me1-119": 10,
+        "sv4-163": 26,
+        "sv2-188": 12,
+        "me1-114": 7,
+        "me1-130": 15,
+        "sv4pt5-46": 12,
+        "me3-81": 10,
+        "sv1-198": 7,
+        "me2pt5-183": 3
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Scratch": 214,
+        "Impact Blow": 21,
+        "Raging Punch": 14
+      },
+      "anchorContribution": {
+        "cardId": "sv10-92",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 15,
+        "enteredPlayRate": 37.5,
+        "evolvedGames": 15,
+        "evolvedRate": 37.5,
+        "abilityActivations": 0,
+        "attackUses": 21,
+        "attackUseGames": 11,
+        "knockOuts": 18,
+        "definingEventCount": 42,
+        "contributingGames": 11,
+        "contributionRate": 27.500000000000004,
+        "firstReadyTurn": 15.727272727272727,
+        "abilityOrDefiningEventGames": 11,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Impact Blow": 21,
+        "damage-dealt:sv10-92": 21
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv10-92",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 15,
+      "enteredPlayRate": 37.5,
+      "evolvedGames": 15,
+      "evolvedRate": 37.5,
+      "abilityActivations": 0,
+      "attackUses": 21,
+      "attackUseGames": 11,
+      "knockOuts": 18,
+      "definingEventCount": 42,
+      "contributingGames": 11,
+      "contributionRate": 27.500000000000004,
+      "firstReadyTurn": 15.727272727272727,
+      "abilityOrDefiningEventGames": 11,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "sv10-92",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 94,
+    "enteredPlayRate": 37.6,
+    "evolvedGames": 94,
+    "evolvedRate": 37.6,
+    "abilityActivations": 0,
+    "attackUses": 136,
+    "attackUseGames": 59,
+    "knockOuts": 120,
+    "definingEventCount": 272,
+    "contributingGames": 59,
+    "contributionRate": 23.599999999999998,
+    "firstReadyTurn": 16.016949152542374,
+    "abilityOrDefiningEventGames": 59,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Impact Blow": 136,
+    "damage-dealt:sv10-92": 136
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 9,
+      "losses": 41,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 18,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 6,
+      "losses": 44,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 12,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 8,
+      "losses": 42,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 16,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-27961": {
+      "games": 50,
+      "wins": 18,
+      "losses": 32,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 36,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-sv10-92-aggressive-13013-0-mirror": {
+      "games": 50,
+      "wins": 26,
+      "losses": 24,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 52,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-27961",
+    "architect-anchor-sv10-92-aggressive-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 47,
-    "losses": 203,
+    "wins": 67,
+    "losses": 183,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 18.8,
+    "winRate": 26.8,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 9,
+        "losses": 41,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 18,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 47,
-        "losses": 203,
-        "winRate": 18.8
+        "games": 50,
+        "wins": 6,
+        "losses": 44,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 12,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 8,
+        "losses": 42,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 16,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-27961": {
+        "games": 50,
+        "wins": 18,
+        "losses": 32,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 36,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-sv10-92-aggressive-13013-0-mirror": {
+        "games": 50,
+        "wins": 26,
+        "losses": 24,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 52,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 16,
-    "goingSecondWinRate": 21.6,
-    "averageTurns": 17.396,
-    "averageMulligans": 0.152,
-    "setupFailurePercentage": 0.4,
-    "mainAttackerReadinessPercentage": 41.199999999999996,
-    "averageFirstAttackTurn": 5.0602409638554215,
-    "averageFirstKnockOutTurn": 8.316017316017316,
-    "energyStarvationPercentage": 38.446054750402574,
-    "deckOutLosses": 3,
-    "averagePrizesTaken": 0.96,
+    "goingFirstWinRate": 30.4,
+    "goingSecondWinRate": 23.200000000000003,
+    "averageTurns": 16.68,
+    "averageMulligans": 1.62,
+    "setupFailurePercentage": 0,
+    "mainAttackerReadinessPercentage": 37.6,
+    "averageFirstAttackTurn": 2.72,
+    "averageFirstKnockOutTurn": 11.684931506849315,
+    "energyStarvationPercentage": 36.37602179836512,
+    "deckOutLosses": 6,
+    "averagePrizesTaken": 0.904,
     "commonLossReasons": {
-      "prizes": 146,
-      "no-pokemon": 54,
-      "deck-out": 3
+      "no-pokemon": 177,
+      "deck-out": 6
     },
     "cardUsage": {
-      "sve-7": 249,
-      "me3-71": 94,
-      "me2pt5-192": 110,
-      "sv8pt5-95": 162,
-      "sv6pt5-39": 205,
-      "me3-81": 122,
-      "sv8pt5-4": 86,
-      "svp-129": 121,
-      "me1-114": 125,
-      "sv6pt5-59": 181,
-      "sv6-95": 188,
-      "me1-131": 193,
-      "sv6pt5-36": 245,
-      "sve-5": 89,
-      "swsh8-133": 185,
-      "sv7-133": 104,
-      "sv6pt5-57": 68,
-      "sv8-177": 142,
-      "me3-76": 74,
-      "sv8-179": 57,
-      "me4-76": 66,
-      "me2pt5-196": 106,
-      "me1-119": 111,
-      "sv4pt5-46": 160,
-      "sv10-180": 90,
-      "me2-87": 63,
-      "sv10-92": 103,
-      "sv6pt5-37": 122,
-      "sv6-131": 80,
-      "zsv10pt5-84": 127,
-      "me1-130": 139,
-      "sv6-155": 114,
-      "me4-82": 90,
-      "me2pt5-16": 86,
-      "me2pt5-183": 74,
-      "sv5-144": 89,
-      "sve-2": 116,
-      "rsv10pt5-84": 103,
-      "me1-115": 85,
-      "me2pt5-142": 129,
-      "sv6-128": 68,
-      "sv6pt5-61": 75,
-      "sv6-129": 37,
-      "sv6-165": 67,
-      "sv5-153": 72,
-      "sv8-170": 69
+      "swsh8-133": 250,
+      "me1-131": 170,
+      "sve-6": 248,
+      "sv6pt5-61": 53,
+      "sv1-181": 115,
+      "sv1-189": 85,
+      "me1-125": 79,
+      "sv10-92": 94,
+      "sv6pt5-57": 39,
+      "me1-119": 70,
+      "sv4-163": 100,
+      "sv2-188": 80,
+      "me1-114": 40,
+      "me1-130": 89,
+      "sv4pt5-46": 88,
+      "me3-81": 86,
+      "sv1-198": 43,
+      "me2pt5-183": 19,
+      "svp-129": 1,
+      "sv10-118": 1,
+      "sv10-119": 7,
+      "sv10-117": 1
     },
-    "abilityUsage": {
-      "Subjugating Chains": 1042,
-      "Adrena-Brain": 586,
-      "Flip the Script": 150,
-      "Recon Directive": 137,
-      "Attract Customers": 120
-    },
+    "abilityUsage": {},
     "attackUsage": {
-      "Chain-Crazed": 904,
-      "Poisonous Musculature": 446,
-      "Itchy Pollen": 265,
-      "Irritated Outburst": 105,
-      "Poison Chain": 60,
-      "Dirty Headbutt": 32,
-      "Cruel Arrow": 14,
-      "Mind Bend": 13,
-      "Petty Grudge": 5
+      "Scratch": 1257,
+      "Impact Blow": 136,
+      "Raging Punch": 90
+    },
+    "anchorContribution": {
+      "cardId": "sv10-92",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 94,
+      "enteredPlayRate": 37.6,
+      "evolvedGames": 94,
+      "evolvedRate": 37.6,
+      "abilityActivations": 0,
+      "attackUses": 136,
+      "attackUseGames": 59,
+      "knockOuts": 120,
+      "definingEventCount": 272,
+      "contributingGames": 59,
+      "contributionRate": 23.599999999999998,
+      "firstReadyTurn": 16.016949152542374,
+      "abilityOrDefiningEventGames": 59,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Impact Blow": 136,
+      "damage-dealt:sv10-92": 136
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

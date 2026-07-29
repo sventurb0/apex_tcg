@@ -32,6 +32,8 @@ const attackPrograms: Readonly<Record<string, Readonly<Record<string, string>>>>
   "pokemon:ns-zoroark-ex": { "Night Joker": "attack:night-joker" },
   "pokemon:ns-zekrom": { "Shred": "attack:shred", "Rampaging Thunder": "attack:ns-zekrom-rampage" },
   "pokemon:yveltal": { "Clutch": "attack:yveltal-clutch" },
+  "pokemon:rookidee": { "Send Back": "attack:bounce-back" }, "pokemon:corvisquire": { "Clutch": "attack:yveltal-clutch" },
+  "pokemon:dragonair": { "Aqua Slash": "attack:aqua-slash" },
   "pokemon:teal-mask-ogerpon-ex": {}, "pokemon:chikorita": { "Growl": "attack:growl" }, "pokemon:bayleef": { "Push Down": "attack:push-down" },
   "pokemon:mega-kangaskhan-ex": { "Rapid-Fire Combo": "attack:rapid-fire-combo" }, "pokemon:latias-ex": { "Eon Blade": "attack:eon-blade" }, "pokemon:chien-pao": { "Icicle Loop": "attack:icicle-loop" }, "pokemon:passimian": {}, "pokemon:raging-bolt-ex": { "Burst Roar": "attack:burst-roar", "Bellowing Thunder": "attack:bellowing-thunder" }, "pokemon:wellspring-mask-ogerpon-ex": { "Sob": "attack:sob", "Torrential Pump": "attack:torrential-pump" },
   "pokemon:meganium": {}, "pokemon:applin": {}, "pokemon:dipplin": {}, "pokemon:hydrapple-ex": {}, "pokemon:celebi": { "Traverse Time": "attack:traverse-time" },

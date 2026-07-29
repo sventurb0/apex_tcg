@@ -1,121 +1,792 @@
 {
-  "cardId": "me1-56",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:32:47.842Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "me1-56",
   "name": "Alakazam",
-  "candidateId": "architect-proven-limitless-28275-13013-0",
+  "finalistDeckId": "architect-anchor-me1-56-aggressive-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:3|me1-131:4|me1-54:4|me1-55:4|me1-56:4|me2pt5-183:1|me3-81:3|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sve-5:10",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-me1-56-aggressive-13013-0",
+    "seed": 13013,
+    "variant": "aggressive semantic",
+    "requiredCardIds": [
+      "me1-56"
+    ],
+    "deck": {
+      "id": "architect-anchor-me1-56-aggressive-13013-0",
+      "name": "Alakazam — aggressive semantic build 1",
+      "description": "Original executable construction using Alakazam Powerful Hand; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 3
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me1-54",
+          "count": 4
+        },
+        {
+          "cardId": "me1-55",
+          "count": 4
+        },
+        {
+          "cardId": "me1-56",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "me3-81",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 4
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sve-5",
+          "count": 10
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 8,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 4.4,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.15,
+      "total": 114.4
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Alakazam Powerful Hand.",
+      "Required packages were assembled before slot filling: alakazam-line, rare-candy-stage-two, telepathic-psychic.",
+      "Profile aggressive changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Alakazam Powerful Hand.",
+      "For one- and two-Energy attackers with low retreat demand.",
+      "Powerful Hand: 1 units, expected payment in 1 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 18 cards assigned explicit provider-to-requirement roles; engines psychic-alakazam-hand."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "me1-54",
+        "toCardId": "me1-55",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "me1-55",
+        "toCardId": "me1-56",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Alakazam Powerful Hand. For one- and two-Energy attackers with low retreat demand. Powerful Hand: 1 units, expected payment in 1 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:3|me1-131:4|me1-54:4|me1-55:4|me1-56:4|me2pt5-183:1|me3-81:3|sv1-181:4|sv1-189:2|sv1-198:2|sv2-188:2|sv4-163:2|sv6pt5-57:2|sv6pt5-61:2|sve-5:10",
+    "route": "original",
+    "selectedRoles": {
+      "me1-56": "primary-attacker"
+    },
+    "packageIds": [
+      "alakazam-line",
+      "rare-candy-stage-two",
+      "telepathic-psychic"
+    ],
+    "profile": "aggressive",
+    "strategyPlanId": "original:psychic-alakazam-hand",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 2,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Alakazam Powerful Hand.",
+        "aggressive prioritizes gust and damage conversion.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-5",
+          "count": 10
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 1,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type low-cost (8-11 cards) for Alakazam Powerful Hand.",
+        "For one- and two-Energy attackers with low retreat demand.",
+        "Powerful Hand: 1 units, expected payment in 1 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "psychic-alakazam-hand"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me1-54": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Alakazam line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Abra: evolves into the selected Alakazam line."
+        },
+        "me1-55": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Alakazam line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Kadabra: evolves into the selected Alakazam line."
+        },
+        "me1-56": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Alakazam: selected favourite fulfils primary-attacker."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me3-81": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Poké Pad: provides the declared basic-setup requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sve-5": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays psychic attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Psychic Energy: pays psychic attack requirements."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "psychic"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 19,
+      "losses": 21,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 47.5,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 7,
+          "losses": 13,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 35,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28405": {
+          "games": 20,
+          "wins": 12,
+          "losses": 8,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 60,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 50,
+      "goingSecondWinRate": 45,
+      "averageTurns": 24.475,
+      "averageMulligans": 1.35,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 55.00000000000001,
+      "averageFirstAttackTurn": 2.825,
+      "averageFirstKnockOutTurn": 15.214285714285714,
+      "energyStarvationPercentage": 50.609756097560975,
+      "deckOutLosses": 0,
+      "averagePrizesTaken": 2.375,
+      "commonLossReasons": {
+        "no-pokemon": 21
+      },
+      "cardUsage": {
+        "me1-54": 40,
+        "sv4-163": 10,
+        "sve-5": 39,
+        "sv1-181": 20,
+        "me1-55": 13,
+        "sv1-198": 7,
+        "me1-131": 26,
+        "me1-56": 22,
+        "sv1-189": 12,
+        "me3-81": 14,
+        "me1-125": 18,
+        "sv6pt5-61": 6,
+        "me1-130": 12,
+        "me1-119": 6,
+        "me1-114": 10,
+        "me2pt5-183": 5,
+        "sv2-188": 8,
+        "sv6pt5-57": 5,
+        "swsh9-144": 1
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Teleportation Attack": 265,
+        "Powerful Hand": 107,
+        "Super Psy Bolt": 33
+      },
+      "anchorContribution": {
+        "cardId": "me1-56",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 22,
+        "enteredPlayRate": 55.00000000000001,
+        "evolvedGames": 22,
+        "evolvedRate": 55.00000000000001,
+        "abilityActivations": 0,
+        "attackUses": 107,
+        "attackUseGames": 20,
+        "knockOuts": 69,
+        "definingEventCount": 214,
+        "contributingGames": 20,
+        "contributionRate": 50,
+        "firstReadyTurn": 13.7,
+        "abilityOrDefiningEventGames": 20,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Powerful Hand": 107,
+        "damage-dealt:Powerful Hand damage counters": 106,
+        "damage-dealt:Confusion self-damage": 1
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "me1-56",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 22,
+      "enteredPlayRate": 55.00000000000001,
+      "evolvedGames": 22,
+      "evolvedRate": 55.00000000000001,
+      "abilityActivations": 0,
+      "attackUses": 107,
+      "attackUseGames": 20,
+      "knockOuts": 69,
+      "definingEventCount": 214,
+      "contributingGames": 20,
+      "contributionRate": 50,
+      "firstReadyTurn": 13.7,
+      "abilityOrDefiningEventGames": 20,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "me1-56",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 118,
+    "enteredPlayRate": 47.199999999999996,
+    "evolvedGames": 118,
+    "evolvedRate": 47.199999999999996,
+    "abilityActivations": 0,
+    "attackUses": 445,
+    "attackUseGames": 103,
+    "knockOuts": 273,
+    "definingEventCount": 890,
+    "contributingGames": 103,
+    "contributionRate": 41.199999999999996,
+    "firstReadyTurn": 11.048543689320388,
+    "abilityOrDefiningEventGames": 103,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Powerful Hand": 445,
+    "damage-dealt:Powerful Hand damage counters": 444,
+    "damage-dealt:Confusion self-damage": 1
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 16,
+      "losses": 34,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 32,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 4,
+      "losses": 46,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 8,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 6,
+      "losses": 44,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 12,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28405": {
+      "games": 50,
+      "wins": 33,
+      "losses": 17,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 66,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-me1-56-aggressive-13013-0-mirror": {
+      "games": 50,
+      "wins": 25,
+      "losses": 25,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 50,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28405",
+    "architect-anchor-me1-56-aggressive-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 47,
-    "losses": 203,
+    "wins": 84,
+    "losses": 166,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 18.8,
+    "winRate": 33.6,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 16,
+        "losses": 34,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 32,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 47,
-        "losses": 203,
-        "winRate": 18.8
+        "games": 50,
+        "wins": 4,
+        "losses": 46,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 8,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 6,
+        "losses": 44,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 12,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28405": {
+        "games": 50,
+        "wins": 33,
+        "losses": 17,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 66,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-me1-56-aggressive-13013-0-mirror": {
+        "games": 50,
+        "wins": 25,
+        "losses": 25,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 50,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 20,
-    "goingSecondWinRate": 17.599999999999998,
-    "averageTurns": 19.528,
-    "averageMulligans": 0.2,
-    "setupFailurePercentage": 1.6,
-    "mainAttackerReadinessPercentage": 78.4,
-    "averageFirstAttackTurn": 4.459349593495935,
-    "averageFirstKnockOutTurn": 8.995535714285714,
-    "energyStarvationPercentage": 52.22437137330754,
-    "deckOutLosses": 20,
-    "averagePrizesTaken": 0.992,
+    "goingFirstWinRate": 35.199999999999996,
+    "goingSecondWinRate": 32,
+    "averageTurns": 16.968,
+    "averageMulligans": 1.404,
+    "setupFailurePercentage": 0,
+    "mainAttackerReadinessPercentage": 47.199999999999996,
+    "averageFirstAttackTurn": 2.952,
+    "averageFirstKnockOutTurn": 11.953333333333333,
+    "energyStarvationPercentage": 45.79962663347853,
+    "deckOutLosses": 1,
+    "averagePrizesTaken": 1.392,
     "commonLossReasons": {
-      "prizes": 128,
-      "no-pokemon": 55,
-      "deck-out": 20
+      "no-pokemon": 165,
+      "deck-out": 1
     },
     "cardUsage": {
-      "sv9-120": 209,
-      "sv6-148": 150,
-      "sve-7": 240,
-      "me2pt5-183": 69,
-      "sv5-129": 189,
-      "zsv10pt5-40": 143,
-      "sv5-144": 181,
-      "me2-87": 178,
-      "sv10-10": 114,
-      "sv6pt5-59": 189,
-      "me1-55": 204,
-      "sv6pt5-37": 69,
-      "me2pt5-192": 118,
-      "sv8pt5-95": 168,
-      "sv6pt5-36": 234,
-      "me1-131": 206,
-      "me2pt5-142": 157,
-      "svp-129": 68,
-      "me1-56": 196,
-      "rsv10pt5-84": 173,
-      "sve-5": 136,
-      "me2pt5-181": 122,
-      "me3-81": 219,
-      "sv6-131": 72,
-      "zsv10pt5-84": 137,
-      "me1-130": 91,
-      "me3-88": 224,
-      "me1-54": 214,
-      "me2pt5-197": 204,
-      "sv5-153": 71,
-      "sv6pt5-61": 81,
-      "sv8-177": 149,
-      "sv6pt5-57": 70,
-      "sv8-191": 132,
-      "me1-114": 90,
-      "sv8-170": 76,
-      "sv6-158": 116,
-      "me2pt5-196": 105,
-      "sv6-155": 95,
-      "me1-115": 98,
-      "sv8pt5-4": 78,
-      "sv6pt5-39": 165,
-      "sv6-150": 121,
-      "sv8-87": 134,
-      "sv6-95": 148,
-      "me1-125": 91,
-      "sv6pt5-40": 128,
-      "sv10-168": 124
+      "me1-54": 250,
+      "sv4-163": 76,
+      "sve-5": 249,
+      "sv1-181": 130,
+      "me1-55": 100,
+      "sv1-198": 41,
+      "me1-131": 157,
+      "me1-56": 118,
+      "sv1-189": 69,
+      "me3-81": 92,
+      "me1-125": 89,
+      "sv6pt5-61": 45,
+      "me1-130": 70,
+      "me1-119": 65,
+      "me1-114": 44,
+      "me2pt5-183": 20,
+      "sv2-188": 68,
+      "sv6pt5-57": 28,
+      "swsh9-144": 1,
+      "sv6pt5-37": 1,
+      "sv6pt5-36": 1,
+      "sv10-118": 1,
+      "sv10-117": 2
     },
-    "abilityUsage": {
-      "Subjugating Chains": 812,
-      "Run Away Draw": 606,
-      "Adrena-Brain": 481,
-      "Flip the Script": 249,
-      "Attract Customers": 102
-    },
+    "abilityUsage": {},
     "attackUsage": {
-      "Chain-Crazed": 940,
-      "Poisonous Musculature": 268,
-      "Powerful Hand": 205,
-      "Itchy Pollen": 158,
-      "Slight Shift": 135,
-      "Trading Places": 129,
-      "Teleportation Attack": 107,
-      "Super Psy Bolt": 97,
-      "Electromagnetic Sonar": 51,
-      "Poison Chain": 41,
-      "Gnaw": 31,
-      "Dirty Headbutt": 27,
-      "Cruel Arrow": 22,
-      "Irritated Outburst": 21,
-      "Smash Kick": 16,
-      "Ram": 5,
-      "Beam": 1
+      "Teleportation Attack": 983,
+      "Powerful Hand": 445,
+      "Super Psy Bolt": 165
+    },
+    "anchorContribution": {
+      "cardId": "me1-56",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 118,
+      "enteredPlayRate": 47.199999999999996,
+      "evolvedGames": 118,
+      "evolvedRate": 47.199999999999996,
+      "abilityActivations": 0,
+      "attackUses": 445,
+      "attackUseGames": 103,
+      "knockOuts": 273,
+      "definingEventCount": 890,
+      "contributingGames": 103,
+      "contributionRate": 41.199999999999996,
+      "firstReadyTurn": 11.048543689320388,
+      "abilityOrDefiningEventGames": 103,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "attack-used:Powerful Hand": 445,
+      "damage-dealt:Powerful Hand damage counters": 444,
+      "damage-dealt:Confusion self-damage": 1
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

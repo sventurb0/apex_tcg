@@ -1,127 +1,792 @@
 {
-  "cardId": "sv7-14",
+  "version": 2,
+  "generatedAt": "2026-07-29T21:39:46.747Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv7-14",
   "name": "Hydrapple ex",
-  "candidateId": "architect-proven-limitless-28266-13013-2",
+  "finalistDeckId": "architect-anchor-sv7-14-control-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:3|sv1-189:3|sv1-198:3|sv10-16:4|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-14:4|sv8pt5-10:4|sve-1:8",
+  "candidateScreeningRank": 1,
+  "finalistCandidate": {
+    "id": "architect-anchor-sv7-14-control-13013-0",
+    "seed": 13013,
+    "variant": "control semantic",
+    "requiredCardIds": [
+      "sv7-14"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv7-14-control-13013-0",
+      "name": "Hydrapple ex — control semantic build 1",
+      "description": "Original executable construction using Teal Mask Ogerpon / Hydrapple; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 3
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 3
+        },
+        {
+          "cardId": "sv10-16",
+          "count": 4
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 3
+        },
+        {
+          "cardId": "sv7-14",
+          "count": 4
+        },
+        {
+          "cardId": "sv8pt5-10",
+          "count": 4
+        },
+        {
+          "cardId": "sve-1",
+          "count": 8
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 12,
+      "draw": 10,
+      "energy": 10,
+      "attackReadiness": 9.5,
+      "benchSpace": 6,
+      "prizeLiability": 2.8,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.15,
+      "total": 117.8
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected Teal Mask Ogerpon / Hydrapple.",
+      "Required packages were assembled before slot filling: ogerpon-hydrapple-core, bug-catching-grass, grass-energy-density.",
+      "Profile control changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Control deck (8-12 cards) for Teal Mask Ogerpon / Hydrapple.",
+      "Control lists trade raw Energy density for legal disruption and recovery.",
+      "Syrup Storm: 2 units, expected payment in 2 turn(s).",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 17 cards assigned explicit provider-to-requirement roles; engines grass-ogerpon-hydrapple."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "sv10-16",
+        "toCardId": "sv8pt5-10",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "sv8pt5-10",
+        "toCardId": "sv7-14",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Control deck (8-12 cards) for Teal Mask Ogerpon / Hydrapple. Control lists trade raw Energy density for legal disruption and recovery. Syrup Storm: 2 units, expected payment in 2 turn(s).",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:3|sv1-189:3|sv1-198:3|sv10-16:4|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sv7-14:4|sv8pt5-10:4|sve-1:8",
+    "route": "control-resilient",
+    "selectedRoles": {
+      "sv7-14": "primary-attacker"
+    },
+    "packageIds": [
+      "ogerpon-hydrapple-core",
+      "bug-catching-grass",
+      "grass-energy-density"
+    ],
+    "profile": "control",
+    "strategyPlanId": "original:grass-ogerpon-hydrapple",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 2
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 2
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 3,
+        "gust": 3,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for Teal Mask Ogerpon / Hydrapple.",
+        "control prioritizes gust and denial.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-1",
+          "count": 8
+        }
+      ],
+      "mainAttackCoverage": 1,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 2,
+      "accelerationProviders": [
+        "Ripening Charge attaches one Basic Grass Energy from hand to any Pokémon."
+      ],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Control deck (8-12 cards) for Teal Mask Ogerpon / Hydrapple.",
+        "Control lists trade raw Energy density for legal disruption and recovery.",
+        "Syrup Storm: 2 units, expected payment in 2 turn(s)."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "grass-ogerpon-hydrapple"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv10-16": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Hydrapple ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Applin: evolves into the selected Hydrapple ex line."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sv7-14": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Hydrapple ex: selected favourite fulfils primary-attacker."
+        },
+        "sv8pt5-10": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Hydrapple ex line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Dipplin: evolves into the selected Hydrapple ex line."
+        },
+        "sve-1": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays grass attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Grass Energy: pays grass attack requirements."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "grass"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 10,
+      "losses": 30,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 25,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 2,
+          "losses": 18,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 10,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28266": {
+          "games": 20,
+          "wins": 8,
+          "losses": 12,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 40,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 20,
+      "goingSecondWinRate": 30,
+      "averageTurns": 24.725,
+      "averageMulligans": 2.075,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 47.5,
+      "averageFirstAttackTurn": 2.6,
+      "averageFirstKnockOutTurn": 16.192307692307693,
+      "energyStarvationPercentage": 48.589341692789965,
+      "deckOutLosses": 4,
+      "averagePrizesTaken": 1.325,
+      "commonLossReasons": {
+        "no-pokemon": 26,
+        "deck-out": 4
+      },
+      "cardUsage": {
+        "sv10-16": 40,
+        "me1-131": 31,
+        "sve-1": 40,
+        "sv4-163": 23,
+        "sv1-189": 24,
+        "me2pt5-183": 4,
+        "swsh9-144": 1,
+        "me1-130": 17,
+        "sv2-188": 11,
+        "me1-125": 13,
+        "sv7-14": 19,
+        "sv1-181": 19,
+        "me1-119": 8,
+        "sv8pt5-10": 15,
+        "sv6pt5-61": 11,
+        "sv1-198": 7,
+        "sv6pt5-57": 8,
+        "me1-114": 3
+      },
+      "abilityUsage": {
+        "Ripening Charge": 16
+      },
+      "attackUsage": {
+        "Mini Drain": 345,
+        "Syrup Storm": 58,
+        "Do the Wave": 10
+      },
+      "anchorContribution": {
+        "cardId": "sv7-14",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 19,
+        "enteredPlayRate": 47.5,
+        "evolvedGames": 19,
+        "evolvedRate": 47.5,
+        "abilityActivations": 16,
+        "attackUses": 58,
+        "attackUseGames": 12,
+        "knockOuts": 32,
+        "definingEventCount": 149,
+        "contributingGames": 16,
+        "contributionRate": 40,
+        "firstReadyTurn": 16.6875,
+        "abilityOrDefiningEventGames": 16,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "ability-used:Ripening Charge": 16,
+        "energy-attached-by-effect:Ripening Charge": 16,
+        "attack-used:Syrup Storm": 58,
+        "damage-dealt:sv7-14": 58,
+        "damage-healed:sv7-14": 1
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv7-14",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 19,
+      "enteredPlayRate": 47.5,
+      "evolvedGames": 19,
+      "evolvedRate": 47.5,
+      "abilityActivations": 16,
+      "attackUses": 58,
+      "attackUseGames": 12,
+      "knockOuts": 32,
+      "definingEventCount": 149,
+      "contributingGames": 16,
+      "contributionRate": 40,
+      "firstReadyTurn": 16.6875,
+      "abilityOrDefiningEventGames": 16,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "anchorContribution": {
+    "cardId": "sv7-14",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 89,
+    "enteredPlayRate": 35.6,
+    "evolvedGames": 89,
+    "evolvedRate": 35.6,
+    "abilityActivations": 87,
+    "attackUses": 292,
+    "attackUseGames": 70,
+    "knockOuts": 153,
+    "definingEventCount": 774,
+    "contributingGames": 79,
+    "contributionRate": 31.6,
+    "firstReadyTurn": 12.443037974683545,
+    "abilityOrDefiningEventGames": 79,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "ability-used:Ripening Charge": 87,
+    "energy-attached-by-effect:Ripening Charge": 87,
+    "attack-used:Syrup Storm": 292,
+    "damage-dealt:sv7-14": 292,
+    "damage-healed:sv7-14": 16
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 50,
+      "wins": 11,
+      "losses": 39,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 22,
+      "deterministicSeed": 13013
+    },
+    "okidogi-ex-poison": {
+      "games": 50,
+      "wins": 9,
+      "losses": 41,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 18,
+      "deterministicSeed": 23013
+    },
+    "team-rockets-nidoking": {
+      "games": 50,
+      "wins": 14,
+      "losses": 36,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 28.000000000000004,
+      "deterministicSeed": 33013
+    },
+    "corpus-limitless-28266": {
+      "games": 50,
+      "wins": 17,
+      "losses": 33,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 34,
+      "deterministicSeed": 43013
+    },
+    "architect-anchor-sv7-14-control-13013-0-mirror": {
+      "games": 50,
+      "wins": 24,
+      "losses": 26,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 48,
+      "deterministicSeed": 53013
+    }
+  },
   "games": 250,
   "expectedGames": 250,
+  "deterministicReplaySeed": 13013,
   "unresolved": 0,
   "invalidNumeric": 0,
+  "missingProgram": 0,
   "choiceLoops": 0,
   "noLegalAction": 0,
+  "opponentOrder": [
+    "skeledirge-armarouge",
+    "okidogi-ex-poison",
+    "team-rockets-nidoking",
+    "corpus-limitless-28266",
+    "architect-anchor-sv7-14-control-13013-0-mirror"
+  ],
   "summary": {
     "games": 250,
-    "wins": 95,
-    "losses": 155,
+    "wins": 75,
+    "losses": 175,
     "unresolved": 0,
     "invalidNumeric": 0,
     "choiceLoops": 0,
     "noLegalAction": 0,
-    "winRate": 38,
+    "winRate": 30,
     "byOpponent": {
+      "skeledirge-armarouge": {
+        "games": 50,
+        "wins": 11,
+        "losses": 39,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 22,
+        "deterministicSeed": 13013
+      },
       "okidogi-ex-poison": {
-        "games": 250,
-        "wins": 95,
-        "losses": 155,
-        "winRate": 38
+        "games": 50,
+        "wins": 9,
+        "losses": 41,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 18,
+        "deterministicSeed": 23013
+      },
+      "team-rockets-nidoking": {
+        "games": 50,
+        "wins": 14,
+        "losses": 36,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 28.000000000000004,
+        "deterministicSeed": 33013
+      },
+      "corpus-limitless-28266": {
+        "games": 50,
+        "wins": 17,
+        "losses": 33,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 34,
+        "deterministicSeed": 43013
+      },
+      "architect-anchor-sv7-14-control-13013-0-mirror": {
+        "games": 50,
+        "wins": 24,
+        "losses": 26,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 48,
+        "deterministicSeed": 53013
       }
     },
-    "goingFirstWinRate": 40.8,
-    "goingSecondWinRate": 35.199999999999996,
-    "averageTurns": 17.96,
-    "averageMulligans": 0.216,
-    "setupFailurePercentage": 9.2,
-    "mainAttackerReadinessPercentage": 32.800000000000004,
-    "averageFirstAttackTurn": 4.127753303964758,
-    "averageFirstKnockOutTurn": 8.93193717277487,
-    "energyStarvationPercentage": 45.76206765488408,
-    "deckOutLosses": 7,
-    "averagePrizesTaken": 1.388,
+    "goingFirstWinRate": 33.6,
+    "goingSecondWinRate": 26.400000000000002,
+    "averageTurns": 27.208,
+    "averageMulligans": 1.424,
+    "setupFailurePercentage": 0.4,
+    "mainAttackerReadinessPercentage": 35.6,
+    "averageFirstAttackTurn": 3.0522088353413657,
+    "averageFirstKnockOutTurn": 11.727941176470589,
+    "energyStarvationPercentage": 46.3300058719906,
+    "deckOutLosses": 26,
+    "averagePrizesTaken": 1,
     "commonLossReasons": {
-      "no-pokemon": 58,
-      "prizes": 90,
-      "deck-out": 7
+      "no-pokemon": 145,
+      "deck-out": 26,
+      "prizes": 4
     },
     "cardUsage": {
-      "me1-8": 105,
-      "sve-1": 247,
-      "sve-7": 225,
-      "me2pt5-183": 82,
-      "me1-9": 69,
-      "me2-87": 117,
-      "sv6pt5-6": 82,
-      "sv6pt5-59": 181,
-      "me1-10": 87,
-      "me2pt5-8": 104,
-      "me1-131": 196,
-      "sv6pt5-36": 214,
-      "me2pt5-192": 117,
-      "sv8pt5-95": 164,
-      "sv6pt5-39": 148,
-      "zsv10pt5-84": 143,
-      "svp-129": 64,
-      "me1-115": 98,
-      "sv6-131": 69,
-      "me2pt5-9": 75,
-      "sv6-95": 135,
-      "sv7-114": 102,
-      "sv6-143": 185,
-      "me1-114": 84,
-      "sv6-17": 164,
-      "me3-81": 181,
-      "me1-117": 165,
-      "sv7-132": 11,
-      "me1-130": 93,
-      "sv6-25": 194,
-      "sv7-115": 43,
-      "sv6-18": 115,
-      "sv7-14": 82,
-      "sv6-165": 45,
-      "me1-119": 161,
-      "me1-12": 107,
-      "me2pt5-142": 132,
-      "me2pt5-196": 123,
-      "me3-62": 100,
-      "me4-82": 41,
-      "sv6pt5-37": 75,
-      "sv8-177": 141,
-      "sv8-170": 73,
-      "sv6pt5-61": 83,
-      "sv8pt5-4": 97,
-      "sv6-155": 85,
-      "sv6pt5-57": 86,
-      "sv5-153": 89
+      "sv10-16": 250,
+      "me1-131": 172,
+      "sve-1": 249,
+      "sv4-163": 121,
+      "sv1-189": 110,
+      "me2pt5-183": 17,
+      "swsh9-144": 1,
+      "me1-130": 86,
+      "sv2-188": 79,
+      "me1-125": 66,
+      "sv7-14": 89,
+      "sv1-181": 125,
+      "me1-119": 55,
+      "sv8pt5-10": 89,
+      "sv6pt5-61": 77,
+      "sv1-198": 49,
+      "sv6pt5-57": 52,
+      "me1-114": 35,
+      "sv6pt5-36": 5,
+      "sv10-119": 10,
+      "sv10-117": 2,
+      "sv10-118": 2,
+      "sv6pt5-6": 2
     },
     "abilityUsage": {
-      "Subjugating Chains": 799,
-      "Teal Dance": 582,
-      "Adrena-Brain": 444,
-      "Flip the Script": 180,
-      "Attract Customers": 88,
-      "Ripening Charge": 73
+      "Ripening Charge": 87
     },
     "attackUsage": {
-      "Chain-Crazed": 560,
-      "Myriad Leaf Shower": 282,
-      "Poisonous Musculature": 266,
-      "Itchy Pollen": 200,
-      "Tumbling Attack": 96,
-      "Triple Stab": 83,
-      "Growl": 49,
-      "Razor Leaf": 38,
-      "Solar Cutter": 38,
-      "Traverse Time": 29,
-      "Cruel Arrow": 28,
-      "Poison Chain": 28,
-      "Syrup Storm": 28,
-      "Dirty Headbutt": 27,
-      "Do the Wave": 22,
-      "Irritated Outburst": 18,
-      "Leaf Step": 11,
-      "Tuck Tail": 7,
-      "Speed Wing": 5,
-      "Push Down": 4,
-      "Wood Hammer": 3,
-      "Solar Beam": 1
+      "Mini Drain": 2452,
+      "Syrup Storm": 292,
+      "Do the Wave": 105
+    },
+    "anchorContribution": {
+      "cardId": "sv7-14",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 89,
+      "enteredPlayRate": 35.6,
+      "evolvedGames": 89,
+      "evolvedRate": 35.6,
+      "abilityActivations": 87,
+      "attackUses": 292,
+      "attackUseGames": 70,
+      "knockOuts": 153,
+      "definingEventCount": 774,
+      "contributingGames": 79,
+      "contributionRate": 31.6,
+      "firstReadyTurn": 12.443037974683545,
+      "abilityOrDefiningEventGames": 79,
+      "passesRoleGate": true,
+      "failureReasons": []
+    },
+    "definingEvents": {
+      "ability-used:Ripening Charge": 87,
+      "energy-attached-by-effect:Ripening Charge": 87,
+      "attack-used:Syrup Storm": 292,
+      "damage-dealt:sv7-14": 292,
+      "damage-healed:sv7-14": 16
     },
     "uncertainty": "Larger deterministic batch; matchup variance still depends on the current heuristic agents."
   }

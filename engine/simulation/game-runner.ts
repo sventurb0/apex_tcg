@@ -32,6 +32,8 @@ export interface GameRunSummary {
   finalStateSummary: string;
   eventCounts: Record<string, number>;
   eventSourceCardIds: string[];
+  playerOneSetupCardIds: string[];
+  playerOneEvents: Array<{ turn: number; type: string; sourceCardId?: string; detail?: string; amount?: number; targetId?: string }>;
   actionSequence: string[];
   invalidNumericCount: number;
   teamRocketMetrics: { firstNidokingTurn: number | null; rareCandyUses: number; protonFirstTurnUses: number; taintedHornUses: number; kinglyImpactUses: number; taintedPoisonCounters: number; taintedPoisonCheckups: number; factoryActivations: number; teamRocketEnergyAttachments: number; arianaDrawToEight: number; archerActivations: number };
@@ -62,6 +64,7 @@ export function runHeadlessGame(config: RunGameConfig): GameRunSummary {
   let firstKnockOutTurn: number | null = null;
   let energyMissTurns = 0;
   let totalMainTurns = 0;
+  const playerOneSetupCardIds: string[] = [];
   while (!state.result && actionCount < maxActions && state.turn <= maxTurns) {
     const actingId = state.pendingChoice?.playerId ?? state.activePlayerId;
     const observation = createPlayerObservation(state, actingId);
@@ -75,6 +78,10 @@ export function runHeadlessGame(config: RunGameConfig): GameRunSummary {
     if (decision.action.type === "end-turn") {
       totalMainTurns += 1;
       if (!state.players[actingId].energyAttachedThisTurn) energyMissTurns += 1;
+    }
+    if (state.phase === "setup" && actingId === "player-one" && (decision.action.type === "select-active" || decision.action.type === "bench-basic")) {
+      const cardId = decision.action.cardInstanceId.replace(/^player-one-\d+-/, "");
+      if (cardId && !playerOneSetupCardIds.includes(cardId)) playerOneSetupCardIds.push(cardId);
     }
     const prizesBefore = state.players[actingId].prizes.length;
     state = applyAction(state, decision.action);
@@ -105,6 +112,8 @@ export function runHeadlessGame(config: RunGameConfig): GameRunSummary {
     finalStateSummary: `turn=${state.turn}; prizes=${state.players["player-one"].prizes.length}-${state.players["player-two"].prizes.length}; actions=${actionCount}; phase=${state.phase}; pending=${state.pendingChoice?.type ?? "none"}${state.pendingChoice?.type === "effect-choice" ? `:${state.pendingChoice.sourceEffectId}:${state.pendingChoice.playerId}:eligible=${state.pendingChoice.eligibleIds.length}` : ""}`,
     eventCounts,
     eventSourceCardIds: [...new Set(state.events.flatMap((event) => event.sourceCardId ?? []))],
+    playerOneSetupCardIds,
+    playerOneEvents: state.events.filter((event) => event.playerId === "player-one").map((event) => ({ turn: event.turn, type: event.type, ...(event.sourceCardId ? { sourceCardId: event.sourceCardId } : {}), ...(event.detail ? { detail: event.detail } : {}), ...(event.amount !== undefined ? { amount: event.amount } : {}), ...(event.targetId ? { targetId: event.targetId } : {}) })),
     actionSequence: state.actionHistory.map((action) => action.id),
     invalidNumericCount,
     teamRocketMetrics: { firstNidokingTurn: firstNidoking?.turn ?? null, rareCandyUses: countEvent((event) => event.type === "pokemon-evolved" && event.detail === "Rare Candy"), protonFirstTurnUses: countEvent((event) => event.type === "card-played" && event.sourceCardId === "sv10-177" && event.detail?.includes("first-turn") === true), taintedHornUses: countEvent((event) => event.type === "attack-used" && event.detail === "Tainted Horn"), kinglyImpactUses: countEvent((event) => event.type === "attack-used" && event.detail === "Kingly Impact"), taintedPoisonCounters: state.events.filter((event) => event.type === "poison-checkup-damage" && event.sourceCardId === "sv10-119").reduce((sum, event) => sum + (event.amount ?? 0) / 10, 0), taintedPoisonCheckups: countEvent((event) => event.type === "poison-checkup-damage" && event.sourceCardId === "sv10-119"), factoryActivations: countEvent((event) => event.type === "stadium-ability-used" && event.sourceCardId === "sv10-173"), teamRocketEnergyAttachments: countEvent((event) => event.type === "energy-attached-manually" && event.sourceCardId === "sv10-182"), arianaDrawToEight: countEvent((event) => event.detail === "Ariana draw-to-8"), archerActivations: countEvent((event) => event.type === "card-played" && event.sourceCardId === "sv10-170") },

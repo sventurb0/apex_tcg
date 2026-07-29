@@ -1,0 +1,2317 @@
+{
+  "version": 2,
+  "generatedAt": "2026-07-29T21:18:23.854Z",
+  "architectureHash": "9bd78275d9ad7ddb1b4a",
+  "anchorCardId": "sv2-148",
+  "name": "Corviknight",
+  "candidateCount": 5,
+  "games": 200,
+  "expectedGames": 200,
+  "unresolved": 0,
+  "invalidNumeric": 0,
+  "choiceLoops": 0,
+  "noLegalAction": 0,
+  "opponents": [
+    "skeledirge-armarouge",
+    "corpus-limitless-28423"
+  ],
+  "candidates": [
+    {
+      "candidateId": "architect-anchor-sv2-148-control-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:3|sv1-189:3|sv1-198:3|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sve-8:8",
+      "profile": "control",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv2-148"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-148": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+          },
+          "sv2-164": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rookidee: evolves into the selected Corviknight line."
+          },
+          "sv2-165": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corvisquire: evolves into the selected Corviknight line."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sve-8": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays metal attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Metal Energy: pays metal attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "metal"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 12,
+        "enteredPlayRate": 30,
+        "evolvedGames": 12,
+        "evolvedRate": 30,
+        "abilityActivations": 0,
+        "attackUses": 68,
+        "attackUseGames": 12,
+        "knockOuts": 12,
+        "definingEventCount": 147,
+        "contributingGames": 12,
+        "contributionRate": 30,
+        "firstReadyTurn": 15.916666666666666,
+        "abilityOrDefiningEventGames": 12,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 67,
+        "damage-dealt:sv2-148": 68,
+        "temporary-effect-applied:prevent attack damage and effects": 11,
+        "attack-used:Spinning Bird": 1
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 4,
+          "losses": 16,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 20,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 5,
+        "losses": 35,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 12.5,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28423": {
+            "games": 20,
+            "wins": 4,
+            "losses": 16,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 20,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 10,
+        "goingSecondWinRate": 15,
+        "averageTurns": 18.05,
+        "averageMulligans": 1.6,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 30,
+        "averageFirstAttackTurn": 3.2,
+        "averageFirstKnockOutTurn": 15.428571428571429,
+        "energyStarvationPercentage": 42.29249011857708,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 0.55,
+        "commonLossReasons": {
+          "no-pokemon": 35
+        },
+        "cardUsage": {
+          "sv2-164": 40,
+          "sve-8": 40,
+          "sv1-189": 19,
+          "sv1-181": 18,
+          "sv2-188": 10,
+          "sv4-163": 17,
+          "me1-119": 6,
+          "sv2-165": 13,
+          "me1-131": 22,
+          "sv2-148": 12,
+          "me2pt5-183": 3,
+          "me1-125": 8,
+          "sv6pt5-61": 7,
+          "sv1-198": 6,
+          "me1-130": 12,
+          "me1-114": 4,
+          "sv6pt5-57": 3
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Send Back": 209,
+          "Accelerate": 67,
+          "Glide": 20,
+          "Spinning Bird": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv2-148",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 12,
+          "enteredPlayRate": 30,
+          "evolvedGames": 12,
+          "evolvedRate": 30,
+          "abilityActivations": 0,
+          "attackUses": 68,
+          "attackUseGames": 12,
+          "knockOuts": 12,
+          "definingEventCount": 147,
+          "contributingGames": 12,
+          "contributionRate": 30,
+          "firstReadyTurn": 15.916666666666666,
+          "abilityOrDefiningEventGames": 12,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Accelerate": 67,
+          "damage-dealt:sv2-148": 68,
+          "temporary-effect-applied:prevent attack damage and effects": 11,
+          "attack-used:Spinning Bird": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 121.35112648221343
+    },
+    {
+      "candidateId": "architect-anchor-sv2-148-resilient-13013-0",
+      "fingerprint": "me1-114:2|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:2|sv1-181:3|sv1-189:2|sv1-198:3|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv6pt5-57:3|sv6pt5-61:3|sve-8:9",
+      "profile": "resilient",
+      "route": "control-resilient",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv2-148"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-148": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+          },
+          "sv2-164": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rookidee: evolves into the selected Corviknight line."
+          },
+          "sv2-165": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corvisquire: evolves into the selected Corviknight line."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sve-8": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays metal attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Metal Energy: pays metal attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "metal"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 11,
+        "enteredPlayRate": 27.500000000000004,
+        "evolvedGames": 11,
+        "evolvedRate": 27.500000000000004,
+        "abilityActivations": 0,
+        "attackUses": 61,
+        "attackUseGames": 11,
+        "knockOuts": 14,
+        "definingEventCount": 135,
+        "contributingGames": 11,
+        "contributionRate": 27.500000000000004,
+        "firstReadyTurn": 10,
+        "abilityOrDefiningEventGames": 11,
+        "passesRoleGate": false,
+        "failureReasons": [
+          "entered play in 27.5% of games"
+        ]
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 60,
+        "damage-dealt:sv2-148": 61,
+        "temporary-effect-applied:prevent attack damage and effects": 13,
+        "attack-used:Spinning Bird": 1
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 3,
+        "losses": 37,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 7.5,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28423": {
+            "games": 20,
+            "wins": 3,
+            "losses": 17,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 15,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 5,
+        "goingSecondWinRate": 10,
+        "averageTurns": 16.725,
+        "averageMulligans": 1.95,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 27.500000000000004,
+        "averageFirstAttackTurn": 2.625,
+        "averageFirstKnockOutTurn": 11.8,
+        "energyStarvationPercentage": 37.76824034334764,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 0.55,
+        "commonLossReasons": {
+          "no-pokemon": 37
+        },
+        "cardUsage": {
+          "sv2-164": 40,
+          "sve-8": 40,
+          "sv2-188": 9,
+          "sv1-181": 14,
+          "me1-119": 4,
+          "me1-131": 23,
+          "me1-130": 11,
+          "sv1-189": 12,
+          "sv4-163": 16,
+          "me1-114": 3,
+          "sv2-165": 10,
+          "sv1-198": 5,
+          "sv2-148": 11,
+          "sv6pt5-61": 6,
+          "sv6pt5-57": 5,
+          "me1-125": 6,
+          "me2pt5-183": 1
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Send Back": 215,
+          "Accelerate": 60,
+          "Glide": 14,
+          "Spinning Bird": 1
+        },
+        "anchorContribution": {
+          "cardId": "sv2-148",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 11,
+          "enteredPlayRate": 27.500000000000004,
+          "evolvedGames": 11,
+          "evolvedRate": 27.500000000000004,
+          "abilityActivations": 0,
+          "attackUses": 61,
+          "attackUseGames": 11,
+          "knockOuts": 14,
+          "definingEventCount": 135,
+          "contributingGames": 11,
+          "contributionRate": 27.500000000000004,
+          "firstReadyTurn": 10,
+          "abilityOrDefiningEventGames": 11,
+          "passesRoleGate": false,
+          "failureReasons": [
+            "entered play in 27.5% of games"
+          ]
+        },
+        "definingEvents": {
+          "attack-used:Accelerate": 60,
+          "damage-dealt:sv2-148": 61,
+          "temporary-effect-applied:prevent attack damage and effects": 13,
+          "attack-used:Spinning Bird": 1
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [
+        "entered play in 27.5% of games"
+      ],
+      "directionalScore": 111.22976394849786
+    },
+    {
+      "candidateId": "architect-anchor-sv2-148-aggressive-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|me3-81:3|sv1-181:2|sv1-189:2|sv1-198:2|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv6pt5-57:2|sv6pt5-61:2|sve-8:10",
+      "profile": "aggressive",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv2-148"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me3-81": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Poké Pad: provides the declared basic-setup requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-148": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+          },
+          "sv2-164": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rookidee: evolves into the selected Corviknight line."
+          },
+          "sv2-165": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corvisquire: evolves into the selected Corviknight line."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sve-8": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays metal attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Metal Energy: pays metal attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "metal"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 12,
+        "enteredPlayRate": 30,
+        "evolvedGames": 12,
+        "evolvedRate": 30,
+        "abilityActivations": 0,
+        "attackUses": 63,
+        "attackUseGames": 11,
+        "knockOuts": 15,
+        "definingEventCount": 138,
+        "contributingGames": 11,
+        "contributionRate": 27.500000000000004,
+        "firstReadyTurn": 15.545454545454545,
+        "abilityOrDefiningEventGames": 11,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 61,
+        "damage-dealt:sv2-148": 63,
+        "temporary-effect-applied:prevent attack damage and effects": 12,
+        "attack-used:Spinning Bird": 2
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 0,
+          "losses": 20,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 0,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 5,
+          "losses": 15,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 25,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 5,
+        "losses": 35,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 12.5,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 0,
+            "losses": 20,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 0,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28423": {
+            "games": 20,
+            "wins": 5,
+            "losses": 15,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 25,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 15,
+        "goingSecondWinRate": 10,
+        "averageTurns": 19.975,
+        "averageMulligans": 1.6,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 30,
+        "averageFirstAttackTurn": 2.525,
+        "averageFirstKnockOutTurn": 17.19047619047619,
+        "energyStarvationPercentage": 47.66666666666667,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 0.6,
+        "commonLossReasons": {
+          "no-pokemon": 35
+        },
+        "cardUsage": {
+          "sv2-164": 40,
+          "sve-8": 40,
+          "sv1-181": 17,
+          "sv2-165": 9,
+          "me1-119": 5,
+          "me1-131": 20,
+          "me3-81": 12,
+          "me1-130": 14,
+          "sv2-148": 12,
+          "sv2-188": 8,
+          "sv6pt5-57": 5,
+          "me1-125": 11,
+          "me2pt5-183": 1,
+          "sv4-163": 14,
+          "sv1-189": 12,
+          "swsh9-144": 1,
+          "sv1-198": 7,
+          "me1-114": 5,
+          "sv6pt5-61": 1
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Send Back": 248,
+          "Accelerate": 61,
+          "Glide": 20,
+          "Spinning Bird": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv2-148",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 12,
+          "enteredPlayRate": 30,
+          "evolvedGames": 12,
+          "evolvedRate": 30,
+          "abilityActivations": 0,
+          "attackUses": 63,
+          "attackUseGames": 11,
+          "knockOuts": 15,
+          "definingEventCount": 138,
+          "contributingGames": 11,
+          "contributionRate": 27.500000000000004,
+          "firstReadyTurn": 15.545454545454545,
+          "abilityOrDefiningEventGames": 11,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Accelerate": 61,
+          "damage-dealt:sv2-148": 63,
+          "temporary-effect-applied:prevent attack damage and effects": 12,
+          "attack-used:Spinning Bird": 2
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 112.94500000000001
+    },
+    {
+      "candidateId": "architect-anchor-sv2-148-balanced-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv4pt5-80:3|sv6pt5-57:2|sv6pt5-61:2|sve-8:10",
+      "profile": "balanced",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv2-148"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-148": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+          },
+          "sv2-164": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rookidee: evolves into the selected Corviknight line."
+          },
+          "sv2-165": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corvisquire: evolves into the selected Corviknight line."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv4pt5-80": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Iono: provides the declared draw requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sve-8": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays metal attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Metal Energy: pays metal attack requirements."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "metal"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 15,
+        "enteredPlayRate": 37.5,
+        "evolvedGames": 15,
+        "evolvedRate": 37.5,
+        "abilityActivations": 0,
+        "attackUses": 87,
+        "attackUseGames": 14,
+        "knockOuts": 20,
+        "definingEventCount": 192,
+        "contributingGames": 14,
+        "contributionRate": 35,
+        "firstReadyTurn": 13.928571428571429,
+        "abilityOrDefiningEventGames": 14,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 85,
+        "damage-dealt:sv2-148": 87,
+        "temporary-effect-applied:prevent attack damage and effects": 18,
+        "attack-used:Spinning Bird": 2
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 6,
+        "losses": 34,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 15,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 3,
+            "losses": 17,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 15,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28423": {
+            "games": 20,
+            "wins": 3,
+            "losses": 17,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 15,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 15,
+        "goingSecondWinRate": 15,
+        "averageTurns": 18.7,
+        "averageMulligans": 2,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 37.5,
+        "averageFirstAttackTurn": 2.9,
+        "averageFirstKnockOutTurn": 14.478260869565217,
+        "energyStarvationPercentage": 37.05179282868526,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 0.6,
+        "commonLossReasons": {
+          "no-pokemon": 34
+        },
+        "cardUsage": {
+          "sv2-164": 40,
+          "sve-8": 40,
+          "sv4-163": 13,
+          "sv2-188": 7,
+          "sv1-181": 16,
+          "me1-131": 22,
+          "me1-125": 13,
+          "sv2-148": 15,
+          "sv1-198": 1,
+          "me2pt5-183": 1,
+          "sv4pt5-80": 15,
+          "me1-130": 8,
+          "sv1-189": 15,
+          "sv2-165": 11,
+          "sv6pt5-57": 2,
+          "me1-119": 7,
+          "sv6pt5-61": 4,
+          "me1-114": 2
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Send Back": 215,
+          "Accelerate": 85,
+          "Glide": 14,
+          "Spinning Bird": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv2-148",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 15,
+          "enteredPlayRate": 37.5,
+          "evolvedGames": 15,
+          "evolvedRate": 37.5,
+          "abilityActivations": 0,
+          "attackUses": 87,
+          "attackUseGames": 14,
+          "knockOuts": 20,
+          "definingEventCount": 192,
+          "contributingGames": 14,
+          "contributionRate": 35,
+          "firstReadyTurn": 13.928571428571429,
+          "abilityOrDefiningEventGames": 14,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Accelerate": 85,
+          "damage-dealt:sv2-148": 87,
+          "temporary-effect-applied:prevent attack damage and effects": 18,
+          "attack-used:Spinning Bird": 2
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 144.80223107569722
+    },
+    {
+      "candidateId": "architect-anchor-sv2-148-turbo-13013-0",
+      "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:3|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:1|sv1-198:2|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:1|sv4-163:2|sv6pt5-57:2|sv6pt5-61:1|sve-8:16|zsv10pt5-84:2",
+      "profile": "turbo",
+      "route": "original",
+      "coherence": {
+        "coherent": true,
+        "engineIds": [
+          "anchor-capability:sv2-148"
+        ],
+        "cardRoles": {
+          "me1-114": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "me1-119": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+          },
+          "me1-125": {
+            "role": "evolution-search",
+            "providerToRequirementEdge": "provides the declared evolution-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rare Candy: provides the declared evolution-search requirement."
+          },
+          "me1-130": {
+            "role": "switching",
+            "providerToRequirementEdge": "provides the declared switching requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Switch: provides the declared switching requirement."
+          },
+          "me1-131": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+          },
+          "me2pt5-183": {
+            "role": "gust",
+            "providerToRequirementEdge": "provides the declared gust requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Boss's Orders: provides the declared gust requirement."
+          },
+          "sv1-181": {
+            "role": "basic-setup",
+            "providerToRequirementEdge": "provides the declared basic-setup requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Nest Ball: provides the declared basic-setup requirement."
+          },
+          "sv1-189": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+          },
+          "sv1-198": {
+            "role": "hand-refresh",
+            "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Youngster: provides the declared hand-refresh requirement."
+          },
+          "sv2-148": {
+            "role": "anchor",
+            "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+          },
+          "sv2-164": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Rookidee: evolves into the selected Corviknight line."
+          },
+          "sv2-165": {
+            "role": "evolution-line",
+            "providerToRequirementEdge": "evolves into the selected Corviknight line",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Corvisquire: evolves into the selected Corviknight line."
+          },
+          "sv2-188": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Super Rod: provides the declared energy-recovery requirement."
+          },
+          "sv4-163": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+          },
+          "sv6pt5-57": {
+            "role": "energy-search",
+            "providerToRequirementEdge": "provides the declared energy-search requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+          },
+          "sv6pt5-61": {
+            "role": "energy-recovery",
+            "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+          },
+          "sve-8": {
+            "role": "energy",
+            "providerToRequirementEdge": "pays metal attack requirements",
+            "allowedCount": [
+              0,
+              15
+            ],
+            "explanation": "Basic Metal Energy: pays metal attack requirements."
+          },
+          "zsv10pt5-84": {
+            "role": "draw",
+            "providerToRequirementEdge": "provides the declared draw requirement",
+            "allowedCount": [
+              1,
+              4
+            ],
+            "explanation": "Pokégear 3.0: provides the declared draw requirement."
+          }
+        },
+        "unrelatedEnginePackages": [],
+        "cardsWithNoRoleEdge": [],
+        "offPlanEnergyCards": [],
+        "unusedEvolutionLines": [],
+        "unusedAttackers": [],
+        "packageConflicts": [],
+        "stadiumConflicts": [],
+        "toolConflicts": [],
+        "benchDemand": 1,
+        "benchDemandOverflow": false,
+        "contamination": [],
+        "energyTypesRequired": [
+          "metal"
+        ],
+        "offTypeEnergyCount": 0
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 14,
+        "enteredPlayRate": 35,
+        "evolvedGames": 14,
+        "evolvedRate": 35,
+        "abilityActivations": 0,
+        "attackUses": 68,
+        "attackUseGames": 12,
+        "knockOuts": 16,
+        "definingEventCount": 151,
+        "contributingGames": 12,
+        "contributionRate": 30,
+        "firstReadyTurn": 11.5,
+        "abilityOrDefiningEventGames": 12,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 66,
+        "damage-dealt:sv2-148": 68,
+        "attack-used:Spinning Bird": 2,
+        "temporary-effect-applied:prevent attack damage and effects": 15
+      },
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 1,
+          "losses": 19,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 5,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 5,
+          "losses": 15,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 25,
+          "deterministicSeed": 23013
+        }
+      },
+      "summary": {
+        "games": 40,
+        "wins": 6,
+        "losses": 34,
+        "unresolved": 0,
+        "invalidNumeric": 0,
+        "choiceLoops": 0,
+        "noLegalAction": 0,
+        "winRate": 15,
+        "byOpponent": {
+          "skeledirge-armarouge": {
+            "games": 20,
+            "wins": 1,
+            "losses": 19,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 5,
+            "deterministicSeed": 13013
+          },
+          "corpus-limitless-28423": {
+            "games": 20,
+            "wins": 5,
+            "losses": 15,
+            "unresolved": 0,
+            "invalidNumeric": 0,
+            "choiceLoops": 0,
+            "noLegalAction": 0,
+            "winRate": 25,
+            "deterministicSeed": 23013
+          }
+        },
+        "goingFirstWinRate": 10,
+        "goingSecondWinRate": 20,
+        "averageTurns": 18,
+        "averageMulligans": 2.225,
+        "setupFailurePercentage": 0,
+        "mainAttackerReadinessPercentage": 35,
+        "averageFirstAttackTurn": 2.7,
+        "averageFirstKnockOutTurn": 14.8,
+        "energyStarvationPercentage": 38.88888888888889,
+        "deckOutLosses": 0,
+        "averagePrizesTaken": 0.8,
+        "commonLossReasons": {
+          "no-pokemon": 34
+        },
+        "cardUsage": {
+          "sv2-164": 40,
+          "sv1-181": 12,
+          "sve-8": 40,
+          "me1-130": 5,
+          "sv1-189": 6,
+          "zsv10pt5-84": 11,
+          "me1-125": 8,
+          "sv2-148": 14,
+          "sv2-188": 12,
+          "me1-131": 24,
+          "sv2-165": 11,
+          "sv4-163": 7,
+          "me1-114": 6,
+          "me1-119": 6,
+          "sv6pt5-57": 5,
+          "sv1-198": 1,
+          "sv6pt5-61": 3
+        },
+        "abilityUsage": {},
+        "attackUsage": {
+          "Send Back": 206,
+          "Accelerate": 66,
+          "Glide": 34,
+          "Spinning Bird": 2
+        },
+        "anchorContribution": {
+          "cardId": "sv2-148",
+          "intendedRole": "primary-attacker",
+          "enteredPlayGames": 14,
+          "enteredPlayRate": 35,
+          "evolvedGames": 14,
+          "evolvedRate": 35,
+          "abilityActivations": 0,
+          "attackUses": 68,
+          "attackUseGames": 12,
+          "knockOuts": 16,
+          "definingEventCount": 151,
+          "contributingGames": 12,
+          "contributionRate": 30,
+          "firstReadyTurn": 11.5,
+          "abilityOrDefiningEventGames": 12,
+          "passesRoleGate": true,
+          "failureReasons": []
+        },
+        "definingEvents": {
+          "attack-used:Accelerate": 66,
+          "damage-dealt:sv2-148": 68,
+          "attack-used:Spinning Bird": 2,
+          "temporary-effect-applied:prevent attack damage and effects": 15
+        },
+        "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+      },
+      "rejectedReasons": [],
+      "directionalScore": 126.41666666666667
+    }
+  ],
+  "finalistCandidate": {
+    "id": "architect-anchor-sv2-148-balanced-13013-0",
+    "seed": 13013,
+    "variant": "balanced semantic",
+    "requiredCardIds": [
+      "sv2-148"
+    ],
+    "deck": {
+      "id": "architect-anchor-sv2-148-balanced-13013-0",
+      "name": "Corviknight — balanced semantic build 1",
+      "description": "Original executable construction using exact anchor capability plan; no tournament list was cloned.",
+      "format": "standard",
+      "source": "saved",
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 3
+        },
+        {
+          "cardId": "me1-119",
+          "count": 4
+        },
+        {
+          "cardId": "me1-125",
+          "count": 4
+        },
+        {
+          "cardId": "me1-130",
+          "count": 4
+        },
+        {
+          "cardId": "me1-131",
+          "count": 4
+        },
+        {
+          "cardId": "me2pt5-183",
+          "count": 1
+        },
+        {
+          "cardId": "sv1-181",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-189",
+          "count": 2
+        },
+        {
+          "cardId": "sv1-198",
+          "count": 2
+        },
+        {
+          "cardId": "sv2-148",
+          "count": 4
+        },
+        {
+          "cardId": "sv2-164",
+          "count": 4
+        },
+        {
+          "cardId": "sv2-165",
+          "count": 4
+        },
+        {
+          "cardId": "sv2-188",
+          "count": 2
+        },
+        {
+          "cardId": "sv4-163",
+          "count": 3
+        },
+        {
+          "cardId": "sv4pt5-80",
+          "count": 3
+        },
+        {
+          "cardId": "sv6pt5-57",
+          "count": 2
+        },
+        {
+          "cardId": "sv6pt5-61",
+          "count": 2
+        },
+        {
+          "cardId": "sve-8",
+          "count": 10
+        }
+      ]
+    },
+    "simulationReady": true,
+    "score": {
+      "requiredCards": 20,
+      "favouriteContribution": 10,
+      "evolution": 12,
+      "basics": 6,
+      "search": 11,
+      "draw": 8,
+      "energy": 10,
+      "attackReadiness": 6.5,
+      "benchSpace": 6,
+      "prizeLiability": 3.1999999999999997,
+      "synergy": 5.333333333333333,
+      "recovery": 6,
+      "unsupportedPenalty": 0,
+      "deadCardPenalty": 0,
+      "construction": 24,
+      "favouriteRoleIntegrity": 3,
+      "openingBasicProbability": 2.6,
+      "setupAccess": 12,
+      "mainEnergyCoverage": 12,
+      "secondaryEnergyCoverage": 10,
+      "conflictPenalty": 0,
+      "engineCohesion": 3.15,
+      "total": 112.2
+    },
+    "explanations": [
+      "Original capability construction: the exact anchor, its evolution line, bounded Energy, and declared Trainer roles were assembled before flex slots.",
+      "Original semantic construction selected role-compatible providers.",
+      "Required packages were assembled before slot filling: role-budget providers.",
+      "Profile balanced changed role budgets and Energy density; variant 1 changes flex selection.",
+      "Trainer plan: 5 providers with 1 unmet role(s).",
+      "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types.",
+      "For one- and two-Energy attackers with low retreat demand.",
+      "Cards form a legal evolution chain.",
+      "Cards form a legal evolution chain.",
+      "Coherence: 18 cards assigned explicit provider-to-requirement roles; engines anchor-capability:sv2-148."
+    ],
+    "synergyEdges": [
+      {
+        "fromCardId": "sv2-165",
+        "toCardId": "sv2-148",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      },
+      {
+        "fromCardId": "sv2-164",
+        "toCardId": "sv2-165",
+        "score": 8,
+        "reasons": [
+          "Cards form a legal evolution chain."
+        ],
+        "confidence": "derived"
+      }
+    ],
+    "unsupportedCardIds": [],
+    "energyExplanation": "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types. For one- and two-Energy attackers with low retreat demand.",
+    "fingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv4pt5-80:3|sv6pt5-57:2|sv6pt5-61:2|sve-8:10",
+    "route": "original",
+    "selectedRoles": {
+      "sv2-148": "primary-attacker"
+    },
+    "packageIds": [],
+    "profile": "balanced",
+    "strategyPlanId": "original:roles",
+    "trainerPlan": {
+      "entries": [
+        {
+          "cardId": "me1-114",
+          "count": 1
+        },
+        {
+          "cardId": "me1-119",
+          "count": 3
+        },
+        {
+          "cardId": "me1-125",
+          "count": 3
+        },
+        {
+          "cardId": "me1-130",
+          "count": 1
+        },
+        {
+          "cardId": "me1-131",
+          "count": 3
+        }
+      ],
+      "roleBudget": {
+        "basic-search": 6,
+        "evolution-search": 5,
+        "draw": 8,
+        "switching": 2,
+        "gust": 2,
+        "recovery": 2,
+        "stadium": 0,
+        "tool": 0,
+        "discard": 0
+      },
+      "providers": {
+        "basic-search": [
+          "me1-131"
+        ],
+        "evolution-search": [
+          "me1-125"
+        ],
+        "draw": [
+          "me1-119"
+        ],
+        "switching": [
+          "me1-130"
+        ],
+        "gust": [
+          "me1-114"
+        ],
+        "recovery": [],
+        "stadium": [],
+        "tool": [],
+        "discard": []
+      },
+      "unmetRoles": [
+        "recovery"
+      ],
+      "explanations": [
+        "Trainer roles were budgeted for the selected favourites.",
+        "balanced prioritizes balanced setup and switching.",
+        "No reviewed provider was found for recovery; the role remains unmet."
+      ]
+    },
+    "energyPlan": {
+      "entries": [
+        {
+          "cardId": "sve-8",
+          "count": 10
+        }
+      ],
+      "mainAttackCoverage": 0,
+      "secondaryAttackCoverage": 0,
+      "expectedManualAttachments": 0,
+      "accelerationProviders": [],
+      "recoveryProviders": [],
+      "explanation": [
+        "Applied reviewed Energy template Single-type low-cost (8-11 cards) for the selected attack types.",
+        "For one- and two-Energy attackers with low retreat demand."
+      ],
+      "warnings": []
+    },
+    "coherence": {
+      "coherent": true,
+      "engineIds": [
+        "anchor-capability:sv2-148"
+      ],
+      "cardRoles": {
+        "me1-114": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "me1-119": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Lillie's Determination: provides the declared hand-refresh requirement."
+        },
+        "me1-125": {
+          "role": "evolution-search",
+          "providerToRequirementEdge": "provides the declared evolution-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rare Candy: provides the declared evolution-search requirement."
+        },
+        "me1-130": {
+          "role": "switching",
+          "providerToRequirementEdge": "provides the declared switching requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Switch: provides the declared switching requirement."
+        },
+        "me1-131": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Ultra Ball: provides the declared basic-setup requirement."
+        },
+        "me2pt5-183": {
+          "role": "gust",
+          "providerToRequirementEdge": "provides the declared gust requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Boss's Orders: provides the declared gust requirement."
+        },
+        "sv1-181": {
+          "role": "basic-setup",
+          "providerToRequirementEdge": "provides the declared basic-setup requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Nest Ball: provides the declared basic-setup requirement."
+        },
+        "sv1-189": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Professor's Research (Professor Sada): provides the declared draw requirement."
+        },
+        "sv1-198": {
+          "role": "hand-refresh",
+          "providerToRequirementEdge": "provides the declared hand-refresh requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Youngster: provides the declared hand-refresh requirement."
+        },
+        "sv2-148": {
+          "role": "anchor",
+          "providerToRequirementEdge": "selected favourite fulfils primary-attacker",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Corviknight: selected favourite fulfils primary-attacker."
+        },
+        "sv2-164": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Corviknight line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Rookidee: evolves into the selected Corviknight line."
+        },
+        "sv2-165": {
+          "role": "evolution-line",
+          "providerToRequirementEdge": "evolves into the selected Corviknight line",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Corvisquire: evolves into the selected Corviknight line."
+        },
+        "sv2-188": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Super Rod: provides the declared energy-recovery requirement."
+        },
+        "sv4-163": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Earthen Vessel: provides the declared energy-recovery requirement."
+        },
+        "sv4pt5-80": {
+          "role": "draw",
+          "providerToRequirementEdge": "provides the declared draw requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Iono: provides the declared draw requirement."
+        },
+        "sv6pt5-57": {
+          "role": "energy-search",
+          "providerToRequirementEdge": "provides the declared energy-search requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Colress's Tenacity: provides the declared energy-search requirement."
+        },
+        "sv6pt5-61": {
+          "role": "energy-recovery",
+          "providerToRequirementEdge": "provides the declared energy-recovery requirement",
+          "allowedCount": [
+            1,
+            4
+          ],
+          "explanation": "Night Stretcher: provides the declared energy-recovery requirement."
+        },
+        "sve-8": {
+          "role": "energy",
+          "providerToRequirementEdge": "pays metal attack requirements",
+          "allowedCount": [
+            0,
+            15
+          ],
+          "explanation": "Basic Metal Energy: pays metal attack requirements."
+        }
+      },
+      "unrelatedEnginePackages": [],
+      "cardsWithNoRoleEdge": [],
+      "offPlanEnergyCards": [],
+      "unusedEvolutionLines": [],
+      "unusedAttackers": [],
+      "packageConflicts": [],
+      "stadiumConflicts": [],
+      "toolConflicts": [],
+      "benchDemand": 1,
+      "benchDemandOverflow": false,
+      "contamination": [],
+      "energyTypesRequired": [
+        "metal"
+      ],
+      "offTypeEnergyCount": 0
+    },
+    "quickTest": {
+      "games": 40,
+      "wins": 6,
+      "losses": 34,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 15,
+      "byOpponent": {
+        "skeledirge-armarouge": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 13013
+        },
+        "corpus-limitless-28423": {
+          "games": 20,
+          "wins": 3,
+          "losses": 17,
+          "unresolved": 0,
+          "invalidNumeric": 0,
+          "choiceLoops": 0,
+          "noLegalAction": 0,
+          "winRate": 15,
+          "deterministicSeed": 23013
+        }
+      },
+      "goingFirstWinRate": 15,
+      "goingSecondWinRate": 15,
+      "averageTurns": 18.7,
+      "averageMulligans": 2,
+      "setupFailurePercentage": 0,
+      "mainAttackerReadinessPercentage": 37.5,
+      "averageFirstAttackTurn": 2.9,
+      "averageFirstKnockOutTurn": 14.478260869565217,
+      "energyStarvationPercentage": 37.05179282868526,
+      "deckOutLosses": 0,
+      "averagePrizesTaken": 0.6,
+      "commonLossReasons": {
+        "no-pokemon": 34
+      },
+      "cardUsage": {
+        "sv2-164": 40,
+        "sve-8": 40,
+        "sv4-163": 13,
+        "sv2-188": 7,
+        "sv1-181": 16,
+        "me1-131": 22,
+        "me1-125": 13,
+        "sv2-148": 15,
+        "sv1-198": 1,
+        "me2pt5-183": 1,
+        "sv4pt5-80": 15,
+        "me1-130": 8,
+        "sv1-189": 15,
+        "sv2-165": 11,
+        "sv6pt5-57": 2,
+        "me1-119": 7,
+        "sv6pt5-61": 4,
+        "me1-114": 2
+      },
+      "abilityUsage": {},
+      "attackUsage": {
+        "Send Back": 215,
+        "Accelerate": 85,
+        "Glide": 14,
+        "Spinning Bird": 2
+      },
+      "anchorContribution": {
+        "cardId": "sv2-148",
+        "intendedRole": "primary-attacker",
+        "enteredPlayGames": 15,
+        "enteredPlayRate": 37.5,
+        "evolvedGames": 15,
+        "evolvedRate": 37.5,
+        "abilityActivations": 0,
+        "attackUses": 87,
+        "attackUseGames": 14,
+        "knockOuts": 20,
+        "definingEventCount": 192,
+        "contributingGames": 14,
+        "contributionRate": 35,
+        "firstReadyTurn": 13.928571428571429,
+        "abilityOrDefiningEventGames": 14,
+        "passesRoleGate": true,
+        "failureReasons": []
+      },
+      "definingEvents": {
+        "attack-used:Accelerate": 85,
+        "damage-dealt:sv2-148": 87,
+        "temporary-effect-applied:prevent attack damage and effects": 18,
+        "attack-used:Spinning Bird": 2
+      },
+      "uncertainty": "Small-sample quick test; treat matchup percentages as directional, not a stable win-rate estimate."
+    },
+    "anchorContribution": {
+      "cardId": "sv2-148",
+      "intendedRole": "primary-attacker",
+      "enteredPlayGames": 15,
+      "enteredPlayRate": 37.5,
+      "evolvedGames": 15,
+      "evolvedRate": 37.5,
+      "abilityActivations": 0,
+      "attackUses": 87,
+      "attackUseGames": 14,
+      "knockOuts": 20,
+      "definingEventCount": 192,
+      "contributingGames": 14,
+      "contributionRate": 35,
+      "firstReadyTurn": 13.928571428571429,
+      "abilityOrDefiningEventGames": 14,
+      "passesRoleGate": true,
+      "failureReasons": []
+    }
+  },
+  "finalistDeckId": "architect-anchor-sv2-148-balanced-13013-0",
+  "finalistFingerprint": "me1-114:3|me1-119:4|me1-125:4|me1-130:4|me1-131:4|me2pt5-183:1|sv1-181:2|sv1-189:2|sv1-198:2|sv2-148:4|sv2-164:4|sv2-165:4|sv2-188:2|sv4-163:3|sv4pt5-80:3|sv6pt5-57:2|sv6pt5-61:2|sve-8:10",
+  "candidateScreeningRank": 1,
+  "anchorContribution": {
+    "cardId": "sv2-148",
+    "intendedRole": "primary-attacker",
+    "enteredPlayGames": 15,
+    "enteredPlayRate": 37.5,
+    "evolvedGames": 15,
+    "evolvedRate": 37.5,
+    "abilityActivations": 0,
+    "attackUses": 87,
+    "attackUseGames": 14,
+    "knockOuts": 20,
+    "definingEventCount": 192,
+    "contributingGames": 14,
+    "contributionRate": 35,
+    "firstReadyTurn": 13.928571428571429,
+    "abilityOrDefiningEventGames": 14,
+    "passesRoleGate": true,
+    "failureReasons": []
+  },
+  "definingEvents": {
+    "attack-used:Accelerate": 85,
+    "damage-dealt:sv2-148": 87,
+    "temporary-effect-applied:prevent attack damage and effects": 18,
+    "attack-used:Spinning Bird": 2
+  },
+  "byOpponent": {
+    "skeledirge-armarouge": {
+      "games": 20,
+      "wins": 3,
+      "losses": 17,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 15,
+      "deterministicSeed": 13013
+    },
+    "corpus-limitless-28423": {
+      "games": 20,
+      "wins": 3,
+      "losses": 17,
+      "unresolved": 0,
+      "invalidNumeric": 0,
+      "choiceLoops": 0,
+      "noLegalAction": 0,
+      "winRate": 15,
+      "deterministicSeed": 23013
+    }
+  }
+}

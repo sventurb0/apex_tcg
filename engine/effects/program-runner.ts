@@ -443,6 +443,12 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       const opponent = state.players[otherPlayer(start.actingPlayerId)]; if (!opponent.active || !opponent.bench.length) return true;
       return choice(state, continuation(start, 1), { playerId: otherPlayer(start.actingPlayerId), selectionKind: "pokemon", min: 1, max: 1, eligibleIds: opponent.bench.map(playId), optional: false, instruction: "Choose a Benched Pokémon to become Active." });
     }
+    case "attack:accelerate": {
+      const opponentId = otherPlayer(start.actingPlayerId); const target = state.players[opponentId].active;
+      if (source && target && isKnockedOut(state, target)) { addTemporaryEffect(state, { kind: "incoming-attack-prevention", playerId: opponentId, pokemonId: playId(source), appliesOnPlayerTurn: state.players[opponentId].turnsTaken + 1, sourceCardId: start.sourceCardId }); emitEvent(state, "temporary-effect-applied", start.actingPlayerId, { sourceCardId: start.sourceCardId, targetId: playId(source), targetPlayerId: start.actingPlayerId, detail: "prevent attack damage and effects" }); }
+      return true;
+    }
+    case "attack:aqua-slash": if (source) { addTemporaryEffect(state, { kind: "attack-prevention", playerId: start.actingPlayerId, pokemonId: playId(source), appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); return true; } return true;
     case "ability:run-errand": draw(state, start.actingPlayerId, 2); return true;
     case "ability:allure": draw(state, start.actingPlayerId, 2); return true;
     case "ability:teleporter": {
