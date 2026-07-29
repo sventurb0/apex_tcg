@@ -40,6 +40,22 @@ const exactPrograms: Readonly<Record<string, string>> = {
   "sv10-116": "pokemon:team-rocket-nidoqueen", "sv2-79": "pokemon:bellibolt-ex", "sv3-77": "pokemon:bellibolt", "sv2-148": "pokemon:corviknight", "sv3pt5-68": "pokemon:machamp", "sv3pt5-130": "pokemon:gyarados", "sv3pt5-149": "pokemon:dragonite", "swsh12-98": "pokemon:hawlucha",
   "me5-27": "pokemon:mega-zeraora-ex", "sv4-177": "tool:technical-machine-devolution", "sv4-178": "tool:technical-machine-evolution",
   "sv1-32": "pokemon:arcanine-ex", "sv4pt5-175": "pokemon:hawlucha-flying-entry",
+  "sv9-57": "pokemon:alolan-marowak", "sv10-23": "pokemon:arboliva-ex", "me5-71": "pokemon:bombirdier",
+  "sv4-123": "pokemon:brute-bonnet", "sv10-58": "pokemon:floatzel", "me4-50": "pokemon:golbat",
+  "me5-7": "pokemon:heatran-owned", "me5-51": "pokemon:inkay", "me5-32": "pokemon:jynx",
+  "me4-60": "pokemon:metang-owned", "sv4pt5-37": "pokemon:mimikyu", "sv10-48": "pokemon:mistys-magikarp",
+  "sv1-127": "pokemon:muk", "me2pt5-143": "pokemon:pecharunt-owned", "sv8-31": "pokemon:skeledirge",
+  "svp-34": "pokemon:skeledirge-ex", "sv10-112": "pokemon:team-rocket-ekans", "sv10-114": "pokemon:team-rocket-nidoran-female",
+  "sv10-115": "pokemon:team-rocket-nidorina", "sv10-123": "pokemon:team-rocket-grimer", "sv10-153": "pokemon:team-rocket-porygon",
+  "sv10-155": "pokemon:team-rocket-porygon-z", "sv10-154": "pokemon:team-rocket-porygon2", "sv10-126": "pokemon:team-rocket-weezing",
+  "sv10-82": "pokemon:team-rocket-wobbuffet", "me5-68": "pokemon:toucannon",
+  "sv5-140": "tool:ancient-booster-energy-capsule", "sv2-171": "stadium:artazon", "sv3-186": "trainer:arven",
+  "me2-85": "stadium:battle-cage", "sv4-160": "trainer:counter-catcher", "me5-75": "trainer:dark-bell",
+  "sv1-169": "tool:defiance-band", "sv1-183": "trainer:penny", "sv5-156": "stadium:perilous-jungle",
+  "pgo-68": "stadium:pokestop", "sv5-159": "tool:rescue-board", "sv8pt5-128": "trainer:scoop-up-cyclone",
+  "sv10-172": "trainer:team-rocket-bother-bot", "sv10-175": "trainer:team-rocket-great-ball", "sv10-179": "trainer:team-rocket-venture-bomb",
+  "me5-82": "tool:tremendous-bomb",
+  "sv10-68": "pokemon:electabuzz", "me2-54": "pokemon:gastly", "swsh12-19": "pokemon:growlithe-basic", "sv10-4": "pokemon:pineco", "me5-15": "pokemon:wailmer", "sv10-84": "pokemon:stevens-claydol",
 };
 
 const mechanics: Readonly<Record<string, string[]>> = {

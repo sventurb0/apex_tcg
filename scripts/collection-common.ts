@@ -27,6 +27,8 @@ const targets: Array<{ id: string; name: string; favouriteNames: string[]; forma
   { id: "owned-team-rocket-muk", name: "Owned Team Rocket Muk Control", favouriteNames: ["Muk", "Arbok", "Weezing"], format: "expanded" },
   { id: "owned-skeledirge-armarouge", name: "Owned Skeledirge Armarouge", favouriteNames: ["Skeledirge ex", "Armarouge", "Charcadet"], format: "expanded" },
   { id: "owned-arcanine", name: "Owned Arcanine", favouriteNames: ["Arcanine", "Hisuian Arcanine", "Growlithe"], format: "expanded" },
+  { id: "owned-swalot-poison", name: "Owned Swalot Poison", favouriteNames: ["Swalot", "Gulpin", "Binding Mochi"], format: "expanded" },
+  { id: "owned-team-rocket-crobat-spidops", name: "Owned Team Rocket Crobat/Spidops", favouriteNames: ["Team Rocket's Crobat ex", "Team Rocket's Spidops", "Team Rocket's Koffing"], format: "expanded" },
 ];
 
 function ownedQuantities(document: OwnedCollectionDocument): Map<string, number> {

@@ -176,6 +176,50 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       player.discard.push(...player.deck.splice(0, 2));
       return true;
     }
+    case "attack:alolan-marowak-retaliate":
+    case "attack:rocket-r-command":
+    case "attack:rocket-weezing-explode":
+    case "attack:skeledirge-torcherto":
+    case "attack:toucannon-feather-rondo": return true;
+    case "attack:arboliva-oil-salvo": {
+      const target = state.players[otherPlayer(start.actingPlayerId)].active;
+      if (target) target.damage += 120;
+      return true;
+    }
+    case "attack:arboliva-aroma-shot": if (source) clearSpecialConditions(source); return true;
+    case "attack:bombirdier-delivery": {
+      const first = nextRandom(state.rngState); state.rngState = first.state; const second = nextRandom(state.rngState); state.rngState = second.state;
+      emitEvent(state, "coin-flip", start.actingPlayerId, { sourceCardId: start.sourceCardId, detail: first.value < .5 && second.value < .5 ? "double-heads" : "not-double-heads" }); return true;
+    }
+    case "attack:brute-bonnet-rampage":
+    case "attack:floatzel-aqua-slash": if (source && start.attackId) { addTemporaryEffect(state, { kind: "attack-lock", playerId: start.actingPlayerId, pokemonId: playId(source), attackId: start.attackId, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); } return true;
+    case "attack:golbat-covert-flight": if (source) { addTemporaryEffect(state, { kind: "damage-reduction", playerId: start.actingPlayerId, pokemonId: playId(source), amount: 9999, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); } return true;
+    case "attack:heatran-singe": { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) applySpecialCondition(target, "burned"); return true; }
+    case "attack:heatran-lava-wall": if (source) { addTemporaryEffect(state, { kind: "damage-reduction", playerId: start.actingPlayerId, pokemonId: playId(source), amount: 9999, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); } return true;
+    case "attack:inkay-procurement": {
+      const eligibleIds = player.deck.filter((card) => cardFor(state, card).category === "trainer" && cardFor(state, card).subtype === "item").map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose an Item from your deck." });
+    }
+    case "attack:jynx-intense-kiss": return true;
+    case "attack:jynx-psy-bolt": { const flip = nextRandom(state.rngState); state.rngState = flip.state; if (flip.value < .5) { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) applySpecialCondition(target, "paralyzed"); } return true; }
+    case "attack:metang-guard-press": if (source) addTemporaryEffect(state, { kind: "damage-reduction", playerId: start.actingPlayerId, pokemonId: playId(source), amount: 30, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); return true;
+    case "attack:mimikyu-ghost-eye": { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) target.damage += 70; return true; }
+    case "attack:muk-toxic-strike": { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) applySpecialCondition(target, "poisoned"); return true; }
+    case "attack:pecharunt-mochi-rush": if (source) addTemporaryEffect(state, { kind: "attack-damage-bonus", playerId: start.actingPlayerId, amount: 50, appliesOnPlayerTurn: player.turnsTaken + 1, sourceCardId: start.sourceCardId }); return true;
+    case "attack:rocket-ekans-drag-down": { const flip = nextRandom(state.rngState); state.rngState = flip.state; if (flip.value < .5) { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) applySpecialCondition(target, "paralyzed"); } return true; }
+    case "attack:rocket-nidoran-female-surprise": { const flip = nextRandom(state.rngState); state.rngState = flip.state; return true; }
+    case "attack:rocket-nidorina-awakening": return true;
+    case "attack:rocket-grimer-corrosive-sludge": return true;
+    case "attack:rocket-porygon-hacking": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const own = player.hand[0]; if (own) player.discard.push(player.hand.shift()!); if (opponent.hand.length) opponent.discard.push(opponent.hand.shift()!); return true;
+    }
+    case "attack:rocket-wobbuffet-mirror": return true;
+    case "attack:stevens-claydol-eerie-light": { const target = state.players[otherPlayer(start.actingPlayerId)].active; if (target) applySpecialCondition(target, "confused"); return true; }
+    case "attack:stevens-claydol-clay-blast": if (source) for (const energy of source.attachedEnergy.splice(0)) discardAttackEnergy(state, start.actingPlayerId, source, energy); return true;
+    case "ability:brute-bonnet-toxic-powder": { for (const id of [start.actingPlayerId, otherPlayer(start.actingPlayerId)] as const) { const active = state.players[id].active; if (active) applySpecialCondition(active, "poisoned"); } return true; }
+    case "ability:pecharunt-final-chain": { const eligibleIds = player.deck.map((card) => card.instanceId); return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose a card from your deck." }); }
+    case "ability:toucannon-aerial-draw": draw(state, start.actingPlayerId, 1); return true;
+    case "ability:rocket-reconstitute": { const discarded = player.hand.splice(0, 2); player.discard.push(...discarded); draw(state, start.actingPlayerId, 1); return true; }
     case "ability:biting-spree": {
       const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = pokemonTargets(opponent).map(playId);
       if (!eligibleIds.length) return true;
@@ -744,6 +788,35 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
       const top = player.deck.slice(0, 7); const eligibleIds = top.filter((card) => { const def = cardFor(state, card); return def.category === "pokemon" || def.category === "trainer"; }).map((card) => card.instanceId);
       return choice(state, continuation(start, 1, { top: top.map((card) => card.instanceId) }), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose up to 1 Pokémon and 1 Trainer from the top 7 cards of your deck." });
     }
+    case "trainer:arven": {
+      const eligibleIds = player.deck.filter((card) => { const definition = cardFor(state, card); return definition.category === "trainer" && (definition.subtype === "item" || definition.subtype === "tool"); }).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(2, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose an Item and a Pokémon Tool from your deck." });
+    }
+    case "trainer:counter-catcher": {
+      const eligibleIds = state.players[otherPlayer(start.actingPlayerId)].bench.map(playId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose an opposing Benched Pokémon to switch Active." });
+    }
+    case "trainer:dark-bell": {
+      for (const id of [start.actingPlayerId, otherPlayer(start.actingPlayerId)] as const) { const active = state.players[id].active; if (active && topCard(state, active).pokemonType !== "darkness") applySpecialCondition(active, "confused"); }
+      return true;
+    }
+    case "trainer:penny":
+    case "trainer:scoop-up-cyclone": {
+      const eligibleIds = pokemonTargets(player).map(playId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose one of your Pokémon to return to your hand with all attached cards." });
+    }
+    case "trainer:team-rocket-great-ball": {
+      const eligibleIds = player.deck.filter((card) => isTeamRocketPokemonCard(state, card)).map((card) => card.instanceId);
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "card", min: 0, max: Math.min(1, eligibleIds.length), eligibleIds, optional: true, instruction: "Choose a Team Rocket's Pokémon revealed by the coin result." });
+    }
+    case "trainer:team-rocket-venture-bomb": {
+      const opponent = state.players[otherPlayer(start.actingPlayerId)]; const eligibleIds = pokemonTargets(opponent).map(playId);
+      if (!eligibleIds.length) return true;
+      return choice(state, continuation(start, 1), { playerId: start.actingPlayerId, selectionKind: "pokemon", min: 1, max: 1, eligibleIds, optional: false, instruction: "Choose a Pokémon for 2 damage counters." });
+    }
+    case "trainer:team-rocket-bother-bot": return true;
     case "stadium:forest-of-vitality":
     case "stadium:risky-ruins":
     case "stadium:surfing-beach":
@@ -754,9 +827,17 @@ export function startEffectProgram(state: GameState, start: ProgramStart): boole
     case "stadium:jamming-tower":
     case "stadium:area-zero-underdepths":
     case "stadium:ns-castle":
+    case "stadium:artazon":
+    case "stadium:battle-cage":
+    case "stadium:perilous-jungle":
+    case "stadium:pokestop":
     case "tool:light-ball":
     case "tool:brave-bangle":
     case "tool:handheld-fan":
+    case "tool:ancient-booster-energy-capsule":
+    case "tool:defiance-band":
+    case "tool:rescue-board":
+    case "tool:tremendous-bomb":
       return true;
     default: throw new MissingEffectProgramError(start.programId, start.sourceCardId);
   }
@@ -801,6 +882,17 @@ export function continueEffectProgram(state: GameState, pending: EffectChoice, s
   if (/^template:(?:trainer|ability|attack):search-deck-to-hand:/.test(cont.programId)) { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: selected, detail: cont.programId }); return true; }
   if (/^template:(?:trainer|attack):recover-discard-to-hand:/.test(cont.programId)) { moveDiscardToHand(state, cont.actingPlayerId, selected); return true; }
   if (/^template:(?:trainer|ability):search-basic-to-bench:/.test(cont.programId)) { const benched: string[] = []; for (const id of selected.slice(0, Math.max(0, benchCapacity(state, cont.actingPlayerId) - player.bench.length))) { const card = removeById(player.deck, id); if (card) { player.bench.push({ stack: [card], damage: 0, attachedEnergy: [], specialConditions: [], enteredPlayTurn: state.turn, evolvedThisTurn: false, abilityUsage: {} }); benched.push(card.instanceId); } } shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: benched, detail: cont.programId }); return true; }
+  if (cont.programId === "trainer:arven") { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; }
+  if (cont.programId === "trainer:counter-catcher") { if (selected[0]) switchTo(state, otherPlayer(cont.actingPlayerId), selected[0]); return true; }
+  if (cont.programId === "trainer:team-rocket-great-ball") { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; }
+  if (cont.programId === "trainer:team-rocket-venture-bomb") { const opponent = state.players[otherPlayer(cont.actingPlayerId)]; const target = selected[0] ? findPokemon(opponent, selected[0]) : undefined; if (target) target.damage += 20; return true; }
+  if (cont.programId === "attack:inkay-procurement" || cont.programId === "ability:pecharunt-final-chain") { moveDeckToHand(state, cont.actingPlayerId, selected); shuffle(state, cont.actingPlayerId); return true; }
+  if (cont.programId === "trainer:penny" || cont.programId === "trainer:scoop-up-cyclone") {
+    const targetId = selected[0]; const index = player.bench.findIndex((pokemon) => playId(pokemon) === targetId);
+    const target = index >= 0 ? player.bench.splice(index, 1)[0] : player.active && playId(player.active) === targetId ? player.active : undefined;
+    if (target) { if (player.active === target) player.active = player.bench.shift() ?? null; player.hand.push(...target.stack, ...target.attachedEnergy); }
+    return true;
+  }
   if (cont.programId === "energy:telepathic-psychic") { const benched: string[] = []; for (const id of selected.slice(0, Math.max(0, benchCapacity(state, cont.actingPlayerId) - player.bench.length))) { const card = removeById(player.deck, id); if (!card) continue; const pokemon = makeBenchedPokemon(card, state.turn); player.bench.push(pokemon); benched.push(card.instanceId); emitEvent(state, "pokemon-benched", cont.actingPlayerId, { sourceCardId: card.cardId, sourceInstanceId: card.instanceId, targetId: playId(pokemon), detail: "deck-to-bench (Telepathic Psychic Energy)" }); } shuffle(state, cont.actingPlayerId); emitEvent(state, "cards-searched", cont.actingPlayerId, { sourceCardId: cont.sourceCardId, cardInstanceIds: benched, detail: "Telepathic Psychic Energy" }); return true; }
   if (cont.programId.startsWith("template:trainer:heal-selected:")) { const target = selected[0] ? findPokemon(player, selected[0]) : undefined; const amount = Number(cont.programId.split(":")[3]) || 0; if (target) heal(state, cont.actingPlayerId, target, amount, cont.sourceCardId); return true; }
   if (cont.programId.startsWith("template:trainer:heal-selected-clear:")) { const target = selected[0] ? findPokemon(player, selected[0]) : undefined; const amount = Number(cont.programId.split(":")[3]) || 0; if (target) { heal(state, cont.actingPlayerId, target, amount, cont.sourceCardId); clearSpecialConditions(target); } return true; }

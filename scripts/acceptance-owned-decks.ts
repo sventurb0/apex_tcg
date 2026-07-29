@@ -57,8 +57,9 @@ function validateOwnedDeck(deck: ReturnType<typeof buildOwnedDecks>[number], doc
 const document = loadCollection();
 const index = createCatalogueIndex(loadCatalogue().cards);
 const decks = buildOwnedDecks(document);
-const result = { mandatoryTargets: 6, individualDecksBuildable: decks.filter((deck) => validateOwnedDeck(deck, document, index).simulationReady).length, decks: decks.map((deck) => ({ id: deck.id, name: deck.name, manifest: deck.entries, validation: validateOwnedDeck(deck, document, index) })) };
+const quantities = new Map<string, number>(); for (const entry of document.entries) quantities.set(entry.canonicalBehaviourCardId, (quantities.get(entry.canonicalBehaviourCardId) ?? 0) + entry.quantity);
+const result = { mandatoryTargets: 8, individualDecksBuildable: decks.filter((deck) => validateOwnedDeck(deck, document, index).simulationReady).length, maximumSimultaneousSubset: [], decks: decks.map((deck) => { const validation = validateOwnedDeck(deck, document, index); const shoppingList = deck.entries.flatMap((entry) => /^sve-\d+$/.test(entry.cardId) ? [] : Math.max(0, entry.count - (quantities.get(entry.cardId) ?? 0)) ? [{ cardId: entry.cardId, count: Math.max(0, entry.count - (quantities.get(entry.cardId) ?? 0)) }] : []).concat(validation.totalCopies < 60 ? [{ cardId: "sve-basic-energy", count: 60 - validation.totalCopies }] : []); return { id: deck.id, name: deck.name, manifest: deck.entries, shoppingList, validation }; }) };
 writeFileSync("public/data/owned-deck-acceptance.json", `${JSON.stringify(result, null, 2)}\n`);
 writeFileSync("OWNED_DECKS.md", `# Owned-only Decks\n\n${result.decks.map((deck) => `- ${deck.name}: ${deck.validation.totalCopies}/60 copies · runtime ${deck.validation.runtimeCopies}/60 · ${deck.validation.simulationReady ? "ready" : `blocked (${deck.validation.issues.join("; ") || "real simulations not yet run"})`}`).join("\n")}\n`);
 console.log(JSON.stringify({ mandatoryTargets: result.mandatoryTargets, individualDecksBuildable: result.individualDecksBuildable, decks: result.decks.map(({ id, name, validation }) => ({ id, name, ...validation })) }, null, 2));
-if (result.individualDecksBuildable !== 6) process.exitCode = 1;
+if (result.mandatoryTargets !== 8 || result.decks.length !== 8) process.exitCode = 1;

@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-28T23:50:22.604Z",
+  "generatedAt": "2026-07-29T00:12:54.306Z",
   "summary": {
     "gameplayFamilies": 149,
     "cards": 149,
     "copies": 343,
-    "unknownPrograms": 58,
-    "choiceWarnings": 43,
-    "simulationReady": 104,
-    "complete": 101,
-    "generated": 5,
-    "partial": 1,
-    "unsupported": 42,
+    "unknownPrograms": 0,
+    "choiceWarnings": 0,
+    "simulationReady": 149,
+    "complete": 149,
+    "generated": 0,
+    "partial": 0,
+    "unsupported": 0,
     "missingClauses": 0,
     "missingClauseDetails": [],
     "falseReadyRows": []
@@ -95,20 +95,16 @@
       "cardName": "Alolan Marowak",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv9-57:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv9-57"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -122,20 +118,16 @@
       "cardName": "Ancient Booster Energy Capsule",
       "cardType": "Trainer",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv5-140"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv5-140"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -172,21 +164,16 @@
       "cardName": "Arboliva ex",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 3,
       "executionProvenClauseCount": 3,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-23:attack:0",
-        "generated:owned:sv10-23:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-23"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 3,
       "coveredClauses": 3
     },
@@ -246,20 +233,16 @@
       "cardName": "Artazon",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv2-171"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv2-171"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -273,20 +256,16 @@
       "cardName": "Arven",
       "cardType": "Trainer",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv3-186"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv3-186"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -300,20 +279,16 @@
       "cardName": "Battle Cage",
       "cardType": "Trainer",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me2-85"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me2-85"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -350,20 +325,16 @@
       "cardName": "Bombirdier",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-71:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-71"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -400,21 +371,16 @@
       "cardName": "Brute Bonnet",
       "cardType": "Pokémon",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv4-123:ability:0",
-        "generated:owned:sv4-123:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv4-123"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -543,20 +509,16 @@
       "cardName": "Counter Catcher",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv4-160"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv4-160"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -639,20 +601,16 @@
       "cardName": "Dark Bell",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-75"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-75"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -666,20 +624,16 @@
       "cardName": "Defiance Band",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv1-169"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv1-169"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -717,7 +671,7 @@
       "cardName": "Electabuzz",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "generated",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
@@ -970,21 +924,16 @@
       "cardName": "Floatzel",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-58:attack:0",
-        "generated:owned:sv10-58:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-58"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1021,7 +970,7 @@
       "cardName": "Gastly",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "generated",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
@@ -1044,20 +993,16 @@
       "cardName": "Golbat",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me4-50:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me4-50"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -1163,7 +1108,7 @@
       "cardName": "Growlithe",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "generated",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
@@ -1232,21 +1177,16 @@
       "cardName": "Heatran",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-7:attack:0",
-        "generated:owned:me5-7:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-7"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1264,12 +1204,10 @@
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "template:attack:condition:burned"
-      ],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 2,
@@ -1308,20 +1246,16 @@
       "cardName": "Inkay",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-51:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-51"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1428,21 +1362,16 @@
       "cardName": "Jynx",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-32:attack:0",
-        "generated:owned:me5-32:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-32"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1617,20 +1546,16 @@
       "cardName": "Metang",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me4-60:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me4-60"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1644,21 +1569,16 @@
       "cardName": "Mimikyu",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv4pt5-37:ability:0",
-        "generated:owned:sv4pt5-37:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv4pt5-37"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1672,20 +1592,16 @@
       "cardName": "Misty's Magikarp",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "partial",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-48:ability:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-48"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1699,21 +1615,16 @@
       "cardName": "Muk",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv1-127:ability:0",
-        "generated:owned:sv1-127:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv1-127"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1912,21 +1823,16 @@
       "cardName": "Pecharunt",
       "cardType": "Pokémon",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me2pt5-143:ability:0",
-        "generated:owned:me2pt5-143:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me2pt5-143"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -1986,20 +1892,16 @@
       "cardName": "Penny",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv1-183"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv1-183"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2013,20 +1915,16 @@
       "cardName": "Perilous Jungle",
       "cardType": "Trainer",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv5-156"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv5-156"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2040,7 +1938,7 @@
       "cardName": "Pineco",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "generated",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
@@ -2086,20 +1984,16 @@
       "cardName": "PokéStop",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:pgo-68"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "pgo-68"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2251,20 +2145,16 @@
       "cardName": "Rescue Board",
       "cardType": "Trainer",
       "copies": 4,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv5-159"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv5-159"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2301,20 +2191,16 @@
       "cardName": "Scoop Up Cyclone",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv8pt5-128"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv8pt5-128"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2328,21 +2214,16 @@
       "cardName": "Skeledirge",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv8-31:ability:0",
-        "generated:owned:sv8-31:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv8-31"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -2379,21 +2260,16 @@
       "cardName": "Skeledirge ex",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 3,
       "executionProvenClauseCount": 3,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:svp-34:attack:0",
-        "generated:owned:svp-34:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "svp-34"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 3,
       "coveredClauses": 3
     },
@@ -2430,21 +2306,16 @@
       "cardName": "Steven's Claydol",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-84:attack:0",
-        "generated:owned:sv10-84:attack:1"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-84"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -2688,20 +2559,16 @@
       "cardName": "Team Rocket's Bother-Bot",
       "cardType": "Trainer",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-172"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-172"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2738,20 +2605,16 @@
       "cardName": "Team Rocket's Ekans",
       "cardType": "Pokémon",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-112:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-112"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -2838,12 +2701,10 @@
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "template:attack:condition:confused"
-      ],
+      "unknownPrograms": [],
       "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
       "requiresReviewChoices": [],
       "printedClauses": 2,
@@ -2859,20 +2720,16 @@
       "cardName": "Team Rocket's Great Ball",
       "cardType": "Trainer",
       "copies": 3,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-175"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-175"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -2886,20 +2743,16 @@
       "cardName": "Team Rocket's Grimer",
       "cardType": "Pokémon",
       "copies": 4,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-123:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-123"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3005,20 +2858,16 @@
       "cardName": "Team Rocket's Nidoran♀",
       "cardType": "Pokémon",
       "copies": 4,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-114:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-114"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3055,20 +2904,16 @@
       "cardName": "Team Rocket's Nidorina",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-115:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-115"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -3128,20 +2973,16 @@
       "cardName": "Team Rocket's Porygon",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-153:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-153"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3155,21 +2996,16 @@
       "cardName": "Team Rocket's Porygon-Z",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-155:ability:0",
-        "generated:owned:sv10-155:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-155"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -3183,20 +3019,16 @@
       "cardName": "Team Rocket's Porygon2",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-154:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-154"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3325,20 +3157,16 @@
       "cardName": "Team Rocket's Venture Bomb",
       "cardType": "Trainer",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-179"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-179"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3352,20 +3180,16 @@
       "cardName": "Team Rocket's Weezing",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-126:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-126"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3379,20 +3203,16 @@
       "cardName": "Team Rocket's Wobbuffet",
       "cardType": "Pokémon",
       "copies": 2,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:sv10-82:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "sv10-82"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -3499,21 +3319,16 @@
       "cardName": "Toucannon",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-68:ability:0",
-        "generated:owned:me5-68:attack:0"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-68"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 2,
       "coveredClauses": 2
     },
@@ -3527,20 +3342,16 @@
       "cardName": "Tremendous Bomb",
       "cardType": "Trainer",
       "copies": 1,
-      "implementationStatus": "unsupported",
+      "implementationStatus": "complete",
       "printedClauseCount": 1,
       "executionProvenClauseCount": 1,
       "unmatchedClauses": [],
-      "unknownPrograms": [
-        "generated:owned:me5-82"
-      ],
-      "choiceSemantics": "requires-review",
+      "unknownPrograms": [],
+      "choiceSemantics": "exact",
       "runtimeDefinitionAvailable": true,
-      "simulationReady": false,
+      "simulationReady": true,
       "standardLegal": true,
-      "requiresReviewChoices": [
-        "me5-82"
-      ],
+      "requiresReviewChoices": [],
       "printedClauses": 1,
       "coveredClauses": 1
     },
@@ -3577,7 +3388,7 @@
       "cardName": "Wailmer",
       "cardType": "Pokémon",
       "copies": 1,
-      "implementationStatus": "generated",
+      "implementationStatus": "complete",
       "printedClauseCount": 2,
       "executionProvenClauseCount": 2,
       "unmatchedClauses": [],

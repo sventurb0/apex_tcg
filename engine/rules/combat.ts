@@ -96,6 +96,26 @@ export function resolveBaseDamage(damage: AttackDamage, attacker: PokemonInPlay,
   }
   if (damage.resolverId === "thunderous-fist-damage") return attacker.attachedEnergy.filter((energy) => { const definition = cardFor(state!, energy); return definition.category === "energy" && definition.energyType === "lightning"; }).length * 60;
   if (damage.resolverId === "raging-claws-damage") return 30 + Math.floor(attacker.damage / 10) * 10;
+  if (damage.resolverId === "alolan-marowak-retaliate-damage" && state && attackingPlayerId) {
+    const knockedOutLastTurn = state.events.some((event) => event.type === "pokemon-knocked-out" && event.targetPlayerId === attackingPlayerId && event.turn === state.turn - 1);
+    return 30 + (knockedOutLastTurn ? 90 : 0);
+  }
+  if (damage.resolverId === "skeledirge-torcherto-damage" && state && attackingPlayerId) {
+    const own = state.players[attackingPlayerId]; const opponent = state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"];
+    return 60 + (own.bench.length + opponent.bench.length) * 20;
+  }
+  if (damage.resolverId === "rocket-r-command-damage" && state && attackingPlayerId) {
+    return 20 * state.players[attackingPlayerId].discard.filter((card) => cardFor(state, card).category === "trainer" && cardFor(state, card).subtype === "supporter" && cardFor(state, card).name.includes("Team Rocket")).length;
+  }
+  if (damage.resolverId === "rocket-weezing-explode-damage" && state && attackingPlayerId) {
+    const count = [state.players[attackingPlayerId].active, ...state.players[attackingPlayerId].bench, state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"].active, ...state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"].bench]
+      .filter((pokemon): pokemon is PokemonInPlay => Boolean(pokemon))
+      .filter((pokemon) => /Koffing|Weezing/i.test(topCard(state, pokemon).name)).length;
+    return count * 40;
+  }
+  if (damage.resolverId === "toucannon-feather-rondo-damage" && state && attackingPlayerId) {
+    return 60 + (state.players[attackingPlayerId].bench.length + state.players[attackingPlayerId === "player-one" ? "player-two" : "player-one"].bench.length) * 20;
+  }
   throw new Error(`Unknown attack damage resolver: ${damage.resolverId}`);
 }
 

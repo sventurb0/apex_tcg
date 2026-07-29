@@ -1,6 +1,7 @@
 {
-  "mandatoryTargets": 6,
+  "mandatoryTargets": 8,
   "individualDecksBuildable": 0,
+  "maximumSimultaneousSubset": [],
   "decks": [
     {
       "id": "owned-alakazam",
@@ -17,6 +18,12 @@
         {
           "cardId": "me1-54",
           "count": 1
+        }
+      ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
         }
       ],
       "validation": {
@@ -56,6 +63,12 @@
           "count": 1
         }
       ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
+        }
+      ],
       "validation": {
         "totalCopies": 3,
         "runtimeUniqueCards": 3,
@@ -87,6 +100,12 @@
         {
           "cardId": "sv10-116",
           "count": 1
+        }
+      ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 58
         }
       ],
       "validation": {
@@ -127,12 +146,18 @@
           "count": 1
         }
       ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
+        }
+      ],
       "validation": {
         "totalCopies": 3,
-        "runtimeUniqueCards": 2,
-        "runtimeCopies": 2,
-        "unsupportedUniqueCards": 1,
-        "unsupportedCopies": 1,
+        "runtimeUniqueCards": 3,
+        "runtimeCopies": 3,
+        "unsupportedUniqueCards": 0,
+        "unsupportedCopies": 0,
         "legalCopyLimits": true,
         "legalSpecialLimits": true,
         "validBasicSetup": false,
@@ -163,6 +188,12 @@
         {
           "cardId": "sv4-26",
           "count": 1
+        }
+      ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
         }
       ],
       "validation": {
@@ -198,6 +229,12 @@
           "count": 1
         }
       ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 58
+        }
+      ],
       "validation": {
         "totalCopies": 2,
         "runtimeUniqueCards": 2,
@@ -215,6 +252,92 @@
         "simulationReady": false,
         "issues": [
           "Deck contains 2 cards; constructed decks normally contain exactly 60."
+        ]
+      }
+    },
+    {
+      "id": "owned-swalot-poison",
+      "name": "Owned Swalot Poison",
+      "manifest": [
+        {
+          "cardId": "sv7-92",
+          "count": 1
+        },
+        {
+          "cardId": "sv7-91",
+          "count": 1
+        },
+        {
+          "cardId": "sv6pt5-55",
+          "count": 1
+        }
+      ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
+        }
+      ],
+      "validation": {
+        "totalCopies": 3,
+        "runtimeUniqueCards": 3,
+        "runtimeCopies": 3,
+        "unsupportedUniqueCards": 0,
+        "unsupportedCopies": 0,
+        "legalCopyLimits": true,
+        "legalSpecialLimits": true,
+        "validBasicSetup": true,
+        "validEvolutionLines": true,
+        "compatibleEnergyPlan": false,
+        "ownedQuantitySatisfied": true,
+        "aiStrategyPresent": false,
+        "simulationGames": 0,
+        "simulationReady": false,
+        "issues": [
+          "Deck contains 3 cards; constructed decks normally contain exactly 60."
+        ]
+      }
+    },
+    {
+      "id": "owned-team-rocket-crobat-spidops",
+      "name": "Owned Team Rocket Crobat/Spidops",
+      "manifest": [
+        {
+          "cardId": "sv10-122",
+          "count": 1
+        },
+        {
+          "cardId": "me2pt5-19",
+          "count": 1
+        },
+        {
+          "cardId": "sv10-125",
+          "count": 1
+        }
+      ],
+      "shoppingList": [
+        {
+          "cardId": "sve-basic-energy",
+          "count": 57
+        }
+      ],
+      "validation": {
+        "totalCopies": 3,
+        "runtimeUniqueCards": 3,
+        "runtimeCopies": 3,
+        "unsupportedUniqueCards": 0,
+        "unsupportedCopies": 0,
+        "legalCopyLimits": true,
+        "legalSpecialLimits": true,
+        "validBasicSetup": true,
+        "validEvolutionLines": false,
+        "compatibleEnergyPlan": false,
+        "ownedQuantitySatisfied": true,
+        "aiStrategyPresent": false,
+        "simulationGames": 0,
+        "simulationReady": false,
+        "issues": [
+          "Deck contains 3 cards; constructed decks normally contain exactly 60."
         ]
       }
     }

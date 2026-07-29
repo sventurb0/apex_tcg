@@ -85,6 +85,32 @@ const attackPrograms: Readonly<Record<string, Readonly<Record<string, string>>>>
   "pokemon:goldeen": { "Whirlpool": "attack:whirlpool" },
   "pokemon:alakazam-control": { "Strange Hacking": "attack:strange-hacking" },
   "pokemon:genesect-ex": { "Protect Charge": "attack:protect-charge" },
+  "pokemon:alolan-marowak": { "Retaliate": "attack:alolan-marowak-retaliate", "Will-O-Wisp": "" },
+  "pokemon:arboliva-ex": { "Oil Salvo": "attack:arboliva-oil-salvo", "Aroma Shot": "attack:arboliva-aroma-shot" },
+  "pokemon:bombirdier": { "Challenging Delivery": "attack:bombirdier-delivery" },
+  "pokemon:brute-bonnet": { "Rampaging Hammer": "attack:brute-bonnet-rampage" },
+  "pokemon:floatzel": { "Whirlpool": "attack:whirlpool", "Aqua Slash": "attack:floatzel-aqua-slash" },
+  "pokemon:golbat": { "Covert Flight": "attack:golbat-covert-flight" },
+  "pokemon:heatran-owned": { "Singe": "attack:heatran-singe", "Lava Wall": "attack:heatran-lava-wall" },
+  "pokemon:inkay": { "Procurement": "attack:inkay-procurement" },
+  "pokemon:jynx": { "Intense Kiss": "attack:jynx-intense-kiss", "Psy Bolt": "attack:jynx-psy-bolt" },
+  "pokemon:metang-owned": { "Guard Press": "attack:metang-guard-press" },
+  "pokemon:mimikyu": { "Ghost Eye": "attack:mimikyu-ghost-eye" },
+  "pokemon:mistys-magikarp": { "Splash": "" },
+  "pokemon:muk": { "Toxic Strike": "attack:muk-toxic-strike" },
+  "pokemon:pecharunt-owned": { "Mochi Rush": "attack:pecharunt-mochi-rush" },
+  "pokemon:skeledirge": { "Torcherto": "attack:skeledirge-torcherto" },
+  "pokemon:team-rocket-ekans": { "Drag Down": "attack:rocket-ekans-drag-down" },
+  "pokemon:team-rocket-nidoran-female": { "Surprise Attack": "attack:rocket-nidoran-female-surprise" },
+  "pokemon:team-rocket-nidorina": { "Dark Awakening": "attack:rocket-nidorina-awakening" },
+  "pokemon:team-rocket-grimer": { "Corrosive Sludge": "attack:rocket-grimer-corrosive-sludge" },
+  "pokemon:team-rocket-porygon": { "Hacking": "attack:rocket-porygon-hacking" },
+  "pokemon:team-rocket-porygon-z": { "R Command": "attack:rocket-r-command" },
+  "pokemon:team-rocket-porygon2": { "R Command": "attack:rocket-r-command" },
+  "pokemon:team-rocket-weezing": { "Explode Together Now": "attack:rocket-weezing-explode" },
+  "pokemon:team-rocket-wobbuffet": { "Rocket Mirror": "attack:rocket-wobbuffet-mirror" },
+  "pokemon:toucannon": { "Feather Rondo": "attack:toucannon-feather-rondo" },
+  "pokemon:stevens-claydol": { "Eerie Light": "attack:stevens-claydol-eerie-light", "Clay Blast": "attack:stevens-claydol-clay-blast" },
 };
 
 const abilityPrograms: Readonly<Record<string, AbilityDefinition[]>> = {
@@ -143,6 +169,14 @@ const abilityPrograms: Readonly<Record<string, AbilityDefinition[]>> = {
   "pokemon:bloodmoon-ursaluna-ex": [{ id: "seasoned-skill", name: "Seasoned Skill", text: "Blood Moon used by this Pokémon costs Colorless less for each Prize card your opponent has taken.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:seasoned-skill", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:galvantula": [{ id: "compound-eyes", name: "Compound Eyes", text: "Attacks used by this Pokémon do 50 more damage to your opponent's Active Pokémon that has an Ability (before applying Weakness and Resistance).", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:compound-eyes", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
   "pokemon:pikachu-ex": [{ id: "resolute-heart", name: "Resolute Heart", text: "If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:resolute-heart", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:brute-bonnet": [{ id: "toxic-powder", name: "Toxic Powder", text: "Once during your turn, if this Pokémon has an Ancient Booster Energy Capsule attached, you may make both Active Pokémon Poisoned.", category: "activated", usageLimit: "once-per-turn-per-pokemon", effectProgramId: "ability:brute-bonnet-toxic-powder", targeting: { sourceMayBeActive: true, sourceMayBeBenched: false } }],
+  "pokemon:mimikyu": [{ id: "safeguard", name: "Safeguard", text: "Prevent all damage done to this Pokémon by attacks from your opponent's Pokémon ex and Pokémon V.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:mimikyu-safeguard", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:mistys-magikarp": [{ id: "so-submerged", name: "So Submerged", text: "As long as this Pokémon is on your Bench, prevent all damage from and effects of attacks from your opponent's Pokémon done to this Pokémon.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:mistys-magikarp-submerged", targeting: { sourceMayBeActive: false, sourceMayBeBenched: true } }],
+  "pokemon:muk": [{ id: "poison-sacs", name: "Poison Sacs", text: "Your opponent's Poisoned Pokémon don't recover from that Special Condition when they evolve or devolve.", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:muk-poison-sacs", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:pecharunt-owned": [{ id: "final-chain", name: "Final Chain", text: "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, search your deck for a card and put it into your hand. Then, shuffle your deck.", category: "triggered", usageLimit: "unrestricted", effectProgramId: "ability:pecharunt-final-chain", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true }, triggerOn: "damage-dealt" }],
+  "pokemon:skeledirge": [{ id: "unaware", name: "Unaware", text: "Prevent all effects of attacks used by your opponent's Pokémon done to this Pokémon. (Damage is not an effect.)", category: "passive", usageLimit: "unrestricted", effectProgramId: "passive:skeledirge-unaware", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:toucannon": [{ id: "aerial-draw", name: "Aerial Draw", text: "Once during your turn, you may use this Ability. Draw a card.", category: "activated", usageLimit: "once-per-turn-per-pokemon", effectProgramId: "ability:toucannon-aerial-draw", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
+  "pokemon:team-rocket-porygon-z": [{ id: "reconstitute", name: "Reconstitute", text: "You must discard 2 cards from your hand in order to use this Ability. Once during your turn, you may draw a card.", category: "activated", usageLimit: "once-per-turn-per-pokemon", effectProgramId: "ability:rocket-reconstitute", targeting: { sourceMayBeActive: true, sourceMayBeBenched: true } }],
 };
 
 function implementationHandler(implementation: CardImplementation): string { const handler = implementation.handlers[0]; return handler?.kind === "custom" ? handler.handlerId : handler?.kind === "declarative" ? handler.effectId : ""; }
@@ -211,6 +245,12 @@ function damageFor(handlerId: string, name: string, printed: string): AttackDama
   if (handlerId === "pokemon:hisuian-arcanine" && name === "Proud Fangs") return { kind: "formula", printed, resolverId: "proud-fangs-damage" };
   if (handlerId === "pokemon:mega-zeraora-ex" && name === "Thunderous Fist") return { kind: "formula", printed, resolverId: "thunderous-fist-damage" };
   if (handlerId === "pokemon:arcanine-ex" && name === "Raging Claws") return { kind: "formula", printed, resolverId: "raging-claws-damage" };
+  if (handlerId === "pokemon:alolan-marowak" && name === "Retaliate") return { kind: "formula", printed, resolverId: "alolan-marowak-retaliate-damage" };
+  if (handlerId === "pokemon:skeledirge" && name === "Torcherto") return { kind: "formula", printed, resolverId: "skeledirge-torcherto-damage" };
+  if (handlerId === "pokemon:team-rocket-porygon-z" && name === "R Command") return { kind: "formula", printed, resolverId: "rocket-r-command-damage" };
+  if (handlerId === "pokemon:team-rocket-porygon2" && name === "R Command") return { kind: "formula", printed, resolverId: "rocket-r-command-damage" };
+  if (handlerId === "pokemon:team-rocket-weezing" && name === "Explode Together Now") return { kind: "formula", printed, resolverId: "rocket-weezing-explode-damage" };
+  if (handlerId === "pokemon:toucannon" && name === "Feather Rondo") return { kind: "formula", printed, resolverId: "toucannon-feather-rondo-damage" };
   return null;
 }
 
